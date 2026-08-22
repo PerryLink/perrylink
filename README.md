@@ -1,4 +1,5 @@
 # Hi, I'm PerryLink 👋
+[![Gitee](https://img.shields.io/badge/Gitee-mirror-c71d23?logo=gitee)](https://gitee.com/perrylink/perrylink)
 
 **15 DeepSeek Harness plugins, one goal: bring the best of Claude Code into DSH — checkpoints, permission rules, output styles, memory, and more.**
 
