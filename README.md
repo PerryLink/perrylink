@@ -4,7 +4,7 @@
 [![npm packages](https://img.shields.io/badge/npm-packages-cb3837?logo=npm)](https://www.npmjs.com/search?q=perrylink)
 ![plugins](https://img.shields.io/badge/plugins-33-0969da)
 ![repos](https://img.shields.io/badge/repos-97-green)
-![stars](https://img.shields.io/badge/stars-360%2B-yellow)
+![stars](https://img.shields.io/badge/stars-370%2B-yellow)
 
 **Building the DeepSeek Harness plugin ecosystem: 33 open-source plugins (Apache-2.0) across security, workflows, research, and developer experience. Every project ships five-language READMEs, CI, npm publishing, and Gitee mirrors.**
 
@@ -24,7 +24,7 @@ DeepSeek Harness turned "everything is a plugin" into an ecosystem. I build the 
 
 One-command starter pack: **[dsh-kit](https://github.com/PerryLink/dsh-kit)** — installs the full family.
 
-## 🔬 Research suite (v0.2.0)
+## 🔬 Research suite
 
 | Plugin | What it gives you | npm |
 |---|---|---|
