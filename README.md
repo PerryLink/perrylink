@@ -1,39 +1,136 @@
-# PerryLink · DeepSeek Harness Plugin Ecosystem
+# Hi, I'm PerryLink 👋
 
-33 open-source plugins for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness), built to one quality bar: five-language docs, CI + monthly compat gates, self-contained verification, and npm publishing with provenance. Gitee mirrors sync automatically.
+[![Gitee mirror](https://img.shields.io/badge/Gitee-mirror-c71d23?logo=gitee)](https://gitee.com/perrylink)
+[![npm packages](https://img.shields.io/badge/npm-packages-cb3837?logo=npm)](https://www.npmjs.com/search?q=perrylink)
+![plugins](https://img.shields.io/badge/plugins-33-0969da)
+![repos](https://img.shields.io/badge/repos-97-green)
+![stars](https://img.shields.io/badge/stars-370%2B-yellow)
 
-## Latest — 2026-08-27 audit round
+**Building the DeepSeek Harness plugin ecosystem: 33 open-source plugins (Apache-2.0) across security, workflows, research, and developer experience. Every project ships five-language READMEs, CI, npm publishing, and Gitee mirrors.**
 
-- **33/33 plugins pass the full audit**: install · load · keyless boot · reversible uninstall, all green.
-- Fresh npm releases this round: `dsh-budget@0.3.1` · `dsh-checkpoint-rewind@0.6.1` · `dsh-draw@0.2.1` · `dsh-mcp-panel@0.6.1` · `dsh-output-styles@0.6.1` · `dsh-permission-rules@0.6.1` · `dsh-session-pin@0.6.1` · `dsh-talk@0.2.1`
-- Republished this round: `dsh-claude-move@0.3.0` · `dsh-library@0.2.0` · `dsh-lsp-actions@0.4.0` · `dsh-background-agents@0.6.0` · `@perrylink/dsh-github@0.7.0`
-
-## Plugin catalog
-
-**Capability & governance**
-[permission-rules](https://github.com/PerryLink/dsh-permission-rules) — declarative rules + process-level network policy · [defend](https://github.com/PerryLink/dsh-defend) — destructive-command & key-leak guard · [doublecheck](https://github.com/PerryLink/dsh-doublecheck) — grill / tdd / adversary review gates · [auto-review](https://github.com/PerryLink/dsh-auto-review) — reviewer-subagent approval answerer · [budget](https://github.com/PerryLink/dsh-budget) — metering, caps, alerts, carbon estimates · [observe](https://github.com/PerryLink/dsh-observe) — OTel/Langfuse export
-
-**Sessions & memory**
-[checkpoint-rewind](https://github.com/PerryLink/dsh-checkpoint-rewind) — git-level snapshots + one-shot rollback · [memento](https://github.com/PerryLink/dsh-memento) — memory seam with protocol conformance · [composer-history](https://github.com/PerryLink/dsh-composer-history) — history, recall & search · [session-pin](https://github.com/PerryLink/dsh-session-pin) — pin board with tags & colors · [session-sync](https://github.com/PerryLink/dsh-session-sync) — git-backed session mirroring
-
-**Agents & workflow**
-[background-agents](https://github.com/PerryLink/dsh-background-agents) — durable subagents + team rooms · [lsp-actions](https://github.com/PerryLink/dsh-lsp-actions) — LSP-powered editor actions · [github](https://github.com/PerryLink/dsh-github) — GitHub tool + Action · [claude-move](https://github.com/PerryLink/dsh-claude-move) — 4-ecosystem migration tooling
-
-**Knowledge & research**
-[library](https://github.com/PerryLink/dsh-library) — local RAG knowledge base · [data-quality](https://github.com/PerryLink/dsh-data-quality) — dataset profile/clean/verify · [fund-research](https://github.com/PerryLink/dsh-fund-research) — fund research with hash-traceable snapshots · [industry-research](https://github.com/PerryLink/dsh-industry-research) — industry/company domain pack · [research-report](https://github.com/PerryLink/dsh-research-report) — verifiable report engine
-
-**Interface & utilities**
-[draw](https://github.com/PerryLink/dsh-draw) — image generation router · [talk](https://github.com/PerryLink/dsh-talk) — voice loop (STT/TTS, speak-to-interrupt) · [mcp-panel](https://github.com/PerryLink/dsh-mcp-panel) — MCP status panel · [output-styles](https://github.com/PerryLink/dsh-output-styles) — runtime output-style switching · [fast](https://github.com/PerryLink/dsh-fast) — performance diagnostics · [local-ai](https://github.com/PerryLink/dsh-local-ai) — Ollama provider & routing · [score](https://github.com/PerryLink/dsh-score) — plugin quality scoring · [mask](https://github.com/PerryLink/dsh-mask) — secret masking · [translate](https://github.com/PerryLink/dsh-translate) — translation & JSON repair · [test-drive](https://github.com/PerryLink/dsh-test-drive) — install smoke-test driver · [personal-directive](https://github.com/liucaimao2026/dsh-personal-directive) — directive injector with top-bar toggle (framework edition, upstream: Minglink/dsh-infinite-gen-1) · [skill-pack-security](https://github.com/PerryLink/dsh-skill-pack-security) — 8-skill security pack (zh/en) + provider
-
-**Companion** · [plugin-guide](https://github.com/PerryLink/dsh-plugin-guide) — plugin-dev knowledge base & CLI toolkit
-
-## Quality bar (every repo)
-
-- Five-language READMEs (en/zh/es/pt/hi), Apache-2.0
-- CI matrix + monthly compat workflow: real profile install → dump-config → keyless smoke → uninstall
-- `verify:self-contained` + artifact verification + readme-sync gates
-- npm provenance publishing; Gitee mirrors auto-synced
+DeepSeek Harness turned "everything is a plugin" into an ecosystem. I build the plugins I wish existed — engineering-discipline guardrails, runtime panels, cross-session memory, and verifiable research engines — and publish them the way production software deserves.
 
 ---
 
-**中文** · 33 个 DeepSeek Harness 开源插件，统一质量门禁（五语文档 / CI+compat / 自包含校验 / provenance 发布），全部通过 2026-08-27 全量体检并发布最新版本。
+## 📣 Latest — 2026-08-27 full-audit round
+
+- **33/33 plugins pass the full audit**: clean-profile install · load · keyless boot · reversible uninstall — all green.
+- Fresh npm releases: `dsh-budget@0.3.1` · `dsh-checkpoint-rewind@0.6.1` · `dsh-draw@0.2.1` · `dsh-mcp-panel@0.6.1` · `dsh-output-styles@0.6.1` · `dsh-permission-rules@0.6.1` · `dsh-session-pin@0.6.1` · `dsh-talk@0.2.1`
+- Republished this round: `dsh-claude-move@0.3.0` · `dsh-library@0.2.0` · `dsh-lsp-actions@0.4.0` · `dsh-background-agents@0.6.0` · `@perrylink/dsh-github@0.7.0`
+- `dsh-personal-directive` now ships as a **framework edition**: neutral placeholder directive replaces the upstream prompt content (upstream attribution preserved — see [Minglink/dsh-infinite-gen-1](https://github.com/Minglink/dsh-infinite-gen-1)).
+
+---
+
+## 🚀 Flagship picks (start here)
+
+| Plugin | What it gives you | Install |
+|---|---|---|
+| [dsh-checkpoint-rewind](https://github.com/PerryLink/dsh-checkpoint-rewind) | Claude Code `/rewind` equivalent: git-first snapshots, session forks, one-shot restore | `dsh plugin --profile web add dsh-checkpoint-rewind` |
+| [dsh-permission-rules](https://github.com/PerryLink/dsh-permission-rules) | Claude Code-style declarative allow/deny/ask rules with session-log audit | `dsh plugin --profile web add dsh-permission-rules` |
+| [dsh-auto-review](https://github.com/PerryLink/dsh-auto-review) | Second-model auto-review on the approval chain, fail-closed by default | `dsh plugin --profile web add dsh-auto-review` |
+| [dsh-memento](https://github.com/PerryLink/dsh-memento) | Approval-gated cross-session memory (`ctx.memory` + SQLite) | `dsh plugin --profile web add dsh-memento` |
+| [dsh-mcp-panel](https://github.com/PerryLink/dsh-mcp-panel) | MCP management console: `/mcp` + Settings tab + trial calls | `dsh plugin --profile web add dsh-mcp-panel` |
+
+One-command starter pack: **[dsh-kit](https://github.com/PerryLink/dsh-kit)** — installs the full family.
+
+## 🔬 Research suite
+
+| Plugin | What it gives you | npm |
+|---|---|---|
+| [dsh-research-report](https://github.com/PerryLink/dsh-research-report) | Verifiable research reports: content-addressed evidence ledger, manifest seal hash, byte-level citation checks, drift detection, disproof ledger | [npm](https://www.npmjs.com/package/dsh-research-report) |
+| [dsh-fund-research](https://github.com/PerryLink/dsh-fund-research) | Chinese mutual-fund research with sealed, traceable snapshots — every number traces to a hashed source | [npm](https://www.npmjs.com/package/dsh-fund-research) |
+| [dsh-industry-research](https://github.com/PerryLink/dsh-industry-research) | Industry/company research: chain-map SVG with bottleneck detection, timeline, company cards, adversarial review | [npm](https://www.npmjs.com/package/dsh-industry-research) |
+| [dsh-data-quality](https://github.com/PerryLink/dsh-data-quality) | Deterministic data profiling/cleaning/verification: DAMA scorecard, content-hash dedupe, metric expectations | [npm](https://www.npmjs.com/package/dsh-data-quality) |
+
+## 📦 The full family — 33 plugins by pillar
+
+### 🔒 Security (4)
+
+| Plugin | One-liner | npm |
+|---|---|---|
+| [dsh-defend](https://github.com/PerryLink/dsh-defend) | Injection/jailbreak/secret detection + destructive-delete gate | [npm](https://www.npmjs.com/package/dsh-defend) |
+| [dsh-permission-rules](https://github.com/PerryLink/dsh-permission-rules) | Declarative allow/deny/ask permission rules | [npm](https://www.npmjs.com/package/dsh-permission-rules) |
+| [dsh-mask](https://github.com/PerryLink/dsh-mask) | PII masking/sanitization | [npm](https://www.npmjs.com/package/dsh-mask) |
+| [dsh-skill-pack-security](https://github.com/PerryLink/dsh-skill-pack-security) | Security-audit skill pack + supply-chain gate | [npm](https://www.npmjs.com/package/@perrylink/dsh-skill-pack-security-provider) |
+
+### 🔁 Workflows (7)
+
+| Plugin | One-liner | npm |
+|---|---|---|
+| [dsh-background-agents](https://github.com/PerryLink/dsh-background-agents) | Durable background child agents with a Web UI sidebar | [npm](https://www.npmjs.com/package/dsh-background-agents) |
+| [dsh-checkpoint-rewind](https://github.com/PerryLink/dsh-checkpoint-rewind) | Snapshots, forks, one-shot restore | [npm](https://www.npmjs.com/package/dsh-checkpoint-rewind) |
+| [dsh-github](https://github.com/PerryLink/dsh-github) | GitHub PR/issue integration + Action, writes approval-gated | [npm](https://www.npmjs.com/package/@perrylink/dsh-github) |
+| [dsh-claude-move](https://github.com/PerryLink/dsh-claude-move) | Migrate Claude Code/Codex/OpenCode/Hermes into DSH | [npm](https://www.npmjs.com/package/dsh-claude-move) |
+| [dsh-click](https://github.com/PerryLink/dsh-click) | Desktop control tools (Windows/macOS) | [npm](https://www.npmjs.com/package/dsh-click) |
+| [dsh-session-sync](https://github.com/PerryLink/dsh-session-sync) | Git-backed session synchronization | [npm](https://www.npmjs.com/package/dsh-session-sync) |
+| [dsh-test-drive](https://github.com/PerryLink/dsh-test-drive) | Install→smoke→uninstall test driver for plugins | [npm](https://www.npmjs.com/package/dsh-test-drive) |
+
+### ✨ Experience & UX (5)
+
+| Plugin | One-liner | npm |
+|---|---|---|
+| [dsh-composer-history](https://github.com/PerryLink/dsh-composer-history) | Terminal-style input history for the web composer | [npm](https://www.npmjs.com/package/dsh-composer-history) |
+| [dsh-output-styles](https://github.com/PerryLink/dsh-output-styles) | Runtime-switchable model output styles | [npm](https://www.npmjs.com/package/dsh-output-styles) |
+| [dsh-session-pin](https://github.com/PerryLink/dsh-session-pin) | Pin sessions in the Web sidebar | [npm](https://www.npmjs.com/package/dsh-session-pin) |
+| [dsh-memento](https://github.com/PerryLink/dsh-memento) | Approval-gated cross-session memory protocol | [npm](https://www.npmjs.com/package/dsh-memento) |
+| [dsh-personal-directive](https://github.com/liucaimao2026/dsh-personal-directive) | Personal directive injector with top-bar toggle (framework edition; upstream: Minglink/dsh-infinite-gen-1) | — |
+
+### 🧪 Evaluation (3)
+
+| Plugin | One-liner | npm |
+|---|---|---|
+| [dsh-auto-review](https://github.com/PerryLink/dsh-auto-review) | Second-model auto-review on the approval chain | [npm](https://www.npmjs.com/package/dsh-auto-review) |
+| [dsh-doublecheck](https://github.com/PerryLink/dsh-doublecheck) | Engineering-discipline guard: grill, gates, adversary review | [npm](https://www.npmjs.com/package/dsh-doublecheck) |
+| [dsh-score](https://github.com/PerryLink/dsh-score) | Plugin quality scoring across git/gh/npm | [npm](https://www.npmjs.com/package/dsh-score) |
+
+### 📊 Observability & cost (3)
+
+| Plugin | One-liner | npm |
+|---|---|---|
+| [dsh-budget](https://github.com/PerryLink/dsh-budget) | Token metering and budget governance | [npm](https://www.npmjs.com/package/dsh-budget) |
+| [dsh-observe](https://github.com/PerryLink/dsh-observe) | OTel/Langfuse telemetry export | [npm](https://www.npmjs.com/package/dsh-observe) |
+| [dsh-fast](https://github.com/PerryLink/dsh-fast) | Performance diagnostics | [npm](https://www.npmjs.com/package/dsh-fast) |
+
+### 🎨 Content & knowledge (5)
+
+| Plugin | One-liner | npm |
+|---|---|---|
+| [dsh-draw](https://github.com/PerryLink/dsh-draw) | Image-generation routing | [npm](https://www.npmjs.com/package/dsh-draw) |
+| [dsh-translate](https://github.com/PerryLink/dsh-translate) | Translation + JSON repair | [npm](https://www.npmjs.com/package/dsh-translate) |
+| [dsh-talk](https://github.com/PerryLink/dsh-talk) | Speech recognition and voice I/O | [npm](https://www.npmjs.com/package/dsh-talk) |
+| [dsh-library](https://github.com/PerryLink/dsh-library) | Local knowledge-base RAG | [npm](https://www.npmjs.com/package/dsh-library) |
+| [dsh-local-ai](https://github.com/PerryLink/dsh-local-ai) | Ollama LLM provider and routing | [npm](https://www.npmjs.com/package/dsh-local-ai) |
+
+### 🛠️ Developer experience (2)
+
+| Plugin | One-liner | npm |
+|---|---|---|
+| [dsh-lsp-actions](https://github.com/PerryLink/dsh-lsp-actions) | LSP diagnostics/formatting/completion/actions | [npm](https://www.npmjs.com/package/dsh-lsp-actions) |
+| [dsh-mcp-panel](https://github.com/PerryLink/dsh-mcp-panel) | MCP management console | [npm](https://www.npmjs.com/package/dsh-mcp-panel) |
+
+*Companion knowledge base:* [dsh-plugin-guide](https://github.com/PerryLink/dsh-plugin-guide) — plugin-development knowledge base + CLI toolchain | [npm](https://www.npmjs.com/package/dsh-plugin-guide)
+
+### 🔬 Research (4)
+
+| Plugin | One-liner | npm |
+|---|---|---|
+| [dsh-data-quality](https://github.com/PerryLink/dsh-data-quality) | Data profiling/cleaning/verification | [npm](https://www.npmjs.com/package/dsh-data-quality) |
+| [dsh-fund-research](https://github.com/PerryLink/dsh-fund-research) | Mutual-fund research, sealed traceable snapshots | [npm](https://www.npmjs.com/package/dsh-fund-research) |
+| [dsh-industry-research](https://github.com/PerryLink/dsh-industry-research) | Industry/company research domain pack | [npm](https://www.npmjs.com/package/dsh-industry-research) |
+| [dsh-research-report](https://github.com/PerryLink/dsh-research-report) | Verifiable research-report engine | [npm](https://www.npmjs.com/package/dsh-research-report) |
+
+---
+
+## 🌍 Where the plugins live
+
+- **GitHub** (this profile) — source, CI, releases
+- **[Gitee](https://gitee.com/perrylink)** — full mirror of every repo's branches and tags
+- **npm** — every plugin published with CI provenance
+
+Listed on [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin), [Awesome DeepSeek Harness](https://github.com/0xsline/awesome-deepseek-harness), the [AdamPlatin123 radar](https://github.com/AdamPlatin123/awesome-dsh-plugins), and [dsh-market](https://github.com/dsh-market/dsh-market) (via the awesome-dsh-plugin registry).
+
+## 中文介绍
+
+我在 DeepSeek Harness 上把 Claude Code / Codex 生态里最实用的能力做成了开源插件:检查点回退、声明式权限、输出风格、跨会话记忆、MCP 面板,以及可验证研究报告 / 基金研究 / 行业研究 / 数据质量「研究四件套」——共 **33 个插件**(Apache-2.0),全部带五语文档、CI、npm 发布与 Gitee 镜像。一键全家桶:[`dsh-kit`](https://github.com/PerryLink/dsh-kit)。
+
+2026-08-27 全量体检:33/33 安装·加载·无密钥启动·卸载全通过,本轮新发 npm 版本 13 个(见上文 Latest)。
