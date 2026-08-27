@@ -3,8 +3,8 @@
 [![Gitee mirror](https://img.shields.io/badge/Gitee-mirror-c71d23?logo=gitee)](https://gitee.com/perrylink)
 [![npm packages](https://img.shields.io/badge/npm-packages-cb3837?logo=npm)](https://www.npmjs.com/search?q=perrylink)
 ![plugins](https://img.shields.io/badge/plugins-33-0969da)
-![repos](https://img.shields.io/badge/repos-97-green)
-![stars](https://img.shields.io/badge/stars-370%2B-yellow)
+![repos](https://img.shields.io/badge/repos-99-green)
+![stars](https://img.shields.io/badge/stars-478%2B-yellow)
 
 **Building the DeepSeek Harness plugin ecosystem: 33 open-source plugins (Apache-2.0) across security, workflows, research, and developer experience. Every project ships five-language READMEs, CI, npm publishing, and Gitee mirrors.**
 
