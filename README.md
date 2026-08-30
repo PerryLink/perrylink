@@ -12,9 +12,9 @@ DeepSeek Harness turned "everything is a plugin" into an ecosystem. I build the 
 
 ---
 
-## 📣 Latest — 2026-08-30 ecosystem round
+## 📣 Latest — 2026-08-31 ecosystem round
 
-- **Registry sprint**: 33/33 entries submitted to [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) (27 merged, 6 re-submitted as one-plugin PRs per maintainer preference: [#3794](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/pull/3794) · [#3795](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/pull/3795) · [#3796](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/pull/3796) · [#2829](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/pull/2829) + talk & session-sync) · ecosystem PRs open: [AdamPlatin123 radar #440](https://github.com/AdamPlatin123/dsh-plugin-radar/pull/440) · [Zhiyuan-Fan #59](https://github.com/Zhiyuan-Fan/Awesome-DeepSeek-Harness-Plugins/pull/59) · [Herdeny #3](https://github.com/Herdeny/awesome-dsh-plugins-2026/pull/3) · official [DeepSeek Harness guide PR](https://github.com/deepseek-ai/awesome-deepseek-agent/pull/410) on awesome-deepseek-agent.
+- **Registry sprint**: 27 entries live on [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) · re-submission PRs open for dsh-fast / dsh-session-sync / dsh-talk (one-plugin per maintainer preference; dsh-budget / dsh-click / dsh-draw up next) · ecosystem PRs open: [AdamPlatin123 radar #440](https://github.com/AdamPlatin123/dsh-plugin-radar/pull/440) · [Zhiyuan-Fan #59](https://github.com/Zhiyuan-Fan/Awesome-DeepSeek-Harness-Plugins/pull/59) · [Herdeny #3](https://github.com/Herdeny/awesome-dsh-plugins-2026/pull/3) · official [DeepSeek Harness guide PR](https://github.com/deepseek-ai/awesome-deepseek-agent/pull/410) on awesome-deepseek-agent.
 - **Brand protection**: official-repository declaration merged into 11 repos (same-name repository defense, including the 68-star name collision on dsh-github).
 - **Family stars**: 563+ (topic top-100 threshold: 456, measured 2026-08-27).
 - Full audit (2026-08-27): 33/33 install · load · keyless-boot · uninstall — all green.
@@ -137,4 +137,4 @@ Listed on [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh
 
 我在 DeepSeek Harness 上把 Claude Code / Codex 生态里最实用的能力做成了开源插件:检查点回退、声明式权限、输出风格、跨会话记忆、MCP 面板,以及可验证研究报告 / 基金研究 / 行业研究 / 数据质量「研究四件套」——共 **34 个插件**(Apache-2.0),全部带五语文档、CI、npm 发布与 Gitee 镜像。一键全家桶:[`dsh-kit`](https://github.com/PerryLink/dsh-kit)。
 
-2026-08-30 生态轮:主榜 33/33 提交(27 已收录 + 6 个按维护者偏好改单插件 PR 重提)、生态榜 PR(radar #440 / Zhiyuan-Fan #59 / Herdeny #3)与官方指南 PR 在审;11 仓品牌声明合并;供应链:35 仓 OpenSSF Scorecard + npm provenance + Trusted Publishing(mcp-panel 0.6.2 已 OIDC 直发);认证 spec 公开并提案 #454;官方 Showcase 帖 + 31 条社区问答;deepseek1024 自动收录 36 条;家族合计 563+ 星。
+2026-08-31 生态轮:主榜 27 条在线收录,重提 PR 覆盖 fast / session-sync / talk(budget/click/draw 下一轮)、生态榜 PR(radar #440 / Zhiyuan-Fan #59 / Herdeny #3)与官方指南 PR 在审;11 仓品牌声明合并;供应链:35 仓 OpenSSF Scorecard + npm provenance + Trusted Publishing(mcp-panel 0.6.2 已 OIDC 直发);认证 spec 公开并提案 #454;官方 Showcase 帖 + 31 条社区问答;deepseek1024 自动收录 36 条;家族合计 563+ 星。
