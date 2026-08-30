@@ -1,5 +1,11 @@
 name: gitee-sync
 
+# One-way mirror of the PerryLink plugin repos to Gitee. Gitee is a
+# read-only copy: GitHub is the source of truth and is never force-pushed.
+# Mirror branches/tags are aligned to the GitHub tip with
+# --force-with-lease (lease = the mirror's current ref, read right before
+# the push), so a diverged mirror cannot block the sync and a concurrent
+# mirror update fails loudly instead of overwriting.
 on:
   schedule:
     - cron: '30 0 * * *' # daily 08:30 UTC+8
@@ -20,36 +26,68 @@ jobs:
         env:
           GITEE_SSH_KEY: ${{ secrets.GITEE_SSH_KEY }}
         run: |
+          set -euo pipefail
           mkdir -p ~/.ssh
           printf '%s\n' "$GITEE_SSH_KEY" > ~/.ssh/id_ed25519
           chmod 600 ~/.ssh/id_ed25519
-          ssh-keyscan -t ed25519 gitee.com >> ~/.ssh/known_hosts
+          ssh-keyscan gitee.com >> ~/.ssh/known_hosts
 
       - name: Mirror profile repo
         run: |
+          set -euo pipefail
           git remote add gitee git@gitee.com:perrylink/perrylink.git || true
-          git push gitee HEAD:main --tags || echo "profile push skipped"
+          tip="$(git ls-remote gitee refs/heads/main | awk '{print $1}')"
+          if [ -z "$tip" ]; then
+            git push gitee HEAD:main --tags
+          else
+            git push --force-with-lease="refs/heads/main:$tip" gitee HEAD:main \
+              && git push gitee --tags --force
+          fi
 
       - name: Mirror plugin repos
         shell: bash
         run: |
+          set -euo pipefail
           repos=(dsh-auto-review dsh-background-agents dsh-budget dsh-checkpoint-rewind \
             dsh-claude-move dsh-click dsh-composer-history dsh-data-quality dsh-defend \
             dsh-doublecheck dsh-draw dsh-fast dsh-fund-research dsh-github \
             dsh-industry-research dsh-library dsh-local-ai dsh-lsp-actions dsh-mask \
             dsh-mcp-panel dsh-memento dsh-observe dsh-output-styles dsh-permission-rules \
-            dsh-plugin-guide dsh-research-report dsh-score dsh-session-pin dsh-session-sync \
-            dsh-skill-pack-security dsh-talk dsh-test-drive dsh-translate)
-          for r in "${repos[@]}"; do
+            dsh-personal-directive dsh-plugin-guide dsh-plugin-kit dsh-research-report \
+            dsh-score dsh-session-pin dsh-session-sync dsh-skill-pack-security dsh-talk \
+            dsh-test-drive dsh-translate)
+          sync_repo() {
+            local r="$1"
             rm -rf "/tmp/$r"
-            if ! git clone --quiet --depth 1 "https://github.com/PerryLink/$r.git" "/tmp/$r"; then
+            if ! git clone --quiet "https://github.com/PerryLink/$r.git" "/tmp/$r"; then
               echo "FAIL clone $r"
-              continue
+              return 1
             fi
+            local b remote tip
             b="$(git -C "/tmp/$r" rev-parse --abbrev-ref HEAD)"
-            if git -C "/tmp/$r" push "git@gitee.com:perrylink/$r.git" "HEAD:$b" --tags 2>&1 | tail -2; then
-              echo "OK $r ($b)"
+            remote="git@gitee.com:perrylink/$r.git"
+            tip="$(git ls-remote "$remote" "refs/heads/$b" | awk '{print $1}')"
+            if [ -z "$tip" ]; then
+              # Mirror branch does not exist yet: plain push seeds it.
+              git -C "/tmp/$r" push "$remote" "HEAD:refs/heads/$b" --tags
             else
-              echo "FAIL push $r ($b)"
+              # Align the mirror branch to the GitHub tip, then refresh tags
+              # (tags may have moved after a release re-tag).
+              git -C "/tmp/$r" push --force-with-lease="refs/heads/$b:$tip" "$remote" "HEAD:refs/heads/$b" \
+                && git -C "/tmp/$r" push "$remote" --tags --force
+            fi
+          }
+          fails=0
+          for r in "${repos[@]}"; do
+            if sync_repo "$r"; then
+              echo "OK $r"
+            else
+              echo "FAIL $r"
+              fails=$((fails + 1))
             fi
           done
+          if [ "$fails" -gt 0 ]; then
+            echo "MIRROR SYNC FAILURES: $fails of ${#repos[@]}"
+            exit 1
+          fi
+          echo "all ${#repos[@]} mirrors aligned"
