@@ -59,13 +59,20 @@ jobs:
           sync_repo() {
             local r="$1"
             rm -rf "/tmp/$r"
+            local remote="git@gitee.com:perrylink/$r.git"
+            # A mirror repo that does not exist yet on Gitee is skipped, not a
+            # failure: once the repo is created on gitee.com, the next run
+            # seeds it via the plain-push path below.
+            if ! git ls-remote "$remote" HEAD >/dev/null 2>&1; then
+              echo "SKIP $r (no mirror repo on gitee)"
+              return 0
+            fi
             if ! git clone --quiet "https://github.com/PerryLink/$r.git" "/tmp/$r"; then
               echo "FAIL clone $r"
               return 1
             fi
-            local b remote tip
+            local b tip
             b="$(git -C "/tmp/$r" rev-parse --abbrev-ref HEAD)"
-            remote="git@gitee.com:perrylink/$r.git"
             tip="$(git ls-remote "$remote" "refs/heads/$b" | awk '{print $1}')"
             if [ -z "$tip" ]; then
               # Mirror branch does not exist yet: plain push seeds it.
@@ -90,4 +97,4 @@ jobs:
             echo "MIRROR SYNC FAILURES: $fails of ${#repos[@]}"
             exit 1
           fi
-          echo "all ${#repos[@]} mirrors aligned"
+          echo "all ${#repos[@]} mirrors handled"
