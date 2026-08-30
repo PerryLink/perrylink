@@ -2,11 +2,11 @@
 
 [![Gitee mirror](https://img.shields.io/badge/Gitee-mirror-c71d23?logo=gitee)](https://gitee.com/perrylink)
 [![npm packages](https://img.shields.io/badge/npm-packages-cb3837?logo=npm)](https://www.npmjs.com/search?q=perrylink)
-![plugins](https://img.shields.io/badge/plugins-33-0969da)
+![plugins](https://img.shields.io/badge/plugins-34-0969da)
 ![repos](https://img.shields.io/badge/repos-100%2B-green)
-![stars](https://img.shields.io/badge/stars-532%2B-yellow)
+![stars](https://img.shields.io/badge/stars-551%2B-yellow)
 
-**Building the DeepSeek Harness plugin ecosystem: 33 open-source plugins (Apache-2.0) across security, workflows, research, and developer experience. Every project ships five-language READMEs, CI, npm publishing, and Gitee mirrors.**
+**Building the DeepSeek Harness plugin ecosystem: 34 open-source plugins (Apache-2.0) across security, workflows, research, and developer experience. Every project ships five-language READMEs, CI, npm publishing, and Gitee mirrors.**
 
 DeepSeek Harness turned "everything is a plugin" into an ecosystem. I build the plugins I wish existed — engineering-discipline guardrails, runtime panels, cross-session memory, and verifiable research engines — and publish them the way production software deserves.
 
@@ -16,8 +16,12 @@ DeepSeek Harness turned "everything is a plugin" into an ecosystem. I build the 
 
 - **Registry sprint**: 33/33 entries submitted to [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) (27 merged, 6 PRs pending) · 33 bilingual PRs to [awesome-deepseekharness](https://github.com/awesome-deepseekharness/awesome-deepseek-harness) · 32 one-plugin PRs to [SihanTeng](https://github.com/SihanTeng/awesome-deepseek-harness-plugins) · official [DeepSeek Harness guide PR](https://github.com/deepseek-ai/awesome-deepseek-agent/pull/410) on awesome-deepseek-agent.
 - **Brand protection**: official-repository declaration merged into 11 repos (same-name repository defense, including the 68-star name collision on dsh-github).
-- **Family stars**: 532+ (topic top-100 threshold: 473).
+- **Family stars**: 551+ (topic top-100 threshold: 456, measured 2026-08-27).
 - Full audit (2026-08-27): 33/33 install · load · keyless-boot · uninstall — all green.
+- **Supply chain**: OpenSSF Scorecard CI on all 35 repos · npm provenance on every publish (Trusted Publishing verified with a live release) · `funding` links and the 1024-store install channel on every README.
+- **Certification**: [dsh-plugin-certification](https://github.com/PerryLink/dsh-plugin-certification) spec v1 published — five machine-checkable dimensions, A–D grades, independent registry + badges · proposal posted on the official security-audit discussion [#454](https://github.com/deepseek-ai/deepseek-harness/discussions/454).
+- **Community**: official [Showcase post](https://github.com/deepseek-ai/deepseek-harness/discussions/5016) + 31 answered questions across the official repo and the ecosystem · 36 entries auto-listed on [deepseek1024.com](https://deepseek1024.com).
+- **New releases**: dsh-fast 0.2.1 · dsh-claude-move 0.3.1 · dsh-data-quality 0.3.1 · dsh-doublecheck 0.9.1 · dsh-click 0.3.0 · dsh-fund-research 0.4.0 · dsh-local-ai 0.2.1 · dsh-lsp-actions 0.4.1.
 
 ---
 
@@ -42,7 +46,7 @@ One-command starter pack: **[dsh-kit](https://github.com/PerryLink/dsh-kit)** �
 | [dsh-industry-research](https://github.com/PerryLink/dsh-industry-research) | Industry/company research: chain-map SVG with bottleneck detection, timeline, company cards, adversarial review | [npm](https://www.npmjs.com/package/dsh-industry-research) |
 | [dsh-data-quality](https://github.com/PerryLink/dsh-data-quality) | Deterministic data profiling/cleaning/verification: DAMA scorecard, content-hash dedupe, metric expectations | [npm](https://www.npmjs.com/package/dsh-data-quality) |
 
-## 📦 The full family — 33 plugins by pillar
+## 📦 The full family — 34 plugins by pillar
 
 ### 🔒 Security (4)
 
@@ -127,10 +131,10 @@ One-command starter pack: **[dsh-kit](https://github.com/PerryLink/dsh-kit)** �
 - **[Gitee](https://gitee.com/perrylink)** — full mirror of every repo's branches and tags
 - **npm** — every plugin published with CI provenance
 
-Listed on [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin), [Awesome DeepSeek Harness](https://github.com/0xsline/awesome-deepseek-harness), the [AdamPlatin123 radar](https://github.com/AdamPlatin123/awesome-dsh-plugins), and [dsh-market](https://github.com/dsh-market/dsh-market) (via the awesome-dsh-plugin registry).
+Listed on [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin), [Awesome DeepSeek Harness](https://github.com/0xsline/awesome-deepseek-harness), the [AdamPlatin123 radar](https://github.com/AdamPlatin123/dsh-plugin-radar), and [dsh-market](https://github.com/dsh-market/dsh-market) (via the awesome-dsh-plugin registry). Auto-indexed on [deepseek1024.com](https://deepseek1024.com) (36 entries). Certification: [dsh-plugin-certification](https://github.com/PerryLink/dsh-plugin-certification).
 
 ## 中文介绍
 
-我在 DeepSeek Harness 上把 Claude Code / Codex 生态里最实用的能力做成了开源插件:检查点回退、声明式权限、输出风格、跨会话记忆、MCP 面板,以及可验证研究报告 / 基金研究 / 行业研究 / 数据质量「研究四件套」——共 **33 个插件**(Apache-2.0),全部带五语文档、CI、npm 发布与 Gitee 镜像。一键全家桶:[`dsh-kit`](https://github.com/PerryLink/dsh-kit)。
+我在 DeepSeek Harness 上把 Claude Code / Codex 生态里最实用的能力做成了开源插件:检查点回退、声明式权限、输出风格、跨会话记忆、MCP 面板,以及可验证研究报告 / 基金研究 / 行业研究 / 数据质量「研究四件套」——共 **34 个插件**(Apache-2.0),全部带五语文档、CI、npm 发布与 Gitee 镜像。一键全家桶:[`dsh-kit`](https://github.com/PerryLink/dsh-kit)。
 
-2026-08-30 生态轮:主榜 33/33 提交(27 已收录 + 6 PR 待合并)、org 榜 33 个双语 PR、SihanTeng 32 个单插件 PR、官方指南 PR、11 仓品牌声明合并;家族合计 532+ 星。
+2026-08-30 生态轮:主榜 33/33 提交(27 已收录 + 6 PR 待合并)、org 榜 33 个双语 PR、SihanTeng 32 个单插件 PR、官方指南 PR、11 仓品牌声明合并;供应链:35 仓 OpenSSF Scorecard + npm provenance 实证 + Trusted Publishing;认证 spec 公开并提案 #454;官方 Showcase 帖 + 31 条社区问答;deepseek1024 自动收录 36 条;家族合计 551+ 星。
