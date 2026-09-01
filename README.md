@@ -4,25 +4,25 @@
 [![npm packages](https://img.shields.io/badge/npm-packages-cb3837?logo=npm)](https://www.npmjs.com/search?q=perrylink)
 ![plugins](https://img.shields.io/badge/plugins-34-0969da)
 ![repos](https://img.shields.io/badge/repos-100%2B-green)
-![stars](https://img.shields.io/badge/stars-574%2B-yellow)
-![npm downloads](https://img.shields.io/badge/npm_downloads-57k%2Fmonth-cb3837)
+![stars](https://img.shields.io/badge/stars-603%2B-yellow)
+![npm downloads](https://img.shields.io/badge/npm_downloads-60k%2Fmonth-cb3837)
 
-**Building the DeepSeek Harness plugin ecosystem: 34 open-source plugins (Apache-2.0) across security, workflows, research, and developer experience. Every project ships five-language READMEs, CI, npm publishing, and Gitee mirrors — 57k+ monthly npm downloads across the family.**
+**Building the DeepSeek Harness plugin ecosystem: 34 open-source plugins (Apache-2.0) across security, workflows, research, and developer experience. Every project ships five-language READMEs, CI, npm publishing, and Gitee mirrors — 60k+ monthly npm downloads across the family.**
 
 DeepSeek Harness turned "everything is a plugin" into an ecosystem. I build the plugins I wish existed — engineering-discipline guardrails, runtime panels, cross-session memory, and verifiable research engines — and publish them the way production software deserves.
 
 ---
 
-## 📣 Latest — 2026-08-31 ecosystem round
+## 📣 Latest — 2026-09-01 ecosystem round
 
 - **Registry sprint**: 27 entries live on [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) · re-submission PRs open for dsh-fast / dsh-session-sync / dsh-talk (one-plugin per maintainer preference; dsh-budget / dsh-click / dsh-draw up next) · ecosystem PRs open: [AdamPlatin123 radar #440](https://github.com/AdamPlatin123/dsh-plugin-radar/pull/440) · [Zhiyuan-Fan #59](https://github.com/Zhiyuan-Fan/Awesome-DeepSeek-Harness-Plugins/pull/59) · [Herdeny #3](https://github.com/Herdeny/awesome-dsh-plugins-2026/pull/3) · official [DeepSeek Harness guide PR](https://github.com/deepseek-ai/awesome-deepseek-agent/pull/410) on awesome-deepseek-agent.
 - **Brand protection**: official-repository declaration merged into 11 repos (same-name repository defense, including the 68-star name collision on dsh-github).
-- **Adoption (2026-08-31 snapshot)**: **574★** across 35 repos (topic top-100 threshold: 456) · **57.4k npm downloads/month** (4.9k/week) — top by downloads: dsh-mcp-panel 3.6k · dsh-permission-rules 2.9k · dsh-memento 2.7k · dsh-checkpoint-rewind 2.6k · dsh-auto-review 2.5k · dsh-lsp-actions 2.3k. Per-package live badges on each repo.
+- **Adoption (2026-09-01 snapshot)**: **603★** across 35 repos (up from 574 on 08-31; topic top-100 threshold now 500) · **60.8k npm downloads in August** (23.0k in the last 7 days — release-week surge) — top by downloads: dsh-mcp-panel 3.9k · dsh-permission-rules 3.1k · dsh-memento 2.8k · dsh-checkpoint-rewind 2.7k · dsh-auto-review 2.7k · dsh-lsp-actions 2.5k. Per-package live badges on each repo.
 - Full audit (2026-08-27): 33/33 install · load · keyless-boot · uninstall — all green.
 - **Supply chain**: OpenSSF Scorecard CI on all 35 repos · npm provenance on every publish (Trusted Publishing verified with a live release) · `funding` links and the 1024-store install channel on every README.
-- **Certification**: [dsh-plugin-certification](https://github.com/PerryLink/dsh-plugin-certification) spec v1 published — five machine-checkable dimensions, A–D grades, independent registry + badges · proposal posted on the official security-audit discussion [#454](https://github.com/deepseek-ai/deepseek-harness/discussions/454).
-- **Community**: official [Showcase post](https://github.com/deepseek-ai/deepseek-harness/discussions/5016) + 31 answered questions across the official repo and the ecosystem · 36 entries auto-listed on [deepseek1024.com](https://deepseek1024.com).
-- **New releases**: dsh-fast 0.2.1 · dsh-claude-move 0.3.1 · dsh-data-quality 0.3.1 · dsh-doublecheck 0.9.1 · dsh-click 0.3.0 · dsh-fund-research 0.4.0 · dsh-local-ai 0.2.1 · dsh-lsp-actions 0.4.1 · dsh-translate 0.2.1 · dsh-permission-rules 0.6.3 · dsh-observe 0.2.1 · dsh-plugin-guide 0.3.1 · dsh-mcp-panel 0.6.2 · dsh-output-styles 0.6.2. **mcp-panel 0.6.2 is live on npm via the OIDC Trusted Publishing path.**
+- **Certification**: [dsh-plugin-certification](https://github.com/PerryLink/dsh-plugin-certification) spec v1 published — five machine-checkable dimensions, A–D grades, independent registry + badges · **first registry entry live: dsh-auto-review Grade B** (2026-08-31 snapshot) · proposal posted on the official security-audit discussion [#454](https://github.com/deepseek-ai/deepseek-harness/discussions/454).
+- **Community**: official [Showcase post](https://github.com/deepseek-ai/deepseek-harness/discussions/5016) + 37 answered questions across the official repo and the ecosystem · 36 entries auto-listed on [deepseek1024.com](https://deepseek1024.com).
+- **New releases**: npm channel fully unlocked on 08-30 — 21 publishes in one day, 26 versions now live on npm, including @perrylink/dsh-github 0.7.1 · dsh-session-pin 0.7.0 · dsh-composer-history 0.6.2 · dsh-draw 0.2.2 · dsh-talk 0.3.0 · dsh-defend 0.3.0 · dsh-budget 0.4.0 · dsh-library 0.2.1 · @perrylink/dsh-plugin-kit 0.1.2. **mcp-panel 0.6.2 is live on npm via the OIDC Trusted Publishing path.**
 
 ---
 
@@ -30,9 +30,9 @@ DeepSeek Harness turned "everything is a plugin" into an ecosystem. I build the 
 
 | Plugin | What it gives you | Install |
 |---|---|---|
-| [dsh-auto-review](https://github.com/PerryLink/dsh-auto-review) | Second-model auto-review on the approval chain, fail-closed by default (119★) | `dsh plugin --profile web add dsh-auto-review` |
-| [dsh-memento](https://github.com/PerryLink/dsh-memento) | Approval-gated cross-session memory (`ctx.memory` + SQLite) (74★) | `dsh plugin --profile web add dsh-memento` |
-| [dsh-permission-rules](https://github.com/PerryLink/dsh-permission-rules) | Claude Code-style declarative allow/deny/ask rules with session-log audit (69★) | `dsh plugin --profile web add dsh-permission-rules` |
+| [dsh-auto-review](https://github.com/PerryLink/dsh-auto-review) | Second-model auto-review on the approval chain, fail-closed by default (125★) | `dsh plugin --profile web add dsh-auto-review` |
+| [dsh-memento](https://github.com/PerryLink/dsh-memento) | Approval-gated cross-session memory (`ctx.memory` + SQLite) (79★) | `dsh plugin --profile web add dsh-memento` |
+| [dsh-permission-rules](https://github.com/PerryLink/dsh-permission-rules) | Claude Code-style declarative allow/deny/ask rules with session-log audit (87★) | `dsh plugin --profile web add dsh-permission-rules` |
 | [dsh-mcp-panel](https://github.com/PerryLink/dsh-mcp-panel) | MCP management console: `/mcp` + Settings tab + trial calls (52★) | `dsh plugin --profile web add dsh-mcp-panel` |
 | [dsh-checkpoint-rewind](https://github.com/PerryLink/dsh-checkpoint-rewind) | Claude Code `/rewind` equivalent: git-first snapshots, session forks, one-shot restore | `dsh plugin --profile web add dsh-checkpoint-rewind` |
 
@@ -138,4 +138,4 @@ Listed on [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh
 
 我在 DeepSeek Harness 上把 Claude Code / Codex 生态里最实用的能力做成了开源插件:检查点回退、声明式权限、输出风格、跨会话记忆、MCP 面板,以及可验证研究报告 / 基金研究 / 行业研究 / 数据质量「研究四件套」——共 **34 个插件**(Apache-2.0),全部带五语文档、CI、npm 发布与 Gitee 镜像。一键全家桶:[`dsh-kit`](https://github.com/PerryLink/dsh-kit)。
 
-2026-08-31 生态轮:主榜 27 条在线收录,重提 PR 覆盖 fast / session-sync / talk(budget/click/draw 下一轮)、生态榜 PR(radar #440 / Zhiyuan-Fan #59 / Herdeny #3)与官方指南 PR 在审;11 仓品牌声明合并;供应链:35 仓 OpenSSF Scorecard + npm provenance + Trusted Publishing(mcp-panel 0.6.2 已 OIDC 直发);认证 spec 公开并提案 #454;官方 Showcase 帖 + 31 条社区问答;deepseek1024 自动收录 36 条;家族合计 **574+ 星**、npm 月下载 **5.7 万**(周 4.9k,Top:mcp-panel/permission-rules/memento)。
+2026-09-01 生态轮:主榜 27 条在线收录,重提 PR 覆盖 fast / session-sync / talk(budget/click/draw 下一轮)、生态榜 PR(radar #440 / Zhiyuan-Fan #59 / Herdeny #3)与官方指南 PR 在审;认证首条落地:dsh-auto-review **B 级**(2026-08-31 快照);npm 通道全解锁:08-30 一天 21 次发布、累计 26 个版本上线 npm(OIDC 直发已验证);供应链 35 仓 Scorecard + provenance + 11 仓品牌声明不变;官方 Showcase 帖 + 37 条社区问答;deepseek1024 自动收录 36 条;家族合计 **603+ 星**、npm 8 月下载 **6.1 万**(近 7 天 2.3 万,Top:mcp-panel/permission-rules/memento)。
