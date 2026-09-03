@@ -139,3 +139,5 @@ Listed on [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh
 我在 DeepSeek Harness 上把 Claude Code / Codex 生态里最实用的能力做成了开源插件:检查点回退、声明式权限、输出风格、跨会话记忆、MCP 面板,以及可验证研究报告 / 基金研究 / 行业研究 / 数据质量「研究四件套」——共 **34 个插件**(Apache-2.0),全部带五语文档、CI、npm 发布与 Gitee 镜像。一键全家桶:[`dsh-kit`](https://github.com/PerryLink/dsh-kit)。
 
 2026-09-03 生态轮:0.1.2-alpha.5 全量波 09-02 落地——34 仓推送+tag+Release、33 次 npm 发布 + 22 包文档 patch 次波(23/23 Release)、Gitee 两轮同步均 success,33 个已发布包累计 **351 个版本**(自 08-30 解锁以来 116 版;最新 auto-review 0.10.1 / doublecheck 0.9.4 / mcp-panel 0.6.5 / permission-rules 0.6.8);今日另修 permission-rules #13 并发布 0.6.8、合并社区 PR memento #8;家族合计 **680+ 星**(门槛升至 548);npm 8 月下载 **6.1 万**(9 月滚动中,9/1 = 2.9k);主榜 27 条 + 新 PR #4175/#4176 再添 budget/click/draw/plugin-kit;认证 auto-review B 级快照刷新至 09-02(0.10.0);官方仓 58 条、全 GitHub **92 条**问答;deepseek1024 自动收录 36 条。
+
+近期需要安排一次体检，为减少熬夜，后续的更新迭代节奏会适当放缓——问题和缺陷修复不会停，只是发布频率会降低一些，还请大家谅解。
