@@ -3,33 +3,33 @@
 [![Gitee mirror](https://img.shields.io/badge/Gitee-mirror-c71d23?logo=gitee)](https://gitee.com/perrylink)
 [![DSH Desktop Market](https://img.shields.io/badge/DSH_Desktop_Market-source-0969da)](https://perrylink-dsh-catalog.perrylink.workers.dev/catalog-source.json)
 [![npm packages](https://img.shields.io/badge/npm-packages-cb3837?logo=npm)](https://www.npmjs.com/search?q=perrylink)
-![plugins](https://img.shields.io/badge/plugins-34-0969da)
+![plugins](https://img.shields.io/badge/plugins-37-0969da)
 ![repos](https://img.shields.io/badge/repos-100%2B-green)
-![stars](https://img.shields.io/badge/stars-710%2B-yellow)
-![npm downloads](https://img.shields.io/badge/npm_downloads-72k%2B_AugSep-cb3837)
+![stars](https://img.shields.io/badge/stars-755%2B-yellow)
+![npm downloads](https://img.shields.io/badge/npm_downloads-73k%2B_AugSep-cb3837)
 [![Certified dsh-auto-review](https://raw.githubusercontent.com/PerryLink/dsh-plugin-certification/main/badges/PerryLink__dsh-auto-review.svg)](https://github.com/PerryLink/dsh-plugin-certification)
 [![awesome-dsh-plugin](https://awesome-dsh-plugin.com/badge.svg)](https://awesome-dsh-plugin.com)
 
-**Building the DeepSeek Harness plugin ecosystem: 34 open-source plugins (Apache-2.0) across security, workflows, research, and developer experience. Every project ships five-language READMEs, CI, npm publishing, and Gitee mirrors — 60.8k npm downloads in August plus 11.9k in the first 3 days of September.**
+**Building the DeepSeek Harness plugin ecosystem: 37 open-source plugins (Apache-2.0) across security, workflows, research, messaging bridges, and developer experience. Every project ships five-language READMEs, CI, npm publishing, and Gitee mirrors — 60.8k npm downloads in August plus 12.3k in the first 4 days of September.**
 
 DeepSeek Harness turned "everything is a plugin" into an ecosystem. I build the plugins I wish existed — engineering-discipline guardrails, runtime panels, cross-session memory, and verifiable research engines — and publish them the way production software deserves.
 
 ---
 
-## 📣 Latest — 2026-09-04 round
+## 📣 Latest — 2026-09-05 round
 
-- **Ecosystem outreach wave** (last night's execution): PR [#732](https://github.com/deepseek-ai/awesome-deepseek-integration/pull/732) filed on the 39k★ official `awesome-deepseek-integration` (harness section) · friend-link request [#798](https://github.com/anywhere-labs/dsh-desktop/issues/798) + Fabric RFC discussion [**#799**](https://github.com/anywhere-labs/dsh-desktop/discussions/799) on dsh-desktop · listing issues [#41](https://github.com/vvlife/whalehub-dsh/issues/41)–44 (whalehub) · [#100](https://github.com/libukai/awesome-deepseek-harness/issues/100) (libukai) · PR [#109](https://github.com/Alex-Yanggg/awesome-DSH-plugin/pull/109) (Alex-Yanggg) — all verified open · [`FUNDING.yml`](https://github.com/PerryLink/.github) now live (GitHub Sponsors ready).
-- **DSH Desktop Market**: the PerryLink **standard catalog source is live** at [`perrylink-dsh-catalog.perrylink.workers.dev`](https://perrylink-dsh-catalog.perrylink.workers.dev/catalog-source.json) — all **34 packages** with curated English summaries and same-origin icons, validated against the public v1 provider contract and live-smoked by CI on every deploy. In DSH Desktop: **Market → Sources → add source → paste the `catalog-source.json` URL** to browse the whole family in-app (installation still goes through the Market's npm-identity verification). A five-language "Install from the DSH Desktop Market" note shipped to all **33 npm-published plugin repos**.
+- **`0.1.3-alpha.1` wave closed (09-04)**: all 39 repos pushed + tagged + GitHub Released, npm publishes verified against the registry, Gitee mirrors re-synced — **449 versions live across 40 npm packages** (35 bare names + 5 scoped). Highlights: `dsh-claude-move 0.4.1` (dual-baseline handle shim, 236 tests) · `dsh-composer-history 0.7.0` (273 tests) · `dsh-permission-rules 0.6.10` · `dsh-auto-review 0.10.3` · `dsh-memento 0.5.5` · `dsh-session-pin 0.7.4`. 34 profile plugins re-validated end-to-end (D2 smoke v4 matrix).
+- **New family members**: [dsh-wechat](https://github.com/PerryLink/dsh-wechat) — WeChat ↔ DSH bridge over the Tencent iLink bot protocol (text/image/file/voice, approval cards in chat; npm 0.8.0) · [dsh-ticktick](https://github.com/PerryLink/dsh-ticktick) — TickTick/Dida365 task bridge (`@perrylink/dsh-ticktick`, scoped after the bare name was taken) · [dsh-reach](https://github.com/PerryLink/dsh-reach) — multi-channel approval/question bridge (WeChat/Telegram/Feishu). Support repos: [dsh-catalog](https://github.com/PerryLink/dsh-catalog) (Market catalog source) + [dsh-cert-mcp](https://github.com/PerryLink/dsh-cert-mcp) (certification MCP server).
+- **Routine community audit (A-class mode 1, 09-04/05)**: 84-repo enumeration, every issue / PR / discussion thread checked per-thread — **zero unanswered community threads**; Discussions enabled on 23 repos (the 5 new product repos + 18 tool repos); metadata/badge fixes across 10 repos. [permission-rules AST command decomposition](https://github.com/PerryLink/dsh-permission-rules/issues/8) now **officially scheduled** (design = [discussion #10](https://github.com/PerryLink/dsh-permission-rules/discussions/10), fail-closed first); research-report #2 closed.
+- **DSH Desktop Market**: the standard catalog source is live at [`perrylink-dsh-catalog.perrylink.workers.dev`](https://perrylink-dsh-catalog.perrylink.workers.dev/catalog-source.json) — now **36 packages** with curated summaries and same-origin icons, contract-validated and live-smoked by CI on every deploy. In DSH Desktop: **Market → Sources → add source → paste the `catalog-source.json` URL**.
+- **Registry sprint**: **35 entries live** on [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) · omdsh hub: **113 [Submission] issues** filed · ecosystem PRs still open: official [awesome-deepseek-agent #410](https://github.com/deepseek-ai/awesome-deepseek-agent/pull/410), [Zhiyuan-Fan #59](https://github.com/Zhiyuan-Fan/Awesome-DeepSeek-Harness-Plugins/pull/59), [Herdeny #3](https://github.com/Herdeny/awesome-dsh-plugins-2026/pull/3), [AEI #732](https://github.com/deepseek-ai/awesome-deepseek-integration/pull/732).
 - **W5 article published**: the full Chinese deep-dive on `dsh-auto-review` is live on the official Showcase post [#5016](https://github.com/deepseek-ai/deepseek-harness/discussions/5016) (second-model approval design, fail-closed chains, audit trail).
-- **Registry sprint**: **31 entries live** on [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) — PR [#4175](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/pull/4175) **merged** (dsh-budget / dsh-click / dsh-draw / dsh-plugin-kit added); #4176 closed per the one-plugin-per-maintainer preference · ecosystem PRs: [AdamPlatin123 radar #440](https://github.com/AdamPlatin123/dsh-plugin-radar/pull/440) **merged 08-31** · [Zhiyuan-Fan #59](https://github.com/Zhiyuan-Fan/Awesome-DeepSeek-Harness-Plugins/pull/59) · [Herdeny #3](https://github.com/Herdeny/awesome-dsh-plugins-2026/pull/3) · official [DeepSeek Harness guide PR](https://github.com/deepseek-ai/awesome-deepseek-agent/pull/410) · omdsh hub: **76 [Submission] issues** filed (latest batch [#93–#124](https://github.com/omdsh-dev/dsh-hub-workshop/issues)).
-- **Brand protection**: official-repository declaration merged into 11 repos (same-name repository defense, including the 68-star name collision on dsh-github).
-- **Adoption (2026-09-04 snapshot)**: **710★** across the 34 plugin repos (up from 701 last night; topic top-100 threshold now **548**) · **60.8k npm downloads in August** + **11.9k in Sep 1–3** (Sep 4 not yet in npm's daily stats) — top by downloads: dsh-mcp-panel 3.9k · dsh-permission-rules 3.1k · dsh-memento 2.8k · dsh-checkpoint-rewind 2.7k · dsh-auto-review 2.7k · dsh-lsp-actions 2.5k. Per-package live badges on each repo.
-- **Gitee mirrors**: **97 public repos** (verified via the public API; 4 new mirrors — personal-directive / reach / catalog / cert-mcp — opened and filled; daily auto-sync via the `gitee-sync` workflow).
+- **Adoption (2026-09-05 snapshot)**: **755★** across the family's 40 repos · topic top-100 threshold now **556** · **60.8k npm downloads in August** + **12.3k in Sep 1–4** (rolling-30d ≈ 60.4k) — top by downloads: dsh-wechat 5.0k · dsh-mcp-panel 3.6k · dsh-permission-rules 2.9k · dsh-memento 2.7k · dsh-checkpoint-rewind 2.6k. Per-package live badges on each repo.
+- **Gitee mirrors**: **99 public repos** (verified via the public API; daily auto-sync via the `gitee-sync` workflow).
 - Full audit (2026-08-27): 33/33 install · load · keyless-boot · uninstall — all green.
-- **Supply chain**: OpenSSF Scorecard CI on all 35 repos (action upgraded to v2.4.4 — upstream gcr.io billing failure cleared, green again) · npm provenance on every publish · `funding` links and the 1024-store install channel on every README.
-- **Certification**: [dsh-plugin-certification](https://github.com/PerryLink/dsh-plugin-certification) spec v1 published — five machine-checkable dimensions, A–D grades, independent registry + badges · **first registry entry live: dsh-auto-review Grade B** (refreshed 2026-09-02 snapshot: 0.10.0 · 276 tests · provenance) · proposal posted on the official security-audit discussion [#454](https://github.com/deepseek-ai/deepseek-harness/discussions/454).
-- **Community**: official [Showcase post #5016](https://github.com/deepseek-ai/deepseek-harness/discussions/5016) now carries the published article · **92 answered questions** across GitHub discussions (58 on the official repo) · community PR merged: dsh-memento #8 · 36 entries auto-listed on [deepseek1024.com](https://deepseek1024.com).
-- **New releases**: **0.1.2-alpha.5 wave landed on 09-02** — 34 repos pushed + tagged + GitHub Released, 33 npm publishes plus a 22-package docs-patch follow-up wave (23/23 released), 2× Gitee sync (both success) · **366 versions live across 34 published plugin packages** (registry count; `dsh-personal-directive@0.2.1` shipped 09-03 11:03Z with provenance — the family's 34th plugin package) · plus **`@perrylink/dsh-cert-mcp@0.1.1`** (the certification MCP server, published 09-03 16:28Z) — **35 npm packages** across the family. Latest: dsh-auto-review 0.10.1 · dsh-doublecheck 0.9.4 · dsh-mcp-panel 0.6.5 · dsh-permission-rules 0.6.8 · dsh-memento 0.5.3 · dsh-session-pin 0.7.3 · dsh-personal-directive 0.2.1. · official **MCP Registry** metadata for dsh-cert-mcp validated (2025-12-11 schema + stdio) — publish pending device login.
+- **Supply chain**: OpenSSF Scorecard CI on all 40 repos (v2.4.4, green) · npm provenance on every publish · `funding` links and the 1024-store install channel on every README.
+- **Certification**: [dsh-plugin-certification](https://github.com/PerryLink/dsh-plugin-certification) spec v1 published — five machine-checkable dimensions, A–D grades, independent registry + badges · **first registry entry live: dsh-auto-review Grade B** (snapshot: 0.10.0 · 276 tests · provenance) · proposal posted on the official security-audit discussion [#454](https://github.com/deepseek-ai/deepseek-harness/discussions/454).
+- **Community**: **92 answered questions** across GitHub discussions (58 on the official repo) · community PR merged: dsh-memento #8 · 36 entries auto-listed on [deepseek1024.com](https://deepseek1024.com).
 
 ---
 
@@ -37,13 +37,13 @@ DeepSeek Harness turned "everything is a plugin" into an ecosystem. I build the 
 
 | Plugin | What it gives you | Install |
 |---|---|---|
-| [dsh-auto-review](https://github.com/PerryLink/dsh-auto-review) | Second-model auto-review on the approval chain, fail-closed by default (131★) | `dsh plugin --profile web add dsh-auto-review` |
-| [dsh-memento](https://github.com/PerryLink/dsh-memento) | Approval-gated cross-session memory (`ctx.memory` + SQLite) (87★) | `dsh plugin --profile web add dsh-memento` |
-| [dsh-permission-rules](https://github.com/PerryLink/dsh-permission-rules) | Claude Code-style declarative allow/deny/ask rules with session-log audit (109★) | `dsh plugin --profile web add dsh-permission-rules` |
+| [dsh-auto-review](https://github.com/PerryLink/dsh-auto-review) | Second-model auto-review on the approval chain, fail-closed by default (134★) | `dsh plugin --profile web add dsh-auto-review` |
+| [dsh-permission-rules](https://github.com/PerryLink/dsh-permission-rules) | Claude Code-style declarative allow/deny/ask rules with session-log audit (113★) | `dsh plugin --profile web add dsh-permission-rules` |
+| [dsh-memento](https://github.com/PerryLink/dsh-memento) | Approval-gated cross-session memory (`ctx.memory` + SQLite) (95★) | `dsh plugin --profile web add dsh-memento` |
 | [dsh-mcp-panel](https://github.com/PerryLink/dsh-mcp-panel) | MCP management console: `/mcp` + Settings tab + trial calls (52★) | `dsh plugin --profile web add dsh-mcp-panel` |
-| [dsh-checkpoint-rewind](https://github.com/PerryLink/dsh-checkpoint-rewind) | Claude Code `/rewind` equivalent: git-first snapshots, session forks, one-shot restore | `dsh plugin --profile web add dsh-checkpoint-rewind` |
+| [dsh-checkpoint-rewind](https://github.com/PerryLink/dsh-checkpoint-rewind) | Claude Code `/rewind` equivalent: git-first snapshots, session forks, one-shot restore (15★) | `dsh plugin --profile web add dsh-checkpoint-rewind` |
 
-One-command starter pack: **[dsh-kit](https://github.com/PerryLink/dsh-kit)** — installs the full family.
+One-command starter pack: **[dsh-kit](https://github.com/PerryLink/dsh-kit)** — installs the full 37-plugin family.
 
 ## 🔬 Research suite
 
@@ -54,7 +54,7 @@ One-command starter pack: **[dsh-kit](https://github.com/PerryLink/dsh-kit)** �
 | [dsh-industry-research](https://github.com/PerryLink/dsh-industry-research) | Industry/company research: chain-map SVG with bottleneck detection, timeline, company cards, adversarial review | [npm](https://www.npmjs.com/package/dsh-industry-research) |
 | [dsh-data-quality](https://github.com/PerryLink/dsh-data-quality) | Deterministic data profiling/cleaning/verification: DAMA scorecard, content-hash dedupe, metric expectations | [npm](https://www.npmjs.com/package/dsh-data-quality) |
 
-## 📦 The full family — 34 plugins by pillar
+## 📦 The full family — 37 plugins by pillar
 
 ### 🔒 Security (4)
 
@@ -85,7 +85,7 @@ One-command starter pack: **[dsh-kit](https://github.com/PerryLink/dsh-kit)** �
 | [dsh-output-styles](https://github.com/PerryLink/dsh-output-styles) | Runtime-switchable model output styles | [npm](https://www.npmjs.com/package/dsh-output-styles) |
 | [dsh-session-pin](https://github.com/PerryLink/dsh-session-pin) | Pin sessions in the Web sidebar | [npm](https://www.npmjs.com/package/dsh-session-pin) |
 | [dsh-memento](https://github.com/PerryLink/dsh-memento) | Approval-gated cross-session memory protocol | [npm](https://www.npmjs.com/package/dsh-memento) |
-| [dsh-personal-directive](https://github.com/PerryLink/dsh-personal-directive) | Personal directive injector with top-bar toggle (framework edition; fork of liucaimao2026/dsh-personal-directive, upstream: Minglink/dsh-infinite-gen-1) | [npm](https://www.npmjs.com/package/dsh-personal-directive) |
+| [dsh-personal-directive](https://github.com/PerryLink/dsh-personal-directive) | Personal directive injector with top-bar toggle (framework edition; fork of liucaimao2026/dsh-personal-directive) | [npm](https://www.npmjs.com/package/dsh-personal-directive) |
 
 ### 🧪 Evaluation (3)
 
@@ -113,14 +113,23 @@ One-command starter pack: **[dsh-kit](https://github.com/PerryLink/dsh-kit)** �
 | [dsh-library](https://github.com/PerryLink/dsh-library) | Local knowledge-base RAG | [npm](https://www.npmjs.com/package/dsh-library) |
 | [dsh-local-ai](https://github.com/PerryLink/dsh-local-ai) | Ollama LLM provider and routing | [npm](https://www.npmjs.com/package/dsh-local-ai) |
 
-### 🛠️ Developer experience (2)
+### 🛠️ Developer experience (3)
 
 | Plugin | One-liner | npm |
 |---|---|---|
 | [dsh-lsp-actions](https://github.com/PerryLink/dsh-lsp-actions) | LSP diagnostics/formatting/completion/actions | [npm](https://www.npmjs.com/package/dsh-lsp-actions) |
 | [dsh-mcp-panel](https://github.com/PerryLink/dsh-mcp-panel) | MCP management console | [npm](https://www.npmjs.com/package/dsh-mcp-panel) |
+| [dsh-cert-mcp](https://github.com/PerryLink/dsh-cert-mcp) | Read-only MCP server over the certification registry | [npm](https://www.npmjs.com/package/@perrylink/dsh-cert-mcp) |
 
 *Companion knowledge base:* [dsh-plugin-guide](https://github.com/PerryLink/dsh-plugin-guide) — plugin-development knowledge base + CLI toolchain | [npm](https://www.npmjs.com/package/dsh-plugin-guide)
+
+### 📱 Messaging & bridges (3)
+
+| Plugin | One-liner | npm |
+|---|---|---|
+| [dsh-wechat](https://github.com/PerryLink/dsh-wechat) | WeChat ↔ DSH bridge (Tencent iLink bot): text/image/file/voice, approvals in chat | [npm](https://www.npmjs.com/package/dsh-wechat) |
+| [dsh-ticktick](https://github.com/PerryLink/dsh-ticktick) | TickTick/Dida365 task bridge: session-header panel + 11 tools | [npm](https://www.npmjs.com/package/@perrylink/dsh-ticktick) |
+| [dsh-reach](https://github.com/PerryLink/dsh-reach) | Multi-channel approval/question bridge: WeChat/Telegram/Feishu, session console | [npm](https://www.npmjs.com/package/dsh-reach) |
 
 ### 🔬 Research (4)
 
@@ -136,16 +145,16 @@ One-command starter pack: **[dsh-kit](https://github.com/PerryLink/dsh-kit)** �
 ## 🌍 Where the plugins live
 
 - **GitHub** (this profile) — source, CI, releases
-- **[Gitee](https://gitee.com/perrylink)** — full mirror of every repo's branches and tags (97 public repos)
-- **npm** — every plugin published with CI provenance (34 packages)
-- **DSH Desktop Market** — add the catalog source `https://perrylink-dsh-catalog.perrylink.workers.dev/catalog-source.json` under Market → Sources to browse all 34 plugins in-app (curated summaries + icons, contract-validated, CI-smoked)
+- **[Gitee](https://gitee.com/perrylink)** — full mirror of every repo's branches and tags (99 public repos)
+- **npm** — 40 packages published with CI provenance (449 versions)
+- **DSH Desktop Market** — add the catalog source `https://perrylink-dsh-catalog.perrylink.workers.dev/catalog-source.json` under Market → Sources to browse all 36 family packages in-app (curated summaries + icons, contract-validated, CI-smoked)
 
-Listed on [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin), [Awesome DeepSeek Harness](https://github.com/0xsline/awesome-deepseek-harness), the [AdamPlatin123 radar](https://github.com/AdamPlatin123/dsh-plugin-radar), and [dsh-market](https://github.com/dsh-market/dsh-market) (via the awesome-dsh-plugin registry). Auto-indexed on [deepseek1024.com](https://deepseek1024.com) (36 entries). Certification: [dsh-plugin-certification](https://github.com/PerryLink/dsh-plugin-certification).
+Listed on [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) (35 entries), [Awesome DeepSeek Harness](https://github.com/0xsline/awesome-deepseek-harness), the [AdamPlatin123 radar](https://github.com/AdamPlatin123/dsh-plugin-radar), and [dsh-market](https://github.com/dsh-market/dsh-market) (via the awesome-dsh-plugin registry). Auto-indexed on [deepseek1024.com](https://deepseek1024.com) (36 entries). Certification: [dsh-plugin-certification](https://github.com/PerryLink/dsh-plugin-certification).
 
 ## 中文介绍
 
-我在 DeepSeek Harness 上把 Claude Code / Codex 生态里最实用的能力做成了开源插件:检查点回退、声明式权限、输出风格、跨会话记忆、MCP 面板,以及可验证研究报告 / 基金研究 / 行业研究 / 数据质量「研究四件套」——共 **34 个插件**(Apache-2.0),全部带五语文档、CI、npm 发布与 Gitee 镜像。一键全家桶:[`dsh-kit`](https://github.com/PerryLink/dsh-kit)。
+我在 DeepSeek Harness 上把 Claude Code / Codex 生态里最实用的能力做成了开源插件:检查点回退、声明式权限、输出风格、跨会话记忆、MCP 面板、微信/TickTick 桥接,以及可验证研究报告 / 基金研究 / 行业研究 / 数据质量「研究四件套」——共 **37 个插件**(Apache-2.0),全部带五语文档、CI、npm 发布与 Gitee 镜像。一键全家桶:[`dsh-kit`](https://github.com/PerryLink/dsh-kit)。
 
-2026-09-04 生态轮:① **生态收录波落地**——39k★ 官方 awesome-deepseek-integration PR [#732](https://github.com/deepseek-ai/awesome-deepseek-integration/pull/732)、dsh-desktop 友情链接 issue [#798](https://github.com/anywhere-labs/dsh-desktop/issues/798) + Fabric RFC 讨论、whalehub [#41](https://github.com/vvlife/whalehub-dsh/issues/41)–44、libukai [#100](https://github.com/libukai/awesome-deepseek-harness/issues/100)、Alex-Yanggg PR [#109](https://github.com/Alex-Yanggg/awesome-DSH-plugin/pull/109) 全部实测 open;`FUNDING.yml` 上线(GitHub Sponsors 就绪);② **主榜 31 条**——PR #4175 已合并(budget/click/draw/plugin-kit 进榜),#4176 关闭;omdsh [Submission] 累计 **76 条**;③ **DSH Desktop 市场目录源在线**(34 包 + 同源图标,CI 实测),33 仓 README 五语市场指引;W5 文章已发布于官方 Showcase #5016;④ **@perrylink/dsh-cert-mcp@0.1.1 上架**(认证体系 MCP server,09-03 16:28Z)——全家桶 npm 包达 **35 个**,34 插件包累计 **366 版本**(registry 实测);⑤ 家族 **710+ 星**(昨晚 701 起续涨);npm 8 月 **6.1 万** + 9 月前三日 **1.2 万**;Gitee **97 公开仓**;认证 auto-review B 级不变;官方仓 58 条、全 GitHub **92 条**问答;deepseek1024 自动收录 36 条。
+2026-09-05 轮:① **0.1.3-alpha.1 波次闭环**——39 仓 GitHub 推送+tag+Release、npm 发布 registry 全量核验、Gitee 镜像同步,全家桶 **40 个 npm 包累计 449 版本**(35 裸名 + 5 scoped);② **三个新成员上架**——dsh-wechat(微信桥接,npm 0.8.0)、@perrylink/dsh-ticktick(滴答清单桥接,scoped 命名决策已落地)、dsh-reach(多渠道审批桥);③ **例行社区盘点(A 类模式 1)**——84 仓枚举、全部 issue/PR/讨论线程逐条判定,**未回复 0 条**;23 仓开启 Discussions;permission-rules AST 命令分解正式排期(设计=discussion #10,fail-closed 优先);④ **收录推进**——awesome-dsh-plugin 主榜 **35 条**、omdsh hub [Submission] 累计 **113 条**、DSH Desktop 市场目录源 **36 项**;⑤ 家族 **755+ 星**;npm 8 月 **6.1 万** + 9 月前四日 **1.2 万**(滚动 30 天 6.0 万);Gitee **99 公开仓**;认证 auto-review B 级;官方仓 58 条、全 GitHub **92 条**问答;deepseek1024 自动收录 36 条。
 
 近期需要安排一次体检，为减少熬夜，后续的更新迭代节奏会适当放缓——问题和缺陷修复不会停，只是发布频率会降低一些，还请大家谅解。
