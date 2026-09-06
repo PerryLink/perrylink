@@ -18,7 +18,7 @@ DeepSeek Harness turned "everything is a plugin" into an ecosystem. I build the 
 
 ## 📣 Latest — 2026-09-06 round
 
-- **Family audit green** — all 40 repos passed full gates and install smokes against `@deepseek-ai/dsh` 0.1.2-rc.1 (npm) and the dsh-v0.1.3-alpha.1 master checkout; supported-version notes refreshed in every README.
+- **Family audit green** — all 40 repos passed full gates and install smokes against the **dsh-v0.1.3-alpha.1** master checkout (GitHub tag; npm dependency line 0.1.2-rc.1); supported-version notes refreshed in every README.
 - **Cordis upstream** — Windows/macOS CI merged ([#122](https://github.com/cordiverse/cordis/pull/122), contributor badge); a 45-patch downstream regression suite is offered for [#121](https://github.com/cordiverse/cordis/pull/121); 18-item errata for the [Cordis paper](https://arxiv.org/abs/2608.25512).
 - **Ecosystem** — DSH Desktop Market at 37 packages; awesome-dsh-plugin 36 entries; pan17/dsh-wechat cross-session PR merged (v0.9.0); dsh-cert-mcp live on Glama with an A-grade (TDQS 3.64).
 - **Snapshot** — 770★ across the family · 38 npm packages (33 bare + 5 scoped) · 82k downloads Aug + Sep 1–5 · public Gitee mirrors for every repo.
@@ -147,6 +147,6 @@ Listed on [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh
 
 我在 DeepSeek Harness 上把 Claude Code / Codex 生态里最实用的能力做成了开源插件:检查点回退、声明式权限、输出风格、跨会话记忆、MCP 面板、微信/TickTick 桥接,以及可验证研究报告 / 基金研究 / 行业研究 / 数据质量「研究四件套」——共 **37 个插件**(Apache-2.0),全部带五语文档、CI、npm 发布与 Gitee 镜像。一键全家桶:[`dsh-kit`](https://github.com/PerryLink/dsh-kit)。
 
-2026-09-06 轮:① **全家桶审计全绿**——40 仓对照 npm `0.1.2-rc.1` 与 `dsh-v0.1.3-alpha.1` checkout 跑完全部门禁与安装冒烟,各仓 README 支持版本信息已同步,新增 `skill-pack-security-provider 2.2.8` 发布;② **Cordis 上游**——Windows/macOS CI 已合并(#122,CONTRIBUTOR),#121 的 45-patch 回归套件待命,论文勘误 18 条;③ **生态**——市场目录 37 项、主榜 36 条、pan17/dsh-wechat PR #4 已合并(v0.9.0)、cert-mcp 上 Glama A 级(TDQS 3.64);④ **快照**——家族 770+ 星、npm **38 包**(33 裸名+5 scoped)、8 月 6.1 万 + 9 月 1–5 日 2.1 万下载、Gitee 镜像全公开。
+2026-09-06 轮:① **全家桶审计全绿**——40 仓对照 **`dsh-v0.1.3-alpha.1`**（GitHub tag；npm 依赖线 0.1.2-rc.1）跑完全部门禁与安装冒烟,各仓 README 支持版本信息已同步,新增 `skill-pack-security-provider 2.2.8` 发布;② **Cordis 上游**——Windows/macOS CI 已合并(#122,CONTRIBUTOR),#121 的 45-patch 回归套件待命,论文勘误 18 条;③ **生态**——市场目录 37 项、主榜 36 条、pan17/dsh-wechat PR #4 已合并(v0.9.0)、cert-mcp 上 Glama A 级(TDQS 3.64);④ **快照**——家族 770+ 星、npm **38 包**(33 裸名+5 scoped)、8 月 6.1 万 + 9 月 1–5 日 2.1 万下载、Gitee 镜像全公开。
 
 近期需要安排一次体检，为减少熬夜，后续的更新迭代节奏会适当放缓——问题和缺陷修复不会停，只是发布频率会降低一些，还请大家谅解。
