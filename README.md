@@ -166,4 +166,4 @@ Listed on [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh
 
 2026-09-06 轮:① **全家桶审计全绿**——40 仓对照 **`dsh-v0.1.3-alpha.1`**（GitHub tag；npm 依赖线 0.1.2-rc.1）跑完全部门禁与安装冒烟,各仓 README 支持版本信息已同步,新增 `skill-pack-security-provider 2.2.8` 发布;② **Cordis 上游**——Windows/macOS CI 已合并(#122,CONTRIBUTOR),#121 的 45-patch 回归套件待命,论文勘误 18 条;③ **生态**——市场目录 37 项、主榜 36 条、pan17/dsh-wechat PR #4 已合并(v0.9.0)、cert-mcp 上 Glama A 级(TDQS 3.64);④ **快照**——家族 770+ 星、npm **38 包**(33 裸名+5 scoped)、8 月 6.1 万 + 9 月 1–5 日 2.1 万下载、Gitee 镜像全公开。
 
-待业中。近期需要安排一次体检，为减少熬夜，后续的更新迭代节奏会适当放缓——问题和缺陷修复不会停，只是发布频率会降低一些，还请大家谅解。
+待业中。近期考虑给自己安排一次体检。因此最近将减少熬夜，后续的更新迭代节奏会适当放缓。当然，问题和缺陷修复不会停，只是发布频率会降低一些，还请大家谅解。
