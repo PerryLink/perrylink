@@ -56,7 +56,7 @@ jobs:
             dsh-personal-directive dsh-plugin-guide dsh-plugin-kit dsh-research-report \
             dsh-score dsh-session-pin dsh-session-sync dsh-skill-pack-security dsh-talk \
             dsh-test-drive dsh-translate dsh-reach dsh-catalog dsh-cert-mcp dsh-ticktick \
-            dsh-wechat)
+            dsh-wechat dsh-plugin-doctor)
           sync_repo() {
             local r="$1"
             rm -rf "/tmp/$r"
