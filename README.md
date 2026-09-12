@@ -1,17 +1,17 @@
-# Hi, I'm PerryLink 👋
+﻿# Hi, I'm PerryLink 👋
 
 [![Gitee mirror](https://img.shields.io/badge/Gitee-mirror-c71d23?logo=gitee)](https://gitee.com/perrylink)
 [![DSH Desktop Market](https://img.shields.io/badge/DSH_Desktop_Market-source-0969da)](https://perrylink-dsh-catalog.perrylink.workers.dev/catalog-source.json)
 [![npm packages](https://img.shields.io/badge/npm-packages-cb3837?logo=npm)](https://www.npmjs.com/search?q=perrylink)
 ![plugins](https://img.shields.io/badge/plugins-40-0969da)
 ![repos](https://img.shields.io/badge/repos-117-green)
-![stars](https://img.shields.io/badge/stars-930%2B-yellow)
+![stars](https://img.shields.io/badge/stars-939-yellow)
 ![npm downloads](https://img.shields.io/badge/npm_downloads-115k%2B_AugSep-cb3837)
 [![Certified dsh-auto-review](https://raw.githubusercontent.com/PerryLink/dsh-plugin-certification/main/badges/PerryLink__dsh-auto-review.svg)](https://github.com/PerryLink/dsh-plugin-certification)
 [![awesome-dsh-plugin](https://awesome-dsh-plugin.com/badge.svg)](https://awesome-dsh-plugin.com)
 [![Listed on DSH Directory](https://dsh.directory/badges/listed.svg)](https://dsh.directory/plugins?q=perrylink)
 
-**Building the DeepSeek Harness plugin ecosystem: 40 open-source plugins (Apache-2.0) across security, workflows, research, messaging bridges, and developer experience — plus the DSH Desktop Market catalog, a plugin-certification registry, and the dsh-plugin-doctor CI checker. Every project ships five-language READMEs, CI, npm provenance, and Gitee mirrors — 63.9k npm downloads in August plus 51.2k in September so far (115.1k over the last 30 days). I also contribute upstream to [Cordis](https://github.com/cordiverse/cordis), the plugin-core framework DeepSeek Harness itself is built on.**
+**Building the DeepSeek Harness plugin ecosystem: 40 open-source plugins (`dsh.bundle` plugins) — 45 repos in the family (Apache-2.0) across security, workflows, research, messaging bridges, and developer experience — plus the DSH Desktop Market catalog, a plugin-certification registry, and the dsh-plugin-doctor CI checker. 39 of the 45 repos ship five-language READMEs, and every plugin ships CI, npm provenance, and a Gitee mirror — 63.9k npm downloads in August plus 51.2k in September so far (115.1k over the last 30 days). I also contribute upstream to [Cordis](https://github.com/cordiverse/cordis), the plugin-core framework DeepSeek Harness itself is built on.**
 
 DeepSeek Harness turned "everything is a plugin" into an ecosystem. I build the plugins I wish existed — engineering-discipline guardrails, runtime panels, cross-session memory, and verifiable research engines — and publish them the way production software deserves.
 
@@ -24,7 +24,7 @@ DeepSeek Harness turned "everything is a plugin" into an ecosystem. I build the 
 - **[dsh-permission-rules](https://github.com/PerryLink/dsh-permission-rules) 0.7.1 → 0.7.2, twice in one day** — [PR #24](https://github.com/PerryLink/dsh-permission-rules/pull/24) splits the pure allow-host helpers out of the host-only module, then the rc.2 pin.
 - **[dsh-plugin-doctor](https://github.com/PerryLink/dsh-plugin-doctor) 0.2.1** — `fix(R8): catch every stale peer-range shape, not the two that existed on Sep 5`: the checker no longer passes a peer range it merely failed to recognise.
 - **Hygiene and small correctness fixes** — dsh-budget and dsh-background-agents restored em dashes mangled in their comments, dsh-plugin-kit dropped the byte-order marks its own release gate forbids, dsh-research-report restored the Chinese evidence markers in its hub submission, dsh-personal-directive now derives its reported version from `package.json`, and dsh-draw's test reads the version from `src/version.ts` instead of hardcoding it.
-- **Snapshot** — 938★ across 47 repos · 40 live repos declaring the `dsh.bundle` contract · 44 npm packages (38 bare + 6 scoped) · 676 versions · 63.9k downloads in August plus 51.2k in September so far (115.1k over the last 30 days; npm's published series reaches Sep 10, with Sep 3, 7 and 8 missing registry-wide) · 104 public Gitee repos.
+- **Snapshot** — 939★ across 45 repos (40 `dsh.bundle` plugins + 5 support repos) · 40 live repos declaring the `dsh.bundle` contract · 40 published npm packages (34 bare + 6 scoped; `dsh-skill-pack-security`, `dsh-catalog` and the `dsh-personal-directive` fork are not published from these repos) · 676 versions · 63.9k downloads in August plus 51.2k in September so far (115.1k over the last 30 days; npm's published series reaches Sep 10, with Sep 3, 7 and 8 missing registry-wide) · 104 public Gitee repos.
 
 ### 2026-09-11 round
 
@@ -161,7 +161,7 @@ One-command starter pack: **[dsh-kit](https://github.com/PerryLink/dsh-kit)** �
 
 - **GitHub** (this profile) — source, CI, releases
 - **[Gitee](https://gitee.com/perrylink)** — 104 public repos, with 43 family repos mirrored automatically (branches + tags)
-- **npm** — 44 packages published with CI provenance (38 bare + 6 scoped)
+- **npm** — 40 packages published with CI provenance (34 bare + 6 scoped), plus the scoped security provider
 - **DSH Desktop Market** — add the catalog source `https://perrylink-dsh-catalog.perrylink.workers.dev/catalog-source.json` under Market → Sources to browse all 40 family packages in-app (curated summaries + icons, contract-validated, CI-smoked)
 
 Listed on [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) (36 entries), [DSH Directory](https://dsh.directory/plugins?q=perrylink) (35 published), [Awesome DeepSeek Harness](https://github.com/0xsline/awesome-deepseek-harness), [awesome-deepseekharness](https://github.com/awesome-deepseekharness/awesome-deepseek-harness), [Zhiyuan-Fan's list](https://github.com/Zhiyuan-Fan/Awesome-DeepSeek-Harness-Plugins), the [AdamPlatin123 radar](https://github.com/AdamPlatin123/dsh-plugin-radar), [dsh-market](https://github.com/dsh-market/dsh-market) (via the awesome-dsh-plugin registry), [dsh-suite](https://github.com/whyihaveyou/dsh-suite), and [ZeroPointRepo's list](https://github.com/ZeroPointRepo/awesome-dsh-plugins). Auto-indexed on [deepseek1024.com](https://deepseek1024.com) (36 entries). Certification: [dsh-plugin-certification](https://github.com/PerryLink/dsh-plugin-certification).
