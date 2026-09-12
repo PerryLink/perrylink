@@ -160,7 +160,7 @@ One-command starter pack: **[dsh-kit](https://github.com/PerryLink/dsh-kit)** �
 ## 🌍 Where the plugins live
 
 - **GitHub** (this profile) — source, CI, releases
-- **[Gitee](https://gitee.com/perrylink)** — 104 public repos, with 44 family repos mirrored automatically (branches + tags)
+- **[Gitee](https://gitee.com/perrylink)** — 104 public repos, with 43 family repos mirrored automatically (branches + tags)
 - **npm** — 44 packages published with CI provenance (38 bare + 6 scoped)
 - **DSH Desktop Market** — add the catalog source `https://perrylink-dsh-catalog.perrylink.workers.dev/catalog-source.json` under Market → Sources to browse all 40 family packages in-app (curated summaries + icons, contract-validated, CI-smoked)
 
