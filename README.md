@@ -4,29 +4,32 @@
 [![DSH Desktop Market](https://img.shields.io/badge/DSH_Desktop_Market-source-0969da)](https://perrylink-dsh-catalog.perrylink.workers.dev/catalog-source.json)
 [![npm packages](https://img.shields.io/badge/npm-packages-cb3837?logo=npm)](https://www.npmjs.com/search?q=perrylink)
 ![plugins](https://img.shields.io/badge/plugins-40-0969da)
-![repos](https://img.shields.io/badge/repos-117-green)
-![stars](https://img.shields.io/badge/stars-950-yellow)
-![npm downloads](https://img.shields.io/badge/npm_downloads-115k%2B_AugSep-cb3837)
+![repos](https://img.shields.io/badge/repos-146-green)
+![stars](https://img.shields.io/badge/stars-969-yellow)
+![npm downloads](https://img.shields.io/badge/npm_downloads-125k%2B_AugSep-cb3837)
 [![Certified dsh-auto-review](https://raw.githubusercontent.com/PerryLink/dsh-plugin-certification/main/badges/PerryLink__dsh-auto-review.svg)](https://github.com/PerryLink/dsh-plugin-certification)
 [![awesome-dsh-plugin](https://awesome-dsh-plugin.com/badge.svg)](https://awesome-dsh-plugin.com)
 [![Listed on DSH Directory](https://dsh.directory/badges/listed.svg)](https://dsh.directory/plugins?q=perrylink)
 
-**Building the DeepSeek Harness plugin ecosystem: 40 open-source plugins (`dsh.bundle` plugins) — 45 repos in the family (Apache-2.0) across security, workflows, research, messaging bridges, and developer experience — plus the DSH Desktop Market catalog, a plugin-certification registry, and the dsh-plugin-doctor CI checker. 39 of the 45 repos ship five-language READMEs, and every plugin ships CI, npm provenance, and a Gitee mirror — 63.9k npm downloads in August plus 51.2k in September so far (115.1k over the last 30 days). I also contribute upstream to [Cordis](https://github.com/cordiverse/cordis), the plugin-core framework DeepSeek Harness itself is built on.**
+**Building the DeepSeek Harness plugin ecosystem: 40 open-source plugins (`dsh.bundle` plugins) — 45 repos in the family (Apache-2.0) across security, workflows, research, messaging bridges, and developer experience — plus the DSH Desktop Market catalog, a plugin-certification registry, and the dsh-plugin-doctor CI checker. 39 of the 45 repos ship five-language READMEs, and every plugin ships CI, npm provenance, and a Gitee mirror — 69.1k npm downloads in August plus 55.9k in September through the 11th (124.9k over the last 30 days). I also contribute upstream to [Cordis](https://github.com/cordiverse/cordis), the plugin-core framework DeepSeek Harness itself is built on.**
 
 DeepSeek Harness turned "everything is a plugin" into an ecosystem. I build the plugins I wish existed — engineering-discipline guardrails, runtime panels, cross-session memory, and verifiable research engines — and publish them the way production software deserves.
 
 ---
 
-## 📣 Latest — 2026-09-12 round
+<!-- Round rotation: keep only the newest two rounds (current + one previous). Older rounds live in git history and can be restored on request. GHSA/long-lived references belong in "Upstream & community contributions", not here. -->
+
+## 📣 Latest — 2026-09-13 round
+
+- **The day went wide instead of deep — the ecosystem-submission wave.** 29 new forks seeded across the harness ecosystem, then 149 pull requests and 47 issues opened against 33 upstream projects and directories in a single day, **52 of them already merged** ([imsai-sh](https://github.com/imsai-sh/awesome-deepseek-harness-plugins) took 17, [beancookie](https://github.com/beancookie/awesome-dsh-plugin) 4, [Dominic789654](https://github.com/Dominic789654/awesome-deepseek-harness) 3, plus [Oh-My-DSH](https://github.com/like-study1/Oh-My-DSH), [dsh-plugin-radar](https://github.com/AdamPlatin123/dsh-plugin-radar), [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) and more) — 147 of the 149 outside my own repos. The family itself was quiet: 16 commits across 11 repos and 2 releases.
+- **Two releases to open** — [dsh-cert-mcp](https://github.com/PerryLink/dsh-cert-mcp) 0.1.6 and [dsh-plugin-doctor](https://github.com/PerryLink/dsh-plugin-doctor) 0.2.3, both adding `dsh.bundle` so the certification registry and the health checker clear the marketplace gates themselves. Alongside them: [dsh-catalog](https://github.com/PerryLink/dsh-catalog) added four entries (team-rooms, plugin-kit, plugin-doctor, plugin-upgrade-015), [dsh-team-rooms](https://github.com/PerryLink/dsh-team-rooms) repaired its CI workflow, and four repos dropped withdrawn-repo references from their manifests.
+- **Snapshot** — 969★ across the 45 family repos (40 `dsh.bundle` plugins + 5 support repos) · 40 live repos declaring the `dsh.bundle` contract · 42 published npm packages (36 bare + 6 scoped; two further names are the deprecated legacy corridor packages) · 689 versions · 69.1k downloads in August plus 55.9k in September through the 11th (124.9k over the last 30 days, npm window 08-13..09-11) · 105 public Gitee repos, 42 of them family mirrors.
+
+### 2026-09-12 round
 
 - **The whole family moved twice in one day.** In the afternoon every plugin repo adopted the `dsh-v0.1.5-rc.2` host line — the same two-commit change everywhere (pin `@deepseek-ai/dsh-*`, refresh the five-language compatibility baseline) — 39 repos migrated and 42 Releases shipped in one pass. In the evening the same fleet ran a second synchronized pass: 42 repos refreshed their five-language READMEs and the shared family roster at once. The day closed at **198 commits across 46 repos and 45 GitHub Releases**.
 - **A few releases worth opening** — [dsh-permission-rules](https://github.com/PerryLink/dsh-permission-rules) 0.7.1 → 0.7.2 splits the pure allow-host helpers out of the host-only module ([PR #24](https://github.com/PerryLink/dsh-permission-rules/pull/24)); [dsh-team-rooms](https://github.com/PerryLink/dsh-team-rooms) 1.0.1 is day two of the extracted plugin; [dsh-plugin-doctor](https://github.com/PerryLink/dsh-plugin-doctor) 0.2.2 stopped passing a stale peer range it merely failed to recognise; [dsh-mask](https://github.com/PerryLink/dsh-mask) 0.2.10 and [dsh-auto-review](https://github.com/PerryLink/dsh-auto-review) 0.12.4 tightened their docs and tests. Alongside them the usual hygiene batch: restored em dashes and Chinese evidence markers, the byte-order marks the release gate forbids, and two plugins now reading their version from the package manifest instead of a hardcoded string.
 - **Snapshot** — 950★ across the 45 family repos (40 `dsh.bundle` plugins + 5 support repos) · 40 live repos declaring the `dsh.bundle` contract · 44 published npm packages (38 bare + 6 scoped; two are the deprecated legacy names retired by the upgrade-corridor merge) · 679 versions · 63.9k downloads in August plus 51.2k in September so far (115.1k over the last 30 days; npm's published series reaches Sep 10, with Sep 3, 7 and 8 missing registry-wide) · 104 public Gitee repos.
-
-### 2026-09-11 round
-
-- **[dsh-team-rooms](https://github.com/PerryLink/dsh-team-rooms) 1.0.0** — team rooms extracted out of dsh-background-agents into a standalone plugin: cross-session rooms with a message bus, a shared task board, approval-gated handoffs and a timeline that survives restarts.
-- **[dsh-plugin-upgrade-015](https://github.com/PerryLink/dsh-plugin-upgrade-015) 0.1.0 and the re-pointed registry** — the two upgrade corridors merged into one package (npm rejected the original name, so it ships as `-015`), a one-shot workflow deprecated the two retired npm names, and [dsh-plugin-doctor](https://github.com/PerryLink/dsh-plugin-doctor) moved its verified registry over and enrolled dsh-team-rooms.
 
 ---
 
@@ -34,11 +37,11 @@ DeepSeek Harness turned "everything is a plugin" into an ecosystem. I build the 
 
 | Plugin | What it gives you | Install |
 |---|---|---|
-| [dsh-auto-review](https://github.com/PerryLink/dsh-auto-review) | Second-model auto-review on the approval chain, fail-closed by default (158★) | `dsh plugin --profile web add dsh-auto-review` |
+| [dsh-auto-review](https://github.com/PerryLink/dsh-auto-review) | Second-model auto-review on the approval chain, fail-closed by default (165★) | `dsh plugin --profile web add dsh-auto-review` |
 | [dsh-permission-rules](https://github.com/PerryLink/dsh-permission-rules) | Claude Code-style declarative allow/deny/ask rules plus a process-level network policy (114★) | `dsh plugin --profile web add dsh-permission-rules` |
-| [dsh-memento](https://github.com/PerryLink/dsh-memento) | Approval-gated cross-session memory (`ctx.memory` + SQLite) (85★) | `dsh plugin --profile web add dsh-memento` |
+| [dsh-memento](https://github.com/PerryLink/dsh-memento) | Approval-gated cross-session memory (`ctx.memory` + SQLite) (89★) | `dsh plugin --profile web add dsh-memento` |
 | [dsh-mcp-panel](https://github.com/PerryLink/dsh-mcp-panel) | MCP management console: `/mcp` + Settings tab + trial calls (55★) | `dsh plugin --profile web add dsh-mcp-panel` |
-| [dsh-checkpoint-rewind](https://github.com/PerryLink/dsh-checkpoint-rewind) | Claude Code `/rewind` equivalent: git-first snapshots, session forks, one-shot restore (17★) | `dsh plugin --profile web add dsh-checkpoint-rewind` |
+| [dsh-checkpoint-rewind](https://github.com/PerryLink/dsh-checkpoint-rewind) | Claude Code `/rewind` equivalent: git-first snapshots, session forks, one-shot restore (18★) | `dsh plugin --profile web add dsh-checkpoint-rewind` |
 | [dsh-autotier](https://github.com/PerryLink/dsh-autotier) | Automatic strong/cheap model-tier routing with deterministic risk guards and a `/tier` command (new) | `dsh plugin --profile web add dsh-autotier` |
 
 One-command starter pack: **[dsh-kit](https://github.com/PerryLink/dsh-kit)** — installs the core family in one command.
@@ -155,18 +158,20 @@ One-command starter pack: **[dsh-kit](https://github.com/PerryLink/dsh-kit)** �
 ## 🌍 Where the plugins live
 
 - **GitHub** (this profile) — source, CI, releases
-- **[Gitee](https://gitee.com/perrylink)** — 104 public repos, with 43 family repos mirrored automatically (branches + tags)
-- **npm** — 44 packages published with CI provenance (38 bare + 6 scoped; two are the deprecated legacy names retired by the upgrade-corridor merge)
+- **[Gitee](https://gitee.com/perrylink)** — 105 public repos, with 42 family repos mirrored automatically (branches + tags)
+- **npm** — 42 packages published with CI provenance (36 bare + 6 scoped; two further names on the registry are the deprecated legacy corridor packages) — 124.9k downloads over npm's 2026-08-13..2026-09-11 window
 - **DSH Desktop Market** — add the catalog source `https://perrylink-dsh-catalog.perrylink.workers.dev/catalog-source.json` under Market → Sources to browse all 40 family packages in-app (curated summaries + icons, contract-validated, CI-smoked)
 
 Listed on [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) (36 entries), [DSH Directory](https://dsh.directory/plugins?q=perrylink) (35 published), [Awesome DeepSeek Harness](https://github.com/0xsline/awesome-deepseek-harness), [awesome-deepseekharness](https://github.com/awesome-deepseekharness/awesome-deepseek-harness), [Zhiyuan-Fan's list](https://github.com/Zhiyuan-Fan/Awesome-DeepSeek-Harness-Plugins), the [AdamPlatin123 radar](https://github.com/AdamPlatin123/dsh-plugin-radar), [dsh-market](https://github.com/dsh-market/dsh-market) (via the awesome-dsh-plugin registry), [dsh-suite](https://github.com/whyihaveyou/dsh-suite), and [ZeroPointRepo's list](https://github.com/ZeroPointRepo/awesome-dsh-plugins). Auto-indexed on [deepseek1024.com](https://deepseek1024.com) (36 entries). Certification: [dsh-plugin-certification](https://github.com/PerryLink/dsh-plugin-certification).
 
 ## 中文介绍
 
-我在 DeepSeek Harness 上把 Claude Code / Codex 生态里最实用的能力做成了开源插件:检查点回退、声明式权限、输出风格、跨会话记忆、MCP 面板、模型档位路由、微信/TickTick 桥接,以及可验证研究报告 / 基金研究 / 行业研究 / 数据质量「研究四件套」——共 **40 个插件**(Apache-2.0),全部带五语文档、CI、npm 发布与 Gitee 镜像。一键全家桶:[`dsh-kit`](https://github.com/PerryLink/dsh-kit)。同时我也是 DeepSeek Harness 上游核心框架 **Cordis**([cordiverse/cordis](https://github.com/cordiverse/cordis))的贡献者:Windows/macOS CI 已合并(#122),为 include-journal 修复(#121)提供了 45 个真实补丁文件的回归套件与验证,tarball 打包修复 PR(#126)与 NodeNext 类型声明 issue(#124)在途,并向 schemastery 提交了 ESM 消费面 issue(#77)与两枚 PR(#78/#79)。
+我在 DeepSeek Harness 上把 Claude Code / Codex 生态里最实用的能力做成了开源插件:检查点回退、声明式权限、输出风格、跨会话记忆、MCP 面板、模型档位路由、微信/TickTick 桥接,以及可验证研究报告 / 基金研究 / 行业研究 / 数据质量「研究四件套」——共 **40 个插件**(Apache-2.0),全部带五语文档、CI、npm 发布与 Gitee 镜像。npm 下载量:8 月 69.1k + 9 月截至 11 日 55.9k(近 30 天 124.9k,统计窗口 08-13..09-11)。一键全家桶:[`dsh-kit`](https://github.com/PerryLink/dsh-kit)。同时我也是 DeepSeek Harness 上游核心框架 **Cordis**([cordiverse/cordis](https://github.com/cordiverse/cordis))的贡献者:Windows/macOS CI 已合并(#122),为 include-journal 修复(#121)提供了 45 个真实补丁文件的回归套件与验证,tarball 打包修复 PR(#126)与 NodeNext 类型声明 issue(#124)在途,并向 schemastery 提交了 ESM 消费面 issue(#77)与两枚 PR(#78/#79)。
 
-2026-09-12 轮:① **全家族一天两波推进**——下午 39 个仓统一迁到 `dsh-v0.1.5-rc.2` 宿主线(全家族同一套两提交改动:钉 `@deepseek-ai/dsh-*`、刷新五语兼容基线),42 个 Release 当波发出;傍晚同一批仓再同步刷一遍,42 个仓一次性刷新五语文档与家族名册。全天 46 个仓 198 次提交、**45 个 GitHub Release**;② **几个值得点开的版本**——[dsh-permission-rules](https://github.com/PerryLink/dsh-permission-rules) 0.7.1 → 0.7.2 把纯 allow-host 辅助函数从 host-only 模块拆出([PR #24](https://github.com/PerryLink/dsh-permission-rules/pull/24)),[dsh-team-rooms](https://github.com/PerryLink/dsh-team-rooms) 1.0.1 是抽独立后的第二天,[dsh-plugin-doctor](https://github.com/PerryLink/dsh-plugin-doctor) 0.2.2 不再对"只是没被识别"的 peer range 放行,[dsh-mask](https://github.com/PerryLink/dsh-mask) 0.2.10 与 [dsh-auto-review](https://github.com/PerryLink/dsh-auto-review) 0.12.4 收紧文档与用例;同批还有例行卫生修复(修回被弄坏的破折号与中文证据标记、清掉发布门禁禁止的 BOM、两个插件改为从 package.json 读版本);③ **快照**——家族 950★(45 仓:40 个 `dsh.bundle` 插件 + 5 个支撑仓)· 40 个存活仓声明 `dsh.bundle` · npm **44 包**(38 裸名 + 6 scoped,其中两个是升级走廊合并后弃用的旧名)· 679 版本 · 8 月 63.9k + 9 月 51.2k(近 30 天 115.1k;npm 已公布序列到 09-10,09-03/07/08 全站缺失)· Gitee 公开仓 104。
+2026-09-13 轮:① **这一天不在深而在广——生态投稿波**。当天为 DSH 生态新开 29 个 fork 仓,随后面向 **33 个上游项目与目录**一次性提交 **149 枚 PR 与 47 条 issue,其中 52 枚已合并**([imsai-sh](https://github.com/imsai-sh/awesome-deepseek-harness-plugins) 收 17 枚,[beancookie](https://github.com/beancookie/awesome-dsh-plugin) 收 4 枚,[Dominic789654](https://github.com/Dominic789654/awesome-deepseek-harness) 收 3 枚,另有 [Oh-My-DSH](https://github.com/like-study1/Oh-My-DSH)、[dsh-plugin-radar](https://github.com/AdamPlatin123/dsh-plugin-radar)、[awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) 等)——149 枚里 147 枚落在家门之外;家族本体这天反而安静:11 个仓 16 次提交、2 个 Release;② **两个值得点开的版本**——[dsh-cert-mcp](https://github.com/PerryLink/dsh-cert-mcp) 0.1.6 与 [dsh-plugin-doctor](https://github.com/PerryLink/dsh-plugin-doctor) 0.2.3,双双补上 `dsh.bundle` 让自己也过市场门禁;同批还有 [dsh-catalog](https://github.com/PerryLink/dsh-catalog) 新增 4 条包条目(team-rooms、plugin-kit、plugin-doctor、plugin-upgrade-015)、[dsh-team-rooms](https://github.com/PerryLink/dsh-team-rooms) 修复 CI workflow,以及 4 个仓清掉已撤回仓的清单引用;③ **快照**——家族 969★(45 仓:40 个 `dsh.bundle` 插件 + 5 个支撑仓)· 40 个存活仓声明 `dsh.bundle` · npm **42 包**(36 裸名 + 6 scoped;另有 2 个已弃用的走廊旧名在册)· 689 版本 · 8 月 69.1k + 9 月截至 11 日 55.9k(近 30 天 124.9k,窗口 08-13..09-11)· Gitee 公开仓 105,其中 42 个为家族镜像。
 
-2026-09-11 轮:① **[dsh-team-rooms](https://github.com/PerryLink/dsh-team-rooms) 1.0.0**——从 dsh-background-agents 中抽出成为独立插件:跨会话房间,带消息总线、共享任务板、审批门控的交接与可跨重启存活的时间线;② **[dsh-plugin-upgrade-015](https://github.com/PerryLink/dsh-plugin-upgrade-015) 0.1.0 与 verified 注册表改指**——两条升级走廊合并为一个包(npm 拒绝原包名,故以 `-015` 发布),用一个一次性 workflow 弃用两个退役包名,[dsh-plugin-doctor](https://github.com/PerryLink/dsh-plugin-doctor) 把 verified 注册表改指过去并纳入 dsh-team-rooms。
+### 2026-09-12 轮
+
+① **全家族一天两波推进**——下午 39 个仓统一迁到 `dsh-v0.1.5-rc.2` 宿主线(全家族同一套两提交改动:钉 `@deepseek-ai/dsh-*`、刷新五语兼容基线),42 个 Release 当波发出;傍晚同一批仓再同步刷一遍,42 个仓一次性刷新五语文档与家族名册。全天 46 个仓 198 次提交、**45 个 GitHub Release**;② **几个值得点开的版本**——[dsh-permission-rules](https://github.com/PerryLink/dsh-permission-rules) 0.7.1 → 0.7.2 把纯 allow-host 辅助函数从 host-only 模块拆出([PR #24](https://github.com/PerryLink/dsh-permission-rules/pull/24)),[dsh-team-rooms](https://github.com/PerryLink/dsh-team-rooms) 1.0.1 是抽独立后的第二天,[dsh-plugin-doctor](https://github.com/PerryLink/dsh-plugin-doctor) 0.2.2 不再对"只是没被识别"的 peer range 放行,[dsh-mask](https://github.com/PerryLink/dsh-mask) 0.2.10 与 [dsh-auto-review](https://github.com/PerryLink/dsh-auto-review) 0.12.4 收紧文档与用例;同批还有例行卫生修复(修回被弄坏的破折号与中文证据标记、清掉发布门禁禁止的 BOM、两个插件改为从 package.json 读版本);③ **快照**——家族 950★(45 仓:40 个 `dsh.bundle` 插件 + 5 个支撑仓)· 40 个存活仓声明 `dsh.bundle` · npm **44 包**(38 裸名 + 6 scoped,其中两个是升级走廊合并后弃用的旧名)· 679 版本 · 8 月 63.9k + 9 月 51.2k(近 30 天 115.1k;npm 已公布序列到 09-10,09-03/07/08 全站缺失)· Gitee 公开仓 104。
 
 待业中。近期考虑给自己安排一次体检。因此最近将减少熬夜，后续的更新迭代节奏会适当放缓。当然，问题和缺陷修复不会停，只是发布频率会降低一些，还请大家谅解。
