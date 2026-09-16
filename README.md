@@ -54,7 +54,7 @@ One-command starter pack: **[dsh-kit](https://github.com/PerryLink/dsh-kit)** �
 | [dsh-industry-research](https://github.com/PerryLink/dsh-industry-research) | Industry/company research: chain-map SVG with bottleneck detection, timeline, company cards, adversarial review | [npm](https://www.npmjs.com/package/dsh-industry-research) |
 | [dsh-data-quality](https://github.com/PerryLink/dsh-data-quality) | Deterministic data profiling/cleaning/verification: DAMA scorecard, content-hash dedupe, metric expectations | [npm](https://www.npmjs.com/package/dsh-data-quality) |
 
-## 📦 The full family — 40 plugins by pillar
+## 📦 The full family — 40 plugins
 
 ### 🔒 Security (4)
 
