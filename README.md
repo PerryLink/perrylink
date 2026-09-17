@@ -6,12 +6,12 @@
 ![plugins](https://img.shields.io/badge/plugins-40-0969da)
 ![repos](https://img.shields.io/badge/repos-147-green)
 ![stars](https://img.shields.io/badge/stars-1060-yellow)
-![npm downloads](https://img.shields.io/badge/npm_downloads-134k%2B_AugSep-cb3837)
+![npm downloads](https://img.shields.io/badge/npm_downloads-129k_30d-cb3837)
 [![Certified dsh-auto-review](https://raw.githubusercontent.com/PerryLink/dsh-plugin-certification/main/badges/PerryLink__dsh-auto-review.svg)](https://github.com/PerryLink/dsh-plugin-certification)
 [![awesome-dsh-plugin](https://awesome-dsh-plugin.com/badge.svg)](https://awesome-dsh-plugin.com)
 [![Listed on DSH Directory](https://dsh.directory/badges/listed.svg)](https://dsh.directory/plugins?q=perrylink)
 
-**Building the [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) plugin ecosystem: 40 open-source plugins (`dsh.bundle` plugins) — 45 repos in the family (Apache-2.0) across security, workflows, research, messaging bridges, and developer experience — plus the DSH Desktop Market catalog, a plugin-certification registry, and the dsh-plugin-doctor CI checker. 39 of the 45 repos ship five-language READMEs, and every plugin ships CI, npm provenance, and a Gitee mirror — 69.1k npm downloads in August plus 73.2k in September through the 14th (134.7k over the last 30 days). I also contribute upstream to [Cordis](https://github.com/cordiverse/cordis) — the plugin-core framework DeepSeek Harness itself is built on — and to [deepseek-ai](https://github.com/deepseek-ai) projects, with a merged [FlashMLA](https://github.com/deepseek-ai/FlashMLA) fix among them.**
+**Building the [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) plugin ecosystem: 40 open-source plugins (`dsh.bundle` plugins) — 45 repos in the family (Apache-2.0) across security, workflows, research, messaging bridges, and developer experience — plus the DSH Desktop Market catalog, a plugin-certification registry, and the dsh-plugin-doctor CI checker. 39 of the 45 repos ship five-language READMEs, every plugin ships CI, npm provenance, and a Gitee mirror, and 42 of the repos declare the `dsh.bundle` contract — 69.1k npm downloads in August plus 72.5k in September through the 16th (128.9k over the trailing 30 days, npm window 08-18..09-16, measured 2026-09-17). I also contribute upstream to [Cordis](https://github.com/cordiverse/cordis) — the plugin-core framework DeepSeek Harness itself is built on — and to [deepseek-ai](https://github.com/deepseek-ai) projects, with a merged [FlashMLA](https://github.com/deepseek-ai/FlashMLA) fix among them.**
 
 DeepSeek Harness turned "everything is a plugin" into an ecosystem. I build the plugins I wish existed — engineering-discipline guardrails, runtime panels, cross-session memory, and verifiable research engines — and publish them the way production software deserves.
 
@@ -36,10 +36,10 @@ DeepSeek Harness turned "everything is a plugin" into an ecosystem. I build the 
 
 | Plugin | What it gives you | Install |
 |---|---|---|
-| [dsh-auto-review](https://github.com/PerryLink/dsh-auto-review) | Second-model auto-review on the approval chain, fail-closed by default (169★) | `dsh plugin --profile web add dsh-auto-review` |
+| [dsh-auto-review](https://github.com/PerryLink/dsh-auto-review) | Second-model auto-review on the approval chain, fail-closed by default (175★) | `dsh plugin --profile web add dsh-auto-review` |
 | [dsh-permission-rules](https://github.com/PerryLink/dsh-permission-rules) | Claude Code-style declarative allow/deny/ask rules plus a process-level network policy (112★) | `dsh plugin --profile web add dsh-permission-rules` |
-| [dsh-memento](https://github.com/PerryLink/dsh-memento) | Approval-gated cross-session memory (`ctx.memory` + SQLite) (95★) | `dsh plugin --profile web add dsh-memento` |
-| [dsh-mcp-panel](https://github.com/PerryLink/dsh-mcp-panel) | MCP management console: `/mcp` + Settings tab + trial calls (58★) | `dsh plugin --profile web add dsh-mcp-panel` |
+| [dsh-memento](https://github.com/PerryLink/dsh-memento) | Approval-gated cross-session memory (`ctx.memory` + SQLite) (97★) | `dsh plugin --profile web add dsh-memento` |
+| [dsh-mcp-panel](https://github.com/PerryLink/dsh-mcp-panel) | MCP management console: `/mcp` + Settings tab + trial calls (61★) | `dsh plugin --profile web add dsh-mcp-panel` |
 | [dsh-checkpoint-rewind](https://github.com/PerryLink/dsh-checkpoint-rewind) | Claude Code `/rewind` equivalent: git-first snapshots, session forks, one-shot restore (17★) | `dsh plugin --profile web add dsh-checkpoint-rewind` |
 | [dsh-autotier](https://github.com/PerryLink/dsh-autotier) | Automatic strong/cheap model-tier routing with deterministic risk guards and a `/tier` command (new) | `dsh plugin --profile web add dsh-autotier` |
 
@@ -54,7 +54,7 @@ One-command starter pack: **[dsh-kit](https://github.com/PerryLink/dsh-kit)** �
 | [dsh-industry-research](https://github.com/PerryLink/dsh-industry-research) | Industry/company research: chain-map SVG with bottleneck detection, timeline, company cards, adversarial review | [npm](https://www.npmjs.com/package/dsh-industry-research) |
 | [dsh-data-quality](https://github.com/PerryLink/dsh-data-quality) | Deterministic data profiling/cleaning/verification: DAMA scorecard, content-hash dedupe, metric expectations | [npm](https://www.npmjs.com/package/dsh-data-quality) |
 
-## 📦 The full family — 40 plugins
+## 📦 The full family — 40 plugins + 5 support repos
 
 ### 🔒 Security (4)
 
@@ -157,16 +157,16 @@ One-command starter pack: **[dsh-kit](https://github.com/PerryLink/dsh-kit)** �
 
 ## 🌍 Where the plugins live
 
-- **GitHub** (this profile) — source, CI, releases; **1,060★ across the 45 family repos** (40 `dsh.bundle` plugins + 5 support repos), 43 of them declaring the `dsh.bundle` contract
+- **GitHub** (this profile) — source, CI, releases; **1,089★ across the 45 family repos** (40 `dsh.bundle` plugins + 5 support repos), 42 of them declaring the `dsh.bundle` contract
 - **[Gitee](https://gitee.com/perrylink)** — 105 public repos, with all 45 family repos mirrored (branches + tags; the upgrade-corridor mirror lives under its former name `dsh-plugin-upgrade`)
-- **npm** — 42 packages published with CI provenance (36 bare + 6 scoped; two further names on the registry are the legacy corridor packages), 682 versions across the 44 PerryLink-published names (716 with pan17's dsh-wechat) — 69.1k downloads in August plus 73.2k in September through the 14th (134.7k over the last 30 days, npm window 08-16..09-14)
+- **npm** — 41 packages published with CI provenance (35 bare + 6 scoped), plus 3 legacy names on the registry (2 deprecated corridor packages and the withdrawn `dsh-personal-directive`), 682 versions across the 44 PerryLink-published names (716 with pan17's dsh-wechat) — 69.1k downloads in August plus 72.5k in September through the 16th (128.9k over the trailing 30 days, npm window 08-18..09-16)
 - **DSH Desktop Market** — add the catalog source `https://perrylink-dsh-catalog.perrylink.workers.dev/catalog-source.json` under Market → Sources to browse all 40 family packages in-app (curated summaries + icons, contract-validated, CI-smoked)
 
 Listed on [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) (36 entries), [DSH Directory](https://dsh.directory/plugins?q=perrylink) (35 published), [Awesome DeepSeek Harness](https://github.com/0xsline/awesome-deepseek-harness), [awesome-deepseekharness](https://github.com/awesome-deepseekharness/awesome-deepseek-harness), [Zhiyuan-Fan's list](https://github.com/Zhiyuan-Fan/Awesome-DeepSeek-Harness-Plugins), the [AdamPlatin123 radar](https://github.com/AdamPlatin123/dsh-plugin-radar), [dsh-market](https://github.com/dsh-market/dsh-market) (via the awesome-dsh-plugin registry), [dsh-suite](https://github.com/whyihaveyou/dsh-suite), and [ZeroPointRepo's list](https://github.com/ZeroPointRepo/awesome-dsh-plugins). Auto-indexed on [deepseek1024.com](https://deepseek1024.com) (36 entries). Certification: [dsh-plugin-certification](https://github.com/PerryLink/dsh-plugin-certification).
 
 ## 中文介绍
 
-我在 DeepSeek Harness 上把 Claude Code / Codex 生态里最实用的能力做成了开源插件:检查点回退、声明式权限、输出风格、跨会话记忆、MCP 面板、模型档位路由、微信/TickTick 桥接,以及可验证研究报告 / 基金研究 / 行业研究 / 数据质量「研究四件套」——共 **40 个插件**(Apache-2.0),全部带五语文档、CI、npm 发布与 Gitee 镜像。npm 下载量:8 月 69.1k + 9 月截至 14 日 73.2k(近 30 天 134.7k,统计窗口 08-16..09-14)。一键全家桶:[`dsh-kit`](https://github.com/PerryLink/dsh-kit)。同时我也是 DeepSeek Harness 上游核心框架 **Cordis**([cordiverse/cordis](https://github.com/cordiverse/cordis))的贡献者:Windows/macOS CI 已合并(#122),为 include-journal 修复(#121)提供了 45 个真实补丁文件的回归套件与验证,tarball 打包修复 PR(#126)与 NodeNext 类型声明 issue(#124)在途,并向 schemastery 提交了 ESM 消费面 issue(#77)与两枚 PR(#78/#79)。同时我已成为 [deepseek-ai](https://github.com/deepseek-ai) 官方仓贡献者:[FlashMLA](https://github.com/deepseek-ai/FlashMLA) #224 已合并(修复 Windows 下 sm90 st.async PTX 传输的 128 位宽度静默截断)。
+我在 DeepSeek Harness 上把 Claude Code / Codex 生态里最实用的能力做成了开源插件:检查点回退、声明式权限、输出风格、跨会话记忆、MCP 面板、模型档位路由、微信/TickTick 桥接,以及可验证研究报告 / 基金研究 / 行业研究 / 数据质量「研究四件套」——共 **40 个插件**(Apache-2.0),全部带五语文档、CI、npm 发布与 Gitee 镜像(45 个家族仓中有 39 个带五语文档,42 个声明 `dsh.bundle` 契约)。npm:已发布 **41 个包**(35 个非 scoped + 6 个 scoped),另有 3 个历史名称(两个弃用的走廊包,以及已撤回的 `dsh-personal-directive`),44 个 PerryLink 名称累计 682 个版本(含 pan17 的 dsh-wechat 为 716 个)。下载量:8 月 69.1k + 9 月截至 16 日 72.5k(近 30 天 128.9k,统计窗口 08-18..09-16)。一键全家桶:[`dsh-kit`](https://github.com/PerryLink/dsh-kit)。同时我也是 DeepSeek Harness 上游核心框架 **Cordis**([cordiverse/cordis](https://github.com/cordiverse/cordis))的贡献者:Windows/macOS CI 已合并(#122),为 include-journal 修复(#121)提供了 45 个真实补丁文件的回归套件与验证,tarball 打包修复 PR(#126)与 NodeNext 类型声明 issue(#124)在途,并向 schemastery 提交了 ESM 消费面 issue(#77)与两枚 PR(#78/#79)。同时我已成为 [deepseek-ai](https://github.com/deepseek-ai) 官方仓贡献者:[FlashMLA](https://github.com/deepseek-ai/FlashMLA) #224 已合并(修复 Windows 下 sm90 st.async PTX 传输的 128 位宽度静默截断)。
 
 2026-09-16 轮:① **0.1.6-alpha.1 兼容波**——今天上午 6 个仓 8 次提交:[dsh-ticktick](https://github.com/PerryLink/dsh-ticktick) 为新 checkout 同时携带两种 Typert strict-codec 面孔、[dsh-click](https://github.com/PerryLink/dsh-click) 与 [dsh-score](https://github.com/PerryLink/dsh-score) 补上脚本化子进程 provider、[dsh-background-agents](https://github.com/PerryLink/dsh-background-agents) 改听 `agent/created`(原 `agent/session-start` 已移除),并清掉 [dsh-auto-review](https://github.com/PerryLink/dsh-auto-review) 与 [dsh-background-agents](https://github.com/PerryLink/dsh-background-agents) 葡语文档里的 UTF-8 BOM;② **值得点开的版本——[dsh-mcp-panel](https://github.com/PerryLink/dsh-mcp-panel) 0.6.15**:修复 [#27](https://github.com/PerryLink/dsh-mcp-panel/issues/27),两种渲染器改输出加载器真实的 patch 方言(`- id:` + `name:` + `disabled:`/`config:`,取代未实现的 `- set:`),并可浏览上游 Resources;③ [dsh-plugin-guide](https://github.com/PerryLink/dsh-plugin-guide) 未修复清单补入第三批社区验证条目(现为 32+7,fs-ext 桌面条目作为 #27 入列)。
 
