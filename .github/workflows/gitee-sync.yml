@@ -57,7 +57,7 @@ jobs:
             dsh-score dsh-session-pin dsh-session-sync dsh-skill-pack-security dsh-talk \
             dsh-test-drive dsh-translate dsh-reach dsh-catalog dsh-cert-mcp dsh-ticktick \
             dsh-autotier dsh-plugin-doctor \
-            dsh-plugin-upgrade-rc1 dsh-team-rooms)
+            dsh-plugin-upgrade-rc1 dsh-plugin-upgrade dsh-team-rooms)
           sync_repo() {
             local r="$1"
             rm -rf "/tmp/$r"
