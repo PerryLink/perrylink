@@ -48,6 +48,11 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
+          # Entries are either a bare repo name (owned by PerryLink) or an
+          # owner-qualified "owner/name" for a family repo that now lives under
+          # another account; the Gitee mirror is always named after the repo.
+          # The upgrade corridor is merged into dsh-plugin-upgrade: its retired
+          # legs (-015, -rc1, -016) are deliberately not synced any more.
           repos=(dsh-auto-review dsh-background-agents dsh-budget dsh-checkpoint-rewind \
             dsh-claude-move dsh-click dsh-composer-history dsh-data-quality dsh-defend \
             dsh-doublecheck dsh-draw dsh-fast dsh-fund-research dsh-github \
@@ -56,34 +61,37 @@ jobs:
             dsh-personal-directive dsh-plugin-guide dsh-plugin-kit dsh-research-report \
             dsh-score dsh-session-pin dsh-session-sync dsh-skill-pack-security dsh-talk \
             dsh-test-drive dsh-translate dsh-reach dsh-catalog dsh-cert-mcp dsh-ticktick \
-            dsh-autotier dsh-plugin-doctor \
-            dsh-plugin-upgrade-rc1 dsh-plugin-upgrade dsh-team-rooms)
+            dsh-autotier dsh-plugin-doctor dsh-kit \
+            dsh-plugin-upgrade dsh-team-rooms pan17/dsh-wechat)
           sync_repo() {
-            local r="$1"
-            rm -rf "/tmp/$r"
-            local remote="git@gitee.com:perrylink/$r.git"
+            local entry="$1"
+            local name="${entry##*/}"
+            local owner="${entry%%/*}"
+            if [ "$owner" = "$entry" ]; then owner="PerryLink"; fi
+            rm -rf "/tmp/$name"
+            local remote="git@gitee.com:perrylink/$name.git"
             # A mirror repo that does not exist yet on Gitee is skipped, not a
             # failure: once the repo is created on gitee.com, the next run
             # seeds it via the plain-push path below.
             if ! git ls-remote "$remote" HEAD >/dev/null 2>&1; then
-              echo "SKIP $r (no mirror repo on gitee)"
+              echo "SKIP $name (no mirror repo on gitee)"
               return 0
             fi
-            if ! git clone --quiet "https://github.com/PerryLink/$r.git" "/tmp/$r"; then
-              echo "FAIL clone $r"
+            if ! git clone --quiet "https://github.com/$owner/$name.git" "/tmp/$name"; then
+              echo "FAIL clone $entry"
               return 1
             fi
             local b tip
-            b="$(git -C "/tmp/$r" rev-parse --abbrev-ref HEAD)"
+            b="$(git -C "/tmp/$name" rev-parse --abbrev-ref HEAD)"
             tip="$(git ls-remote "$remote" "refs/heads/$b" | awk '{print $1}')"
             if [ -z "$tip" ]; then
               # Mirror branch does not exist yet: plain push seeds it.
-              git -C "/tmp/$r" push "$remote" "HEAD:refs/heads/$b" --tags
+              git -C "/tmp/$name" push "$remote" "HEAD:refs/heads/$b" --tags
             else
               # Align the mirror branch to the GitHub tip, then refresh tags
               # (tags may have moved after a release re-tag).
-              git -C "/tmp/$r" push --force-with-lease="refs/heads/$b:$tip" "$remote" "HEAD:refs/heads/$b" \
-                && git -C "/tmp/$r" push "$remote" --tags --force
+              git -C "/tmp/$name" push --force-with-lease="refs/heads/$b:$tip" "$remote" "HEAD:refs/heads/$b" \
+                && git -C "/tmp/$name" push "$remote" --tags --force
             fi
           }
           fails=0
