@@ -62,7 +62,7 @@ jobs:
             dsh-score dsh-session-pin dsh-session-sync dsh-skill-pack-security dsh-talk \
             dsh-test-drive dsh-translate dsh-reach dsh-catalog dsh-cert-mcp dsh-ticktick \
             dsh-autotier dsh-plugin-doctor dsh-kit \
-            dsh-plugin-upgrade dsh-team-rooms pan17/dsh-wechat)
+            dsh-plugin-upgrade dsh-team-rooms jevcore pan17/dsh-wechat)
           sync_repo() {
             local entry="$1"
             local name="${entry##*/}"
