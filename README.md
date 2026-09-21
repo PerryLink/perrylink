@@ -7,6 +7,10 @@
   Live badges (GitHub stars / repos / followers, OpenSSF Scorecard, Glama) update themselves.
   Three stay hand-written because no live source exists for them: the plugin count, the 30-day
   npm download aggregate, and the third-party listing badges. Update those by hand when they move.
+  The last row is also hand-written, and deliberately so: cla-assistant serves one generic
+  signed/not_signed SVG and exposes no per-user query, so a CLA badge cannot be dynamic. Its two
+  values were verified from the CLAassistant comment on each PR ("All committers have signed the
+  CLA"). Re-check those comments before trusting the row after a new PR.
 -->
 <p align="center">
 <a href="https://www.npmjs.com/search?q=perrylink"><img alt="npm packages" src="https://img.shields.io/badge/npm-packages-cb3837?logo=npm&style=flat-square"></a>
@@ -33,6 +37,11 @@
 <a href="https://dsh.directory/plugins?q=perrylink"><img alt="Listed on DSH Directory" src="https://dsh.directory/badges/listed.svg"></a>
 <a href="https://dsh.market/?q=PerryLink"><img alt="DSH Market" src="https://raw.githubusercontent.com/2BingLing/dsh-market/master/assets/readme/badge-listed-en.svg"></a>
 <a href="https://registry.modelcontextprotocol.io/v0/servers?search=perrylink"><img alt="MCP Registry" src="https://img.shields.io/badge/MCP_Registry-2_servers-6f42c1?style=flat-square"></a>
+</p>
+
+<p align="center">
+<a href="https://github.com/alibaba/open-code-review/pull/1518"><img alt="open-code-review PR #1518, CLA signed" src="https://img.shields.io/badge/CLA_signed-open--code--review_%231518-2da44e?style=flat-square"></a>
+<a href="https://github.com/bytedance/deer-flow/pull/5660"><img alt="deer-flow PR #5660, CLA signed" src="https://img.shields.io/badge/CLA_signed-deer--flow_%235660-2da44e?style=flat-square"></a>
 </p>
 
 **Building the [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) plugin ecosystem: 41 open-source plugins in a 46-repo family (45 PerryLink-owned plus [pan17](https://github.com/pan17/dsh-wechat)'s dsh-wechat, Apache-2.0) — security, workflows, research, messaging bridges, developer experience — plus the DSH Desktop Market catalog, a plugin-certification registry and the dsh-plugin-doctor CI checker. Across the 45 PerryLink-owned repos, 44 ship CI and a Gitee mirror — the exception is [dsh-laya](https://github.com/PerryLink/dsh-laya), published tonight — 41 carry five-language docs, 44 declare the `dsh.bundle` contract, and 40 of the 49 active npm names carry a provenance attestation — 69.1k npm downloads in August plus 97.6k in September through the 20th (137.2k over the trailing 30 days). I also contribute upstream to [Cordis](https://github.com/cordiverse/cordis) — the plugin-core framework DeepSeek Harness is built on — and to [deepseek-ai](https://github.com/deepseek-ai) projects, including a merged [FlashMLA](https://github.com/deepseek-ai/FlashMLA) fix.**
