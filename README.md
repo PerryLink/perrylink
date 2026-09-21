@@ -1,13 +1,19 @@
 # Hi, I'm PerryLink 👋
 
 <!--
-  Badge block: five centered groups, ordered channels -> metrics -> standing -> listings -> CLAs.
+  Badge block: six centered groups, ordered channels -> metrics -> standing -> listings -> registry
+  -> CLAs. Six rows is not arbitrary: the 17 badges total 2358px, so the block was partitioned to
+  minimise the spread between rows. The previous five-row layout spread 342px (368..710, sd 127.5);
+  this one spreads 234px (332..566, sd 79.4) and never exceeds 566px, so no row wraps. If you add or
+  remove a badge, re-measure and re-partition rather than appending to the longest row.
   Conventions are matched to the family, not invented here. Survey of the 45 family READMEs found
   323 shields.io badges, all on the default `flat` style and none on flat-square, so no badge here
   sets a style either. The Gitee badge keeps the family's red c71d23 (42 repos use it); the npm
   badge keeps npm's cb3837. Labels use real spaces, matching existing family practice
   (`dsh plugin`, `license Apache 2.0`). The third-party badges are SVGs served by their own sites
   and cannot be restyled.
+  Row widths, measured 2026-09-21 (GitHub's content column is ~836px):
+  channels 386 | metrics 340 | standing 368 | listings 566 | registries+CLA 366 | downloads+CLA 332
   Live badges (GitHub stars / repos / followers, OpenSSF Scorecard, Glama) update themselves.
   Three stay hand-written because no live source exists for them: the plugin count, the 30-day npm
   download aggregate, and the third-party listing badges. Update those by hand when they move.
@@ -27,24 +33,27 @@
 <a href="https://github.com/PerryLink?tab=repositories"><img alt="GitHub repos" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FPerryLink&query=%24.public_repos&label=repos&color=24292f"></a>
 <a href="https://github.com/PerryLink?tab=followers"><img alt="GitHub followers" src="https://img.shields.io/github/followers/PerryLink?label=followers&color=24292f"></a>
 <img alt="plugins" src="https://img.shields.io/badge/plugins-41-6e7781">
-<img alt="npm downloads 30d" src="https://img.shields.io/badge/npm%20downloads%2030d-137k-6e7781">
 </p>
 
 <p align="center">
-<a href="https://github.com/PerryLink/dsh-plugin-certification"><img alt="Certified dsh-auto-review" src="https://raw.githubusercontent.com/PerryLink/dsh-plugin-certification/main/badges/PerryLink__dsh-auto-review.svg"></a>
 <a href="https://github.com/PerryLink/dsh-plugin-doctor#readme"><img alt="OpenSSF Scorecard" src="https://img.shields.io/ossf-scorecard/github.com/PerryLink/dsh-auto-review?label=openssf%20scorecard"></a>
 <a href="https://glama.ai/mcp/servers/PerryLink/jevcore"><img alt="Glama" src="https://glama.ai/mcp/servers/PerryLink/jevcore/badges/score.svg"></a>
+<a href="https://github.com/PerryLink/dsh-plugin-certification"><img alt="Certified dsh-auto-review" src="https://raw.githubusercontent.com/PerryLink/dsh-plugin-certification/main/badges/PerryLink__dsh-auto-review.svg"></a>
 </p>
 
 <p align="center">
 <a href="https://awesome-dsh-plugin.com"><img alt="awesome-dsh-plugin" src="https://awesome-dsh-plugin.com/badge.svg"></a>
 <a href="https://dsh.directory/plugins?q=perrylink"><img alt="Listed on DSH Directory" src="https://dsh.directory/badges/listed.svg"></a>
 <a href="https://dsh.market/?q=PerryLink"><img alt="DSH Market" src="https://raw.githubusercontent.com/2BingLing/dsh-market/master/assets/readme/badge-listed-en.svg"></a>
-<a href="https://registry.modelcontextprotocol.io/v0/servers?search=perrylink"><img alt="MCP Registry" src="https://img.shields.io/badge/MCP%20Registry-2%20servers-6f42c1"></a>
 </p>
 
 <p align="center">
+<a href="https://registry.modelcontextprotocol.io/v0/servers?search=perrylink"><img alt="MCP Registry" src="https://img.shields.io/badge/MCP%20Registry-2%20servers-6f42c1"></a>
 <a href="https://github.com/alibaba/open-code-review/pull/1518"><img alt="open-code-review PR #1518, CLA signed" src="https://img.shields.io/badge/CLA%20signed-open--code--review%20%231518-2da44e"></a>
+</p>
+
+<p align="center">
+<img alt="npm downloads 30d" src="https://img.shields.io/badge/npm%20downloads%2030d-137k-6e7781">
 <a href="https://github.com/bytedance/deer-flow/pull/5660"><img alt="deer-flow PR #5660, CLA signed" src="https://img.shields.io/badge/CLA%20signed-deer--flow%20%235660-2da44e"></a>
 </p>
 
