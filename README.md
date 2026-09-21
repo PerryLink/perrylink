@@ -1,22 +1,39 @@
 # Hi, I'm PerryLink 👋
 
-<!-- Live badges (GitHub stars / repos / followers) update themselves. The three that stay hand-written have no live source to point at: plugin count, the 30-day npm download aggregate, and the per-listing community badges. -->
-[![Gitee mirror](https://img.shields.io/badge/Gitee-mirror-c71d23?logo=gitee)](https://gitee.com/perrylink)
-[![DSH Desktop Market](https://img.shields.io/badge/DSH_Desktop_Market-source-0969da)](https://perrylink-dsh-catalog.perrylink.workers.dev/catalog-source.json)
-[![npm packages](https://img.shields.io/badge/npm-packages-cb3837?logo=npm)](https://www.npmjs.com/search?q=perrylink)
-![plugins](https://img.shields.io/badge/plugins-41-0969da)
-![npm downloads](https://img.shields.io/badge/npm_downloads-137k_30d-cb3837)
-[![GitHub stars](https://img.shields.io/github/stars/PerryLink?label=stars&affiliations=OWNER)](https://github.com/PerryLink?tab=repositories)
-[![GitHub repos](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FPerryLink&query=%24.public_repos&label=repos&color=green)](https://github.com/PerryLink?tab=repositories)
-[![GitHub followers](https://img.shields.io/github/followers/PerryLink?label=followers)](https://github.com/PerryLink?tab=followers)
+<!--
+  Badge block: three centered groups, ordered links -> metrics -> listings.
+  Every shields.io badge uses style=flat-square so the row reads as one set; the third-party
+  badges in the last group are SVGs from their own sites and cannot be restyled.
+  Live badges (GitHub stars / repos / followers, OpenSSF Scorecard, Glama) update themselves.
+  Three stay hand-written because no live source exists for them: the plugin count, the 30-day
+  npm download aggregate, and the third-party listing badges. Update those by hand when they move.
+-->
+<p align="center">
+<a href="https://www.npmjs.com/search?q=perrylink"><img alt="npm packages" src="https://img.shields.io/badge/npm-packages-cb3837?logo=npm&style=flat-square"></a>
+<a href="https://gitee.com/perrylink"><img alt="Gitee mirror" src="https://img.shields.io/badge/Gitee-mirror-0969da?logo=gitee&style=flat-square"></a>
+<a href="https://perrylink-dsh-catalog.perrylink.workers.dev/catalog-source.json"><img alt="DSH Desktop Market" src="https://img.shields.io/badge/DSH_Desktop_Market-source-0969da?style=flat-square"></a>
+</p>
 
-[![Certified dsh-auto-review](https://raw.githubusercontent.com/PerryLink/dsh-plugin-certification/main/badges/PerryLink__dsh-auto-review.svg)](https://github.com/PerryLink/dsh-plugin-certification)
-[![awesome-dsh-plugin](https://awesome-dsh-plugin.com/badge.svg)](https://awesome-dsh-plugin.com)
-[![Listed on DSH Directory](https://dsh.directory/badges/listed.svg)](https://dsh.directory/plugins?q=perrylink)
-[![DSH Market](https://raw.githubusercontent.com/2BingLing/dsh-market/master/assets/readme/badge-listed-en.svg)](https://dsh.market/?q=PerryLink)
-[![OpenSSF Scorecard](https://img.shields.io/ossf-scorecard/github.com/PerryLink/dsh-auto-review?label=openssf%20scorecard)](https://github.com/PerryLink/dsh-plugin-doctor#readme)
-[![MCP Registry](https://img.shields.io/badge/MCP_Registry-2_servers-6f42c1)](https://registry.modelcontextprotocol.io/v0/servers?search=perrylink)
-[![Glama](https://glama.ai/mcp/servers/PerryLink/jevcore/badges/score.svg)](https://glama.ai/mcp/servers/PerryLink/jevcore)
+<p align="center">
+<a href="https://github.com/PerryLink?tab=repositories"><img alt="GitHub stars" src="https://img.shields.io/github/stars/PerryLink?label=stars&affiliations=OWNER&style=flat-square"></a>
+<a href="https://github.com/PerryLink?tab=repositories"><img alt="GitHub repos" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FPerryLink&query=%24.public_repos&label=repos&color=2da44e&style=flat-square"></a>
+<a href="https://github.com/PerryLink?tab=followers"><img alt="GitHub followers" src="https://img.shields.io/github/followers/PerryLink?label=followers&style=flat-square"></a>
+<img alt="plugins" src="https://img.shields.io/badge/plugins-41-6e7781?style=flat-square">
+<img alt="npm downloads" src="https://img.shields.io/badge/npm_downloads-137k_30d-6e7781?style=flat-square">
+</p>
+
+<p align="center">
+<a href="https://github.com/PerryLink/dsh-plugin-certification"><img alt="Certified dsh-auto-review" src="https://raw.githubusercontent.com/PerryLink/dsh-plugin-certification/main/badges/PerryLink__dsh-auto-review.svg"></a>
+<a href="https://github.com/PerryLink/dsh-plugin-doctor#readme"><img alt="OpenSSF Scorecard" src="https://img.shields.io/ossf-scorecard/github.com/PerryLink/dsh-auto-review?label=openssf%20scorecard&style=flat-square"></a>
+<a href="https://glama.ai/mcp/servers/PerryLink/jevcore"><img alt="Glama" src="https://glama.ai/mcp/servers/PerryLink/jevcore/badges/score.svg"></a>
+</p>
+
+<p align="center">
+<a href="https://awesome-dsh-plugin.com"><img alt="awesome-dsh-plugin" src="https://awesome-dsh-plugin.com/badge.svg"></a>
+<a href="https://dsh.directory/plugins?q=perrylink"><img alt="Listed on DSH Directory" src="https://dsh.directory/badges/listed.svg"></a>
+<a href="https://dsh.market/?q=PerryLink"><img alt="DSH Market" src="https://raw.githubusercontent.com/2BingLing/dsh-market/master/assets/readme/badge-listed-en.svg"></a>
+<a href="https://registry.modelcontextprotocol.io/v0/servers?search=perrylink"><img alt="MCP Registry" src="https://img.shields.io/badge/MCP_Registry-2_servers-6f42c1?style=flat-square"></a>
+</p>
 
 **Building the [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) plugin ecosystem: 41 open-source plugins in a 46-repo family (45 PerryLink-owned plus [pan17](https://github.com/pan17/dsh-wechat)'s dsh-wechat, Apache-2.0) — security, workflows, research, messaging bridges, developer experience — plus the DSH Desktop Market catalog, a plugin-certification registry and the dsh-plugin-doctor CI checker. Across the 45 PerryLink-owned repos, 44 ship CI and a Gitee mirror — the exception is [dsh-laya](https://github.com/PerryLink/dsh-laya), published tonight — 41 carry five-language docs, 44 declare the `dsh.bundle` contract, and 40 of the 49 active npm names carry a provenance attestation — 69.1k npm downloads in August plus 97.6k in September through the 20th (137.2k over the trailing 30 days). I also contribute upstream to [Cordis](https://github.com/cordiverse/cordis) — the plugin-core framework DeepSeek Harness is built on — and to [deepseek-ai](https://github.com/deepseek-ai) projects, including a merged [FlashMLA](https://github.com/deepseek-ai/FlashMLA) fix.**
 
