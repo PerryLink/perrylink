@@ -1,29 +1,31 @@
 # Hi, I'm PerryLink 👋
 
 <!--
-  Badge block: three centered rows. Three rows is both the minimum and the optimum, and that is
-  measured, not assumed. The 16 badges total 2358px; GitHub's README content column is ~888px
-  (container 1012px minus 2x62px padding), so two rows are impossible and three are forced. 2358/3
-  is exactly 786, and a search over all 2^16 subsets found a partition hitting 786 / 786 / 786
-  exactly (range 0, sd 0), so every row is the same width and none can overflow. If you add or
-  remove a badge the total changes and the perfect split is lost: re-solve the partition rather than
-  appending to any row. Re-measure the widths; do not reuse these numbers after a label change,
-  since a single label edit shifts a row off 786.
-  Vertical spacing: the three rows are ONE <p>, not three, joined by <br> so the partition above stays
-  forced. Three separate <p> blocks each pay GitHub's 16px paragraph margin, and a 20px image also
-  shows the font's descent under the text baseline, so the gap was measured ink-to-ink at 21px on the
-  live profile (16px margin + ~5px descent). One <p> drops the margin and leaves the descent alone:
-  re-measured on that page after the change, 5px -- a fifth of the old gap. The profile renders this
-  README at a 14px/21px line box while the file view uses 16px/24px, so anything tied to the line box
-  lands differently on each surface: align="top" on the images measured 1px on the profile against
-  4px in the file view, tighter than the rows want, and was left off for that reason. Re-measure both
-  surfaces before touching this, and do not add align to tighten it further.
-  Conventions are matched to the family, not invented here. Survey of the 45 family READMEs found
-  323 shields.io badges, all on the default `flat` style and none on flat-square, so no badge here
-  sets a style either. The Gitee badge keeps the family's red c71d23 (42 repos use it); the npm
-  badge keeps npm's cb3837. Labels use real spaces, matching existing family practice
-  (`dsh plugin`, `license Apache 2.0`). The third-party badges are SVGs served by their own sites
-  and cannot be restyled.
+  Badge block: three centered rows, one badge per source line. The leading whitespace between the
+  inline <a>/<img> tags collapses when GitHub renders the <p>, and the single <br> after each row
+  forces the row break, so the layout is three rows regardless of how the source is wrapped.
+
+  The rows are partitioned to equal width, and that is measured, not assumed. Re-measured
+  2026-09-22 from each badge's own SVG width/height at the 20px render height, with the dshfind
+  badge added: 16 badges totalling 2148px, split 716 / 716 / 716 (range 0) by an exact-subset
+  search. 716px is inside GitHub's ~888px README content column, so no row overflows. If you add
+  or remove a badge the total changes and this partition is lost: re-solve it rather than
+  appending to a row, and re-measure the widths -- do not reuse these numbers after a label
+  change, since a single label edit shifts a row off 716.
+
+  Vertical spacing: the three rows are ONE <p>, not three, joined by <br>. Three separate <p>
+  blocks each pay GitHub's 16px paragraph margin, and a 20px image also shows the font's descent
+  under the text baseline, so the gap was measured ink-to-ink at 21px on the live profile (16px
+  margin + ~5px descent). One <p> drops the margin and leaves the descent alone: re-measured on
+  that page after the change, 5px. The profile renders this README at 14px/21px while the file view
+  uses 16px/24px, so anything tied to the line box lands differently on each surface: align="top"
+  on the images measured 1px on the profile against 4px in the file view and was left off.
+  Re-measure both surfaces before touching this, and do not add align to tighten it further.
+
+  Conventions are matched to the family, not invented here. Survey of the family READMEs found the
+  shields.io badges on the default `flat` style, so no badge here sets a style either. The Gitee
+  badge keeps the family's red c71d23; the npm badge keeps npm's cb3837. Labels use real spaces.
+  The third-party badges are SVGs served by their own sites and cannot be restyled.
   Live badges (GitHub stars / repos / followers, OpenSSF Scorecard, Glama) update themselves.
   Three stay hand-written because no live source exists for them: the plugin count, the 30-day npm
   download aggregate, and the third-party listing badges. Update those by hand when they move.
@@ -33,19 +35,22 @@
 <p align="center">
 <a href="https://github.com/PerryLink?tab=repositories"><img alt="GitHub stars" src="https://img.shields.io/github/stars/PerryLink?label=stars&affiliations=OWNER&color=24292f"></a>
 <a href="https://glama.ai/mcp/servers/PerryLink/jevcore"><img alt="Glama" src="https://glama.ai/mcp/servers/PerryLink/jevcore/badges/score.svg"></a>
-<a href="https://www.npmjs.com/search?q=perrylink"><img alt="npm packages" src="https://img.shields.io/badge/npm-packages-cb3837?logo=npm"></a>
 <a href="https://github.com/PerryLink/dsh-plugin-doctor#readme"><img alt="OpenSSF Scorecard" src="https://img.shields.io/ossf-scorecard/github.com/PerryLink/dsh-auto-review?label=openssf%20scorecard"></a>
-<a href="https://dsh.directory/plugins?q=perrylink"><img alt="Listed on DSH Directory" src="https://dsh.directory/badges/listed.svg"></a><br>
+<a href="https://dsh.directory/plugins?q=perrylink"><img alt="Listed on DSH Directory" src="https://dsh.directory/badges/listed.svg"></a>
+<a href="https://perrylink-dsh-catalog.perrylink.workers.dev/catalog-source.json"><img alt="DSH Desktop Market source" src="https://img.shields.io/badge/DSH%20Desktop%20Market-source-0969da"></a>
+<br>
+<a href="https://www.npmjs.com/search?q=perrylink"><img alt="npm packages" src="https://img.shields.io/badge/npm-packages-cb3837?logo=npm"></a>
 <a href="https://dsh.market/?q=PerryLink"><img alt="DSH Market" src="https://raw.githubusercontent.com/2BingLing/dsh-market/master/assets/readme/badge-listed-en.svg"></a>
-<img alt="npm downloads 30d" src="https://img.shields.io/badge/npm%20downloads%2030d-137.4k-6e7781">
 <a href="https://registry.modelcontextprotocol.io/v0/servers?search=perrylink"><img alt="MCP Registry" src="https://img.shields.io/badge/MCP%20Registry-3%20servers-6f42c1"></a>
-<a href="https://perrylink-dsh-catalog.perrylink.workers.dev/catalog-source.json"><img alt="DSH Desktop Market source" src="https://img.shields.io/badge/DSH%20Desktop%20Market-source-0969da"></a><br>
 <a href="https://github.com/PerryLink?tab=followers"><img alt="GitHub followers" src="https://img.shields.io/github/followers/PerryLink?label=followers&color=24292f"></a>
+<a href="https://github.com/PerryLink?tab=repositories"><img alt="GitHub repos" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FPerryLink&query=%24.public_repos&label=repos&color=24292f"></a>
+<a href="https://gitee.com/perrylink"><img alt="Gitee mirror" src="https://img.shields.io/badge/Gitee-mirror-c71d23?logo=gitee"></a>
+<br>
+<img alt="npm downloads 30d" src="https://img.shields.io/badge/npm%20downloads%2030d-137.4k-6e7781">
 <a href="https://awesome-dsh-plugin.com"><img alt="awesome-dsh-plugin" src="https://awesome-dsh-plugin.com/badge.svg"></a>
 <a href="https://github.com/PerryLink/dsh-plugin-certification"><img alt="Certified dsh-auto-review" src="https://raw.githubusercontent.com/PerryLink/dsh-plugin-certification/main/badges/PerryLink__dsh-auto-review.svg"></a>
-<a href="https://github.com/PerryLink?tab=repositories"><img alt="GitHub repos" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FPerryLink&query=%24.public_repos&label=repos&color=24292f"></a>
 <img alt="plugins" src="https://img.shields.io/badge/plugins-42-6e7781">
-<a href="https://gitee.com/perrylink"><img alt="Gitee mirror" src="https://img.shields.io/badge/Gitee-mirror-c71d23?logo=gitee"></a>
+<a href="https://dshfind.com/plugins/PerryLink/dsh-auto-review?ref=badge"><img alt="dshfind" src="https://dshfind.com/api/badge/PerryLink/dsh-auto-review?metric=downloads"></a>
 </p>
 
 **Building the [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) plugin ecosystem: 42 open-source plugins in a 46-repo family (45 PerryLink-owned plus [pan17](https://github.com/pan17/dsh-wechat)'s dsh-wechat, Apache-2.0) — security, workflows, research, messaging bridges, developer experience — plus the DSH Desktop Market catalog, a plugin-certification registry and the dsh-plugin-doctor CI checker. All 42 ship CI and a Gitee mirror, five-language docs held to the same section count, install command and configuration keys by a gate in each repo's own CI, and the `dsh.bundle` contract; 137,423 npm downloads over the trailing 30 days. I also contribute upstream to [Cordis](https://github.com/cordiverse/cordis) — the plugin-core framework DeepSeek Harness is built on — and to [deepseek-ai](https://github.com/deepseek-ai) projects, including a merged [FlashMLA](https://github.com/deepseek-ai/FlashMLA) fix.**
