@@ -53,13 +53,6 @@
 <a href="https://github.com/alibaba/open-code-review/pull/1518"><img alt="open-code-review PR #1518, CLA signed" src="https://img.shields.io/badge/CLA%20signed-open--code--review%20%231518-2da44e"></a>
 <a href="https://github.com/bytedance/deer-flow/pull/5660"><img alt="deer-flow PR #5660, CLA signed" src="https://img.shields.io/badge/CLA%20signed-deer--flow%20%235660-2da44e"></a>
 </p>
-<p align="center">
-<a href="https://github.com/PerryLink/dsh-auto-review#readme"><img alt="license" src="https://img.shields.io/github/license/PerryLink/dsh-auto-review?label=license&color=24292f"></a>
-<a href="https://github.com/PerryLink/dsh-auto-review/releases"><img alt="latest release" src="https://img.shields.io/github/v/release/PerryLink/dsh-auto-review?label=release&color=24292f"></a>
-<a href="https://github.com/PerryLink/dsh-auto-review/commits"><img alt="last commit" src="https://img.shields.io/github/last-commit/PerryLink/dsh-auto-review?label=last%20commit&color=24292f"></a>
-<a href="https://www.npmjs.com/package/dsh-auto-review"><img alt="npm version" src="https://img.shields.io/npm/v/dsh-auto-review?label=npm&color=cb3837&logo=npm"></a>
-<a href="https://github.com/PerryLink/dsh-auto-review/graphs/contributors"><img alt="contributors" src="https://img.shields.io/github/contributors/PerryLink/dsh-auto-review?label=contributors&color=24292f"></a>
-</p>
 
 **Building the [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) plugin ecosystem: 41 open-source plugins in a 46-repo family (45 PerryLink-owned plus [pan17](https://github.com/pan17/dsh-wechat)'s dsh-wechat, Apache-2.0) — security, workflows, research, messaging bridges, developer experience — plus the DSH Desktop Market catalog, a plugin-certification registry and the dsh-plugin-doctor CI checker. Across the 45 PerryLink-owned repos, 44 ship CI and a Gitee mirror — the exception is [dsh-laya](https://github.com/PerryLink/dsh-laya), published tonight — and as of this round every one of the 42 family plugins carries five-language docs, parity-checked across all five files by a gate in its own CI, with all 42 declaring the `dsh.bundle` contract, and 40 of the 49 active npm names carry a provenance attestation — 69.1k npm downloads in August plus 97.6k in September through the 20th (137.2k over the trailing 30 days). I also contribute upstream to [Cordis](https://github.com/cordiverse/cordis) — the plugin-core framework DeepSeek Harness is built on — and to [deepseek-ai](https://github.com/deepseek-ai) projects, including a merged [FlashMLA](https://github.com/deepseek-ai/FlashMLA) fix.**
 
