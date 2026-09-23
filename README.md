@@ -5,12 +5,28 @@
   inline <a>/<img> tags collapses when GitHub renders the <p>, and the single <br> after each row
   forces the row break, so the layout is three rows regardless of how the source is wrapped.
 
-  The rows are partitioned to equal width, and that is measured, not assumed. Re-measured
-  2026-09-22 from each badge's own SVG width/height at the 20px render height: 17 badges totalling
-  2394px, split 798 / 798 / 798 (range 0) by an exact-subset search. 798px is inside GitHub's
-  ~888px README content column, so no row overflows. If you add or remove a badge the total changes
-  and this partition is lost: re-solve it rather than appending to a row, and re-measure the widths
-  -- do not reuse these numbers after a label change, since a single label edit shifts a row.
+  Order is recognition first, source second. Row 1 is the reach a visitor reads first: the GitHub
+  trio (stars, followers, repos), then the two third-party scores (OpenSSF Scorecard, Glama), then
+  the npm pair (packages, 30-day downloads). Row 2 is where the work is published and listed: the
+  official MCP Registry, the curated awesome list, DSH Directory, DSH Market, the Gitee mirror.
+  Row 3 is the DSH community footprint and the self-issued badges: the dshfind pair, the Desktop
+  Market catalog source, the certification, the plugin count. Same-source badges stay adjacent --
+  the GitHub trio, the npm pair, the dshfind pair -- and OpenSSF Scorecard sits next to Glama
+  because both are third-party scores rather than listings; nothing here is restyled, badges only
+  moved, so every colour is the source's own.
+
+  The rows are partitioned to near-equal width, and that is measured, not assumed. Re-measured
+  2026-09-23 from each badge's own SVG width/height at the 20px render height: 17 badges totalling
+  2408px, split 801 / 811 / 796 (range 15) by a search over the row breaks, every row inside
+  GitHub's ~888px README content column. Per badge, in that order: stars 90, followers 106, repos
+  86, openssf scorecard 126, glama 110, npm packages 113, npm downloads 170, MCP Registry 144,
+  awesome 168, DSH Directory 218, DSH Market 180, Gitee 101, dshfind 174, dshfind downloads 246,
+  Desktop Market 172, certified 132, plugins 72. The repos badge is a dynamic/json badge and was
+  serving its "invalid" state (86px) at measure time; as "repos: 209" it renders 72px, which makes
+  the same partition 787 / 811 / 796 -- both states fit the column and neither row order changes.
+  If you add or remove a badge the total changes and this partition is lost: re-solve it rather
+  than appending to a row, and re-measure the widths -- do not reuse these numbers after a label
+  change, since a single label edit shifts a row.
 
   The dshfind entries: the plain dshfind badge is dshfind's own per-repo badge and links a specific
   plugin, so it can only show that repo's figure. dshfind publishes no owner-level badge and its API
@@ -40,25 +56,25 @@
   "Where the plugins live"; the badge row is the live copy and the text there is the measured one.
 -->
 <p align="center">
-<a href="https://github.com/PerryLink/dsh-plugin-doctor#readme"><img alt="OpenSSF Scorecard" src="https://img.shields.io/ossf-scorecard/github.com/PerryLink/dsh-auto-review?label=openssf%20scorecard"></a>
-<a href="https://dsh.directory/plugins?q=perrylink"><img alt="Listed on DSH Directory" src="https://dsh.directory/badges/listed.svg"></a>
-<a href="https://dsh.market/?q=PerryLink"><img alt="DSH Market" src="https://raw.githubusercontent.com/2BingLing/dsh-market/master/assets/readme/badge-listed-en.svg"></a>
+<a href="https://github.com/PerryLink?tab=repositories"><img alt="GitHub stars" src="https://img.shields.io/github/stars/PerryLink?label=stars&affiliations=OWNER&color=24292f"></a>
 <a href="https://github.com/PerryLink?tab=followers"><img alt="GitHub followers" src="https://img.shields.io/github/followers/PerryLink?label=followers&color=24292f"></a>
-<a href="https://awesome-dsh-plugin.com"><img alt="awesome-dsh-plugin" src="https://awesome-dsh-plugin.com/badge.svg"></a>
-<br>
+<a href="https://github.com/PerryLink?tab=repositories"><img alt="GitHub repos" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FPerryLink&query=%24.public_repos&label=repos&color=24292f"></a>
+<a href="https://github.com/PerryLink/dsh-plugin-doctor#readme"><img alt="OpenSSF Scorecard" src="https://img.shields.io/ossf-scorecard/github.com/PerryLink/dsh-auto-review?label=openssf%20scorecard"></a>
 <a href="https://glama.ai/mcp/servers/PerryLink/jevcore"><img alt="Glama" src="https://glama.ai/mcp/servers/PerryLink/jevcore/badges/score.svg"></a>
 <a href="https://www.npmjs.com/search?q=perrylink"><img alt="npm packages" src="https://img.shields.io/badge/npm-packages-cb3837?logo=npm"></a>
 <img alt="npm downloads 30d" src="https://img.shields.io/badge/npm%20downloads%2030d-137.4k-6e7781">
-<a href="https://perrylink-dsh-catalog.perrylink.workers.dev/catalog-source.json"><img alt="DSH Desktop Market source" src="https://img.shields.io/badge/DSH%20Desktop%20Market-source-0969da"></a>
-<a href="https://github.com/PerryLink/dsh-plugin-certification"><img alt="Certified dsh-auto-review" src="https://raw.githubusercontent.com/PerryLink/dsh-plugin-certification/main/badges/PerryLink__dsh-auto-review.svg"></a>
+<br>
+<a href="https://registry.modelcontextprotocol.io/v0/servers?search=perrylink"><img alt="MCP Registry" src="https://img.shields.io/badge/MCP%20Registry-3%20servers-6f42c1"></a>
+<a href="https://awesome-dsh-plugin.com"><img alt="awesome-dsh-plugin" src="https://awesome-dsh-plugin.com/badge.svg"></a>
+<a href="https://dsh.directory/plugins?q=perrylink"><img alt="Listed on DSH Directory" src="https://dsh.directory/badges/listed.svg"></a>
+<a href="https://dsh.market/?q=PerryLink"><img alt="DSH Market" src="https://raw.githubusercontent.com/2BingLing/dsh-market/master/assets/readme/badge-listed-en.svg"></a>
 <a href="https://gitee.com/perrylink"><img alt="Gitee mirror" src="https://img.shields.io/badge/Gitee-mirror-c71d23?logo=gitee"></a>
 <br>
-<a href="https://github.com/PerryLink?tab=repositories"><img alt="GitHub stars" src="https://img.shields.io/github/stars/PerryLink?label=stars&affiliations=OWNER&color=24292f"></a>
-<a href="https://registry.modelcontextprotocol.io/v0/servers?search=perrylink"><img alt="MCP Registry" src="https://img.shields.io/badge/MCP%20Registry-3%20servers-6f42c1"></a>
-<a href="https://github.com/PerryLink?tab=repositories"><img alt="GitHub repos" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FPerryLink&query=%24.public_repos&label=repos&color=24292f"></a>
-<img alt="plugins" src="https://img.shields.io/badge/plugins-42-6e7781">
 <a href="https://dshfind.com/plugins/PerryLink/dsh-auto-review?ref=badge"><img alt="dshfind" src="https://dshfind.com/api/badge/PerryLink/dsh-auto-review?metric=downloads"></a>
 <a href="https://dshfind.com/plugins?q=PerryLink"><img alt="dshfind downloads across the family" src="https://img.shields.io/badge/dshfind%20downloads-22k%2B%20across%208%20plugins-6e7781"></a>
+<a href="https://perrylink-dsh-catalog.perrylink.workers.dev/catalog-source.json"><img alt="DSH Desktop Market source" src="https://img.shields.io/badge/DSH%20Desktop%20Market-source-0969da"></a>
+<a href="https://github.com/PerryLink/dsh-plugin-certification"><img alt="Certified dsh-auto-review" src="https://raw.githubusercontent.com/PerryLink/dsh-plugin-certification/main/badges/PerryLink__dsh-auto-review.svg"></a>
+<img alt="plugins" src="https://img.shields.io/badge/plugins-42-6e7781">
 </p>
 
 **Building the [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) plugin ecosystem: 42 open-source plugins in a 46-repo family (45 PerryLink-owned plus [pan17](https://github.com/pan17/dsh-wechat)'s dsh-wechat, Apache-2.0) — security, workflows, research, messaging bridges, developer experience — plus the DSH Desktop Market catalog, a plugin-certification registry and the dsh-plugin-doctor CI checker. All 42 ship CI and a Gitee mirror, five-language docs held to the same section count, install command and configuration keys by a gate in each repo's own CI, and the `dsh.bundle` contract; 137,423 npm downloads over the trailing 30 days. I also contribute upstream to [Cordis](https://github.com/cordiverse/cordis) — the plugin-core framework DeepSeek Harness is built on — and to [deepseek-ai](https://github.com/deepseek-ai) projects, including a merged [FlashMLA](https://github.com/deepseek-ai/FlashMLA) fix.**
