@@ -90,7 +90,9 @@ DeepSeek Harness turned "everything is a plugin" into an ecosystem. I build the 
      measures, and the 09-21 round is the one that introduces laya-mcp. Rotating it out here
      would leave a forward reference to a project the page no longer introduces anywhere. The
      extra round goes when the 09-23 entry no longer depends on it, not on a schedule. The
-     Chinese block below already ran four rounds before this edit and is left as it was. -->
+     Chinese block ran four rounds and, at the owner's request on 2026-09-23, its 09-20 round was
+     deleted rather than mirrored; that block now carries two (09-23, 09-21). jevcore needs no
+     round of its own -- the family tables and the flagship picks introduce it. -->
 
 ## 📣 Latest — 2026-09-23
 
@@ -284,11 +286,5 @@ Published to a dozen-plus third-party DSH directories and curated lists — [awe
 2026-09-21 轮:① **[laya-mcp](https://github.com/PerryLink/laya-mcp) 是一条新战线:把 Laya 的定型决策做成可安装的 sidecar 与 MCP server,旁边是 [dsh-laya](https://github.com/PerryLink/dsh-laya) —— 把同样的 `noul`/`choice`/`score` 问题放进一个 Cordis service 和两个模型可见的 tool。** 真正发布的只有三个仓:[dsh-laya](https://github.com/PerryLink/dsh-laya)(0.1.4)、[laya-mcp](https://github.com/PerryLink/laya-mcp)(0.1.5),以及负责找到 Python 侧、把 MCP 流原样透传的 Node 启动器 [laya-mcp-npm](https://github.com/PerryLink/laya-mcp-npm);三个 `layacore` 名字仓已归档,只作名称保留,不再像在跑的项目。
 ② **为什么必须拆开,而不是顺手装。** Laya 是 PyTorch,不可能塞进 Node 插件里,所以 [dsh-laya](https://github.com/PerryLink/dsh-laya) **什么都不装、什么都不下** —— 它是你自己启动的 `laya-mcp serve` 进程的客户端;那个进程没在跑时它会直说,而不是在第一次 tool 调用时莫名其妙地失败。它给出一个 service(`ctx.laya`)外加 `laya_ask` / `laya_plan` 两个 tool。sidecar 存在的意义是买到热模型:冷启动要几秒到几十秒,而默认的懒路由每换一次语言就重建一次 checkpoint。
 ③ **同一天还有 5 条上游 PR 合并**:[dsh-genui](https://github.com/omdsh-dev/dsh-genui) #194(把 lib 清理挪进 Node,Windows 打包才成立)、[dsh-advisor](https://github.com/omdsh-dev/dsh-advisor) #89(prepare-release 夹具改成 Windows 安全)、[ouroboros](https://github.com/Q00/ouroboros) #2427(随 skill 发布的 Getting Started 链接 404)、[dsh-web](https://github.com/zhu1090093659/dsh-web) #1657、[beancookie/awesome-dsh-plugin](https://github.com/beancookie/awesome-dsh-plugin) #184;同时给 [laya](https://github.com/NandhaKishorM/laya) 本体发了第一条提案(免责声明页脚与会话正文同段时 `clean_email_body` 会整段删掉正文),该提案已于 09-21 合并;另有两提案由我主动关闭,不再留在队列里,也不计入已合并。
-
-#### 2026-09-20 轮
-
-① **[jevcore](https://github.com/PerryLink/jevcore) 是新项目:把 TypeSafe Jev 接进 DeepSeek Harness 与任何其他 MCP host,拆成三个包——`jevcore`(决策内核,不 import 任何 DSH/Cordis 东西)、`jevcore-dsh`(DSH 插件:一个 service、三个 tool、两道 opt-in 门)、`jevcore-mcp`(同样三个 tool 走 MCP,带 stdio 二进制)。三个包今天全部上了 npm:12:53 发 0.1.0,13:06 发 0.1.1,内核已于 13:08 到 0.1.2。** 仓库今天下午新建,头三小时(10:14–13:08)就有 **38 次提交**;MIT,并由 `jevcore-dsh` 通过 `dsh.bundle` 契约。
-② **它为什么存在,以及围绕什么保证来写。** 审计那些把 Jev 接进 DSH 的插件后,发现一个被项目自己 README 直说的规律:标着 *guard*、*gate*、*warden* 的那个模块,恰好也是把 prompt、tool 参数和文件内容发往第三方的模块,而 README 一般不说——其中有几个还是默认开启的。jevcore 把这些失效模式设计掉:默认 provider 是离线 mock,走活线要**同时**满足 `provider: live` 与已解析的凭据;每个功能都在启动日志里自报是否外发(`off`,或 `SENDS <feature> { fields }`);被关掉的门**不注册任何**事件监听器,由测试而非策略来保证;没有任何 tool 暴露门的配置,所以模型无法放宽自己的约束;判不出来时走显式配置,默认落到 `ask` 而不是 `allow`。
-③ **前一天晚上(09-19)的其他事**:[dsh-plugin-upgrade](https://github.com/PerryLink/dsh-plugin-upgrade) **2.0.0** 把三条已退役的走廊腿折成一个包 + 走廊索引路由(0.1.6-alpha.2 批量 PR 与「已发布线」CI 尺子同时落地)、[dsh-cert-mcp](https://github.com/PerryLink/dsh-cert-mcp) **0.2.2** 进入官方 MCP Registry,当晚共 **27 个家族仓 32 个 Release**;其余为例行卫生与依赖升级。
 
 待业中。近期考虑给自己安排一次体检。因此最近将减少熬夜，后续的更新迭代节奏会适当放缓。当然，问题和缺陷修复不会停，只是发布频率会降低一些，还请大家谅解。
