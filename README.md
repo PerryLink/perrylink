@@ -225,35 +225,37 @@ One-command starter pack: **[dsh-kit](https://github.com/PerryLink/dsh-kit)** �
 ## 🔧 Upstream & community contributions
 
 <!-- Instrument, kept out of the rendered text: ★ from `gh api repos/<repo> --jq .stargazers_count`,
-     counts from `GET /search/commits?q=repo:<repo>+author:PerryLink`, and a repo counts only when its
-     default branch carries at least one commit of ours. `/contributors` is a lagging computed list --
-     it returned an empty array for one repo below -- and a merged pull request is not by itself proof:
-     one repo merged 32 of them with no commit on its default branch attributed to this account.
-     Measured 2026-09-22. Merged work only; open proposals are deliberately not listed here. -->
+     and a repo counts only when its default branch carries at least one commit of ours.
+     `/contributors` is a lagging computed list -- it returned an empty array for one repo below --
+     and a merged pull request is not by itself proof: one repo merged 32 of them with no commit on
+     its default branch attributed to this account. Measured 2026-09-22. Merged work only; open
+     proposals are deliberately not listed here. Attribution re-verified 2026-09-23 through the
+     owners' own profiles and governance pages, which is why the column is here at all: a repository
+     path alone does not tell a reader whether Tencent or a weekend maintainer owns the project. -->
 
-*Every repo below is external to `PerryLink/*`; every number is measured, merged work only, and open proposals are deliberately not listed.*
+*Every repo below is external to `PerryLink/*`; every number is measured, merged work only, and open proposals are deliberately not listed. The third column names the project's owner — the account alone does not say whether that is a company, a standards body or one person.*
 
-**★ 1,000+ — named individually, as the rule requires.** Thirteen external repos above a thousand stars carry merged work:
+**★ 1,000+ — named individually, as the rule requires, each carrying the party that owns the project.** Thirteen external repos above a thousand stars carry merged work. Four of them belong to a major company or a well-known organization — Tencent, DeepSeek, cordiverse, and the ACP project that Zed and JetBrains jointly govern; the other nine are catalog repos and one-person projects, and the column says so rather than letting the account name imply a company:
 
-| Repository | ★ | Merged |
+| Repository | ★ | 项目归属方 |
 |---|---|---|
-| [reactive-resume](https://github.com/reactive-resume/reactive-resume) | 43,315 | 2 PRs |
-| [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) | 16,613 | 42 PRs (44 commits) |
-| [laya](https://github.com/NandhaKishorM/laya) | 14,755 | 1 PR |
-| [FlashMLA](https://github.com/deepseek-ai/FlashMLA) | 12,953 | 1 PR |
-| [Cordis](https://github.com/cordiverse/cordis) | 8,746 | 2 PRs |
-| [dsh-web](https://github.com/zhu1090093659/dsh-web) | 7,934 | 4 PRs (6 commits) |
-| [ouroboros](https://github.com/Q00/ouroboros) | 6,069 | 2 PRs (2 commits) |
-| [teamai-cli](https://github.com/Tencent/teamai-cli) | 4,900 | 1 PR |
-| [agent-client-protocol](https://github.com/agentclientprotocol/agent-client-protocol) | 4,301 | 2 PRs |
-| [deepseek-harness-desktop](https://github.com/dsh-tauri/deepseek-harness-desktop) | 2,496 | 2 PRs (2 commits) |
-| [dsh-plugin-radar](https://github.com/AdamPlatin123/dsh-plugin-radar) | 1,464 | 48 PRs (46 commits) |
-| [awesome-deepseek-harness](https://github.com/0xsline/awesome-deepseek-harness) | 1,091 | 49 PRs (53 commits) |
-| [awesome-vibecoded-saas](https://github.com/Anil-matcha/awesome-vibecoded-saas) | 1,020 | 1 PR |
+| [reactive-resume](https://github.com/reactive-resume/reactive-resume) | 43,347 | `reactive-resume` org — independent open-source project (rxresu.me) |
+| [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) | 16,653 | `awesome-dsh-plugin` org — community catalog, no company behind it |
+| [laya](https://github.com/NandhaKishorM/laya) | 17,596 | NandhaKishorM — individual maintainer |
+| [FlashMLA](https://github.com/deepseek-ai/FlashMLA) | 12,953 | **DeepSeek** — the official `deepseek-ai` org |
+| [Cordis](https://github.com/cordiverse/cordis) | 8,761 | **cordiverse** org; its maintainer Shigma is now at **DeepSeek**, and Cordis is the kernel DeepSeek Harness vendors as `@deepseek-ai/cordis` |
+| [dsh-web](https://github.com/zhu1090093659/dsh-web) | 7,945 | zhu1090093659 — individual maintainer |
+| [ouroboros](https://github.com/Q00/ouroboros) | 6,076 | Q00 — individual maintainer (`@zep-us`) |
+| [teamai-cli](https://github.com/Tencent/teamai-cli) | 4,919 | **腾讯 Tencent** — the official `Tencent` org, opensource.tencent.com |
+| [agent-client-protocol](https://github.com/agentclientprotocol/agent-client-protocol) | 4,305 | `agentclientprotocol` org — governed jointly by **Zed Industries** and **JetBrains** |
+| [deepseek-harness-desktop](https://github.com/dsh-tauri/deepseek-harness-desktop) | 2,517 | `dsh-tauri` community org — self-described non-official and non-commercial, not a DeepSeek repo |
+| [dsh-plugin-radar](https://github.com/AdamPlatin123/dsh-plugin-radar) | 1,465 | AdamPlatin123 — individual maintainer, catalog is a generated artifact |
+| [awesome-deepseek-harness](https://github.com/0xsline/awesome-deepseek-harness) | 1,094 | 0xsline — individual maintainer, community catalog |
+| [awesome-vibecoded-saas](https://github.com/Anil-matcha/awesome-vibecoded-saas) | 1,021 | Anil Chandra Naidu Matcha — individual maintainer, community catalog |
 
-*Cordis is the upstream plugin-core framework that powers DeepSeek Harness; FlashMLA #224 is the only merged pull request in the whole `deepseek-ai` org.*
+*Cordis is the upstream plugin-core framework that powers DeepSeek Harness — vendored into that repo and renamed `@deepseek-ai/cordis`; FlashMLA #224 is the only merged pull request in the whole `deepseek-ai` org.*
 
-**The rest of the contributor set:** [dsh-handbook](https://github.com/Electricitysheep/dsh-handbook) (801★, 2 commits — the official DSH handbook) · [goraven](https://github.com/8treenet/goraven) (737★, 1) · [Zhiyuan-Fan's list](https://github.com/Zhiyuan-Fan/Awesome-DeepSeek-Harness-Plugins) (567★, 5) · [dsh-genui](https://github.com/omdsh-dev/dsh-genui) (473★, 1) · [bruc3van/awesome-dsh-plugin](https://github.com/bruc3van/awesome-dsh-plugin) (358★, 11) · [Dominic789654's list](https://github.com/Dominic789654/awesome-deepseek-harness) (345★, 6) · [imsai-sh's catalog](https://github.com/imsai-sh/awesome-deepseek-harness-plugins) (248★, 41) · [beancookie/awesome-dsh-plugin](https://github.com/beancookie/awesome-dsh-plugin) (150★, 14) · [Oh-My-DSH](https://github.com/like-study1/Oh-My-DSH) (86★, 3) · [walkinglabs' list](https://github.com/walkinglabs/awesome-deepseek-harness-plugins) (29★, 4) · [dsh-advisor](https://github.com/omdsh-dev/dsh-advisor) (22★, 1) · [awesome-deepseekharness](https://github.com/awesome-deepseekharness/awesome-deepseek-harness) (15★, 1) · [jiji262's list](https://github.com/jiji262/awesome-deepseek-harness) (14★, 1) · [vvlife's list](https://github.com/vvlife/awesome-deepseek-harness-plugins) (9★, 3) · [pan17/dsh-wechat](https://github.com/pan17/dsh-wechat) (8★, 2) · [diegosouzapw's catalog](https://github.com/diegosouzapw/awesome-omni-dsh-plugins) (17★, 10). **32 external repositories carry merged work of ours, and 287 merges outside `PerryLink/*` were counted in the 62 external repositories probed for this round — so 287 is a floor, not an estimate.** ([SihanTeng's list](https://github.com/SihanTeng/awesome-deepseek-harness-plugins) carries entries but no attributed commit, so it is deliberately not counted.)
+**The rest of the contributor set** is the community catalog layer rather than upstream projects: sixteen DSH plugin directories and two small projects ([dsh-handbook](https://github.com/Electricitysheep/dsh-handbook), the handbook) — the catalogs ingest the family and carry no company owner, so they are named here only in aggregate. **32 external repositories carry merged work of ours, and 287 merges outside `PerryLink/*` were counted in the 62 external repositories probed for this round — so 287 is a floor, not an estimate.** ([SihanTeng's list](https://github.com/SihanTeng/awesome-deepseek-harness-plugins) carries entries but no attributed commit, so it is deliberately not counted.)
 
 **Security** — published advisory [GHSA-j922-p6h6-p255](https://github.com/PerryLink/dsh-permission-rules/security/advisories/GHSA-j922-p6h6-p255) for dsh-permission-rules (medium, patched in 0.6.16).
 
@@ -270,7 +272,7 @@ Published to a dozen-plus third-party DSH directories and curated lists — [awe
 
 ## 中文介绍
 
-我在 DeepSeek Harness 上把自己希望存在的插件做了出来:检查点回退、声明式权限、输出风格、跨会话记忆、MCP 面板、模型档位路由、微信/TickTick 桥接,以及可验证研究报告 / 基金研究 / 行业研究 / 数据质量「研究四件套」——共 **42 个插件**(Apache-2.0):全部带 CI 与 Gitee 镜像,42 个插件仓**全部**带五语文档(五份文件的一致性由每个仓自己的 CI 闸门守着:段落数、安装命令、配置键),且全部声明 `dsh.bundle` 契约。`perrylink` 这个 npm 账号下共有 **55 个名称、827 个版本**:其中 **48 个在用**(本账号 42 个非 scoped + 5 个 `@perrylink/` scoped + pan17 的 `dsh-wechat`),**7 个已弃用**(折进 `dsh-plugin-upgrade` 2.0.0 的三条走廊腿、作者撤回的 `dsh-personal-directive`、改名前的 scoped `@perrylink/dsh-cert-mcp`,以及上面三个已归档的 `layacore` 名字);**55 个里有 44 个**当前 latest 版本带 provenance 证明(11 个没有:`@perrylink/dsh-plugin-doctor`、jevcore 四包、`dsh-laya`、`laya-mcp`、`dsh-wechat`)。下载量近 30 天 **137,423**(窗口 08-22..09-20):8 月 69,059 + 9 月截至 20 日 97,843;按名称拆开是 42 个非 scoped 60.0k/84.7k/120.0k、5 个 scoped 4.0k/8.3k/10.5k、7 个弃用名 2.7k/3.7k/6.3k、pan17 的 dsh-wechat 5.1k/2.8k/4.8k。一键全家桶:[`dsh-kit`](https://github.com/PerryLink/dsh-kit)。同时我是 DeepSeek Harness 上游核心框架 **Cordis**([cordiverse/cordis](https://github.com/cordiverse/cordis))的贡献者,也是 [deepseek-ai](https://github.com/deepseek-ai) 官方仓贡献者:[FlashMLA](https://github.com/deepseek-ai/FlashMLA) 的修复已合并(#224),这是该组织下唯一一条已合并的外部 PR;此外还有 13 个「千星以上」外部仓的已合并贡献(逐仓星数与合并数见上方 Upstream 一节的表格)。
+我在 DeepSeek Harness 上把自己希望存在的插件做了出来:检查点回退、声明式权限、输出风格、跨会话记忆、MCP 面板、模型档位路由、微信/TickTick 桥接,以及可验证研究报告 / 基金研究 / 行业研究 / 数据质量「研究四件套」——共 **42 个插件**(Apache-2.0):全部带 CI 与 Gitee 镜像,42 个插件仓**全部**带五语文档(五份文件的一致性由每个仓自己的 CI 闸门守着:段落数、安装命令、配置键),且全部声明 `dsh.bundle` 契约。`perrylink` 这个 npm 账号下共有 **55 个名称、827 个版本**:其中 **48 个在用**(本账号 42 个非 scoped + 5 个 `@perrylink/` scoped + pan17 的 `dsh-wechat`),**7 个已弃用**(折进 `dsh-plugin-upgrade` 2.0.0 的三条走廊腿、作者撤回的 `dsh-personal-directive`、改名前的 scoped `@perrylink/dsh-cert-mcp`,以及上面三个已归档的 `layacore` 名字);**55 个里有 44 个**当前 latest 版本带 provenance 证明(11 个没有:`@perrylink/dsh-plugin-doctor`、jevcore 四包、`dsh-laya`、`laya-mcp`、`dsh-wechat`)。下载量近 30 天 **137,423**(窗口 08-22..09-20):8 月 69,059 + 9 月截至 20 日 97,843;按名称拆开是 42 个非 scoped 60.0k/84.7k/120.0k、5 个 scoped 4.0k/8.3k/10.5k、7 个弃用名 2.7k/3.7k/6.3k、pan17 的 dsh-wechat 5.1k/2.8k/4.8k。一键全家桶:[`dsh-kit`](https://github.com/PerryLink/dsh-kit)。同时我是 DeepSeek Harness 上游核心框架 **Cordis**([cordiverse/cordis](https://github.com/cordiverse/cordis),`cordiverse` 出品、已被 DeepSeek 收编为其 Harness 的 vendored 内核)的贡献者,也是 [deepseek-ai](https://github.com/deepseek-ai) 官方仓贡献者:[FlashMLA](https://github.com/deepseek-ai/FlashMLA) 的修复已合并(#224),这是该组织下唯一一条已合并的外部 PR;此外还有 13 个「千星以上」外部仓的已合并贡献,逐仓的**项目归属方**与星数见上方 Upstream 一节的表格——其中归属大公司或知名组织的包括 **腾讯 Tencent** 的 `teamai-cli`、**DeepSeek** 的 FlashMLA、Zed 与 JetBrains 共同治理的 `agent-client-protocol`,其余为个人维护者与社区目录。
 
 2026-09-23 轮:**这一家子所依赖的那项研究,现在是一篇有 DOI 的论文 —— 而且它测的很大一部分,正是这份主页上的两个项目:[laya-mcp](https://github.com/PerryLink/laya-mcp) 与 [jevcore](https://github.com/PerryLink/jevcore)。**《[当判定层的自报字段说谎时:三类判断层的成本、延迟与失效边界实测](https://doi.org/10.5281/zenodo.22902025)》在一套相同条目上实测了三类判定层:Laya(本地、非自回归)、TypeSafe Jev(远程、定型决策)与 DeepSeek-V4.1-Flash。四条主张,**三条成立,一条被自己的数据否定**。
 
