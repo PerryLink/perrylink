@@ -85,14 +85,13 @@ DeepSeek Harness turned "everything is a plugin" into an ecosystem. I build the 
 
 <!-- Round rotation: keep only the newest two rounds (current + one previous). Older rounds live in git history and can be restored on request. Rounds are narrative only — no Snapshot/counter lines: live counts belong to the badge row and "Where the plugins live", and per-edition copies go stale. GHSA/long-lived references belong in "Upstream & community contributions".
 
-     DEVIATION, 2026-09-23: the English "Latest" now carries THREE rounds (09-23, 09-22, 09-21)
-     rather than two. Reason: the 09-23 paper entry names laya-mcp and jevcore as the things it
-     measures, and the 09-21 round is the one that introduces laya-mcp. Rotating it out here
-     would leave a forward reference to a project the page no longer introduces anywhere. The
-     extra round goes when the 09-23 entry no longer depends on it, not on a schedule. The
-     Chinese block ran four rounds and, at the owner's request on 2026-09-23, its 09-20 round was
-     deleted rather than mirrored; that block now carries two (09-23, 09-21). jevcore needs no
-     round of its own -- the family tables and the flagship picks introduce it. -->
+     ROUND COUNT, 2026-09-23: both blocks now carry two rounds -- English 09-23 and 09-22,
+     Chinese 09-23 only, since it never had a 09-22. The earlier 09-20 (Chinese) and 09-21
+     (both) rounds were deleted at the owner's request. Consequence to keep in mind, not a
+     broken link: the 09-23 entry names laya-mcp and dsh-laya, and the 09-21 round was where
+     they were introduced by name. dsh-laya still has its family-table row (the sidecar-client
+     design lives there); laya-mcp and laya-mcp-npm now appear only as a link in the 09-23
+     entry and, for laya-mcp-npm, nowhere at all. -->
 
 ## 📣 Latest — 2026-09-23
 
@@ -109,11 +108,6 @@ DeepSeek Harness turned "everything is a plugin" into an ecosystem. I build the 
 - **Five upstream pull requests merged — three of them in repositories this account had never contributed to before.** [reactive-resume](https://github.com/reactive-resume/reactive-resume) [#3527](https://github.com/reactive-resume/reactive-resume/pull/3527) (out-of-range months rendered an employment period as `undefined 2019 - Present`), [laya](https://github.com/NandhaKishorM/laya) [#94](https://github.com/NandhaKishorM/laya/pull/94) (a disclaimer footer sharing a paragraph made `clean_email_body` delete the whole body, with a regression suite wired into CI in the same change), [teamai-cli](https://github.com/Tencent/teamai-cli) [#695](https://github.com/Tencent/teamai-cli/pull/695) (Qoder CN keeps its user directory at `~/.qoder-cn`, so a CN install synced nothing; merged after four rounds of the repo's own automated review, each of which found a real defect in the previous attempt), and [walkinglabs' plugin list](https://github.com/walkinglabs/awesome-deepseek-harness-plugins) [#76](https://github.com/walkinglabs/awesome-deepseek-harness-plugins/pull/76) and [#65](https://github.com/walkinglabs/awesome-deepseek-harness-plugins/pull/65) (36 family plugins added to its curated README). Two further proposals were closed by me rather than left to compete, and are not counted as merged.
 - **Upstream shipped 0.1.7-alpha.1** — it removes `resolutionMode` outright, so a source/`pnpm` launch no longer has two resolvers to disagree about. Worth recording because two of the three threads reporting *"Cannot read properties of undefined (reading 'prepare')"* were source launches, and the underlying defect was two module instances of `@deepseek-ai/dsh-tools` each holding its own private `TOOL_RUNTIME_SCHEDULER` symbol. Eighteen unanswered Discussions threads were answered, carrying that root cause with file-and-line references.
 - **The family's five-language documentation was reconciled with itself, and the last gap in its CI coverage closed.** The family table is hand-maintained in five READMEs per repo and had drifted four ways across the 42 plugins: three rows described repos the family no longer publishes, the `dsh-plugin-upgrade` row was missing from every sibling table, nine rows had slipped above their own table header, and `dsh-fund-research`'s Chinese file introduced the family with a sentence no other repo used. All 210 files now carry the same 45-row table, byte-verified per file against its own line endings. [dsh-plugin-doctor](https://github.com/PerryLink/dsh-plugin-doctor) changed roles too — English is now its source of truth — so **all 42 plugins carry five-language docs, every one gated in CI**; that gate was also found in [dsh-plugin-guide](https://github.com/PerryLink/dsh-plugin-guide) having sat for weeks with no workflow calling it, and is now wired.
-
-### 2026-09-21 round
-
-- **[laya-mcp](https://github.com/PerryLink/laya-mcp) is a new project line: Laya typed decisions as an installable sidecar and an MCP server, next to [dsh-laya](https://github.com/PerryLink/dsh-laya), the DSH plugin that puts the same `noul`/`choice`/`score` questions behind a Cordis service and two model-visible tools.** Three published repos carry the line — [dsh-laya](https://github.com/PerryLink/dsh-laya) (0.1.4), [laya-mcp](https://github.com/PerryLink/laya-mcp) (0.1.5) and [laya-mcp-npm](https://github.com/PerryLink/laya-mcp-npm), the Node launcher that finds the Python side and passes the MCP stream through untouched; the three `layacore` name reservations were archived rather than left to look like live projects.
-- **[dsh-laya](https://github.com/PerryLink/dsh-laya) installs nothing and downloads nothing** — Laya is PyTorch and cannot live inside a Node plugin, so it is a client of a `laya-mcp serve` process you start yourself, and when that process is not running it says so instead of failing obscurely at the first tool call. One service (`ctx.laya`) plus `laya_ask` and `laya_plan`. The sidecar exists to buy the warm model: the cold build costs seconds to tens of seconds and the default lazy router rebuilds a checkpoint on every language switch.
 
 ## 🚀 Flagship picks (start here)
 
@@ -282,9 +276,5 @@ Published to a dozen-plus third-party DSH directories and curated lists — [awe
 ② **判定器的接入层自报字段不可信,且失效集中在同一个位置**:截断标志一边报「通过」一边静默丢弃输入、概率字段把条目结论反号、两个判定词在真实输入下根本不可达。这些现象收敛成一条形态 —— **答案被明确陈述时近乎完美(0.9909,n=220),必须注意到「缺席」时塌缩(0.3091,n=220),而两种情形下自报置信度都不低。**
 ③ **负结果照负结果报。** 异种判定器在三个区制上都**没有**提供增量覆盖:生成器出错时,判定器**比它自己的边际准确率还低**,失败相关在 3/3 次抽样中为正。论文还如实报告了它自己命名的那类错误的**四个实例** ——**规格级缺陷伪装成关于模型的发现** —— 每一个都是被对照抓出来的,不是被审阅抓出来的;那 23 条强制协议条款就来自这里。
 ④ **两个语言版本各自说明它们是同一项工作。** Zenodo 没有 `is translation of` 这个关系(CORAR 词表里就没有),所以这件事写在**两份 PDF 的扉页**和记录描述里:[英文原文](https://doi.org/10.5281/zenodo.22901853) · [中文译本](https://doi.org/10.5281/zenodo.22902025);制品(代码与全部 `results/` 产物)是第三条记录 [10.5281/zenodo.22901248](https://doi.org/10.5281/zenodo.22901248)。**引其一即可,不要当两篇引;两者有出入以英文为准。**
-
-2026-09-21 轮:① **[laya-mcp](https://github.com/PerryLink/laya-mcp) 是一条新战线:把 Laya 的定型决策做成可安装的 sidecar 与 MCP server,旁边是 [dsh-laya](https://github.com/PerryLink/dsh-laya) —— 把同样的 `noul`/`choice`/`score` 问题放进一个 Cordis service 和两个模型可见的 tool。** 真正发布的只有三个仓:[dsh-laya](https://github.com/PerryLink/dsh-laya)(0.1.4)、[laya-mcp](https://github.com/PerryLink/laya-mcp)(0.1.5),以及负责找到 Python 侧、把 MCP 流原样透传的 Node 启动器 [laya-mcp-npm](https://github.com/PerryLink/laya-mcp-npm);三个 `layacore` 名字仓已归档,只作名称保留,不再像在跑的项目。
-② **为什么必须拆开,而不是顺手装。** Laya 是 PyTorch,不可能塞进 Node 插件里,所以 [dsh-laya](https://github.com/PerryLink/dsh-laya) **什么都不装、什么都不下** —— 它是你自己启动的 `laya-mcp serve` 进程的客户端;那个进程没在跑时它会直说,而不是在第一次 tool 调用时莫名其妙地失败。它给出一个 service(`ctx.laya`)外加 `laya_ask` / `laya_plan` 两个 tool。sidecar 存在的意义是买到热模型:冷启动要几秒到几十秒,而默认的懒路由每换一次语言就重建一次 checkpoint。
-③ **同一天还有 5 条上游 PR 合并**:[dsh-genui](https://github.com/omdsh-dev/dsh-genui) #194(把 lib 清理挪进 Node,Windows 打包才成立)、[dsh-advisor](https://github.com/omdsh-dev/dsh-advisor) #89(prepare-release 夹具改成 Windows 安全)、[ouroboros](https://github.com/Q00/ouroboros) #2427(随 skill 发布的 Getting Started 链接 404)、[dsh-web](https://github.com/zhu1090093659/dsh-web) #1657、[beancookie/awesome-dsh-plugin](https://github.com/beancookie/awesome-dsh-plugin) #184;同时给 [laya](https://github.com/NandhaKishorM/laya) 本体发了第一条提案(免责声明页脚与会话正文同段时 `clean_email_body` 会整段删掉正文),该提案已于 09-21 合并;另有两提案由我主动关闭,不再留在队列里,也不计入已合并。
 
 待业中。近期考虑给自己安排一次体检。因此最近将减少熬夜，后续的更新迭代节奏会适当放缓。当然，问题和缺陷修复不会停，只是发布频率会降低一些，还请大家谅解。
