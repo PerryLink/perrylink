@@ -263,72 +263,72 @@ retired = the 44 such a scan returns. The heading and the badge keep the active 
 
 ### 🔒 Security (4)
 
-| Plugin | One-liner | npm |
-|---|---|---|
-| [dsh-defend](https://github.com/PerryLink/dsh-defend) | Injection/jailbreak/secret detection + destructive-delete gate | [npm](https://www.npmjs.com/package/dsh-defend) |
-| [dsh-permission-rules](https://github.com/PerryLink/dsh-permission-rules) | Declarative allow/deny/ask rules + a local HTTP/CONNECT network policy | [npm](https://www.npmjs.com/package/dsh-permission-rules) |
-| [dsh-mask](https://github.com/PerryLink/dsh-mask) | PII masking/sanitization | [npm](https://www.npmjs.com/package/dsh-mask) |
-| [dsh-skill-pack-security](https://github.com/PerryLink/dsh-skill-pack-security) | Security-audit skill pack + supply-chain gate | [npm](https://www.npmjs.com/package/@perrylink/dsh-skill-pack-security-provider) |
+| Plugin | One-liner | Status | npm |
+|---|---|---|---|
+| [dsh-defend](https://github.com/PerryLink/dsh-defend) | Injection/jailbreak/secret detection + destructive-delete gate | 🧊 FROZEN — broader detector, but frozen | [npm](https://www.npmjs.com/package/dsh-defend) |
+| [dsh-permission-rules](https://github.com/PerryLink/dsh-permission-rules) | Declarative allow/deny/ask rules + a local HTTP/CONNECT network policy | | [npm](https://www.npmjs.com/package/dsh-permission-rules) |
+| [dsh-mask](https://github.com/PerryLink/dsh-mask) | PII masking/sanitization | | [npm](https://www.npmjs.com/package/dsh-mask) |
+| [dsh-skill-pack-security](https://github.com/PerryLink/dsh-skill-pack-security) | Security-audit skill pack + supply-chain gate | | [npm](https://www.npmjs.com/package/@perrylink/dsh-skill-pack-security-provider) |
 
 ### 🔁 Workflows (8)
 
-| Plugin | One-liner | npm |
-|---|---|---|
-| [dsh-background-agents](https://github.com/PerryLink/dsh-background-agents) | Durable background child agents with a Web UI sidebar, messaging and interrupt | [npm](https://www.npmjs.com/package/dsh-background-agents) |
-| [dsh-team-rooms](https://github.com/PerryLink/dsh-team-rooms) | Cross-session team rooms: shared message bus, task board, approval-gated handoffs and a timeline that survive restarts | [npm](https://www.npmjs.com/package/dsh-team-rooms) |
-| [dsh-checkpoint-rewind](https://github.com/PerryLink/dsh-checkpoint-rewind) | Snapshots, forks, one-shot restore | [npm](https://www.npmjs.com/package/dsh-checkpoint-rewind) |
-| [dsh-github](https://github.com/PerryLink/dsh-github) | GitHub PR/issue integration + Action, writes approval-gated | [npm](https://www.npmjs.com/package/@perrylink/dsh-github) |
-| [dsh-claude-move](https://github.com/PerryLink/dsh-claude-move) | Migrate Claude Code/Codex/OpenCode/Hermes into DSH | [npm](https://www.npmjs.com/package/dsh-claude-move) |
-| [dsh-click](https://github.com/PerryLink/dsh-click) | Desktop control tools (Windows/macOS) | [npm](https://www.npmjs.com/package/dsh-click) |
-| [dsh-session-sync](https://github.com/PerryLink/dsh-session-sync) | Git-backed session synchronization | [npm](https://www.npmjs.com/package/dsh-session-sync) |
-| [dsh-test-drive](https://github.com/PerryLink/dsh-test-drive) | Install→smoke→uninstall test driver for plugins | [npm](https://www.npmjs.com/package/dsh-test-drive) |
+| Plugin | One-liner | Status | npm |
+|---|---|---|---|
+| [dsh-background-agents](https://github.com/PerryLink/dsh-background-agents) | Durable background child agents with a Web UI sidebar, messaging and interrupt | 🚫 RETIRED — native continuable subagents | [npm](https://www.npmjs.com/package/dsh-background-agents) |
+| [dsh-team-rooms](https://github.com/PerryLink/dsh-team-rooms) | Cross-session team rooms: shared message bus, task board, approval-gated handoffs and a timeline that survive restarts | 🚫 RETIRED — native Agent Teams | [npm](https://www.npmjs.com/package/dsh-team-rooms) |
+| [dsh-checkpoint-rewind](https://github.com/PerryLink/dsh-checkpoint-rewind) | Snapshots, forks, one-shot restore | | [npm](https://www.npmjs.com/package/dsh-checkpoint-rewind) |
+| [dsh-github](https://github.com/PerryLink/dsh-github) | GitHub PR/issue integration + Action, writes approval-gated | | [npm](https://www.npmjs.com/package/@perrylink/dsh-github) |
+| [dsh-claude-move](https://github.com/PerryLink/dsh-claude-move) | Migrate Claude Code/Codex/OpenCode/Hermes into DSH | 🧊 FROZEN — `dsh-chat-import` | [npm](https://www.npmjs.com/package/dsh-claude-move) |
+| [dsh-click](https://github.com/PerryLink/dsh-click) | Desktop control tools (Windows/macOS) | | [npm](https://www.npmjs.com/package/dsh-click) |
+| [dsh-session-sync](https://github.com/PerryLink/dsh-session-sync) | Git-backed session synchronization | | [npm](https://www.npmjs.com/package/dsh-session-sync) |
+| [dsh-test-drive](https://github.com/PerryLink/dsh-test-drive) | Install→smoke→uninstall test driver for plugins | | [npm](https://www.npmjs.com/package/dsh-test-drive) |
 
 ### ✨ Experience & UX (4)
 
-| Plugin | One-liner | npm |
-|---|---|---|
-| [dsh-composer-history](https://github.com/PerryLink/dsh-composer-history) | Terminal-style input history for the web composer | [npm](https://www.npmjs.com/package/dsh-composer-history) |
-| [dsh-output-styles](https://github.com/PerryLink/dsh-output-styles) | Runtime-switchable model output styles | [npm](https://www.npmjs.com/package/dsh-output-styles) |
-| [dsh-session-pin](https://github.com/PerryLink/dsh-session-pin) | Pin sessions in the Web sidebar | [npm](https://www.npmjs.com/package/dsh-session-pin) |
-| [dsh-memento](https://github.com/PerryLink/dsh-memento) | Approval-gated cross-session memory protocol | [npm](https://www.npmjs.com/package/dsh-memento) |
+| Plugin | One-liner | Status | npm |
+|---|---|---|---|
+| [dsh-composer-history](https://github.com/PerryLink/dsh-composer-history) | Terminal-style input history for the web composer | | [npm](https://www.npmjs.com/package/dsh-composer-history) |
+| [dsh-output-styles](https://github.com/PerryLink/dsh-output-styles) | Runtime-switchable model output styles | | [npm](https://www.npmjs.com/package/dsh-output-styles) |
+| [dsh-session-pin](https://github.com/PerryLink/dsh-session-pin) | Pin sessions in the Web sidebar | 🚫 RETIRED — native session pinning | [npm](https://www.npmjs.com/package/dsh-session-pin) |
+| [dsh-memento](https://github.com/PerryLink/dsh-memento) | Approval-gated cross-session memory protocol | 🧊 FROZEN — `@openviking/dsh-memory-plugin` | [npm](https://www.npmjs.com/package/dsh-memento) |
 
 ### 🧪 Evaluation (3)
 
-| Plugin | One-liner | npm |
-|---|---|---|
-| [dsh-auto-review](https://github.com/PerryLink/dsh-auto-review) | Second-model auto-review on the approval chain | [npm](https://www.npmjs.com/package/dsh-auto-review) |
-| [dsh-doublecheck](https://github.com/PerryLink/dsh-doublecheck) | Engineering-discipline guard: grill, gates, adversary review | [npm](https://www.npmjs.com/package/dsh-doublecheck) |
-| [dsh-score](https://github.com/PerryLink/dsh-score) | Plugin quality scoring across git/gh/npm | [npm](https://www.npmjs.com/package/dsh-score) |
+| Plugin | One-liner | Status | npm |
+|---|---|---|---|
+| [dsh-auto-review](https://github.com/PerryLink/dsh-auto-review) | Second-model auto-review on the approval chain | | [npm](https://www.npmjs.com/package/dsh-auto-review) |
+| [dsh-doublecheck](https://github.com/PerryLink/dsh-doublecheck) | Engineering-discipline guard: grill, gates, adversary review | | [npm](https://www.npmjs.com/package/dsh-doublecheck) |
+| [dsh-score](https://github.com/PerryLink/dsh-score) | Plugin quality scoring across git/gh/npm | | [npm](https://www.npmjs.com/package/dsh-score) |
 
 ### 📊 Observability & cost (4)
 
-| Plugin | One-liner | npm |
-|---|---|---|
-| [dsh-autotier](https://github.com/PerryLink/dsh-autotier) | Automatic strong/cheap model-tier routing with deterministic risk guards | [npm](https://www.npmjs.com/package/dsh-autotier) |
-| [dsh-budget](https://github.com/PerryLink/dsh-budget) | Token/cost metering, budget caps, carbon estimate, latency benchmarks | [npm](https://www.npmjs.com/package/dsh-budget) |
-| [dsh-observe](https://github.com/PerryLink/dsh-observe) | OTel/Langfuse telemetry export | [npm](https://www.npmjs.com/package/dsh-observe) |
-| [dsh-fast](https://github.com/PerryLink/dsh-fast) | Performance diagnostics | [npm](https://www.npmjs.com/package/dsh-fast) |
+| Plugin | One-liner | Status | npm |
+|---|---|---|---|
+| [dsh-autotier](https://github.com/PerryLink/dsh-autotier) | Automatic strong/cheap model-tier routing with deterministic risk guards | | [npm](https://www.npmjs.com/package/dsh-autotier) |
+| [dsh-budget](https://github.com/PerryLink/dsh-budget) | Token/cost metering, budget caps, carbon estimate, latency benchmarks | 🧊 FROZEN — `dsh-cost-meter` | [npm](https://www.npmjs.com/package/dsh-budget) |
+| [dsh-observe](https://github.com/PerryLink/dsh-observe) | OTel/Langfuse telemetry export | | [npm](https://www.npmjs.com/package/dsh-observe) |
+| [dsh-fast](https://github.com/PerryLink/dsh-fast) | Performance diagnostics | | [npm](https://www.npmjs.com/package/dsh-fast) |
 
 ### 🎨 Content & knowledge (5)
 
-| Plugin | One-liner | npm |
-|---|---|---|
-| [dsh-draw](https://github.com/PerryLink/dsh-draw) | Image-generation routing | [npm](https://www.npmjs.com/package/dsh-draw) |
-| [dsh-translate](https://github.com/PerryLink/dsh-translate) | Translation + JSON repair | [npm](https://www.npmjs.com/package/dsh-translate) |
-| [dsh-talk](https://github.com/PerryLink/dsh-talk) | Speech recognition and voice I/O | [npm](https://www.npmjs.com/package/dsh-talk) |
-| [dsh-library](https://github.com/PerryLink/dsh-library) | Local knowledge-base RAG | [npm](https://www.npmjs.com/package/dsh-library) |
-| [dsh-local-ai](https://github.com/PerryLink/dsh-local-ai) | Ollama LLM provider and routing | [npm](https://www.npmjs.com/package/dsh-local-ai) |
+| Plugin | One-liner | Status | npm |
+|---|---|---|---|
+| [dsh-draw](https://github.com/PerryLink/dsh-draw) | Image-generation routing | 🧊 FROZEN — `dsh-image-gen` | [npm](https://www.npmjs.com/package/dsh-draw) |
+| [dsh-translate](https://github.com/PerryLink/dsh-translate) | Translation + JSON repair | | [npm](https://www.npmjs.com/package/dsh-translate) |
+| [dsh-talk](https://github.com/PerryLink/dsh-talk) | Speech recognition and voice I/O | | [npm](https://www.npmjs.com/package/dsh-talk) |
+| [dsh-library](https://github.com/PerryLink/dsh-library) | Local knowledge-base RAG | | [npm](https://www.npmjs.com/package/dsh-library) |
+| [dsh-local-ai](https://github.com/PerryLink/dsh-local-ai) | Ollama LLM provider and routing | | [npm](https://www.npmjs.com/package/dsh-local-ai) |
 
 ### 🛠️ Developer experience (6)
 
-| Plugin | One-liner | npm |
-|---|---|---|
-| [dsh-lsp-actions](https://github.com/PerryLink/dsh-lsp-actions) | LSP diagnostics/formatting/completion/actions | [npm](https://www.npmjs.com/package/dsh-lsp-actions) |
-| [dsh-mcp-panel](https://github.com/PerryLink/dsh-mcp-panel) | MCP management console | [npm](https://www.npmjs.com/package/dsh-mcp-panel) |
-| [dsh-plugin-guide](https://github.com/PerryLink/dsh-plugin-guide) | Plugin-dev knowledge base + CLI toolchain + release-engineering guide | [npm](https://www.npmjs.com/package/dsh-plugin-guide) |
-| [dsh-plugin-upgrade](https://github.com/PerryLink/dsh-plugin-upgrade) | Plugin-author upgrade skill: one package, one corridor index that detects the caller's peer band and routes to the matching closed card (`0.1.3-alpha.1 → 0.1.5-rc.1`, `0.1.5-rc.2 → 0.1.6-alpha.2`), plus a zero-dependency seam scanner (bundle skill + npx CLI) | [npm](https://www.npmjs.com/package/dsh-plugin-upgrade) |
-| [jevcore](https://github.com/PerryLink/jevcore) | TypeSafe Jev as typed decisions instead of prose (`noul`/`choice`/`score` with calibrated probabilities): offline by default, every transmission named before it happens, disabled gates register nothing (the DSH adapter `jevcore-dsh`, plus `jevcore` core and `jevcore-mcp` for non-DSH MCP hosts) | [npm](https://www.npmjs.com/package/jevcore-dsh) |
-| [dsh-laya](https://github.com/PerryLink/dsh-laya) | Laya typed decisions (`noul`/`choice`/`score`) as a first-class Cordis service (`ctx.laya`) plus `laya_ask`/`laya_plan` tools; a client of a `laya-mcp serve` sidecar, so it installs and downloads nothing, and reports whether state stays on this machine as a fact rather than a policy | [npm](https://www.npmjs.com/package/dsh-laya) |
+| Plugin | One-liner | Status | npm |
+|---|---|---|---|
+| [dsh-lsp-actions](https://github.com/PerryLink/dsh-lsp-actions) | LSP diagnostics/formatting/completion/actions | | [npm](https://www.npmjs.com/package/dsh-lsp-actions) |
+| [dsh-mcp-panel](https://github.com/PerryLink/dsh-mcp-panel) | MCP management console | | [npm](https://www.npmjs.com/package/dsh-mcp-panel) |
+| [dsh-plugin-guide](https://github.com/PerryLink/dsh-plugin-guide) | Plugin-dev knowledge base + CLI toolchain + release-engineering guide | | [npm](https://www.npmjs.com/package/dsh-plugin-guide) |
+| [dsh-plugin-upgrade](https://github.com/PerryLink/dsh-plugin-upgrade) | Plugin-author upgrade skill: one package, one corridor index that detects the caller's peer band and routes to the matching closed card (`0.1.3-alpha.1 → 0.1.5-rc.1`, `0.1.5-rc.2 → 0.1.6-alpha.2`), plus a zero-dependency seam scanner (bundle skill + npx CLI) | | [npm](https://www.npmjs.com/package/dsh-plugin-upgrade) |
+| [jevcore](https://github.com/PerryLink/jevcore) | TypeSafe Jev as typed decisions instead of prose (`noul`/`choice`/`score` with calibrated probabilities): offline by default, every transmission named before it happens, disabled gates register nothing (the DSH adapter `jevcore-dsh`, plus `jevcore` core and `jevcore-mcp` for non-DSH MCP hosts) | | [npm](https://www.npmjs.com/package/jevcore-dsh) |
+| [dsh-laya](https://github.com/PerryLink/dsh-laya) | Laya typed decisions (`noul`/`choice`/`score`) as a first-class Cordis service (`ctx.laya`) plus `laya_ask`/`laya_plan` tools; a client of a `laya-mcp serve` sidecar, so it installs and downloads nothing, and reports whether state stays on this machine as a fact rather than a policy | | [npm](https://www.npmjs.com/package/dsh-laya) |
 
 *Support repos:* [dsh-plugin-kit](https://github.com/PerryLink/dsh-plugin-kit) (review-rule meta package) ·
 [dsh-catalog](https://github.com/PerryLink/dsh-catalog) (DSH Desktop Market catalog source) ·
@@ -343,22 +343,65 @@ holds **52 npm names** while the family has 42 plugin repos (measured 2026-10-04
 
 ### 📱 Messaging & bridges (3)
 
-| Plugin | One-liner | npm |
-|---|---|---|
-| [dsh-wechat](https://github.com/pan17/dsh-wechat) | WeChat ↔ DSH bridge (Tencent iLink bot): text/image/file/voice, approvals in chat — developed with [pan17](https://github.com/pan17/dsh-wechat), who now hosts the repo and publishes the npm package | [npm](https://www.npmjs.com/package/dsh-wechat) |
-| [dsh-ticktick](https://github.com/PerryLink/dsh-ticktick) | TickTick/Dida365 task bridge: session-header panel + 11 tools | [npm](https://www.npmjs.com/package/@perrylink/dsh-ticktick) |
-| [dsh-reach](https://github.com/PerryLink/dsh-reach) | Multi-channel approval/question bridge: WeChat/Telegram/Feishu, session console | [npm](https://www.npmjs.com/package/dsh-reach) |
+| Plugin | One-liner | Status | npm |
+|---|---|---|---|
+| [dsh-wechat](https://github.com/pan17/dsh-wechat) | WeChat ↔ DSH bridge (Tencent iLink bot): text/image/file/voice, approvals in chat — developed with [pan17](https://github.com/pan17/dsh-wechat), who now hosts the repo and publishes the npm package | 🧊 FROZEN — `@xmanrui/dsh-im` | [npm](https://www.npmjs.com/package/dsh-wechat) |
+| [dsh-ticktick](https://github.com/PerryLink/dsh-ticktick) | TickTick/Dida365 task bridge: session-header panel + 11 tools | | [npm](https://www.npmjs.com/package/@perrylink/dsh-ticktick) |
+| [dsh-reach](https://github.com/PerryLink/dsh-reach) | Multi-channel approval/question bridge: WeChat/Telegram/Feishu, session console | 🧊 FROZEN — `@xmanrui/dsh-im` | [npm](https://www.npmjs.com/package/dsh-reach) |
 
 ### 🔬 Research (4)
 
-| Plugin | One-liner | npm |
-|---|---|---|
-| [dsh-data-quality](https://github.com/PerryLink/dsh-data-quality) | Data profiling/cleaning/verification | [npm](https://www.npmjs.com/package/dsh-data-quality) |
-| [dsh-fund-research](https://github.com/PerryLink/dsh-fund-research) | Mutual-fund research, sealed traceable snapshots | [npm](https://www.npmjs.com/package/dsh-fund-research) |
-| [dsh-industry-research](https://github.com/PerryLink/dsh-industry-research) | Industry/company research domain pack | [npm](https://www.npmjs.com/package/dsh-industry-research) |
-| [dsh-research-report](https://github.com/PerryLink/dsh-research-report) | Verifiable research-report engine | [npm](https://www.npmjs.com/package/dsh-research-report) |
+| Plugin | One-liner | Status | npm |
+|---|---|---|---|
+| [dsh-data-quality](https://github.com/PerryLink/dsh-data-quality) | Data profiling/cleaning/verification | | [npm](https://www.npmjs.com/package/dsh-data-quality) |
+| [dsh-fund-research](https://github.com/PerryLink/dsh-fund-research) | Mutual-fund research, sealed traceable snapshots | | [npm](https://www.npmjs.com/package/dsh-fund-research) |
+| [dsh-industry-research](https://github.com/PerryLink/dsh-industry-research) | Industry/company research domain pack | | [npm](https://www.npmjs.com/package/dsh-industry-research) |
+| [dsh-research-report](https://github.com/PerryLink/dsh-research-report) | Verifiable research-report engine | | [npm](https://www.npmjs.com/package/dsh-research-report) |
 
 </details>
+
+## 🪦 Retired & frozen (2026-10-05)
+
+A maintainer review of the whole family against the official harness and the wider plugin ecosystem
+concluded that three of these plugins duplicate capabilities the **official harness now implements
+natively**, and one was reclassified as internal tooling. Retirement here has a precise meaning:
+**compatibility updates stop because the capability is now official, or because a better-adopted
+alternative exists** — these are not abandoned or broken, and they keep working for existing installs.
+
+### Retired — the official harness now implements this
+
+| Plugin | Why | Use instead |
+|---|---|---|
+| [dsh-background-agents](https://github.com/PerryLink/dsh-background-agents) | The official harness ships **native continuable subagents** — `subagent` with `backgroundMode: continuable`, plus `send_message` / `interrupt_agent` / `list_agents` / `job_*`, mounted inside `dsh-base` | the native continuable subagents |
+| [dsh-session-pin](https://github.com/PerryLink/dsh-session-pin) | The official harness **ships session pinning natively** — the row menu and hover button in `dsh-client-ui-workspace`, with the pin set persisted on the Host and mounted in the default Web bundle | the built-in session pin |
+| [dsh-team-rooms](https://github.com/PerryLink/dsh-team-rooms) | The official harness ships the **Agent Teams** subsystem (`dsh-experimental-agent-team`): implicit-root roster, durable peer mailbox and a shared task DAG. Well-adopted community alternatives exist too | native Agent Teams, or [`@nanmicoder/dsh-agent-teams`](https://github.com/NanmiCoder/dsh-agent-teams) |
+
+**Reclassified, not retired:** [dsh-catalog](https://github.com/PerryLink/dsh-catalog) is now treated as
+**family-internal tooling** rather than a product. It is live infrastructure feeding the DSH Desktop
+Community Market, and its job is to inventory this family — so it does not compete with third-party
+catalogs and needs no retirement.
+
+### Frozen — no new features, only real breakages fixed
+
+Frozen because **better-adopted alternatives now exist** for that capability. Each repo's README records
+the measured comparison. Weekly npm downloads, measured 2026-10-05:
+
+| Plugin | this repo | better-adopted alternative |
+|---|---|---|
+| [dsh-budget](https://github.com/PerryLink/dsh-budget) | 1,079 | [`dsh-cost-meter`](https://github.com/Han-1413141/dsh-cost-meter) — **33,526** |
+| [dsh-memento](https://github.com/PerryLink/dsh-memento) | 1,202 | [`@openviking/dsh-memory-plugin`](https://github.com/volcengine/OpenViking) — **10,160** |
+| [dsh-draw](https://github.com/PerryLink/dsh-draw) | 973 | [`dsh-image-gen`](https://github.com/shanliuling/dsh-image-gen) — **7,216** |
+| [dsh-claude-move](https://github.com/PerryLink/dsh-claude-move) | 843 | [`dsh-chat-import`](https://github.com/Nwflower/dsh-chat-import) — **5,111** |
+| [dsh-reach](https://github.com/PerryLink/dsh-reach) | ~600 | [`@xmanrui/dsh-im`](https://github.com/xmanrui/dsh-im) — **17,384** |
+| [dsh-wechat](https://github.com/pan17/dsh-wechat) | 752 | [`@xmanrui/dsh-im`](https://github.com/xmanrui/dsh-im) — **17,384** |
+| [dsh-defend](https://github.com/PerryLink/dsh-defend) | 937 | [`cc-safety-net`](https://github.com/kenryu42/cc-safety-net) — **13,087** |
+
+`dsh-defend` is the one frozen package that is still the **broader** detector — an Aho-Corasick engine over
+the prompt-injection / jailbreak / secret-leaker asset sets, with three-way allow/ask/block interception on
+user messages, tool arguments **and** tool results. It is frozen because the field moved, not because the
+plugin is weaker.
+
+---
 
 ## 🌍 Where the plugins live
 
