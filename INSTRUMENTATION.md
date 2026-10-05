@@ -93,30 +93,48 @@ these before the next public claim about family size.
 
 ## 4. Badge row
 
-Re-solved 2026-10-05 for **28 badges in six rows (3,737px)** — a deliberate reversal of the same-day
-cut to 6. The badge block is a recognition surface, and every source that resolves is shown rather
-than curated down. Measured from each badge's own SVG `width`/`height` at the 20px render height:
+**The criterion is scope: this is a personal profile, so a badge must describe the account or the
+family it maintains, never one repository.** Measured from each badge's own SVG `width`/`height` at
+the 20px render height, then partitioned into balanced rows under the cap below.
+
+Re-solved 2026-10-05 for **20 badges in four rows (2,808px)**:
 
 | Row | px | Badges |
 |---|---|---|
 | 1 — reach | 627 | stars, followers, repos, npm names, npm downloads 30d, plugins |
-| 2 — quality, licence, registry | 620 | license, OpenSSF Scorecard, Glama (jevcore), Glama (dsh-cert-mcp), MCP Registry |
-| 3 — third-party listings | 566 | awesome-dsh-plugin, DSH Directory, DSH Market |
-| 4 — mirror, toolchain, catalog | 524 | Gitee, dsh host corridor, node, Desktop Market source |
-| 5 — dshfind footprint | 664 | dshfind downloads, dshfind score, dshfind aggregate, certified |
-| 6 — activity & research | 736 | dsh-plugin topic, last commit, release, contributors, forks, Zenodo DOI |
+| 2 — quality, licence, registry | 678 | license, OpenSSF Scorecard, Glama, MCP Registry, awesome-dsh-plugin |
+| 3 — listings, mirror, toolchain | 750 | DSH Directory, DSH Market, Gitee, dsh host corridor, node |
+| 4 — footprint & research | 753 | dshfind aggregate, Desktop Market source, certified, Zenodo DOI |
 
-**The sizing rule is a cap, not a target.** The first solve packed five rows and let the widest reach
-836px; that exceeded the ~811px which earlier editions had already proven renders as one row, so the
-last badge on it wrapped and was **stranded alone on the following line**. Keep every row at or under
-~800px. Note the two surfaces are not the same width — the file view is ~888px and the profile
-column, which is the one that matters here, is narrower — so solve against the narrower one.
-A row that is merely "balanced" is not enough: balance is exactly what produced the 836px row.
+**No external source may appear twice.** An expansion to 28 badges had violated that: two Glama
+badges (one per MCP server) and two dshfind badges (downloads and score for the same repository),
+plus four numbers that belonged to a single repository — `forks 2`, `release v0.12.11`,
+`last commit` and `contributors 3`, all of them `dsh-auto-review`'s. A reader sees "forks: 2" on a
+personal page and cannot tell whose forks those are or why they matter. Eight were removed:
 
-Rows are grouped by meaning and sized so that no row can wrap. Do **not** append (see the rules
-below).
+| Removed | Why |
+|---|---|
+| Glama (dsh-cert-mcp) | same site as the Glama badge kept, second server — a duplicate, not a second fact |
+| dshfind downloads, dshfind score | both are `dsh-auto-review`'s; the family aggregate says the same thing at the right scope |
+| `forks 2` | one repository's fork count |
+| `release v0.12.11` | one repository's version tag |
+| `last commit` | one repository's last commit |
+| `contributors 3` | one repository's contributor count |
+| `dsh-plugin topic` | a global topic with 17,592 repositories; not this account's property |
 
-**Hand-written values in the badge row** (each mirrors a README site, and must move with it):
+Two badges are **kept but scoped in their alt text** — OpenSSF Scorecard and `certified` both point
+at the flagship `dsh-auto-review`, and their `alt` now says so, so the badge cannot be read as an
+account-wide claim. They are the family's only external quality signal and its own certification
+programme, and both were in the original 17.
+
+**The sizing rule is a cap, not a target.** An earlier solve packed five rows and let the widest
+reach 836px; that exceeded the ~811px which earlier editions had already proven renders as one row,
+so the last badge on it wrapped and was **stranded alone on the following line**. Keep every row at
+or under ~800px. The two surfaces are not the same width — the file view is ~888px and the profile
+column, which is the one that matters, is narrower — so solve against the narrower one. A row that
+is merely "balanced" is not enough: balance is exactly what produced the 836px row.
+
+**Hand-written values** (each mirrors a README site and must move with it):
 
 | Badge | Value | Mirrors |
 |---|---|---|
@@ -130,12 +148,11 @@ below).
 | node | ≥22.19 | the same file's `engines.node` (`^22.19.0 \|\| >=24.0.0`) |
 | license | Apache-2.0 | the `LICENSE` file |
 | dshfind aggregate | 22.5k+ across 8 | "Where the plugins live" |
-| dsh-plugin topic | (no number) | the topic page |
 
-Live badges (stars, followers, repos, OpenSSF Scorecard, both Glama scores, MCP-related listings,
-dshfind, last commit, release, contributors, forks, Zenodo DOI) need no maintenance.
+Live badges (stars, followers, repos, OpenSSF Scorecard, Glama, MCP Registry, the three listings,
+dshfind aggregate, certified, Zenodo DOI) need no maintenance.
 
-Two candidates were probed and **not** included, with reasons: a GitHub Sponsors badge
+Three candidates were probed and **not** included, with reasons: a GitHub Sponsors badge
 (`.github/FUNDING.yml` is `github: [PerryLink]`, but the badge renders the sponsor count, which is
 0 — a counter that reads as a negative is not recognition), and badges for the other DSH
 directories this account is listed in (`0xsline`, `walkinglabs`, `AdamPlatin123`, `dsh-suite` and
