@@ -93,21 +93,28 @@ these before the next public claim about family size.
 
 ## 4. Badge row
 
-Re-solved 2026-10-05 for **28 badges in five rows (3,737px)** — a deliberate reversal of the same-day
+Re-solved 2026-10-05 for **28 badges in six rows (3,737px)** — a deliberate reversal of the same-day
 cut to 6. The badge block is a recognition surface, and every source that resolves is shown rather
 than curated down. Measured from each badge's own SVG `width`/`height` at the 20px render height:
 
 | Row | px | Badges |
 |---|---|---|
-| 1 — reach & scale | 747 | stars, followers, repos, npm names, npm downloads 30d, plugins, license |
-| 2 — scores & listings | 668 | OpenSSF Scorecard, Glama (jevcore), Glama (dsh-cert-mcp), MCP Registry, awesome-dsh-plugin |
-| 3 — listings & toolchain | 750 | DSH Directory, DSH Market, Gitee, dsh host corridor, node |
-| 4 — DSH footprint | 836 | dshfind downloads, dshfind score, dshfind aggregate, Desktop Market source, certified |
-| 5 — activity & research | 736 | dsh-plugin topic, last commit, release, contributors, forks, Zenodo DOI |
+| 1 — reach | 627 | stars, followers, repos, npm names, npm downloads 30d, plugins |
+| 2 — quality, licence, registry | 620 | license, OpenSSF Scorecard, Glama (jevcore), Glama (dsh-cert-mcp), MCP Registry |
+| 3 — third-party listings | 566 | awesome-dsh-plugin, DSH Directory, DSH Market |
+| 4 — mirror, toolchain, catalog | 524 | Gitee, dsh host corridor, node, Desktop Market source |
+| 5 — dshfind footprint | 664 | dshfind downloads, dshfind score, dshfind aggregate, certified |
+| 6 — activity & research | 736 | dsh-plugin topic, last commit, release, contributors, forks, Zenodo DOI |
 
-Every row is inside GitHub's ~888px README content column; the widest is 836px. The partition was
-solved by dynamic programming over the declaration order, minimising the widest row — **not** by
-appending, which is what the rule below forbids.
+**The sizing rule is a cap, not a target.** The first solve packed five rows and let the widest reach
+836px; that exceeded the ~811px which earlier editions had already proven renders as one row, so the
+last badge on it wrapped and was **stranded alone on the following line**. Keep every row at or under
+~800px. Note the two surfaces are not the same width — the file view is ~888px and the profile
+column, which is the one that matters here, is narrower — so solve against the narrower one.
+A row that is merely "balanced" is not enough: balance is exactly what produced the 836px row.
+
+Rows are grouped by meaning and sized so that no row can wrap. Do **not** append (see the rules
+below).
 
 **Hand-written values in the badge row** (each mirrors a README site, and must move with it):
 
