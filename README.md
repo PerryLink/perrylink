@@ -7,7 +7,7 @@
 
 <p align="center">
 <a href="https://github.com/PerryLink?tab=repositories"><img alt="GitHub stars" src="https://img.shields.io/github/stars/PerryLink?label=stars&affiliations=OWNER&color=24292f"></a>
-<img alt="npm downloads 30d" src="https://img.shields.io/badge/npm%20downloads%2030d-158.6k-6e7781">
+<img alt="npm downloads 30d" src="https://img.shields.io/badge/npm%20downloads%2030d-152.6k-6e7781">
 <img alt="plugins" src="https://img.shields.io/badge/plugins-42-6e7781">
 <a href="https://registry.modelcontextprotocol.io/v0/servers?search=perrylink"><img alt="MCP Registry" src="https://img.shields.io/badge/MCP%20Registry-3%20servers-6f42c1"></a>
 <a href="https://dshfind.com/plugins?q=PerryLink"><img alt="dshfind" src="https://dshfind.com/api/badge/PerryLink/dsh-auto-review?metric=downloads"></a>
@@ -343,10 +343,10 @@ holds **52 npm names** while the family has 42 plugin repos (measured 2026-10-04
 
 - **GitHub** (this profile), **[Gitee](https://gitee.com/perrylink)** and **npm** — source, CI and releases here; 46
 family repos mirrored to Gitee by a daily job (default branch + all tags), plus this profile repo; the `perrylink`
-account holds **52 npm names and 909 versions**, 46 of them with a non-deprecated `latest` and 44 carrying a
-provenance attestation on that version (measured 2026-10-04 against each name's own packument — the registry
+account holds **52 npm names and 951 versions**, 47 of them with a non-deprecated `latest` and 52 carrying a
+provenance attestation on that version (measured 2026-10-05 against each name's own packument — the registry
 **search** endpoint is not authoritative here, since it returns only 47 names and omits the deprecated ones)
-- **npm downloads** — **158,593 over the trailing 30 days** (npm window 09-04..10-03, summed per name from the
+- **npm downloads** — **152,643 over the trailing 30 days** (npm window 09-05..10-04, summed per name from the
 downloads point endpoint; **[dshfind](https://dshfind.com/plugins?q=PerryLink)** independently tracks **21.5k+**
 across the 7 family plugins it currently has a download figure for — dshfind reports rounded tiers, so that is a floor
 rather than a total
