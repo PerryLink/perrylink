@@ -23,8 +23,10 @@ absent. The two sanctioned exceptions are marked.
 | Family roster (which plugins exist) | [`dsh-kit/plugins.txt`](https://github.com/PerryLink/dsh-kit) — already the roster's source of truth, with a parity script | any release |
 | npm 30-day downloads | README § Where the plugins live | monthly |
 | **npm downloads badge** *(exception)* | README badge row | same |
-| npm names / versions / non-deprecated / provenance | README § Where the plugins live | monthly |
+| npm names / versions / non-deprecated latest | README § Where the plugins live | monthly |
+| npm provenance — **state the metric**: 39 names carry SLSA provenance on their non-deprecated `latest`; 44 carry it on at least one version; 41 on their `latest` whatever its state | README § Where the plugins live | monthly |
 | dshfind aggregate tier | README § Where the plugins live | when dshfind re-renders |
+| dsh host corridor / node engine / license | README badge row (each links to the file it is read from) | when the declared range or the engines change |
 | external contributor repos / merges / above-1,000★ | README § Upstream, the "rest of the contributor set" paragraph | on re-derivation |
 | The 20-row star table | README § Upstream (the table itself) | on re-derivation |
 | laya merged / opened / open / closed | README § Upstream, the laya paragraph | on re-derivation |
@@ -91,25 +93,46 @@ these before the next public claim about family size.
 
 ## 4. Badge row
 
-Re-solved 2026-10-05 for **6 badges in one row**. Measured from each badge's own SVG
-`width`/`height` at the 20px render height:
+Re-solved 2026-10-05 for **28 badges in five rows (3,737px)** — a deliberate reversal of the same-day
+cut to 6. The badge block is a recognition surface, and every source that resolves is shown rather
+than curated down. Measured from each badge's own SVG `width`/`height` at the 20px render height:
 
-| Badge | px @20px | source |
+| Row | px | Badges |
 |---|---|---|
-| stars | 90 | shields.io, live |
-| npm downloads 30d | 170 | **hand-written** |
-| plugins | 72 | **hand-written** |
-| MCP Registry | 144 | **hand-written** |
-| dshfind | 174 | dshfind.com, live |
-| awesome-dsh-plugin | 168 | awesome-dsh-plugin.com, live |
-| **total** | **818** | fits GitHub's ~888px README content column in one row |
+| 1 — reach & scale | 747 | stars, followers, repos, npm names, npm downloads 30d, plugins, license |
+| 2 — scores & listings | 668 | OpenSSF Scorecard, Glama (jevcore), Glama (dsh-cert-mcp), MCP Registry, awesome-dsh-plugin |
+| 3 — listings & toolchain | 750 | DSH Directory, DSH Market, Gitee, dsh host corridor, node |
+| 4 — DSH footprint | 836 | dshfind downloads, dshfind score, dshfind aggregate, Desktop Market source, certified |
+| 5 — activity & research | 736 | dsh-plugin topic, last commit, release, contributors, forks, Zenodo DOI |
 
-The previous edition carried 17 badges across three rows (2,414px) and documented its partition
-arithmetic here. Eleven were dropped on 2026-10-05: followers, repos, OpenSSF Scorecard, Glama,
-npm packages, DSH Directory, DSH Market, Gitee, the dshfind aggregate, Desktop Market source, and
-certified. All of them are recoverable from git history; several survive as links in the README's
-"Where the plugins live" section. **They were dropped for signal density, not because a source
-disappeared** — if one is reinstated, re-solve the row rather than appending to it.
+Every row is inside GitHub's ~888px README content column; the widest is 836px. The partition was
+solved by dynamic programming over the declaration order, minimising the widest row — **not** by
+appending, which is what the rule below forbids.
+
+**Hand-written values in the badge row** (each mirrors a README site, and must move with it):
+
+| Badge | Value | Mirrors |
+|---|---|---|
+| npm names | 52 | "Where the plugins live" |
+| npm downloads 30d | 152.6k | "Where the plugins live" (152,643) |
+| plugins | 42 | the intro sentence |
+| MCP Registry | 3 servers | "Where the plugins live" |
+| DSH Desktop Market source | (no number) | the catalog URL |
+| Gitee mirror | (no number) | the mirror claim |
+| dsh host corridor | ≥0.1.2-rc.1 <0.3.0 | the union of the six `engines.dsh` clauses in any plugin's `package.json` |
+| node | ≥22.19 | the same file's `engines.node` (`^22.19.0 \|\| >=24.0.0`) |
+| license | Apache-2.0 | the `LICENSE` file |
+| dshfind aggregate | 22.5k+ across 8 | "Where the plugins live" |
+| dsh-plugin topic | (no number) | the topic page |
+
+Live badges (stars, followers, repos, OpenSSF Scorecard, both Glama scores, MCP-related listings,
+dshfind, last commit, release, contributors, forks, Zenodo DOI) need no maintenance.
+
+Two candidates were probed and **not** included, with reasons: a GitHub Sponsors badge
+(`.github/FUNDING.yml` is `github: [PerryLink]`, but the badge renders the sponsor count, which is
+0 — a counter that reads as a negative is not recognition), and badges for the other DSH
+directories this account is listed in (`0xsline`, `walkinglabs`, `AdamPlatin123`, `dsh-suite` and
+`deepseek1024.com` all return 404 or HTML for a badge path — they publish none).
 
 Rules that still hold:
 

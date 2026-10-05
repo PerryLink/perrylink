@@ -7,11 +7,37 @@
 
 <p align="center">
 <a href="https://github.com/PerryLink?tab=repositories"><img alt="GitHub stars" src="https://img.shields.io/github/stars/PerryLink?label=stars&affiliations=OWNER&color=24292f"></a>
+<a href="https://github.com/PerryLink?tab=followers"><img alt="GitHub followers" src="https://img.shields.io/github/followers/PerryLink?label=followers&color=24292f"></a>
+<a href="https://github.com/PerryLink?tab=repositories"><img alt="GitHub repos" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FPerryLink&query=%24.public_repos&label=repos&color=24292f"></a>
+<a href="https://www.npmjs.com/search?q=perrylink"><img alt="npm names" src="https://img.shields.io/badge/npm-52%20names-cb3837?logo=npm"></a>
 <img alt="npm downloads 30d" src="https://img.shields.io/badge/npm%20downloads%2030d-152.6k-6e7781">
 <img alt="plugins" src="https://img.shields.io/badge/plugins-42-6e7781">
+<a href="https://github.com/PerryLink/dsh-auto-review/blob/main/LICENSE"><img alt="license" src="https://img.shields.io/badge/license-Apache--2.0-blue"></a>
+<br>
+<a href="https://github.com/PerryLink/dsh-plugin-doctor#readme"><img alt="OpenSSF Scorecard" src="https://img.shields.io/ossf-scorecard/github.com/PerryLink/dsh-auto-review?label=openssf%20scorecard"></a>
+<a href="https://glama.ai/mcp/servers/PerryLink/jevcore"><img alt="Glama jevcore" src="https://glama.ai/mcp/servers/PerryLink/jevcore/badges/score.svg"></a>
+<a href="https://glama.ai/mcp/servers/PerryLink/dsh-cert-mcp"><img alt="Glama dsh-cert-mcp" src="https://glama.ai/mcp/servers/PerryLink/dsh-cert-mcp/badges/score.svg"></a>
 <a href="https://registry.modelcontextprotocol.io/v0/servers?search=perrylink"><img alt="MCP Registry" src="https://img.shields.io/badge/MCP%20Registry-3%20servers-6f42c1"></a>
-<a href="https://dshfind.com/plugins?q=PerryLink"><img alt="dshfind" src="https://dshfind.com/api/badge/PerryLink/dsh-auto-review?metric=downloads"></a>
 <a href="https://awesome-dsh-plugin.com"><img alt="awesome-dsh-plugin" src="https://awesome-dsh-plugin.com/badge.svg"></a>
+<br>
+<a href="https://dsh.directory/plugins?q=perrylink"><img alt="DSH Directory" src="https://dsh.directory/badges/listed.svg"></a>
+<a href="https://dsh.market/?q=PerryLink"><img alt="DSH Market" src="https://raw.githubusercontent.com/2BingLing/dsh-market/master/assets/readme/badge-listed-en.svg"></a>
+<a href="https://gitee.com/perrylink"><img alt="Gitee mirror" src="https://img.shields.io/badge/Gitee-mirror-c71d23?logo=gitee"></a>
+<a href="https://github.com/PerryLink/dsh-mcp-panel/blob/main/package.json"><img alt="dsh host corridor" src="https://img.shields.io/badge/dsh-%E2%89%A50.1.2--rc.1%20%3C0.3.0-4B32C3"></a>
+<a href="https://github.com/PerryLink/dsh-mcp-panel/blob/main/package.json"><img alt="node" src="https://img.shields.io/badge/node-%E2%89%A522.19-339933?logo=node.js"></a>
+<br>
+<a href="https://dshfind.com/plugins/PerryLink/dsh-auto-review?ref=badge"><img alt="dshfind downloads" src="https://dshfind.com/api/badge/PerryLink/dsh-auto-review?metric=downloads"></a>
+<a href="https://dshfind.com/plugins/PerryLink/dsh-auto-review?ref=badge"><img alt="dshfind score" src="https://dshfind.com/api/badge/PerryLink/dsh-auto-review?metric=score"></a>
+<a href="https://dshfind.com/plugins?q=PerryLink"><img alt="dshfind aggregate" src="https://img.shields.io/badge/dshfind%20downloads-22.5k%2B%20across%208%20plugins-6e7781"></a>
+<a href="https://perrylink-dsh-catalog.perrylink.workers.dev/catalog-source.json"><img alt="Desktop Market source" src="https://img.shields.io/badge/DSH%20Desktop%20Market-source-0969da"></a>
+<a href="https://github.com/PerryLink/dsh-plugin-certification"><img alt="certified" src="https://raw.githubusercontent.com/PerryLink/dsh-plugin-certification/main/badges/PerryLink__dsh-auto-review.svg"></a>
+<br>
+<a href="https://github.com/topics/dsh-plugin"><img alt="dsh-plugin topic" src="https://img.shields.io/badge/topic-dsh--plugin-0969da?logo=github"></a>
+<a href="https://github.com/PerryLink/dsh-auto-review/commits"><img alt="last commit" src="https://img.shields.io/github/last-commit/PerryLink/dsh-auto-review?label=last%20commit"></a>
+<a href="https://github.com/PerryLink/dsh-auto-review/releases"><img alt="release" src="https://img.shields.io/github/v/release/PerryLink/dsh-auto-review?label=release"></a>
+<a href="https://github.com/PerryLink/dsh-auto-review/graphs/contributors"><img alt="contributors" src="https://img.shields.io/github/contributors/PerryLink/dsh-auto-review?label=contributors"></a>
+<a href="https://github.com/PerryLink/dsh-auto-review/network/members"><img alt="forks" src="https://img.shields.io/github/forks/PerryLink/dsh-auto-review?label=forks"></a>
+<a href="https://doi.org/10.5281/zenodo.22901853"><img alt="Zenodo DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.22901853.svg"></a>
 </p>
 
 Open-source developer in Beijing. I build the
@@ -343,12 +369,14 @@ holds **52 npm names** while the family has 42 plugin repos (measured 2026-10-04
 
 - **GitHub** (this profile), **[Gitee](https://gitee.com/perrylink)** and **npm** — source, CI and releases here; 46
 family repos mirrored to Gitee by a daily job (default branch + all tags), plus this profile repo; the `perrylink`
-account holds **52 npm names and 951 versions**, 47 of them with a non-deprecated `latest` and 52 carrying a
-provenance attestation on that version (measured 2026-10-05 against each name's own packument — the registry
+account holds **52 npm names and 951 versions**, 47 of them with a non-deprecated `latest` and **39 of those
+carrying a SLSA provenance attestation on that version** (44 names carry it on at least one version; the eight with
+none anywhere are `jevcore`, `jevcore-dsh`, `jevcore-mcp`, `dsh-laya`, `laya-mcp`, `dsh-personal-directive` and the
+three archived `layacore` names — measured 2026-10-05 against each name's own packument, and the registry
 **search** endpoint is not authoritative here, since it returns only 47 names and omits the deprecated ones)
 - **npm downloads** — **152,643 over the trailing 30 days** (npm window 09-05..10-04, summed per name from the
-downloads point endpoint; **[dshfind](https://dshfind.com/plugins?q=PerryLink)** independently tracks **21.5k+**
-across the 7 family plugins it currently has a download figure for — dshfind reports rounded tiers, so that is a floor
+downloads point endpoint; **[dshfind](https://dshfind.com/plugins?q=PerryLink)** independently tracks **22.5k+**
+across the 8 family plugins it currently has a download figure for — dshfind reports rounded tiers, so that is a floor
 rather than a total
 - **DSH Desktop Market** — add the catalog source
 `https://perrylink-dsh-catalog.perrylink.workers.dev/catalog-source.json` under Market → Sources to browse the family
