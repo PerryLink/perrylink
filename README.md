@@ -63,36 +63,37 @@ proposals are deliberately not listed. The third column names the project's owne
 does not say whether that is a company, a standards body or one person.*
 
 **★ 1,000+ — named individually, as the rule requires, each carrying the party that owns the project.**
-Twenty external repos above a thousand stars carry merged work (★ measured 2026-10-05), three more than
-the round before — and none of the three is a row that merely drifted over the line: `ruvnet/ruflo` and
-`walkinglabs/learn-harness-engineering` entered with merges landed in the ten days since, and
-`punkpeye/fastmcp` has carried its merge since 2026-09-24 and was missing from the earlier seventeen.
-Six of those rows belong to a company or a well-known project organization — Reactive Resume, DeepSeek,
+Twenty-one external repos above a thousand stars carry merged work (★ measured 2026-10-05), and the newest of them is not a row that merely drifted over the line: `docker/docker-agent` merged
+2026-10-05T12:14:03Z and is now the most recent merge this account has anywhere. `ruvnet/ruflo` and
+`walkinglabs/learn-harness-engineering` entered the ten days before that, and `punkpeye/fastmcp` has
+carried its merge since 2026-09-24 and was missing from the round before.
+Seven of those rows belong to a company or a well-known project organization — Docker, Reactive Resume, DeepSeek,
 cordiverse, Tencent, and the ACP project that Zed and JetBrains jointly govern, which accounts for two of
-the twenty; the other fourteen are catalog repos, small community orgs and one-person projects, and the
+the twenty-one; the other fourteen are catalog repos, small community orgs and one-person projects, and the
 column says so rather than letting the account name imply a company:
 
 | Repository | ★ | 项目归属方 |
 |---|---|---|
-| [ruflo](https://github.com/ruvnet/ruflo) | 73,842 | ruvnet (rUv / Reuven Cohen) — individual maintainer; a 73.8k★ agent harness on a personal account, not a company repo, and the largest row in this table |
-| [reactive-resume](https://github.com/reactive-resume/reactive-resume) | 43,755 | `reactive-resume` org — independent open-source project (rxresu.me) |
-| [laya](https://github.com/NandhaKishorM/laya) | 30,650 | NandhaKishorM — individual maintainer; the repo was created 2026-09-18 |
-| [learn-harness-engineering](https://github.com/walkinglabs/learn-harness-engineering) | 18,986 | `walkinglabs` community org — the harness-engineering tutorial site |
-| [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) | 17,758 | `awesome-dsh-plugin` org — community catalog, no company behind it |
-| [FlashMLA](https://github.com/deepseek-ai/FlashMLA) | 13,034 | **DeepSeek** — the official `deepseek-ai` org |
-| [Cordis](https://github.com/cordiverse/cordis) | 8,999 | **cordiverse** org; its maintainer Shigma is now at **DeepSeek**, and Cordis is the kernel DeepSeek Harness vendors as `@deepseek-ai/cordis` |
-| [dsh-web](https://github.com/zhu1090093659/dsh-web) | 8,364 | zhu1090093659 — individual maintainer |
-| [ouroboros](https://github.com/Q00/ouroboros) | 6,179 | Q00 — individual maintainer (`@zep-us`) |
-| [dsh-market](https://github.com/dsh-market/dsh-market) | 5,508 | `dsh-market` org — the community plugin market behind dshmarket.com, not a DeepSeek repo |
-| [teamai-cli](https://github.com/Tencent/teamai-cli) | 5,121 | **腾讯 Tencent** — the official `Tencent` org, opensource.tencent.com |
-| [agent-client-protocol](https://github.com/agentclientprotocol/agent-client-protocol) | 4,371 | `agentclientprotocol` org — governed jointly by **Zed Industries** and **JetBrains** |
+| [ruflo](https://github.com/ruvnet/ruflo) | 73,901 | ruvnet (rUv / Reuven Cohen) — individual maintainer; a 73.8k★ agent harness on a personal account, not a company repo, and the largest row in this table |
+| [reactive-resume](https://github.com/reactive-resume/reactive-resume) | 43,822 | `reactive-resume` org — independent open-source project (rxresu.me) |
+| [laya](https://github.com/NandhaKishorM/laya) | 30,872 | NandhaKishorM — individual maintainer; the repo was created 2026-09-18 |
+| [learn-harness-engineering](https://github.com/walkinglabs/learn-harness-engineering) | 19,257 | `walkinglabs` community org — the harness-engineering tutorial site |
+| [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) | 17,823 | `awesome-dsh-plugin` org — community catalog, no company behind it |
+| [FlashMLA](https://github.com/deepseek-ai/FlashMLA) | 13,037 | **DeepSeek** — the official `deepseek-ai` org |
+| [Cordis](https://github.com/cordiverse/cordis) | 9,017 | **cordiverse** org; its maintainer Shigma is now at **DeepSeek**, and Cordis is the kernel DeepSeek Harness vendors as `@deepseek-ai/cordis` |
+| [dsh-web](https://github.com/zhu1090093659/dsh-web) | 8,394 | zhu1090093659 — individual maintainer |
+| [ouroboros](https://github.com/Q00/ouroboros) | 6,182 | Q00 — individual maintainer (`@zep-us`) |
+| [dsh-market](https://github.com/dsh-market/dsh-market) | 5,572 | `dsh-market` org — the community plugin market behind dshmarket.com, not a DeepSeek repo |
+| [teamai-cli](https://github.com/Tencent/teamai-cli) | 5,128 | **腾讯 Tencent** — the official `Tencent` org, opensource.tencent.com |
+| [agent-client-protocol](https://github.com/agentclientprotocol/agent-client-protocol) | 4,373 | `agentclientprotocol` org — governed jointly by **Zed Industries** and **JetBrains** |
+| [docker-agent](https://github.com/docker/docker-agent) | 3,375 | **Docker, Inc.** — the official `docker` org; merged 2026-10-05 by maintainer `aheritier` |
 | [fastmcp](https://github.com/punkpeye/fastmcp) | 3,272 | punkpeye (Frank Fiegel) — individual maintainer at Glama; the TypeScript MCP framework |
-| [deepseek-harness-desktop](https://github.com/dsh-tauri/deepseek-harness-desktop) | 3,012 | `dsh-tauri` community org — self-described non-official and non-commercial, not a DeepSeek repo |
-| [claude-agent-acp](https://github.com/agentclientprotocol/claude-agent-acp) | 2,610 | `agentclientprotocol` org — the same jointly-governed org as the row above, a separate repository |
-| [awesome-jev](https://github.com/yibie/awesome-jev) | 2,124 | yibie — individual maintainer, community catalog for Jev; the row the 09-25 round both printed and denied, kept now on the commit the history probe finds |
-| [dsh-plugin-radar](https://github.com/AdamPlatin123/dsh-plugin-radar) | 1,464 | AdamPlatin123 — individual maintainer, catalog is a generated artifact |
-| [Agents-Anywhere](https://github.com/anywhere-labs/Agents-Anywhere) | 1,413 | `anywhere-labs` community org — 3 public repos, created 2026-05, dshdesktop.cn; not a company |
-| [awesome-deepseek-harness](https://github.com/0xsline/awesome-deepseek-harness) | 1,137 | 0xsline — individual maintainer, community catalog |
+| [deepseek-harness-desktop](https://github.com/dsh-tauri/deepseek-harness-desktop) | 3,032 | `dsh-tauri` community org — self-described non-official and non-commercial, not a DeepSeek repo |
+| [claude-agent-acp](https://github.com/agentclientprotocol/claude-agent-acp) | 2,618 | `agentclientprotocol` org — the same jointly-governed org as the row above, a separate repository |
+| [awesome-jev](https://github.com/yibie/awesome-jev) | 2,150 | yibie — individual maintainer, community catalog for Jev; the row the 09-25 round both printed and denied, kept now on the commit the history probe finds |
+| [dsh-plugin-radar](https://github.com/AdamPlatin123/dsh-plugin-radar) | 1,465 | AdamPlatin123 — individual maintainer, catalog is a generated artifact |
+| [Agents-Anywhere](https://github.com/anywhere-labs/Agents-Anywhere) | 1,425 | `anywhere-labs` community org — 3 public repos, created 2026-05, dshdesktop.cn; not a company |
+| [awesome-deepseek-harness](https://github.com/0xsline/awesome-deepseek-harness) | 1,138 | 0xsline — individual maintainer, community catalog |
 | [awesome-vibecoded-saas](https://github.com/Anil-matcha/awesome-vibecoded-saas) | 1,037 | Anil Chandra Naidu Matcha — individual maintainer, community catalog |
 
 **The rest of the contributor set** is the community catalog layer rather than upstream projects:
@@ -100,20 +101,20 @@ column says so rather than letting the account name imply a company:
 ([dsh-handbook](https://github.com/Electricitysheep/dsh-handbook) and
 [imsai-sh's list](https://github.com/imsai-sh/awesome-deepseek-harness-plugins), which alone took 41
 merges, among them) — the catalogs ingest the family and carry no company owner, so they are named here
-only in aggregate. **43 external repositories carry at least one merged pull request of ours together
-with a commit attributed to this account, and 317 merges were counted inside them** — re-derived
-2026-10-05 from this account's own merged pull requests, so 317 is exact rather than a floor over a
+only in aggregate. **44 external repositories carry at least one merged pull request of ours together
+with a commit attributed to this account, and 318 merges were counted inside them** — re-derived
+2026-10-05 from this account's own merged pull requests, so 318 is exact rather than a floor over a
 probed subset. Two further repositories took **33 more** of our merged pull requests **without**
 crediting a commit to this account on their default branches —
 [SihanTeng's list](https://github.com/SihanTeng/awesome-deepseek-harness-plugins), 32 of them, which is
 the case the rule at the top of this section was written about, and
 [dsh-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar), one, which merged 2026-10-04 and
-carries no commit of ours on `main` — so neither sizes the contributor set. 317 + 33 = the
-**350 merged pull requests** this account has outside `PerryLink/*`, concentrated in **45 repositories**;
-a further **94 are open across 56 repositories** and are deliberately not counted here.
+carries no commit of ours on `main` — so neither sizes the contributor set. 318 + 33 = the
+**351 merged pull requests** this account has outside `PerryLink/*`, concentrated in **46 repositories**;
+a further **102 are open across 64 repositories** and are deliberately not counted here.
 
-**The ten days since the last round moved the merged count by 29** (2026-09-25 → 2026-10-05, the
-window this round re-measured), and 22 of those 29 are `laya` alone — the last of them
+**The ten days since the last round moved the merged count by 30** (2026-09-25 → 2026-10-05, the
+window this round re-measured), and 22 of those 30 are `laya` alone — the last of them
 [#924](https://github.com/NandhaKishorM/laya/pull/924), which merged 2026-10-04T17:50:19Z and is the
 most recent merge this account has anywhere. Six more landed one apiece in six repositories that were
 not part of this set at all before — [ruflo](https://github.com/ruvnet/ruflo),
@@ -122,16 +123,19 @@ not part of this set at all before — [ruflo](https://github.com/ruvnet/ruflo),
 [dsh-plugin-manager](https://github.com/2768651338/dsh-plugin-manager),
 [dsh-plugin-market](https://github.com/losebird/dsh-plugin-market) and
 [dsh-annotation](https://github.com/omdsh-dev/dsh-annotation) — which is what puts the largest row in the
-table above, `ruflo` at 73,842★, in a set it was not part of ten days ago. The twenty-ninth is
+table above, `ruflo` at 73,901★, in a set it was not part of ten days ago. The twenty-ninth is
 [dsh-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar/pull/843), merged
 2026-10-04T17:26:07Z, and it is the one merge in the window that credits this account no commit —
-which is why it is named in the paragraph above instead of being counted with the other 28.
+which is why it is named in the paragraph above instead of being counted with the other 29. The thirtieth,
+and the most recent of all, is [docker-agent#4372](https://github.com/docker/docker-agent/pull/4372) — a
+two-file documentation fix merged 2026-10-05T12:14:03Z by Docker maintainer `aheritier`, which is both the
++1 in the total above and the row that puts a seventh company in the table.
 
 **laya** — [NandhaKishorM/laya](https://github.com/NandhaKishorM/laya) — **46 merged pull requests of
-the 49 this account has opened there** and **second among merged-PR authors**, behind `aashish254` (126)
+the 50 this account has opened there** and **second among merged-PR authors**, behind `aashish254` (126)
 and ahead of `Bruce-Yii` (27); the maintainer NandhaKishorM holds one merged PR of his own because he
 commits to `main` directly rather than through pull requests, and none of the three leaders is a
-collaborator. As of 2026-10-05 it reads **0 open and 3 closed unmerged**; 45 of the 46 merged inside a
+collaborator. As of 2026-10-05 it reads **1 open and 3 closed unmerged** — the open one is [#943](https://github.com/NandhaKishorM/laya/pull/943), opened 2026-10-05, where `Router.predictBatch` dropped the per-call `onPredictStart`/`onPredictEnd`/`hooksRaise` arguments; 45 of the 46 merged inside a
 nine-day run (2026-09-21 → 2026-09-29), and the maintainer merges in batches — fifteen of them share two
 timestamps, seven at `19:29:05` on 09-27 and eight at `17:40:36` on 09-29. The complete list is one
 query away:
