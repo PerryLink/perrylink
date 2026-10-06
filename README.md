@@ -63,13 +63,14 @@ proposals are deliberately not listed. The third column names the project's owne
 does not say whether that is a company, a standards body or one person.*
 
 **★ 1,000+ — named individually, as the rule requires, each carrying the party that owns the project.**
-Twenty-one external repos above a thousand stars carry merged work (★ measured 2026-10-05), and the newest of them is not a row that merely drifted over the line: `docker/docker-agent` merged
-2026-10-05T12:14:03Z and is now the most recent merge this account has anywhere. `ruvnet/ruflo` and
+Twenty-two external repos above a thousand stars carry merged work (★ measured 2026-10-06), and the newest of them is not a row that merely drifted over the line: `awslabs/mcp` merged
+2026-10-05T22:49:06Z and is now the most recent merge this account has anywhere, ten hours after
+`docker/docker-agent` held the same position; `ruvnet/ruflo` and
 `walkinglabs/learn-harness-engineering` entered the ten days before that, and `punkpeye/fastmcp` has
 carried its merge since 2026-09-24 and was missing from the round before.
-Seven of those rows belong to a company or a well-known project organization — Docker, Reactive Resume, DeepSeek,
+Eight of those rows belong to a company or a well-known project organization — Amazon Web Services, Docker, Reactive Resume, DeepSeek,
 cordiverse, Tencent, and the ACP project that Zed and JetBrains jointly govern, which accounts for two of
-the twenty-one; the other fourteen are catalog repos, small community orgs and one-person projects, and the
+the twenty-two; the other fourteen are catalog repos, small community orgs and one-person projects, and the
 column says so rather than letting the account name imply a company:
 
 | Repository | ★ | 项目归属方 |
@@ -80,6 +81,7 @@ column says so rather than letting the account name imply a company:
 | [learn-harness-engineering](https://github.com/walkinglabs/learn-harness-engineering) | 19,257 | `walkinglabs` community org — the harness-engineering tutorial site |
 | [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) | 17,823 | `awesome-dsh-plugin` org — community catalog, no company behind it |
 | [FlashMLA](https://github.com/deepseek-ai/FlashMLA) | 13,037 | **DeepSeek** — the official `deepseek-ai` org |
+| [mcp](https://github.com/awslabs/mcp) | 9,757 | **Amazon Web Services (AWS)** — the official `awslabs` org; a one-file UTF-8 fix merged 2026-10-05T22:49:06Z by maintainer `markjschreiber` with two approvals |
 | [Cordis](https://github.com/cordiverse/cordis) | 9,017 | **cordiverse** org; its maintainer Shigma is now at **DeepSeek**, and Cordis is the kernel DeepSeek Harness vendors as `@deepseek-ai/cordis` |
 | [dsh-web](https://github.com/zhu1090093659/dsh-web) | 8,394 | zhu1090093659 — individual maintainer |
 | [ouroboros](https://github.com/Q00/ouroboros) | 6,182 | Q00 — individual maintainer (`@zep-us`) |
@@ -101,17 +103,17 @@ column says so rather than letting the account name imply a company:
 ([dsh-handbook](https://github.com/Electricitysheep/dsh-handbook) and
 [imsai-sh's list](https://github.com/imsai-sh/awesome-deepseek-harness-plugins), which alone took 41
 merges, among them) — the catalogs ingest the family and carry no company owner, so they are named here
-only in aggregate. **44 external repositories carry at least one merged pull request of ours together
-with a commit attributed to this account, and 318 merges were counted inside them** — re-derived
-2026-10-05 from this account's own merged pull requests, so 318 is exact rather than a floor over a
+only in aggregate. **45 external repositories carry at least one merged pull request of ours together
+with a commit attributed to this account, and 319 merges were counted inside them** — re-derived
+2026-10-06 from this account's own merged pull requests, so 319 is exact rather than a floor over a
 probed subset. Two further repositories took **33 more** of our merged pull requests **without**
 crediting a commit to this account on their default branches —
 [SihanTeng's list](https://github.com/SihanTeng/awesome-deepseek-harness-plugins), 32 of them, which is
 the case the rule at the top of this section was written about, and
 [dsh-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar), one, which merged 2026-10-04 and
-carries no commit of ours on `main` — so neither sizes the contributor set. 318 + 33 = the
-**351 merged pull requests** this account has outside `PerryLink/*`, concentrated in **46 repositories**;
-a further **102 are open across 64 repositories** and are deliberately not counted here.
+carries no commit of ours on `main` — so neither sizes the contributor set. 319 + 33 = the
+**352 merged pull requests** this account has outside `PerryLink/*`, concentrated in **47 repositories**;
+a further **93 are open across 55 repositories** and are deliberately not counted here.
 
 **The ten days since the last round moved the merged count by 30** (2026-09-25 → 2026-10-05, the
 window this round re-measured), and 22 of those 30 are `laya` alone — the last of them
