@@ -64,7 +64,7 @@ does not say whether that is a company, a standards body or one person.*
 
 **★ 1,000+ — named individually, as the rule requires, each carrying the party that owns the project.**
 Twenty-three external repos above a thousand stars carry merged work (★ measured 2026-10-06), and the newest of them is not a row that merely drifted over the line: `Tencent/BrowserSkill` merged
-2026-10-06T13:45:15Z and is now the most recent merge this account has anywhere; `awslabs/mcp` held that
+2026-10-06T13:45:15Z — the most recent of the three, as of that measurement; `awslabs/mcp` had held the
 position for the fifteen hours before it and `docker/docker-agent` for the ten before that; `ruvnet/ruflo` and
 `walkinglabs/learn-harness-engineering` entered the ten days before those, and `punkpeye/fastmcp` has
 carried its merge since 2026-09-24 and was missing from the round before.
