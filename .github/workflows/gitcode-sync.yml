@@ -1,0 +1,237 @@
+name: gitcode-sync
+
+# One-way mirror of the PerryLink repos to GitCode (gitcode.com/PerryLink).
+# GitCode is a read-only copy: GitHub is the source of truth and is never
+# force-pushed from here.
+#
+# Why this exists instead of GitCode's own "repository mirror" feature:
+#   2026-10-07 measured - the repository-mirror REST API does not exist on
+#   GitCode. Eleven candidate endpoints (/repo-remote-mirror, /remote-mirror,
+#   /mirror, /mirrors, /repo-mirror, /repo-push-mirror, /sync-repo, plus
+#   /orgs/{org}/repos/... variants) all returned 404. The documented pages are
+#   empty shells, so GitHub -> GitCode cannot be configured through the API and
+#   would otherwise require ~199 manual clicks. This workflow replaces that.
+#
+# Why credentials go INSIDE the URL:
+#   GitCode answers an unauthenticated request with 403, not 401. Git only
+#   consults a credential helper after a 401 challenge, so `credential.helper`
+#   (store / manager / askpass) never fires and every fetch or push fails.
+#   The credential must be supplied preemptively in the remote URL. Every git
+#   invocation therefore runs with `-c credential.helper=` to stop any ambient
+#   helper from interfering, and all git output is piped through a masker so the
+#   token cannot reach the log.
+#
+# Why plain --force-with-lease is safe and history is preserved:
+#   2026-10-07 measured on 5 repos (dsh-auto-review, dsh-translate,
+#   dsh-plugin-kit, DeepGEMM, cordis): GitCode's import PRESERVES the original
+#   commit SHAs. The mirror tip was either identical to GitHub or an ancestor of
+#   it, with zero commits of its own. So the update is a fast-forward and no
+#   history is rewritten; the lease still fails loudly if a mirror ever does
+#   carry an independent commit.
+
+on:
+  schedule:
+    - cron: '45 0 * * *' # daily 08:45 UTC+8, 15 min after gitee-sync
+  workflow_dispatch: {}
+
+permissions: {}
+
+concurrency:
+  group: gitcode-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Mirror repos to GitCode
+        shell: bash
+        env:
+          GITCODE_TOKEN: ${{ secrets.GITCODE_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -uo pipefail
+
+          if [ -z "${GITCODE_TOKEN:-}" ]; then
+            echo "::error::secret GITCODE_TOKEN is not set on this repository"
+            exit 1
+          fi
+
+          # Belt and braces: mask the raw value even though Actions masks secrets.
+          echo "::add-mask::$GITCODE_TOKEN"
+
+          # Strip the 'user:token@' part of any git output. A naive
+          # 's://[^@]*@' also eats the org path segment and hides real errors.
+          mask() { sed -E 's#:[^:@/]+@#:<TOKEN>@#g'; }
+
+          # Mirror remote. Credentials live only in this variable.
+          MIRROR="https://PerryLink:${GITCODE_TOKEN}@gitcode.com/PerryLink"
+
+          # -c credential.helper= is required, not cosmetic: see the header note.
+          G=(git -c credential.helper=)
+
+          fails=0
+          skipped=0
+          synced=0
+          noop=0
+
+          sync_repo() {
+            local r="$1"
+            local work="/tmp/gc-sync/$r"
+
+            # .github holds org-wide default files and is maintained by hand on
+            # GitCode, so it is never overwritten. Listed explicitly (rather than
+            # relying on it being absent) so that creating it on GitCode later
+            # cannot silently turn this job into an overwriter.
+            if [ "$r" = ".github" ]; then
+              echo "SKIP .github (org-level defaults, hand-maintained on gitcode)"
+              skipped=$((skipped + 1))
+              return 0
+            fi
+
+            # A repo that was never migrated to GitCode is SKIPped, not failed.
+            # Same semantics as gitee-sync: create it on gitcode.com and the
+            # next run seeds it.
+            if ! "${G[@]}" ls-remote "$MIRROR/$r.git" >/dev/null 2>&1; then
+              echo "SKIP $r (no mirror repo on gitcode)"
+              skipped=$((skipped + 1))
+              return 0
+            fi
+
+            rm -rf "$work"
+            if ! "${G[@]}" clone --quiet "https://github.com/PerryLink/$r.git" "$work" 2>&1 | mask; then
+              echo "FAIL clone $r"
+              fails=$((fails + 1))
+              return 1
+            fi
+
+            local b tip live ahead behind
+            b="$("${G[@]}" -C "$work" rev-parse --abbrev-ref HEAD)"
+            live="$("${G[@]}" -C "$work" rev-parse "refs/remotes/origin/$b")"
+
+            # Read the mirror tip from the live remote every run so the lease is
+            # always derived from current state.
+            "${G[@]}" -C "$work" fetch --quiet "$MIRROR/$r.git" "refs/heads/$b:refs/remotes/mirror/$b" 2>&1 | mask
+            tip="$("${G[@]}" -C "$work" rev-parse "refs/remotes/mirror/$b" 2>/dev/null || true)"
+
+            if [ -z "$tip" ]; then
+              # Mirror branch does not exist yet: plain push seeds it.
+              "${G[@]}" -C "$work" push "$MIRROR/$r.git" "refs/heads/$b:refs/heads/$b" 2>&1 | mask || {
+                echo "FAIL seed $r"; fails=$((fails + 1)); return 1; }
+            elif [ "$tip" = "$live" ]; then
+              echo "OK $r (already current)"
+              noop=$((noop + 1))
+              return 0
+            else
+              # Keep both sides: never clobber a mirror carrying independent commits.
+              ahead="$("${G[@]}" -C "$work" rev-list --count "$tip..$live" 2>/dev/null || echo 0)"
+              behind="$("${G[@]}" -C "$work" rev-list --count "$live..$tip" 2>/dev/null || echo 0)"
+              if [ "$behind" != "0" ]; then
+                echo "FAIL $r (mirror has $behind commit(s) not on GitHub; refusing to overwrite)"
+                fails=$((fails + 1))
+                return 1
+              fi
+              echo "PUSH $r (+$ahead commit(s))"
+              "${G[@]}" -C "$work" push --force-with-lease="refs/heads/$b:$tip" \
+                "$MIRROR/$r.git" "refs/heads/$b:refs/heads/$b" 2>&1 | mask || {
+                  echo "FAIL push $r"; fails=$((fails + 1)); return 1; }
+            fi
+
+            # Refresh tags (a release may have moved a tag). Safe under fast-forward.
+            "${G[@]}" -C "$work" push --tags --force "$MIRROR/$r.git" 2>&1 | mask || {
+              echo "FAIL push tags $r"; fails=$((fails + 1)); return 1; }
+
+            synced=$((synced + 1))
+            return 0
+          }
+
+          sync_chunk() {
+            for r in "${repos[@]}"; do
+              sync_repo "$r" || true
+            done
+          }
+
+          # ---- mirror manifest ----------------------------------------------
+          # All 200 PerryLink-owned repos as of 2026-10-07, so a newly created
+          # repo is picked up without editing this file; a repo absent from
+          # GitCode is skipped by the guard above. dsh-wechat stays in the list
+          # (it is simply not on GitCode yet); .github is skipped by name.
+          #
+          # chunk 1/5  (40 repos)
+          repos=(
+            3FS agent-browser agent-client-protocol Agents-Anywhere aibrix AI-Carbon-Footprint-Calculator
+            AI-Generated-Image-EXIF-Detector API-Data-Leak-Scanner awesome-deepseek-agent
+            awesome-deepseek-harness-2 awesome-deepseek-harness-awe awesome-deepseek-harness-libukai
+            awesome-deepseek-harness-plugins awesome-deepseek-harness-plugins-sihanteng
+            awesome-deepseek-harness-plugins-zhiyuanfan awesome-deepseek-integration awesome-dsh-plugin-1
+            awesome-dsh-plugin-2 awesome-dsh-plugin-alexyanggg awesome-dsh-plugins-1
+            awesome-dsh-plugins-2026 awesome-dsh-plugins-kejixiaoliang awesome-mcp-servers
+            awesome-omni-dsh-plugins awesome-vibecoded-saas-fork Bias-Radar boilerplate BrowserSkill chat
+            checkpoint-engine China-Geo-Compliance Citation-Validator-Lite codex-security
+            Context-Relevance-Scorer Contract-Entity-Extractor cordis daggerverse Data-Export-Approver
+            DeepEP DeepGEMM
+          )
+          sync_chunk
+
+          # chunk 2/5  (40 repos)
+          repos=(
+            DeepJIT deepsec deepseek-harness deepseek-harness-desktop DeepSeek-MoE DeepSeek-Prover-V1.5
+            DeepSeek-Reasonix deepseek-recipe DeepSelect deer-flow docs dsh-auto-review dsh-autotier
+            dsh-background-agents DSH-better-sidebar dsh-browser dsh-budget dsh-catalog dsh-cert-mcp
+            dsh-checkpoint-rewind dsh-claude-move dsh-click dsh-composer-completion dsh-composer-history
+            dsh-data-quality dsh-deep-whale dsh-defend dsh-desktop dsh-doublecheck dsh-draw dsh-fast
+            dsh-fund-research dsh-github dsh-industry-research dsh-kit dsh-laya dsh-library dsh-local-ai
+            dsh-lsp-actions dsh-mask
+          )
+          sync_chunk
+
+          # chunk 3/5  (40 repos)
+          repos=(
+            dsh-mcp-panel dsh-memento dsh-observe dsh-output-styles dsh-permission-rules
+            dsh-personal-directive dsh-plugin-certification dsh-plugin-collection dsh-plugin-doctor
+            dsh-plugin-guide dsh-plugin-kit dsh-plugin-portal dsh-plugin-upgrade dsh-plugin-upgrade-015
+            dsh-plugin-upgrade-016 dsh-pub dsh-reach dsh-research-report dsh-score dsh-session-pin
+            dsh-session-sync dsh-skill-pack-security dsh-talk dsh-team-rooms dsh-test-drive dsh-ticktick
+            dsh-translate dshw dsh-web dsh-wechat element embedding-atlas EverOS fastmcp Few-Shot-Selector
+            FlashMLA goraven go-sdk GPL-Radar GPT-Rosetta-Stone
+          )
+          sync_chunk
+
+          # chunk 4/5  (40 repos)
+          repos=(
+            honcho http huggingface.js Jailbreak-Detector jevcore JSON-Schema-Enforcer-Proxy kkbot koishi
+            koishi-plugin-adapter-onebot kyzhxl-dsh-plugin-registry laya layacore layacore-install
+            layacore-mcp laya-mcp laya-mcp-npm LLM-Cost-Estimator-CN LLM-detective llm-jev-laya-bench
+            LLM-Stress-Test-CLI lm-evaluation-harness loop-aider loop-antigravity loop-claudecode loop-codex
+            loop-copilot loop-cursor loop-deepseek loop-everything Loop-Fuse loop-hermes loop-ollama
+            loop-openclaw loop-opencode loop-superpowers losebird-dsh-plugin-market Lost-in-Middle-Tester
+            mcp mcp-atlassian memmy-agent
+          )
+          sync_chunk
+
+          # chunk 5/5  (40 repos)  (last chunk; .github is last on purpose)
+          repos=(
+            Mode-Latency-Benchmark NeMo-Agent-Toolkit Oh-My-DSH open-code-review openpencil ouroboros
+            papermachine perrylink Pii-Stripper-Middleware Prompt-Attack-Dataset Prompt-Injection-Payloads
+            Prompt-Regression-Diff Prompt-Token-Optimizer python-sdk RAG-Chunk-Visualizer RAG-Purge-Verify
+            RAG-Reference-Checker Retrieval-Diversity-Check ruflo satori schemastery
+            Secret-Key-Leaker-Detect Sensitive-Word-Filter-CN Sino-Scrub SkillOpt slime Sus-PY
+            system-one-adapter-python tau Text-Humanizer TileKernels Toxicity-Score-CLI transformers-patch
+            truss txtai vscode-dsh-sidebar vscode-ui-skill webui zeropoint-awesome-dsh-plugins .github
+          )
+          sync_chunk
+
+          # -------------------------------------------------------------------
+
+          echo "-----------------------------"
+          echo "synced=$synced already-current=$noop skipped=$skipped failed=$fails"
+          if [ "$fails" -gt 0 ]; then
+            echo "GITCODE MIRROR SYNC FAILURES: $fails"
+            exit 1
+          fi
+          echo "all ${#repos[@]} mirror(s) handled"
