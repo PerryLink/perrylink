@@ -24,7 +24,7 @@ absent. The two sanctioned exceptions are marked.
 | npm 30-day downloads | README § Where the plugins live | monthly |
 | **npm downloads badge** *(exception)* | README badge row | same |
 | npm names / versions / non-deprecated latest | README § Where the plugins live | monthly |
-| npm provenance — **state the metric**: 39 names carry SLSA provenance on their non-deprecated `latest`; 44 carry it on at least one version; 41 on their `latest` whatever its state | README § Where the plugins live | monthly |
+| npm provenance — **state the metric**: 39 names carry SLSA provenance on their non-deprecated `latest`; 45 carry it on at least one version; 45 on their `latest` whatever its state (measured 2026-10-07) | README § Where the plugins live | monthly |
 | dshfind aggregate tier | README § Where the plugins live | when dshfind re-renders |
 | dsh host corridor / node engine / license | README badge row (each links to the file it is read from) | when the declared range or the engines change |
 | external contributor repos / merges / above-1,000★ | README § Upstream, the "rest of the contributor set" paragraph | on re-derivation |
@@ -139,7 +139,7 @@ is merely "balanced" is not enough: balance is exactly what produced the 836px r
 | Badge | Value | Mirrors |
 |---|---|---|
 | npm names | 52 | "Where the plugins live" |
-| npm downloads 30d | 152.6k | "Where the plugins live" (152,643) |
+| npm downloads 30d | 183.9k | "Where the plugins live" (183,886) |
 | plugins | 42 | the intro sentence |
 | MCP Registry | 3 servers | "Where the plugins live" |
 | DSH Desktop Market source | (no number) | the catalog URL |
@@ -147,7 +147,7 @@ is merely "balanced" is not enough: balance is exactly what produced the 836px r
 | dsh host corridor | ≥0.1.2-rc.1 <0.3.0 | the union of the six `engines.dsh` clauses in any plugin's `package.json` |
 | node | ≥22.19 | the same file's `engines.node` (`^22.19.0 \|\| >=24.0.0`) |
 | license | Apache-2.0 | the `LICENSE` file |
-| dshfind aggregate | 22.5k+ across 8 | "Where the plugins live" |
+| dshfind aggregate | 38.5k+ across 8 | "Where the plugins live" |
 
 Live badges (stars, followers, repos, OpenSSF Scorecard, Glama, MCP Registry, the three listings,
 dshfind aggregate, certified, Zenodo DOI) need no maintenance.

@@ -10,7 +10,7 @@
 <a href="https://github.com/PerryLink?tab=followers"><img alt="GitHub followers" src="https://img.shields.io/github/followers/PerryLink?label=followers&color=24292f"></a>
 <a href="https://github.com/PerryLink?tab=repositories"><img alt="GitHub repos" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FPerryLink&query=%24.public_repos&label=repos&color=24292f"></a>
 <a href="https://www.npmjs.com/search?q=perrylink"><img alt="npm names" src="https://img.shields.io/badge/npm-52%20names-cb3837?logo=npm"></a>
-<img alt="npm downloads 30d" src="https://img.shields.io/badge/npm%20downloads%2030d-157.6k-6e7781">
+<img alt="npm downloads 30d" src="https://img.shields.io/badge/npm%20downloads%2030d-183.9k-6e7781">
 <a href="https://github.com/PerryLink/dsh-kit"><img alt="plugins" src="https://img.shields.io/badge/plugins-42-6e7781"></a>
 <br>
 <a href="https://github.com/PerryLink/dsh-auto-review/blob/main/LICENSE"><img alt="license" src="https://img.shields.io/badge/license-Apache--2.0-blue"></a>
@@ -25,7 +25,7 @@
 <a href="https://github.com/PerryLink/dsh-mcp-panel/blob/main/package.json"><img alt="dsh host corridor" src="https://img.shields.io/badge/dsh-%E2%89%A50.1.2--rc.1%20%3C0.3.0-4B32C3"></a>
 <a href="https://github.com/PerryLink/dsh-mcp-panel/blob/main/package.json"><img alt="node" src="https://img.shields.io/badge/node-%E2%89%A522.19-339933?logo=node.js"></a>
 <br>
-<a href="https://dshfind.com/plugins?q=PerryLink"><img alt="dshfind downloads across the family" src="https://img.shields.io/badge/dshfind%20downloads-22.5k%2B%20across%208%20plugins-6e7781"></a>
+<a href="https://dshfind.com/plugins?q=PerryLink"><img alt="dshfind downloads across the family" src="https://img.shields.io/badge/dshfind%20downloads-38.5k%2B%20across%208%20plugins-6e7781"></a>
 <a href="https://perrylink-dsh-catalog.perrylink.workers.dev/catalog-source.json"><img alt="DSH Desktop Market source" src="https://img.shields.io/badge/DSH%20Desktop%20Market-source-0969da"></a>
 <a href="https://github.com/PerryLink/dsh-plugin-certification"><img alt="certified (flagship dsh-auto-review)" src="https://raw.githubusercontent.com/PerryLink/dsh-plugin-certification/main/badges/PerryLink__dsh-auto-review.svg"></a>
 <a href="https://doi.org/10.5281/zenodo.22901853"><img alt="Zenodo DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.22901853.svg"></a>
@@ -260,9 +260,13 @@ MCP server publishes from [dsh-cert-mcp](https://github.com/PerryLink/dsh-cert-m
 and [laya-mcp](https://github.com/PerryLink/laya-mcp) (an MCP sidecar, not a plugin). The third-party
 [pan17/dsh-wechat](https://github.com/pan17/dsh-wechat) carries a plugin row but is not one of them: 47 + 1 = the 48
 repos this page names. A naive scan of the account finds two more than the heading claims — the retired
-[dsh-plugin-upgrade](https://github.com/PerryLink/dsh-plugin-upgrade) corridor legs `dsh-plugin-upgrade-015` and
-`dsh-plugin-upgrade-016`, both archived, both still carrying the manifest, and neither an active plugin: 42 active + 2
-retired = the 44 such a scan returns. The heading and the badge keep the active figure.*
+[dsh-plugin-upgrade](https://github.com/PerryLink/dsh-plugin-upgrade) corridor legs `dsh-plugin-upgrade-015` (**not**
+archived) and `dsh-plugin-upgrade-016` (archived), both still carrying the manifest and neither an active plugin:
+42 + 2 = the **44** such a scan returns (re-measured 2026-10-07). **The 42 is the roster, not the live set** — 3 of
+them are 🚫 RETIRED and 6 are 🧊 FROZEN, which leaves **33 actively maintained**, and the nine tables below list **41
+rows** rather than 42 because they also carry `jevcore` (no `dsh.bundle`) and the third-party `dsh-wechat`. The heading
+and the badge keep the roster figure, since retired and frozen rows stay in place with their status rather than being
+deleted.*
 
 ### 🔒 Security (4)
 
@@ -386,8 +390,11 @@ catalogs and needs no retirement.
 
 ### Frozen — no new features, only real breakages fixed
 
-Frozen because **better-adopted alternatives now exist** for that capability. Each repo's README records
-the measured comparison. Weekly npm downloads, measured 2026-10-05:
+Frozen because **better-adopted alternatives now exist** for that capability. Six of the seven carry a
+`## Maintenance status: 🧊 FROZEN` section in their own README with the measured comparison —
+[dsh-wechat](https://github.com/pan17/dsh-wechat) is the exception, because it is `pan17`'s repository rather than
+this account's, so the banner cannot be added there and the row is frozen here instead. Weekly npm downloads,
+measured 2026-10-05:
 
 | Plugin | this repo | better-adopted alternative |
 |---|---|---|
@@ -410,13 +417,13 @@ plugin is weaker.
 
 - **GitHub** (this profile), **[Gitee](https://gitee.com/perrylink)** and **npm** — source, CI and releases here; 46
 family repos mirrored to Gitee by a daily job (default branch + all tags), plus this profile repo; the `perrylink`
-account holds **52 npm names and 951 versions**, 47 of them with a non-deprecated `latest` and **39 of those
-carrying a SLSA provenance attestation on that version** (44 names carry it on at least one version; the eight with
-none anywhere are `jevcore`, `jevcore-dsh`, `jevcore-mcp`, `dsh-laya`, `laya-mcp`, `dsh-personal-directive` and the
-three archived `layacore` names — measured 2026-10-05 against each name's own packument, and the registry
+account holds **52 npm names and 1,069 versions**, 44 of them with a non-deprecated `latest` and **39 of those
+carrying a SLSA provenance attestation on that version** (45 names carry it on at least one version; the seven with
+none anywhere are `jevcore-dsh`, `jevcore-mcp`, `dsh-laya`, `laya-mcp` and the three archived `layacore` names —
+measured 2026-10-07 against each name's own packument, and the registry
 **search** endpoint is not authoritative here, since it returns only 47 names and omits the deprecated ones)
-- **npm downloads** — **152,643 over the trailing 30 days** (npm window 09-05..10-04, summed per name from the
-downloads point endpoint; **[dshfind](https://dshfind.com/plugins?q=PerryLink)** independently tracks **22.5k+**
+- **npm downloads** — **183,886 over the trailing 30 days** (npm window 09-07..10-06, summed per name from the
+downloads point endpoint; **[dshfind](https://dshfind.com/plugins?q=PerryLink)** independently tracks **38.5k+**
 across the 8 family plugins it currently has a download figure for — dshfind reports rounded tiers, so that is a floor
 rather than a total
 - **DSH Desktop Market** — add the catalog source
