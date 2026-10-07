@@ -10,7 +10,7 @@
 <a href="https://github.com/PerryLink?tab=followers"><img alt="GitHub followers" src="https://img.shields.io/github/followers/PerryLink?label=followers&color=24292f"></a>
 <a href="https://github.com/PerryLink?tab=repositories"><img alt="GitHub repos" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FPerryLink&query=%24.public_repos&label=repos&color=24292f"></a>
 <a href="https://www.npmjs.com/search?q=perrylink"><img alt="npm names" src="https://img.shields.io/badge/npm-52%20names-cb3837?logo=npm"></a>
-<img alt="npm downloads 30d" src="https://img.shields.io/badge/npm%20downloads%2030d-152.6k-6e7781">
+<img alt="npm downloads 30d" src="https://img.shields.io/badge/npm%20downloads%2030d-157.6k-6e7781">
 <a href="https://github.com/PerryLink/dsh-kit"><img alt="plugins" src="https://img.shields.io/badge/plugins-42-6e7781"></a>
 <br>
 <a href="https://github.com/PerryLink/dsh-auto-review/blob/main/LICENSE"><img alt="license" src="https://img.shields.io/badge/license-Apache--2.0-blue"></a>
@@ -49,12 +49,12 @@ One command installs the core family — **[dsh-kit](https://github.com/PerryLin
 
 | Plugin | What it gives you | Install |
 |---|---|---|
-| [dsh-auto-review](https://github.com/PerryLink/dsh-auto-review) | Second-model auto-review on the approval chain, fail-closed by default (228★) | `dsh plugin --profile web add dsh-auto-review` |
+| [dsh-auto-review](https://github.com/PerryLink/dsh-auto-review) | Second-model auto-review on the approval chain, fail-closed by default (234★) | `dsh plugin --profile web add dsh-auto-review` |
 | [dsh-research-report](https://github.com/PerryLink/dsh-research-report) | Verifiable research reports: content-addressed evidence ledger, manifest seal hash, byte-level citation checks, drift detection, disproof ledger (214★) | `dsh plugin --profile web add dsh-research-report` |
-| [dsh-industry-research](https://github.com/PerryLink/dsh-industry-research) | Industry/company research: chain-map SVG with bottleneck detection, timeline, company cards, adversarial review (207★) | `dsh plugin --profile web add dsh-industry-research` |
-| [dsh-memento](https://github.com/PerryLink/dsh-memento) | Approval-gated cross-session memory (`ctx.memory` + SQLite) (138★) | `dsh plugin --profile web add dsh-memento` |
-| [dsh-permission-rules](https://github.com/PerryLink/dsh-permission-rules) | Claude Code-style declarative allow/deny/ask rules plus a process-level network policy (117★) | `dsh plugin --profile web add dsh-permission-rules` |
-| [dsh-mcp-panel](https://github.com/PerryLink/dsh-mcp-panel) | MCP management console: `/mcp` + Settings tab + trial calls (74★) | `dsh plugin --profile web add dsh-mcp-panel` |
+| [dsh-industry-research](https://github.com/PerryLink/dsh-industry-research) | Industry/company research: chain-map SVG with bottleneck detection, timeline, company cards, adversarial review (213★) | `dsh plugin --profile web add dsh-industry-research` |
+| [dsh-memento](https://github.com/PerryLink/dsh-memento) | Approval-gated cross-session memory (`ctx.memory` + SQLite) (139★) | `dsh plugin --profile web add dsh-memento` |
+| [dsh-permission-rules](https://github.com/PerryLink/dsh-permission-rules) | Claude Code-style declarative allow/deny/ask rules plus a process-level network policy (119★) | `dsh plugin --profile web add dsh-permission-rules` |
+| [dsh-mcp-panel](https://github.com/PerryLink/dsh-mcp-panel) | MCP management console: `/mcp` + Settings tab + trial calls (73★) | `dsh plugin --profile web add dsh-mcp-panel` |
 
 ## 🔧 Upstream & community contributions
 
@@ -63,7 +63,7 @@ proposals are deliberately not listed. The third column names the project's owne
 does not say whether that is a company, a standards body or one person.*
 
 **★ 1,000+ — named individually, as the rule requires, each carrying the party that owns the project.**
-Twenty-three external repos above a thousand stars carry merged work (★ measured 2026-10-06), and the newest of them is not a row that merely drifted over the line: `Tencent/BrowserSkill` merged
+Twenty-three external repos above a thousand stars carry merged work (★ measured 2026-10-07), and the newest of them is not a row that merely drifted over the line: `Tencent/BrowserSkill` merged
 2026-10-06T13:45:15Z — the most recent of the three, as of that measurement; `awslabs/mcp` had held the
 position for the fifteen hours before it and `docker/docker-agent` for the ten before that; `ruvnet/ruflo` and
 `walkinglabs/learn-harness-engineering` entered the ten days before those, and `punkpeye/fastmcp` has
@@ -75,28 +75,28 @@ column says so rather than letting the account name imply a company:
 
 | Repository | ★ | 项目归属方 |
 |---|---|---|
-| [ruflo](https://github.com/ruvnet/ruflo) | 73,901 | ruvnet (rUv / Reuven Cohen) — individual maintainer; a 73.8k★ agent harness on a personal account, not a company repo, and the largest row in this table |
-| [reactive-resume](https://github.com/reactive-resume/reactive-resume) | 43,822 | `reactive-resume` org — independent open-source project (rxresu.me) |
-| [laya](https://github.com/NandhaKishorM/laya) | 30,872 | NandhaKishorM — individual maintainer; the repo was created 2026-09-18 |
-| [learn-harness-engineering](https://github.com/walkinglabs/learn-harness-engineering) | 19,257 | `walkinglabs` community org — the harness-engineering tutorial site |
-| [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) | 17,823 | `awesome-dsh-plugin` org — community catalog, no company behind it |
-| [FlashMLA](https://github.com/deepseek-ai/FlashMLA) | 13,037 | **DeepSeek** — the official `deepseek-ai` org |
-| [mcp](https://github.com/awslabs/mcp) | 9,757 | **Amazon Web Services (AWS)** — the official `awslabs` org; a one-file UTF-8 fix merged 2026-10-05T22:49:06Z by maintainer `markjschreiber` with two approvals |
-| [BrowserSkill](https://github.com/Tencent/BrowserSkill) | 8,197 | **腾讯 Tencent** — the official `Tencent` org; merged 2026-10-06T13:45:15Z by collaborator `iuyo5678` with eight checks green |
-| [Cordis](https://github.com/cordiverse/cordis) | 9,017 | **cordiverse** org; its maintainer Shigma is now at **DeepSeek**, and Cordis is the kernel DeepSeek Harness vendors as `@deepseek-ai/cordis` |
-| [dsh-web](https://github.com/zhu1090093659/dsh-web) | 8,394 | zhu1090093659 — individual maintainer |
-| [ouroboros](https://github.com/Q00/ouroboros) | 6,182 | Q00 — individual maintainer (`@zep-us`) |
-| [dsh-market](https://github.com/dsh-market/dsh-market) | 5,572 | `dsh-market` org — the community plugin market behind dshmarket.com, not a DeepSeek repo |
-| [teamai-cli](https://github.com/Tencent/teamai-cli) | 5,128 | **腾讯 Tencent** — the official `Tencent` org, opensource.tencent.com |
-| [agent-client-protocol](https://github.com/agentclientprotocol/agent-client-protocol) | 4,373 | `agentclientprotocol` org — governed jointly by **Zed Industries** and **JetBrains** |
-| [docker-agent](https://github.com/docker/docker-agent) | 3,375 | **Docker, Inc.** — the official `docker` org; merged 2026-10-05 by maintainer `aheritier` |
+| [ruflo](https://github.com/ruvnet/ruflo) | 74,013 | ruvnet (rUv / Reuven Cohen) — individual maintainer; a 73.8k★ agent harness on a personal account, not a company repo, and the largest row in this table |
+| [reactive-resume](https://github.com/reactive-resume/reactive-resume) | 43,919 | `reactive-resume` org — independent open-source project (rxresu.me) |
+| [laya](https://github.com/NandhaKishorM/laya) | 31,248 | NandhaKishorM — individual maintainer; the repo was created 2026-09-18 |
+| [learn-harness-engineering](https://github.com/walkinglabs/learn-harness-engineering) | 19,415 | `walkinglabs` community org — the harness-engineering tutorial site |
+| [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) | 17,932 | `awesome-dsh-plugin` org — community catalog, no company behind it |
+| [FlashMLA](https://github.com/deepseek-ai/FlashMLA) | 13,041 | **DeepSeek** — the official `deepseek-ai` org |
+| [mcp](https://github.com/awslabs/mcp) | 9,758 | **Amazon Web Services (AWS)** — the official `awslabs` org; a one-file UTF-8 fix merged 2026-10-05T22:49:06Z by maintainer `markjschreiber` with two approvals |
+| [BrowserSkill](https://github.com/Tencent/BrowserSkill) | 8,219 | **腾讯 Tencent** — the official `Tencent` org; merged 2026-10-06T13:45:15Z by collaborator `iuyo5678` with eight checks green |
+| [Cordis](https://github.com/cordiverse/cordis) | 9,041 | **cordiverse** org; its maintainer Shigma is now at **DeepSeek**, and Cordis is the kernel DeepSeek Harness vendors as `@deepseek-ai/cordis` |
+| [dsh-web](https://github.com/zhu1090093659/dsh-web) | 8,441 | zhu1090093659 — individual maintainer |
+| [ouroboros](https://github.com/Q00/ouroboros) | 6,189 | Q00 — individual maintainer (`@zep-us`) |
+| [dsh-market](https://github.com/dsh-market/dsh-market) | 5,683 | `dsh-market` org — the community plugin market behind dshmarket.com, not a DeepSeek repo |
+| [teamai-cli](https://github.com/Tencent/teamai-cli) | 5,136 | **腾讯 Tencent** — the official `Tencent` org, opensource.tencent.com |
+| [agent-client-protocol](https://github.com/agentclientprotocol/agent-client-protocol) | 4,382 | `agentclientprotocol` org — governed jointly by **Zed Industries** and **JetBrains** |
+| [docker-agent](https://github.com/docker/docker-agent) | 3,377 | **Docker, Inc.** — the official `docker` org; merged 2026-10-05 by maintainer `aheritier` |
 | [fastmcp](https://github.com/punkpeye/fastmcp) | 3,272 | punkpeye (Frank Fiegel) — individual maintainer at Glama; the TypeScript MCP framework |
-| [deepseek-harness-desktop](https://github.com/dsh-tauri/deepseek-harness-desktop) | 3,032 | `dsh-tauri` community org — self-described non-official and non-commercial, not a DeepSeek repo |
-| [claude-agent-acp](https://github.com/agentclientprotocol/claude-agent-acp) | 2,618 | `agentclientprotocol` org — the same jointly-governed org as the row above, a separate repository |
-| [awesome-jev](https://github.com/yibie/awesome-jev) | 2,150 | yibie — individual maintainer, community catalog for Jev; the row the 09-25 round both printed and denied, kept now on the commit the history probe finds |
+| [deepseek-harness-desktop](https://github.com/dsh-tauri/deepseek-harness-desktop) | 3,058 | `dsh-tauri` community org — self-described non-official and non-commercial, not a DeepSeek repo |
+| [claude-agent-acp](https://github.com/agentclientprotocol/claude-agent-acp) | 2,623 | `agentclientprotocol` org — the same jointly-governed org as the row above, a separate repository |
+| [awesome-jev](https://github.com/yibie/awesome-jev) | 2,186 | yibie — individual maintainer, community catalog for Jev; the row the 09-25 round both printed and denied, kept now on the commit the history probe finds |
 | [dsh-plugin-radar](https://github.com/AdamPlatin123/dsh-plugin-radar) | 1,465 | AdamPlatin123 — individual maintainer, catalog is a generated artifact |
-| [Agents-Anywhere](https://github.com/anywhere-labs/Agents-Anywhere) | 1,425 | `anywhere-labs` community org — 3 public repos, created 2026-05, dshdesktop.cn; not a company |
-| [awesome-deepseek-harness](https://github.com/0xsline/awesome-deepseek-harness) | 1,138 | 0xsline — individual maintainer, community catalog |
+| [Agents-Anywhere](https://github.com/anywhere-labs/Agents-Anywhere) | 1,463 | `anywhere-labs` community org — 3 public repos, created 2026-05, dshdesktop.cn; not a company |
+| [awesome-deepseek-harness](https://github.com/0xsline/awesome-deepseek-harness) | 1,141 | 0xsline — individual maintainer, community catalog |
 | [awesome-vibecoded-saas](https://github.com/Anil-matcha/awesome-vibecoded-saas) | 1,037 | Anil Chandra Naidu Matcha — individual maintainer, community catalog |
 
 **The rest of the contributor set** is the community catalog layer rather than upstream projects:
