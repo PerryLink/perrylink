@@ -79,7 +79,7 @@ account name imply a company:
 
 | Repository | ★ | 项目归属方 |
 |---|---|---|
-| [deer-flow](https://github.com/bytedance/deer-flow) | 83,464 | **ByteDance** — the official `bytedance` org (deerflow.tech); a one-line portability fix in a blocking-IO test merged 2026-10-07T10:22:16Z by `WillemJiang`, and now the largest row in this table |
+| [deer-flow](https://github.com/bytedance/deer-flow) | 83,464 | **字节跳动 ByteDance** — the official `bytedance` org (deerflow.tech); a one-line portability fix in a blocking-IO test merged 2026-10-07T10:22:16Z by `WillemJiang`, and now the largest row in this table |
 | [ruflo](https://github.com/ruvnet/ruflo) | 74,039 | ruvnet (rUv / Reuven Cohen) — individual maintainer; a 74k★ agent harness on a personal account, not a company repo, and the largest row here that is not owned by a company |
 | [reactive-resume](https://github.com/reactive-resume/reactive-resume) | 43,939 | `reactive-resume` org — independent open-source project (rxresu.me) |
 | [laya](https://github.com/NandhaKishorM/laya) | 31,319 | NandhaKishorM — individual maintainer; the repo was created 2026-09-18 |
