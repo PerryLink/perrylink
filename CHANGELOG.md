@@ -14,6 +14,51 @@ and `dsh-laya` were introduced by name.
 
 ---
 
+## 2026-10-07
+
+- **The upstream section was re-derived from this account's own merged pull requests and three company
+  rows entered the table, all of them by merge inside a single day.** The attribution rule is unchanged —
+  a repository counts only when its default branch carries a commit authored by this account, probed with
+  `defaultBranchRef.target.history(author:{id:MDQ6VXNlcjI1NTY2NTkwMA==})`. Re-derived 2026-10-07:
+  **118 external repositories have had a pull request opened against them by this account; 49 of them
+  carry a commit of ours on the default branch *and* at least one merge — the same 49 that carry a commit
+  at all — holding 324 merges.** The two repositories that took merges without crediting a commit still
+  hold 33 (`SihanTeng/awesome-deepseek-harness-plugins` 32, `omdsh-dev/DSH-better-sidebar` 1), so the total
+  outside `PerryLink/*` is **357 merged, concentrated in 51 repositories**, with **104 open across 65** and
+  187 closed unmerged. **26 rows now clear a thousand stars**, up from 23.
+
+- **The three new rows are the first ByteDance, Apple and vLLM-project rows this page has carried.**
+  `bytedance/deer-flow` (83,464★) merged [#6427](https://github.com/bytedance/deer-flow/pull/6427) — a
+  one-line portability fix in a blocking-IO test — on 2026-10-07T10:22:16Z by `WillemJiang`, and it is the
+  largest row the table has ever held. `apple/embedding-atlas` (4,969★) merged
+  [#274](https://github.com/apple/embedding-atlas/pull/274), a line-ending normalization fix in a release
+  script, on 2026-10-06T16:30:51Z by `donghaoren`. `vllm-project/aibrix` (5,126★) took two —
+  [#2920](https://github.com/vllm-project/aibrix/pull/2920) on 2026-10-06T16:23:08Z and
+  [#2931](https://github.com/vllm-project/aibrix/pull/2931) on 2026-10-07T11:18:42Z by `googs1025`, the
+  latter the most recent merge this account has anywhere. Its default branch carries **two** commits of
+  ours, so the row is a contributor row rather than a single-merge one, and it is the row that moved the
+  window total by four instead of three.
+
+- **One counter-example in `INSTRUMENTATION.md` was false and has been removed rather than softened.** The
+  file listed `MoonshotAI/checkpoint-engine` (1,006★) as a repository that "merged a pull request of ours
+  and carries no commit of ours". Re-probed: our only pull request there,
+  [#108](https://github.com/MoonshotAI/checkpoint-engine/pull/108), is **open and was never merged**
+  (`state=open`, `merged=false`), and `history(author:{id})` on its default branch returns
+  `totalCount: 0`. It is not a counter-example; it is an open proposal, which the page already excludes
+  by a separate sentence. Two counter-examples remain, both re-confirmed at 32 and 1 merge.
+
+- **`bytedance/deer-flow` is a fourth case of the `/contributors` false negative** — the failure mode that
+  got that probe rejected in the first place. `/repos/bytedance/deer-flow/contributors` returns **no entry**
+  for this account, while the default branch demonstrably carries our commit `c7b65c5c`, the squash commit
+  of the merge. `apple/embedding-atlas` reads 1 on the same endpoint and `vllm-project/aibrix` reads 2, so
+  the probe agrees with history on two of the three new rows and disagrees on the third. That is the whole
+  argument for the history probe, restated by a fresh case instead of a remembered one.
+
+- **Prose that counted rows moved with them, and the "most recent merge" claims were re-ordered against a
+  full listing rather than memory.** The lead paragraph now says twenty-six rows and twelve of them
+  company-owned or well-known-project-owned, leaving the other fourteen unchanged; `ruflo`'s cell no longer
+  claims to be the largest row in the table, because it is not any more — it is the largest row not owned by
+  a company. Every star figure in the table was re-measured at the same time as the counts.
 ## 2026-10-05
 
 - **The whole plugin family moved to a new host line, and the numbers below were re-measured the same day.** Every one of the 42 roster plugins was re-verified against DeepSeek Harness `0.2.1-alpha.1` and re-pinned to it, then released: 39 repositories took a patch version, published to npm and cut a GitHub Release. The host's admission gate is what forced the release rather than a source change — it evaluates each `@deepseek-ai/*` peer range with `semver.satisfies(runtime, range, { includePrerelease: true })`, and every range the family shipped ended at `<0.2.0`, so the very host the plugins were being tested on refused to load them. The declared range now carries two further clauses (`|| >=0.2.0-0 <0.3.0 || >=0.2.1-0 <0.3.0`) and no older clause was dropped. Three real incompatibilities surfaced only under the gates, not in the export surfaces: `Session.append` on that line cannot stamp the `ignorable` envelope marker (so `0.2.x` prereleases have to be classified unmarked *before* the first append, or the probe itself pollutes the log), `cordis-plugin-loader` 1.0.6 dropped the failure surface `await()` had in 1.0.4 (so a loader-composition negative regression reports the downstream symptom instead of its reason — 12 repositories carried that), and `@deepseek-ai/dsh-invariants` has no `0.2.1-alpha.1` publish, which makes an exact pin to that line install-fail.

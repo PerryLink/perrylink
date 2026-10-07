@@ -29,7 +29,7 @@ absent. The two sanctioned exceptions are marked.
 | dshfind aggregate tier | README § Where the plugins live | when dshfind re-renders |
 | dsh host corridor / node engine / license | README badge row (each links to the file it is read from) | when the declared range or the engines change |
 | external contributor repos / merges / above-1,000★ | README § Upstream, the "rest of the contributor set" paragraph | on re-derivation |
-| The 21-row star table | README § Upstream (the table itself) | on re-derivation |
+| The 26-row star table | README § Upstream (the table itself) | on re-derivation |
 | laya merged / opened / open / closed | README § Upstream, the laya paragraph | on re-derivation |
 | `deepseek-ai` totals | README § Upstream, the "Official harness repo" paragraph | on re-derivation |
 | The 1,000★ threshold and the attribution rule | README § Upstream, the lead paragraph | rule change only |
@@ -60,10 +60,17 @@ The node id for this account is `MDQ6VXNlcjI1NTY2NTkwMA==` (user id 255665900).
 - **`SihanTeng/awesome-deepseek-harness-plugins`** took **32** of this account's merged pull
   requests and credits **no** commit on its default branch.
 - **`omdsh-dev/DSH-better-sidebar`** took **1** merge (2026-10-04) with no commit of ours on `main`.
-- **`MoonshotAI/checkpoint-engine`** (1,006★) merged a pull request of ours and carries no commit of
-  ours, so it is **absent** from the star table.
 
-These three exist to answer "your 43 is padded". Removing them turns a rule into a sales pitch.
+These two exist to answer "your 49 is padded". Removing them turns a rule into a sales pitch.
+
+**A third case was listed here until 2026-10-07 and it was simply wrong.** `MoonshotAI/checkpoint-engine`
+(1,006★) was recorded as having merged a pull request of ours while carrying no commit of ours. Re-probed
+2026-10-07: this account's only pull request there,
+[#108](https://github.com/MoonshotAI/checkpoint-engine/pull/108), is **open and was never merged**
+(`state=open`, `merged=false`), and `defaultBranchRef.target.history(author:{id})` returns
+`totalCount: 0`. It is not a counter-example at all — it is an open proposal, which the section below
+already excludes — so its absence from the star table never needed this entry. The lesson is the one the
+table above already taught twice: a remembered case is not a measured one.
 
 ### Open proposals are deliberately not listed
 
