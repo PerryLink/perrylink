@@ -126,7 +126,7 @@ not part of this set at all before — [ruflo](https://github.com/ruvnet/ruflo),
 [dsh-plugin-manager](https://github.com/2768651338/dsh-plugin-manager),
 [dsh-plugin-market](https://github.com/losebird/dsh-plugin-market) and
 [dsh-annotation](https://github.com/omdsh-dev/dsh-annotation) — which is what puts the largest row in the
-table above, `ruflo` at 73,901★, in a set it was not part of ten days ago. The twenty-ninth is
+table above, `ruflo` at 74,013★, in a set it was not part of ten days ago. The twenty-ninth is
 [dsh-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar/pull/843), merged
 2026-10-04T17:26:07Z, and it is the one merge in the window that credits this account no commit —
 which is why it is named in the paragraph above instead of being counted with the other 29. The thirtieth,
