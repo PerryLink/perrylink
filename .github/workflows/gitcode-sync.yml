@@ -94,14 +94,13 @@ jobs:
               return 0
             fi
 
-            # A repo that was never migrated to GitCode is SKIPped, not failed.
-            # Same semantics as gitee-sync: create it on gitcode.com and the
-            # next run seeds it.
-            if ! "${G[@]}" ls-remote "$MIRROR/$r.git" >/dev/null 2>&1; then
-              echo "SKIP $r (no mirror repo on gitcode)"
-              skipped=$((skipped + 1))
-              return 0
-            fi
+            # NOTE: no `ls-remote` pre-check here on purpose. gitee-sync loses
+            # repos to transient network resets that way: its log shows
+            # "SKIP X (no mirror repo on gitee)" immediately followed by
+            # "OK X" in the same run, i.e. a broken pipe made the probe fail and
+            # the repo was silently skipped for the day. Here the existence
+            # check IS the fetch below, and only an explicit not-found body is
+            # treated as "not migrated"; anything else is a hard failure.
 
             rm -rf "$work"
             if ! "${G[@]}" clone --quiet "https://github.com/PerryLink/$r.git" "$work" 2>&1 | mask; then
@@ -115,8 +114,25 @@ jobs:
             live="$("${G[@]}" -C "$work" rev-parse "refs/remotes/origin/$b")"
 
             # Read the mirror tip from the live remote every run so the lease is
-            # always derived from current state.
-            "${G[@]}" -C "$work" fetch --quiet "$MIRROR/$r.git" "refs/heads/$b:refs/remotes/mirror/$b" 2>&1 | mask
+            # always derived from current state. Keep stderr in a temp file so a
+            # genuine "repo absent" can be told apart from a transient error.
+            local errlog="$work.fetch-err"
+            if ! "${G[@]}" -C "$work" fetch --quiet "$MIRROR/$r.git" \
+                   "refs/heads/$b:refs/remotes/mirror/$b" 2>"$errlog"; then
+              local body
+              body="$(cat "$errlog" 2>/dev/null | mask)"
+              case "$body" in
+                *"could not be found"*|*"not found"*|*"Not Found"*)
+                  echo "SKIP $r (no mirror repo on gitcode)"
+                  skipped=$((skipped + 1))
+                  return 0 ;;
+                *)
+                  echo "FAIL fetch $r"
+                  printf '%s\n' "$body"
+                  fails=$((fails + 1))
+                  return 1 ;;
+              esac
+            fi
             tip="$("${G[@]}" -C "$work" rev-parse "refs/remotes/mirror/$b" 2>/dev/null || true)"
 
             if [ -z "$tip" ]; then
@@ -131,7 +147,7 @@ jobs:
               # Keep both sides: never clobber a mirror carrying independent commits.
               ahead="$("${G[@]}" -C "$work" rev-list --count "$tip..$live" 2>/dev/null || echo 0)"
               behind="$("${G[@]}" -C "$work" rev-list --count "$live..$tip" 2>/dev/null || echo 0)"
-              if [ "$behind" != "0" ]; then
+              if [ "$behind" != "0" ] && [ "$behind" != "" ]; then
                 echo "FAIL $r (mirror has $behind commit(s) not on GitHub; refusing to overwrite)"
                 fails=$((fails + 1))
                 return 1
@@ -146,6 +162,7 @@ jobs:
             "${G[@]}" -C "$work" push --tags --force "$MIRROR/$r.git" 2>&1 | mask || {
               echo "FAIL push tags $r"; fails=$((fails + 1)); return 1; }
 
+            rm -rf "$work" "$errlog"
             synced=$((synced + 1))
             return 0
           }
