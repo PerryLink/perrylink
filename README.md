@@ -11,7 +11,7 @@
 <a href="https://github.com/PerryLink?tab=repositories"><img alt="GitHub repos" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FPerryLink&query=%24.public_repos&label=repos&color=24292f"></a>
 <a href="https://www.npmjs.com/search?q=perrylink"><img alt="npm names" src="https://img.shields.io/badge/npm-52%20names-cb3837?logo=npm"></a>
 <img alt="npm downloads 30d" src="https://img.shields.io/badge/npm%20downloads%2030d-183.9k-6e7781">
-<a href="https://github.com/PerryLink/dsh-kit"><img alt="plugins" src="https://img.shields.io/badge/plugins-42-6e7781"></a>
+<a href="https://github.com/PerryLink/dsh-kit"><img alt="actively maintained plugins" src="https://img.shields.io/badge/plugins-33-6e7781"></a>
 <br>
 <a href="https://github.com/PerryLink/dsh-auto-review/blob/main/LICENSE"><img alt="license" src="https://img.shields.io/badge/license-Apache--2.0-blue"></a>
 <a href="https://github.com/PerryLink/dsh-plugin-doctor#readme"><img alt="OpenSSF Scorecard (flagship dsh-auto-review)" src="https://img.shields.io/ossf-scorecard/github.com/PerryLink/dsh-auto-review?label=openssf%20scorecard"></a>
@@ -32,9 +32,9 @@
 </p>
 
 Open-source developer in Beijing. I build the
-[DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) plugin ecosystem: 42 Apache-2.0
-plugins in a 48-repo family — security, workflows, research, messaging bridges and developer
-experience — plus the DSH Desktop Market catalog, a plugin-certification registry and the
+[DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) plugin ecosystem: 33 actively
+maintained Apache-2.0 plugins in a 48-repo family — security, workflows, research, messaging bridges
+and developer experience — plus the DSH Desktop Market catalog, a plugin-certification registry and the
 dsh-plugin-doctor CI checker. Every plugin ships CI, a Gitee mirror and five-language docs held to
 the same section count by a gate in its own CI.
 
@@ -52,7 +52,7 @@ One command installs the core family — **[dsh-kit](https://github.com/PerryLin
 | [dsh-auto-review](https://github.com/PerryLink/dsh-auto-review) | Second-model auto-review on the approval chain, fail-closed by default (234★) | `dsh plugin --profile web add dsh-auto-review` |
 | [dsh-research-report](https://github.com/PerryLink/dsh-research-report) | Verifiable research reports: content-addressed evidence ledger, manifest seal hash, byte-level citation checks, drift detection, disproof ledger (214★) | `dsh plugin --profile web add dsh-research-report` |
 | [dsh-industry-research](https://github.com/PerryLink/dsh-industry-research) | Industry/company research: chain-map SVG with bottleneck detection, timeline, company cards, adversarial review (213★) | `dsh plugin --profile web add dsh-industry-research` |
-| [dsh-memento](https://github.com/PerryLink/dsh-memento) | Approval-gated cross-session memory (`ctx.memory` + SQLite) (139★) | `dsh plugin --profile web add dsh-memento` |
+| [dsh-memento](https://github.com/PerryLink/dsh-memento) | Approval-gated cross-session memory (`ctx.memory` + SQLite) (139★) · 🧊 **frozen** — better-adopted alternatives exist | `dsh plugin --profile web add dsh-memento` |
 | [dsh-permission-rules](https://github.com/PerryLink/dsh-permission-rules) | Claude Code-style declarative allow/deny/ask rules plus a process-level network policy (119★) | `dsh plugin --profile web add dsh-permission-rules` |
 | [dsh-mcp-panel](https://github.com/PerryLink/dsh-mcp-panel) | MCP management console: `/mcp` + Settings tab + trial calls (73★) | `dsh plugin --profile web add dsh-mcp-panel` |
 
@@ -241,17 +241,19 @@ other two are catalog additions.
 
 ## 📦 The rest of the family
 
-The other 36 plugins and the five support repos are one line each below. The roster's source of truth
+The rest of the family and the five support repos are one line each below. The roster's source of truth
 is **[dsh-kit](https://github.com/PerryLink/dsh-kit)** — its `plugins.txt` and a parity script hold the
 family to that file; the machine-readable catalogue is
 **[dsh-catalog](https://github.com/PerryLink/dsh-catalog)**, which is also the DSH Desktop Market source;
 and each plugin's own README carries the detail this page only summarises.
 
 <details>
-<summary><b>The full family — 42 plugins + 5 support repos, one line each</b></summary>
+<summary><b>The full family — 42 plugins in the roster, 33 of them actively maintained, plus 5 support repos, one line each</b></summary>
 
-*Counting note: "42 plugins" counts every repo that declares `dsh.bundle.patch`, re-derived one repo at a time on
-2026-10-04 by reading each repo's own `package.json` at its default branch. Measured against the 47 PerryLink-owned
+*Counting note: **33** is the actively maintained set, and it is the figure this page's heading and badge
+use. It is derived one repository at a time: **42** repositories declare `dsh.bundle.patch` (re-derived
+2026-10-07 by reading each repo's own `package.json` at its default branch), of which **3 are 🚫 retired**
+and **6 are 🧊 frozen**, leaving **33 actively maintained**. Measured against the 47 PerryLink-owned
 repositories this page names: **42 declare the contract and 5 do not** — the support trio
 [dsh-catalog](https://github.com/PerryLink/dsh-catalog), [dsh-kit](https://github.com/PerryLink/dsh-kit) and
 [dsh-plugin-certification](https://github.com/PerryLink/dsh-plugin-certification) (the certification registry, whose
@@ -259,14 +261,17 @@ MCP server publishes from [dsh-cert-mcp](https://github.com/PerryLink/dsh-cert-m
 [jevcore](https://github.com/PerryLink/jevcore) (no `dsh.bundle`; only its `jevcore-dsh` workspace member is a plugin)
 and [laya-mcp](https://github.com/PerryLink/laya-mcp) (an MCP sidecar, not a plugin). The third-party
 [pan17/dsh-wechat](https://github.com/pan17/dsh-wechat) carries a plugin row but is not one of them: 47 + 1 = the 48
-repos this page names. A naive scan of the account finds two more than the heading claims — the retired
+repos this page names. A naive scan of the account finds two more than the 42 — the retired
 [dsh-plugin-upgrade](https://github.com/PerryLink/dsh-plugin-upgrade) corridor legs `dsh-plugin-upgrade-015` (**not**
 archived) and `dsh-plugin-upgrade-016` (archived), both still carrying the manifest and neither an active plugin:
-42 + 2 = the **44** such a scan returns (re-measured 2026-10-07). **The 42 is the roster, not the live set** — 3 of
-them are 🚫 RETIRED and 6 are 🧊 FROZEN, which leaves **33 actively maintained**, and the nine tables below list **41
-rows** rather than 42 because they also carry `jevcore` (no `dsh.bundle`) and the third-party `dsh-wechat`. The heading
-and the badge keep the roster figure, since retired and frozen rows stay in place with their status rather than being
-deleted.*
+42 + 2 = the **44** such a scan returns. The nine tables below list **41 rows**: 39 of the 42 roster repositories,
+plus `jevcore` (which declares no `dsh.bundle`) and the third-party `dsh-wechat` — the three left out
+(`dsh-plugin-kit`, `dsh-cert-mcp`, `dsh-plugin-doctor`) are the toolchain repositories named in the support
+list above. Retired and frozen rows keep their place with
+their status rather than being deleted, which is why the roster figure is larger than the active one. The same
+42 repositories and the same three states are recorded once, in
+[dsh-plugin-kit/data/repos.json](https://github.com/PerryLink/dsh-plugin-kit/blob/master/data/repos.json), which
+the portal renders and the certification registry counts.*
 
 ### 🔒 Security (4)
 
@@ -346,7 +351,8 @@ plugins publish under a `@perrylink/` npm name rather than their repo name — t
 `@perrylink/dsh-plugin-kit` and `@perrylink/dsh-plugin-doctor`, and the plugins `@perrylink/dsh-github`,
 `@perrylink/dsh-ticktick` and `@perrylink/dsh-skill-pack-security-provider` — and a sixth name,
 `@perrylink/dsh-cert-mcp`, is the deprecated scoped predecessor of `dsh-cert-mcp`; the `perrylink` account therefore
-holds **52 npm names** while the family has 42 plugin repos (measured 2026-10-04).
+holds **52 npm names** — more names than the family has repositories, because several repos publish both a plugin
+and a provider package (measured 2026-10-04).
 
 ### 📱 Messaging & bridges (3)
 
@@ -449,8 +455,8 @@ topic](https://github.com/topics/dsh-plugin) is what most of them ingest from.
 <details>
 <summary><b>中文介绍</b></summary>
 
-**在 DeepSeek Harness 上构建插件生态:42 个开源插件,来自一个 48 仓的家族(其中 47 个由 PerryLink 自己维护)** —— 安全、工作流、研究、消息桥接、开发者体验,外加 DSH Desktop
-Market 目录、插件认证注册表与 dsh-plugin-doctor 这个 CI 检查器。42 个插件全部带 CI、Gitee 镜像与五语文档,文档的段落数、安装命令、配置键由每个仓自己的 CI 闸门守着一致,并声明
+**在 DeepSeek Harness 上构建插件生态:33 个活跃维护的开源插件,来自一个 48 仓的家族(其中 47 个由 PerryLink 自己维护)** —— 安全、工作流、研究、消息桥接、开发者体验,外加 DSH Desktop
+Market 目录、插件认证注册表与 dsh-plugin-doctor 这个 CI 检查器。33 个插件全部带 CI、Gitee 镜像与五语文档,文档的段落数、安装命令、配置键由每个仓自己的 CI 闸门守着一致,并声明
 `dsh.bundle` 契约。npm 账号、Gitee 镜像、DSH Desktop Market、MCP Registry 与 GitHub Actions 的入口见上节「Where the plugins
 live」。**我也向上游 [Cordis](https://github.com/cordiverse/cordis)(DeepSeek Harness 所基于的插件内核框架)与
 [deepseek-ai](https://github.com/deepseek-ai) 项目贡献:该组织下 20 条 PR 里,已合并的仍是

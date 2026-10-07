@@ -18,9 +18,10 @@ absent. The two sanctioned exceptions are marked.
 
 | Figure | Authoritative site | Update trigger |
 |---|---|---|
-| 42 plugins / 48-repo family / 47 owned | README § intro sentence | a repo joins or leaves the family |
-| **plugins badge** *(exception: badge row is the live copy)* | README badge row | same |
-| Family roster (which plugins exist) | [`dsh-kit/plugins.txt`](https://github.com/PerryLink/dsh-kit) — already the roster's source of truth, with a parity script | any release |
+| 33 actively maintained / 42 in the roster / 48-repo family / 47 owned | README § intro sentence | a repo joins, leaves, freezes or retires |
+| **plugins badge** *(exception: badge row is the live copy)* | README badge row — carries the actively maintained count, 33 | same |
+| Family roster (which plugins exist, and each one's status) | [`dsh-kit/plugins.txt`](https://github.com/PerryLink/dsh-kit) — the install roster, with `scripts/check-parity.mjs` deriving every count and failing on a retired package or a lost status cell | any release |
+| Per-repo maintenance status (`active` / `frozen` / `retired`) | [`dsh-plugin-kit/data/repos.json`](https://github.com/PerryLink/dsh-plugin-kit/blob/master/data/repos.json) — the machine-readable roster the portal renders and the certification registry counts | when a repo freezes or retires |
 | npm 30-day downloads | README § Where the plugins live | monthly |
 | **npm downloads badge** *(exception)* | README badge row | same |
 | npm names / versions / non-deprecated latest | README § Where the plugins live | monthly |
@@ -72,22 +73,32 @@ paragraph. Keep both sentences.
 
 ---
 
-## 3. The 42 / 44 / 47 / 48 counting note
+## 3. The 33 / 42 / 44 / 47 / 48 counting note
 
-The page's most attackable number, so the note in the README's family section is the defence.
+The page's most attackable number, so the note in the README's family section is the defence. **The
+heading and the badge carry the actively maintained count (33). The roster figure (42) is stated once,
+inside that note** — the intro sentence is the authoritative prose site for 33, not for 42.
 
-Measured one repo at a time from each repo's own `package.json` at its default branch:
+Measured one repo at a time from each repo's own `package.json` at its default branch (re-derived 2026-10-07):
 
 | Count | Meaning |
 |---|---|
-| **42** | canonical plugins that declare `dsh.bundle.patch` |
+| **33** | actively maintained — the roster minus 3 🚫 retired and 6 🧊 frozen. **This is the number the heading and the badge carry.** |
+| **42** | the roster: canonical plugins that declare `dsh.bundle.patch`, excluding the 2 retired corridor legs. The same 42 repositories as `dsh-plugin-kit/data/repos.json`, which records each one's `status` |
 | **44** | a naive scan of the account — 42 canonical **+ 2 retired corridor legs** (`dsh-plugin-upgrade-015`, not archived; `dsh-plugin-upgrade-016`, archived; both still carrying the manifest) |
+| **41** | rows in the README's nine category tables: 42 roster − 3 toolchain repos named separately (`dsh-plugin-kit`, `dsh-cert-mcp`, `dsh-plugin-doctor`) + 2 rows that are not roster plugins (`jevcore`, which declares no `dsh.bundle`, and the third-party `pan17/dsh-wechat`) |
 | **47** | PerryLink-owned repositories the README names |
 | **48** | the repositories the README names, including the third-party `pan17/dsh-wechat` |
 | **105** | non-fork repositories this account owns in total — 58 of them are not DSH plugins at all (the `loop-*` collection and a set of small LLM utility tools) and are outside this page's scope by design |
 
-`dsh-kit`'s own repository description says **41**; the README and the badge say **42**. Reconcile
-these before the next public claim about family size.
+**Reconciled 2026-10-07.** The figure previously drifted: `dsh-kit`'s own repository description said
+**41**, its README headline said 42, its family table carried 45 rows, and the per-plugin family tables
+said **44** over 45 rows. All of them now derive from one file. `dsh-kit/plugins.txt` lists **39 npm
+specs** — 33 actively maintained plus the 6 frozen, each frozen line carrying a trailing `# 🧊 FROZEN`,
+and the 5 retired names documented in the file's header as forbidden. `scripts/check-parity.mjs` derives
+33 / 6 / 39 / 42 from that file, fails if a retired package is added back, and fails if a family-table
+row's cell count stops matching its header — the defect that had been silently dropping every 🧊 FROZEN
+annotation from GitHub's rendering.
 
 ---
 
