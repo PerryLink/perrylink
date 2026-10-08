@@ -128,7 +128,24 @@ annotation from GitHub's rendering.
 family it maintains, never one repository.** Measured from each badge's own SVG `width`/`height` at
 the 20px render height, then partitioned into balanced rows under the cap below.
 
-Re-solved 2026-10-05 for **20 badges in four rows (2,808px)**:
+Re-solved 2026-10-08 for **21 badges in four rows**. Every width below was re-measured from each
+badge's own SVG at the 20px render height:
+
+| Row | px | Badges |
+|---|---|---|
+| 1 — reach | 748 | stars, followers, repos, npm names, npm downloads 30d, plugins, node |
+| 2 — quality, licence, registry | 678 | license, OpenSSF Scorecard, Glama, MCP Registry, awesome-dsh-plugin |
+| 3 — listings, mirror, toolchain | 781 | DSH Directory, plugin index, DSH Market, Gitee, dsh host corridor |
+| 4 — footprint & research | 753 | dshfind aggregate, Desktop Market source, certified, Zenodo DOI |
+
+**Why `node` moved out of row 3.** Adding the `plugin index` badge (144px) to its natural row — the
+listings row — took it to 919px, and every other row was already within 75px of the ~800px cap, so
+the new badge had nowhere to go without a swap. `node` (138px) is the toolchain badge whose subject
+is least tied to the listings, so it moved to row 1 and the listings row landed at 781px. Moving the
+new badge itself to row 1 would also have fit (754px) but would have split the four listings across
+two rows, which is the grouping a reader actually uses.
+
+Previously, 2026-10-05, **20 badges in four rows (2,808px)**:
 
 | Row | px | Badges |
 |---|---|---|
