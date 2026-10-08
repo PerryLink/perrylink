@@ -493,8 +493,8 @@ Jev、DeepSeek-V4.1-Flash),四条主张**三条成立、一条被自己的数据
 ([Phocinae org](https://github.com/Phocinae/Phocinae-Largha-150M-v1),Apache-2.0)是插件生态之外的另一条线:一个 144.3M
 参数的结构化决策模型,不生成文本,一次前向输出判定与校准置信度;GPU 单次判定 p50
 **18.6ms**、纯 CPU 约 **1.5s**,英文 typed-decisions **0.797**(400 用例 / 2000 决策,2026-10-07
-实测),中文(机译评测集)**0.789**;τ=0.6 升级门让 **82%** 的 agent 决策留在本地、组合准确率
-0.789→**0.7948**。权重在 [Hugging
+实测),中文(机译评测集)**0.789**;官方 en 0.797 与独立复现 0.7825/0.7820 如实并排;τ=0.6 升级门实测让 **54%** 的 agent 决策留在本地(45.7% 升级、省 **54.4%** LLM 调用,τ=0.5 档 82.8%)、保留集准确率
+0.797→**0.886**。权重在 [Hugging
 Face](https://huggingface.co/Phocinae/Phocinae-Largha-150M-v1) 与[魔搭](https://modelscope.cn/models/PerryLink/Phocinae-Largha-150M-v1),配套 `pip install phocinae-server` 与 `npm i dsh-phocinae`;复现四件套(seed/行集/环境/脚本)随仓库发货。
 
 
