@@ -118,6 +118,12 @@ and `dsh-laya` were introduced by name.
   own value table — the exact failure §1 of `INSTRUMENTATION.md` exists to prevent. This round keeps the
   Phocinae line, restores the raise and the section, and adds the blob-sha precondition rule to
   `INSTRUMENTATION.md` §5.
+- **The counting note's roster row count was short by one and now reads 92.** The nine family tables
+  carry 41 rows and the restored compliance section carries 53, so the ten tables hold 94 rows and **92
+  of the 95 roster repositories** appear in them — 39 + 53 — plus `jevcore` and the third-party
+  `dsh-wechat`. The raise had written 91, which sums to 93 against the same sentence's own total of 94;
+  95 roster minus the three toolchain repositories named in the support list is 92, which is the figure
+  the sibling clause has always used (42 − 3 = 39 before the raise).
 ## 2026-10-07
 
 - **The upstream section was re-derived from this account's own merged pull requests and three company

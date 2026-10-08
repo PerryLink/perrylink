@@ -290,7 +290,7 @@ and [laya-mcp](https://github.com/PerryLink/laya-mcp) (an MCP sidecar, not a plu
 repos this page names. A naive scan of the account finds two more than the 95 — the retired
 [dsh-plugin-upgrade](https://github.com/PerryLink/dsh-plugin-upgrade) corridor legs `dsh-plugin-upgrade-015` (**not**
 archived) and `dsh-plugin-upgrade-016` (archived), both still carrying the manifest and neither an active plugin:
-95 + 2 = the **97** such a scan returns. The ten tables below list **94 rows**: 91 of the 95 roster repositories,
+95 + 2 = the **97** such a scan returns. The ten tables below list **94 rows**: 92 of the 95 roster repositories,
 plus `jevcore` (which declares no `dsh.bundle`) and the third-party `dsh-wechat` — the three left out
 (`dsh-plugin-kit`, `dsh-cert-mcp`, `dsh-plugin-doctor`) are the toolchain repositories named in the support
 list above. Retired and frozen rows keep their place with
