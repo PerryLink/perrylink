@@ -18,8 +18,8 @@ absent. The two sanctioned exceptions are marked.
 
 | Figure | Authoritative site | Update trigger |
 |---|---|---|
-| 33 actively maintained / 42 in the roster / 48-repo family / 47 owned | README § intro sentence | a repo joins, leaves, freezes or retires |
-| **plugins badge** *(exception: badge row is the live copy)* | README badge row — carries the actively maintained count, 33 | same |
+| 86 actively maintained / 95 in the roster / 101-repo family / 100 owned | README § intro sentence | a repo joins, leaves, freezes or retires |
+| **plugins badge** *(exception: badge row is the live copy)* | README badge row — carries the actively maintained count, 86 | same |
 | Family roster (which plugins exist, and each one's status) | [`dsh-kit/plugins.txt`](https://github.com/PerryLink/dsh-kit) — the install roster, with `scripts/check-parity.mjs` deriving every count and failing on a retired package or a lost status cell | any release |
 | Per-repo maintenance status (`active` / `frozen` / `retired`) | [`dsh-plugin-kit/data/repos.json`](https://github.com/PerryLink/dsh-plugin-kit/blob/master/data/repos.json) — the machine-readable roster the portal renders and the certification registry counts | when a repo freezes or retires |
 | npm 30-day downloads | README § Where the plugins live | monthly |
@@ -81,23 +81,35 @@ paragraph. Keep both sentences.
 
 ---
 
-## 3. The 33 / 42 / 44 / 47 / 48 counting note
+## 3. The 86 / 95 / 97 / 94 / 100 / 101 counting note
 
 The page's most attackable number, so the note in the README's family section is the defence. **The
-heading and the badge carry the actively maintained count (33). The roster figure (42) is stated once,
-inside that note** — the intro sentence is the authoritative prose site for 33, not for 42.
+heading and the badge carry the actively maintained count (86). The roster figure (95) is stated once,
+inside that note** — the intro sentence is the authoritative prose site for 86, not for 95.
 
-Measured one repo at a time from each repo's own `package.json` at its default branch (re-derived 2026-10-07):
+Measured one repo at a time from each repo's own `package.json` at its default branch (re-derived 2026-10-08):
 
 | Count | Meaning |
 |---|---|
-| **33** | actively maintained — the roster minus 3 🚫 retired and 6 🧊 frozen. **This is the number the heading and the badge carry.** |
-| **42** | the roster: canonical plugins that declare `dsh.bundle.patch`, excluding the 2 retired corridor legs. The same 42 repositories as `dsh-plugin-kit/data/repos.json`, which records each one's `status` |
-| **44** | a naive scan of the account — 42 canonical **+ 2 retired corridor legs** (`dsh-plugin-upgrade-015`, not archived; `dsh-plugin-upgrade-016`, archived; both still carrying the manifest) |
-| **41** | rows in the README's nine category tables: 42 roster − 3 toolchain repos named separately (`dsh-plugin-kit`, `dsh-cert-mcp`, `dsh-plugin-doctor`) + 2 rows that are not roster plugins (`jevcore`, which declares no `dsh.bundle`, and the third-party `pan17/dsh-wechat`) |
-| **47** | PerryLink-owned repositories the README names |
-| **48** | the repositories the README names, including the third-party `pan17/dsh-wechat` |
-| **105** | non-fork repositories this account owns in total — 58 of them are not DSH plugins at all (the `loop-*` collection and a set of small LLM utility tools) and are outside this page's scope by design |
+| **86** | actively maintained — the roster minus 3 🚫 retired and 6 🧊 frozen. **This is the number the heading and the badge carry.** |
+| **95** | the roster: canonical plugins that declare `dsh.bundle.patch`, excluding the 2 retired corridor legs. The same 95 repositories as `dsh-plugin-kit/data/repos.json`, which records each one's `status` |
+| **97** | a naive scan of the account — 95 canonical **+ 2 retired corridor legs** (`dsh-plugin-upgrade-015`, not archived; `dsh-plugin-upgrade-016`, archived; both still carrying the manifest) |
+| **94** | rows in the README's ten category tables: 95 roster − 3 toolchain repos named separately (`dsh-plugin-kit`, `dsh-cert-mcp`, `dsh-plugin-doctor`) + 2 rows that are not roster plugins (`jevcore`, which declares no `dsh.bundle`, and the third-party `pan17/dsh-wechat`) |
+| **100** | PerryLink-owned repositories the README names |
+| **101** | the repositories the README names, including the third-party `pan17/dsh-wechat` |
+| **159** | non-fork repositories this account owns in total — 57 of them are not DSH plugins at all (the `loop-*` collection and a set of small LLM utility tools) and are outside this page's scope by design |
+
+**2026-10-08: the roster grew by 53.** A set of 53 compliance checkers was published that day
+(`dsh-hazchem-check`, `dsh-tender-matrix`, `dsh-icd-rule-check` and so on — the full list is the
+`### ✅ Compliance checkers` section of the README). They declare `dsh.bundle.patch` like every other
+roster entry, so under this page's own membership rule they are roster plugins, and the counts above
+were raised accordingly: 33 → 86, 42 → 95, 41 → 94, 47 → 100, 48 → 101, 105 → 159. The count of
+non-plugin repos fell from 58 to 57 because one previously-unclassified repository is accounted for
+in the new total.
+
+They are a second workspace on disk (`D:\Projects\dsh-plugins`, disjoint from `D:\Projects\dsh\plugins`)
+and carry their own memory file; their maintenance rules, version policy and citation-gate discipline
+are recorded there rather than here.
 
 **Reconciled 2026-10-07.** The figure previously drifted: `dsh-kit`'s own repository description said
 **41**, its README headline said 42, its family table carried 45 rows, and the per-plugin family tables
