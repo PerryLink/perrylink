@@ -386,6 +386,117 @@ and a provider package (measured 2026-10-04).
 
 </details>
 
+### ✅ Compliance checkers (53)
+
+Fifty-three checkers published 2026-10-08, all Apache-2.0, all carrying SLSA provenance on npm.
+Each reads one register, ledger or record set against a **versioned rule pack** and returns the differences
+for a human to review — none of them pronounces on compliance, liability or clinical correctness. Every rule
+cites the clause it rests on, and a per-repo `check:citations` gate holds each quotation to its own
+`rules/evidence/` record, so a rule cannot quietly cite something it cannot show.
+
+
+#### 🧾 Tendering & procurement (7)
+
+| Plugin | One-liner | Status | npm |
+|---|---|---|---|
+| [dsh-bid-ca-precheck](https://github.com/PerryLink/dsh-bid-ca-precheck) | Pre-flight check of a bid package against the responsiveness and qualification clauses before submission | | [npm](https://www.npmjs.com/package/dsh-bid-ca-precheck) |
+| [dsh-bid-qual-check](https://github.com/PerryLink/dsh-bid-qual-check) | Qualification screening: does the bidder's evidence actually answer every qualification the documents demand | | [npm](https://www.npmjs.com/package/dsh-bid-qual-check) |
+| [dsh-tender-extract](https://github.com/PerryLink/dsh-tender-extract) | Pulls the substantive requirements out of tender documents so nothing mandatory is missed | | [npm](https://www.npmjs.com/package/dsh-tender-extract) |
+| [dsh-tender-matrix](https://github.com/PerryLink/dsh-tender-matrix) | Scoring-matrix arithmetic: weights, caps and totals reconciled against the stated evaluation method | | [npm](https://www.npmjs.com/package/dsh-tender-matrix) |
+| [dsh-protest-deadline](https://github.com/PerryLink/dsh-protest-deadline) | Challenge-deadline arithmetic under the procurement regime, with the clause behind each period | | [npm](https://www.npmjs.com/package/dsh-protest-deadline) |
+| [dsh-contract-stance](https://github.com/PerryLink/dsh-contract-stance) | Reads a contract for the positions it actually takes, clause by clause, and reports them without advising | | [npm](https://www.npmjs.com/package/dsh-contract-stance) |
+| [dsh-rulefile-check](https://github.com/PerryLink/dsh-rulefile-check) | Internal rule-file consistency: no contradictions, no dangling references, no undefined terms | | [npm](https://www.npmjs.com/package/dsh-rulefile-check) |
+
+#### 🏗️ Construction & environment (7)
+
+| Plugin | One-liner | Status | npm |
+|---|---|---|---|
+| [dsh-site-log-check](https://github.com/PerryLink/dsh-site-log-check) | Supervision-log completeness against the supervision standard and the on-site recording rules | | [npm](https://www.npmjs.com/package/dsh-site-log-check) |
+| [dsh-hazplan-check](https://github.com/PerryLink/dsh-hazplan-check) | HAZOP worksheet review: nodes, guide words, deviations and actions held to the analysis standard | | [npm](https://www.npmjs.com/package/dsh-hazplan-check) |
+| [dsh-safety-brief-check](https://github.com/PerryLink/dsh-safety-brief-check) | Safety-briefing records checked for the required topics and the sign-off each one needs | | [npm](https://www.npmjs.com/package/dsh-safety-brief-check) |
+| [dsh-guard-plan-qc](https://github.com/PerryLink/dsh-guard-plan-qc) | Guard-plan quality: coverage, escalation paths and the shifts the plan claims to cover | | [npm](https://www.npmjs.com/package/dsh-guard-plan-qc) |
+| [dsh-soilwater-check](https://github.com/PerryLink/dsh-soilwater-check) | Soil and groundwater survey records — sampling points, analytes and the reported units | | [npm](https://www.npmjs.com/package/dsh-soilwater-check) |
+| [dsh-eia-guide-check](https://github.com/PerryLink/dsh-eia-guide-check) | Environmental impact assessment against the published technical guidelines | | [npm](https://www.npmjs.com/package/dsh-eia-guide-check) |
+| [dsh-permit-report-check](https://github.com/PerryLink/dsh-permit-report-check) | Permit application reports: the sections required, and whether each is filled rather than templated | | [npm](https://www.npmjs.com/package/dsh-permit-report-check) |
+
+#### 🦺 Safety & hazardous materials (7)
+
+| Plugin | One-liner | Status | npm |
+|---|---|---|---|
+| [dsh-hazchem-check](https://github.com/PerryLink/dsh-hazchem-check) | Hazardous-chemical register and major-hazard-source identification, reconciled arithmetically | | [npm](https://www.npmjs.com/package/dsh-hazchem-check) |
+| [dsh-emergency-plan](https://github.com/PerryLink/dsh-emergency-plan) | Emergency plan structure and the drills, contacts and review dates it must carry | | [npm](https://www.npmjs.com/package/dsh-emergency-plan) |
+| [dsh-drill-script-check](https://github.com/PerryLink/dsh-drill-script-check) | Drill scripts: scenario, roles, timeline and the corrective actions a drill has to produce | | [npm](https://www.npmjs.com/package/dsh-drill-script-check) |
+| [dsh-hidden-risk-map](https://github.com/PerryLink/dsh-hidden-risk-map) | Hidden-risk map: every hazard mapped to the article it is reported under, no gaps and no inventions | | [npm](https://www.npmjs.com/package/dsh-hidden-risk-map) |
+| [dsh-power-ticket-check](https://github.com/PerryLink/dsh-power-ticket-check) | Work permits for electrical isolation — the safety measures each permit class requires | | [npm](https://www.npmjs.com/package/dsh-power-ticket-check) |
+| [dsh-power-loss-split](https://github.com/PerryLink/dsh-power-loss-split) | Power-loss event split across causes so the totals reconcile to the reported outage | | [npm](https://www.npmjs.com/package/dsh-power-loss-split) |
+| [dsh-aqua-input-check](https://github.com/PerryLink/dsh-aqua-input-check) | Aquaculture input records: batch, dosage and withdrawal periods against the limits stated | | [npm](https://www.npmjs.com/package/dsh-aqua-input-check) |
+
+#### 🏥 Medical records (3)
+
+| Plugin | One-liner | Status | npm |
+|---|---|---|---|
+| [dsh-icd-rule-check](https://github.com/PerryLink/dsh-icd-rule-check) | ICD coding pairs — dagger and asterisk, combination codes — flagged for a coder to resolve | | [npm](https://www.npmjs.com/package/dsh-icd-rule-check) |
+| [dsh-medrec-qc](https://github.com/PerryLink/dsh-medrec-qc) | Medical-record front sheets checked for field completeness and code well-formedness | | [npm](https://www.npmjs.com/package/dsh-medrec-qc) |
+| [dsh-nurse-record-check](https://github.com/PerryLink/dsh-nurse-record-check) | Nursing records: the observations, timings and signatures each entry is required to carry | | [npm](https://www.npmjs.com/package/dsh-nurse-record-check) |
+
+#### 📄 Official documents & archives (3)
+
+| Plugin | One-liner | Status | npm |
+|---|---|---|---|
+| [dsh-gongwen-flow-check](https://github.com/PerryLink/dsh-gongwen-flow-check) | Official-document handling flow — drafting, review, issue — checked against the regulation | | [npm](https://www.npmjs.com/package/dsh-gongwen-flow-check) |
+| [dsh-gongwen-word-check](https://github.com/PerryLink/dsh-gongwen-word-check) | Document type and reference number checked against the formatting standard | | [npm](https://www.npmjs.com/package/dsh-gongwen-word-check) |
+| [dsh-archive-check](https://github.com/PerryLink/dsh-archive-check) | Archive records: retention periods, catalogue fields and transfer dates | | [npm](https://www.npmjs.com/package/dsh-archive-check) |
+
+#### 🚢 Customs & trade (8)
+
+| Plugin | One-liner | Status | npm |
+|---|---|---|---|
+| [dsh-customs-doc-check](https://github.com/PerryLink/dsh-customs-doc-check) | Customs declaration pack — the documents a declaration needs, and the fields each must carry | | [npm](https://www.npmjs.com/package/dsh-customs-doc-check) |
+| [dsh-hs-classify](https://github.com/PerryLink/dsh-hs-classify) | HS classification entries: the basis recorded for each code, in the form the tariff regulation requires | | [npm](https://www.npmjs.com/package/dsh-hs-classify) |
+| [dsh-origin-rvc-check](https://github.com/PerryLink/dsh-origin-rvc-check) | Regional value content arithmetic for rules of origin, including the de minimis tests | | [npm](https://www.npmjs.com/package/dsh-origin-rvc-check) |
+| [dsh-export-ctl-check](https://github.com/PerryLink/dsh-export-ctl-check) | Export-control screening records against the control lists and the licence conditions | | [npm](https://www.npmjs.com/package/dsh-export-ctl-check) |
+| [dsh-lc-doc-check](https://github.com/PerryLink/dsh-lc-doc-check) | Letter-of-credit documents against the terms — discrepancies listed, not adjudicated | | [npm](https://www.npmjs.com/package/dsh-lc-doc-check) |
+| [dsh-demurrage-ledger](https://github.com/PerryLink/dsh-demurrage-ledger) | Demurrage and detention ledger: free days, laytime arithmetic and the tariff applied | | [npm](https://www.npmjs.com/package/dsh-demurrage-ledger) |
+| [dsh-railway-window](https://github.com/PerryLink/dsh-railway-window) | Railway freight windows and the cut-off dates each booking has to clear | | [npm](https://www.npmjs.com/package/dsh-railway-window) |
+| [dsh-forecast-penalty](https://github.com/PerryLink/dsh-forecast-penalty) | Forecast-versus-actual penalty arithmetic, with the formula the contract states | | [npm](https://www.npmjs.com/package/dsh-forecast-penalty) |
+
+#### ⚙️ Quality & manufacturing (8)
+
+| Plugin | One-liner | Status | npm |
+|---|---|---|---|
+| [dsh-fmea-table-check](https://github.com/PerryLink/dsh-fmea-table-check) | FMEA tables — severity, occurrence, detection and the RPN arithmetic that follows from them | | [npm](https://www.npmjs.com/package/dsh-fmea-table-check) |
+| [dsh-ppap-check](https://github.com/PerryLink/dsh-ppap-check) | PPAP submission completeness against the level the customer required | | [npm](https://www.npmjs.com/package/dsh-ppap-check) |
+| [dsh-spc-gbt-adapter](https://github.com/PerryLink/dsh-spc-gbt-adapter) | Control charts read against the national standard: limits, rules and out-of-control signals | | [npm](https://www.npmjs.com/package/dsh-spc-gbt-adapter) |
+| [dsh-pipeline-check](https://github.com/PerryLink/dsh-pipeline-check) | Pipeline inspection records: intervals, anomalies and the repairs each anomaly triggered | | [npm](https://www.npmjs.com/package/dsh-pipeline-check) |
+| [dsh-warranty-calc](https://github.com/PerryLink/dsh-warranty-calc) | Automotive three-guarantee periods and thresholds, computed from the invoice and delivery dates | | [npm](https://www.npmjs.com/package/dsh-warranty-calc) |
+| [dsh-repair-order-qc](https://github.com/PerryLink/dsh-repair-order-qc) | Repair orders: the settlement list, the completion certificate and the archive a repair must produce | | [npm](https://www.npmjs.com/package/dsh-repair-order-qc) |
+| [dsh-ota-review-check](https://github.com/PerryLink/dsh-ota-review-check) | Over-the-air update review records — scope, rollback plan and the sign-offs required | | [npm](https://www.npmjs.com/package/dsh-ota-review-check) |
+| [dsh-review-reply-check](https://github.com/PerryLink/dsh-review-reply-check) | Responses to review comments: whether every comment received an answer and a change | | [npm](https://www.npmjs.com/package/dsh-review-reply-check) |
+
+#### 🔬 Research & academia (5)
+
+| Plugin | One-liner | Status | npm |
+|---|---|---|---|
+| [dsh-nsfc-form-check](https://github.com/PerryLink/dsh-nsfc-form-check) | Grant application forms checked for the fields, limits and attachments the call requires | | [npm](https://www.npmjs.com/package/dsh-nsfc-form-check) |
+| [dsh-paper-doc-adapter](https://github.com/PerryLink/dsh-paper-doc-adapter) | Manuscript formatting against a venue's own submission requirements | | [npm](https://www.npmjs.com/package/dsh-paper-doc-adapter) |
+| [dsh-essay-rubric-check](https://github.com/PerryLink/dsh-essay-rubric-check) | Rubric-based marking checked for arithmetic and for criteria that went unmarked | | [npm](https://www.npmjs.com/package/dsh-essay-rubric-check) |
+| [dsh-learning-gap-check](https://github.com/PerryLink/dsh-learning-gap-check) | Learning-gap analyses: the evidence cited for each gap and the interventions proposed | | [npm](https://www.npmjs.com/package/dsh-learning-gap-check) |
+| [dsh-policy-brief-draft](https://github.com/PerryLink/dsh-policy-brief-draft) | Policy briefs checked for the structure a brief is expected to carry and for unsourced claims | | [npm](https://www.npmjs.com/package/dsh-policy-brief-draft) |
+
+#### ⚖️ Evidence & litigation (3)
+
+| Plugin | One-liner | Status | npm |
+|---|---|---|---|
+| [dsh-evidence-check](https://github.com/PerryLink/dsh-evidence-check) | Evidence lists against the civil evidence rules — production deadlines, notices and exchanges | | [npm](https://www.npmjs.com/package/dsh-evidence-check) |
+| [dsh-pleading-draft](https://github.com/PerryLink/dsh-pleading-draft) | Pleadings checked for the elements each claim has to plead and for internal inconsistency | | [npm](https://www.npmjs.com/package/dsh-pleading-draft) |
+| [dsh-lawcite-adapter](https://github.com/PerryLink/dsh-lawcite-adapter) | Legal citations resolved to the instrument actually in force, and flagged when they are not | | [npm](https://www.npmjs.com/package/dsh-lawcite-adapter) |
+
+#### 🏛️ Governance (2)
+
+| Plugin | One-liner | Status | npm |
+|---|---|---|---|
+| [dsh-soe-decision-check](https://github.com/PerryLink/dsh-soe-decision-check) | State-owned-enterprise collective-decision records against the "three majors, one large" procedure | | [npm](https://www.npmjs.com/package/dsh-soe-decision-check) |
+| [dsh-sop-sync-check](https://github.com/PerryLink/dsh-sop-sync-check) | Standard operating procedures checked against the versions and cross-references they claim | | [npm](https://www.npmjs.com/package/dsh-sop-sync-check) |
 ## 🪦 Retired & frozen (2026-10-05)
 
 A maintainer review of the whole family against the official harness and the wider plugin ecosystem
