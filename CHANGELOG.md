@@ -16,6 +16,30 @@ and `dsh-laya` were introduced by name.
 
 ## 2026-10-08
 
+- **The family grew by 53 compliance checkers, and every count on the page moved with it.** The plugins
+  were written 2026-10-06/07 in a second workspace (`D:\Projects\dsh-plugins`, disjoint from
+  `D:\Projects\dsh\plugins`) and published today, so the page had been describing a family a third of its
+  actual size. They declare `dsh.bundle.patch` like every other roster entry, which is this page's own
+  membership rule, so they count: **86 actively maintained** (was 33), **95 in the roster** (was 42),
+  **94 rows in the category tables** (was 41), **100 PerryLink-owned** (was 47), **101 repos named**
+  (was 48), **159 non-fork repos owned** (was 105, measured rather than derived). They appear as a new
+  `### ✅ Compliance checkers` section with a table per domain — tendering, construction, safety, medical
+  records, official documents, customs, quality, research, litigation, governance.
+- **They are in the roster but not in the starter pack.** A roster plugin and a plugin a one-line installer
+  should pull are different sets, and until today the same file served as both. `dsh-kit/plugins.txt` now
+  marks them `# opt-in`: `install-all` installs **39** specs by default and **92** with
+  `-IncludeCheckers` / `--include-checkers`. The gate derives both figures and the README heading states
+  both, because "the installers cover all 92" stopped being true the moment this changed. They still count
+  as actively maintained — what changed is what one command installs, not what the family contains.
+- **What distinguishes them, in the page's own words:** each reads one register or record set against a
+  versioned rule pack and returns the differences for a human to review; none pronounces on compliance,
+  liability or clinical correctness. Every rule names the clause it rests on, and a per-repo
+  `check:citations` gate holds each quotation to that repo's own `rules/evidence/` record, so a rule cannot
+  cite something it cannot show. 19 quoted segments across 4 repos are still not traceable and are recorded
+  as open debt rather than quietly dropped — the blockers are an anti-scraping 412 from the health
+  commission's sites, a 63-page scan with no text layer, a standard whose text sits behind a viewer, and a
+  publisher-only standard.
+
 - **A fourth merge landed five hours after this round was first derived, and it credits a repository
   without adding a row.**
   [koishijs/koishi-plugin-adapter-onebot#82](https://github.com/koishijs/koishi-plugin-adapter-onebot/pull/82)
