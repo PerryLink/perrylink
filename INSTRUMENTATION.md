@@ -62,7 +62,7 @@ The node id for this account is `MDQ6VXNlcjI1NTY2NTkwMA==` (user id 255665900).
   requests and credits **no** commit on its default branch.
 - **`omdsh-dev/DSH-better-sidebar`** took **1** merge (2026-10-04) with no commit of ours on `main`.
 
-These two exist to answer "your 51 is padded". Removing them turns a rule into a sales pitch.
+These two exist to answer "your 52 is padded". Removing them turns a rule into a sales pitch.
 
 **A third case was listed here until 2026-10-07 and it was simply wrong.** `MoonshotAI/checkpoint-engine`
 (1,006★) was recorded as having merged a pull request of ours while carrying no commit of ours. Re-probed

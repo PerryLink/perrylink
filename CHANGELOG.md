@@ -16,6 +16,14 @@ and `dsh-laya` were introduced by name.
 
 ## 2026-10-08
 
+- **A fourth merge landed five hours after this round was first derived, and it credits a repository
+  without adding a row.**
+  [koishijs/koishi-plugin-adapter-onebot#82](https://github.com/koishijs/koishi-plugin-adapter-onebot/pull/82)
+  — "don't send an Authorization header without a token" — was merged 2026-10-08T02:12:22Z with an approving
+  review, twenty-eight days after it was opened on 2026-09-10. The repository is 51★, so it moves the
+  contributor figures and not the star table: **52 credited repositories, 328 merges inside them, 361 merged
+  outside `PerryLink/*` across 54 repositories, 100 open across 63, and 25 further repositories below the
+  threshold** — was 51 / 327 / 360 / 53 / 101 / 64 / 24. The table stays at 27 rows.
 - **The upstream section was re-derived twelve hours after the 2026-10-07 round, and one more company row
   entered the table.** Re-derived 2026-10-08: **51 external repositories carry a commit of ours on the
   default branch together with at least one merge** (was 49), **holding 327 merges** (was 324). The two
