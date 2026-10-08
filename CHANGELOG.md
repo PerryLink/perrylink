@@ -14,6 +14,43 @@ and `dsh-laya` were introduced by name.
 
 ---
 
+## 2026-10-08
+
+- **The upstream section was re-derived twelve hours after the 2026-10-07 round, and one more company row
+  entered the table.** Re-derived 2026-10-08: **51 external repositories carry a commit of ours on the
+  default branch together with at least one merge** (was 49), **holding 327 merges** (was 324). The two
+  repositories that took merges without crediting a commit still hold 33, so the total outside
+  `PerryLink/*` is **360 merged, concentrated in 53 repositories**, with **101 open across 64** and 187
+  closed unmerged. **27 rows now clear a thousand stars**, up from 26.
+
+- **`NVIDIA/NeMo-Agent-Toolkit` (2,660★) is the new row and the first NVIDIA row this page has carried.**
+  [#2293](https://github.com/NVIDIA/NeMo-Agent-Toolkit/pull/2293) — making `remove_r1_think_tags` actually
+  remove think blocks — was merged 2026-10-08T00:10:02Z by NVIDIA's `rapids-bot` after maintainer
+  `willkill07` issued `/merge`, and `develop`, the default branch, carries our squash commit `701454cf`. It
+  took eleven comments and three further commits from this account after the first review, including moving
+  the lone-`</think>` rule out of the shared helper and restoring the extractor contract. That review also
+  produced a finding on someone else's pull request in the same repository:
+  [#2286](https://github.com/NVIDIA/NeMo-Agent-Toolkit/pull/2286) was authored by `MohammedAlkindi`, not by
+  this account, so it is **not** one of our merges and is not counted as one — the enum case this account
+  reported in a comment there was confirmed and fixed by its author, which is a review contribution and not
+  a merge.
+
+- **`satorijs/satori` is credited on one branch and not on the other, and the page now says which.**
+  [#422](https://github.com/satorijs/satori/pull/422) merged into `main` on 2026-10-07T14:55:26Z and is what
+  credits the repository; [#421](https://github.com/satorijs/satori/pull/421) merged thirteen minutes later
+  into the `v4` branch, which is not the default branch, so it credits nothing on its own. Both count in the
+  merged total and the repository is named on the merge that reaches `main`. This is the first case in this
+  set where one repository's merges land on two branches with different standing under the attribution rule.
+
+- **The GitHub web editor changed one cell between the two rounds, and the re-derivation preserved it.** The
+  `deer-flow` owner cell now reads **字节跳动 ByteDance**, matching the `**腾讯 Tencent**` rows, instead of
+  the bare English name this account's own commit had written. This round rebuilds the star table
+  mechanically from the measurement and asserts that edit is still present before writing, so a later
+  re-derivation cannot silently drop it.
+
+- **Star counts were re-measured with everything else** (2026-10-08) rather than carried forward: `laya`
+  31,443, `deer-flow` 83,475, `ruflo` 74,072 and `NVIDIA/NeMo-Agent-Toolkit` 2,660 are this round's
+  figures, and the previous round's numbers are left in that round where they belong.
 ## 2026-10-07
 
 - **The upstream section was re-derived from this account's own merged pull requests and three company
