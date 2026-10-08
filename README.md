@@ -38,6 +38,10 @@ and developer experience — plus the DSH Desktop Market catalog, a plugin-certi
 dsh-plugin-doctor CI checker. Every plugin ships CI, a Gitee mirror and five-language docs held to
 the same section count by a gate in its own CI.
 
+## 🦭 Phocinae — a 144M typed decision model
+
+Separate from the harness: I train small language models. **[Phocinae-Largha-150M-v1](https://github.com/Phocinae/Phocinae-Largha-150M-v1)** (Apache-2.0) is a typed decision model — no text generation; one forward pass returns a verdict per question with calibrated confidence. GPU **18.6 ms** p50 per decision, CPU-only **~1.5 s**; English typed-decisions **0.797** (400 cases / 2,000 decisions, measured 2026-10-07), Chinese (machine-translated eval set) 0.789. With a τ=0.6 escalate gate, **82%** of agent decisions stay local and combined accuracy moves 0.789 → **0.7948** — the gate makes the system better, not just cheaper. Weights on [Hugging Face](https://huggingface.co/Phocinae/Phocinae-Largha-150M-v1) and [ModelScope](https://modelscope.cn/models/PerryLink/Phocinae-Largha-150M-v1); server `pip install phocinae-server`, DSH bundle `npm i dsh-phocinae`. Reproduction ships with the repo: seeds, row-set hashes, environment and eval scripts.
+
 ## ▶ Start here
 
 One command installs the core family — **[dsh-kit](https://github.com/PerryLink/dsh-kit)**:
@@ -480,6 +484,14 @@ Jev、DeepSeek-V4.1-Flash),四条主张**三条成立、一条被自己的数据
 这九天里合掉。逐条清单与九个方向见上方英文部分折叠块,或直接看[这个筛选列表](https://github.com/NandhaKishorM/laya/pulls?q=is%3Apr+author%3APerryLink)。
 
 **还有一条在别处:一个根本起不来的进程现在能起来了。** [claude-agent-acp #1146](https://github.com/agentclientprotocol/claude-agent-acp/pull/1146) 让 `src/index.ts` 里那处没有保护的顶层 await 不再因一次瞬时错误就中断模块求值、在发出任何一条 ACP 消息之前退出。
+
+**斑海豹 Phocinae-Largha-150M-v1**
+([Phocinae org](https://github.com/Phocinae/Phocinae-Largha-150M-v1),Apache-2.0)是插件生态之外的另一条线:一个 144.3M
+参数的结构化决策模型,不生成文本,一次前向输出判定与校准置信度;GPU 单次判定 p50
+**18.6ms**、纯 CPU 约 **1.5s**,英文 typed-decisions **0.797**(400 用例 / 2000 决策,2026-10-07
+实测),中文(机译评测集)**0.789**;τ=0.6 升级门让 **82%** 的 agent 决策留在本地、组合准确率
+0.789→**0.7948**。权重在 [Hugging
+Face](https://huggingface.co/Phocinae/Phocinae-Largha-150M-v1) 与[魔搭](https://modelscope.cn/models/PerryLink/Phocinae-Largha-150M-v1),配套 `pip install phocinae-server` 与 `npm i dsh-phocinae`;复现四件套(seed/行集/环境/脚本)随仓库发货。
 
 
 </details>
