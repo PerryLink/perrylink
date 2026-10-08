@@ -85,6 +85,39 @@ and `dsh-laya` were introduced by name.
   figures, and the previous round's numbers are left in that round where they belong.
 
 - **A Phocinae section opened on the page — a second, model-sized line of work beyond the DSH family.** [Phocinae-Largha-150M-v1](https://github.com/Phocinae/Phocinae-Largha-150M-v1) is published (GitHub + Hugging Face + ModelScope, Apache-2.0). The section's figures are the release benchmark set, measured 2026-10-07: GPU 18.6 ms p50, CPU-only ~1.5 s, typed-decisions 0.797 en / 0.789 zh (machine-translated set), option-order flip rev 0.0300, shipped-column ECE 0.1313, and the τ=0.6 escalate gate — measured 45.7% escalate, −54.4% LLM calls (82.8% at τ=0.5), kept-subset accuracy 0.886 (figures re-verified 2026-10-08; the originally published 82%/0.7948 pairing was wrong). JevBench 0.5108 (118/231) stays below the 58.4% gate and is published as-is. Companion packages `phocinae-server` (PyPI), `dsh-phocinae` (npm) and `phocinae-guard` (npm) went out with it.
+
+- **Two more merges landed after that bullet, and both credit a repository below the star threshold.**
+  Re-derived 2026-10-08T08:52Z: **54 external repositories carry a commit of ours on the default branch
+  together with at least one merge** (was 52), **holding 330 merges** (was 328). The two repositories that
+  took merges without crediting a commit still hold 33, so the total outside `PerryLink/*` is **363 merged,
+  concentrated in 56 repositories**, with **97 open across 61** and **188 closed unmerged**. The table stays
+  at 27 rows. [satorijs/boilerplate#2](https://github.com/satorijs/boilerplate/pull/2) — a one-line CI fix
+  merged 2026-10-08T07:09:11Z and opened 2026-09-19 — is the smallest repository this account is credited
+  in, at 2★; [koishijs/docs#210](https://github.com/koishijs/docs/pull/210), merged 2026-10-08T07:44:12Z,
+  is the most recent merge this account has anywhere, at 27★. The round also closed one proposal unmerged:
+  [satorijs/satori#420](https://github.com/satorijs/satori/pull/420), approved 2026-10-07 and closed
+  2026-10-08T07:26:38Z as superseded by a cherry-pick onto the `v4` branch. It is counted as closed and not
+  as merged, which is what the repository's own record says; a comment on the pull request notes that the
+  cited commit `b228a0a6` carries [#422](https://github.com/satorijs/satori/pull/422) and does not touch the
+  file #420 changed, so whether the cap reaches `v4` is now the maintainer's call rather than an assumption
+  this page makes.
+- **`laya` closed its last open proposal, so its ledger reads 46 merged of 50 opened, 0 open, 4 closed.**
+  [#943](https://github.com/NandhaKishorM/laya/pull/943) was closed unmerged at 2026-10-05T17:28:15Z in
+  favour of [#936](https://github.com/NandhaKishorM/laya/pull/936), which had landed six minutes earlier and
+  additionally forwards `hooksRaise` into the `routeBatch` call, so a per-call `hooksRaise: false` reaches
+  `onRoute` as well as each request's predict lifecycle. The README's laya paragraph read "1 open and 3
+  closed unmerged" from 2026-10-05 until this round, and its "the same 49" was one short of the 50 the
+  query returns.
+- **The README was restored after a whole-file write from a stale copy reverted the family raise and
+  deleted the 53-checker section.** Commit `7ccd2052d1` ("fix param audit") is +19/-138 on `README.md`,
+  and of its nineteen added lines exactly one is its own change — the Phocinae paragraph. The other
+  eighteen are the pre-raise text of the badge, the intro, the family summary, the counting note and the
+  Chinese block, and the 138 deleted lines are the raise itself plus the entire
+  `### ✅ Compliance checkers (53)` section that `02af58b556` had added twenty-four minutes earlier.
+  `INSTRUMENTATION.md` and `CHANGELOG.md` were never reverted, so for two hours the page contradicted its
+  own value table — the exact failure §1 of `INSTRUMENTATION.md` exists to prevent. This round keeps the
+  Phocinae line, restores the raise and the section, and adds the blob-sha precondition rule to
+  `INSTRUMENTATION.md` §5.
 ## 2026-10-07
 
 - **The upstream section was re-derived from this account's own merged pull requests and three company

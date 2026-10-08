@@ -62,7 +62,7 @@ The node id for this account is `MDQ6VXNlcjI1NTY2NTkwMA==` (user id 255665900).
   requests and credits **no** commit on its default branch.
 - **`omdsh-dev/DSH-better-sidebar`** took **1** merge (2026-10-04) with no commit of ours on `main`.
 
-These two exist to answer "your 52 is padded". Removing them turns a rule into a sales pitch.
+These two exist to answer "your 54 is padded". Removing them turns a rule into a sales pitch.
 
 **A third case was listed here until 2026-10-07 and it was simply wrong.** `MoonshotAI/checkpoint-engine`
 (1,006★) was recorded as having merged a pull request of ours while carrying no commit of ours. Re-probed
@@ -221,6 +221,12 @@ and to "Where the plugins live", and per-edition copies go stale.
   belong in the README's Upstream section, not in a round. The GHSA advisory is the worked example.
 - **Write date-stamped phrasing, never current-tense phrasing, for anything that moves.** "One is
   open there" rotted within four minutes on 2026-10-04; "as of `<date>`, one was open" cannot.
+- **Never commit a whole-file replacement built from a copy you did not re-fetch.** On 2026-10-08 a
+  `README.md` written from a pre-raise copy reverted every family figure that the same day's raise had
+  moved and deleted the whole 53-checker section, while this file and `CHANGELOG.md` kept the new
+  values — so for two hours the page contradicted its own value table. Edit the file you just fetched,
+  and write through the Git Data API with a **blob-sha precondition** on every file plus a non-forced
+  ref update, so a race aborts the write instead of silently reverting whatever landed in between.
 
 ---
 
