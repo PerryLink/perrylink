@@ -173,7 +173,7 @@ is merely "balanced" is not enough: balance is exactly what produced the 836px r
 | npm downloads 30d | 183.9k | "Where the plugins live" (183,886) |
 | plugins | 42 | the intro sentence |
 | MCP Registry | 3 servers | "Where the plugins live" |
-| DSH Desktop Market source | (no number) | the catalog URL |
+| DSH Desktop Market source | (no number) | the catalog URL — reached over jsDelivr, see the reachability note in §4 |
 | Gitee mirror | (no number) | the mirror claim |
 | dsh host corridor | ≥0.1.2-rc.1 <0.3.0 | the union of the six `engines.dsh` clauses in any plugin's `package.json` |
 | node | ≥22.19 | the same file's `engines.node` (`^22.19.0 \|\| >=24.0.0`) |
@@ -204,6 +204,23 @@ Rules that still hold:
   against 4px in the file view and was left off. **Re-measure both surfaces before touching this.**
 - Four figures have no live source and must be updated by hand: the plugin count, the 30-day npm
   download aggregate, the dshfind aggregate, and the third-party listing badges.
+
+### Reachability, measured 2026-10-08
+
+A link on this page is only worth its URL if the reader can open it. Most of this project's audience
+is in mainland China, where some hosts are interfered with, so the host matters as much as the path:
+
+| Host | Result | Note |
+|---|---|---|
+| `perrylink-dsh-catalog.perrylink.workers.dev` | **HTTP 000, repeatedly** | DNS resolves to Meta ranges (`66.220.147.11`, `2a03:2880:…:face:b00c:…`), which `*.workers.dev` cannot legitimately be. Interference, not an outage. Replaced by the jsDelivr URL below. |
+| `cdn.jsdelivr.net/gh/<owner>/<repo>@<ref>/<path>` | **HTTP 200** | Now carries the catalog source. Has mainland nodes. **Prefer this for any GitHub-hosted file a reader must fetch.** |
+| `raw.githubusercontent.com` | **HTTP 200, 6 of 6** | ✅ Reachable. An earlier `HTTP 000` on one request was transient, **not** a block — do not act on a single failure here. |
+| `cdn.statically.io` | HTTP 000 | Do not use. |
+
+**Rule:** test a host with repeated requests before concluding it is blocked. One failure is noise;
+the `workers.dev` verdict rests on repeated failures plus the DNS evidence, and the
+`raw.githubusercontent.com` verdict was corrected the same way after a single failure misled a
+first reading.
 
 ---
 

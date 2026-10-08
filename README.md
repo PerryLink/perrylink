@@ -26,7 +26,7 @@
 <a href="https://github.com/PerryLink/dsh-mcp-panel/blob/main/package.json"><img alt="node" src="https://img.shields.io/badge/node-%E2%89%A522.19-339933?logo=node.js"></a>
 <br>
 <a href="https://dshfind.com/plugins?q=PerryLink"><img alt="dshfind downloads across the family" src="https://img.shields.io/badge/dshfind%20downloads-38.5k%2B%20across%208%20plugins-6e7781"></a>
-<a href="https://perrylink-dsh-catalog.perrylink.workers.dev/catalog-source.json"><img alt="DSH Desktop Market source" src="https://img.shields.io/badge/DSH%20Desktop%20Market-source-0969da"></a>
+<a href="https://cdn.jsdelivr.net/gh/PerryLink/dsh-catalog@main/deploy/catalog-source.json"><img alt="DSH Desktop Market source" src="https://img.shields.io/badge/DSH%20Desktop%20Market-source-0969da"></a>
 <a href="https://github.com/PerryLink/dsh-plugin-certification"><img alt="certified (flagship dsh-auto-review)" src="https://raw.githubusercontent.com/PerryLink/dsh-plugin-certification/main/badges/PerryLink__dsh-auto-review.svg"></a>
 <a href="https://doi.org/10.5281/zenodo.22901853"><img alt="Zenodo DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.22901853.svg"></a>
 </p>
@@ -576,8 +576,9 @@ downloads point endpoint; **[dshfind](https://dshfind.com/plugins?q=PerryLink)**
 across the 8 family plugins it currently has a download figure for — dshfind reports rounded tiers, so that is a floor
 rather than a total
 - **DSH Desktop Market** — add the catalog source
-`https://perrylink-dsh-catalog.perrylink.workers.dev/catalog-source.json` under Market → Sources to browse the family
-in-app; **MCP Registry** — three servers, all published from their release workflows over GitHub OIDC: `dsh-cert-mcp`,
+`https://cdn.jsdelivr.net/gh/PerryLink/dsh-catalog@main/deploy/catalog-source.json` under Market → Sources to browse the family
+in-app (the `perrylink-dsh-catalog.perrylink.workers.dev` address this used to give answers `HTTP 000` on networks
+that interfere with `*.workers.dev`, so it now points at the same file over a CDN with mainland nodes); **MCP Registry** — three servers, all published from their release workflows over GitHub OIDC: `dsh-cert-mcp`,
 `jevcore-mcp` and `laya-mcp`
 - **GitHub Actions** — [dsh-github](https://github.com/PerryLink/dsh-github) and
 [dsh-test-drive](https://github.com/PerryLink/dsh-test-drive) also ship composite actions, so they install as `uses:
