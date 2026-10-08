@@ -11,7 +11,7 @@
 <a href="https://github.com/PerryLink?tab=repositories"><img alt="GitHub repos" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FPerryLink&query=%24.public_repos&label=repos&color=24292f"></a>
 <a href="https://www.npmjs.com/search?q=perrylink"><img alt="npm names" src="https://img.shields.io/badge/npm-52%20names-cb3837?logo=npm"></a>
 <img alt="npm downloads 30d" src="https://img.shields.io/badge/npm%20downloads%2030d-183.9k-6e7781">
-<a href="https://github.com/PerryLink/dsh-kit"><img alt="actively maintained plugins" src="https://img.shields.io/badge/plugins-86-6e7781"></a>
+<a href="https://github.com/PerryLink/dsh-kit"><img alt="actively maintained plugins" src="https://img.shields.io/badge/plugins-33-6e7781"></a>
 <br>
 <a href="https://github.com/PerryLink/dsh-auto-review/blob/main/LICENSE"><img alt="license" src="https://img.shields.io/badge/license-Apache--2.0-blue"></a>
 <a href="https://github.com/PerryLink/dsh-plugin-doctor#readme"><img alt="OpenSSF Scorecard (flagship dsh-auto-review)" src="https://img.shields.io/ossf-scorecard/github.com/PerryLink/dsh-auto-review?label=openssf%20scorecard"></a>
@@ -32,17 +32,15 @@
 </p>
 
 Open-source developer in Beijing. I build the
-[DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) plugin ecosystem: 86 actively
-maintained Apache-2.0 plugins in a 101-repo family — security, workflows, research, messaging bridges,
-developer experience, and since 2026-10-08 a set of 53 compliance checkers that read a register or
-record set against a versioned rule pack and report the differences — plus the DSH Desktop Market
-catalog, a plugin-certification registry and the dsh-plugin-doctor CI checker. Every plugin ships CI,
-a Gitee mirror and five-language docs held to the same section count by a gate in its own CI; the
-checkers additionally hold every rule quotation to its own verbatim evidence record by a gate in CI.
+[DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) plugin ecosystem: 33 actively
+maintained Apache-2.0 plugins in a 48-repo family — security, workflows, research, messaging bridges
+and developer experience — plus the DSH Desktop Market catalog, a plugin-certification registry and the
+dsh-plugin-doctor CI checker. Every plugin ships CI, a Gitee mirror and five-language docs held to
+the same section count by a gate in its own CI.
 
 ## 🦭 Phocinae — a 144M typed decision model
 
-Separate from the harness: I train small language models. **[Phocinae-Largha-150M-v1](https://github.com/Phocinae/Phocinae-Largha-150M-v1)** (Apache-2.0) is a typed decision model — no text generation; one forward pass returns a verdict per question with calibrated confidence. GPU **18.6 ms** p50 per decision, CPU-only **~1.5 s**; English typed-decisions **0.797** (400 cases / 2,000 decisions, measured 2026-10-07), Chinese (machine-translated eval set) 0.789. With a τ=0.6 escalate gate, **82%** of agent decisions stay local and combined accuracy moves 0.789 → **0.7948** — the gate makes the system better, not just cheaper. Weights on [Hugging Face](https://huggingface.co/Phocinae/Phocinae-Largha-150M-v1) and [ModelScope](https://modelscope.cn/models/PerryLink/Phocinae-Largha-150M-v1); server `pip install phocinae-server`, DSH bundle `npm i dsh-phocinae`. Reproduction ships with the repo: seeds, row-set hashes, environment and eval scripts.
+Separate from the harness: I train small language models. **[Phocinae-Largha-150M-v1](https://github.com/Phocinae/Phocinae-Largha-150M-v1)** (Apache-2.0) is a typed decision model — no text generation; one forward pass returns a verdict per question with calibrated confidence. GPU **18.6 ms** p50 per decision, CPU-only **~1.5 s per case** (≈0.28 s per decision); English typed-decisions **0.797** (400 cases / 2,000 decisions, measured 2026-10-07), Chinese (machine-translated eval set) 0.789. With a τ=0.6 escalate gate, **54.4%** of agent decisions stay local (82.8% at τ=0.5) and kept-subset accuracy moves 0.797 → **0.886** (+0.089) — the gate makes the system better, not just cheaper. Weights on [Hugging Face](https://huggingface.co/Phocinae/Phocinae-Largha-150M-v1) and [ModelScope](https://modelscope.cn/models/PerryLink/Phocinae-Largha-150M-v1); server `pip install phocinae-server`, DSH bundle `npm i dsh-phocinae`. Reproduction ships with the repo: seeds, row-set hashes, environment and eval scripts.
 
 ## ▶ Start here
 
@@ -263,36 +261,30 @@ family to that file; the machine-readable catalogue is
 and each plugin's own README carries the detail this page only summarises.
 
 <details>
-<summary><b>The full family — 95 plugins in the roster, 86 of them actively maintained, plus 5 support repos, one line each</b></summary>
+<summary><b>The full family — 42 plugins in the roster, 33 of them actively maintained, plus 5 support repos, one line each</b></summary>
 
-*Counting note: **86** is the actively maintained set, and it is the figure this page's heading and badge
-use. It is derived one repository at a time: **95** repositories declare `dsh.bundle.patch` (re-derived
-2026-10-08 by reading each repo's own `package.json` at its default branch), of which **3 are 🚫 retired**
-and **6 are 🧊 frozen**, leaving **86 actively maintained**. Measured against the 100 PerryLink-owned
-repositories this page names: **95 declare the contract and 5 do not** — the support trio
+*Counting note: **33** is the actively maintained set, and it is the figure this page's heading and badge
+use. It is derived one repository at a time: **42** repositories declare `dsh.bundle.patch` (re-derived
+2026-10-07 by reading each repo's own `package.json` at its default branch), of which **3 are 🚫 retired**
+and **6 are 🧊 frozen**, leaving **33 actively maintained**. Measured against the 47 PerryLink-owned
+repositories this page names: **42 declare the contract and 5 do not** — the support trio
 [dsh-catalog](https://github.com/PerryLink/dsh-catalog), [dsh-kit](https://github.com/PerryLink/dsh-kit) and
 [dsh-plugin-certification](https://github.com/PerryLink/dsh-plugin-certification) (the certification registry, whose
 MCP server publishes from [dsh-cert-mcp](https://github.com/PerryLink/dsh-cert-mcp) instead), plus
 [jevcore](https://github.com/PerryLink/jevcore) (no `dsh.bundle`; only its `jevcore-dsh` workspace member is a plugin)
 and [laya-mcp](https://github.com/PerryLink/laya-mcp) (an MCP sidecar, not a plugin). The third-party
-[pan17/dsh-wechat](https://github.com/pan17/dsh-wechat) carries a plugin row but is not one of them: 100 + 1 = the 101
-repos this page names. A naive scan of the account finds two more than the 95 — the retired
+[pan17/dsh-wechat](https://github.com/pan17/dsh-wechat) carries a plugin row but is not one of them: 47 + 1 = the 48
+repos this page names. A naive scan of the account finds two more than the 42 — the retired
 [dsh-plugin-upgrade](https://github.com/PerryLink/dsh-plugin-upgrade) corridor legs `dsh-plugin-upgrade-015` (**not**
 archived) and `dsh-plugin-upgrade-016` (archived), both still carrying the manifest and neither an active plugin:
-95 + 2 = the **97** such a scan returns. The ten tables below list **94 rows**: 91 of the 95 roster repositories,
+42 + 2 = the **44** such a scan returns. The nine tables below list **41 rows**: 39 of the 42 roster repositories,
 plus `jevcore` (which declares no `dsh.bundle`) and the third-party `dsh-wechat` — the three left out
 (`dsh-plugin-kit`, `dsh-cert-mcp`, `dsh-plugin-doctor`) are the toolchain repositories named in the support
 list above. Retired and frozen rows keep their place with
 their status rather than being deleted, which is why the roster figure is larger than the active one. The same
-95 repositories and the same three states are recorded once, in
+42 repositories and the same three states are recorded once, in
 [dsh-plugin-kit/data/repos.json](https://github.com/PerryLink/dsh-plugin-kit/blob/master/data/repos.json), which
 the portal renders and the certification registry counts.*
-
-**The 2026-10-08 addition.** 53 compliance checkers joined the roster that day — they declare
-`dsh.bundle.patch` like every other entry, so by the rule above they count. They are the
-`### ✅ Compliance checkers` section below, and they keep their own memory file and maintenance
-rules in a separate workspace. Every figure in this note was raised by exactly 53 except the
-non-plugin total, which is measured rather than derived.
 
 ### 🔒 Security (4)
 
@@ -394,117 +386,6 @@ and a provider package (measured 2026-10-04).
 
 </details>
 
-### ✅ Compliance checkers (53)
-
-Fifty-three checkers published 2026-10-08, all Apache-2.0, all carrying SLSA provenance on npm.
-Each reads one register, ledger or record set against a **versioned rule pack** and returns the differences
-for a human to review — none of them pronounces on compliance, liability or clinical correctness. Every rule
-cites the clause it rests on, and a per-repo `check:citations` gate holds each quotation to its own
-`rules/evidence/` record, so a rule cannot quietly cite something it cannot show.
-
-
-#### 🧾 Tendering & procurement (7)
-
-| Plugin | One-liner | Status | npm |
-|---|---|---|---|
-| [dsh-bid-ca-precheck](https://github.com/PerryLink/dsh-bid-ca-precheck) | Pre-flight check of a bid package against the responsiveness and qualification clauses before submission | | [npm](https://www.npmjs.com/package/dsh-bid-ca-precheck) |
-| [dsh-bid-qual-check](https://github.com/PerryLink/dsh-bid-qual-check) | Qualification screening: does the bidder's evidence actually answer every qualification the documents demand | | [npm](https://www.npmjs.com/package/dsh-bid-qual-check) |
-| [dsh-tender-extract](https://github.com/PerryLink/dsh-tender-extract) | Pulls the substantive requirements out of tender documents so nothing mandatory is missed | | [npm](https://www.npmjs.com/package/dsh-tender-extract) |
-| [dsh-tender-matrix](https://github.com/PerryLink/dsh-tender-matrix) | Scoring-matrix arithmetic: weights, caps and totals reconciled against the stated evaluation method | | [npm](https://www.npmjs.com/package/dsh-tender-matrix) |
-| [dsh-protest-deadline](https://github.com/PerryLink/dsh-protest-deadline) | Challenge-deadline arithmetic under the procurement regime, with the clause behind each period | | [npm](https://www.npmjs.com/package/dsh-protest-deadline) |
-| [dsh-contract-stance](https://github.com/PerryLink/dsh-contract-stance) | Reads a contract for the positions it actually takes, clause by clause, and reports them without advising | | [npm](https://www.npmjs.com/package/dsh-contract-stance) |
-| [dsh-rulefile-check](https://github.com/PerryLink/dsh-rulefile-check) | Internal rule-file consistency: no contradictions, no dangling references, no undefined terms | | [npm](https://www.npmjs.com/package/dsh-rulefile-check) |
-
-#### 🏗️ Construction & environment (7)
-
-| Plugin | One-liner | Status | npm |
-|---|---|---|---|
-| [dsh-site-log-check](https://github.com/PerryLink/dsh-site-log-check) | Supervision-log completeness against the supervision standard and the on-site recording rules | | [npm](https://www.npmjs.com/package/dsh-site-log-check) |
-| [dsh-hazplan-check](https://github.com/PerryLink/dsh-hazplan-check) | HAZOP worksheet review: nodes, guide words, deviations and actions held to the analysis standard | | [npm](https://www.npmjs.com/package/dsh-hazplan-check) |
-| [dsh-safety-brief-check](https://github.com/PerryLink/dsh-safety-brief-check) | Safety-briefing records checked for the required topics and the sign-off each one needs | | [npm](https://www.npmjs.com/package/dsh-safety-brief-check) |
-| [dsh-guard-plan-qc](https://github.com/PerryLink/dsh-guard-plan-qc) | Guard-plan quality: coverage, escalation paths and the shifts the plan claims to cover | | [npm](https://www.npmjs.com/package/dsh-guard-plan-qc) |
-| [dsh-soilwater-check](https://github.com/PerryLink/dsh-soilwater-check) | Soil and groundwater survey records — sampling points, analytes and the reported units | | [npm](https://www.npmjs.com/package/dsh-soilwater-check) |
-| [dsh-eia-guide-check](https://github.com/PerryLink/dsh-eia-guide-check) | Environmental impact assessment against the published technical guidelines | | [npm](https://www.npmjs.com/package/dsh-eia-guide-check) |
-| [dsh-permit-report-check](https://github.com/PerryLink/dsh-permit-report-check) | Permit application reports: the sections required, and whether each is filled rather than templated | | [npm](https://www.npmjs.com/package/dsh-permit-report-check) |
-
-#### 🦺 Safety & hazardous materials (7)
-
-| Plugin | One-liner | Status | npm |
-|---|---|---|---|
-| [dsh-hazchem-check](https://github.com/PerryLink/dsh-hazchem-check) | Hazardous-chemical register and major-hazard-source identification, reconciled arithmetically | | [npm](https://www.npmjs.com/package/dsh-hazchem-check) |
-| [dsh-emergency-plan](https://github.com/PerryLink/dsh-emergency-plan) | Emergency plan structure and the drills, contacts and review dates it must carry | | [npm](https://www.npmjs.com/package/dsh-emergency-plan) |
-| [dsh-drill-script-check](https://github.com/PerryLink/dsh-drill-script-check) | Drill scripts: scenario, roles, timeline and the corrective actions a drill has to produce | | [npm](https://www.npmjs.com/package/dsh-drill-script-check) |
-| [dsh-hidden-risk-map](https://github.com/PerryLink/dsh-hidden-risk-map) | Hidden-risk map: every hazard mapped to the article it is reported under, no gaps and no inventions | | [npm](https://www.npmjs.com/package/dsh-hidden-risk-map) |
-| [dsh-power-ticket-check](https://github.com/PerryLink/dsh-power-ticket-check) | Work permits for electrical isolation — the safety measures each permit class requires | | [npm](https://www.npmjs.com/package/dsh-power-ticket-check) |
-| [dsh-power-loss-split](https://github.com/PerryLink/dsh-power-loss-split) | Power-loss event split across causes so the totals reconcile to the reported outage | | [npm](https://www.npmjs.com/package/dsh-power-loss-split) |
-| [dsh-aqua-input-check](https://github.com/PerryLink/dsh-aqua-input-check) | Aquaculture input records: batch, dosage and withdrawal periods against the limits stated | | [npm](https://www.npmjs.com/package/dsh-aqua-input-check) |
-
-#### 🏥 Medical records (3)
-
-| Plugin | One-liner | Status | npm |
-|---|---|---|---|
-| [dsh-icd-rule-check](https://github.com/PerryLink/dsh-icd-rule-check) | ICD coding pairs — dagger and asterisk, combination codes — flagged for a coder to resolve | | [npm](https://www.npmjs.com/package/dsh-icd-rule-check) |
-| [dsh-medrec-qc](https://github.com/PerryLink/dsh-medrec-qc) | Medical-record front sheets checked for field completeness and code well-formedness | | [npm](https://www.npmjs.com/package/dsh-medrec-qc) |
-| [dsh-nurse-record-check](https://github.com/PerryLink/dsh-nurse-record-check) | Nursing records: the observations, timings and signatures each entry is required to carry | | [npm](https://www.npmjs.com/package/dsh-nurse-record-check) |
-
-#### 📄 Official documents & archives (3)
-
-| Plugin | One-liner | Status | npm |
-|---|---|---|---|
-| [dsh-gongwen-flow-check](https://github.com/PerryLink/dsh-gongwen-flow-check) | Official-document handling flow — drafting, review, issue — checked against the regulation | | [npm](https://www.npmjs.com/package/dsh-gongwen-flow-check) |
-| [dsh-gongwen-word-check](https://github.com/PerryLink/dsh-gongwen-word-check) | Document type and reference number checked against the formatting standard | | [npm](https://www.npmjs.com/package/dsh-gongwen-word-check) |
-| [dsh-archive-check](https://github.com/PerryLink/dsh-archive-check) | Archive records: retention periods, catalogue fields and transfer dates | | [npm](https://www.npmjs.com/package/dsh-archive-check) |
-
-#### 🚢 Customs & trade (8)
-
-| Plugin | One-liner | Status | npm |
-|---|---|---|---|
-| [dsh-customs-doc-check](https://github.com/PerryLink/dsh-customs-doc-check) | Customs declaration pack — the documents a declaration needs, and the fields each must carry | | [npm](https://www.npmjs.com/package/dsh-customs-doc-check) |
-| [dsh-hs-classify](https://github.com/PerryLink/dsh-hs-classify) | HS classification entries: the basis recorded for each code, in the form the tariff regulation requires | | [npm](https://www.npmjs.com/package/dsh-hs-classify) |
-| [dsh-origin-rvc-check](https://github.com/PerryLink/dsh-origin-rvc-check) | Regional value content arithmetic for rules of origin, including the de minimis tests | | [npm](https://www.npmjs.com/package/dsh-origin-rvc-check) |
-| [dsh-export-ctl-check](https://github.com/PerryLink/dsh-export-ctl-check) | Export-control screening records against the control lists and the licence conditions | | [npm](https://www.npmjs.com/package/dsh-export-ctl-check) |
-| [dsh-lc-doc-check](https://github.com/PerryLink/dsh-lc-doc-check) | Letter-of-credit documents against the terms — discrepancies listed, not adjudicated | | [npm](https://www.npmjs.com/package/dsh-lc-doc-check) |
-| [dsh-demurrage-ledger](https://github.com/PerryLink/dsh-demurrage-ledger) | Demurrage and detention ledger: free days, laytime arithmetic and the tariff applied | | [npm](https://www.npmjs.com/package/dsh-demurrage-ledger) |
-| [dsh-railway-window](https://github.com/PerryLink/dsh-railway-window) | Railway freight windows and the cut-off dates each booking has to clear | | [npm](https://www.npmjs.com/package/dsh-railway-window) |
-| [dsh-forecast-penalty](https://github.com/PerryLink/dsh-forecast-penalty) | Forecast-versus-actual penalty arithmetic, with the formula the contract states | | [npm](https://www.npmjs.com/package/dsh-forecast-penalty) |
-
-#### ⚙️ Quality & manufacturing (8)
-
-| Plugin | One-liner | Status | npm |
-|---|---|---|---|
-| [dsh-fmea-table-check](https://github.com/PerryLink/dsh-fmea-table-check) | FMEA tables — severity, occurrence, detection and the RPN arithmetic that follows from them | | [npm](https://www.npmjs.com/package/dsh-fmea-table-check) |
-| [dsh-ppap-check](https://github.com/PerryLink/dsh-ppap-check) | PPAP submission completeness against the level the customer required | | [npm](https://www.npmjs.com/package/dsh-ppap-check) |
-| [dsh-spc-gbt-adapter](https://github.com/PerryLink/dsh-spc-gbt-adapter) | Control charts read against the national standard: limits, rules and out-of-control signals | | [npm](https://www.npmjs.com/package/dsh-spc-gbt-adapter) |
-| [dsh-pipeline-check](https://github.com/PerryLink/dsh-pipeline-check) | Pipeline inspection records: intervals, anomalies and the repairs each anomaly triggered | | [npm](https://www.npmjs.com/package/dsh-pipeline-check) |
-| [dsh-warranty-calc](https://github.com/PerryLink/dsh-warranty-calc) | Automotive three-guarantee periods and thresholds, computed from the invoice and delivery dates | | [npm](https://www.npmjs.com/package/dsh-warranty-calc) |
-| [dsh-repair-order-qc](https://github.com/PerryLink/dsh-repair-order-qc) | Repair orders: the settlement list, the completion certificate and the archive a repair must produce | | [npm](https://www.npmjs.com/package/dsh-repair-order-qc) |
-| [dsh-ota-review-check](https://github.com/PerryLink/dsh-ota-review-check) | Over-the-air update review records — scope, rollback plan and the sign-offs required | | [npm](https://www.npmjs.com/package/dsh-ota-review-check) |
-| [dsh-review-reply-check](https://github.com/PerryLink/dsh-review-reply-check) | Responses to review comments: whether every comment received an answer and a change | | [npm](https://www.npmjs.com/package/dsh-review-reply-check) |
-
-#### 🔬 Research & academia (5)
-
-| Plugin | One-liner | Status | npm |
-|---|---|---|---|
-| [dsh-nsfc-form-check](https://github.com/PerryLink/dsh-nsfc-form-check) | Grant application forms checked for the fields, limits and attachments the call requires | | [npm](https://www.npmjs.com/package/dsh-nsfc-form-check) |
-| [dsh-paper-doc-adapter](https://github.com/PerryLink/dsh-paper-doc-adapter) | Manuscript formatting against a venue's own submission requirements | | [npm](https://www.npmjs.com/package/dsh-paper-doc-adapter) |
-| [dsh-essay-rubric-check](https://github.com/PerryLink/dsh-essay-rubric-check) | Rubric-based marking checked for arithmetic and for criteria that went unmarked | | [npm](https://www.npmjs.com/package/dsh-essay-rubric-check) |
-| [dsh-learning-gap-check](https://github.com/PerryLink/dsh-learning-gap-check) | Learning-gap analyses: the evidence cited for each gap and the interventions proposed | | [npm](https://www.npmjs.com/package/dsh-learning-gap-check) |
-| [dsh-policy-brief-draft](https://github.com/PerryLink/dsh-policy-brief-draft) | Policy briefs checked for the structure a brief is expected to carry and for unsourced claims | | [npm](https://www.npmjs.com/package/dsh-policy-brief-draft) |
-
-#### ⚖️ Evidence & litigation (3)
-
-| Plugin | One-liner | Status | npm |
-|---|---|---|---|
-| [dsh-evidence-check](https://github.com/PerryLink/dsh-evidence-check) | Evidence lists against the civil evidence rules — production deadlines, notices and exchanges | | [npm](https://www.npmjs.com/package/dsh-evidence-check) |
-| [dsh-pleading-draft](https://github.com/PerryLink/dsh-pleading-draft) | Pleadings checked for the elements each claim has to plead and for internal inconsistency | | [npm](https://www.npmjs.com/package/dsh-pleading-draft) |
-| [dsh-lawcite-adapter](https://github.com/PerryLink/dsh-lawcite-adapter) | Legal citations resolved to the instrument actually in force, and flagged when they are not | | [npm](https://www.npmjs.com/package/dsh-lawcite-adapter) |
-
-#### 🏛️ Governance (2)
-
-| Plugin | One-liner | Status | npm |
-|---|---|---|---|
-| [dsh-soe-decision-check](https://github.com/PerryLink/dsh-soe-decision-check) | State-owned-enterprise collective-decision records against the "three majors, one large" procedure | | [npm](https://www.npmjs.com/package/dsh-soe-decision-check) |
-| [dsh-sop-sync-check](https://github.com/PerryLink/dsh-sop-sync-check) | Standard operating procedures checked against the versions and cross-references they claim | | [npm](https://www.npmjs.com/package/dsh-sop-sync-check) |
 ## 🪦 Retired & frozen (2026-10-05)
 
 A maintainer review of the whole family against the official harness and the wider plugin ecosystem
@@ -587,8 +468,8 @@ topic](https://github.com/topics/dsh-plugin) is what most of them ingest from.
 <details>
 <summary><b>中文介绍</b></summary>
 
-**在 DeepSeek Harness 上构建插件生态:86 个活跃维护的开源插件,来自一个 101 仓的家族(其中 100 个由 PerryLink 自己维护)** —— 安全、工作流、研究、消息桥接、开发者体验,以及 2026-10-08 起新增的 53 个合规核查插件(每个都是拿一份台账或记录去对版本化规则包,只输出差异供人复核),外加 DSH Desktop
-Market 目录、插件认证注册表与 dsh-plugin-doctor 这个 CI 检查器。86 个插件全部带 CI、Gitee 镜像与五语文档,文档的段落数、安装命令、配置键由每个仓自己的 CI 闸门守着一致,并声明
+**在 DeepSeek Harness 上构建插件生态:33 个活跃维护的开源插件,来自一个 48 仓的家族(其中 47 个由 PerryLink 自己维护)** —— 安全、工作流、研究、消息桥接、开发者体验,外加 DSH Desktop
+Market 目录、插件认证注册表与 dsh-plugin-doctor 这个 CI 检查器。33 个插件全部带 CI、Gitee 镜像与五语文档,文档的段落数、安装命令、配置键由每个仓自己的 CI 闸门守着一致,并声明
 `dsh.bundle` 契约。npm 账号、Gitee 镜像、DSH Desktop Market、MCP Registry 与 GitHub Actions 的入口见上节「Where the plugins
 live」。**我也向上游 [Cordis](https://github.com/cordiverse/cordis)(DeepSeek Harness 所基于的插件内核框架)与
 [deepseek-ai](https://github.com/deepseek-ai) 项目贡献:该组织下 20 条 PR 里,已合并的仍是
