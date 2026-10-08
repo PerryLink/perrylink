@@ -481,7 +481,6 @@ Jev、DeepSeek-V4.1-Flash),四条主张**三条成立、一条被自己的数据
 
 **还有一条在别处:一个根本起不来的进程现在能起来了。** [claude-agent-acp #1146](https://github.com/agentclientprotocol/claude-agent-acp/pull/1146) 让 `src/index.ts` 里那处没有保护的顶层 await 不再因一次瞬时错误就中断模块求值、在发出任何一条 ACP 消息之前退出。
 
-待业中。十一准备出去玩一圈，所以更新迭代节奏可能短期内仍然提升的有限。当然，问题和缺陷修复不会停，只是发布频率会降低一些，还请大家谅解。
 
 </details>
 
