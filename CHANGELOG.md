@@ -18,6 +18,36 @@ and `dsh-laya` were introduced by name.
 
 - **The Phocinae section's figures moved to the v1.1 re-measurement, and every figure site moved with them.** The model project re-ran its release benchmark set on 2026-10-09 on the v1.1 weights, so the section's figures now read: GPU fp16 p50 **21.0 ms (RTX 5090)** per decision (was 18.6 ms), CPU single-thread **1.64 s/case** (was ~1.5 s), typed-decisions **0.906 en / 0.848 zh** (was 0.797 / 0.789; zh is machine-translated cases), option-order flip **rev150 0.0200 · rev400 0.0217** (was rev 0.0300), shipped-column ECE **0.2519** (was 0.1313), and the τ=0.6 escalate gate — **45.0% escalate, −55.0% LLM calls (79.6% at τ=0.5), kept-subset accuracy 0.9936** (was 45.7% / −54.4% / 82.8% / 0.886). JevBench now reads **0.5455 (126/231)** (was 0.5108, 118/231) and still stays below the 58.4% gate, published as-is. The 2026-10-08 round above keeps its dated figures; the correction is this round's, and the README § Phocinae and `INSTRUMENTATION.md`'s value table now carry the v1.1 set.
 
+- **Two merges arrived after the previous round and one of them is a new row.**
+  [koishijs/koishi#1554](https://github.com/koishijs/koishi/pull/1554) merged 2026-10-08T12:13:06Z at 6,248★ —
+  the first `koishijs` row on the page and the largest row added since `bytedance/deer-flow`. The maintainer
+  `shigma` reviewed it, found that a remainder after `$( … )` containing a newline was being dropped
+  (`Argv.parse('echo $(echo foo)\nbar')` lost a token), pushed his own fix onto the branch as `aba416f`, and
+  merged with it; the row therefore rests on a squash commit authored by this account and co-authored by him
+  (`97d5c395`). This round verified his fix independently before replying: over 63 inputs at three revisions
+  the account's own commit was 23/63 away from `master` and his was 5/63, all five being the element shapes
+  the pull request exists to change, and his own six regression cases fail 4/6 without it.
+  [OmniJev/awesome-jev-gallery#33](https://github.com/OmniJev/awesome-jev-gallery/pull/33) merged
+  2026-10-08T13:22:47Z at 500★ and credits a repository without entering the table.
+- **The `satori#420` closure did not hold, the maintainer agreed, and the backport was re-cut.** The closure
+  cited cherry-pick `b228a0a6`, which carries #422 and does not touch the file #420 changes; `v4`'s
+  `utils.ts` still had no `.slice(0, 25)` and the published `@satorijs/adapter-discord@4.6.2` names a
+  `gitHead` that predates it. `shigma` replied "You are right" on 2026-10-08T12:34:03Z and cherry-picked
+  #409 onto `v4` as `7606a0c3`, which now carries both caps. The pull request stays closed unmerged and is
+  counted as closed, so no merge figure moves — a correction that changes what ships without changing what
+  this page counts, which is the distinction the attribution rule is for.
+- **Re-derived 2026-10-09T04:16Z: 56 external repositories carry a commit of ours on the default branch
+  together with at least one merge** (was 54), **holding 332 merges** (was 330). The two repositories that
+  took merges without crediting a commit still hold 33, so the total outside `PerryLink/*` is **365 merged,
+  concentrated in 58 repositories**, with **102 open across 65**. **28 rows now clear a thousand stars**, up
+  from 27, and all 28 star cells were re-measured rather than carried forward.
+- **The largest table candidate this account has is not on the table, and this is why.**
+  [AiHubCN/Awesome-Chinese-LLM#130](https://github.com/AiHubCN/Awesome-Chinese-LLM/pull/130) sits in a
+  22,769★ repository, which would be the fourth-largest row on the page — and it is an **open proposal**, so
+  the section above excludes it. The repository has had no push since 2026-05-10, its only two comments are
+  out-of-office mail auto-replies, and `defaultBranchRef.target.history(author:{id})` returns 0. Recorded
+  here so that a later round does not have to re-derive why a 22.7k★ repository is missing.
+
 ## 2026-10-08
 
 - **The family grew by 53 compliance checkers, and every count on the page moved with it.** The plugins
