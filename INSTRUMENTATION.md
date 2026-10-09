@@ -21,7 +21,7 @@ absent. The two sanctioned exceptions are marked.
 | 86 actively maintained / 95 in the roster / 101-repo family / 100 owned | README § intro sentence | a repo joins, leaves, freezes or retires |
 | **plugins badge** *(exception: badge row is the live copy)* | README badge row — carries the actively maintained count, 86 | same |
 | Family roster (which plugins exist, and each one's status) | [`dsh-kit/plugins.txt`](https://github.com/PerryLink/dsh-kit) — the install roster, with `scripts/check-parity.mjs` deriving every count and failing on a retired package or a lost status cell | any release |
-| Per-repo maintenance status (`active` / `frozen` / `retired`) | [`dsh-plugin-kit/data/repos.json`](https://github.com/PerryLink/dsh-plugin-kit/blob/master/data/repos.json) — the machine-readable roster the portal renders and the certification registry counts | when a repo freezes or retires |
+| Per-repo maintenance status (`active` / `frozen` / `retired`) | [`dsh-plugin-kit/data/repos.json`](https://github.com/PerryLink/dsh-plugin-kit/blob/main/data/repos.json) — the machine-readable roster the portal renders and the certification registry counts | when a repo freezes or retires |
 | npm 30-day downloads | README § Where the plugins live | monthly |
 | **npm downloads badge** *(exception)* | README badge row | same |
 | npm names / versions / non-deprecated latest | README § Where the plugins live | monthly |
