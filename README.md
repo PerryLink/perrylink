@@ -312,7 +312,7 @@ plus `jevcore` (which declares no `dsh.bundle`) and the third-party `dsh-wechat`
 list above. Retired and frozen rows keep their place with
 their status rather than being deleted, which is why the roster figure is larger than the active one. The same
 95 repositories and the same three states are recorded once, in
-[dsh-plugin-kit/data/repos.json](https://github.com/PerryLink/dsh-plugin-kit/blob/master/data/repos.json), which
+[dsh-plugin-kit/data/repos.json](https://github.com/PerryLink/dsh-plugin-kit/blob/main/data/repos.json), which
 the portal renders and the certification registry counts.*
 
 **The 2026-10-08 addition.** 53 compliance checkers joined the roster that day — they declare
