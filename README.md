@@ -138,7 +138,7 @@ the case the rule at the top of this section was written about, and
 [dsh-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar), one, which merged 2026-10-04 and
 carries no commit of ours on `main` — so neither sizes the contributor set. 332 + 33 = the
 **365 merged pull requests** this account has outside `PerryLink/*`, concentrated in **58 repositories**;
-a further **102 are open across 65 repositories** and are deliberately not counted here.
+a further **114 are open across 77 repositories** as of 2026-10-09T13:15:57Z and are deliberately not counted here.
 
 **The round since the last derivation moved the merged count by 8, the credited set by seven repositories
 and the table by two rows** — the previous derivation was dated 2026-10-07 and this one was taken
@@ -164,7 +164,7 @@ one-line CI fix that detects the Windows runner with `RUNNER_OS` before choosing
 2026-09-19 — at 2★ the smallest repository this account is credited in;
 [koishijs/docs#210](https://github.com/koishijs/docs/pull/210), merged 2026-10-08T07:44:12Z at 27★; and
 [OmniJev/awesome-jev-gallery#33](https://github.com/OmniJev/awesome-jev-gallery/pull/33), merged
-2026-10-08T13:22:47Z at 500★, which is **the most recent merge this account has anywhere**. The round also
+2026-10-08T13:22:47Z at 500★, which is **the most recent merge this account has in this set**. The round also
 closed one proposal and then settled it: [satori#420](https://github.com/satorijs/satori/pull/420) was closed
 2026-10-08T07:26:38Z as superseded by a cherry-pick onto `v4`, the cherry-pick did not carry the change, the
 maintainer confirmed that on 2026-10-08T12:34:03Z and re-cut it as `7606a0c3` — so the pull request stays
