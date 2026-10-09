@@ -34,7 +34,7 @@ absent. The two sanctioned exceptions are marked.
 | `deepseek-ai` totals | README § Upstream, the "Official harness repo" paragraph | on re-derivation |
 | The 1,000★ threshold and the attribution rule | README § Upstream, the lead paragraph | rule change only |
 | Round narratives | [`CHANGELOG.md`](CHANGELOG.md) | every round |
-| Phocinae figures (18.6 ms / ~1.5 s / 0.797 / 0.789 / rev 0.0300 / ECE 0.1313 / τ=0.6 → 45.7% escalate, −54.4% LLM calls, kept-subset 0.886) | README § Phocinae | a Phocinae release re-benchmarks |
+| Phocinae figures (21.0 ms (RTX 5090) / 1.64 s / 0.906 / 0.848 / flip150 0.0200 · flip400 0.0217 / ECE 0.2519 / τ=0.6 → 45.0% escalate, −55.0% LLM calls, kept-subset 0.9936) | README § Phocinae | a Phocinae release re-benchmarks |
 
 **Never** restate an authoritative figure in the intro, in a round, or in the Chinese block. The
 Chinese block is a mirror of the story, not a second home for numbers — if it needs a figure, it
