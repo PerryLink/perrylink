@@ -11,7 +11,7 @@
 <a href="https://github.com/PerryLink?tab=repositories"><img alt="GitHub repos" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FPerryLink&query=%24.public_repos&label=repos&color=24292f"></a>
 <a href="https://www.npmjs.com/search?q=perrylink"><img alt="npm names" src="https://img.shields.io/badge/npm-52%20names-cb3837?logo=npm"></a>
 <img alt="npm downloads 30d" src="https://img.shields.io/badge/npm%20downloads%2030d-183.9k-6e7781">
-<a href="https://github.com/PerryLink/dsh-kit"><img alt="actively maintained plugins" src="https://img.shields.io/badge/plugins-86-6e7781"></a>
+<a href="https://github.com/PerryLink/dsh-kit"><img alt="actively maintained plugins" src="https://img.shields.io/badge/plugins-87-6e7781"></a>
 <a href="https://github.com/PerryLink/dsh-mcp-panel/blob/main/package.json"><img alt="node" src="https://img.shields.io/badge/node-%E2%89%A522.19-339933?logo=node.js"></a>
 <br>
 <a href="https://github.com/PerryLink/dsh-auto-review/blob/main/LICENSE"><img alt="license" src="https://img.shields.io/badge/license-Apache--2.0-blue"></a>
@@ -33,7 +33,7 @@
 </p>
 
 Open-source developer in Beijing. I build the
-[DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) plugin ecosystem: 86 actively
+[DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) plugin ecosystem: 87 actively
 maintained Apache-2.0 plugins in a 101-repo family — security, workflows, research, messaging bridges,
 developer experience, and since 2026-10-08 a set of 53 compliance checkers that read a register or
 record set against a versioned rule pack and report the differences — plus the DSH Desktop Market
@@ -64,7 +64,7 @@ One command installs the core family — **[dsh-kit](https://github.com/PerryLin
 | [dsh-auto-review](https://github.com/PerryLink/dsh-auto-review) | Second-model auto-review on the approval chain, fail-closed by default (234★) | `dsh plugin --profile web add dsh-auto-review` |
 | [dsh-research-report](https://github.com/PerryLink/dsh-research-report) | Verifiable research reports: content-addressed evidence ledger, manifest seal hash, byte-level citation checks, drift detection, disproof ledger (214★) | `dsh plugin --profile web add dsh-research-report` |
 | [dsh-industry-research](https://github.com/PerryLink/dsh-industry-research) | Industry/company research: chain-map SVG with bottleneck detection, timeline, company cards, adversarial review (213★) | `dsh plugin --profile web add dsh-industry-research` |
-| [dsh-memento](https://github.com/PerryLink/dsh-memento) | Approval-gated cross-session memory (`ctx.memory` + SQLite) (139★) · 🧊 **frozen** — better-adopted alternatives exist | `dsh plugin --profile web add dsh-memento` |
+| [dsh-memento](https://github.com/PerryLink/dsh-memento) | Approval-gated cross-session memory (`ctx.memory` + SQLite) (139★) · unfrozen 2026-10-12, maintained again | `dsh plugin --profile web add dsh-memento` |
 | [dsh-permission-rules](https://github.com/PerryLink/dsh-permission-rules) | Claude Code-style declarative allow/deny/ask rules plus a process-level network policy (119★) | `dsh plugin --profile web add dsh-permission-rules` |
 | [dsh-mcp-panel](https://github.com/PerryLink/dsh-mcp-panel) | MCP management console: `/mcp` + Settings tab + trial calls (73★) | `dsh plugin --profile web add dsh-mcp-panel` |
 
@@ -310,12 +310,12 @@ family to that file; the machine-readable catalogue is
 and each plugin's own README carries the detail this page only summarises.
 
 <details>
-<summary><b>The full family — 95 plugins in the roster, 86 of them actively maintained, plus 5 support repos, one line each</b></summary>
+<summary><b>The full family — 95 plugins in the roster, 87 of them actively maintained, plus 5 support repos, one line each</b></summary>
 
-*Counting note: **86** is the actively maintained set, and it is the figure this page's heading and badge
+*Counting note: **87** is the actively maintained set, and it is the figure this page's heading and badge
 use. It is derived one repository at a time: **95** repositories declare `dsh.bundle.patch` (re-derived
 2026-10-08 by reading each repo's own `package.json` at its default branch), of which **3 are 🚫 retired**
-and **6 are 🧊 frozen**, leaving **86 actively maintained**. Measured against the 100 PerryLink-owned
+and **5 are 🧊 frozen**, leaving **87 actively maintained**. Measured against the 100 PerryLink-owned
 repositories this page names: **95 declare the contract and 5 do not** — the support trio
 [dsh-catalog](https://github.com/PerryLink/dsh-catalog), [dsh-kit](https://github.com/PerryLink/dsh-kit) and
 [dsh-plugin-certification](https://github.com/PerryLink/dsh-plugin-certification) (the certification registry, whose
@@ -370,7 +370,7 @@ non-plugin total, which is measured rather than derived.
 | [dsh-composer-history](https://github.com/PerryLink/dsh-composer-history) | Terminal-style input history for the web composer | | [npm](https://www.npmjs.com/package/dsh-composer-history) |
 | [dsh-output-styles](https://github.com/PerryLink/dsh-output-styles) | Runtime-switchable model output styles | | [npm](https://www.npmjs.com/package/dsh-output-styles) |
 | [dsh-session-pin](https://github.com/PerryLink/dsh-session-pin) | Pin sessions in the Web sidebar | 🚫 RETIRED — native session pinning | [npm](https://www.npmjs.com/package/dsh-session-pin) |
-| [dsh-memento](https://github.com/PerryLink/dsh-memento) | Approval-gated cross-session memory protocol | 🧊 FROZEN — `@openviking/dsh-memory-plugin` | [npm](https://www.npmjs.com/package/dsh-memento) |
+| [dsh-memento](https://github.com/PerryLink/dsh-memento) | Approval-gated cross-session memory protocol | | [npm](https://www.npmjs.com/package/dsh-memento) |
 
 ### 🧪 Evaluation (3)
 
@@ -552,13 +552,18 @@ cites the clause it rests on, and a per-repo `check:citations` gate holds each q
 |---|---|---|---|
 | [dsh-soe-decision-check](https://github.com/PerryLink/dsh-soe-decision-check) | State-owned-enterprise collective-decision records against the "three majors, one large" procedure | | [npm](https://www.npmjs.com/package/dsh-soe-decision-check) |
 | [dsh-sop-sync-check](https://github.com/PerryLink/dsh-sop-sync-check) | Standard operating procedures checked against the versions and cross-references they claim | | [npm](https://www.npmjs.com/package/dsh-sop-sync-check) |
-## 🪦 Retired & frozen (2026-10-05)
+## 🪦 Retired & frozen (ruling 2026-10-05 — `dsh-memento` unfrozen 2026-10-12)
 
 A maintainer review of the whole family against the official harness and the wider plugin ecosystem
 concluded that three of these plugins duplicate capabilities the **official harness now implements
 natively**, and one was reclassified as internal tooling. Retirement here has a precise meaning:
 **compatibility updates stop because the capability is now official, or because a better-adopted
 alternative exists** — these are not abandoned or broken, and they keep working for existing installs.
+
+**2026-10-12 update: `dsh-memento` was unfrozen.** It is an actively maintained plugin again and takes
+feature work, which is why the actively maintained count moved 86 → 87 and the frozen count 6 → 5. The
+freeze was a scheduling call, not a defect ruling, and nothing was removed while it was in force — its
+2026-10-05 measurement stays below as a dated record rather than being deleted.
 
 ### Retired — the official harness now implements this
 
@@ -575,7 +580,7 @@ catalogs and needs no retirement.
 
 ### Frozen — no new features, only real breakages fixed
 
-Frozen because **better-adopted alternatives now exist** for that capability. Six of the seven carry a
+Frozen because **better-adopted alternatives now exist** for that capability. Five of the six carry a
 `## Maintenance status: 🧊 FROZEN` section in their own README with the measured comparison —
 [dsh-wechat](https://github.com/pan17/dsh-wechat) is the exception, because it is `pan17`'s repository rather than
 this account's, so the banner cannot be added there and the row is frozen here instead. Weekly npm downloads,
@@ -584,7 +589,7 @@ measured 2026-10-05:
 | Plugin | this repo | better-adopted alternative |
 |---|---|---|
 | [dsh-budget](https://github.com/PerryLink/dsh-budget) | 1,079 | [`dsh-cost-meter`](https://github.com/Han-1413141/dsh-cost-meter) — **33,526** |
-| [dsh-memento](https://github.com/PerryLink/dsh-memento) | 1,202 | [`@openviking/dsh-memory-plugin`](https://github.com/volcengine/OpenViking) — **10,160** |
+| [dsh-memento](https://github.com/PerryLink/dsh-memento) *(unfrozen 2026-10-12)* | 1,202 | [`@openviking/dsh-memory-plugin`](https://github.com/volcengine/OpenViking) — **10,160** |
 | [dsh-draw](https://github.com/PerryLink/dsh-draw) | 973 | [`dsh-image-gen`](https://github.com/shanliuling/dsh-image-gen) — **7,216** |
 | [dsh-claude-move](https://github.com/PerryLink/dsh-claude-move) | 843 | [`dsh-chat-import`](https://github.com/Nwflower/dsh-chat-import) — **5,111** |
 | [dsh-reach](https://github.com/PerryLink/dsh-reach) | ~600 | [`@xmanrui/dsh-im`](https://github.com/xmanrui/dsh-im) — **17,384** |
@@ -635,8 +640,8 @@ topic](https://github.com/topics/dsh-plugin) is what most of them ingest from.
 <details>
 <summary><b>中文介绍</b></summary>
 
-**在 DeepSeek Harness 上构建插件生态:86 个活跃维护的开源插件,来自一个 101 仓的家族(其中 100 个由 PerryLink 自己维护)** —— 安全、工作流、研究、消息桥接、开发者体验,以及 2026-10-08 起新增的 53 个合规核查插件(每个都是拿一份台账或记录去对版本化规则包,只输出差异供人复核),外加 DSH Desktop
-Market 目录、插件认证注册表与 dsh-plugin-doctor 这个 CI 检查器。86 个插件全部带 CI、Gitee 镜像与五语文档,文档的段落数、安装命令、配置键由每个仓自己的 CI 闸门守着一致,并声明
+**在 DeepSeek Harness 上构建插件生态:87 个活跃维护的开源插件,来自一个 101 仓的家族(其中 100 个由 PerryLink 自己维护)** —— 安全、工作流、研究、消息桥接、开发者体验,以及 2026-10-08 起新增的 53 个合规核查插件(每个都是拿一份台账或记录去对版本化规则包,只输出差异供人复核),外加 DSH Desktop
+Market 目录、插件认证注册表与 dsh-plugin-doctor 这个 CI 检查器。87 个插件全部带 CI、Gitee 镜像与五语文档,文档的段落数、安装命令、配置键由每个仓自己的 CI 闸门守着一致,并声明
 `dsh.bundle` 契约。npm 账号、Gitee 镜像、DSH Desktop Market、MCP Registry 与 GitHub Actions 的入口见上节「Where the plugins
 live」。**我也向上游 [Cordis](https://github.com/cordiverse/cordis)(DeepSeek Harness 所基于的插件内核框架)与
 [deepseek-ai](https://github.com/deepseek-ai) 项目贡献:该组织下 20 条 PR 里,已合并的仍是
