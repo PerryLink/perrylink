@@ -14,37 +14,6 @@ and `dsh-laya` were introduced by name.
 
 ---
 
-## 2026-10-12
-
-- **`dsh-memento` was unfrozen, and the frozen count moved for the first time.** The 2026-10-05 ruling
-  froze seven packages; one of them is now back on the active roster and takes feature work again. The
-  page's counts moved with it: **86 → 87 actively maintained**, **6 → 5 frozen**. Nothing else changed —
-  the roster stays at 95, the category tables still carry 94 rows, and the owned and named-repository
-  counts (100 and 101) are untouched, because no repository joined or left: one repository changed state.
-- **The freeze stays on the record rather than being rewritten.** It was a scheduling call, not a defect
-  finding, so the 2026-10-05 measurement is kept verbatim as a dated record — here in the
-  retired-and-frozen section, and in the plugin's own README, where the section is now
-  `## Maintenance status: ✅ Active` and the comparison table (1,202 weekly downloads against
-  `@openviking/dsh-memory-plugin`'s 10,160) is labelled as that day's snapshot.
-- **Every place the status is recorded moved in the same pass**, because a half-updated roster is worse
-  than a stale one: the five-language READMEs across the family now state **34 active / 5 frozen / 3
-  retired** in the workspace's own scheme, with the `dsh-memento` row carrying no status cell; the
-  machine-readable roster `dsh-plugin-kit/data/repos.json` records `status: "active"` and the portal's
-  hash-pinned copy was re-stamped; `dsh-kit/plugins.txt` dropped the `# 🧊 FROZEN` comment from its line,
-  the kit README moved to **87 active / 5 frozen / 92 specs**, and `scripts/check-parity.mjs` now asserts a
-  five-repository frozen set; the certification registry's derived baseline sentence, the catalog's count,
-  the workspace memory file, the prompt library and the plugin guide (with `llms-full.txt` regenerated)
-  were corrected the same way. The frozen set is now **five of this account's repositories** plus the
-  third-party `dsh-wechat`.
-- **A contributor credit that predates this round.** `dsh-memento`'s Contributors section (all five
-  languages) and its `package.json` now name [@alex-debap](https://github.com/alex-debap), for work that
-  starts at the 0.1.0 conception stage — the seam-not-warehouse thesis, the structurally unbypassable
-  approval gate, the audit guarantee rebuildable from the approval pair plus the plugin's own audit table,
-  the bounded layered recall model, local-first zero-credential storage, and the public protocol rehearsal
-  with its adapter registry and conformance suite.
-
----
-
 ## 2026-10-09
 
 - **The Phocinae section's figures moved to the v1.1 re-measurement, and every figure site moved with them.** The model project re-ran its release benchmark set on 2026-10-09 on the v1.1 weights, so the section's figures now read: GPU fp16 p50 **21.0 ms (RTX 5090)** per decision (was 18.6 ms), CPU single-thread **1.64 s/case** (was ~1.5 s), typed-decisions **0.906 en / 0.848 zh** (was 0.797 / 0.789; zh is machine-translated cases), option-order flip **rev150 0.0200 · rev400 0.0217** (was rev 0.0300), shipped-column ECE **0.2519** (was 0.1313), and the τ=0.6 escalate gate — **45.0% escalate, −55.0% LLM calls (79.6% at τ=0.5), kept-subset accuracy 0.9936** (was 45.7% / −54.4% / 82.8% / 0.886). JevBench now reads **0.5455 (126/231)** (was 0.5108, 118/231) and still stays below the 58.4% gate, published as-is. The 2026-10-08 round above keeps its dated figures; the correction is this round's, and the README § Phocinae and `INSTRUMENTATION.md`'s value table now carry the v1.1 set.

@@ -120,15 +120,6 @@ and the 5 retired names documented in the file's header as forbidden. `scripts/c
 row's cell count stops matching its header — the defect that had been silently dropping every 🧊 FROZEN
 annotation from GitHub's rendering.
 
-**2026-10-12: `dsh-memento` was unfrozen.** It is an actively maintained plugin again, so the actively
-maintained count moved **86 → 87** and the frozen count **6 → 5**. Everything else in the note is
-unchanged: the roster (95), the rows the category tables carry (94), the owned count (100) and the
-named-repo count (101). `dsh-kit/plugins.txt` now lists **92 npm specs** = 87 actively maintained + 5
-frozen, and `scripts/check-parity.mjs` derives **87 / 5 / 92 / 95** from it; the frozen set it asserts is
-`dsh-budget`, `dsh-draw`, `dsh-claude-move`, `dsh-reach`, `dsh-defend`. `dsh-plugin-kit/data/repos.json`
-records `dsh-memento` as `status: "active"` (the portal's verbatim copy carries the re-stamped sha256), and
-the 53-checker workspace's own counts are unaffected.
-
 ---
 
 ## 4. Badge row

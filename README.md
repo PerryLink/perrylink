@@ -64,7 +64,7 @@ One command installs the core family — **[dsh-kit](https://github.com/PerryLin
 | [dsh-auto-review](https://github.com/PerryLink/dsh-auto-review) | Second-model auto-review on the approval chain, fail-closed by default (234★) | `dsh plugin --profile web add dsh-auto-review` |
 | [dsh-research-report](https://github.com/PerryLink/dsh-research-report) | Verifiable research reports: content-addressed evidence ledger, manifest seal hash, byte-level citation checks, drift detection, disproof ledger (214★) | `dsh plugin --profile web add dsh-research-report` |
 | [dsh-industry-research](https://github.com/PerryLink/dsh-industry-research) | Industry/company research: chain-map SVG with bottleneck detection, timeline, company cards, adversarial review (213★) | `dsh plugin --profile web add dsh-industry-research` |
-| [dsh-memento](https://github.com/PerryLink/dsh-memento) | Approval-gated cross-session memory (`ctx.memory` + SQLite) (139★) · unfrozen 2026-10-12, maintained again | `dsh plugin --profile web add dsh-memento` |
+| [dsh-memento](https://github.com/PerryLink/dsh-memento) | Approval-gated cross-session memory (`ctx.memory` + SQLite) (139★) | `dsh plugin --profile web add dsh-memento` |
 | [dsh-permission-rules](https://github.com/PerryLink/dsh-permission-rules) | Claude Code-style declarative allow/deny/ask rules plus a process-level network policy (119★) | `dsh plugin --profile web add dsh-permission-rules` |
 | [dsh-mcp-panel](https://github.com/PerryLink/dsh-mcp-panel) | MCP management console: `/mcp` + Settings tab + trial calls (73★) | `dsh plugin --profile web add dsh-mcp-panel` |
 
@@ -552,18 +552,13 @@ cites the clause it rests on, and a per-repo `check:citations` gate holds each q
 |---|---|---|---|
 | [dsh-soe-decision-check](https://github.com/PerryLink/dsh-soe-decision-check) | State-owned-enterprise collective-decision records against the "three majors, one large" procedure | | [npm](https://www.npmjs.com/package/dsh-soe-decision-check) |
 | [dsh-sop-sync-check](https://github.com/PerryLink/dsh-sop-sync-check) | Standard operating procedures checked against the versions and cross-references they claim | | [npm](https://www.npmjs.com/package/dsh-sop-sync-check) |
-## 🪦 Retired & frozen (ruling 2026-10-05 — `dsh-memento` unfrozen 2026-10-12)
+## 🪦 Retired & frozen (2026-10-05)
 
 A maintainer review of the whole family against the official harness and the wider plugin ecosystem
 concluded that three of these plugins duplicate capabilities the **official harness now implements
 natively**, and one was reclassified as internal tooling. Retirement here has a precise meaning:
 **compatibility updates stop because the capability is now official, or because a better-adopted
 alternative exists** — these are not abandoned or broken, and they keep working for existing installs.
-
-**2026-10-12 update: `dsh-memento` was unfrozen.** It is an actively maintained plugin again and takes
-feature work, which is why the actively maintained count moved 86 → 87 and the frozen count 6 → 5. The
-freeze was a scheduling call, not a defect ruling, and nothing was removed while it was in force — its
-2026-10-05 measurement stays below as a dated record rather than being deleted.
 
 ### Retired — the official harness now implements this
 
@@ -589,7 +584,6 @@ measured 2026-10-05:
 | Plugin | this repo | better-adopted alternative |
 |---|---|---|
 | [dsh-budget](https://github.com/PerryLink/dsh-budget) | 1,079 | [`dsh-cost-meter`](https://github.com/Han-1413141/dsh-cost-meter) — **33,526** |
-| [dsh-memento](https://github.com/PerryLink/dsh-memento) *(unfrozen 2026-10-12)* | 1,202 | [`@openviking/dsh-memory-plugin`](https://github.com/volcengine/OpenViking) — **10,160** |
 | [dsh-draw](https://github.com/PerryLink/dsh-draw) | 973 | [`dsh-image-gen`](https://github.com/shanliuling/dsh-image-gen) — **7,216** |
 | [dsh-claude-move](https://github.com/PerryLink/dsh-claude-move) | 843 | [`dsh-chat-import`](https://github.com/Nwflower/dsh-chat-import) — **5,111** |
 | [dsh-reach](https://github.com/PerryLink/dsh-reach) | ~600 | [`@xmanrui/dsh-im`](https://github.com/xmanrui/dsh-im) — **17,384** |
