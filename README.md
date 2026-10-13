@@ -135,22 +135,29 @@ projects, and the column says so rather than letting the account name imply a co
 [imsai-sh's list](https://github.com/imsai-sh/awesome-deepseek-harness-plugins), which alone took 41
 merges, and [the Jev gallery](https://github.com/OmniJev/awesome-jev-gallery), among them) — the catalogs ingest the family and carry no company owner, so they are named here
 only in aggregate. **64 external repositories carry a commit attributed to this account, and 63 of them also
-carry at least one merged pull request of ours; 344 merges were counted inside those 63** — re-derived
-2026-10-12T10:37:23Z from this account's own merged pull requests, so 344 is exact rather than a floor over a
+carry at least one merged pull request of ours; 345 merges were counted inside those 63** — re-derived
+2026-10-13T12:37:59Z from this account's own merged pull requests, so 345 is exact rather than a floor over a
 probed subset. The sixty-fourth is [phocinae-server](https://github.com/Phocinae/phocinae-server), which holds
 13 commits of this account but no merged pull request at all, so it carries no merge and is named only for
 that reason. One further repository took **32 more** of our merged pull requests **without**
 crediting a commit to this account on its default branch —
 [SihanTeng's list](https://github.com/SihanTeng/awesome-deepseek-harness-plugins), which is
 the case the rule at the top of this section was written about, so it does not size the contributor set.
-This round moved one repository the other way:
+The round before last moved one repository the other way:
 [dsh-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) merged
 [#843](https://github.com/omdsh-dev/DSH-better-sidebar/pull/843) on 2026-10-04 and was carried above as
 carrying no commit of ours on `main`; it now does, a `docs(catalog)` commit on `main` authored by this
 account under its public address rather than its `noreply` one, so it counts as credited, its single
-merge counts inside the 344, and it has accordingly been promoted into the table above. 344 + 32 = the
-**376 merged pull requests** this account has outside `PerryLink/*`, concentrated in **64 repositories**;
-a further **115 are open across 78 repositories** as of 2026-10-12T10:37:23Z and are deliberately not counted here.
+merge counts inside the 345, and it has accordingly been promoted into the table above. 345 + 32 = the
+**377 merged pull requests** this account has outside `PerryLink/*`, concentrated in **64 repositories**;
+a further **116 are open across 78 repositories** as of 2026-10-13T12:37:59Z and are deliberately not counted here.
+
+**The round to 2026-10-13 moved the merged count by 1 and nothing else** — one merge arrived,
+[`pan17/dsh-wechat#11`](https://github.com/pan17/dsh-wechat/pull/11), merged 2026-10-13T11:51:58Z by the
+maintainer `pan17`: 29 files, a plugin-side feature release rather than a listing entry. The credited set
+stayed at 64 and the table at 31 rows, because that repository was already credited and already above the
+thousand-star line, so this round moves a number without moving a row. Its four merges of ours now count
+inside the 345.
 
 **The round to 2026-10-12 moved the merged count by 7, the credited set by eight repositories and the table
 by three rows** — the previous derivation was dated 2026-10-09T04:16Z and this one was taken
