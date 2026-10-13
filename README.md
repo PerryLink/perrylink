@@ -75,8 +75,8 @@ proposals are deliberately not listed. The third column names the project's owne
 does not say whether that is a company, a standards body or one person.*
 
 **★ 1,000+ — named individually, as the rule requires, each carrying the party that owns the project.**
-Thirty-one external repos above a thousand stars carry merged work (★ measured 2026-10-12 for the two new
-rows below, and on the date each row's own merge line names), and the two newest
+Thirty-two external repos above a thousand stars carry merged work (★ measured 2026-10-13 for `open5gs` and
+on the date each row's own merge line names), and the two newest
 arrived within a day of each other: `neuml/txtai` merged 2026-10-11T21:21:02Z by its maintainer
 `davidmezzetti`, and `anomalyco/models.dev` merged 2026-10-10T23:11:09Z by `rekram1-node`. Before those the
 newest was `koishijs/koishi` — merged 2026-10-08T12:13:06Z by its maintainer `shigma`, who found and fixed
@@ -121,6 +121,7 @@ projects, and the column says so rather than letting the account name imply a co
 | [DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) | 4,121 | `omdsh-dev` community org — the DeepSeek Harness sidebar plugin; promoted into this table this round, and the note under it records why it was previously carried as excluded |
 | [fastmcp](https://github.com/punkpeye/fastmcp) | 3,274 | punkpeye (Frank Fiegel) — individual maintainer at Glama; the TypeScript MCP framework |
 | [deepseek-harness-desktop](https://github.com/dsh-tauri/deepseek-harness-desktop) | 3,115 | `dsh-tauri` community org — self-described non-official and non-commercial, not a DeepSeek repo |
+| [open5gs](https://github.com/open5gs/open5gs) | 2,757 | the `open5gs` open-source 5G core project — a community project rather than a company repo; promoted into this table this round, and the note under it records why |
 | [NeMo-Agent-Toolkit](https://github.com/NVIDIA/NeMo-Agent-Toolkit) | 2,662 | **NVIDIA** — the official `NVIDIA` org; three review rounds with maintainer `willkill07` on making `remove_r1_think_tags` actually remove think blocks, merged 2026-10-08T00:10:02Z by NVIDIA's `rapids-bot` after he issued `/merge` |
 | [claude-agent-acp](https://github.com/agentclientprotocol/claude-agent-acp) | 2,626 | `agentclientprotocol` org — the same jointly-governed org as the row above, a separate repository |
 | [awesome-jev](https://github.com/yibie/awesome-jev) | 2,232 | yibie — individual maintainer, community catalog for Jev; the row the 09-25 round both printed and denied, kept now on the commit the history probe finds |
@@ -135,8 +136,8 @@ projects, and the column says so rather than letting the account name imply a co
 [imsai-sh's list](https://github.com/imsai-sh/awesome-deepseek-harness-plugins), which alone took 41
 merges, and [the Jev gallery](https://github.com/OmniJev/awesome-jev-gallery), among them) — the catalogs ingest the family and carry no company owner, so they are named here
 only in aggregate. **64 external repositories carry a commit attributed to this account, and 63 of them also
-carry at least one merged pull request of ours; 345 merges were counted inside those 63** — re-derived
-2026-10-13T12:37:59Z from this account's own merged pull requests, so 345 is exact rather than a floor over a
+carry at least one merged pull request of ours; 346 merges were counted inside those 63** — re-derived
+2026-10-13T16:58:06Z from this account's own merged pull requests, so 346 is exact rather than a floor over a
 probed subset. The sixty-fourth is [phocinae-server](https://github.com/Phocinae/phocinae-server), which holds
 13 commits of this account but no merged pull request at all, so it carries no merge and is named only for
 that reason. One further repository took **32 more** of our merged pull requests **without**
@@ -148,16 +149,23 @@ The round before last moved one repository the other way:
 [#843](https://github.com/omdsh-dev/DSH-better-sidebar/pull/843) on 2026-10-04 and was carried above as
 carrying no commit of ours on `main`; it now does, a `docs(catalog)` commit on `main` authored by this
 account under its public address rather than its `noreply` one, so it counts as credited, its single
-merge counts inside the 345, and it has accordingly been promoted into the table above. 345 + 32 = the
-**377 merged pull requests** this account has outside `PerryLink/*`, concentrated in **64 repositories**;
-a further **116 are open across 78 repositories** as of 2026-10-13T12:37:59Z and are deliberately not counted here.
+merge counts inside the 346, and it has accordingly been promoted into the table above. 346 + 32 = the
+**378 merged pull requests** this account has outside `PerryLink/*`, concentrated in **65 repositories**;
+a further **122 are open across 78 repositories** as of 2026-10-13T16:58:06Z and are deliberately not counted here.
 
-**The round to 2026-10-13 moved the merged count by 1 and nothing else** — one merge arrived,
+**The round to 2026-10-13T12:37Z moved the merged count by 1 and nothing else** — one merge arrived,
 [`pan17/dsh-wechat#11`](https://github.com/pan17/dsh-wechat/pull/11), merged 2026-10-13T11:51:58Z by the
 maintainer `pan17`: 29 files, a plugin-side feature release rather than a listing entry. The credited set
 stayed at 64 and the table at 31 rows, because that repository was already credited and already above the
-thousand-star line, so this round moves a number without moving a row. Its four merges of ours now count
-inside the 345.
+thousand-star line, so that round moved a number without moving a row.
+
+**The round since then moved one repository across the thousand-star line, which is what puts a row in the
+table.** [`open5gs/open5gs`](https://github.com/open5gs/open5gs) merged
+[#4848](https://github.com/open5gs/open5gs/pull/4848) on 2026-10-13T12:42:52Z — two files, `+2/-2`, by its
+maintainer `acetcom`, building the `tel` IMPU in canonical form. The merged count moves by that one, and
+because the repository now stands above a thousand stars it is named individually above rather than left in
+the aggregate sentence. The credited set is unchanged at 64: this repository was already credited, and the
+commit that credits it sits on `main`.
 
 **The round to 2026-10-12 moved the merged count by 7, the credited set by eight repositories and the table
 by three rows** — the previous derivation was dated 2026-10-09T04:16Z and this one was taken
