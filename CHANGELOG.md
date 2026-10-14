@@ -14,6 +14,70 @@ and `dsh-laya` were introduced by name.
 
 ---
 
+## 2026-10-14
+
+- **Live counters re-measured 2026-10-14 except where a line says otherwise.** The family reads **97 in the
+  roster / 89 actively maintained** (was 95 / 87): two repositories that declare `dsh.bundle.patch` were not in
+  the last derivation — `dsh-phocinae`, which belongs to the separate Phocinae product line, and `dsh-phone-inbox`,
+  which was created 2026-10-13. The npm surface reads **110 names / 1,446 versions / 102 non-deprecated `latest` /
+  93 of those with SLSA provenance** (was 52 / 1,069 / 44 / 39) and the trailing-30-day aggregate **241,207** over
+  the window 09-14..10-13 (was 183,886 over 09-07..10-06). The scope did not change; the 53 compliance checkers,
+  published 2026-10-08, were simply not in the name list the earlier figures were summed from, and all 110 names
+  were re-proved owned from `registry.npmjs.org`'s own `maintainers` field rather than inferred from a repository URL.
+- **The round to 2026-10-14T04:13:17Z had already taken the merged count from 346 to 351.** Five merges, four of
+  them in repositories the section already carries: [`Q00/ouroboros#2544`](https://github.com/Q00/ouroboros/pull/2544),
+  merged 2026-10-14T01:45:29Z by `lee3Q` after the repository's own review agent had approved it;
+  [`vvlife/awesome-deepseek-harness-plugins` #164](https://github.com/vvlife/awesome-deepseek-harness-plugins/pull/164)
+  and its [#163](https://github.com/vvlife/awesome-deepseek-harness-plugins/pull/163), merged 2026-10-14T02:57:53Z and
+  2026-10-13T17:37:30Z; and two catalogue entries, [`yibie/awesome-jev#368`](https://github.com/yibie/awesome-jev/pull/368)
+  and [`cobanov/awesome-jev#160`](https://github.com/cobanov/awesome-jev/pull/160). None crossed the thousand-star
+  line, so the table kept 32 rows and only the totals moved. The commit that credits `Q00/ouroboros` is the change
+  itself, authored by this account and committed by GitHub's web flow on the squash.
+- **The merged set moved from 351 to 353.** [`NandhaKishorM/laya#1179`](https://github.com/NandhaKishorM/laya/pull/1179)
+  merged 2026-10-14T04:57:15Z, taking the `laya` ledger to **47 merged of the 51 opened**;
+  [`cordiverse/cordis#198`](https://github.com/cordiverse/cordis/pull/198) merged 2026-10-14T05:17:57Z, so the kernel
+  DeepSeek Harness vendors holds two merged pull requests of ours rather than one. The credited set moved **64 → 66**
+  for a different reason: this derivation probed further and found
+  [`zcx960/deepseek-desktop`](https://github.com/zcx960/deepseek-desktop) and — from the round before —
+  [`Phocinae/phocinae-server`](https://github.com/Phocinae/phocinae-server) each carrying a commit of this account and
+  **no pull request ever opened**, which is the one shape the merged-PR search cannot see.
+- **Six repositories were excluded from the credited set after a probe, and this is the rule to reuse.** The commit
+  search returns `jersonboydmilan/Laya`, `jetmiyoung/laya`, `tgundhus/laya-pro`,
+  `xinglunxu76-star/awesome-dsh-plugin-deepseek-harness-` and two further re-uploads as carrying commits of this account. They are
+  not forks, so no flag marks them, but every one of the commits is **byte-identical** to a commit on the upstream
+  project it is named after (`POST /repos/{upstream}/commits/{sha}` returns 200 for `4bae1b32`, `c807d5de`,
+  `b9e06613` and the rest). Counting them would add six repositories whose "our commits" were done elsewhere, which is
+  the same padding the counter-examples exist to prevent.
+- **Versions worth opening this round:** `dsh-plugin-guide` **0.3.33** / `0.3.32` / `0.3.31` (three releases in
+  twenty-five minutes on 2026-10-13), `dsh-phone-inbox` **0.1.1** (its first published release), `dsh-memento`
+  **0.5.25**. The badge row keeps its 21 badges in four rows and only three values moved, so its partition is unchanged.
+
+## 2026-10-13
+
+- **One merge arrived and nothing else moved.** [`pan17/dsh-wechat#11`](https://github.com/pan17/dsh-wechat/pull/11)
+  merged 2026-10-13T11:51:58Z by the maintainer `pan17`: 29 files, a plugin-side feature release rather than a
+  listing entry, and the repository was already credited and already above the thousand-star line.
+- **One repository crossed the thousand-star line, which is what puts a row in the table.**
+  [`open5gs/open5gs`](https://github.com/open5gs/open5gs) merged
+  [#4848](https://github.com/open5gs/open5gs/pull/4848) on 2026-10-13T12:42:52Z — two files, `+2/-2`, by its
+  maintainer `acetcom`, building the `tel` IMPU in canonical form — and at **2,758★** it is named individually from
+  that round on. The table went from 31 rows to 32.
+- **Re-derived 2026-10-13T12:37Z: 345 merges inside the credited set, 377 outside `PerryLink/*`, 116 open.** The
+  profile repository itself was pushed three times that day; the round text below is what those commits wrote.
+
+## 2026-10-12
+
+- **Seven merges arrived, three of them new rows.** The derivation before this one was dated 2026-10-09T04:16Z and
+  this one was taken 2026-10-12T10:37:23Z. The new rows are `txtai`, `models.dev` and `DSH-better-sidebar`; the first
+  two clear a thousand stars, and the third is a promotion — `omdsh-dev/DSH-better-sidebar` had been carried as
+  *excluded* because it took [a merge](https://github.com/omdsh-dev/DSH-better-sidebar/pull/843) on 2026-10-04 while
+  crediting no commit of ours, and it now carries one (`docs(catalog)` on `main`, authored under the account's public
+  address rather than its `noreply` one). Below a thousand stars, the merges were
+  `agentclientprotocol/python-sdk`, which credited that repository and took two of our pull requests in one morning,
+  and `8treenet/goraven`, one.
+- **The star table's cells were re-measured, not carried forward**, and every row added since 2026-10-07 entered on
+  the merge that reached a default branch rather than on a remembered case.
+
 ## 2026-10-09
 
 - **The Phocinae section's figures moved to the v1.1 re-measurement, and every figure site moved with them.** The model project re-ran its release benchmark set on 2026-10-09 on the v1.1 weights, so the section's figures now read: GPU fp16 p50 **21.0 ms (RTX 5090)** per decision (was 18.6 ms), CPU single-thread **1.64 s/case** (was ~1.5 s), typed-decisions **0.906 en / 0.848 zh** (was 0.797 / 0.789; zh is machine-translated cases), option-order flip **rev150 0.0200 · rev400 0.0217** (was rev 0.0300), shipped-column ECE **0.2519** (was 0.1313), and the τ=0.6 escalate gate — **45.0% escalate, −55.0% LLM calls (79.6% at τ=0.5), kept-subset accuracy 0.9936** (was 45.7% / −54.4% / 82.8% / 0.886). JevBench now reads **0.5455 (126/231)** (was 0.5108, 118/231) and still stays below the 58.4% gate, published as-is. The 2026-10-08 round above keeps its dated figures; the correction is this round's, and the README § Phocinae and `INSTRUMENTATION.md`'s value table now carry the v1.1 set.
