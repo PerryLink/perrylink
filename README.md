@@ -136,8 +136,8 @@ projects, and the column says so rather than letting the account name imply a co
 [imsai-sh's list](https://github.com/imsai-sh/awesome-deepseek-harness-plugins), which alone took 41
 merges, and [the Jev gallery](https://github.com/OmniJev/awesome-jev-gallery), among them) — the catalogs ingest the family and carry no company owner, so they are named here
 only in aggregate. **64 external repositories carry a commit attributed to this account, and 63 of them also
-carry at least one merged pull request of ours; 346 merges were counted inside those 63** — re-derived
-2026-10-13T16:58:06Z from this account's own merged pull requests, so 346 is exact rather than a floor over a
+carry at least one merged pull request of ours; 351 merges were counted inside those 63** — re-derived
+2026-10-14T04:13:17Z from this account's own merged pull requests, so 351 is exact rather than a floor over a
 probed subset. The sixty-fourth is [phocinae-server](https://github.com/Phocinae/phocinae-server), which holds
 13 commits of this account but no merged pull request at all, so it carries no merge and is named only for
 that reason. One further repository took **32 more** of our merged pull requests **without**
@@ -150,8 +150,20 @@ The round before last moved one repository the other way:
 carrying no commit of ours on `main`; it now does, a `docs(catalog)` commit on `main` authored by this
 account under its public address rather than its `noreply` one, so it counts as credited, its single
 merge counts inside the 346, and it has accordingly been promoted into the table above. 346 + 32 = the
-**378 merged pull requests** this account has outside `PerryLink/*`, concentrated in **65 repositories**;
-a further **122 are open across 78 repositories** as of 2026-10-13T16:58:06Z and are deliberately not counted here.
+**383 merged pull requests** this account has outside `PerryLink/*`, concentrated in **65 repositories**;
+a further **131 are open across 78 repositories** as of 2026-10-14T04:13:17Z and are deliberately not counted here.
+
+**The round to 2026-10-14T04:13Z moved the merged count by 5 and the credited set by none.** Five merges
+arrived, four of them in repositories this section already carries:
+[`Q00/ouroboros#2544`](https://github.com/Q00/ouroboros/pull/2544), merged 2026-10-14T01:45:29Z by `lee3Q` after
+the repository's own review agent had approved it; [`vvlife/awesome-deepseek-harness-plugins`](
+https://github.com/vvlife/awesome-deepseek-harness-plugins/pull/164) and its
+[#163](https://github.com/vvlife/awesome-deepseek-harness-plugins/pull/163), merged 2026-10-14T02:57:53Z and
+2026-10-13T17:37:30Z; and two catalogue entries, [`yibie/awesome-jev#368`](
+https://github.com/yibie/awesome-jev/pull/368) and [`cobanov/awesome-jev#160`](
+https://github.com/cobanov/awesome-jev/pull/160). None of them crosses the thousand-star line, so the table keeps
+32 rows and only the totals move. The commit that credits `Q00/ouroboros` is the change itself, authored by this
+account and committed by GitHub's web flow on the squash.
 
 **The round to 2026-10-13T12:37Z moved the merged count by 1 and nothing else** — one merge arrived,
 [`pan17/dsh-wechat#11`](https://github.com/pan17/dsh-wechat/pull/11), merged 2026-10-13T11:51:58Z by the
