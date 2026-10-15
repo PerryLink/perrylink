@@ -136,8 +136,8 @@ projects, and the column says so rather than letting the account name imply a co
 [imsai-sh's list](https://github.com/imsai-sh/awesome-deepseek-harness-plugins), which alone took 41
 merges, and [the Jev gallery](https://github.com/OmniJev/awesome-jev-gallery), among them) — the catalogs ingest the family and carry no company owner, so they are named here
 only in aggregate. **66 external repositories carry a commit attributed to this account, and 64 of them also
-carry at least one merged pull request of ours; 353 merges were counted inside those 64** — re-derived
-2026-10-14T06:05:00Z from this account's own merged pull requests, so 353 is exact rather than a floor over a
+carry at least one merged pull request of ours; 356 merges were counted inside those 64** — re-derived
+2026-10-14T06:05:00Z from this account's own merged pull requests, so 356 is exact rather than a floor over a
 probed subset. The other two, [phocinae-server](https://github.com/Phocinae/phocinae-server) and
 [deepseek-desktop](https://github.com/zcx960/deepseek-desktop), each hold a commit of this account and no
 merged pull request at all, so neither carries a merge and they are named only for that reason. One further repository took **32 more** of our merged pull requests **without**
@@ -150,8 +150,19 @@ The round before last moved one repository the other way:
 carrying no commit of ours on `main`; it now does, a `docs(catalog)` commit on `main` authored by this
 account under its public address rather than its `noreply` one, so it counts as credited, its single
 merge counts inside the 353, and it has accordingly been promoted into the table above. 353 + 32 = the
-**385 merged pull requests** this account has outside `PerryLink/*`, concentrated in **66 repositories**;
-a further **134 are open across 89 repositories** as of 2026-10-14T06:05:00Z and are deliberately not counted here.
+**388 merged pull requests** this account has outside `PerryLink/*`, concentrated in **66 repositories**;
+a further **137 are open across 89 repositories** as of 2026-10-15T10:14:33Z and are deliberately not counted here.
+
+**The round to 2026-10-15T10:14:33Z added three merges, all of them upstream fixes in this list already.**
+Four pull requests in [`cordiverse/cordis`](https://github.com/cordiverse/cordis) were merged by its maintainer
+Shigma on 2026-10-14 — [`#198`](https://github.com/cordiverse/cordis/pull/198) at 05:17:57Z, [`#200`](
+https://github.com/cordiverse/cordis/pull/200) at 05:52:37Z, [`#197`](
+https://github.com/cordiverse/cordis/pull/197) at 06:30:51Z and [`#199`](
+https://github.com/cordiverse/cordis/pull/199) at 08:28:26Z — and `#197` is the one that closes a Windows
+defect. Two of them had already landed before the previous snapshot was taken, which is why the totals move by
+three rather than by four. The merged commits are authored by this account (GitHub's web flow is the committer),
+so `cordis` now carries five commits of ours on its default branch rather than one. One of them was retitled on
+merge: `#199` went in as `feat(create)` rather than the `fix(create)` it was opened as.
 
 **The round to 2026-10-14T06:05:00Z moved the merged set from 351 to 353.** Two merges arrived after the
 previous derivation, both from this account's own pull requests: [`NandhaKishorM/laya#1179`](
