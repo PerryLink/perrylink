@@ -151,7 +151,7 @@ carrying no commit of ours on `main`; it now does, a `docs(catalog)` commit on `
 account under its public address rather than its `noreply` one, so it counts as credited, its single
 merge counts inside the 353, and it has accordingly been promoted into the table above. 353 + 32 = the
 **388 merged pull requests** this account has outside `PerryLink/*`, concentrated in **66 repositories**;
-a further **137 are open across 89 repositories** as of 2026-10-15T10:14:33Z and are deliberately not counted here.
+a further **136 are open across 89 repositories** as of 2026-10-15T10:39:30Z and are deliberately not counted here.
 
 **The round to 2026-10-15T10:14:33Z added three merges, all of them upstream fixes in this list already.**
 Four pull requests in [`cordiverse/cordis`](https://github.com/cordiverse/cordis) were merged by its maintainer
@@ -163,6 +163,12 @@ defect. Two of them had already landed before the previous snapshot was taken, w
 three rather than by four. The merged commits are authored by this account (GitHub's web flow is the committer),
 so `cordis` now carries five commits of ours on its default branch rather than one. One of them was retitled on
 merge: `#199` went in as `feat(create)` rather than the `fix(create)` it was opened as.
+
+**#2556 was closed, which is why the open count moved down by one in the same round.** That pull request made
+the oracle harness survive an exception whose every rendering path raises; `f24672de` (2026-10-14T10:02:16Z)
+landed the same fix upstream and closed #2555 with it, so the pull request was redundant rather than wrong. The
+two hostile-exception cases it added were re-run against current `main` before closing and both are decided
+there. Its branch was also in conflict with `main` over the region `UNRENDERABLE` was added to.
 
 **The round to 2026-10-14T06:05:00Z moved the merged set from 351 to 353.** Two merges arrived after the
 previous derivation, both from this account's own pull requests: [`NandhaKishorM/laya#1179`](
