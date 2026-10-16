@@ -34,6 +34,8 @@ absent. The two sanctioned exceptions are marked.
 | `deepseek-ai` totals | README § Upstream, the "Official harness repo" paragraph | on re-derivation |
 | The 1,000★ threshold and the attribution rule | README § Upstream, the lead paragraph | rule change only |
 | Round narratives | [`CHANGELOG.md`](CHANGELOG.md) | every round |
+| rule-pack size and rules with no verbatim clause text | [`catalog.json`](https://perrylink.github.io/catalog.json), rendered per domain at [the checker index](https://perrylink.github.io/zh/checkers/) | when a rule pack is rebuilt |
+| the DSH Desktop Market catalog source URL | [`dsh-catalog`](https://github.com/PerryLink/dsh-catalog) `deploy/artifacts/v1/plugins.json` | when the catalogue is regenerated |
 | Phocinae figures (21.0 ms (RTX 5090) / 1.64 s / 0.906 / 0.848 / flip150 0.0200 · flip400 0.0217 / ECE 0.2519 / τ=0.6 → 45.0% escalate, −55.0% LLM calls, kept-subset 0.9936) | README § Phocinae | a Phocinae release re-benchmarks |
 
 **Never** restate an authoritative figure in the intro, in a round, or in the Chinese block. The
