@@ -451,10 +451,10 @@ of their own (measured 2026-10-14).
 
 Fifty-three checkers published 2026-10-08, all Apache-2.0, all carrying SLSA provenance on npm.
 Each reads one register, ledger or record set against a **versioned rule pack** and returns the differences
-for a human to review — none of them pronounces on compliance, liability or clinical correctness. The packs
-hold **408 rules; 163 of them have no verbatim clause text obtained**, and each such rule is labelled that way
-rather than paraphrasing the clause. A per-repo `check:citations` gate holds every quotation that *was*
-obtained to its own `rules/evidence/` record.
+for a human to review — none of them pronounces on compliance, liability or clinical correctness. A
+per-repo `check:citations` gate holds each quotation to its own `rules/evidence/` record, and the rule
+packs state how many of their rules have **no verbatim clause text obtained** rather than paraphrasing the
+clause — the per-domain counts are on the [checker index](https://perrylink.github.io/zh/checkers/).
 
 
 #### 🧾 Tendering & procurement (7)
