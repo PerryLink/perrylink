@@ -451,9 +451,10 @@ of their own (measured 2026-10-14).
 
 Fifty-three checkers published 2026-10-08, all Apache-2.0, all carrying SLSA provenance on npm.
 Each reads one register, ledger or record set against a **versioned rule pack** and returns the differences
-for a human to review — none of them pronounces on compliance, liability or clinical correctness. Every rule
-cites the clause it rests on, and a per-repo `check:citations` gate holds each quotation to its own
-`rules/evidence/` record, so a rule cannot quietly cite something it cannot show.
+for a human to review — none of them pronounces on compliance, liability or clinical correctness. The packs
+hold **408 rules; 163 of them have no verbatim clause text obtained**, and each such rule is labelled that way
+rather than paraphrasing the clause. A per-repo `check:citations` gate holds every quotation that *was*
+obtained to its own `rules/evidence/` record.
 
 
 #### 🧾 Tendering & procurement (7)
@@ -618,9 +619,11 @@ downloads point endpoint, three names answering no figure; **[dshfind](https://d
 across the 8 family plugins it currently has a download figure for — dshfind reports rounded tiers, so that is a floor
 rather than a total
 - **DSH Desktop Market** — add the catalog source
-`https://cdn.jsdelivr.net/gh/PerryLink/dsh-catalog@main/deploy/catalog-source.json` under Market → Sources to browse the family
-in-app (the `perrylink-dsh-catalog.perrylink.workers.dev` address this used to give answers `HTTP 000` on networks
-that interfere with `*.workers.dev`, so it now points at the same file over a CDN with mainland nodes); **MCP Registry** — three servers, all published from their release workflows over GitHub OIDC: `dsh-cert-mcp`,
+`https://cdn.jsdelivr.net/gh/PerryLink/dsh-catalog@main/deploy/artifacts/v1/plugins.json` under Market → Sources
+to browse the family in-app (96 packages, catalogue generated 2026-10-13; the `catalog-source.json` manifest in
+the same directory is a template whose `endpoint` is still the `replace-with-deploy-origin.invalid`
+placeholder, and the `perrylink-dsh-catalog.perrylink.workers.dev` address before it answered `HTTP 000` on
+networks that interfere with `*.workers.dev`); **MCP Registry** — three servers, all published from their release workflows over GitHub OIDC: `dsh-cert-mcp`,
 `jevcore-mcp` and `laya-mcp`
 - **GitHub Actions** — [dsh-github](https://github.com/PerryLink/dsh-github) and
 [dsh-test-drive](https://github.com/PerryLink/dsh-test-drive) also ship composite actions, so they install as `uses:
