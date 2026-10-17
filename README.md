@@ -72,126 +72,71 @@ proposals are deliberately not listed. The third column names the project's owne
 does not say whether that is a company, a standards body or one person.*
 
 **★ 1,000+ — named individually, as the rule requires, each carrying the party that owns the project.**
-Thirty-three external repos above a thousand stars carry merged work (★ re-measured 2026-10-16 for every row, and the merge dates below name the
-merge each row rests on), and the two newest landed on the same day, 79 minutes apart:
-`modelcontextprotocol/go-sdk` merged 2026-10-16T08:56:34Z — the new row this round — and `cordiverse/cordis`
-merged 2026-10-16T07:37:20Z. Before those the
-newest was `koishijs/koishi` — merged 2026-10-08T12:13:06Z by its maintainer `shigma`, who found and fixed
-a regression in this account's own patch before merging it, and the first `koishijs` row this table has
-carried. It is the second row to arrive inside a day: before it `NVIDIA/NeMo-Agent-Toolkit` merged
-2026-10-08T00:10:02Z by NVIDIA's `rapids-bot` after maintainer `willkill07` issued `/merge` — the first
-NVIDIA row this table carried — and before that `vllm-project/aibrix` merged 2026-10-07T11:18:42Z,
-`bytedance/deer-flow` 2026-10-07T10:22:16Z and `apple/embedding-atlas` 2026-10-06T16:30:51Z, and before
-those `Tencent/BrowserSkill` had held the position since 2026-10-06T13:45:15Z, `awslabs/mcp` for the
-fifteen hours before that and `docker/docker-agent` for the ten before that; `ruvnet/ruflo` and
-`walkinglabs/learn-harness-engineering` entered the ten days before those, and `punkpeye/fastmcp` has
-carried its merge since 2026-09-24 and was missing from the round before.
-Fifteen of those rows belong to a company or a well-known project organization — Amazon Web Services, Apple,
-ByteDance, Docker, NVIDIA, Reactive Resume, DeepSeek, cordiverse, koishijs, Tencent, the vLLM project, the
-`txtai` project of NeuML, and the ACP project that Zed and JetBrains jointly govern, of which Tencent and the
-ACP project take two rows each; the other eighteen rows are catalog repos, small community orgs and one-person
-projects, and the column says so  rather than letting the account name imply a company. **One row was added in the round to 2026-10-16**:
-`modelcontextprotocol/go-sdk`, whose merge landed 2026-10-16T08:56:34Z. Four merges arrived in that window and
-the table moves by one row, because the other three are in repositories it already carries. The new row is also
-what moved the credited count, from 64 to 66. **One row was replaced in this
-round**: the account had been listed under `Anil-matcha/awesome-vibecoded-saas`, which holds no merged pull
-request of ours at all and has since fallen to 8 stars, while the catalog the merge actually belongs to is
-`Anil-matcha/awesome-agent-apis` (1,056★, one merged pull request, and a commit of ours on its `main`). Both
-are by the same maintainer, which is how the substitution went unnoticed:
+Thirty-three external repos above a thousand stars carry merged work, ★ re-measured 2026-10-17 for
+every row. Fifteen of those rows belong to a company or a well-known project organization — Amazon Web
+Services, Apple, ByteDance, Docker, NVIDIA, Reactive Resume, DeepSeek, cordiverse, koishijs, Tencent, the
+vLLM project, the `txtai` project of NeuML, and the ACP project that Zed and JetBrains jointly govern, of
+which Tencent and the ACP project take two rows each; the other eighteen rows are catalog repos, small
+community orgs and one-person projects, and the column says so rather than letting the account name imply
+a company.
 
 | Repository | ★ | 项目归属方 |
 |---|---|---|
-| [deer-flow](https://github.com/bytedance/deer-flow) | 83,956 | **字节跳动 ByteDance** — the official `bytedance` org (deerflow.tech); a one-line portability fix in a blocking-IO test merged 2026-10-07T10:22:16Z by `WillemJiang`, and now the largest row in this table |
-| [ruflo](https://github.com/ruvnet/ruflo) | 75,494 | ruvnet (rUv / Reuven Cohen) — individual maintainer; a 75k★ agent harness on a personal account, not a company repo, and the largest row here that is not owned by a company |
-| [reactive-resume](https://github.com/reactive-resume/reactive-resume) | 44,391 | `reactive-resume` org — independent open-source project (rxresu.me) |
-| [laya](https://github.com/NandhaKishorM/laya) | 33,147 | NandhaKishorM — individual maintainer; the repo was created 2026-09-18 |
-| [learn-harness-engineering](https://github.com/walkinglabs/learn-harness-engineering) | 19,951 | `walkinglabs` community org — the harness-engineering tutorial site |
-| [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) | 18,997 | `awesome-dsh-plugin` org — community catalog, no company behind it |
+| [deer-flow](https://github.com/bytedance/deer-flow) | 84,003 | **字节跳动 ByteDance** — the official `bytedance` org (deerflow.tech); a one-line portability fix in a blocking-IO test merged 2026-10-07T10:22:16Z by `WillemJiang`, and now the largest row in this table |
+| [ruflo](https://github.com/ruvnet/ruflo) | 75,842 | ruvnet (rUv / Reuven Cohen) — individual maintainer; a 75k★ agent harness on a personal account, not a company repo, and the largest row here that is not owned by a company |
+| [reactive-resume](https://github.com/reactive-resume/reactive-resume) | 44,427 | `reactive-resume` org — independent open-source project (rxresu.me) |
+| [laya](https://github.com/NandhaKishorM/laya) | 33,228 | NandhaKishorM — individual maintainer; the repo was created 2026-09-18 |
+| [learn-harness-engineering](https://github.com/walkinglabs/learn-harness-engineering) | 20,073 | `walkinglabs` community org — the harness-engineering tutorial site |
+| [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) | 19,114 | `awesome-dsh-plugin` org — community catalog, no company behind it |
 | [FlashMLA](https://github.com/deepseek-ai/FlashMLA) | 13,084 | **DeepSeek** — the official `deepseek-ai` org |
 | [txtai](https://github.com/neuml/txtai) | 13,022 | **NeuML** — an independent open-source project (neuml.github.io/txtai), not a company repo; merged 2026-10-11T21:21:02Z by its maintainer `davidmezzetti`, on the third attempt and after he had asked repeatedly, over three pull requests, for the change to be cut down, which it was |
-| [mcp](https://github.com/awslabs/mcp) | 9,782 | **Amazon Web Services (AWS)** — the official `awslabs` org; a one-file UTF-8 fix merged 2026-10-05T22:49:06Z by maintainer `markjschreiber` with two approvals |
-| [Cordis](https://github.com/cordiverse/cordis) | 9,212 | **cordiverse** org; its maintainer Shigma is now at **DeepSeek**, and Cordis is the kernel DeepSeek Harness vendors as `@deepseek-ai/cordis` |
-| [BrowserSkill](https://github.com/Tencent/BrowserSkill) | 9,044 | **腾讯 Tencent** — the official `Tencent` org; merged 2026-10-06T13:45:15Z by collaborator `iuyo5678` with eight checks green |
-| [dsh-web](https://github.com/zhu1090093659/dsh-web) | 8,826 | zhu1090093659 — individual maintainer |
-| [models.dev](https://github.com/anomalyco/models.dev) | 7,265 | `anomalyco` org — the model-catalogue site behind models.dev; merged 2026-10-10T23:11:09Z by `rekram1-node` |
-| [dsh-market](https://github.com/dsh-market/dsh-market) | 6,749 | `dsh-market` org — the community plugin market behind dshmarket.com, not a DeepSeek repo |
-| [koishi](https://github.com/koishijs/koishi) | 6,254 | `koishijs` org — the cross-platform chatbot framework; merged 2026-10-08T12:13:06Z by its maintainer `shigma`, who found and fixed a regression in this account's own patch before merging it |
-| [ouroboros](https://github.com/Q00/ouroboros) | 6,233 | Q00 — individual maintainer (`@zep-us`) |
-| [teamai-cli](https://github.com/Tencent/teamai-cli) | 5,531 | **腾讯 Tencent** — the official `Tencent` org, opensource.tencent.com |
-| [go-sdk](https://github.com/modelcontextprotocol/go-sdk) | 5,234 | the `modelcontextprotocol` org's Go SDK for MCP; new row this round, see the note under the table
-| [aibrix](https://github.com/vllm-project/aibrix) | 5,144 | **the vLLM project** — the official `vllm-project` org behind vLLM; two flaky-test fixes merged 2026-10-06T16:23:08Z and 2026-10-07T11:18:42Z, the second by `googs1025` and the second of the two flaky-test fixes this account has merged there |
+| [mcp](https://github.com/awslabs/mcp) | 9,784 | **Amazon Web Services (AWS)** — the official `awslabs` org; a one-file UTF-8 fix merged 2026-10-05T22:49:06Z by maintainer `markjschreiber` with two approvals |
+| [Cordis](https://github.com/cordiverse/cordis) | 9,222 | **cordiverse** org; its maintainer Shigma is now at **DeepSeek**, and Cordis is the kernel DeepSeek Harness vendors as `@deepseek-ai/cordis` |
+| [BrowserSkill](https://github.com/Tencent/BrowserSkill) | 9,091 | **腾讯 Tencent** — the official `Tencent` org; merged 2026-10-06T13:45:15Z by collaborator `iuyo5678` with eight checks green |
+| [dsh-web](https://github.com/zhu1090093659/dsh-web) | 8,863 | zhu1090093659 — individual maintainer |
+| [models.dev](https://github.com/anomalyco/models.dev) | 7,274 | `anomalyco` org — the model-catalogue site behind models.dev; merged 2026-10-10T23:11:09Z by `rekram1-node` |
+| [dsh-market](https://github.com/dsh-market/dsh-market) | 6,879 | `dsh-market` org — the community plugin market behind dshmarket.com, not a DeepSeek repo |
+| [koishi](https://github.com/koishijs/koishi) | 6,255 | `koishijs` org — the cross-platform chatbot framework; merged 2026-10-08T12:13:06Z by its maintainer `shigma`, who found and fixed a regression in this account's own patch before merging it |
+| [ouroboros](https://github.com/Q00/ouroboros) | 6,236 | Q00 — individual maintainer (`@zep-us`) |
+| [teamai-cli](https://github.com/Tencent/teamai-cli) | 5,537 | **腾讯 Tencent** — the official `Tencent` org, opensource.tencent.com |
+| [go-sdk](https://github.com/modelcontextprotocol/go-sdk) | 5,238 | the `modelcontextprotocol` org's Go SDK for MCP; new row this round, see the note under the table
+| [aibrix](https://github.com/vllm-project/aibrix) | 5,146 | **the vLLM project** — the official `vllm-project` org behind vLLM; two flaky-test fixes merged 2026-10-06T16:23:08Z and 2026-10-07T11:18:42Z, the second by `googs1025` and the second of the two flaky-test fixes this account has merged there |
 | [embedding-atlas](https://github.com/apple/embedding-atlas) | 4,986 | **Apple** — the official `apple` org (apple.github.io/embedding-atlas); a line-ending normalization fix in a release script merged 2026-10-06T16:30:51Z by `donghaoren` |
-| [docker-agent](https://github.com/docker/docker-agent) | 4,545 | **Docker, Inc.** — the official `docker` org; merged 2026-10-05 by maintainer `aheritier` |
-| [agent-client-protocol](https://github.com/agentclientprotocol/agent-client-protocol) | 4,456 | `agentclientprotocol` org — governed jointly by **Zed Industries** and **JetBrains** |
-| [DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) | 4,210 | `omdsh-dev` community org — the DeepSeek Harness sidebar plugin; promoted into this table this round, and the note under it records why it was previously carried as excluded |
+| [docker-agent](https://github.com/docker/docker-agent) | 4,553 | **Docker, Inc.** — the official `docker` org; merged 2026-10-05 by maintainer `aheritier` |
+| [agent-client-protocol](https://github.com/agentclientprotocol/agent-client-protocol) | 4,459 | `agentclientprotocol` org — governed jointly by **Zed Industries** and **JetBrains** |
+| [DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) | 4,222 | `omdsh-dev` community org — the DeepSeek Harness sidebar plugin; promoted into this table this round, and the note under it records why it was previously carried as excluded |
 | [fastmcp](https://github.com/punkpeye/fastmcp) | 3,276 | punkpeye (Frank Fiegel) — individual maintainer at Glama; the TypeScript MCP framework |
-| [deepseek-harness-desktop](https://github.com/dsh-tauri/deepseek-harness-desktop) | 3,085 | `dsh-tauri` community org — self-described non-official and non-commercial, not a DeepSeek repo |
+| [deepseek-harness-desktop](https://github.com/dsh-tauri/deepseek-harness-desktop) | 3,140 | `dsh-tauri` community org — self-described non-official and non-commercial, not a DeepSeek repo |
 | [open5gs](https://github.com/open5gs/open5gs) | 2,773 | the `open5gs` open-source 5G core project — a community project rather than a company repo; promoted into this table this round, and the note under it records why |
-| [NeMo-Agent-Toolkit](https://github.com/NVIDIA/NeMo-Agent-Toolkit) | 2,661 | **NVIDIA** — the official `NVIDIA` org; three review rounds with maintainer `willkill07` on making `remove_r1_think_tags` actually remove think blocks, merged 2026-10-08T00:10:02Z by NVIDIA's `rapids-bot` after he issued `/merge` |
-| [claude-agent-acp](https://github.com/agentclientprotocol/claude-agent-acp) | 2,650 | `agentclientprotocol` org — the same jointly-governed org as the row above, a separate repository |
-| [awesome-jev](https://github.com/yibie/awesome-jev) | 2,374 | yibie — individual maintainer, community catalog for Jev; the row the 09-25 round both printed and denied, kept now on the commit the history probe finds |
-| [Agents-Anywhere](https://github.com/anywhere-labs/Agents-Anywhere) | 1,708 | `anywhere-labs` community org — 3 public repos, created 2026-05, dshdesktop.cn; not a company |
+| [NeMo-Agent-Toolkit](https://github.com/NVIDIA/NeMo-Agent-Toolkit) | 2,659 | **NVIDIA** — the official `NVIDIA` org; three review rounds with maintainer `willkill07` on making `remove_r1_think_tags` actually remove think blocks, merged 2026-10-08T00:10:02Z by NVIDIA's `rapids-bot` after he issued `/merge` |
+| [claude-agent-acp](https://github.com/agentclientprotocol/claude-agent-acp) | 2,653 | `agentclientprotocol` org — the same jointly-governed org as the row above, a separate repository |
+| [awesome-jev](https://github.com/yibie/awesome-jev) | 2,385 | yibie — individual maintainer, community catalog for Jev; the row the 09-25 round both printed and denied, kept now on the commit the history probe finds |
+| [Agents-Anywhere](https://github.com/anywhere-labs/Agents-Anywhere) | 1,724 | `anywhere-labs` community org — 3 public repos, created 2026-05, dshdesktop.cn; not a company |
 | [dsh-plugin-radar](https://github.com/AdamPlatin123/dsh-plugin-radar) | 1,475 | AdamPlatin123 — individual maintainer, catalog is a generated artifact |
-| [awesome-deepseek-harness](https://github.com/0xsline/awesome-deepseek-harness) | 1,188 | 0xsline — individual maintainer, community catalog |
-| [awesome-agent-apis](https://github.com/Anil-matcha/awesome-agent-apis) | 1,056 | Anil Chandra Naidu Matcha — individual maintainer, community catalog
+| [awesome-deepseek-harness](https://github.com/0xsline/awesome-deepseek-harness) | 1,196 | 0xsline — individual maintainer, community catalog |
+| [awesome-agent-apis](https://github.com/Anil-matcha/awesome-agent-apis) | 1,057 | Anil Chandra Naidu Matcha — individual maintainer, community catalog
 
 **The rest of the contributor set** is the community catalog layer rather than upstream projects:
 **34 further repositories**, DSH plugin directories and small community projects
 ([dsh-handbook](https://github.com/Electricitysheep/dsh-handbook),
 [imsai-sh's list](https://github.com/imsai-sh/awesome-deepseek-harness-plugins), which alone took 41
 merges, and [the Jev gallery](https://github.com/OmniJev/awesome-jev-gallery), among them) — the catalogs ingest the family and carry no company owner, so they are named here
-only in aggregate. **66 external repositories carry at least one merged pull request of ours, and every one of them also
-carries a commit attributed to this account on its default branch; 360 merges were counted inside those 66 —
-re-derived 2026-10-16T16:06:02Z from this account's own merged pull requests, so 360 is exact rather than a floor over a
+only in aggregate. **67 external repositories carry at least one merged pull request of ours, and every one of them also
+carries a commit attributed to this account on its default branch; 364 merges were counted inside those 67 —
+re-derived 2026-10-17T13:21:42Z from this account's own merged pull requests, so 364 is exact rather than a floor over a
 probed subset. The other two, [phocinae-server](https://github.com/Phocinae/phocinae-server) and
 [deepseek-desktop](https://github.com/zcx960/deepseek-desktop), each hold a commit of this account and no
 merged pull request at all, so neither carries a merge and they are named only for that reason. One further repository took **32 more** of our merged pull requests **without**
 crediting a commit to this account on its default branch —
 [SihanTeng's list](https://github.com/SihanTeng/awesome-deepseek-harness-plugins), which is
 the case the rule at the top of this section was written about, so it does not size the contributor set.
-The round before last moved one repository the other way:
-[dsh-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) merged
-[#843](https://github.com/omdsh-dev/DSH-better-sidebar/pull/843) on 2026-10-04 and was carried above as
-carrying no commit of ours on `main`; it now does, a `docs(catalog)` commit on `main` authored by this
-account under its public address rather than its `noreply` one, so it counts as credited, its single
-merge counts inside the 360, and it has accordingly been promoted into the table above. 360 + 32 = the
-**392 merged pull requests** this account has outside `PerryLink/*`, concentrated in **67 repositories**;
-a further **136 are open across 88 repositories** as of 2026-10-16T17:05:00Z and are deliberately not counted here.
+**364 + 32 = the 396 merged pull requests** this account has outside `PerryLink/*`, concentrated in
+**68 repositories**; a further **124 are open across 91 repositories** as of 2026-10-17T13:21:42Z and are
+deliberately not counted here.
 
-**The round to 2026-10-15T10:14:33Z added three merges, all of them upstream fixes in this list already.**
-Four pull requests in [`cordiverse/cordis`](https://github.com/cordiverse/cordis) were merged by its maintainer
-Shigma on 2026-10-14 — [`#198`](https://github.com/cordiverse/cordis/pull/198) at 05:17:57Z, [`#200`](
-https://github.com/cordiverse/cordis/pull/200) at 05:52:37Z, [`#197`](
-https://github.com/cordiverse/cordis/pull/197) at 06:30:51Z and [`#199`](
-https://github.com/cordiverse/cordis/pull/199) at 08:28:26Z — and `#197` is the one that closes a Windows
-defect. Two of them had already landed before the previous snapshot was taken, which is why the totals move by
-three rather than by four. The merged commits are authored by this account (GitHub's web flow is the committer),
-so `cordis` now carries five commits of ours on its default branch rather than one. One of them was retitled on
-merge: `#199` went in as `feat(create)` rather than the `fix(create)` it was opened as.
-
-**#2556 was closed, which is why the open count moved down by one in the same round.** That pull request made
-the oracle harness survive an exception whose every rendering path raises; `f24672de` (2026-10-14T10:02:16Z)
-landed the same fix upstream and closed #2555 with it, so the pull request was redundant rather than wrong. The
-two hostile-exception cases it added were re-run against current `main` before closing and both are decided
-there. Its branch was also in conflict with `main` over the region `UNRENDERABLE` was added to.
-
-**The round to 2026-10-14T06:05:00Z moved the merged set from 351 to 353.** Two merges arrived after the
-previous derivation, both from this account's own pull requests: [`NandhaKishorM/laya#1179`](
-https://github.com/NandhaKishorM/laya/pull/1179), merged 2026-10-14T04:57:15Z, pins the two batch-path hook cases
-that could still be got wrong, taking the `laya` ledger to **47 merged** of the **51 opened** there; and
-[`cordiverse/cordis#198`](https://github.com/cordiverse/cordis/pull/198), merged 2026-10-14T05:17:57Z, makes the
-repository's lint script lint its TypeScript sources, so the kernel DeepSeek Harness vendors now holds **two**
-merged pull requests of ours rather than one. Both repositories were already credited and neither crosses the
-thousand-star line, so the table keeps 32 rows and only the totals move. The credited set grows by two only
-because this derivation probed further than the last one did and found
-[deepseek-desktop](https://github.com/zcx960/deepseek-desktop) carrying a commit of this account with no pull
-request ever opened against it — the second such repository, after `phocinae-server`.
-
-**The round to 2026-10-13T12:37Z moved the merged count by 1 and nothing else** — one merge arrived,
-[`pan17/dsh-wechat#11`](https://github.com/pan17/dsh-wechat/pull/11), merged 2026-10-13T11:51:58Z by the
-maintainer `pan17`: 29 files, a plugin-side feature release rather than a listing entry. The credited set
-stayed at 64 and the table at 31 rows, because that repository was already credited and already above the
-thousand-star line, so that round moved a number without moving a row.
+Each re-derivation, the merges that arrived between them, the two repositories that changed sides and
+the pull request this account closed after upstream fixed the same thing are recorded round by round in
+[`CHANGELOG.md`](CHANGELOG.md); this page carries the current figures and none of that history.
 
 **laya** — [NandhaKishorM/laya](https://github.com/NandhaKishorM/laya) — **47 merged pull requests of
 the 51 this account has opened there** (re-measured 2026-10-14 over all 964 pull requests the repository
@@ -293,17 +238,16 @@ predict lifecycle — the maintainer's note says explicitly that it was not clos
 **Official harness repo** — it does not accept external pull requests, so that line runs through issues, Discussions
 (the Show Your Plugins! post [#6104](https://github.com/deepseek-ai/deepseek-harness/discussions/6104)) and the plugin
 ecosystem instead — while the wider `deepseek-ai` org is open to fixes, and the account now proposes them at the
-systems layer rather than only in its catalogs: of the **20 pull requests it has opened across that org, FlashMLA
-[#224](https://github.com/deepseek-ai/FlashMLA/pull/224) remains the only one merged**, and **14 are open**, 12 of
-them code fixes carrying a reproduction across ten repositories — [DeepEP](https://github.com/deepseek-ai/DeepEP)
-three, [FlashMLA](https://github.com/deepseek-ai/FlashMLA) and
+systems layer rather than only in its catalogs: of the **22 pull requests it has opened across that org, FlashMLA
+are open** across eleven repositories — [TileKernels](https://github.com/deepseek-ai/TileKernels) three,
+[DeepEP](https://github.com/deepseek-ai/DeepEP) and
 [deepseek-recipe](https://github.com/deepseek-ai/deepseek-recipe) two each, and one apiece in
+[FlashMLA](https://github.com/deepseek-ai/FlashMLA),
 [DeepGEMM](https://github.com/deepseek-ai/DeepGEMM), [3FS](https://github.com/deepseek-ai/3FS),
-[TileKernels](https://github.com/deepseek-ai/TileKernels),
 [DeepSeek-MoE](https://github.com/deepseek-ai/DeepSeek-MoE),
 [DeepSeek-Prover-V1.5](https://github.com/deepseek-ai/DeepSeek-Prover-V1.5),
-[DeepJIT](https://github.com/deepseek-ai/DeepJIT) and [DeepSelect](https://github.com/deepseek-ai/DeepSelect) — the
-other two are catalog additions.
+[DeepJIT](https://github.com/deepseek-ai/DeepJIT) and [DeepSelect](https://github.com/deepseek-ai/DeepSelect) —
+fourteen of them code fixes, and the fifteenth a catalog addition.
 
 ## 📦 The rest of the family
 
