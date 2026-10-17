@@ -14,6 +14,58 @@ and `dsh-laya` were introduced by name.
 
 ---
 
+## 2026-10-17
+
+- **Live counters re-measured 2026-10-17T13:21:42Z.** The external contributor set reads **67 repositories
+  carrying at least one merged pull request of ours, 364 merges inside those 67** (was 66 / 360), and
+  **396 merged outside `PerryLink/*` across 68 repositories** (was 392 / 67); a further **124 are open
+  across 91 repositories** (was 136 across 88). Four merges arrived since the last derivation:
+  [`yibie/awesome-autoresearch#11`](https://github.com/yibie/awesome-autoresearch/pull/11), merged
+  2026-10-17T08:38:41Z by `yibie`, which is the **67th** repository — a 783★ catalog, so it joins the
+  aggregate bucket rather than the table — and three more in
+  [`awesome-dsh-plugin/awesome-dsh-plugin`](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin), which
+  takes that row from 44 merges to 47 and was already in the table.
+- **Every star value re-measured 2026-10-17T13:21:42Z.** 27 of the 33 rows moved; the largest were
+  `ruvnet/ruflo` +348, `dsh-market` +130 and `walkinglabs/learn-harness-engineering` +122. One row fell:
+  `NVIDIA/NeMo-Agent-Toolkit` 2,661 -> 2,659. The set of rows did not change — no repository crossed the
+  thousand-star line and none fell below it.
+- **The `deepseek-ai` org reads 22 pull requests opened, 1 merged, 15 open** (was 20 / 1 / 14). The open
+  fifteen sit in eleven repositories: TileKernels three, DeepEP and deepseek-recipe two each, and one
+  apiece in FlashMLA, DeepGEMM, 3FS, DeepSeek-MoE, DeepSeek-Prover-V1.5, DeepJIT and DeepSelect; fourteen
+  of the fifteen are code fixes and the fifteenth a catalog addition.
+- **The README no longer carries round narratives.** The five that were still inline — two of which were
+  duplicates of rounds already recorded here — moved into this file, per the rule at its top.
+
+## 2026-10-16
+
+- **One row was added in the round to 2026-10-16**:
+  `modelcontextprotocol/go-sdk`, whose merge landed 2026-10-16T08:56:34Z. Four merges arrived in that window and
+  the table moves by one row, because the other three are in repositories it already carries. The new row is also
+  what moved the credited count, from 64 to 66. **One row was replaced in this
+  round**: the account had been listed under `Anil-matcha/awesome-vibecoded-saas`, which holds no merged pull
+  request of ours at all and has since fallen to 8 stars, while the catalog the merge actually belongs to is
+  `Anil-matcha/awesome-agent-apis` (1,056★, one merged pull request, and a commit of ours on its `main`). Both
+  are by the same maintainer, which is how the substitution went unnoticed.
+
+## 2026-10-15
+
+- **The round to 2026-10-15T10:14:33Z added three merges, all of them upstream fixes in this list already.**
+  Four pull requests in [`cordiverse/cordis`](https://github.com/cordiverse/cordis) were merged by its maintainer
+  Shigma on 2026-10-14 — [`#198`](https://github.com/cordiverse/cordis/pull/198) at 05:17:57Z, [`#200`](
+  https://github.com/cordiverse/cordis/pull/200) at 05:52:37Z, [`#197`](
+  https://github.com/cordiverse/cordis/pull/197) at 06:30:51Z and [`#199`](
+  https://github.com/cordiverse/cordis/pull/199) at 08:28:26Z — and `#197` is the one that closes a Windows
+  defect. Two of them had already landed before the previous snapshot was taken, which is why the totals move by
+  three rather than by four. The merged commits are authored by this account (GitHub's web flow is the committer),
+  so `cordis` now carries five commits of ours on its default branch rather than one. One of them was retitled on
+  merge: `#199` went in as `feat(create)` rather than the `fix(create)` it was opened as.
+
+  **#2556 was closed, which is why the open count moved down by one in the same round.** That pull request made
+  the oracle harness survive an exception whose every rendering path raises; `f24672de` (2026-10-14T10:02:16Z)
+  landed the same fix upstream and closed #2555 with it, so the pull request was redundant rather than wrong. The
+  two hostile-exception cases it added were re-run against current `main` before closing and both are decided
+  there. Its branch was also in conflict with `main` over the region `UNRENDERABLE` was added to.
+
 ## 2026-10-14
 
 - **Live counters re-measured 2026-10-14 except where a line says otherwise.** The family reads **97 in the
