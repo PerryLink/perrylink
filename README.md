@@ -69,7 +69,7 @@ One command installs the core family — **[dsh-kit](https://github.com/PerryLin
 
 The family now publishes **public evidence and scores** instead of another star ranking:
 
-- **[dsh-score](https://github.com/PerryLink/dsh-attention-index)** — per-surface evidence registry, badges, bench runner and contribution receipts. Live: <https://perrylink.github.io/dsh-attention-index/>. Prior-only rows are labelled; paired `with` / `without` bench results are the only path to `measured`. Repo rename to `dsh-score-index` pending.
+- **[dsh-score](https://github.com/PerryLink/dsh-attention-index)** — per-surface evidence registry, badges, bench runner and contribution receipts. Live: <https://perrylink.github.io/dsh-attention-index/>. Prior-only rows are **E0 / unrated**; paired `with` / `without` bench results are the only path to a quality slot. Repo rename to `dsh-score-index` pending.
 - **[dsh-community-bench](https://github.com/PerryLink/dsh-community-bench)** — the in-app consumer: **Settings → Plugins → Community Bench**. It reads the public registry; it does **not** compute a local score.
 
 ```sh
