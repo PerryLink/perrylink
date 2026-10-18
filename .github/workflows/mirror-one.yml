@@ -1,0 +1,41 @@
+name: mirror-one
+
+# Manual mirror for one PerryLink repo to Gitee. The full gitee-sync workflow
+# walks the whole roster; this one is for a newly created repo that must be
+# seeded before the next full run (or for a targeted re-sync).
+on:
+  workflow_dispatch:
+    inputs:
+      repo:
+        description: 'Repo name under PerryLink (for example dsh-community-bench)'
+        required: true
+        type: string
+
+permissions: {}
+
+jobs:
+  gitee:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Configure SSH for Gitee
+        env:
+          GITEE_SSH_KEY: ${{ secrets.GITEE_SSH_KEY }}
+        run: |
+          set -euo pipefail
+          mkdir -p ~/.ssh
+          printf '%s\n' "$GITEE_SSH_KEY" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan gitee.com >> ~/.ssh/known_hosts
+
+      - name: Mirror one repo
+        env:
+          REPO: ${{ inputs.repo }}
+        run: |
+          set -euo pipefail
+          case "$REPO" in
+            (*[!A-Za-z0-9._-]*|'') echo "invalid repo name: $REPO" >&2; exit 1 ;;
+          esac
+          work="$(mktemp -d)"
+          git clone --quiet "https://github.com/PerryLink/$REPO.git" "$work/$REPO"
+          cd "$work/$REPO"
+          git push "git@gitee.com:perrylink/$REPO.git" "HEAD:refs/heads/main" --tags
