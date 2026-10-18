@@ -29,7 +29,7 @@ absent. The two sanctioned exceptions are marked.
 | dshfind aggregate tier | README § Where the plugins live | when dshfind re-renders |
 | dsh host corridor / node engine / license | README badge row (each links to the file it is read from) | when the declared range or the engines change |
 | external contributor repos / merges / above-1,000★ | README § Upstream, the "rest of the contributor set" paragraph | on re-derivation |
-| The 33-row star table | README § Upstream (the table itself) | on re-derivation |
+| The 34-row star table | README § Upstream (the table itself) | on re-derivation |
 | laya merged / opened / open / closed | README § Upstream, the laya paragraph | on re-derivation |
 | `deepseek-ai` totals | README § Upstream, the "Official harness repo" paragraph | on re-derivation |
 | The 1,000★ threshold and the attribution rule | README § Upstream, the lead paragraph | rule change only |
@@ -62,9 +62,18 @@ The node id for this account is `MDQ6VXNlcjI1NTY2NTkwMA==` (user id 255665900).
 
 - **`SihanTeng/awesome-deepseek-harness-plugins`** took **32** of this account's merged pull
   requests and credits **no** commit on its default branch.
-- **`omdsh-dev/DSH-better-sidebar`** took **1** merge (2026-10-04) with no commit of ours on `main`.
+- **`kellyjonbrazil/jc`** took **1** merge
+  ([#783](https://github.com/kellyjonbrazil/jc/pull/783), 2026-10-17T21:51:22Z) on its **`dev`** branch;
+  the default branch is **`master`**, whose `defaultBranchRef.target.history(author:{id})` is **0**, so
+  the merge earns nothing. Added 2026-10-18 — the first case that is about *where* a merge landed rather
+  than about the repository withholding credit.
 
 These two exist to answer "your 56 is padded". Removing them turns a rule into a sales pitch.
+
+`omdsh-dev/DSH-better-sidebar` was the second entry here until 2026-10-18, recorded as having merged once
+(2026-10-04) with no commit of ours on `main`. Re-probed that day: `main` carries **1** commit of this
+account, which is why its row sits in the star table at all. It was removed rather than left to age — a
+counter-example that has stopped being true is worse than none.
 
 **A third case was listed here until 2026-10-07 and it was simply wrong.** `MoonshotAI/checkpoint-engine`
 (1,006★) was recorded as having merged a pull request of ours while carrying no commit of ours. Re-probed

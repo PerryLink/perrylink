@@ -14,6 +14,34 @@ and `dsh-laya` were introduced by name.
 
 ---
 
+## 2026-10-18
+
+- **Live counters re-measured 2026-10-18T12:42:47Z.** The external contributor set reads **69 repositories
+  carrying at least one merged pull request of ours and a commit on the default branch, 369 merges inside
+  those 69** (was 67 / 364); **402 merged outside `PerryLink/*` across 71 repositories** (was 396 / 68); a
+  further **157 are open across 124 repositories** (was 124 across 91). Six merges arrived since the last
+  derivation: [`v-modal/awesome-jev-tools#52`](https://github.com/v-modal/awesome-jev-tools/pull/52), a
+  catalog, so it joins the aggregate bucket instead of the table;
+  [`punkpeye/mcp-remote#381`](https://github.com/punkpeye/mcp-remote/pull/381);
+  [`punkpeye/fastmcp#439`](https://github.com/punkpeye/fastmcp/pull/439);
+  [`open5gs/open5gs#4880`](https://github.com/open5gs/open5gs/pull/4880);
+  [`agentclientprotocol/python-sdk#167`](https://github.com/agentclientprotocol/python-sdk/pull/167); and
+  [`kellyjonbrazil/jc#783`](https://github.com/kellyjonbrazil/jc/pull/783), which earns nothing — see the
+  next bullet. The 69 was derived twice, once from the commit-author list probed per repository and once
+  with the `defaultBranchRef.target.history(author:{id})` probe this file records as authoritative; the
+  two agree on all 71 repositories.
+- **A merge is credited only where it lands.** `kellyjonbrazil/jc#783` merged 2026-10-17T21:51:22Z into
+  the project's **`dev`** branch, while its default branch is **`master`**; `master` carries no commit of
+  this account, so the merge earns no credit even though the commit is authored by this account. This is
+  the first counter-example about *where* a merge landed rather than about the repository withholding
+  credit, and it now sits in `INSTRUMENTATION.md` beside `SihanTeng`'s.
+- **`punkpeye/mcp-remote` is the 34th row above a thousand stars** (1,632★), added this round; every star
+  value in the table was re-measured the same day, and 28 of the 33 existing rows moved.
+- **One earlier counter-example retired.** `omdsh-dev/DSH-better-sidebar` was recorded in
+  `INSTRUMENTATION.md` as having merged once without a commit of ours on `main`; re-probed 2026-10-18,
+  `main` carries **1** such commit, which is why the row is in the star table at all. The entry was
+  removed rather than left to age.
+
 ## 2026-10-17
 
 - **Live counters re-measured 2026-10-17T13:21:42Z.** The external contributor set reads **67 repositories
