@@ -199,7 +199,7 @@ jobs:
           repos=(
             DeepJIT deepsec deepseek-harness deepseek-harness-desktop DeepSeek-MoE DeepSeek-Prover-V1.5
             DeepSeek-Reasonix deepseek-recipe DeepSelect deer-flow docs dsh-auto-review dsh-autotier
-            dsh-background-agents DSH-better-sidebar dsh-browser dsh-budget dsh-catalog dsh-cert-mcp
+            dsh-attention-index dsh-background-agents DSH-better-sidebar dsh-browser dsh-budget dsh-catalog dsh-cert-mcp dsh-community-bench
             dsh-checkpoint-rewind dsh-claude-move dsh-click dsh-composer-completion dsh-composer-history
             dsh-data-quality dsh-deep-whale dsh-defend dsh-desktop dsh-doublecheck dsh-draw dsh-fast
             dsh-fund-research dsh-github dsh-industry-research dsh-kit dsh-laya dsh-library dsh-local-ai

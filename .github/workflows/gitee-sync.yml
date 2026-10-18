@@ -60,7 +60,7 @@ jobs:
             dsh-mcp-panel dsh-memento dsh-observe dsh-output-styles dsh-permission-rules \
             dsh-personal-directive dsh-plugin-guide dsh-plugin-kit dsh-research-report \
             dsh-score dsh-session-pin dsh-session-sync dsh-skill-pack-security dsh-talk \
-            dsh-test-drive dsh-translate dsh-reach dsh-catalog dsh-cert-mcp dsh-ticktick \
+            dsh-test-drive dsh-translate dsh-reach dsh-attention-index dsh-catalog dsh-cert-mcp dsh-community-bench dsh-ticktick \
             dsh-autotier dsh-plugin-doctor dsh-kit \
             dsh-plugin-upgrade dsh-team-rooms jevcore pan17/dsh-wechat \
             dsh-aqua-input-check dsh-archive-check dsh-bid-ca-precheck dsh-bid-qual-check \
