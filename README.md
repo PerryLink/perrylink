@@ -65,6 +65,17 @@ One command installs the core family — **[dsh-kit](https://github.com/PerryLin
 | [dsh-permission-rules](https://github.com/PerryLink/dsh-permission-rules) | Claude Code-style declarative allow/deny/ask rules plus a process-level network policy (123★) | `dsh plugin --profile web add dsh-permission-rules` |
 | [dsh-mcp-panel](https://github.com/PerryLink/dsh-mcp-panel) | MCP management console: `/mcp` + Settings tab + trial calls (73★) | `dsh plugin --profile web add dsh-mcp-panel` |
 
+## 🧭 Community Bench — attention for good plugins
+
+The family now publishes a **public, task-conditioned** registry instead of another star ranking:
+
+- **[dsh-attention-index](https://github.com/PerryLink/dsh-attention-index)** — per-surface leaderboard, badges, bench runner and contribution receipts. Live: <https://perrylink.github.io/dsh-attention-index/>. Prior-only rows are labelled; paired `with` / `without` bench results are the only path to `measured`.
+- **[dsh-community-bench](https://github.com/PerryLink/dsh-community-bench)** — the in-app consumer: **Settings → Plugins → Community Bench**. It reads the public registry; it does **not** compute a local score.
+
+```sh
+dsh plugin --profile web add dsh-community-bench
+```
+
 ## 🔧 Upstream & community contributions
 
 *Every repo below is external to `PerryLink/*`; every number is measured, merged work only, and open
