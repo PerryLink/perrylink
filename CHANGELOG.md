@@ -16,6 +16,18 @@ and `dsh-laya` were introduced by name.
 
 ## 2026-10-19
 
+- **Counters re-measured 2026-10-19T12:09Z; the badge row rebuilt around them.** `Tencent/MMKV#1697` merged at
+  10:35Z into `dev`, so the external set is **412 merges across 79 repositories** (was 411 / 78), of which
+  **379 are credited in 77 repositories** and **33 are not: 32 in SihanTeng's list and 1 in MMKV**, whose merge
+  sits on `dev` rather than the default branch `master`; **162 are open across 128** (was 163 / 129). npm was
+  re-measured through registry search, which now enumerates the whole account instead of 47 names: **107 names,
+  1,601 versions, 95 carrying a SLSA provenance attestation on at least one version (75 on the current
+  `latest`)**, and **228,164 downloads** for 2026-09-19..2026-10-18 (was 241,207 for 09-14..10-13). The plugin
+  index serves **114 pages** (53 checkers, 44 plugins and a Chinese section, per its sitemap) and the Market
+  catalogue carries **99 packages**, generated 2026-10-18. `Tencent/MMKV` joins the named table at 18,763★ and
+  every other row's ★ was re-read; the six flagship rows move to 234 / 213 / 214 / 138 / 126 / 77. The badge row
+  grows from 15 to **22** — the account-level badges upstream merges, credited repositories, checkers and npm
+  provenance are new — and the one-command install block leaves the page.
 - **The page is split in two: a front page and a full record.** The README keeps the badges, the six
   flagship plugins, every external repository above 2,500★ and a short retired/frozen note; the long form
   moved into `PROJECTS.md`, which the page links — the star table with its per-row merge narrative, the

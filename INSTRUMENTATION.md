@@ -25,11 +25,12 @@ absent. The two sanctioned exceptions are marked.
 | npm 30-day downloads | README § Where the plugins live | monthly |
 | **npm downloads badge** *(exception)* | README badge row | same |
 | npm names / versions / non-deprecated latest | README § Where the plugins live | monthly |
-| npm provenance — **state the metric**: 39 names carry SLSA provenance on their non-deprecated `latest`; 45 carry it on at least one version; 45 on their `latest` whatever its state (measured 2026-10-07) | README § Where the plugins live | monthly |
+| npm provenance — **state the metric**: **75** names carry SLSA provenance on their non-deprecated `latest`; **95** carry it on at least one version; the twelve with none anywhere are named in the page (measured 2026-10-19, over the 107 names registry search now enumerates) | README § Where the plugins live | monthly |
 | dshfind aggregate tier | README § Where the plugins live | when dshfind re-renders |
 | dsh host corridor / node engine / license | README badge row (each links to the file it is read from) | when the declared range or the engines change |
 | external contributor repos / merges / above-1,000★ | README § Upstream, the "rest of the contributor set" paragraph | on re-derivation |
-| The 36-row star table (30 listed, 6 collapsed under it) | README § Upstream (the table itself) | on re-derivation |
+| The named star table — **34 rows above 2,500★**, and the seven between 1,000★ and 2,500★ that live in `PROJECTS.md` | README § Upstream (the table itself) | on re-derivation |
+| The long form — upstream narrative, the 94-row roster, the retired/frozen tables, the npm caveats | [`PROJECTS.md`](PROJECTS.md), which the front page links | when the front page is split further |
 | laya merged / opened / open / closed | README § Upstream, the laya paragraph | on re-derivation |
 | `deepseek-ai` totals | README § Upstream, the "Official harness repo" paragraph | on re-derivation |
 | The 1,000★ threshold and the attribution rule | README § Upstream, the lead paragraph | rule change only |
@@ -147,8 +148,25 @@ annotation from GitHub's rendering.
 family it maintains, never one repository.** Measured from each badge's own SVG `width`/`height` at
 the 20px render height, then partitioned into balanced rows under the cap below.
 
-Re-solved 2026-10-08 for **21 badges in four rows**. Every width below was re-measured from each
-badge's own SVG at the 20px render height:
+**Current, re-solved 2026-10-19 for 22 badges in four rows** — every width read from the badge's own
+SVG on that date, and every badge fetched: all 22 answered HTTP 200 except the Zenodo DOI badge, which
+this network cannot reach (it has rendered on the page since 2026-10-05 and its width below is the
+published badge width, not a measurement).
+
+| Row | px | Badges |
+|---|---|---|
+| 1 — reach and counters | 678 | stars (90), followers (112), repos (72), upstream merges 412 (138), credited repos 77 (112), plugins 91 (72), checkers 53 (82) |
+| 2 — npm and stack | 720 | npm 107 names (123), npm downloads 30d (170), npm provenance 95/107 (152), license (120), node (155) |
+| 3 — quality and registry | 668 | dsh host corridor (146), OpenSSF Scorecard (136), Glama (110), certified (132), MCP Registry (144) |
+| 4 — index, mirror, feeds | 787 | plugin index 114 pages (144), Gitee (101), dshfind (256), Desktop Market source (172), Zenodo DOI (~114) |
+
+Four hand-written badges joined on that date — `upstream merges`, `credited repos`, `checkers` and
+`npm provenance` — because the account-level facts the page argues from had no badge of their own,
+while three of the row-2/3 badges describe a single repository. The scope rule above still applies to
+`OpenSSF Scorecard` and `certified` only as far as their `alt` text says which repository they name.
+
+Re-solved 2026-10-08 for **21 badges in four rows** (historical). Every width below was re-measured from
+each badge's own SVG at the 20px render height:
 
 | Row | px | Badges |
 |---|---|---|
