@@ -287,7 +287,7 @@ repositories this page names: **96 declare the contract and 6 do not** —
 [dsh-plugin-certification](https://github.com/PerryLink/dsh-plugin-certification) (the certification registry, whose
 MCP server publishes from [dsh-cert-mcp](https://github.com/PerryLink/dsh-cert-mcp) instead), plus
 [jevcore](https://github.com/PerryLink/jevcore) (no `dsh.bundle`; only its `jevcore-dsh` workspace member is a plugin)
-and [laya-mcp](https://github.com/PerryLink/laya-mcp) (an MCP sidecar, not a plugin) and
+and [laya-mcp](https://github.com/PerryLink/laya-mcp) (an MCP sidecar, not a plugin), and
 [dsh-attention-index](https://github.com/PerryLink/dsh-attention-index) (a data index, no `dsh.bundle.patch`). The third-party
 [pan17/dsh-wechat](https://github.com/pan17/dsh-wechat) carries a plugin row but is not one of them: 102 + 1 = the 103
 repos this page names. A naive scan of the account finds two more than the 99 — the retired
