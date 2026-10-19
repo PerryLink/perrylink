@@ -62,18 +62,20 @@ The node id for this account is `MDQ6VXNlcjI1NTY2NTkwMA==` (user id 255665900).
 
 - **`SihanTeng/awesome-deepseek-harness-plugins`** took **32** of this account's merged pull
   requests and credits **no** commit on its default branch.
-- **`kellyjonbrazil/jc`** took **1** merge
-  ([#783](https://github.com/kellyjonbrazil/jc/pull/783), 2026-10-17T21:51:22Z) on its **`dev`** branch;
-  the default branch is **`master`**, whose `defaultBranchRef.target.history(author:{id})` is **0**, so
-  the merge earns nothing. Added 2026-10-18 — the first case that is about *where* a merge landed rather
-  than about the repository withholding credit.
 
-These two exist to answer "your 56 is padded". Removing them turns a rule into a sales pitch.
+That one exists to answer "your 56 is padded". Removing it turns a rule into a sales pitch.
 
 `omdsh-dev/DSH-better-sidebar` was the second entry here until 2026-10-18, recorded as having merged once
 (2026-10-04) with no commit of ours on `main`. Re-probed that day: `main` carries **1** commit of this
 account, which is why its row sits in the star table at all. It was removed rather than left to age — a
 counter-example that has stopped being true is worse than none.
+
+`kellyjonbrazil/jc` was the third, added 2026-10-18 and removed 2026-10-19 for the same reason. Its merge
+([#783](https://github.com/kellyjonbrazil/jc/pull/783), 2026-10-17T21:51:22Z) landed on `dev` while the
+default branch is `master`; re-probed 2026-10-19, `master` had advanced to `7e67daf2` on
+2026-10-18T20:39:02Z and `GET /compare/dev...master` returns `ahead_by: 1`, `behind_by: 0`, so `b6f93354`
+is reachable from the default branch and `defaultBranchRef.target.history(author:{id})` returns **1**. It
+now earns credit like any other merge.
 
 **A third case was listed here until 2026-10-07 and it was simply wrong.** `MoonshotAI/checkpoint-engine`
 (1,006★) was recorded as having merged a pull request of ours while carrying no commit of ours. Re-probed
