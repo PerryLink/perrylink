@@ -1,9 +1,9 @@
 # Hi, I'm PerryLink 👋
 
 <!-- Editing note: every figure on this page is measured and dated, and each one has exactly one
-     authoritative site. Read INSTRUMENTATION.md before changing a number -- it holds the values, the
-     probe that produced them, and the rules that keep the page honest. Round narratives live in
-     CHANGELOG.md; this page links to them and carries none. Keep it short: fold, do not delete. -->
+     authoritative site. Read INSTRUMENTATION.md before changing a number. The long form of this page
+     -- the merge-by-merge upstream record, the 94-row plugin roster, the retired/frozen tables and the
+     npm figures with their caveats -- is PROJECTS.md; rounds go to CHANGELOG.md. -->
 
 <p align="center">
 <a href="https://github.com/PerryLink?tab=repositories"><img alt="GitHub stars" src="https://img.shields.io/github/stars/PerryLink?label=stars&affiliations=OWNER&color=24292f"></a>
@@ -29,23 +29,18 @@
 <a href="https://doi.org/10.5281/zenodo.22901853"><img alt="Zenodo DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.22901853.svg"></a>
 </p>
 
-Independent open-source developer in Beijing — **not affiliated with DeepSeek, and not a DeepSeek
-employee**. I contribute fixes upstream to other people's projects and maintain a third-party plugin
-family for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness): 91 actively maintained
-Apache-2.0 plugins in a 103-repo family — security, workflows, research, messaging bridges,
-developer experience, and since 2026-10-08 a set of 53 compliance checkers that read a register or
-record set against a versioned rule pack and report the differences — plus the DSH Desktop Market
-catalog, a plugin-certification registry and the dsh-plugin-doctor CI checker.
+I fix other people's projects, and I maintain a plugin family for
+[DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness). Independent open-source developer in
+Beijing — not affiliated with DeepSeek, and not a DeepSeek employee.
 
-There is one page per plugin at **[perrylink.github.io](https://perrylink.github.io/)** — 111 static
-pages covering all 96 published entries (53 checkers + 43 plugins), plus a page for choosing which
-checker fits a given register. Every page is complete in the served HTML with no JavaScript rendering
-it, so a reader who arrives from a search result or an assistant's citation sees the text rather than a
-loading state.
-
-## 🦭 Phocinae — a 144.3M typed decision model
-
-Separate from the harness: I train small language models. **[Phocinae-Largha-150M-v1](https://github.com/Phocinae/Phocinae-Largha-150M-v1)** (Apache-2.0) is a typed decision model — no text generation; one forward pass returns a verdict per question with calibrated confidence. GPU **21.0 ms** (RTX 5090) p50 per decision, CPU-only **1.64 s per case**; English typed-decisions **0.906** (400 cases / 2,000 decisions, re-measured 2026-10-09), Chinese (machine-translated eval set) 0.848. With a τ=0.6 escalate gate, **55.0%** of agent decisions stay local (79.6% at τ=0.5) and kept-subset accuracy moves 0.906 → **0.9936** (+0.0876) — the gate makes the system better, not just cheaper. Weights on [Hugging Face](https://huggingface.co/Phocinae/Phocinae-Largha-150M-v1) and [ModelScope](https://modelscope.cn/models/PerryLink/Phocinae-Largha-150M-v1); server `pip install phocinae-server`, DSH bundle `npm i dsh-phocinae`. Reproduction ships with the repo: seeds, row-set hashes, environment and eval scripts.
+**Upstream** — 411 merged pull requests in 78 repositories that are not mine, from AWS, Apple, Docker,
+Microsoft, NVIDIA, Redis, Tencent and the vLLM project down to one-person projects. **The family** — 91
+actively maintained Apache-2.0 plugins in a 103-repo family: security, workflows, research, messaging
+bridges, developer experience, and since 2026-10-08 a set of 53 compliance checkers that read a register
+or record set against a versioned rule pack and report the differences. Every plugin has one page at
+**[perrylink.github.io](https://perrylink.github.io/)** — 111 static pages, complete in the served HTML
+with no JavaScript rendering them, so a reader who arrives from a search result sees the text rather than
+a loading state.
 
 ## ▶ Start here
 
@@ -53,7 +48,7 @@ One command installs the core family — **[dsh-kit](https://github.com/PerryLin
 
 ```sh
 ./install-all.sh web              # Linux / macOS
-.\install-all.ps1 -Profile web   # Windows PowerShell
+.\install-all.ps1 -Profile web    # Windows PowerShell
 ```
 
 | Plugin | What it gives you | Install |
@@ -65,9 +60,13 @@ One command installs the core family — **[dsh-kit](https://github.com/PerryLin
 | [dsh-permission-rules](https://github.com/PerryLink/dsh-permission-rules) | Claude Code-style declarative allow/deny/ask rules plus a process-level network policy (123★) | `dsh plugin --profile web add dsh-permission-rules` |
 | [dsh-mcp-panel](https://github.com/PerryLink/dsh-mcp-panel) | MCP management console: `/mcp` + Settings tab + trial calls (73★) | `dsh plugin --profile web add dsh-mcp-panel` |
 
+## 🦭 Phocinae — a 144.3M typed decision model
+
+Separate from the harness: I train small language models. **[Phocinae-Largha-150M-v1](https://github.com/Phocinae/Phocinae-Largha-150M-v1)** (Apache-2.0) is a typed decision model — no text generation; one forward pass returns a verdict per question with calibrated confidence. GPU **21.0 ms** (RTX 5090) p50 per decision, CPU-only **1.64 s per case**; English typed-decisions **0.906** (400 cases / 2,000 decisions, re-measured 2026-10-09), Chinese (machine-translated eval set) 0.848. With a τ=0.6 escalate gate, **55.0%** of agent decisions stay local (79.6% at τ=0.5) and kept-subset accuracy moves 0.906 → **0.9936** (+0.0876) — the gate makes the system better, not just cheaper. Weights on [Hugging Face](https://huggingface.co/Phocinae/Phocinae-Largha-150M-v1) and [ModelScope](https://modelscope.cn/models/PerryLink/Phocinae-Largha-150M-v1); server `pip install phocinae-server`, DSH bundle `npm i dsh-phocinae`. Reproduction ships with the repo: seeds, row-set hashes, environment and eval scripts.
+
 ## 🧭 dsh-score — public evidence for good plugins
 
-The family now publishes **public evidence and scores** instead of another star ranking:
+The family publishes **public evidence and scores** instead of another star ranking:
 
 - **[dsh-score](https://github.com/PerryLink/dsh-attention-index)** — per-surface evidence registry, badges, bench runner and contribution receipts. Live: <https://perrylink.github.io/dsh-attention-index/>. Prior-only rows are **E0 / unrated**; paired `with` / `without` bench results are the only path to a quality slot. Repo rename to `dsh-score-index` pending.
 - **[dsh-community-bench](https://github.com/PerryLink/dsh-community-bench)** — the in-app consumer: **Settings → Plugins → Community Bench**. It reads the public registry; it does **not** compute a local score.
@@ -78,597 +77,154 @@ dsh plugin --profile web add dsh-community-bench
 
 ## 🔧 Upstream & community contributions
 
-*Every repo below is external to `PerryLink/*`; every number is measured, merged work only, and open
-proposals are deliberately not listed. The third column names the project's owner — the account alone
-does not say whether that is a company, a standards body or one person.*
-
-**★ 1,000+ — named individually, as the rule requires, each carrying the party that owns the project.**
-Forty external repos above a thousand stars carry merged work, ★ re-measured 2026-10-19 for
-every row. Nineteen of those rows belong to a company or a well-known project organization — Amazon Web
-Services, Apple, ByteDance, Docker, Microsoft, NVIDIA, Reactive Resume, DeepSeek, the `gofiber` project,
-Redis, ModelScope, cordiverse, koishijs, Tencent, the vLLM project, the `txtai` project of NeuML, and the
-ACP project that Zed and JetBrains jointly govern, of which Tencent and the ACP project take two rows
-each; the other twenty-one rows are catalog repos, small community orgs and one-person projects, and the column says so rather than letting the account name imply
-a company.
+*Every repository below is external to `PerryLink/*`, every row is merged work, and open proposals are
+deliberately not listed. ★ re-measured 2026-10-19 for every row; the third column names the party that
+owns the project, because the account name alone does not say whether that is a company, a standards body
+or one person. Every external repository above 2,500★ that carries merged work is listed.*
 
 | Repository | ★ | 项目归属方 |
 |---|---|---|
-| [deer-flow](https://github.com/bytedance/deer-flow) | 84,119 | **字节跳动 ByteDance** — the official `bytedance` org (deerflow.tech); a one-line portability fix in a blocking-IO test merged 2026-10-07T10:22:16Z by `WillemJiang`, and now the largest row in this table |
-| [ruflo](https://github.com/ruvnet/ruflo) | 76,806 | ruvnet (rUv / Reuven Cohen) — individual maintainer; a 75k★ agent harness on a personal account, not a company repo, and the largest row here that is not owned by a company |
+| [deer-flow](https://github.com/bytedance/deer-flow) | 84,119 | **ByteDance** — the official `bytedance` org |
+| [ruflo](https://github.com/ruvnet/ruflo) | 76,806 | ruvnet (rUv / Reuven Cohen) — individual maintainer |
 | [reactive-resume](https://github.com/reactive-resume/reactive-resume) | 44,524 | `reactive-resume` org — independent open-source project (rxresu.me) |
-| [fiber](https://github.com/gofiber/fiber) | 40,219 | **the gofiber project** — the official `gofiber` org (gofiber.io), the Express-inspired Go web framework; an optional-path-parameter matching fix merged 2026-10-19T08:56:41Z by `ReneWerner87` |
-| [laya](https://github.com/NandhaKishorM/laya) | 33,467 | NandhaKishorM — individual maintainer; the repo was created 2026-09-18 |
+| [fiber](https://github.com/gofiber/fiber) | 40,219 | **the gofiber project** — the official `gofiber` org (gofiber.io), the Express-inspired Go web framework |
+| [laya](https://github.com/NandhaKishorM/laya) | 33,467 | NandhaKishorM — individual maintainer |
 | [learn-harness-engineering](https://github.com/walkinglabs/learn-harness-engineering) | 20,844 | `walkinglabs` community org — the harness-engineering tutorial site |
 | [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) | 19,455 | `awesome-dsh-plugin` org — community catalog, no company behind it |
-| [SkillOpt](https://github.com/microsoft/SkillOpt) | 18,547 | **Microsoft** — the official `microsoft` org; a UTF-8 state-file fix merged 2026-10-18T17:02:48Z |
-| [ioredis](https://github.com/redis/ioredis) | 15,346 | **Redis** — the official `redis` org; the Node.js Redis client, where an auto-pipelining fix merged 2026-10-19T08:09:05Z by `PavelPashov` |
+| [SkillOpt](https://github.com/microsoft/SkillOpt) | 18,547 | **Microsoft** — the official `microsoft` org |
+| [ioredis](https://github.com/redis/ioredis) | 15,346 | **Redis** — the official `redis` org; the Node.js Redis client |
 | [FlashMLA](https://github.com/deepseek-ai/FlashMLA) | 13,090 | **DeepSeek** — the official `deepseek-ai` org |
-| [txtai](https://github.com/neuml/txtai) | 13,027 | **NeuML** — an independent open-source project (neuml.github.io/txtai), not a company repo; merged 2026-10-11T21:21:02Z by its maintainer `davidmezzetti`, on the third attempt and after he had asked repeatedly, over three pull requests, for the change to be cut down, which it was |
-| [mcp](https://github.com/awslabs/mcp) | 9,794 | **Amazon Web Services (AWS)** — the official `awslabs` org; a one-file UTF-8 fix merged 2026-10-05T22:49:06Z by maintainer `markjschreiber` with two approvals |
-| [Cordis](https://github.com/cordiverse/cordis) | 9,257 | **cordiverse** org; its maintainer Shigma is now at **DeepSeek**, and Cordis is the kernel DeepSeek Harness vendors as `@deepseek-ai/cordis` |
-| [BrowserSkill](https://github.com/Tencent/BrowserSkill) | 9,199 | **腾讯 Tencent** — the official `Tencent` org; merged 2026-10-06T13:45:15Z by collaborator `iuyo5678` with eight checks green |
+| [txtai](https://github.com/neuml/txtai) | 13,027 | **NeuML** — the `txtai` project of NeuML, an independent open-source project |
+| [mcp](https://github.com/awslabs/mcp) | 9,794 | **Amazon Web Services (AWS)** — the official `awslabs` org |
+| [Cordis](https://github.com/cordiverse/cordis) | 9,257 | **cordiverse** org — the kernel DeepSeek Harness vendors as `@deepseek-ai/cordis` |
+| [BrowserSkill](https://github.com/Tencent/BrowserSkill) | 9,199 | **Tencent** — the official `Tencent` org |
 | [dsh-web](https://github.com/zhu1090093659/dsh-web) | 9,004 | zhu1090093659 — individual maintainer |
-| [jc](https://github.com/kellyjonbrazil/jc) | 8,694 | kellyjonbrazil (Kelly Brazil) — individual maintainer; a Windows platform-name fix merged 2026-10-17T21:51:22Z and started counting when `master` caught up on 2026-10-18T20:39:02Z |
-| [dsh-market](https://github.com/dsh-market/dsh-market) | 7,370 | `dsh-market` org — the community plugin market behind dshmarket.com, not a DeepSeek repo |
-| [models.dev](https://github.com/anomalyco/models.dev) | 7,302 | `anomalyco` org — the model-catalogue site behind models.dev; merged 2026-10-10T23:11:09Z by `rekram1-node` |
-| [koishi](https://github.com/koishijs/koishi) | 6,259 | `koishijs` org — the cross-platform chatbot framework; merged 2026-10-08T12:13:06Z by its maintainer `shigma`, who found and fixed a regression in this account's own patch before merging it |
-| [ouroboros](https://github.com/Q00/ouroboros) | 6,247 | Q00 — individual maintainer (`@zep-us`) |
-| [teamai-cli](https://github.com/Tencent/teamai-cli) | 5,563 | **腾讯 Tencent** — the official `Tencent` org, opensource.tencent.com |
-| [go-sdk](https://github.com/modelcontextprotocol/go-sdk) | 5,246 | the `modelcontextprotocol` org's Go SDK for MCP |
-| [aibrix](https://github.com/vllm-project/aibrix) | 5,150 | **the vLLM project** — the official `vllm-project` org behind vLLM; two flaky-test fixes merged 2026-10-06T16:23:08Z and 2026-10-07T11:18:42Z, the second by `googs1025` and the second of the two flaky-test fixes this account has merged there |
-| [embedding-atlas](https://github.com/apple/embedding-atlas) | 4,988 | **Apple** — the official `apple` org (apple.github.io/embedding-atlas); a line-ending normalization fix in a release script merged 2026-10-06T16:30:51Z by `donghaoren` |
-| [docker-agent](https://github.com/docker/docker-agent) | 4,566 | **Docker, Inc.** — the official `docker` org; merged 2026-10-05 by maintainer `aheritier` |
+| [jc](https://github.com/kellyjonbrazil/jc) | 8,694 | kellyjonbrazil (Kelly Brazil) — individual maintainer |
+| [dsh-market](https://github.com/dsh-market/dsh-market) | 7,370 | `dsh-market` org — the community plugin market behind dshmarket.com |
+| [models.dev](https://github.com/anomalyco/models.dev) | 7,302 | `anomalyco` org — the model-catalogue site behind models.dev |
+| [koishi](https://github.com/koishijs/koishi) | 6,259 | `koishijs` org — the cross-platform chatbot framework |
+| [ouroboros](https://github.com/Q00/ouroboros) | 6,247 | Q00 (`@zep-us`) — individual maintainer |
+| [teamai-cli](https://github.com/Tencent/teamai-cli) | 5,563 | **Tencent** — the official `Tencent` org |
+| [go-sdk](https://github.com/modelcontextprotocol/go-sdk) | 5,246 | the `modelcontextprotocol` org — the Go SDK for MCP |
+| [aibrix](https://github.com/vllm-project/aibrix) | 5,150 | **the vLLM project** — the official `vllm-project` org |
+| [embedding-atlas](https://github.com/apple/embedding-atlas) | 4,988 | **Apple** — the official `apple` org |
+| [docker-agent](https://github.com/docker/docker-agent) | 4,566 | **Docker, Inc.** — the official `docker` org |
 | [agent-client-protocol](https://github.com/agentclientprotocol/agent-client-protocol) | 4,464 | `agentclientprotocol` org — governed jointly by **Zed Industries** and **JetBrains** |
-| [DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) | 4,305 | `omdsh-dev` community org — the DeepSeek Harness sidebar plugin; added 2026-10-12, and `INSTRUMENTATION.md` records why it was previously carried as excluded |
-| [evalscope](https://github.com/modelscope/evalscope) | 3,560 | `modelscope` org — the ModelScope model-hub project; a UTF-8 BOM dataset fix merged 2026-10-19T03:42:50Z by `Yunnglin` |
-| [deepseek-harness-desktop](https://github.com/dsh-tauri/deepseek-harness-desktop) | 3,286 | `dsh-tauri` community org — self-described non-official and non-commercial, not a DeepSeek repo |
-| [fastmcp](https://github.com/punkpeye/fastmcp) | 3,275 | punkpeye (Frank Fiegel) — individual maintainer at Glama; the TypeScript MCP framework |
-| [open5gs](https://github.com/open5gs/open5gs) | 2,779 | the `open5gs` open-source 5G core project — a community project rather than a company repo |
-| [claude-agent-acp](https://github.com/agentclientprotocol/claude-agent-acp) | 2,661 | `agentclientprotocol` org — the same jointly-governed org as the row above, a separate repository |
-| [NeMo-Agent-Toolkit](https://github.com/NVIDIA/NeMo-Agent-Toolkit) | 2,660 | **NVIDIA** — the official `NVIDIA` org; three review rounds with maintainer `willkill07` on making `remove_r1_think_tags` actually remove think blocks, merged 2026-10-08T00:10:02Z by NVIDIA's `rapids-bot` after he issued `/merge` |
+| [DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) | 4,305 | `omdsh-dev` community org — the DeepSeek Harness sidebar plugin |
+| [evalscope](https://github.com/modelscope/evalscope) | 3,560 | `modelscope` org — the ModelScope model-hub project |
+| [deepseek-harness-desktop](https://github.com/dsh-tauri/deepseek-harness-desktop) | 3,286 | `dsh-tauri` community org — self-described non-official and non-commercial |
+| [fastmcp](https://github.com/punkpeye/fastmcp) | 3,275 | punkpeye (Frank Fiegel) — individual maintainer at Glama |
+| [open5gs](https://github.com/open5gs/open5gs) | 2,779 | the `open5gs` 5G core project — community, no company owner |
+| [claude-agent-acp](https://github.com/agentclientprotocol/claude-agent-acp) | 2,661 | `agentclientprotocol` org — governed by Zed and JetBrains |
+| [NeMo-Agent-Toolkit](https://github.com/NVIDIA/NeMo-Agent-Toolkit) | 2,660 | **NVIDIA** — the official `NVIDIA` org |
 
 <details>
-<summary><b>Seven more repositories between 1,000★ and 2,500★ — one line each</b></summary>
+<summary><b>Thirteen of them, briefly — what was broken and who merged it</b></summary>
 
-| Repository | ★ | 项目归属方 |
-|---|---|---|
-| [awesome-jev](https://github.com/yibie/awesome-jev) | 2,412 | yibie — individual maintainer, community catalog for Jev; the row the 09-25 round both printed and denied, kept now on the commit the history probe finds |
-| [Agents-Anywhere](https://github.com/anywhere-labs/Agents-Anywhere) | 1,856 | `anywhere-labs` community org — 3 public repos, created 2026-05, dshdesktop.cn; not a company |
-| [nginx-upsync-module](https://github.com/weibocom/nginx-upsync-module) | 1,844 | weibocom — the Weibo open-source org; an out-of-bounds write fix merged 2026-10-19T06:04:29Z, re-tested by the maintainer with a plain and an ASan build |
-| [mcp-remote](https://github.com/punkpeye/mcp-remote) | 1,634 | punkpeye (Frank Fiegel) — individual maintainer at Glama, the same account as `fastmcp` above; a Windows-portability fix to the repository's own test harness merged 2026-10-17T21:06:55Z |
-| [dsh-plugin-radar](https://github.com/AdamPlatin123/dsh-plugin-radar) | 1,479 | AdamPlatin123 — individual maintainer, catalog is a generated artifact |
-| [awesome-deepseek-harness](https://github.com/0xsline/awesome-deepseek-harness) | 1,217 | 0xsline — individual maintainer, community catalog |
-| [awesome-agent-apis](https://github.com/Anil-matcha/awesome-agent-apis) | 1,056 | Anil Chandra Naidu Matcha — individual maintainer, community catalog |
+- **deer-flow** — a portability fix in a blocking-IO test, merged by `WillemJiang`; the largest row in the
+  table.
+- **fiber** — an optional path parameter swallowed the `/` after it, so `/api/:day-:month?-:year?` matched
+  one segment too many; merged by `ReneWerner87`.
+- **ioredis** — an auto-pipelining fix, merged by `PavelPashov`.
+- **txtai** — cut down over three pull requests after the maintainer asked three times; merged by
+  `davidmezzetti`.
+- **AWS `awslabs/mcp`** — a one-file UTF-8 fix, merged by `markjschreiber` with two approvals.
+- **Tencent BrowserSkill** — merged by `iuyo5678` with eight checks green.
+- **Apple embedding-atlas** — line-ending normalization in a release script, merged by `donghaoren`.
+- **vLLM aibrix** — two flaky-test fixes.
+- **Microsoft SkillOpt** — a UTF-8 state-file fix.
+- **koishi** — the maintainer found and fixed a regression in this account's own patch before merging it.
+- **NVIDIA NeMo-Agent-Toolkit** — three review rounds to make `remove_r1_think_tags` actually remove think
+  blocks; merged by NVIDIA's `rapids-bot`.
+- **jc** — a Windows platform-name fix; it started counting when `master` caught up the next day.
+- **modelscope evalscope** — a UTF-8 BOM dataset fix, merged by `Yunnglin`.
 
 </details>
 
-<details>
-<summary><b>The rest of the contributor set, and how the 411 total is derived</b></summary>
-
-**The rest of the contributor set** is the long tail below the 1,000★ line:
-**37 further repositories**, DSH plugin directories, small upstream projects and community catalogs
-([dsh-handbook](https://github.com/Electricitysheep/dsh-handbook),
-[imsai-sh's list](https://github.com/imsai-sh/awesome-deepseek-harness-plugins), which alone took 41
-merges, and [the Jev gallery](https://github.com/OmniJev/awesome-jev-gallery), among them) — most are
-catalogs that ingest the family and carry no company owner, so they are named here only in aggregate.
-**77 external repositories carry at least one merged pull request of ours and a commit
-attributed to this account on their default branch; 379 merges were counted inside those 77 —
-re-derived 2026-10-19T10:20:41Z from this account's own merged pull requests and confirmed repository by
-repository with the `defaultBranchRef.target.history(author:{id})` probe, so 379 is exact rather than a
-floor over a probed subset. One repository carries a merge of ours and still earns no credit, and it is
-named for that reason: [SihanTeng's list](https://github.com/SihanTeng/awesome-deepseek-harness-plugins),
-which took **32** and credits no commit to this account at all — the case the rule at the top of this
-section was written about. Two further repositories,
-[phocinae-server](https://github.com/Phocinae/phocinae-server) and
-[deepseek-desktop](https://github.com/zcx960/deepseek-desktop), each hold a commit of this account and no
-merged pull request at all, so neither carries a merge and they are named only for that reason.
-**379 + 32 = the 411 merged pull requests** this account has outside `PerryLink/*`, concentrated in
-**78 repositories**; a further **163 are open across 129 repositories** as of 2026-10-19T10:20:41Z and are
-deliberately not counted here.
-
-</details>
-
-Each re-derivation, the merges that arrived between them, the two repositories that changed sides and
-the pull request this account closed after upstream fixed the same thing are recorded round by round in
-[`CHANGELOG.md`](CHANGELOG.md); this page carries the current figures and none of that history.
-
-<details>
-<summary><b>laya — 47 merged pull requests, second of 146 merged-PR authors</b></summary>
-
-**laya** — [NandhaKishorM/laya](https://github.com/NandhaKishorM/laya) — **47 merged pull requests of
-the 51 this account has opened there** (re-measured 2026-10-14 over all 964 pull requests the repository
-has ever had) and **second of 146 merged-PR authors**, behind `aashish254` (240) and ahead of `keemsisi`
-(44) and `Bruce-Yii` (40); the maintainer NandhaKishorM holds one merged PR of his own because he
-commits to `main` directly rather than through pull requests, and none of the three leaders is a
-collaborator. As of 2026-10-14 it reads **0 open and 4 closed unmerged**; 45 of the 47 merged inside a
-nine-day run (2026-09-21 → 2026-09-29), and the maintainer merges in batches — fifteen of them share two
-timestamps, seven at `19:29:05` on 09-27 and eight at `17:40:36` on 09-29, and the two since are
-[#924](https://github.com/NandhaKishorM/laya/pull/924) on 2026-10-04 and
-[#1179](https://github.com/NandhaKishorM/laya/pull/1179) on 2026-10-14. The complete list is one
-query away:
-
-[`laya` pull requests by this account](https://github.com/NandhaKishorM/laya/pulls?q=is%3Apr+author%3APerryLink)
-— the same 51, always current, in any language.
-
-</details>
-
-<details>
-<summary><b>The 47 merged pull requests, by area</b></summary>
-
-- **Multilingual routing and evaluation** — a caller-supplied language hint
-([#211](https://github.com/NandhaKishorM/laya/pull/211)), a reproducible per-language harness
-([#210](https://github.com/NandhaKishorM/laya/pull/210)), a re-run of the 51-language sweep in both temperature
-regimes ([#222](https://github.com/NandhaKishorM/laya/pull/222)), the multilingual columns refreshed from that re-run
-([#389](https://github.com/NandhaKishorM/laya/pull/389)), letters counted for the scripts no range claims
-([#169](https://github.com/NandhaKishorM/laya/pull/169)), and a `Router` that no longer picks a checkpoint from a
-language code naming no language ([#368](https://github.com/NandhaKishorM/laya/pull/368)).
-- **HTTP serving and containers** — inference moved off the event loop
-([#230](https://github.com/NandhaKishorM/laya/pull/230)), the Compose `laya-serve` service
-([#234](https://github.com/NandhaKishorM/laya/pull/234)), the inference failure the client is not allowed to see now
-reaching the operator's log ([#375](https://github.com/NandhaKishorM/laya/pull/375)), a request with no state no
-longer answered about the literal text `null` ([#427](https://github.com/NandhaKishorM/laya/pull/427)), and a lone
-surrogate in the body returning 400 instead of 500 ([#454](https://github.com/NandhaKishorM/laya/pull/454)).
-- **Email disclaimers and names** — the request kept when a disclaimer footer shares its paragraph
-([#94](https://github.com/NandhaKishorM/laya/pull/94)), "confidential" no longer read as a disclaimer
-([#227](https://github.com/NandhaKishorM/laya/pull/227)), a `From:` line opening ordinary prose no longer deleting the
-request ([#371](https://github.com/NandhaKishorM/laya/pull/371)), and a name class that excluded lowercase in every
-script ([#503](https://github.com/NandhaKishorM/laya/pull/503)).
-- **Correctness across the call surface** — three assertions that could not fail
-([#231](https://github.com/NandhaKishorM/laya/pull/231)), the load-time and budget errors no suite reached
-([#237](https://github.com/NandhaKishorM/laya/pull/237)), an ECE that binned differently from its siblings
-([#232](https://github.com/NandhaKishorM/laya/pull/232)), non-ASCII characters kept in non-string instructions
-([#228](https://github.com/NandhaKishorM/laya/pull/228)), a README link pointing at a heading that does not exist
-([#236](https://github.com/NandhaKishorM/laya/pull/236)), a choice label with no description that came back as a
-non-string ([#380](https://github.com/NandhaKishorM/laya/pull/380)), a nested choice label reported as a named caller
-error instead of a bare `TypeError` ([#425](https://github.com/NandhaKishorM/laya/pull/425)), a score legend that
-echoed the caller's own type instead of level text ([#420](https://github.com/NandhaKishorM/laya/pull/420)),
-`hooks_installed` removing a hook it did not install ([#424](https://github.com/NandhaKishorM/laya/pull/424)), a null
-`choice` label that made the answer undecodable ([#508](https://github.com/NandhaKishorM/laya/pull/508)), a short
-temperature list that now fails at load rather than at the first decode
-([#502](https://github.com/NandhaKishorM/laya/pull/502)), [#249](https://github.com/NandhaKishorM/laya/pull/249),
-where a `noul` criteria dict that cannot be read raises instead of silently falling back to defaults — the line the
-project's 0.3.11 release note calls "stricter noul criteria" — and
-[#299](https://github.com/NandhaKishorM/laya/pull/299), two parity cells in the benchmark table that did not match the
-JSON they cite.
-- **The test and CI surface** — the Windows lane ([#212](https://github.com/NandhaKishorM/laya/pull/212)) and
-[#376](https://github.com/NandhaKishorM/laya/pull/376), six pytest suites that every lane invoked in a way that exited
-0 without running a single test, including the only coverage of the HTTP surface.
-- **Prediction hooks and batched routing** — process-wide default hooks never reaching `predict_batch`
-([#379](https://github.com/NandhaKishorM/laya/pull/379)), `predict_batch` dropping each request's `lang`, so
-per-language temperatures never applied ([#381](https://github.com/NandhaKishorM/laya/pull/381)), and
-`lang_temperatures` crashing on the inputs it exists to reject
-([#428](https://github.com/NandhaKishorM/laya/pull/428)).
-- **The TypeScript front end** — the `From:` header rules the Python side already had, ported rather than re-derived
-([#422](https://github.com/NandhaKishorM/laya/pull/422)); the Azerbaijani schwa counted as a non-English letter
-([#423](https://github.com/NandhaKishorM/laya/pull/423)); and a score legend that echoed the caller's own types,
-unlike the Python backends ([#556](https://github.com/NandhaKishorM/laya/pull/556)).
-- **CLI, packaging and serving edges** — `--preset` sending the request under a key no question set names
-([#426](https://github.com/NandhaKishorM/laya/pull/426)); the onnx extra missing its `onnxscript` dependency
-([#504](https://github.com/NandhaKishorM/laya/pull/504)); the packaging test scanning `.venv` for broken links
-([#500](https://github.com/NandhaKishorM/laya/pull/500)); and two over-budget messages that each named a knob which
-makes the problem worse rather than the one that fixes it ([#455](https://github.com/NandhaKishorM/laya/pull/455),
-[#501](https://github.com/NandhaKishorM/laya/pull/501)).
-- **Documentation** — [#378](https://github.com/NandhaKishorM/laya/pull/378), which stopped the README presenting a
-confidence threshold as permission to act on its own, and the pages the project's docs-structure issue asked
-contributors to write: the fine-tuning guide ([#505](https://github.com/NandhaKishorM/laya/pull/505)), the Questions
-and answers guide ([#418](https://github.com/NandhaKishorM/laya/pull/418)), and the reference entry for
-`answer_confidence`, which no page documented ([#419](https://github.com/NandhaKishorM/laya/pull/419)).
-
-*The nine area headings above are this account's own grouping of its 45 nine-day merges, not the
-project's taxonomy; the merge counts are the repository's own.*
-
-Four closures, and the reason is on the record for each:
-[#370](https://github.com/NandhaKishorM/laya/pull/370), closed by this account as a duplicate of
-[#362](https://github.com/NandhaKishorM/laya/pull/362), which opened the same fix four minutes earlier;
-[#416](https://github.com/NandhaKishorM/laya/pull/416), the Routing guide, closed by the maintainer in
-favour of another contributor's [#461](https://github.com/NandhaKishorM/laya/pull/461) so the project
-would not carry two routing pages; and [#925](https://github.com/NandhaKishorM/laya/pull/925), closed
-unmerged at 2026-10-04T17:54:52Z, four minutes after [#924](https://github.com/NandhaKishorM/laya/pull/924)
-merged; and [#943](https://github.com/NandhaKishorM/laya/pull/943), closed unmerged at
-2026-10-05T17:28:15Z in favour of [#936](https://github.com/NandhaKishorM/laya/pull/936), which had
-landed the same two lines six minutes earlier and additionally forwards `hooksRaise` into the
-`routeBatch` call, so a per-call `hooksRaise: false` reaches `onRoute` as well as each request's
-predict lifecycle — the maintainer's note says explicitly that it was not closed for being wrong.
-
-</details>
-
-**Security** — published advisory [GHSA-j922-p6h6-p255](https://github.com/PerryLink/dsh-permission-rules/security/advisories/GHSA-j922-p6h6-p255) for dsh-permission-rules (medium, patched in 0.6.16).
-
-<details>
-<summary><b><code>deepseek-ai</code> — 22 pull requests opened across the org, 1 merged, 15 open</b></summary>
-
-**Official harness repo** — it does not accept external pull requests, so that line runs through issues, Discussions
-(the Show Your Plugins! post [#6104](https://github.com/deepseek-ai/deepseek-harness/discussions/6104)) and the plugin
-ecosystem instead — while the wider `deepseek-ai` org is open to fixes, and the account now proposes them at the
-systems layer rather than only in its catalogs: of the **22 pull requests it has opened across that org, FlashMLA
-[#224](https://github.com/deepseek-ai/FlashMLA/pull/224) remains the only one merged**, and **15 are open**
-across eleven repositories — [TileKernels](https://github.com/deepseek-ai/TileKernels) three,
-[DeepEP](https://github.com/deepseek-ai/DeepEP) and
-[deepseek-recipe](https://github.com/deepseek-ai/deepseek-recipe) two each, and one apiece in
-[FlashMLA](https://github.com/deepseek-ai/FlashMLA),
-[DeepGEMM](https://github.com/deepseek-ai/DeepGEMM), [3FS](https://github.com/deepseek-ai/3FS),
-[DeepSeek-MoE](https://github.com/deepseek-ai/DeepSeek-MoE),
-[DeepSeek-Prover-V1.5](https://github.com/deepseek-ai/DeepSeek-Prover-V1.5),
-[DeepJIT](https://github.com/deepseek-ai/DeepJIT) and [DeepSelect](https://github.com/deepseek-ai/DeepSelect) —
-fourteen of them code fixes, and the fifteenth a catalog addition.
-
-</details>
+Seven more repositories between 1,000★ and 2,500★, the long tail below that, the per-merge record behind
+the 411, the `laya` ledger and the `deepseek-ai` picture are all in **[PROJECTS.md](PROJECTS.md)**.
 
 ## 📦 The rest of the family
 
-The rest of the family and the five support repos are one line each below. The roster's source of truth
-is **[dsh-kit](https://github.com/PerryLink/dsh-kit)** — its `plugins.txt` and a parity script hold the
-family to that file; the machine-readable catalogue is
-**[dsh-catalog](https://github.com/PerryLink/dsh-catalog)**, which is also the DSH Desktop Market source;
-and each plugin's own README carries the detail this page only summarises.
+**99 repositories declare the `dsh.bundle.patch` contract and 91 are actively maintained** (3 retired, 5
+frozen), plus the support repositories — `dsh-kit`, `dsh-catalog`, the certification registry and the CI
+checker — and one third-party plugin carried as a row. The roster's source of truth is `plugins.txt` in
+**[dsh-kit](https://github.com/PerryLink/dsh-kit)**, with a parity script holding the family to that file;
+the machine-readable catalogue is **[dsh-catalog](https://github.com/PerryLink/dsh-catalog)**, which is
+also the DSH Desktop Market source. One line per plugin, with its status and npm name, is in
+**[PROJECTS.md](PROJECTS.md)** — 94 rows in ten tables.
 
-<details>
-<summary><b>The full family — 99 plugins in the roster, 91 of them actively maintained, plus 7 support repos, one line each</b></summary>
-
-*Counting note: **91** is the actively maintained set, and it is the figure this page's heading and badge
-use. It is derived one repository at a time: **99** repositories declare `dsh.bundle.patch` (re-derived
-2026-10-19 by reading each repo's own `package.json` at its default branch), of which **3 are 🚫 retired**
-and **5 are 🧊 frozen**, leaving **91 actively maintained**. Measured against the 102 PerryLink-owned
-repositories this page names: **96 declare the contract and 6 do not** —
-[dsh-catalog](https://github.com/PerryLink/dsh-catalog), [dsh-kit](https://github.com/PerryLink/dsh-kit) and
-[dsh-plugin-certification](https://github.com/PerryLink/dsh-plugin-certification) (the certification registry, whose
-MCP server publishes from [dsh-cert-mcp](https://github.com/PerryLink/dsh-cert-mcp) instead), plus
-[jevcore](https://github.com/PerryLink/jevcore) (no `dsh.bundle`; only its `jevcore-dsh` workspace member is a plugin)
-and [laya-mcp](https://github.com/PerryLink/laya-mcp) (an MCP sidecar, not a plugin), and
-[dsh-attention-index](https://github.com/PerryLink/dsh-attention-index) (a data index, no `dsh.bundle.patch`). The third-party
-[pan17/dsh-wechat](https://github.com/pan17/dsh-wechat) carries a plugin row but is not one of them: 102 + 1 = the 103
-repos this page names. A naive scan of the account finds two more than the 99 — the retired
-[dsh-plugin-upgrade](https://github.com/PerryLink/dsh-plugin-upgrade) corridor legs `dsh-plugin-upgrade-015` (**not**
-archived) and `dsh-plugin-upgrade-016` (archived), both still carrying the manifest and neither an active plugin:
-99 + 2 = the **101** such a scan returns. The ten tables below list **94 rows**: 92 of the 99 repositories in that roster,
-plus `jevcore` (which declares no `dsh.bundle`) and the third-party `dsh-wechat` — the seven left out
-(`dsh-plugin-kit`, `dsh-cert-mcp`, `dsh-plugin-doctor`, `dsh-phocinae`, `dsh-checkers`, `dsh-community-bench`) are the
-toolchain and other-product-line repositories named in the support list above, and `dsh-phone-inbox` joined the roster
-after these tables were last re-cut. Retired and frozen rows keep their place with
-their status rather than being deleted, which is why the roster figure is larger than the active one. The same **99** entries
-and the same three states are recorded once, in
-[dsh-plugin-kit/data/repos.json](https://github.com/PerryLink/dsh-plugin-kit/blob/main/data/repos.json), which
-the portal renders and the certification registry counts.*
-
-**The 2026-10-08 addition.** 53 compliance checkers joined the roster that day — they declare
-`dsh.bundle.patch` like every other entry, so by the rule above they count. They are the `### ✅ Compliance checkers` table at the end of the folded family below, and they keep
-their own memory file and maintenance rules in a separate workspace. Every figure in this note was raised by exactly 53 except the
-non-plugin total, which is measured rather than derived.
-
-### 🔒 Security (4)
-
-| Plugin | One-liner | Status | npm |
-|---|---|---|---|
-| [dsh-defend](https://github.com/PerryLink/dsh-defend) | Injection/jailbreak/secret detection + destructive-delete gate | 🧊 FROZEN — broader detector, but frozen | [npm](https://www.npmjs.com/package/dsh-defend) |
-| [dsh-permission-rules](https://github.com/PerryLink/dsh-permission-rules) | Declarative allow/deny/ask rules + a local HTTP/CONNECT network policy | | [npm](https://www.npmjs.com/package/dsh-permission-rules) |
-| [dsh-mask](https://github.com/PerryLink/dsh-mask) | PII masking/sanitization | | [npm](https://www.npmjs.com/package/dsh-mask) |
-| [dsh-skill-pack-security](https://github.com/PerryLink/dsh-skill-pack-security) | Security-audit skill pack + supply-chain gate | | [npm](https://www.npmjs.com/package/@perrylink/dsh-skill-pack-security-provider) |
-
-### 🔁 Workflows (8)
-
-| Plugin | One-liner | Status | npm |
-|---|---|---|---|
-| [dsh-background-agents](https://github.com/PerryLink/dsh-background-agents) | Durable background child agents with a Web UI sidebar, messaging and interrupt | 🚫 RETIRED — native continuable subagents | [npm](https://www.npmjs.com/package/dsh-background-agents) |
-| [dsh-team-rooms](https://github.com/PerryLink/dsh-team-rooms) | Cross-session team rooms: shared message bus, task board, approval-gated handoffs and a timeline that survive restarts | 🚫 RETIRED — native Agent Teams | [npm](https://www.npmjs.com/package/dsh-team-rooms) |
-| [dsh-checkpoint-rewind](https://github.com/PerryLink/dsh-checkpoint-rewind) | Snapshots, forks, one-shot restore | | [npm](https://www.npmjs.com/package/dsh-checkpoint-rewind) |
-| [dsh-github](https://github.com/PerryLink/dsh-github) | GitHub PR/issue integration + Action, writes approval-gated | | [npm](https://www.npmjs.com/package/@perrylink/dsh-github) |
-| [dsh-claude-move](https://github.com/PerryLink/dsh-claude-move) | Migrate Claude Code/Codex/OpenCode/Hermes into DSH | 🧊 FROZEN — `dsh-chat-import` | [npm](https://www.npmjs.com/package/dsh-claude-move) |
-| [dsh-click](https://github.com/PerryLink/dsh-click) | Desktop control tools (Windows/macOS) | | [npm](https://www.npmjs.com/package/dsh-click) |
-| [dsh-session-sync](https://github.com/PerryLink/dsh-session-sync) | Git-backed session synchronization | | [npm](https://www.npmjs.com/package/dsh-session-sync) |
-| [dsh-test-drive](https://github.com/PerryLink/dsh-test-drive) | Install→smoke→uninstall test driver for plugins | | [npm](https://www.npmjs.com/package/dsh-test-drive) |
-
-### ✨ Experience & UX (4)
-
-| Plugin | One-liner | Status | npm |
-|---|---|---|---|
-| [dsh-composer-history](https://github.com/PerryLink/dsh-composer-history) | Terminal-style input history for the web composer | | [npm](https://www.npmjs.com/package/dsh-composer-history) |
-| [dsh-output-styles](https://github.com/PerryLink/dsh-output-styles) | Runtime-switchable model output styles | | [npm](https://www.npmjs.com/package/dsh-output-styles) |
-| [dsh-session-pin](https://github.com/PerryLink/dsh-session-pin) | Pin sessions in the Web sidebar | 🚫 RETIRED — native session pinning | [npm](https://www.npmjs.com/package/dsh-session-pin) |
-| [dsh-memento](https://github.com/PerryLink/dsh-memento) | Approval-gated cross-session memory protocol | | [npm](https://www.npmjs.com/package/dsh-memento) |
-
-### 🧪 Evaluation (3)
-
-| Plugin | One-liner | Status | npm |
-|---|---|---|---|
-| [dsh-auto-review](https://github.com/PerryLink/dsh-auto-review) | Second-model auto-review on the approval chain | | [npm](https://www.npmjs.com/package/dsh-auto-review) |
-| [dsh-doublecheck](https://github.com/PerryLink/dsh-doublecheck) | Engineering-discipline guard: grill, gates, adversary review | | [npm](https://www.npmjs.com/package/dsh-doublecheck) |
-| [dsh-score](https://github.com/PerryLink/dsh-score) | Plugin quality scoring across git/gh/npm | | [npm](https://www.npmjs.com/package/dsh-score) |
-
-### 📊 Observability & cost (4)
-
-| Plugin | One-liner | Status | npm |
-|---|---|---|---|
-| [dsh-autotier](https://github.com/PerryLink/dsh-autotier) | Automatic strong/cheap model-tier routing with deterministic risk guards | | [npm](https://www.npmjs.com/package/dsh-autotier) |
-| [dsh-budget](https://github.com/PerryLink/dsh-budget) | Token/cost metering, budget caps, carbon estimate, latency benchmarks | 🧊 FROZEN — `dsh-cost-meter` | [npm](https://www.npmjs.com/package/dsh-budget) |
-| [dsh-observe](https://github.com/PerryLink/dsh-observe) | OTel/Langfuse telemetry export | | [npm](https://www.npmjs.com/package/dsh-observe) |
-| [dsh-fast](https://github.com/PerryLink/dsh-fast) | Performance diagnostics | | [npm](https://www.npmjs.com/package/dsh-fast) |
-
-### 🎨 Content & knowledge (5)
-
-| Plugin | One-liner | Status | npm |
-|---|---|---|---|
-| [dsh-draw](https://github.com/PerryLink/dsh-draw) | Image-generation routing | 🧊 FROZEN — `dsh-image-gen` | [npm](https://www.npmjs.com/package/dsh-draw) |
-| [dsh-translate](https://github.com/PerryLink/dsh-translate) | Translation + JSON repair | | [npm](https://www.npmjs.com/package/dsh-translate) |
-| [dsh-talk](https://github.com/PerryLink/dsh-talk) | Speech recognition and voice I/O | | [npm](https://www.npmjs.com/package/dsh-talk) |
-| [dsh-library](https://github.com/PerryLink/dsh-library) | Local knowledge-base RAG | | [npm](https://www.npmjs.com/package/dsh-library) |
-| [dsh-local-ai](https://github.com/PerryLink/dsh-local-ai) | Ollama LLM provider and routing | | [npm](https://www.npmjs.com/package/dsh-local-ai) |
-
-### 🛠️ Developer experience (6)
-
-| Plugin | One-liner | Status | npm |
-|---|---|---|---|
-| [dsh-lsp-actions](https://github.com/PerryLink/dsh-lsp-actions) | LSP diagnostics/formatting/completion/actions | | [npm](https://www.npmjs.com/package/dsh-lsp-actions) |
-| [dsh-mcp-panel](https://github.com/PerryLink/dsh-mcp-panel) | MCP management console | | [npm](https://www.npmjs.com/package/dsh-mcp-panel) |
-| [dsh-plugin-guide](https://github.com/PerryLink/dsh-plugin-guide) | Plugin-dev knowledge base + CLI toolchain + release-engineering guide | | [npm](https://www.npmjs.com/package/dsh-plugin-guide) |
-| [dsh-plugin-upgrade](https://github.com/PerryLink/dsh-plugin-upgrade) | Plugin-author upgrade skill: one package, one corridor index that detects the caller's peer band and routes to the matching closed card (`0.1.3-alpha.1 → 0.1.5-rc.1`, `0.1.5-rc.2 → 0.1.6-alpha.2`), plus a zero-dependency seam scanner (bundle skill + npx CLI) | | [npm](https://www.npmjs.com/package/dsh-plugin-upgrade) |
-| [jevcore](https://github.com/PerryLink/jevcore) | TypeSafe Jev as typed decisions instead of prose (`noul`/`choice`/`score` with calibrated probabilities): offline by default, every transmission named before it happens, disabled gates register nothing (the DSH adapter `jevcore-dsh`, plus `jevcore` core and `jevcore-mcp` for non-DSH MCP hosts) | | [npm](https://www.npmjs.com/package/jevcore-dsh) |
-| [dsh-laya](https://github.com/PerryLink/dsh-laya) | Laya typed decisions (`noul`/`choice`/`score`) as a first-class Cordis service (`ctx.laya`) plus `laya_ask`/`laya_plan` tools; a client of a `laya-mcp serve` sidecar, so it installs and downloads nothing, and reports whether state stays on this machine as a fact rather than a policy | | [npm](https://www.npmjs.com/package/dsh-laya) |
-
-*Support repos:* [dsh-plugin-kit](https://github.com/PerryLink/dsh-plugin-kit) (review-rule meta package) ·
-[dsh-catalog](https://github.com/PerryLink/dsh-catalog) (DSH Desktop Market catalog source) ·
-[dsh-cert-mcp](https://github.com/PerryLink/dsh-cert-mcp) (certification MCP server) ·
-[dsh-kit](https://github.com/PerryLink/dsh-kit) (one-command installer) ·
-[dsh-plugin-doctor](https://github.com/PerryLink/dsh-plugin-doctor) (plugin health checker). Five of these repos and
-plugins publish under a `@perrylink/` npm name rather than their repo name — the support repos
-`@perrylink/dsh-plugin-kit` and `@perrylink/dsh-plugin-doctor`, and the plugins `@perrylink/dsh-github`,
-`@perrylink/dsh-ticktick` and `@perrylink/dsh-skill-pack-security-provider` — and a sixth name,
-`@perrylink/dsh-cert-mcp`, is the deprecated scoped predecessor of `dsh-cert-mcp`; the `perrylink` account therefore
-holds **110 npm names** — more names than the family has repositories, because several repos publish both a plugin
-and a provider package, and because the 53 compliance checkers and the two `Phocinae` packages publish under names
-of their own (measured 2026-10-14).
-
-### 📱 Messaging & bridges (3)
-
-| Plugin | One-liner | Status | npm |
-|---|---|---|---|
-| [dsh-wechat](https://github.com/pan17/dsh-wechat) | WeChat ↔ DSH bridge (Tencent iLink bot): text/image/file/voice, approvals in chat — developed with [pan17](https://github.com/pan17/dsh-wechat), who now hosts the repo and publishes the npm package | 🧊 FROZEN — `@xmanrui/dsh-im` | [npm](https://www.npmjs.com/package/dsh-wechat) |
-| [dsh-ticktick](https://github.com/PerryLink/dsh-ticktick) | TickTick/Dida365 task bridge: session-header panel + 11 tools | | [npm](https://www.npmjs.com/package/@perrylink/dsh-ticktick) |
-| [dsh-reach](https://github.com/PerryLink/dsh-reach) | Multi-channel approval/question bridge: WeChat/Telegram/Feishu, session console | 🧊 FROZEN — `@xmanrui/dsh-im` | [npm](https://www.npmjs.com/package/dsh-reach) |
-
-### 🔬 Research (4)
-
-| Plugin | One-liner | Status | npm |
-|---|---|---|---|
-| [dsh-data-quality](https://github.com/PerryLink/dsh-data-quality) | Data profiling/cleaning/verification | | [npm](https://www.npmjs.com/package/dsh-data-quality) |
-| [dsh-fund-research](https://github.com/PerryLink/dsh-fund-research) | Mutual-fund research, sealed traceable snapshots | | [npm](https://www.npmjs.com/package/dsh-fund-research) |
-| [dsh-industry-research](https://github.com/PerryLink/dsh-industry-research) | Industry/company research domain pack | | [npm](https://www.npmjs.com/package/dsh-industry-research) |
-| [dsh-research-report](https://github.com/PerryLink/dsh-research-report) | Verifiable research-report engine | | [npm](https://www.npmjs.com/package/dsh-research-report) |
-
-
-### ✅ Compliance checkers (53)
-
-Fifty-three checkers published 2026-10-08, all Apache-2.0, all carrying SLSA provenance on npm.
-Each reads one register, ledger or record set against a **versioned rule pack** and returns the differences
-for a human to review — none of them pronounces on compliance, liability or clinical correctness. A
-per-repo `check:citations` gate holds each quotation to its own `rules/evidence/` record, and the rule
-packs state how many of their rules have **no verbatim clause text obtained** rather than paraphrasing the
-clause — the per-domain counts are on the [checker index](https://perrylink.github.io/zh/checkers/).
-
-
-#### 🧾 Tendering & procurement (7)
-
-| Plugin | One-liner | Status | npm |
-|---|---|---|---|
-| [dsh-bid-ca-precheck](https://github.com/PerryLink/dsh-bid-ca-precheck) | Pre-flight check of a bid package against the responsiveness and qualification clauses before submission | | [npm](https://www.npmjs.com/package/dsh-bid-ca-precheck) |
-| [dsh-bid-qual-check](https://github.com/PerryLink/dsh-bid-qual-check) | Qualification screening: does the bidder's evidence actually answer every qualification the documents demand | | [npm](https://www.npmjs.com/package/dsh-bid-qual-check) |
-| [dsh-tender-extract](https://github.com/PerryLink/dsh-tender-extract) | Pulls the substantive requirements out of tender documents so nothing mandatory is missed | | [npm](https://www.npmjs.com/package/dsh-tender-extract) |
-| [dsh-tender-matrix](https://github.com/PerryLink/dsh-tender-matrix) | Scoring-matrix arithmetic: weights, caps and totals reconciled against the stated evaluation method | | [npm](https://www.npmjs.com/package/dsh-tender-matrix) |
-| [dsh-protest-deadline](https://github.com/PerryLink/dsh-protest-deadline) | Challenge-deadline arithmetic under the procurement regime, with the clause behind each period | | [npm](https://www.npmjs.com/package/dsh-protest-deadline) |
-| [dsh-contract-stance](https://github.com/PerryLink/dsh-contract-stance) | Reads a contract for the positions it actually takes, clause by clause, and reports them without advising | | [npm](https://www.npmjs.com/package/dsh-contract-stance) |
-| [dsh-rulefile-check](https://github.com/PerryLink/dsh-rulefile-check) | Internal rule-file consistency: no contradictions, no dangling references, no undefined terms | | [npm](https://www.npmjs.com/package/dsh-rulefile-check) |
-
-#### 🏗️ Construction & environment (7)
-
-| Plugin | One-liner | Status | npm |
-|---|---|---|---|
-| [dsh-site-log-check](https://github.com/PerryLink/dsh-site-log-check) | Supervision-log completeness against the supervision standard and the on-site recording rules | | [npm](https://www.npmjs.com/package/dsh-site-log-check) |
-| [dsh-hazplan-check](https://github.com/PerryLink/dsh-hazplan-check) | HAZOP worksheet review: nodes, guide words, deviations and actions held to the analysis standard | | [npm](https://www.npmjs.com/package/dsh-hazplan-check) |
-| [dsh-safety-brief-check](https://github.com/PerryLink/dsh-safety-brief-check) | Safety-briefing records checked for the required topics and the sign-off each one needs | | [npm](https://www.npmjs.com/package/dsh-safety-brief-check) |
-| [dsh-guard-plan-qc](https://github.com/PerryLink/dsh-guard-plan-qc) | Guard-plan quality: coverage, escalation paths and the shifts the plan claims to cover | | [npm](https://www.npmjs.com/package/dsh-guard-plan-qc) |
-| [dsh-soilwater-check](https://github.com/PerryLink/dsh-soilwater-check) | Soil and groundwater survey records — sampling points, analytes and the reported units | | [npm](https://www.npmjs.com/package/dsh-soilwater-check) |
-| [dsh-eia-guide-check](https://github.com/PerryLink/dsh-eia-guide-check) | Environmental impact assessment against the published technical guidelines | | [npm](https://www.npmjs.com/package/dsh-eia-guide-check) |
-| [dsh-permit-report-check](https://github.com/PerryLink/dsh-permit-report-check) | Permit application reports: the sections required, and whether each is filled rather than templated | | [npm](https://www.npmjs.com/package/dsh-permit-report-check) |
-
-#### 🦺 Safety & hazardous materials (7)
-
-| Plugin | One-liner | Status | npm |
-|---|---|---|---|
-| [dsh-hazchem-check](https://github.com/PerryLink/dsh-hazchem-check) | Hazardous-chemical register and major-hazard-source identification, reconciled arithmetically | | [npm](https://www.npmjs.com/package/dsh-hazchem-check) |
-| [dsh-emergency-plan](https://github.com/PerryLink/dsh-emergency-plan) | Emergency plan structure and the drills, contacts and review dates it must carry | | [npm](https://www.npmjs.com/package/dsh-emergency-plan) |
-| [dsh-drill-script-check](https://github.com/PerryLink/dsh-drill-script-check) | Drill scripts: scenario, roles, timeline and the corrective actions a drill has to produce | | [npm](https://www.npmjs.com/package/dsh-drill-script-check) |
-| [dsh-hidden-risk-map](https://github.com/PerryLink/dsh-hidden-risk-map) | Hidden-risk map: every hazard mapped to the article it is reported under, no gaps and no inventions | | [npm](https://www.npmjs.com/package/dsh-hidden-risk-map) |
-| [dsh-power-ticket-check](https://github.com/PerryLink/dsh-power-ticket-check) | Work permits for electrical isolation — the safety measures each permit class requires | | [npm](https://www.npmjs.com/package/dsh-power-ticket-check) |
-| [dsh-power-loss-split](https://github.com/PerryLink/dsh-power-loss-split) | Power-loss event split across causes so the totals reconcile to the reported outage | | [npm](https://www.npmjs.com/package/dsh-power-loss-split) |
-| [dsh-aqua-input-check](https://github.com/PerryLink/dsh-aqua-input-check) | Aquaculture input records: batch, dosage and withdrawal periods against the limits stated | | [npm](https://www.npmjs.com/package/dsh-aqua-input-check) |
-
-#### 🏥 Medical records (3)
-
-| Plugin | One-liner | Status | npm |
-|---|---|---|---|
-| [dsh-icd-rule-check](https://github.com/PerryLink/dsh-icd-rule-check) | ICD coding pairs — dagger and asterisk, combination codes — flagged for a coder to resolve | | [npm](https://www.npmjs.com/package/dsh-icd-rule-check) |
-| [dsh-medrec-qc](https://github.com/PerryLink/dsh-medrec-qc) | Medical-record front sheets checked for field completeness and code well-formedness | | [npm](https://www.npmjs.com/package/dsh-medrec-qc) |
-| [dsh-nurse-record-check](https://github.com/PerryLink/dsh-nurse-record-check) | Nursing records: the observations, timings and signatures each entry is required to carry | | [npm](https://www.npmjs.com/package/dsh-nurse-record-check) |
-
-#### 📄 Official documents & archives (3)
-
-| Plugin | One-liner | Status | npm |
-|---|---|---|---|
-| [dsh-gongwen-flow-check](https://github.com/PerryLink/dsh-gongwen-flow-check) | Official-document handling flow — drafting, review, issue — checked against the regulation | | [npm](https://www.npmjs.com/package/dsh-gongwen-flow-check) |
-| [dsh-gongwen-word-check](https://github.com/PerryLink/dsh-gongwen-word-check) | Document type and reference number checked against the formatting standard | | [npm](https://www.npmjs.com/package/dsh-gongwen-word-check) |
-| [dsh-archive-check](https://github.com/PerryLink/dsh-archive-check) | Archive records: retention periods, catalogue fields and transfer dates | | [npm](https://www.npmjs.com/package/dsh-archive-check) |
-
-#### 🚢 Customs & trade (8)
-
-| Plugin | One-liner | Status | npm |
-|---|---|---|---|
-| [dsh-customs-doc-check](https://github.com/PerryLink/dsh-customs-doc-check) | Customs declaration pack — the documents a declaration needs, and the fields each must carry | | [npm](https://www.npmjs.com/package/dsh-customs-doc-check) |
-| [dsh-hs-classify](https://github.com/PerryLink/dsh-hs-classify) | HS classification entries: the basis recorded for each code, in the form the tariff regulation requires | | [npm](https://www.npmjs.com/package/dsh-hs-classify) |
-| [dsh-origin-rvc-check](https://github.com/PerryLink/dsh-origin-rvc-check) | Regional value content arithmetic for rules of origin, including the de minimis tests | | [npm](https://www.npmjs.com/package/dsh-origin-rvc-check) |
-| [dsh-export-ctl-check](https://github.com/PerryLink/dsh-export-ctl-check) | Export-control screening records against the control lists and the licence conditions | | [npm](https://www.npmjs.com/package/dsh-export-ctl-check) |
-| [dsh-lc-doc-check](https://github.com/PerryLink/dsh-lc-doc-check) | Letter-of-credit documents against the terms — discrepancies listed, not adjudicated | | [npm](https://www.npmjs.com/package/dsh-lc-doc-check) |
-| [dsh-demurrage-ledger](https://github.com/PerryLink/dsh-demurrage-ledger) | Demurrage and detention ledger: free days, laytime arithmetic and the tariff applied | | [npm](https://www.npmjs.com/package/dsh-demurrage-ledger) |
-| [dsh-railway-window](https://github.com/PerryLink/dsh-railway-window) | Railway freight windows and the cut-off dates each booking has to clear | | [npm](https://www.npmjs.com/package/dsh-railway-window) |
-| [dsh-forecast-penalty](https://github.com/PerryLink/dsh-forecast-penalty) | Forecast-versus-actual penalty arithmetic, with the formula the contract states | | [npm](https://www.npmjs.com/package/dsh-forecast-penalty) |
-
-#### ⚙️ Quality & manufacturing (8)
-
-| Plugin | One-liner | Status | npm |
-|---|---|---|---|
-| [dsh-fmea-table-check](https://github.com/PerryLink/dsh-fmea-table-check) | FMEA tables — severity, occurrence, detection and the RPN arithmetic that follows from them | | [npm](https://www.npmjs.com/package/dsh-fmea-table-check) |
-| [dsh-ppap-check](https://github.com/PerryLink/dsh-ppap-check) | PPAP submission completeness against the level the customer required | | [npm](https://www.npmjs.com/package/dsh-ppap-check) |
-| [dsh-spc-gbt-adapter](https://github.com/PerryLink/dsh-spc-gbt-adapter) | Control charts read against the national standard: limits, rules and out-of-control signals | | [npm](https://www.npmjs.com/package/dsh-spc-gbt-adapter) |
-| [dsh-pipeline-check](https://github.com/PerryLink/dsh-pipeline-check) | Pipeline inspection records: intervals, anomalies and the repairs each anomaly triggered | | [npm](https://www.npmjs.com/package/dsh-pipeline-check) |
-| [dsh-warranty-calc](https://github.com/PerryLink/dsh-warranty-calc) | Automotive three-guarantee periods and thresholds, computed from the invoice and delivery dates | | [npm](https://www.npmjs.com/package/dsh-warranty-calc) |
-| [dsh-repair-order-qc](https://github.com/PerryLink/dsh-repair-order-qc) | Repair orders: the settlement list, the completion certificate and the archive a repair must produce | | [npm](https://www.npmjs.com/package/dsh-repair-order-qc) |
-| [dsh-ota-review-check](https://github.com/PerryLink/dsh-ota-review-check) | Over-the-air update review records — scope, rollback plan and the sign-offs required | | [npm](https://www.npmjs.com/package/dsh-ota-review-check) |
-| [dsh-review-reply-check](https://github.com/PerryLink/dsh-review-reply-check) | Responses to review comments: whether every comment received an answer and a change | | [npm](https://www.npmjs.com/package/dsh-review-reply-check) |
-
-#### 🔬 Research & academia (5)
-
-| Plugin | One-liner | Status | npm |
-|---|---|---|---|
-| [dsh-nsfc-form-check](https://github.com/PerryLink/dsh-nsfc-form-check) | Grant application forms checked for the fields, limits and attachments the call requires | | [npm](https://www.npmjs.com/package/dsh-nsfc-form-check) |
-| [dsh-paper-doc-adapter](https://github.com/PerryLink/dsh-paper-doc-adapter) | Manuscript formatting against a venue's own submission requirements | | [npm](https://www.npmjs.com/package/dsh-paper-doc-adapter) |
-| [dsh-essay-rubric-check](https://github.com/PerryLink/dsh-essay-rubric-check) | Rubric-based marking checked for arithmetic and for criteria that went unmarked | | [npm](https://www.npmjs.com/package/dsh-essay-rubric-check) |
-| [dsh-learning-gap-check](https://github.com/PerryLink/dsh-learning-gap-check) | Learning-gap analyses: the evidence cited for each gap and the interventions proposed | | [npm](https://www.npmjs.com/package/dsh-learning-gap-check) |
-| [dsh-policy-brief-draft](https://github.com/PerryLink/dsh-policy-brief-draft) | Policy briefs checked for the structure a brief is expected to carry and for unsourced claims | | [npm](https://www.npmjs.com/package/dsh-policy-brief-draft) |
-
-#### ⚖️ Evidence & litigation (3)
-
-| Plugin | One-liner | Status | npm |
-|---|---|---|---|
-| [dsh-evidence-check](https://github.com/PerryLink/dsh-evidence-check) | Evidence lists against the civil evidence rules — production deadlines, notices and exchanges | | [npm](https://www.npmjs.com/package/dsh-evidence-check) |
-| [dsh-pleading-draft](https://github.com/PerryLink/dsh-pleading-draft) | Pleadings checked for the elements each claim has to plead and for internal inconsistency | | [npm](https://www.npmjs.com/package/dsh-pleading-draft) |
-| [dsh-lawcite-adapter](https://github.com/PerryLink/dsh-lawcite-adapter) | Legal citations resolved to the instrument actually in force, and flagged when they are not | | [npm](https://www.npmjs.com/package/dsh-lawcite-adapter) |
-
-#### 🏛️ Governance (2)
-
-| Plugin | One-liner | Status | npm |
-|---|---|---|---|
-| [dsh-soe-decision-check](https://github.com/PerryLink/dsh-soe-decision-check) | State-owned-enterprise collective-decision records against the "three majors, one large" procedure | | [npm](https://www.npmjs.com/package/dsh-soe-decision-check) |
-| [dsh-sop-sync-check](https://github.com/PerryLink/dsh-sop-sync-check) | Standard operating procedures checked against the versions and cross-references they claim | | [npm](https://www.npmjs.com/package/dsh-sop-sync-check) |
-
-</details>
+| | # | Some of what is in it |
+|---|---|---|
+| 🔒 Security | 4 | [dsh-permission-rules](https://github.com/PerryLink/dsh-permission-rules) · [dsh-mask](https://github.com/PerryLink/dsh-mask) · [dsh-defend](https://github.com/PerryLink/dsh-defend) |
+| 🔁 Workflows | 8 | [dsh-checkpoint-rewind](https://github.com/PerryLink/dsh-checkpoint-rewind) · [dsh-github](https://github.com/PerryLink/dsh-github) · [dsh-test-drive](https://github.com/PerryLink/dsh-test-drive) |
+| ✨ Experience & UX | 4 | [dsh-memento](https://github.com/PerryLink/dsh-memento) · [dsh-composer-history](https://github.com/PerryLink/dsh-composer-history) · [dsh-output-styles](https://github.com/PerryLink/dsh-output-styles) |
+| 🧪 Evaluation | 3 | [dsh-doublecheck](https://github.com/PerryLink/dsh-doublecheck) · [dsh-score](https://github.com/PerryLink/dsh-attention-index) · [dsh-auto-review](https://github.com/PerryLink/dsh-auto-review) |
+| 📊 Observability & cost | 4 | [dsh-observe](https://github.com/PerryLink/dsh-observe) · [dsh-autotier](https://github.com/PerryLink/dsh-autotier) · [dsh-fast](https://github.com/PerryLink/dsh-fast) |
+| 🎨 Content & knowledge | 5 | [dsh-talk](https://github.com/PerryLink/dsh-talk) · [dsh-translate](https://github.com/PerryLink/dsh-translate) · [dsh-library](https://github.com/PerryLink/dsh-library) |
+| 🛠️ Developer experience | 6 | [dsh-mcp-panel](https://github.com/PerryLink/dsh-mcp-panel) · [dsh-plugin-guide](https://github.com/PerryLink/dsh-plugin-guide) · [jevcore](https://github.com/PerryLink/jevcore) |
+| 📱 Messaging & bridges | 3 | [dsh-ticktick](https://github.com/PerryLink/dsh-ticktick) · [dsh-reach](https://github.com/PerryLink/dsh-reach) · [dsh-wechat](https://github.com/pan17/dsh-wechat) |
+| 🔬 Research | 4 | [dsh-research-report](https://github.com/PerryLink/dsh-research-report) · [dsh-industry-research](https://github.com/PerryLink/dsh-industry-research) · [dsh-fund-research](https://github.com/PerryLink/dsh-fund-research) |
+| ✅ Compliance checkers | 53 | A register or record set read against a versioned rule pack, ten domains from tendering to litigation — the list is in [PROJECTS.md](PROJECTS.md) |
 
 ## 🪦 Retired & frozen (2026-10-05)
 
-A maintainer review of the whole family against the official harness and the wider plugin ecosystem
-concluded that three of these plugins duplicate capabilities the **official harness now implements
-natively**, and one was reclassified as internal tooling. Retirement here has a precise meaning:
-**compatibility updates stop because the capability is now official, or because a better-adopted
-alternative exists** — these are not abandoned or broken, and they keep working for existing installs.
+A maintainer review against the official harness and the wider ecosystem retired three plugins because
+the **harness now implements the capability natively** — [dsh-background-agents](https://github.com/PerryLink/dsh-background-agents)
+(native continuable subagents), [dsh-session-pin](https://github.com/PerryLink/dsh-session-pin) (built-in
+session pinning) and [dsh-team-rooms](https://github.com/PerryLink/dsh-team-rooms) (Agent Teams) — and
+froze six because **a better-adopted alternative now exists**: `dsh-budget`, `dsh-draw`, `dsh-claude-move`,
+`dsh-reach`, `dsh-wechat` and `dsh-defend`.
 
-### Retired — the official harness now implements this
-
-| Plugin | Why | Use instead |
-|---|---|---|
-| [dsh-background-agents](https://github.com/PerryLink/dsh-background-agents) | The official harness ships **native continuable subagents** — `subagent` with `backgroundMode: continuable`, plus `send_message` / `interrupt_agent` / `list_agents` / `job_*`, mounted inside `dsh-base` | the native continuable subagents |
-| [dsh-session-pin](https://github.com/PerryLink/dsh-session-pin) | The official harness **ships session pinning natively** — the row menu and hover button in `dsh-client-ui-workspace`, with the pin set persisted on the Host and mounted in the default Web bundle | the built-in session pin |
-| [dsh-team-rooms](https://github.com/PerryLink/dsh-team-rooms) | The official harness ships the **Agent Teams** subsystem (`dsh-experimental-agent-team`): implicit-root roster, durable peer mailbox and a shared task DAG. Well-adopted community alternatives exist too | native Agent Teams, or [`@nanmicoder/dsh-agent-teams`](https://github.com/NanmiCoder/dsh-agent-teams) |
-
-**Reclassified, not retired:** [dsh-catalog](https://github.com/PerryLink/dsh-catalog) is now treated as
-**family-internal tooling** rather than a product. It is live infrastructure feeding the DSH Desktop
-Community Market, and its job is to inventory this family — so it does not compete with third-party
-catalogs and needs no retirement.
-
-### Frozen — no new features, only real breakages fixed
-
-Frozen because **better-adopted alternatives now exist** for that capability. Five of the six carry a
-`## Maintenance status: 🧊 FROZEN` section in their own README with the measured comparison —
-[dsh-wechat](https://github.com/pan17/dsh-wechat) is the exception, because it is `pan17`'s repository rather than
-this account's, so the banner cannot be added there and the row is frozen here instead. Weekly npm downloads,
-measured 2026-10-05:
-
-| Plugin | this repo | better-adopted alternative |
-|---|---|---|
-| [dsh-budget](https://github.com/PerryLink/dsh-budget) | 1,079 | [`dsh-cost-meter`](https://github.com/Han-1413141/dsh-cost-meter) — **33,526** |
-| [dsh-draw](https://github.com/PerryLink/dsh-draw) | 973 | [`dsh-image-gen`](https://github.com/shanliuling/dsh-image-gen) — **7,216** |
-| [dsh-claude-move](https://github.com/PerryLink/dsh-claude-move) | 843 | [`dsh-chat-import`](https://github.com/Nwflower/dsh-chat-import) — **5,111** |
-| [dsh-reach](https://github.com/PerryLink/dsh-reach) | ~600 | [`@xmanrui/dsh-im`](https://github.com/xmanrui/dsh-im) — **17,384** |
-| [dsh-wechat](https://github.com/pan17/dsh-wechat) | 752 | [`@xmanrui/dsh-im`](https://github.com/xmanrui/dsh-im) — **17,384** |
-| [dsh-defend](https://github.com/PerryLink/dsh-defend) | 937 | [`cc-safety-net`](https://github.com/kenryu42/cc-safety-net) — **13,087** |
-
-`dsh-defend` is the one frozen package that is still the **broader** detector — an Aho-Corasick engine over
-the prompt-injection / jailbreak / secret-leaker asset sets, with three-way allow/ask/block interception on
-user messages, tool arguments **and** tool results. It is frozen because the field moved, not because the
-plugin is weaker.
-
----
+Retired does not mean broken: compatibility updates stop, existing installs keep working, and the
+capability is either official now or served better elsewhere. The per-plugin measurements — this
+repository's weekly downloads against the alternative's, and what each row was retired in favour of — are
+in **[PROJECTS.md](PROJECTS.md)**, under "Retired & frozen — the full tables".
 
 ## 🌍 Where the plugins live
 
-- **GitHub** (this profile), **[Gitee](https://gitee.com/perrylink)** and **npm** — source, CI and releases here; 99
-family repos mirrored to Gitee by a daily job (default branch + all tags), plus this profile repo; the `perrylink`
-account holds **110 npm names and 1,446 versions**, 102 of them with a non-deprecated `latest` and **93 of those
-carrying a SLSA provenance attestation on that version** (99 names carry it on at least one version; the eleven with
-none anywhere are `@phocinae/js`, `dsh-laya`, `dsh-phocinae`, `dsh-preclaim`, `jevcore-cli`, `jevcore-dsh`,
-`jevcore-mcp`, `laya-mcp` and the three archived `layacore` names —
-measured 2026-10-14 against each name's own packument and cross-checked against npm's attestations endpoint, and the registry
-**search** endpoint is not authoritative here, since it returns only 47 names and omits the deprecated ones)
-- **npm downloads** — **241,207 over the trailing 30 days** (npm window 09-14..10-13, summed per name from the
-downloads point endpoint, three names answering no figure; **[dshfind](https://dshfind.com/plugins?q=PerryLink)** independently tracks **38.5k+**
-across the 8 family plugins it currently has a download figure for — dshfind reports rounded tiers, so that is a floor
-rather than a total
-- **DSH Desktop Market** — add the catalog source
-`https://cdn.jsdelivr.net/gh/PerryLink/dsh-catalog@main/deploy/artifacts/v1/plugins.json` under Market → Sources
-to browse the family in-app (96 packages, catalogue generated 2026-10-13; the `catalog-source.json` manifest in
-the same directory is a template whose `endpoint` is still the `replace-with-deploy-origin.invalid`
-placeholder, and the `perrylink-dsh-catalog.perrylink.workers.dev` address before it answered `HTTP 000` on
-networks that interfere with `*.workers.dev`); **MCP Registry** — three servers, all published from their release workflows over GitHub OIDC: `dsh-cert-mcp`,
-`jevcore-mcp` and `laya-mcp`
+- **GitHub** (this profile), **[Gitee](https://gitee.com/perrylink)** and **npm** — source, CI and releases
+  here; 99 family repos mirrored to Gitee by a daily job (default branch and all tags). The `perrylink` npm
+  account holds **110 names and 1,446 versions**, 93 of them carrying a SLSA provenance attestation.
+- **npm downloads** — **241,207 over the trailing 30 days** (window 09-14..10-13).
+  [dshfind](https://dshfind.com/plugins?q=PerryLink) independently tracks **38.5k+** across the 8
+  family plugins it currently has a figure for; it reports rounded tiers, so that is a floor.
+- **DSH Desktop Market** — add
+  `https://cdn.jsdelivr.net/gh/PerryLink/dsh-catalog@main/deploy/artifacts/v1/plugins.json` under
+  Market → Sources to browse the family in-app (96 packages, catalogue generated 2026-10-13).
+- **MCP Registry** — three servers, all published from their release workflows over GitHub OIDC:
+  `dsh-cert-mcp`, `jevcore-mcp` and `laya-mcp`.
 - **GitHub Actions** — [dsh-github](https://github.com/PerryLink/dsh-github) and
-[dsh-test-drive](https://github.com/PerryLink/dsh-test-drive) also ship composite actions, so they install as `uses:
-PerryLink/dsh-test-drive@vX`
-
-Published to a dozen-plus third-party DSH directories and curated lists —
-[awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin), [DSH
-Directory](https://dsh.directory/plugins?q=perrylink), [Awesome DeepSeek
-Harness](https://github.com/0xsline/awesome-deepseek-harness), [walkinglabs'
-list](https://github.com/walkinglabs/awesome-deepseek-harness-plugins), [Zhiyuan-Fan's
-list](https://github.com/Zhiyuan-Fan/Awesome-DeepSeek-Harness-Plugins), the [AdamPlatin123
-radar](https://github.com/AdamPlatin123/dsh-plugin-radar), [dsh-suite](https://github.com/whyihaveyou/dsh-suite),
-[dshfind.com](https://dshfind.com/zh/plugins/PerryLink/dsh-memento), [deepseek1024.com](https://deepseek1024.com) and
-[Glama](https://glama.ai/mcp/servers/PerryLink/dsh-cert-mcp) among them — and scored on [OpenSSF
-Scorecard](https://api.securityscorecards.dev/projects/github.com/PerryLink/dsh-auto-review); the GitHub [`dsh-plugin`
-topic](https://github.com/topics/dsh-plugin) is what most of them ingest from.
+  [dsh-test-drive](https://github.com/PerryLink/dsh-test-drive) also ship composite actions, so they
+  install as `uses: PerryLink/dsh-test-drive@vX`.
+- **Third-party directories** — a dozen-plus DSH lists and indexes ingest the
+  [`dsh-plugin` topic](https://github.com/topics/dsh-plugin); the family is scored on
+  [OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/PerryLink/dsh-auto-review).
 
 <details>
 <summary><b>中文介绍</b></summary>
 
-**在 DeepSeek Harness 上构建插件生态:91 个活跃维护的开源插件,来自一个 103 仓的家族(其中 102 个由 PerryLink 自己维护)** —— 安全、工作流、研究、消息桥接、开发者体验,以及 2026-10-08 起新增的 53 个合规核查插件(每个都是拿一份台账或记录去对版本化规则包,只输出差异供人复核),外加 DSH Desktop
-Market 目录、插件认证注册表与 dsh-plugin-doctor 这个 CI 检查器。91 个插件全部带 CI、Gitee 镜像与五语文档,文档的段落数、安装命令、配置键由每个仓自己的 CI 闸门守着一致,并声明
-`dsh.bundle` 契约。npm 账号、Gitee 镜像、DSH Desktop Market、MCP Registry 与 GitHub Actions 的入口见上节「Where the plugins
-live」。**我也向上游 [Cordis](https://github.com/cordiverse/cordis)(DeepSeek Harness 所基于的插件内核框架)与
-[deepseek-ai](https://github.com/deepseek-ai) 项目贡献:该组织下 20 条 PR 里,已合并的仍是
-[FlashMLA](https://github.com/deepseek-ai/FlashMLA) 修复(#224,唯一一条),另有 14 条开放,其中 12 条是带复现的系统层修复。**
+独立开源开发者，在北京，与 DeepSeek 无隶属关系。两条线：**给别人的项目修 bug**（AWS、Apple、Docker、
+Microsoft、NVIDIA、Redis、Tencent、vLLM，也包括一个人的小项目），以及**给 DeepSeek Harness 维护一套
+Apache-2.0 插件生态** —— 安全、工作流、研究、消息桥接、开发者体验，加上一批合规核查插件。
 
-**本页所有实测数字只在英文部分维护一份**(外部仓与合并数、千星仓、npm 名称与下载、laya 台账),中文这里不复述,以免两处走样;需要数字请看上方的 Upstream 一节,那里每个数字都带测量日期。
+每个插件都有一页静态介绍：**[perrylink.github.io](https://perrylink.github.io/)**，正文直接写在 HTML
+里，不靠 JavaScript 渲染。也向上游 [Cordis](https://github.com/cordiverse/cordis)（DeepSeek Harness 所基于的
+插件内核框架）与 [deepseek-ai](https://github.com/deepseek-ai) 提交修复，逐条清单在 PROJECTS.md。
 
-**这一家子所依赖的那项研究,现在是一篇有 DOI 的论文 —— 而且它测的很大一部分,正是这份主页上的两个项目:[laya-mcp](https://github.com/PerryLink/laya-mcp) 与
-[jevcore](https://github.com/PerryLink/jevcore)。**《[当判定层的自报字段说谎时:三类判断层的成本、延迟与失效边界实测](https://doi.org/10.5281/zenodo.22902025)》在一套相同条目上实测三类判定层(Laya、TypeSafe
-Jev、DeepSeek-V4.1-Flash),四条主张**三条成立、一条被自己的数据否定**;判定器的接入层自报字段不可信(截断标志报「通过」却静默丢输入、概率字段把结论反号、两个判定词在真实输入下不可达),失效集中在一处 ——
-答案被明确陈述时近乎完美(0.9909,n=220),必须注意到「缺席」时塌缩(0.3091,n=220);异种判定器在三个区制上都**没有**增量覆盖。**引其一即可,不要当两篇引**([英文原文](https://doi.org/10.5281/zenodo.22901853)
-· [中文译本](https://doi.org/10.5281/zenodo.22902025) · [制品](https://doi.org/10.5281/zenodo.22901248));两者有出入以英文为准。
+还有一条在别处：一个根本起不来的进程现在能起来了。[claude-agent-acp #1146](https://github.com/agentclientprotocol/claude-agent-acp/pull/1146)
+让 `src/index.ts` 里那处没有保护的顶层 await 不再因一次瞬时错误就中断模块求值、在发出任何一条 ACP 消息
+之前退出。
 
-**laya**([NandhaKishorM/laya](https://github.com/NandhaKishorM/laya))是这个账号投入最深的外部项目:提了 **51 条 PR,其中 47
-条已合并**,合并数在该仓**排第二**(146 位作者中);45 条集中在 2026-09-21 至 09-29
-这九天里合掉。逐条清单与九个方向见上方英文部分折叠块,或直接看[这个筛选列表](https://github.com/NandhaKishorM/laya/pulls?q=is%3Apr+author%3APerryLink)。
-
-**还有一条在别处:一个根本起不来的进程现在能起来了。** [claude-agent-acp #1146](https://github.com/agentclientprotocol/claude-agent-acp/pull/1146) 让 `src/index.ts` 里那处没有保护的顶层 await 不再因一次瞬时错误就中断模块求值、在发出任何一条 ACP 消息之前退出。
-
-**斑海豹 Phocinae-Largha-150M-v1**
-([Phocinae org](https://github.com/Phocinae/Phocinae-Largha-150M-v1),Apache-2.0)是插件生态之外的另一条线:一个 144.3M
-参数的结构化决策模型,不生成文本,一次前向输出判定与校准置信度;GPU 单次判定 p50
-**21.0ms**（RTX 5090）、纯 CPU 约 **1.64s**,英文 typed-decisions **0.906**(400 用例 / 2000 决策,2026-10-09
-重测),中文(机译评测集)**0.848**;官方 en 0.906 / zh 0.848 与独立复现 0.9055 / 0.848 如实并排;τ=0.6 升级门实测让 **55%** 的 agent 决策留在本地(45.0% 升级、省 **55.0%** LLM 调用,τ=0.5 档 79.6%)、保留集准确率
-0.906→**0.9936**。权重在 [Hugging
-Face](https://huggingface.co/Phocinae/Phocinae-Largha-150M-v1) 与[魔搭](https://modelscope.cn/models/PerryLink/Phocinae-Largha-150M-v1),配套 `pip install phocinae-server` 与 `npm i dsh-phocinae`;复现四件套(seed/行集/环境/脚本)随仓库发货。
-
+数字只在上面的英文部分维护一份，逐条清单、名册与退役表在 [PROJECTS.md](PROJECTS.md)；这里不重复，
+以免两处走样。
 
 </details>
 
 ---
 
-**This page is re-measured, not remembered.** Every figure carries the date it was measured, and the
-round log records what each re-measurement corrected — including three claims of this page's own that
-did not survive. [Round log](https://github.com/PerryLink/perrylink/blob/main/CHANGELOG.md) · [How every figure was measured](https://github.com/PerryLink/perrylink/blob/main/INSTRUMENTATION.md).
+*Measured, not remembered.* The full inventory — the merge-by-merge upstream record, the 94-row plugin
+roster, the retired and frozen tables, and the npm and registry figures with their caveats — is in
+**[PROJECTS.md](PROJECTS.md)**. How every figure is measured is in
+[INSTRUMENTATION.md](https://github.com/PerryLink/perrylink/blob/main/INSTRUMENTATION.md), and what each
+round corrected is in [CHANGELOG.md](https://github.com/PerryLink/perrylink/blob/main/CHANGELOG.md).

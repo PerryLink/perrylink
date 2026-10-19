@@ -16,6 +16,14 @@ and `dsh-laya` were introduced by name.
 
 ## 2026-10-19
 
+- **The page is split in two: a front page and a full record.** The README keeps the badges, the six
+  flagship plugins, every external repository above 2,500★ and a short retired/frozen note; the long form
+  moved into `PROJECTS.md`, which the page links — the star table with its per-row merge narrative, the
+  seven repositories between 1,000★ and 2,500★, the derivation of the 411, the `laya` ledger, the
+  `deepseek-ai` picture, the 94-row roster, the retired and frozen tables and the npm figures with their
+  caveats. **No figure changed and nothing was deleted**: every moved line is a verbatim slice. Merge dates
+  leave the front page and stay in `PROJECTS.md`. 69,028 B → 21,680 B; the star table now names each
+  project's owner and nothing else.
 - **Live counters re-measured 2026-10-19T10:20:41Z; the named table now stops at 2,500★.** The external
   contributor set reads **77 repositories carrying at least one merged pull request of ours and a commit on
   the default branch, 379 merges inside those 77** (was 72 / 373); **411 merged outside `PerryLink/*`
