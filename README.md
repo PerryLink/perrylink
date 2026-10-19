@@ -321,8 +321,8 @@ plus `jevcore` (which declares no `dsh.bundle`) and the third-party `dsh-wechat`
 (`dsh-plugin-kit`, `dsh-cert-mcp`, `dsh-plugin-doctor`, `dsh-phocinae`, `dsh-checkers`, `dsh-community-bench`) are the
 toolchain and other-product-line repositories named in the support list above, and `dsh-phone-inbox` joined the roster
 after these tables were last re-cut. Retired and frozen rows keep their place with
-their status rather than being deleted, which is why the roster figure is larger than the active one. The **95** entries
-`dsh-plugin-kit/data/repos.json` currently holds, and the same three states, are recorded once, in
+their status rather than being deleted, which is why the roster figure is larger than the active one. The same **99** entries
+and the same three states are recorded once, in
 [dsh-plugin-kit/data/repos.json](https://github.com/PerryLink/dsh-plugin-kit/blob/main/data/repos.json), which
 the portal renders and the certification registry counts.*
 
