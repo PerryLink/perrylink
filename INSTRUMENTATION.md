@@ -26,7 +26,7 @@ absent. The two sanctioned exceptions are marked.
 | **npm downloads badge** *(exception)* | README badge row | same |
 | npm names / versions / non-deprecated latest | README § Where the plugins live | monthly |
 | npm provenance — **state the metric**: **75** names carry SLSA provenance on their non-deprecated `latest`; **95** carry it on at least one version; the twelve with none anywhere are named in the page (measured 2026-10-19, over the 107 names registry search now enumerates) | README § Where the plugins live | monthly |
-| dshfind aggregate tier | README § Where the plugins live | when dshfind re-renders |
+| dshfind aggregate tier — **how to read it**: dshfind publishes a badge per plugin at `/api/badge/<owner>/<repo>?metric=downloads` (the `<img>` every plugin page embeds). Nine of the family's repositories answer with a download tier, 97 fall back to ★. The 106 indexed repositories are counted from its sitemap shards (`/sitemap/plugins-N.xml`), not from the search page, which is client-side | README § Where the plugins live; the nine tiers in `PROJECTS.md` | when dshfind re-renders |
 | dsh host corridor / node engine / license | README badge row (each links to the file it is read from) | when the declared range or the engines change |
 | external contributor repos / merges / above-1,000★ | README § Upstream, the "rest of the contributor set" paragraph | on re-derivation |
 | The named star table — **34 rows above 2,500★**, and the seven between 1,000★ and 2,500★ that live in `PROJECTS.md` | README § Upstream (the table itself) | on re-derivation |
@@ -232,7 +232,7 @@ is merely "balanced" is not enough: balance is exactly what produced the 836px r
 | dsh host corridor | ≥0.1.2-rc.1 <0.3.0 | the union of the six `engines.dsh` clauses in any plugin's `package.json` |
 | node | ≥22.19 | the same file's `engines.node` (`^22.19.0 \|\| >=24.0.0`) |
 | license | Apache-2.0 | the `LICENSE` file |
-| dshfind aggregate | 38.5k+ across 8 | "Where the plugins live" |
+| dshfind aggregate | 44,500+ over the 9 repositories that carry a badge, of 106 indexed | "Where the plugins live"; per-plugin tiers listed in `PROJECTS.md` |
 
 Live badges (stars, followers, repos, OpenSSF Scorecard, Glama, MCP Registry, the three listings,
 dshfind aggregate, certified, Zenodo DOI) need no maintenance.

@@ -541,9 +541,28 @@ and `laya-mcp` — measured 2026-10-19 from each name's own packument; the names
 which now enumerates all 107, and the count was cross-checked against the 111 `package.json` files in the
 repositories themselves)
 - **npm downloads** — **228,164 over the trailing 30 days** (npm window 2026-09-19..2026-10-18, summed per name over the 107
-names from the downloads point endpoint; **[dshfind](https://dshfind.com/plugins?q=PerryLink)** independently tracks **38.5k+**
-across the 8 family plugins it currently has a download figure for — dshfind reports rounded tiers, so that is a floor
-rather than a total
+names from the downloads point endpoint.
+- **dshfind** — indexes **106** of the family's repositories (counted from its own sitemap shards: 106
+  `…/plugins/PerryLink/<repo>` URLs, each published in four locales) and puts a download badge on **9** of
+  them. Read one badge per repository from
+  `https://dshfind.com/api/badge/PerryLink/<repo>?metric=downloads` — the same `<img>` every plugin page
+  embeds — and the nine tiers are:
+
+  | Plugin | dshfind tier |
+  |---|---|
+  | dsh-auto-review | 10k+ |
+  | dsh-memento | 10k+ |
+  | dsh-permission-rules | 10k+ |
+  | dsh-industry-research | 5k+ |
+  | dsh-research-report | 5k+ |
+  | dsh-mcp-panel | 2k+ |
+  | dsh-claude-move | 1k+ |
+  | jevcore | 1k+ |
+  | dsh-plugin-guide | 500+ |
+
+  The floors add to **44,500**, and every badge is a rounded tier rather than a count, so that is a floor
+  and not a total. The other 97 repositories have no download figure at all — their badge falls back to
+  ★ — which is why the aggregate is stated over 9 and not over 106.
 - **DSH Desktop Market** — add the catalog source
 `https://cdn.jsdelivr.net/gh/PerryLink/dsh-catalog@main/deploy/artifacts/v1/plugins.json` under Market → Sources
 to browse the family in-app (99 packages, catalogue generated 2026-10-18; the `catalog-source.json` manifest in

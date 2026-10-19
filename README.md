@@ -28,7 +28,7 @@
 <br>
 <a href="https://perrylink.github.io/"><img alt="plugin index" src="https://img.shields.io/badge/plugin%20index-114%20pages-0b5fff"></a>
 <a href="https://gitee.com/perrylink"><img alt="Gitee mirror" src="https://img.shields.io/badge/Gitee-mirror-c71d23?logo=gitee"></a>
-<a href="https://dshfind.com/plugins?q=PerryLink"><img alt="dshfind downloads across the family" src="https://img.shields.io/badge/dshfind%20downloads-38.5k%2B%20across%208%20plugins-6e7781"></a>
+<a href="https://dshfind.com/plugins?q=PerryLink"><img alt="dshfind downloads across the family" src="https://img.shields.io/badge/dshfind%20downloads-44.5k%2B%20across%209%20plugins-6e7781"></a>
 <a href="https://cdn.jsdelivr.net/gh/PerryLink/dsh-catalog@main/deploy/catalog-source.json"><img alt="DSH Desktop Market source" src="https://img.shields.io/badge/DSH%20Desktop%20Market-source-0969da"></a>
 <a href="https://doi.org/10.5281/zenodo.22901853"><img alt="Zenodo DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.22901853.svg"></a>
 </p>
@@ -189,8 +189,9 @@ in **[PROJECTS.md](PROJECTS.md)**, under "Retired & frozen — the full tables".
   account holds **107 names and 1,601 versions**; **95** of them carry a SLSA provenance attestation on at
   least one version, **75** on the current `latest`.
 - **npm downloads** — **228,164 over the trailing 30 days** (window 2026-09-19..10-18).
-  [dshfind](https://dshfind.com/plugins?q=PerryLink) independently tracks **38.5k+** across the 8
-  family plugins it currently has a figure for; it reports rounded tiers, so that is a floor.
+  [dshfind](https://dshfind.com/plugins?q=PerryLink) indexes **106** of the family's repositories and
+  publishes a download badge for **9** of them — three at 10k+, two at 5k+, one at 2k+, two at 1k+ and one
+  at 500+ — which add to **44,500+**. The badges are rounded tiers, so that is a floor and not a total.
 - **DSH Desktop Market** — add
   `https://cdn.jsdelivr.net/gh/PerryLink/dsh-catalog@main/deploy/artifacts/v1/plugins.json` under
   Market → Sources to browse the family in-app (99 packages, catalogue generated 2026-10-18).

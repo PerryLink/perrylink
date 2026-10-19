@@ -16,6 +16,15 @@ and `dsh-laya` were introduced by name.
 
 ## 2026-10-19
 
+- **dshfind re-read, and the old sentence was wrong on both counts.** The page said *38.5k+ across the 8
+  family plugins it has a figure for*. dshfind's own sitemap shards list **106** of the family's
+  repositories (106 `…/plugins/PerryLink/<repo>` URLs, each in four locales), and its per-plugin badge
+  endpoint — `/api/badge/PerryLink/<repo>?metric=downloads`, the `<img>` every plugin page embeds — returns
+  a download tier for **9** of them: three at 10k+, two at 5k+, one at 2k+, two at 1k+ and one at 500+, which
+  add to **44,500+**. The other 97 badges fall back to ★. The page now states the figure with its denominator
+  and its floor, and the nine tiers are listed in `PROJECTS.md`. Note that dshfind's counter is *not* the
+  same thing as npm's 30-day window: `dsh-auto-review` reads 10k+ there against 6,293 in the npm window, so
+  no cross-check between the two is claimed.
 - **Counters re-measured 2026-10-19T12:09Z; the badge row rebuilt around them.** `Tencent/MMKV#1697` merged at
   10:35Z into `dev`, so the external set is **412 merges across 79 repositories** (was 411 / 78), of which
   **379 are credited in 77 repositories** and **33 are not: 32 in SihanTeng's list and 1 in MMKV**, whose merge
