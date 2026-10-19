@@ -16,6 +16,23 @@ and `dsh-laya` were introduced by name.
 
 ## 2026-10-19
 
+- **Live counters re-measured 2026-10-19T10:20:41Z; the named table now stops at 2,500★.** The external
+  contributor set reads **77 repositories carrying at least one merged pull request of ours and a commit on
+  the default branch, 379 merges inside those 77** (was 72 / 373); **411 merged outside `PerryLink/*`
+  across 78 repositories** (was 405 / 73); a further **163 are open across 129 repositories** (was 161 /
+  127). Four repositories joined the named tables with the six merges that arrived since the 00:41Z
+  derivation: [`gofiber/fiber#4778`](https://github.com/gofiber/fiber/pull/4778),
+  [`redis/ioredis#2233`](https://github.com/redis/ioredis/pull/2233),
+  [`modelscope/evalscope#1877`](https://github.com/modelscope/evalscope/pull/1877) and
+  [`weibocom/nginx-upsync-module#332`](https://github.com/weibocom/nginx-upsync-module/pull/332).
+- **The individually named table starts at 2,500★, not 1,000★.** Thirty-three rows measure 2,500★ or more
+  (the smallest is 2,660★); the seven repositories between 1,000★ and 2,500★ moved into the fold directly
+  beneath it, one line each; the long tail below 1,000★ is 37. No repository left the contributor set —
+  the split across the three tiers moved, the total did not.
+- **The compliance-checker table moved inside the family fold.** It is no longer a separately expanded
+  section under *The rest of the family*: the 53 rows keep their place at the end of the same fold as the
+  nine category tables, and every roster figure is unchanged.
+
 - **Live counters re-measured 2026-10-19T00:41:22Z.** The external contributor set reads **72 repositories
   carrying at least one merged pull request of ours and a commit on the default branch, 373 merges inside
   those 72** (was 69 / 369); **405 merged outside `PerryLink/*` across 73 repositories** (was 402 / 71); a
