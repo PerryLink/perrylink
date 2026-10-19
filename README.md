@@ -112,15 +112,15 @@ a company.
 | [koishi](https://github.com/koishijs/koishi) | 6,256 | `koishijs` org — the cross-platform chatbot framework; merged 2026-10-08T12:13:06Z by its maintainer `shigma`, who found and fixed a regression in this account's own patch before merging it |
 | [ouroboros](https://github.com/Q00/ouroboros) | 6,243 | Q00 — individual maintainer (`@zep-us`) |
 | [teamai-cli](https://github.com/Tencent/teamai-cli) | 5,551 | **腾讯 Tencent** — the official `Tencent` org, opensource.tencent.com |
-| [go-sdk](https://github.com/modelcontextprotocol/go-sdk) | 5,241 | the `modelcontextprotocol` org's Go SDK for MCP; new row this round, see the note under the table
+| [go-sdk](https://github.com/modelcontextprotocol/go-sdk) | 5,241 | the `modelcontextprotocol` org's Go SDK for MCP |
 | [aibrix](https://github.com/vllm-project/aibrix) | 5,149 | **the vLLM project** — the official `vllm-project` org behind vLLM; two flaky-test fixes merged 2026-10-06T16:23:08Z and 2026-10-07T11:18:42Z, the second by `googs1025` and the second of the two flaky-test fixes this account has merged there |
 | [embedding-atlas](https://github.com/apple/embedding-atlas) | 4,986 | **Apple** — the official `apple` org (apple.github.io/embedding-atlas); a line-ending normalization fix in a release script merged 2026-10-06T16:30:51Z by `donghaoren` |
 | [docker-agent](https://github.com/docker/docker-agent) | 4,559 | **Docker, Inc.** — the official `docker` org; merged 2026-10-05 by maintainer `aheritier` |
 | [agent-client-protocol](https://github.com/agentclientprotocol/agent-client-protocol) | 4,464 | `agentclientprotocol` org — governed jointly by **Zed Industries** and **JetBrains** |
-| [DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) | 4,285 | `omdsh-dev` community org — the DeepSeek Harness sidebar plugin; promoted into this table this round, and the note under it records why it was previously carried as excluded |
+| [DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) | 4,285 | `omdsh-dev` community org — the DeepSeek Harness sidebar plugin; added 2026-10-12, and `INSTRUMENTATION.md` records why it was previously carried as excluded |
 | [fastmcp](https://github.com/punkpeye/fastmcp) | 3,276 | punkpeye (Frank Fiegel) — individual maintainer at Glama; the TypeScript MCP framework |
 | [deepseek-harness-desktop](https://github.com/dsh-tauri/deepseek-harness-desktop) | 3,247 | `dsh-tauri` community org — self-described non-official and non-commercial, not a DeepSeek repo |
-| [open5gs](https://github.com/open5gs/open5gs) | 2,775 | the `open5gs` open-source 5G core project — a community project rather than a company repo; promoted into this table this round, and the note under it records why |
+| [open5gs](https://github.com/open5gs/open5gs) | 2,775 | the `open5gs` open-source 5G core project — a community project rather than a company repo |
 | [NeMo-Agent-Toolkit](https://github.com/NVIDIA/NeMo-Agent-Toolkit) | 2,660 | **NVIDIA** — the official `NVIDIA` org; three review rounds with maintainer `willkill07` on making `remove_r1_think_tags` actually remove think blocks, merged 2026-10-08T00:10:02Z by NVIDIA's `rapids-bot` after he issued `/merge` |
 | [claude-agent-acp](https://github.com/agentclientprotocol/claude-agent-acp) | 2,658 | `agentclientprotocol` org — the same jointly-governed org as the row above, a separate repository |
 | [awesome-jev](https://github.com/yibie/awesome-jev) | 2,401 | yibie — individual maintainer, community catalog for Jev; the row the 09-25 round both printed and denied, kept now on the commit the history probe finds |
@@ -128,7 +128,7 @@ a company.
 | [mcp-remote](https://github.com/punkpeye/mcp-remote) | 1,634 | punkpeye (Frank Fiegel) — individual maintainer at Glama, the same account as `fastmcp` above; a Windows-portability fix to the repository's own test harness merged 2026-10-17T21:06:55Z |
 | [dsh-plugin-radar](https://github.com/AdamPlatin123/dsh-plugin-radar) | 1,476 | AdamPlatin123 — individual maintainer, catalog is a generated artifact |
 | [awesome-deepseek-harness](https://github.com/0xsline/awesome-deepseek-harness) | 1,208 | 0xsline — individual maintainer, community catalog |
-| [awesome-agent-apis](https://github.com/Anil-matcha/awesome-agent-apis) | 1,057 | Anil Chandra Naidu Matcha — individual maintainer, community catalog
+| [awesome-agent-apis](https://github.com/Anil-matcha/awesome-agent-apis) | 1,057 | Anil Chandra Naidu Matcha — individual maintainer, community catalog |
 
 **The rest of the contributor set** is the long tail below the 1,000★ line:
 **36 further repositories**, DSH plugin directories, small upstream projects and community catalogs
@@ -256,7 +256,8 @@ predict lifecycle — the maintainer's note says explicitly that it was not clos
 (the Show Your Plugins! post [#6104](https://github.com/deepseek-ai/deepseek-harness/discussions/6104)) and the plugin
 ecosystem instead — while the wider `deepseek-ai` org is open to fixes, and the account now proposes them at the
 systems layer rather than only in its catalogs: of the **22 pull requests it has opened across that org, FlashMLA
-are open** across eleven repositories — [TileKernels](https://github.com/deepseek-ai/TileKernels) three,
+[#224](https://github.com/deepseek-ai/FlashMLA/pull/224) remains the only one merged**, and **15 are open**
+across eleven repositories — [TileKernels](https://github.com/deepseek-ai/TileKernels) three,
 [DeepEP](https://github.com/deepseek-ai/DeepEP) and
 [deepseek-recipe](https://github.com/deepseek-ai/deepseek-recipe) two each, and one apiece in
 [FlashMLA](https://github.com/deepseek-ai/FlashMLA),
