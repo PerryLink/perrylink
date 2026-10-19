@@ -105,7 +105,7 @@ Measured one repo at a time from each repo's own `package.json` at its default b
 | Count | Meaning |
 |---|---|
 | **91** | actively maintained — the roster minus 3 🚫 retired and 5 🧊 frozen. **This is the number the heading and the badge carry.** |
-| **99** | the roster: canonical plugins that declare `dsh.bundle.patch`, excluding the 2 retired corridor legs. `dsh-plugin-kit/data/repos.json` records **95** of them and has not been re-cut since 2026-10-12, so it lags the four added after that date (`dsh-checkers`, `dsh-community-bench`, `dsh-phocinae`, `dsh-phone-inbox`) |
+| **99** | the roster: canonical plugins that declare `dsh.bundle.patch`, excluding the 2 retired corridor legs. `dsh-plugin-kit/data/repos.json` records all **99**, re-cut 2026-10-19 together with `dsh-kit/plugins.txt`, which lists 96 published specs (the 99 minus the 3 retired) |
 | **101** | a naive scan of the account — 99 canonical **+ 2 retired corridor legs** (`dsh-plugin-upgrade-015`, not archived; `dsh-plugin-upgrade-016`, archived; both still carrying the manifest) |
 | **94** | rows in the README's ten category tables: 92 of the 99 roster + 2 rows that are not roster plugins (`jevcore`, which declares no `dsh.bundle`, and the third-party `pan17/dsh-wechat`) |
 | **102** | PerryLink-owned repositories the README links |
