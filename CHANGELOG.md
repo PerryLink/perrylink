@@ -14,6 +14,29 @@ and `dsh-laya` were introduced by name.
 
 ---
 
+## 2026-10-19
+
+- **Live counters re-measured 2026-10-19T00:41:22Z.** The external contributor set reads **72 repositories
+  carrying at least one merged pull request of ours and a commit on the default branch, 373 merges inside
+  those 72** (was 69 / 369); **405 merged outside `PerryLink/*` across 73 repositories** (was 402 / 71); a
+  further **161 are open across 127 repositories** (was 157 / 124). Three merges arrived since the last
+  derivation: [`pydantic/pydantic-extra-types#453`](https://github.com/pydantic/pydantic-extra-types/pull/453),
+  [`microsoft/SkillOpt#302`](https://github.com/microsoft/SkillOpt/pull/302), and
+  [`awesome-dsh-plugin#7183`](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/pull/7183), whose
+  repository was already in the table, so it adds a merge but no row.
+- **`kellyjonbrazil/jc` now earns credit, so its counter-example is retired.** `#783` still merged into
+  `dev`, but `master` fast-forwarded to `7e67daf2` on 2026-10-18T20:39:02Z and
+  `GET /compare/dev...master` returns `ahead_by: 1`, `behind_by: 0`; `b6f93354` is reachable from the
+  default branch and `defaultBranchRef.target.history(author:{id})` returns **1** (was 0).
+  `INSTRUMENTATION.md` records the retirement beside the DSH-better-sidebar precedent, which leaves
+  `SihanTeng`'s list as the only counter-example.
+- **Two rows joined the star table, one joined the long tail.** `microsoft/SkillOpt` measures **18,537★**
+  and is the Microsoft row; `kellyjonbrazil/jc` measures **8,694★** and enters the table now that it is
+  credited rather than in spite of it; `pydantic/pydantic-extra-types` measures **339★**, below the line,
+  so it is named in the aggregate instead. The table is **36 rows** and the long tail **36 repositories**
+  (72 credited − 36 named). Every star value was re-measured the same day and the rows are strictly
+  descending, the smallest at 1,057★.
+
 ## 2026-10-18
 
 - **Live counters re-measured 2026-10-18T12:42:47Z.** The external contributor set reads **69 repositories
