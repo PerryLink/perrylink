@@ -120,6 +120,12 @@ were raised accordingly: 33 → 86, 42 → 95, 41 → 94, 47 → 100, 48 → 101
 non-plugin repos fell from 58 to 57 because one previously-unclassified repository is accounted for
 in the new total.
 
+**2026-10-19: re-derived again.** Two more repositories began declaring `dsh.bundle.patch`
+(`dsh-checkers`, `dsh-community-bench`), which moves the roster 97 → 99, the naive scan 99 → 101 and
+the actively maintained set 89 → 91; the figures in the table above supersede the 10-08 line. The
+non-fork repository total was re-counted the same day: 164, of which 63 declare no
+`dsh.bundle.patch`.
+
 They are a second workspace on disk (`D:\Projects\dsh-plugins`, disjoint from `D:\Projects\dsh\plugins`)
 and carry their own memory file; their maintenance rules, version policy and citation-gate discipline
 are recorded there rather than here.
