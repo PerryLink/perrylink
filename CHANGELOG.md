@@ -16,6 +16,23 @@ and `dsh-laya` were introduced by name.
 
 ## 2026-10-19
 
+- **Four merges landed after the 12:09Z derivation, so the counters moved again.** Three catalog pull requests
+  into `imsai-sh/awesome-deepseek-harness-plugins` (#639 `dsh-aqua-input-check`, #640 `dsh-customs-doc-check`,
+  #641 `dsh-evidence-check`, all squash-merged by the repository's auto-merge bot at 13:03-13:04Z — that
+  repository has now taken **44** merges of ours, was 41) and [`nuxt/content#3886`](https://github.com/nuxt/content/pull/3886),
+  merged by `farnabaz` at 12:27:29Z with an approval fifteen seconds earlier: `generateItemSurround` dropped
+  the previous item whenever `before` was larger than the item's index instead of returning a shorter window.
+  The external set is now **416 merges across 80 repositories** (was 412 / 79), **383 credited in 78** (was
+  379 / 77), the same **33 uncredited in 2**, and **162 open across 127** (the open repository count fell by
+  one). `nuxt/content` is above the 2,500★ floor and joins the named table at **3,672★**, between
+  `DSH-better-sidebar` and `evalscope`.
+- **Two items in the same mailbox needed no action, and one is a decision.** `redis/node-redis#3521` was
+  **closed, not merged**: the maintainer passed because nobody has reported a `__proto__` map key in practice
+  and the patch only covered some of the paths that build objects from replies, leaving the behaviour
+  inconsistent — the point is fair and the change is not to be re-proposed without a real report. And
+  `minio/minio-go#2324` is **approved by `klauspost` at 11:10Z and still open**; it stays in the open count
+  and is not to be bumped. `omdsh-dev/dsh-browser#120` is a third-party fork announcing that it imported our
+  still-open `#99` into `graydovee/dsh-browser` as their `#11` — informational, no reply needed.
 - **dshfind re-read, and the old sentence was wrong on both counts.** The page said *38.5k+ across the 8
   family plugins it has a figure for*. dshfind's own sitemap shards list **106** of the family's
   repositories (106 `…/plugins/PerryLink/<repo>` URLs, each in four locales), and its per-plugin badge

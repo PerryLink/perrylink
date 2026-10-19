@@ -55,6 +55,7 @@ than letting the account name imply a company.
 | [docker-agent](https://github.com/docker/docker-agent) | 4,567 | **Docker, Inc.** — the official `docker` org; merged 2026-10-05 by maintainer `aheritier` |
 | [agent-client-protocol](https://github.com/agentclientprotocol/agent-client-protocol) | 4,465 | `agentclientprotocol` org — governed jointly by **Zed Industries** and **JetBrains** |
 | [DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) | 4,309 | `omdsh-dev` community org — the DeepSeek Harness sidebar plugin; added 2026-10-12, and `INSTRUMENTATION.md` records why it was previously carried as excluded |
+| [content](https://github.com/nuxt/content) | 3,672 | **Nuxt** — the official `nuxt` org. `generateItemSurround` dropped the previous item whenever `before` was larger than the item's index, instead of returning a shorter window; approved and merged 2026-10-19T12:27:29Z by `farnabaz` |
 | [evalscope](https://github.com/modelscope/evalscope) | 3,560 | `modelscope` org — the ModelScope model-hub project; a UTF-8 BOM dataset fix merged 2026-10-19T03:42:50Z by `Yunnglin` |
 | [deepseek-harness-desktop](https://github.com/dsh-tauri/deepseek-harness-desktop) | 3,292 | `dsh-tauri` community org — self-described non-official and non-commercial, not a DeepSeek repo |
 | [fastmcp](https://github.com/punkpeye/fastmcp) | 3,275 | punkpeye (Frank Fiegel) — individual maintainer at Glama; the TypeScript MCP framework |
@@ -78,18 +79,18 @@ than letting the account name imply a company.
 </details>
 
 <details>
-<summary><b>The rest of the contributor set, and how the 412 total is derived</b></summary>
+<summary><b>The rest of the contributor set, and how the 416 total is derived</b></summary>
 
 **The rest of the contributor set** is the long tail below the 1,000★ line:
 **37 further repositories**, DSH plugin directories, small upstream projects and community catalogs
 ([dsh-handbook](https://github.com/Electricitysheep/dsh-handbook),
-[imsai-sh's list](https://github.com/imsai-sh/awesome-deepseek-harness-plugins), which alone took 41
+[imsai-sh's list](https://github.com/imsai-sh/awesome-deepseek-harness-plugins), which alone took 44
 merges, and [the Jev gallery](https://github.com/OmniJev/awesome-jev-gallery), among them) — most are
 catalogs that ingest the family and carry no company owner, so they are named here only in aggregate.
-**77 external repositories carry at least one merged pull request of ours and a commit
-attributed to this account on their default branch; 379 merges were counted inside those 77 —
+**78 external repositories carry at least one merged pull request of ours and a commit
+attributed to this account on their default branch; 383 merges were counted inside those 78 —
 re-derived 2026-10-19T10:20:41Z from this account's own merged pull requests and confirmed repository by
-repository with the `defaultBranchRef.target.history(author:{id})` probe, so 379 is exact rather than a
+repository with the `defaultBranchRef.target.history(author:{id})` probe, so 383 is exact rather than a
 floor over a probed subset. Two repositories carry merges of ours and still earn no credit, and both are named for that reason:
 [SihanTeng's list](https://github.com/SihanTeng/awesome-deepseek-harness-plugins), which took **32** and
 credits no commit to this account at all — the case the rule at the top of this section was written
@@ -98,8 +99,8 @@ into the default branch `master`, so no commit of this account sits where the pr
 [phocinae-server](https://github.com/Phocinae/phocinae-server) and
 [deepseek-desktop](https://github.com/zcx960/deepseek-desktop), each hold a commit of this account and no
 merged pull request at all, so neither carries a merge and they are named only for that reason.
-**379 + 33 = the 412 merged pull requests** this account has outside `PerryLink/*`, concentrated in
-**79 repositories**; a further **162 are open across 128 repositories** as of 2026-10-19T12:09:15.876Z and are
+**383 + 33 = the 416 merged pull requests** this account has outside `PerryLink/*`, concentrated in
+**80 repositories**; a further **162 are open across 127 repositories** as of 2026-10-19T13:21:09.687Z and are
 deliberately not counted here.
 
 </details>

@@ -9,8 +9,8 @@
 <a href="https://github.com/PerryLink?tab=repositories"><img alt="GitHub stars" src="https://img.shields.io/github/stars/PerryLink?label=stars&affiliations=OWNER&color=24292f"></a>
 <a href="https://github.com/PerryLink?tab=followers"><img alt="GitHub followers" src="https://img.shields.io/github/followers/PerryLink?label=followers&color=24292f"></a>
 <a href="https://github.com/PerryLink?tab=repositories"><img alt="GitHub repos" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FPerryLink&query=%24.public_repos&label=repos&color=24292f"></a>
-<a href="https://github.com/PerryLink/perrylink/blob/main/PROJECTS.md"><img alt="merged upstream" src="https://img.shields.io/badge/upstream%20merges-412-6e7781"></a>
-<a href="https://github.com/PerryLink/perrylink/blob/main/PROJECTS.md"><img alt="repositories where a merge is credited" src="https://img.shields.io/badge/credited%20repos-77-6e7781"></a>
+<a href="https://github.com/PerryLink/perrylink/blob/main/PROJECTS.md"><img alt="merged upstream" src="https://img.shields.io/badge/upstream%20merges-416-6e7781"></a>
+<a href="https://github.com/PerryLink/perrylink/blob/main/PROJECTS.md"><img alt="repositories where a merge is credited" src="https://img.shields.io/badge/credited%20repos-78-6e7781"></a>
 <a href="https://github.com/PerryLink/dsh-kit"><img alt="actively maintained plugins" src="https://img.shields.io/badge/plugins-91-6e7781"></a>
 <a href="https://github.com/PerryLink/perrylink/blob/main/PROJECTS.md"><img alt="compliance checkers" src="https://img.shields.io/badge/checkers-53-6e7781"></a>
 <br>
@@ -37,7 +37,7 @@ I fix other people's projects, and I maintain a plugin family for
 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness). Independent open-source developer in
 Beijing — not affiliated with DeepSeek, and not a DeepSeek employee.
 
-**Upstream** — 412 merged pull requests in 79 repositories that are not mine, from AWS, Apple, Docker,
+**Upstream** — 416 merged pull requests in 80 repositories that are not mine, from AWS, Apple, Docker,
 Microsoft, NVIDIA, Redis, Tencent and the vLLM project down to one-person projects. **The family** — 91
 actively maintained Apache-2.0 plugins in a 103-repo family: security, workflows, research, messaging
 bridges, developer experience, and since 2026-10-08 a set of 53 compliance checkers that read a register
@@ -109,6 +109,7 @@ or one person. Every external repository above 2,500★ that carries merged work
 | [docker-agent](https://github.com/docker/docker-agent) | 4,567 | **Docker, Inc.** — the official `docker` org |
 | [agent-client-protocol](https://github.com/agentclientprotocol/agent-client-protocol) | 4,465 | `agentclientprotocol` org — governed jointly by **Zed Industries** and **JetBrains** |
 | [DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) | 4,309 | `omdsh-dev` community org — the DeepSeek Harness sidebar plugin |
+| [content](https://github.com/nuxt/content) | 3,672 | **Nuxt** — the official `nuxt` org |
 | [evalscope](https://github.com/modelscope/evalscope) | 3,560 | `modelscope` org — the ModelScope model-hub project |
 | [deepseek-harness-desktop](https://github.com/dsh-tauri/deepseek-harness-desktop) | 3,292 | `dsh-tauri` community org — self-described non-official and non-commercial |
 | [fastmcp](https://github.com/punkpeye/fastmcp) | 3,275 | punkpeye (Frank Fiegel) — individual maintainer at Glama |
@@ -117,13 +118,15 @@ or one person. Every external repository above 2,500★ that carries merged work
 | [NeMo-Agent-Toolkit](https://github.com/NVIDIA/NeMo-Agent-Toolkit) | 2,660 | **NVIDIA** — the official `NVIDIA` org |
 
 <details>
-<summary><b>Fourteen of them, briefly — what was broken and who merged it</b></summary>
+<summary><b>Fifteen of them, briefly — what was broken and who merged it</b></summary>
 
 - **deer-flow** — a portability fix in a blocking-IO test, merged by `WillemJiang`; the largest row in the
   table.
 - **fiber** — an optional path parameter swallowed the `/` after it, so `/api/:day-:month?-:year?` matched
   one segment too many; merged by `ReneWerner87`.
 - **ioredis** — an auto-pipelining fix, merged by `PavelPashov`.
+- **nuxt/content** — `generateItemSurround` dropped the previous item whenever `before` was larger than the
+  item's index, instead of returning a shorter window; approved and merged by `farnabaz` minutes apart.
 - **MMKV** — the Win32 flag mapper put the *creation disposition* into `dwDesiredAccess`, so restoring over
   an existing mapped file failed; it now goes to `dwCreationDisposition`, with a test that does the restore.
   Merged into `dev` by `lingol`, so no commit of this account sits on `master`.
@@ -143,7 +146,7 @@ or one person. Every external repository above 2,500★ that carries merged work
 </details>
 
 Seven more repositories between 1,000★ and 2,500★, the long tail below that, the per-merge record behind
-the 412, the `laya` ledger and the `deepseek-ai` picture are all in **[PROJECTS.md](PROJECTS.md)**.
+the 416, the `laya` ledger and the `deepseek-ai` picture are all in **[PROJECTS.md](PROJECTS.md)**.
 
 ## 📦 The rest of the family
 
