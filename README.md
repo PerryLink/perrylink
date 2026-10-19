@@ -123,12 +123,23 @@ a company.
 | [open5gs](https://github.com/open5gs/open5gs) | 2,775 | the `open5gs` open-source 5G core project — a community project rather than a company repo |
 | [NeMo-Agent-Toolkit](https://github.com/NVIDIA/NeMo-Agent-Toolkit) | 2,660 | **NVIDIA** — the official `NVIDIA` org; three review rounds with maintainer `willkill07` on making `remove_r1_think_tags` actually remove think blocks, merged 2026-10-08T00:10:02Z by NVIDIA's `rapids-bot` after he issued `/merge` |
 | [claude-agent-acp](https://github.com/agentclientprotocol/claude-agent-acp) | 2,658 | `agentclientprotocol` org — the same jointly-governed org as the row above, a separate repository |
+
+<details>
+<summary><b>Six more repositories between 1,000★ and 2,500★ — one line each</b></summary>
+
+| Repository | ★ | 项目归属方 |
+|---|---|---|
 | [awesome-jev](https://github.com/yibie/awesome-jev) | 2,401 | yibie — individual maintainer, community catalog for Jev; the row the 09-25 round both printed and denied, kept now on the commit the history probe finds |
 | [Agents-Anywhere](https://github.com/anywhere-labs/Agents-Anywhere) | 1,781 | `anywhere-labs` community org — 3 public repos, created 2026-05, dshdesktop.cn; not a company |
 | [mcp-remote](https://github.com/punkpeye/mcp-remote) | 1,634 | punkpeye (Frank Fiegel) — individual maintainer at Glama, the same account as `fastmcp` above; a Windows-portability fix to the repository's own test harness merged 2026-10-17T21:06:55Z |
 | [dsh-plugin-radar](https://github.com/AdamPlatin123/dsh-plugin-radar) | 1,476 | AdamPlatin123 — individual maintainer, catalog is a generated artifact |
 | [awesome-deepseek-harness](https://github.com/0xsline/awesome-deepseek-harness) | 1,208 | 0xsline — individual maintainer, community catalog |
 | [awesome-agent-apis](https://github.com/Anil-matcha/awesome-agent-apis) | 1,057 | Anil Chandra Naidu Matcha — individual maintainer, community catalog |
+
+</details>
+
+<details>
+<summary><b>The rest of the contributor set, and how the 405 total is derived</b></summary>
 
 **The rest of the contributor set** is the long tail below the 1,000★ line:
 **36 further repositories**, DSH plugin directories, small upstream projects and community catalogs
@@ -151,9 +162,14 @@ merged pull request at all, so neither carries a merge and they are named only f
 **73 repositories**; a further **161 are open across 127 repositories** as of 2026-10-19T00:41:22Z and are
 deliberately not counted here.
 
+</details>
+
 Each re-derivation, the merges that arrived between them, the two repositories that changed sides and
 the pull request this account closed after upstream fixed the same thing are recorded round by round in
 [`CHANGELOG.md`](CHANGELOG.md); this page carries the current figures and none of that history.
+
+<details>
+<summary><b>laya — 47 merged pull requests, second of 146 merged-PR authors</b></summary>
 
 **laya** — [NandhaKishorM/laya](https://github.com/NandhaKishorM/laya) — **47 merged pull requests of
 the 51 this account has opened there** (re-measured 2026-10-14 over all 964 pull requests the repository
@@ -169,6 +185,8 @@ query away:
 
 [`laya` pull requests by this account](https://github.com/NandhaKishorM/laya/pulls?q=is%3Apr+author%3APerryLink)
 — the same 51, always current, in any language.
+
+</details>
 
 <details>
 <summary><b>The 47 merged pull requests, by area</b></summary>
@@ -252,6 +270,9 @@ predict lifecycle — the maintainer's note says explicitly that it was not clos
 
 **Security** — published advisory [GHSA-j922-p6h6-p255](https://github.com/PerryLink/dsh-permission-rules/security/advisories/GHSA-j922-p6h6-p255) for dsh-permission-rules (medium, patched in 0.6.16).
 
+<details>
+<summary><b><code>deepseek-ai</code> — 22 pull requests opened across the org, 1 merged, 15 open</b></summary>
+
 **Official harness repo** — it does not accept external pull requests, so that line runs through issues, Discussions
 (the Show Your Plugins! post [#6104](https://github.com/deepseek-ai/deepseek-harness/discussions/6104)) and the plugin
 ecosystem instead — while the wider `deepseek-ai` org is open to fixes, and the account now proposes them at the
@@ -266,6 +287,8 @@ across eleven repositories — [TileKernels](https://github.com/deepseek-ai/Tile
 [DeepSeek-Prover-V1.5](https://github.com/deepseek-ai/DeepSeek-Prover-V1.5),
 [DeepJIT](https://github.com/deepseek-ai/DeepJIT) and [DeepSelect](https://github.com/deepseek-ai/DeepSelect) —
 fourteen of them code fixes, and the fifteenth a catalog addition.
+
+</details>
 
 ## 📦 The rest of the family
 
