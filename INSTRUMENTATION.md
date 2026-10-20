@@ -18,7 +18,7 @@ absent. The two sanctioned exceptions are marked.
 
 | Figure | Authoritative site | Update trigger |
 |---|---|---|
-| 91 actively maintained / 99 in the roster / 103-repo family / 102 owned | README § intro sentence | a repo joins, leaves, freezes or retires |
+| 91 actively maintained / 99 in the roster / 104-repo family / 103 owned | README § intro sentence | a repo joins, leaves, freezes or retires |
 | **plugins badge** *(exception: badge row is the live copy)* | README badge row — carries the actively maintained count, 91 | same |
 | Family roster (which plugins exist, and each one's status) | [`dsh-kit/plugins.txt`](https://github.com/PerryLink/dsh-kit) — the install roster, with `scripts/check-parity.mjs` deriving every count and failing on a retired package or a lost status cell | any release |
 | Per-repo maintenance status (`active` / `frozen` / `retired`) | [`dsh-plugin-kit/data/repos.json`](https://github.com/PerryLink/dsh-plugin-kit/blob/main/data/repos.json) — the machine-readable roster the portal renders and the certification registry counts | when a repo freezes or retires |
@@ -30,7 +30,7 @@ absent. The two sanctioned exceptions are marked.
 | dsh host corridor / node engine / license | README badge row (each links to the file it is read from) | when the declared range or the engines change |
 | external contributor repos / merges / above-1,000★ | README § Upstream, the "rest of the contributor set" paragraph | on re-derivation |
 | The named star table — **36 rows above 2,500★**, and the seven between 1,000★ and 2,500★ that live in `PROJECTS.md` | README § Upstream (the table itself) | on re-derivation |
-| The long form — upstream narrative, the 94-row roster, the retired/frozen tables, the npm caveats | [`PROJECTS.md`](PROJECTS.md), which the front page links | when the front page is split further |
+| The long form — upstream narrative, the 95-row roster, the retired/frozen tables, the npm caveats | [`PROJECTS.md`](PROJECTS.md), which the front page links | when the front page is split further |
 | laya merged / opened / open / closed | README § Upstream, the laya paragraph | on re-derivation |
 | `deepseek-ai` totals | README § Upstream, the "Official harness repo" paragraph | on re-derivation |
 | The 1,000★ threshold and the attribution rule | README § Upstream, the lead paragraph | rule change only |
@@ -95,7 +95,7 @@ paragraph. Keep both sentences.
 
 ---
 
-## 3. The 91 / 99 / 101 / 94 / 102 / 103 counting note
+## 3. The 91 / 99 / 101 / 95 / 103 / 104 counting note
 
 The page's most attackable number, so the note in the README's family section is the defence. **The
 heading and the badge carry the actively maintained count (91). The roster figure (99) is stated once,
@@ -108,9 +108,9 @@ Measured one repo at a time from each repo's own `package.json` at its default b
 | **91** | actively maintained — the roster minus 3 🚫 retired and 5 🧊 frozen. **This is the number the heading and the badge carry.** |
 | **99** | the roster: canonical plugins that declare `dsh.bundle.patch`, excluding the 2 retired corridor legs. `dsh-plugin-kit/data/repos.json` records all **99**, re-cut 2026-10-19 together with `dsh-kit/plugins.txt`, which lists 96 published specs (the 99 minus the 3 retired) |
 | **101** | a naive scan of the account — 99 canonical **+ 2 retired corridor legs** (`dsh-plugin-upgrade-015`, not archived; `dsh-plugin-upgrade-016`, archived; both still carrying the manifest) |
-| **94** | rows in the README's ten category tables: 92 of the 99 roster + 2 rows that are not roster plugins (`jevcore`, which declares no `dsh.bundle`, and the third-party `pan17/dsh-wechat`) |
-| **102** | PerryLink-owned repositories the README links |
-| **103** | the repositories the README names, including the third-party `pan17/dsh-wechat` |
+| **95** | rows in the README's ten category tables: 93 of the 99 roster + 2 rows that are not roster plugins (`jevcore`, which declares no `dsh.bundle`, and the third-party `pan17/dsh-wechat`) |
+| **103** | PerryLink-owned repositories the README links |
+| **104** | the repositories the README names, including the third-party `pan17/dsh-wechat` |
 | **164** | non-fork repositories this account owns in total — 63 of them declare no `dsh.bundle.patch` (the `loop-*` collection, a set of small LLM utility tools and a data index) and are outside this page's scope by design |
 
 **2026-10-08: the roster grew by 53.** A set of 53 compliance checkers was published that day
@@ -126,6 +126,14 @@ in the new total.
 the actively maintained set 89 → 91; the figures in the table above supersede the 10-08 line. The
 non-fork repository total was re-counted the same day: 164, of which 63 declare no
 `dsh.bundle.patch`.
+
+**2026-10-20: `dsh-phocinae` moved from the exclusion list into the tables.** It is a roster plugin (its own
+`package.json` declares `dsh.bundle.patch`, npm `dsh-phocinae`) that the family note had been leaving out as an
+"other product line" repository, so it carried no row, no "Start here" row and no link at all — the page named it
+only as an install command. It now has a row, a "Start here" row and a link from the Phocinae section, which moves
+the row count to **95** (93 of the 99 roster + `jevcore` + `dsh-wechat`), leaves **six** exclusions, and takes the
+linked PerryLink-owned repositories to **103** and the named ones to **104**. The 99 / 91 / 101 figures are unchanged:
+the roster it belongs to did not grow.
 
 They are a second workspace on disk (`D:\Projects\dsh-plugins`, disjoint from `D:\Projects\dsh\plugins`)
 and carry their own memory file; their maintenance rules, version policy and citation-gate discipline

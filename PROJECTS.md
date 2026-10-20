@@ -3,7 +3,7 @@
 > This is the long form of [the profile README](README.md). The profile carries the front page: who I
 > am, the flagship plugins, every external repository above 2,500★, and a short note on what is retired
 > and frozen. Everything that used to sit there in full lives here — the merge-by-merge upstream
-> record, the whole 94-row plugin roster, the retired and frozen tables, and the npm/Gitee/Market
+> record, the whole 95-row plugin roster, the retired and frozen tables, and the npm/Gitee/Market
 > figures with their caveats.
 >
 > Moved out of the profile on 2026-10-19; the figures are unchanged and keep the dates they were
@@ -245,21 +245,21 @@ and each plugin's own README carries the detail this page only summarises.
 *Counting note: **91** is the actively maintained set, and it is the figure this page's heading and badge
 use. It is derived one repository at a time: **99** repositories declare `dsh.bundle.patch` (re-derived
 2026-10-19 by reading each repo's own `package.json` at its default branch), of which **3 are 🚫 retired**
-and **5 are 🧊 frozen**, leaving **91 actively maintained**. Measured against the 102 PerryLink-owned
-repositories this page names: **96 declare the contract and 6 do not** —
+and **5 are 🧊 frozen**, leaving **91 actively maintained**. Measured against the 103 PerryLink-owned
+repositories this page names: **97 declare the contract and 6 do not** —
 [dsh-catalog](https://github.com/PerryLink/dsh-catalog), [dsh-kit](https://github.com/PerryLink/dsh-kit) and
 [dsh-plugin-certification](https://github.com/PerryLink/dsh-plugin-certification) (the certification registry, whose
 MCP server publishes from [dsh-cert-mcp](https://github.com/PerryLink/dsh-cert-mcp) instead), plus
 [jevcore](https://github.com/PerryLink/jevcore) (no `dsh.bundle`; only its `jevcore-dsh` workspace member is a plugin)
 and [laya-mcp](https://github.com/PerryLink/laya-mcp) (an MCP sidecar, not a plugin), and
 [dsh-attention-index](https://github.com/PerryLink/dsh-attention-index) (a data index, no `dsh.bundle.patch`). The third-party
-[pan17/dsh-wechat](https://github.com/pan17/dsh-wechat) carries a plugin row but is not one of them: 102 + 1 = the 103
+[pan17/dsh-wechat](https://github.com/pan17/dsh-wechat) carries a plugin row but is not one of them: 103 + 1 = the 104
 repos this page names. A naive scan of the account finds two more than the 99 — the retired
 [dsh-plugin-upgrade](https://github.com/PerryLink/dsh-plugin-upgrade) corridor legs `dsh-plugin-upgrade-015` (**not**
 archived) and `dsh-plugin-upgrade-016` (archived), both still carrying the manifest and neither an active plugin:
-99 + 2 = the **101** such a scan returns. The ten tables below list **94 rows**: 92 of the 99 repositories in that roster,
-plus `jevcore` (which declares no `dsh.bundle`) and the third-party `dsh-wechat` — the seven left out
-(`dsh-plugin-kit`, `dsh-cert-mcp`, `dsh-plugin-doctor`, `dsh-phocinae`, `dsh-checkers`, `dsh-community-bench`) are the
+99 + 2 = the **101** such a scan returns. The ten tables below list **95 rows**: 93 of the 99 repositories in that roster,
+plus `jevcore` (which declares no `dsh.bundle`) and the third-party `dsh-wechat` — the six left out
+(`dsh-plugin-kit`, `dsh-cert-mcp`, `dsh-plugin-doctor`, `dsh-checkers`, `dsh-community-bench`) are the
 toolchain and other-product-line repositories named in the support list above, and `dsh-phone-inbox` joined the roster
 after these tables were last re-cut. Retired and frozen rows keep their place with
 their status rather than being deleted, which is why the roster figure is larger than the active one. The same **99** entries
@@ -311,7 +311,7 @@ non-plugin total, which is measured rather than derived.
 | [dsh-doublecheck](https://github.com/PerryLink/dsh-doublecheck) | Engineering-discipline guard: grill, gates, adversary review | | [npm](https://www.npmjs.com/package/dsh-doublecheck) |
 | [dsh-score](https://github.com/PerryLink/dsh-score) | Plugin quality scoring across git/gh/npm | | [npm](https://www.npmjs.com/package/dsh-score) |
 
-### 📊 Observability & cost (4)
+### 📊 Observability & cost (5)
 
 | Plugin | One-liner | Status | npm |
 |---|---|---|---|
@@ -319,6 +319,7 @@ non-plugin total, which is measured rather than derived.
 | [dsh-budget](https://github.com/PerryLink/dsh-budget) | Token/cost metering, budget caps, carbon estimate, latency benchmarks | 🧊 FROZEN — `dsh-cost-meter` | [npm](https://www.npmjs.com/package/dsh-budget) |
 | [dsh-observe](https://github.com/PerryLink/dsh-observe) | OTel/Langfuse telemetry export | | [npm](https://www.npmjs.com/package/dsh-observe) |
 | [dsh-fast](https://github.com/PerryLink/dsh-fast) | Performance diagnostics | | [npm](https://www.npmjs.com/package/dsh-fast) |
+| [dsh-phocinae](https://github.com/PerryLink/dsh-phocinae) | Local non-generative decision layer: `phocinae_ask` / `phocinae_gate` on a typed decision model, plus a fail-closed approval gate | | [npm](https://www.npmjs.com/package/dsh-phocinae) |
 
 ### 🎨 Content & knowledge (5)
 

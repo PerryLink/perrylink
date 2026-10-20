@@ -2,7 +2,7 @@
 
 <!-- Editing note: every figure on this page is measured and dated, and each one has exactly one
      authoritative site. Read INSTRUMENTATION.md before changing a number. The long form of this page
-     -- the merge-by-merge upstream record, the 94-row plugin roster, the retired/frozen tables and the
+     -- the merge-by-merge upstream record, the 95-row plugin roster, the retired/frozen tables and the
      npm figures with their caveats -- is PROJECTS.md; rounds go to CHANGELOG.md. -->
 
 <p align="center">
@@ -39,7 +39,7 @@ Beijing — not affiliated with DeepSeek, and not a DeepSeek employee.
 
 **Upstream** — 421 merged pull requests in 82 repositories that are not mine, from AWS, Apple, Docker,
 Microsoft, NVIDIA, Redis, Tencent and the vLLM project down to one-person projects. **The family** — 91
-actively maintained Apache-2.0 plugins in a 103-repo family: security, workflows, research, messaging
+actively maintained Apache-2.0 plugins in a 104-repo family: security, workflows, research, messaging
 bridges, developer experience, and since 2026-10-08 a set of 53 compliance checkers that read a register
 or record set against a versioned rule pack and report the differences. Every plugin has one page at
 **[perrylink.github.io](https://perrylink.github.io/)** — 114 pages, complete in the served HTML
@@ -56,10 +56,11 @@ a loading state.
 | [dsh-memento](https://github.com/PerryLink/dsh-memento) | Approval-gated cross-session memory (`ctx.memory` + SQLite) (138★) | `dsh plugin --profile web add dsh-memento` |
 | [dsh-permission-rules](https://github.com/PerryLink/dsh-permission-rules) | Claude Code-style declarative allow/deny/ask rules plus a process-level network policy (126★) | `dsh plugin --profile web add dsh-permission-rules` |
 | [dsh-mcp-panel](https://github.com/PerryLink/dsh-mcp-panel) | MCP management console: `/mcp` + Settings tab + trial calls (77★) | `dsh plugin --profile web add dsh-mcp-panel` |
+| [dsh-phocinae](https://github.com/PerryLink/dsh-phocinae) | Local, non-generative verdicts for the approval chain: a small typed decision model behind `phocinae_ask` / `phocinae_gate`, with fail-closed escalation for everything it does not answer (1★) | `dsh plugin --profile web add dsh-phocinae` |
 
 ## 🦭 Phocinae — a 144.3M typed decision model
 
-Separate from the harness: I train small language models. **[Phocinae-Largha-150M-v1](https://github.com/Phocinae/Phocinae-Largha-150M-v1)** (Apache-2.0) is a typed decision model — no text generation; one forward pass returns a verdict per question with calibrated confidence. GPU **21.0 ms** (RTX 5090) p50 per decision, CPU-only **1.64 s per case**; English typed-decisions **0.906** (400 cases / 2,000 decisions, re-measured 2026-10-09), Chinese (machine-translated eval set) 0.848. With a τ=0.6 escalate gate, **55.0%** of agent decisions stay local (79.6% at τ=0.5) and kept-subset accuracy moves 0.906 → **0.9936** (+0.0876) — the gate makes the system better, not just cheaper. Weights on [Hugging Face](https://huggingface.co/Phocinae/Phocinae-Largha-150M-v1) and [ModelScope](https://modelscope.cn/models/PerryLink/Phocinae-Largha-150M-v1); server `pip install phocinae-server`, DSH bundle `npm i dsh-phocinae`. Reproduction ships with the repo: seeds, row-set hashes, environment and eval scripts.
+Separate from the harness: I train small language models. **[Phocinae-Largha-150M-v1](https://github.com/Phocinae/Phocinae-Largha-150M-v1)** (Apache-2.0) is a typed decision model — no text generation; one forward pass returns a verdict per question with calibrated confidence. GPU **21.0 ms** (RTX 5090) p50 per decision, CPU-only **1.64 s per case**; English typed-decisions **0.906** (400 cases / 2,000 decisions, re-measured 2026-10-09), Chinese (machine-translated eval set) 0.848. With a τ=0.6 escalate gate, **55.0%** of agent decisions stay local (79.6% at τ=0.5) and kept-subset accuracy moves 0.906 → **0.9936** (+0.0876) — the gate makes the system better, not just cheaper. Weights on [Hugging Face](https://huggingface.co/Phocinae/Phocinae-Largha-150M-v1) and [ModelScope](https://modelscope.cn/models/PerryLink/Phocinae-Largha-150M-v1); server `pip install phocinae-server`, DSH bundle [`dsh-phocinae`](https://github.com/PerryLink/dsh-phocinae) (`npm i dsh-phocinae`). Reproduction ships with the repo: seeds, row-set hashes, environment and eval scripts.
 
 ## 🧭 dsh-score — public evidence for good plugins
 
@@ -159,7 +160,7 @@ checker — and one third-party plugin carried as a row. The roster's source of 
 **[dsh-kit](https://github.com/PerryLink/dsh-kit)**, with a parity script holding the family to that file;
 the machine-readable catalogue is **[dsh-catalog](https://github.com/PerryLink/dsh-catalog)**, which is
 also the DSH Desktop Market source. One line per plugin, with its status and npm name, is in
-**[PROJECTS.md](PROJECTS.md)** — 94 rows in ten tables.
+**[PROJECTS.md](PROJECTS.md)** — 95 rows in ten tables.
 
 | | # | Some of what is in it |
 |---|---|---|
@@ -167,7 +168,7 @@ also the DSH Desktop Market source. One line per plugin, with its status and npm
 | 🔁 Workflows | 8 | [dsh-checkpoint-rewind](https://github.com/PerryLink/dsh-checkpoint-rewind) · [dsh-github](https://github.com/PerryLink/dsh-github) · [dsh-test-drive](https://github.com/PerryLink/dsh-test-drive) |
 | ✨ Experience & UX | 4 | [dsh-memento](https://github.com/PerryLink/dsh-memento) · [dsh-composer-history](https://github.com/PerryLink/dsh-composer-history) · [dsh-output-styles](https://github.com/PerryLink/dsh-output-styles) |
 | 🧪 Evaluation | 3 | [dsh-doublecheck](https://github.com/PerryLink/dsh-doublecheck) · [dsh-score](https://github.com/PerryLink/dsh-attention-index) · [dsh-auto-review](https://github.com/PerryLink/dsh-auto-review) |
-| 📊 Observability & cost | 4 | [dsh-observe](https://github.com/PerryLink/dsh-observe) · [dsh-autotier](https://github.com/PerryLink/dsh-autotier) · [dsh-fast](https://github.com/PerryLink/dsh-fast) |
+| 📊 Observability & cost | 5 | [dsh-observe](https://github.com/PerryLink/dsh-observe) · [dsh-autotier](https://github.com/PerryLink/dsh-autotier) · [dsh-fast](https://github.com/PerryLink/dsh-fast) · [dsh-phocinae](https://github.com/PerryLink/dsh-phocinae) |
 | 🎨 Content & knowledge | 5 | [dsh-talk](https://github.com/PerryLink/dsh-talk) · [dsh-translate](https://github.com/PerryLink/dsh-translate) · [dsh-library](https://github.com/PerryLink/dsh-library) |
 | 🛠️ Developer experience | 6 | [dsh-mcp-panel](https://github.com/PerryLink/dsh-mcp-panel) · [dsh-plugin-guide](https://github.com/PerryLink/dsh-plugin-guide) · [jevcore](https://github.com/PerryLink/jevcore) |
 | 📱 Messaging & bridges | 3 | [dsh-ticktick](https://github.com/PerryLink/dsh-ticktick) · [dsh-reach](https://github.com/PerryLink/dsh-reach) · [dsh-wechat](https://github.com/pan17/dsh-wechat) |
@@ -232,7 +233,7 @@ Apache-2.0 插件生态** —— 安全、工作流、研究、消息桥接、�
 
 ---
 
-*Measured, not remembered.* The full inventory — the merge-by-merge upstream record, the 94-row plugin
+*Measured, not remembered.* The full inventory — the merge-by-merge upstream record, the 95-row plugin
 roster, the retired and frozen tables, and the npm and registry figures with their caveats — is in
 **[PROJECTS.md](PROJECTS.md)**. How every figure is measured is in
 [INSTRUMENTATION.md](https://github.com/PerryLink/perrylink/blob/main/INSTRUMENTATION.md), and what each
