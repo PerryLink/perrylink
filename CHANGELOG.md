@@ -14,6 +14,18 @@ and `dsh-laya` were introduced by name.
 
 ---
 
+## 2026-10-20 (second round)
+
+- **One merge landed after the previous derivation, and it earns credit.** [`cobanov/teslamate-mcp#16`](https://github.com/cobanov/teslamate-mcp/pull/16)
+  merged at 06:13:50Z by `cobanov`: on Windows asyncio installs a `ProactorEventLoop`, which `psycopg`'s async
+  driver refuses, so the pool never opened a connection — every tool call failed while `/health` answered 503.
+  At **140★** it sits below the 2,500★ floor, so the named table stays at 36 rows; default branch `main`
+  carries one commit of this account (`defaultBranchRef.target.history(author:{id})`), so it is credited rather
+  than merely merged, and the long tail below 1,000★ goes from 38 to **39**.
+- **Counters.** The external set is now **422 merges across 83 repositories** (was 421 / 82), **389 credited in
+  81** (was 388 / 80), the same **33 uncredited in 2** — `SihanTeng`'s list at 32 and `Tencent/MMKV` at 1, both
+  unchanged — and **163 open across 128** (was 162 / 127). Re-derived 2026-10-20T11:30:20Z.
+
 ## 2026-10-20
 
 - **Five merges landed after the 13:21Z derivation, and one of them clears the 2,500★ floor.** In time order:

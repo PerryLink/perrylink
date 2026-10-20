@@ -163,7 +163,7 @@ published badge width, not a measurement).
 
 | Row | px | Badges |
 |---|---|---|
-| 1 — reach and counters | 678 | stars (90), followers (112), repos (72), upstream merges 412 (138), credited repos 77 (112), plugins 91 (72), checkers 53 (82) |
+| 1 — reach and counters | 678 | stars (90), followers (112), repos (72), upstream merges 422 (138), credited repos 81 (112), plugins 91 (72), checkers 53 (82) |
 | 2 — npm and stack | 720 | npm 107 names (123), npm downloads 30d (170), npm provenance 95/107 (152), license (120), node (155) |
 | 3 — quality and registry | 668 | dsh host corridor (146), OpenSSF Scorecard (136), Glama (110), certified (132), MCP Registry (144) |
 | 4 — index, mirror, feeds | 787 | plugin index 114 pages (144), Gitee (101), dshfind (256), Desktop Market source (172), Zenodo DOI (~114) |
