@@ -29,7 +29,7 @@ absent. The two sanctioned exceptions are marked.
 | dshfind aggregate tier — **how to read it**: dshfind publishes a badge per plugin at `/api/badge/<owner>/<repo>?metric=downloads` (the `<img>` every plugin page embeds). Nine of the family's repositories answer with a download tier, 97 fall back to ★. The 106 indexed repositories are counted from its sitemap shards (`/sitemap/plugins-N.xml`), not from the search page, which is client-side | README § Where the plugins live; the nine tiers in `PROJECTS.md` | when dshfind re-renders |
 | dsh host corridor / node engine / license | README badge row (each links to the file it is read from) | when the declared range or the engines change |
 | external contributor repos / merges / above-1,000★ | README § Upstream, the "rest of the contributor set" paragraph | on re-derivation |
-| The named star table — **35 rows above 2,500★**, and the seven between 1,000★ and 2,500★ that live in `PROJECTS.md` | README § Upstream (the table itself) | on re-derivation |
+| The named star table — **36 rows above 2,500★**, and the seven between 1,000★ and 2,500★ that live in `PROJECTS.md` | README § Upstream (the table itself) | on re-derivation |
 | The long form — upstream narrative, the 94-row roster, the retired/frozen tables, the npm caveats | [`PROJECTS.md`](PROJECTS.md), which the front page links | when the front page is split further |
 | laya merged / opened / open / closed | README § Upstream, the laya paragraph | on re-derivation |
 | `deepseek-ai` totals | README § Upstream, the "Official harness repo" paragraph | on re-derivation |

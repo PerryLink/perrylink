@@ -14,6 +14,32 @@ and `dsh-laya` were introduced by name.
 
 ---
 
+## 2026-10-20
+
+- **Five merges landed after the 13:21Z derivation, and one of them clears the 2,500★ floor.** In time order:
+  [`modelcontextprotocol/go-sdk#1409`](https://github.com/modelcontextprotocol/go-sdk/pull/1409) at 14:29:47Z
+  (`--result_dir` was passed through unresolved, so `server-conformance.sh` wrote its output relative to the
+  caller's cwd), [`minio/minio-go#2324`](https://github.com/minio/minio-go/pull/2324) at 15:01:25Z — the pull
+  request the previous round recorded as *approved by `klauspost` at 11:10Z and still open*, merged by him
+  four hours later: `RemoveObjects` reported one error for a whole batch and hid which object had failed, it
+  now reports one result per failed object —
+  [`awesome-dsh-plugin/awesome-dsh-plugin#8114`](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/pull/8114)
+  at 17:22:16Z, [`ruvnet/ruflo#4275`](https://github.com/ruvnet/ruflo/pull/4275) at 18:51:06Z (command examples
+  in the user guide that fail when copied verbatim), and
+  [`kriszyp/msgpackr#206`](https://github.com/kriszyp/msgpackr/pull/206) at 22:06:16Z, merged by `kriszyp`
+  himself: `toJSON` was honoured on `Map` subclasses but not on `Set` subclasses.
+- **Counters.** The external set is now **421 merges across 82 repositories** (was 416 / 80), **388 credited
+  in 80** (was 383 / 78), the same **33 uncredited in 2** — `SihanTeng`'s list at 32 and `Tencent/MMKV` at 1,
+  both unchanged — and **162 open across 127**, which is where it stood yesterday at the same reading; five
+  merges and five new pull requests cancelled out exactly.
+- **The table grows to 36 rows.** `minio/minio-go` carries a commit of this account on `master` (probe: one
+  commit), so it is credited rather than merely merged, and at **3,008★** it enters the named table between
+  `fastmcp` and `open5gs` and is the sixteenth entry in the brief list. `kriszyp/msgpackr` at **694★** is
+  below the floor and joins the long tail, which goes from 37 to **38**; every star figure in the table was
+  re-read this round, the largest move being `ruvnet/ruflo` 76,850 → 77,185.
+
+---
+
 ## 2026-10-19
 
 - **Four merges landed after the 12:09Z derivation, so the counters moved again.** Three catalog pull requests
