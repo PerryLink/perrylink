@@ -14,6 +14,26 @@ and `dsh-laya` were introduced by name.
 
 ---
 
+## 2026-10-21
+
+- **Three merges landed after the previous derivation.** [`awesome-dsh-plugin/awesome-dsh-plugin#8293`](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/pull/8293)
+  merged at 2026-10-20T17:28:17Z by `fkysly` — three more Phocinae entries in the catalogue;
+  [`psf/black#5559`](https://github.com/psf/black/pull/5559) at 2026-10-20T23:06:23Z by `cobaltt7` —
+  `_write_to_stdout()` translates `\n` into the platform newline itself, so the trailing-newline fixup
+  appended a second one and CRLF input without a trailing newline could come out as `\r\r\n`; and
+  [`valkey-io/valkey-go#210`](https://github.com/valkey-io/valkey-go/pull/210) at 2026-10-21T03:10:53Z by
+  `rueian` — the client-side cache key concatenated the command name and arguments with nothing
+  unambiguous between them, so `HGET k ALL` and `HGETALL k` (and `GETRANGE k 1 23` against
+  `GETRANGE k 12 3`) shared one entry; each part is now length-prefixed.
+- **Counters.** The external set is now **425 merges across 85 repositories** (was 422 / 83), **392 credited
+  in 83** (was 389 / 81), the same **33 uncredited in 2** — `SihanTeng`'s list at 32 and `Tencent/MMKV` at
+  1 — and **157 open across 122** (was 163 / 128). Re-derived 2026-10-21T13:15:05Z.
+- **The table grows to 37 rows.** `psf/black` carries a commit of this account on its default branch
+  (probe: one commit), so it is credited rather than merely merged, and at **41,967★** it enters the named
+  table between `reactive-resume` and `fiber`. `valkey-io/valkey-go` is credited too but sits below the
+  2,500★ floor and joins the long tail, which goes from 39 to **40**. Every star figure in the table was
+  re-read this round, the largest move being `ruvnet/ruflo` 77,185 → 78,090.
+
 ## 2026-10-20 (second round)
 
 - **One merge landed after the previous derivation, and it earns credit.** [`cobanov/teslamate-mcp#16`](https://github.com/cobanov/teslamate-mcp/pull/16)

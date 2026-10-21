@@ -79,18 +79,18 @@ than letting the account name imply a company.
 </details>
 
 <details>
-<summary><b>The rest of the contributor set, and how the 422 total is derived</b></summary>
+<summary><b>The rest of the contributor set, and how the 425 total is derived</b></summary>
 
 **The rest of the contributor set** is the long tail below the 1,000★ line:
-**39 further repositories**, DSH plugin directories, small upstream projects and community catalogs
+**40 further repositories**, DSH plugin directories, small upstream projects and community catalogs
 ([dsh-handbook](https://github.com/Electricitysheep/dsh-handbook),
 [imsai-sh's list](https://github.com/imsai-sh/awesome-deepseek-harness-plugins), which alone took 44
 merges, and [the Jev gallery](https://github.com/OmniJev/awesome-jev-gallery), among them) — most are
 catalogs that ingest the family and carry no company owner, so they are named here only in aggregate.
-**81 external repositories carry at least one merged pull request of ours and a commit
-attributed to this account on their default branch; 389 merges were counted inside those 81 —
-re-derived 2026-10-20T11:30:20Z from this account's own merged pull requests and confirmed repository by
-repository with the `defaultBranchRef.target.history(author:{id})` probe, so 389 is exact rather than a
+**83 external repositories carry at least one merged pull request of ours and a commit
+attributed to this account on their default branch; 392 merges were counted inside those 83 —
+re-derived 2026-10-21T13:15:05Z from this account's own merged pull requests and confirmed repository by
+repository with the `defaultBranchRef.target.history(author:{id})` probe, so 392 is exact rather than a
 floor over a probed subset. Two repositories carry merges of ours and still earn no credit, and both are named for that reason:
 [SihanTeng's list](https://github.com/SihanTeng/awesome-deepseek-harness-plugins), which took **32** and
 credits no commit to this account at all — the case the rule at the top of this section was written
@@ -99,8 +99,8 @@ into the default branch `master`, so no commit of this account sits where the pr
 [phocinae-server](https://github.com/Phocinae/phocinae-server) and
 [deepseek-desktop](https://github.com/zcx960/deepseek-desktop), each hold a commit of this account and no
 merged pull request at all, so neither carries a merge and they are named only for that reason.
-**389 + 33 = the 422 merged pull requests** this account has outside `PerryLink/*`, concentrated in
-**83 repositories**; a further **163 are open across 128 repositories** as of 2026-10-20T11:30:20Z and are
+**392 + 33 = the 425 merged pull requests** this account has outside `PerryLink/*`, concentrated in
+**85 repositories**; a further **157 are open across 122 repositories** as of 2026-10-21T13:15:05Z and are
 deliberately not counted here.
 
 </details>
