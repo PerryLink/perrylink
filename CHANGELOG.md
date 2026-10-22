@@ -14,6 +14,22 @@ and `dsh-laya` were introduced by name.
 
 ---
 
+## 2026-10-22 (second round)
+
+- **One merge landed after the morning derivation.** [`uber/kraken#724`](https://github.com/uber/kraken/pull/724)
+  merged at 2026-10-22T09:31:25Z by `gkeesh7`: the cache file reader opened to duplicate a committed
+  upload to a replica was never handed to the server's closer set, so every replica of every uploaded blob
+  leaked one file descriptor; both replication paths now close it. `sambhav-jain-16` asked for the two
+  cases to be folded into one table before approving, and both commits carry this account's authorship, so
+  the repository is credited rather than merely merged.
+- **Counters.** The external set is now **427 merges across 87 repositories** (was 426 / 86), **394 credited
+  in 85** (was 393 / 84), the same **33 uncredited in 2** — `SihanTeng`'s list at 32 and `Tencent/MMKV` at
+  1 — and **153 open across 118** (was 155 / 120; the drop is this merge and
+  `raysan5/raygui#579`, closed unmerged on 2026-10-22T09:42:03Z). Re-derived 2026-10-22T13:49:01Z.
+- **The table grows to 39 rows.** `uber/kraken` is credited at **6,770★**, so it enters the named table
+  between `models.dev` and `koishi`. The long tail stays at **40**. Every star figure in the table was
+  re-read this round, the largest move being `dsh-market/dsh-market` 8,049 → 8,186.
+
 ## 2026-10-22
 
 - **One merge landed after the previous derivation, and it is the first one in this repository.**
