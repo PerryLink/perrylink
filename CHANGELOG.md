@@ -14,6 +14,25 @@ and `dsh-laya` were introduced by name.
 
 ---
 
+## 2026-10-22
+
+- **One merge landed after the previous derivation, and it is the first one in this repository.**
+  [`urfave/cli#2479`](https://github.com/urfave/cli/pull/2479) merged at 2026-10-21T15:40:14Z by
+  `Juneezee`: `HandleExitCoder` found an `ExitCoder` with a bare type assertion, so an exit error
+  wrapped with `fmt.Errorf("%w")` was never recognised — nothing printed, and the process exited 1
+  instead of the intended code. `Juneezee` rebased it onto a `main` that now requires Go 1.26 (#2483),
+  squashed the two golden-regenerating commits into the first one, and replaced the final lookup with
+  `errors.AsType` before merging; issue #2478 is closed as completed. Two of the three commits carry this
+  account's authorship, so the default branch holds our commits and the repository is credited rather
+  than merely merged.
+- **Counters.** The external set is now **426 merges across 86 repositories** (was 425 / 85), **393 credited
+  in 84** (was 392 / 83), the same **33 uncredited in 2** — `SihanTeng`'s
+  list at 32 and `Tencent/MMKV` at 1 — and **155 open across 120** (was 157 / 122; the drop is this merge
+  and `NomicFoundation/hardhat#8723`, closed unmerged on 2026-10-21T16:57:28Z). Re-derived 2026-10-22T04:40:46Z.
+- **The table grows to 38 rows.** `urfave/cli` is credited at **24,300★**, so it enters the named table
+  between `laya` and `learn-harness-engineering`. The long tail stays at **40**. Every star figure in the
+  table was re-read this round, the largest move being `dsh-tauri/deepseek-harness-desktop` 3,418 → 3,212.
+
 ## 2026-10-21
 
 - **Three merges landed after the previous derivation.** [`awesome-dsh-plugin/awesome-dsh-plugin#8293`](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/pull/8293)
