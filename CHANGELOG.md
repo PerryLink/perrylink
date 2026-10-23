@@ -14,6 +14,25 @@ and `dsh-laya` were introduced by name.
 
 ---
 
+## 2026-10-23
+
+- **Two merges landed after the 10-22 derivation.** [`ajeetdsouza/zoxide#1335`](https://github.com/ajeetdsouza/zoxide/pull/1335)
+  merged at 2026-10-22T23:55:13Z by `ajeetdsouza`: a bare `z` under `_ZO_ECHO=1` called `Set-Location`
+  without `-Passthru`, leaving the `$dir` assignment `$null` and throwing `PropertyNotFoundException`
+  under strict mode; the no-path branch now passes `-Passthru`, with a `pwsh` regression test.
+  [`prometheus/client_golang#2179`](https://github.com/prometheus/client_golang/pull/2179) merged at
+  2026-10-23T07:22:07Z by `bwplotka`: `checkMetricConsistency` compared each label name with the previous
+  one before the pairs were sorted, so non-adjacent duplicates passed and a scrape of the registry was
+  dropped as a whole; the sort now runs before the duplicate loop, with adjacent-control and
+  non-adjacent-regression subtests.
+- **Counters.** The external set is now **429 merges across 89 repositories** (was 427 / 87), **396
+  credited in 87** (was 394 / 85), the same **33 uncredited in 2** — `SihanTeng`'s list at 32 and
+  `Tencent/MMKV` at 1 — and **149 open across 114** (was 153 / 118). Re-derived 2026-10-23T11:36:00Z.
+- **The table grows to 41 rows.** `zoxide` is credited at **40,256★**, entering between `black` and
+  `fiber`; `prometheus/client_golang` at **6,043★**, between `ouroboros` and `teamai-cli`. Every star
+  figure in the table was re-read this round; the largest move is `ruflo` 78,357 → 78,629. The credited
+  long tail stays at 40.
+
 ## 2026-10-22 (second round)
 
 - **One merge landed after the morning derivation.** [`uber/kraken#724`](https://github.com/uber/kraken/pull/724)
