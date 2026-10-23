@@ -19,7 +19,8 @@ and `dsh-laya` were introduced by name.
 - **Two merges landed after the 10-22 derivation.** [`ajeetdsouza/zoxide#1335`](https://github.com/ajeetdsouza/zoxide/pull/1335)
   merged at 2026-10-22T23:55:13Z by `ajeetdsouza`: a bare `z` under `_ZO_ECHO=1` called `Set-Location`
   without `-Passthru`, leaving the `$dir` assignment `$null` and throwing `PropertyNotFoundException`
-  under strict mode; the no-path branch now passes `-Passthru`, with a `pwsh` regression test.
+  under strict mode; the no-path branch now passes `-Passthru`. `ajeetdsouza` dropped the PowerShell
+  regression test from the branch before merging, so the fix lands without one.
   [`prometheus/client_golang#2179`](https://github.com/prometheus/client_golang/pull/2179) merged at
   2026-10-23T07:22:07Z by `bwplotka`: `checkMetricConsistency` compared each label name with the previous
   one before the pairs were sorted, so non-adjacent duplicates passed and a scrape of the registry was

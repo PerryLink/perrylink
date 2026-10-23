@@ -131,8 +131,7 @@ or one person. Every external repository above 2,500★ that carries merged work
   table.
 - **zoxide** — a bare `z` under `_ZO_ECHO=1` called `Set-Location` without `-Passthru`, so the `$dir`
   assignment was `$null` and strict mode threw `PropertyNotFoundException`; the no-path branch now passes
-  `-Passthru`, with a `pwsh` regression test under `Set-StrictMode -Version latest`. Merged by
-  `ajeetdsouza`.
+  `-Passthru`. Merged by `ajeetdsouza`, who dropped the regression test from the branch before merging.
 - **prometheus/client_golang** — `checkMetricConsistency` compared each label name with the previous one
   before the pairs were sorted, so non-adjacent duplicates passed and a scrape of the registry was dropped
   as a whole; the sort now runs before the duplicate loop, with an adjacent control and a non-adjacent
