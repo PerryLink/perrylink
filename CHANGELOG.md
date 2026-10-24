@@ -14,6 +14,28 @@ and `dsh-laya` were introduced by name.
 
 ---
 
+## 2026-10-24
+
+- **One merge landed after the 10-23 derivation.** [`free5gc/ike#28`](https://github.com/free5gc/ike/pull/28)
+  merged at 2026-10-24T07:50:50Z by `tim-ywliu`: `Delete.Unmarshal` read the bytes after its 4-byte header
+  in fixed 4-byte strides, and the only bound was a lower bound on the body length, so a body that was
+  longer than its header declared by a number of bytes that was not a multiple of 4 read past the buffer
+  and panicked. The payload is parsed from an IKE_SA_INIT, which arrives before any authentication, so a
+  peer could trip it. The branch rejects a body whose SPI data is not a whole number of 4-byte words.
+  `tim-ywliu` then replaced the lower-bound check with an exact length match in `1ba3258`, keeping the
+  multiple-of-4 guard, and corrected his own first reading of the pair while doing it: an equality check
+  does not subsume the guard, because `spiSize` 2 with one SPI is a 6-byte body that matches its header and
+  still is not a whole number of words. Both commits are in `main`; the first is authored by this account,
+  so the repository is credited.
+- **Counters.** The external set is now **430 merges across 90 repositories** (was 429 / 89), **397
+  credited in 88** (was 396 / 87), the same **33 uncredited in 2** — `SihanTeng`'s list at 32 and
+  `Tencent/MMKV` at 1 — and **151 open across 116** (was 149 / 114; the three pull requests opened on
+  10-23 are `kellyjonbrazil/jc#802`, `modelscope/evalscope#1937` and
+  `modelcontextprotocol/go-sdk#1441`). Re-derived 2026-10-24T10:33:47Z.
+- **The named table stays at 41 rows.** `free5gc/ike` is credited at **3★**, so it enters the long tail,
+  which moves from 40 to 41. No row crosses the 2,500★ line this round, and the star column was last
+  re-read on 2026-10-23 rather than here.
+
 ## 2026-10-23
 
 - **Two merges landed after the 10-22 derivation.** [`ajeetdsouza/zoxide#1335`](https://github.com/ajeetdsouza/zoxide/pull/1335)
