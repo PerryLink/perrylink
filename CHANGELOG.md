@@ -19,7 +19,7 @@ and `dsh-laya` were introduced by name.
 - **Six merges landed after the 10-24 derivation.** [`psf/black#5609`](https://github.com/psf/black/pull/5609)
   merged at 03:28:27Z by `cobaltt7`: `# fmt: skip` on an opening bracket made the second formatting pass
   lose the hidden-code marker, so at a short line length it split before the operator and emitted code it
-  could not parse; the marker now survives the copy.
+  could not parse; `cobaltt7` replaced the branch's hand-copied fields with `Leaf#clone()` and taught `clone()` to carry the marker (and the line-range state), so the marker now survives the copy.
   [`inference-gateway/inference-gateway#807`](https://github.com/inference-gateway/inference-gateway/pull/807)
   merged at 03:28:27Z by `edenreich`: Cohere's `/v1/models` answers `{"models":[...]}`, but the generated
   transformer only decoded the OpenAI `{object,data}` envelope, so the listing was always empty; a
@@ -31,7 +31,7 @@ and `dsh-laya` were introduced by name.
   `WillemJiang`: the timestamped output-name fallbacks collided on a coarse clock and now stay distinct.
   [`urfave/cli#2497`](https://github.com/urfave/cli/pull/2497) merged at 10:24:07Z by `Juneezee`: required
   mutually-exclusive groups were checked before a subcommand parsed the inherited flags, so a flag placed
-  after the subcommand name was rejected; the check now runs at the leaf.
+  after the subcommand name was rejected; the check now runs at the leaf, with the help and completion commands skipping it as they skip required flags.
   [`gofiber/fiber#4796`](https://github.com/gofiber/fiber/pull/4796) merged at 11:24:56Z by `ReneWerner87`:
   the hostauthorization port check compared digit counts instead of the value, so `:000080` was rejected.
 - **Counters.** The external set is now **436 merges across 91 repositories** (was 430 / 90), **403
