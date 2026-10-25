@@ -14,6 +14,34 @@ and `dsh-laya` were introduced by name.
 
 ---
 
+## 2026-10-25
+
+- **Six merges landed after the 10-24 derivation.** [`psf/black#5609`](https://github.com/psf/black/pull/5609)
+  merged at 03:28:27Z by `cobaltt7`: `# fmt: skip` on an opening bracket made the second formatting pass
+  lose the hidden-code marker, so at a short line length it split before the operator and emitted code it
+  could not parse; the marker now survives the copy.
+  [`inference-gateway/inference-gateway#807`](https://github.com/inference-gateway/inference-gateway/pull/807)
+  merged at 03:28:27Z by `edenreich`: Cohere's `/v1/models` answers `{"models":[...]}`, but the generated
+  transformer only decoded the OpenAI `{object,data}` envelope, so the listing was always empty; a
+  hand-maintained transformer now decodes the native envelope and is protected by `.openapi-ignore`.
+  [`bytedance/deer-flow#7442`](https://github.com/bytedance/deer-flow/pull/7442) merged at 08:16:10Z by
+  `WillemJiang`: one non-finite number in `staleFactsToExtend` or a consolidation confidence failed the
+  whole memory-update batch and repeated the paid call; unusable entries are now dropped or defaulted.
+  [`bytedance/deer-flow#7071`](https://github.com/bytedance/deer-flow/pull/7071) merged at 08:17:16Z by
+  `WillemJiang`: the timestamped output-name fallbacks collided on a coarse clock and now stay distinct.
+  [`urfave/cli#2497`](https://github.com/urfave/cli/pull/2497) merged at 10:24:07Z by `Juneezee`: required
+  mutually-exclusive groups were checked before a subcommand parsed the inherited flags, so a flag placed
+  after the subcommand name was rejected; the check now runs at the leaf.
+  [`gofiber/fiber#4796`](https://github.com/gofiber/fiber/pull/4796) merged at 11:24:56Z by `ReneWerner87`:
+  the hostauthorization port check compared digit counts instead of the value, so `:000080` was rejected.
+- **Counters.** The external set is now **436 merges across 91 repositories** (was 430 / 90), **403
+  credited in 89** (was 397 / 88), the same **33 uncredited in 2** — `SihanTeng`'s list at 32 and
+  `Tencent/MMKV` at 1 — and **168 open across 130** (was 151 / 116). Re-derived 2026-10-25T15:34:11Z.
+  `inference-gateway` is the new credited repository: its #807 squash commit is authored by this account,
+  and at **217★** it enters the long tail, which moves from 41 to 42.
+- **The named table stays at 41 rows.** Nothing crosses the 2,500★ line this round; the star column was
+  last re-read on 2026-10-23 rather than here.
+
 ## 2026-10-24
 
 - **One merge landed after the 10-23 derivation.** [`free5gc/ike#28`](https://github.com/free5gc/ike/pull/28)
