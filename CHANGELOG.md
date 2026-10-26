@@ -14,6 +14,41 @@ and `dsh-laya` were introduced by name.
 
 ---
 
+## 2026-10-26 (fourth round) — full re-measure
+
+- **A full re-measure, not another counter refresh.** The 14:09:41Z third round added
+  `redis/ioredis#2248` and moved the counters to **442 merges across 92 repositories**, **409 credited
+  in 90**, **33 uncredited in 2** — `SihanTeng`'s list at 32 and `Tencent/MMKV` at 1 — and **160 open
+  across 123**. This round adopts those counters and re-reads every star, the npm registry, the family
+  roster, the site sitemap, the Market catalogue and the dshfind index against them.
+- **Stars.** Every one of the 41 rows above 2,500★ and the eight between 1,000★ and 2,500★ was read
+  again. Largest moves: `ruflo` 78,629 → 79,411, `dsh-market` 8,397 → 9,026, `awesome-dsh-plugin`
+  20,290 → 20,845. Two ordering swaps follow from the new values: `dsh-market` above `jc`, and
+  `DSH-better-sidebar` above `agent-client-protocol`. `PROJECTS.md` had lost six named rows — `black`,
+  `zoxide`, `urfave/cli`, `kraken`, `prometheus/client_golang` and `minio-go` — in an earlier edit; they
+  are restored, so both tables carry the same 41.
+- **Family.** The roster is **108** (110 repositories declaring `dsh.bundle.patch`, minus the two
+  retired corridor legs), **100 active** (3 retired + 5 frozen) and **105 table rows**. Nine compliance
+  tools published 2026-10-23 account for the move from 99 / 91 / 95, and `dsh-phone-inbox` gets its
+  missing row. The 53-checker suite is unchanged; the nine sit in a separate toolchain table.
+  `plugins.txt` and `data/repos.json` still carry the 2026-10-19 cut of 99 and are called out on the
+  page rather than quietly redefined.
+- **npm.** 117 names (+10), 1,665 versions (+64), **96** with provenance on `latest`, **105** on at
+  least one, and **232,500** downloads in 2026-09-26..2026-10-25. The twelve names with no provenance
+  anywhere changed by one: `dsh-customs-mcp` replaces `dsh-batch-triage`.
+- **Site and registry.** The sitemap now serves 123 pages (53 checker + 56 plugin + 13 Chinese + the
+  home page), up from 114; 12 new project pages were added for the nine 2026-10-23 tools and three
+  support plugins. The Market catalogue is 109 packages, regenerated 2026-10-26T14:30:15Z. The MCP
+  Registry now has four servers: `dsh-customs-mcp` joined `dsh-cert-mcp`, `jevcore-mcp` and `laya-mcp`.
+- **dshfind.** Its sitemap now lists 1,596 plugins in two shards and only **35** of this family's
+  repositories (the page previously carried 106 from a page-count probe, not from the sitemap); pages
+  outside it carry `noindex`. Nine of the 35 have a download tier, adding to **45,500+** — 1,000 above
+  the 44,500 the page carried, because `jevcore` moved from 1k+ to 2k+ — and the distribution is now
+  3 / 2 / 2 / 1 / 1 (10k+ / 5k+ / 2k+ / 1k+ / 500+).
+- **Gitee.** The workflow's list carries 101 repositories, not 99.
+
+---
+
 ## 2026-10-26 (third round)
 
 - **One merge landed about eighty minutes after the second round.** [`redis/ioredis#2248`](https://github.com/redis/ioredis/pull/2248)
@@ -30,6 +65,8 @@ and `dsh-laya` were introduced by name.
   `Tencent/MMKV` at 1 — and **160 open across 123** (was 162 / 124). Re-derived 2026-10-26T14:09:41Z.
 - **The named table stays at 41 rows, the 1,000–2,500★ table at eight rows.** `ioredis` was already in
   the named table; no star row was re-read this round.
+
+---
 
 ## 2026-10-26 (second round)
 

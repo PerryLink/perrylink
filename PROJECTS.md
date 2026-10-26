@@ -3,11 +3,11 @@
 > This is the long form of [the profile README](README.md). The profile carries the front page: who I
 > am, the flagship plugins, every external repository above 2,500★, and a short note on what is retired
 > and frozen. Everything that used to sit there in full lives here — the merge-by-merge upstream
-> record, the whole 95-row plugin roster, the retired and frozen tables, and the npm/Gitee/Market
+> record, the whole 105-row plugin roster, the retired and frozen tables, and the npm/Gitee/Market
 > figures with their caveats.
 >
-> Moved out of the profile on 2026-10-19; the figures are unchanged and keep the dates they were
-> measured. How each one is measured is in
+> Moved out of the profile on 2026-10-19; every figure keeps the date it was measured. How each one is
+> measured is in
 > [INSTRUMENTATION.md](https://github.com/PerryLink/perrylink/blob/main/INSTRUMENTATION.md), and what
 > each round corrected is in [CHANGELOG.md](https://github.com/PerryLink/perrylink/blob/main/CHANGELOG.md).
 
@@ -18,8 +18,9 @@ proposals are deliberately not listed. The third column names the project's owne
 does not say whether that is a company, a standards body or one person.*
 
 **★ 1,000+ — named individually, as the rule requires, each carrying the party that owns the project.**
-Forty-one external repos above a thousand stars carry merged work, ★ re-measured 2026-10-19 for
-every row. Some rows belong to a company or a well-known project organization — Amazon Web Services, Apple,
+Forty-nine external repositories above a thousand stars carry merged work — forty-one above 2,500★ in the
+table below and eight between 1,000★ and 2,500★ in the folded table after it. Every ★ was re-measured
+2026-10-26. Some rows belong to a company or a well-known project organization — Amazon Web Services, Apple,
 ByteDance, Docker, Microsoft, NVIDIA, Redis, Tencent, DeepSeek, ModelScope, the vLLM project, the `gofiber`
 project, cordiverse, koishijs, NeuML's `txtai`, and the ACP project that Zed and JetBrains jointly govern —
 while the rest are catalog repos, small community orgs and one-person projects, and the column says so rather
@@ -27,55 +28,61 @@ than letting the account name imply a company.
 
 | Repository | ★ | 项目归属方 |
 |---|---|---|
-| [deer-flow](https://github.com/bytedance/deer-flow) | 84,125 | **字节跳动 ByteDance** — the official `bytedance` org (deerflow.tech); a one-line portability fix in a blocking-IO test merged 2026-10-07T10:22:16Z by `WillemJiang`, and now the largest row in this table |
-| [ruflo](https://github.com/ruvnet/ruflo) | 76,850 | ruvnet (rUv / Reuven Cohen) — individual maintainer; a 75k★ agent harness on a personal account, not a company repo, and the largest row here that is not owned by a company |
-| [reactive-resume](https://github.com/reactive-resume/reactive-resume) | 44,527 | `reactive-resume` org — independent open-source project (rxresu.me) |
-| [fiber](https://github.com/gofiber/fiber) | 40,219 | **the gofiber project** — the official `gofiber` org (gofiber.io), the Express-inspired Go web framework; an optional-path-parameter matching fix merged 2026-10-19T08:56:41Z by `ReneWerner87` |
-| [laya](https://github.com/NandhaKishorM/laya) | 33,480 | NandhaKishorM — individual maintainer; the repo was created 2026-09-18 |
-| [learn-harness-engineering](https://github.com/walkinglabs/learn-harness-engineering) | 20,856 | `walkinglabs` community org — the harness-engineering tutorial site |
-| [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) | 19,477 | `awesome-dsh-plugin` org — community catalog, no company behind it |
-| [MMKV](https://github.com/Tencent/MMKV) | 18,763 | **Tencent** — the official `Tencent` org; the mobile key-value storage framework developed by WeChat. A Win32 creation-flag fix merged 2026-10-19T10:35:44Z into `dev` by `lingol` — into `dev`, not the default branch `master`, which is why this row carries a merge and no credit |
-| [SkillOpt](https://github.com/microsoft/SkillOpt) | 18,549 | **Microsoft** — the official `microsoft` org; a UTF-8 state-file fix merged 2026-10-18T17:02:48Z |
-| [ioredis](https://github.com/redis/ioredis) | 15,346 | **Redis** — the official `redis` org; the Node.js Redis client, where an auto-pipelining fix merged 2026-10-19T08:09:05Z by `PavelPashov` |
-| [FlashMLA](https://github.com/deepseek-ai/FlashMLA) | 13,092 | **DeepSeek** — the official `deepseek-ai` org |
-| [txtai](https://github.com/neuml/txtai) | 13,027 | **NeuML** — an independent open-source project (neuml.github.io/txtai), not a company repo; merged 2026-10-11T21:21:02Z by its maintainer `davidmezzetti`, on the third attempt and after he had asked repeatedly, over three pull requests, for the change to be cut down, which it was |
-| [mcp](https://github.com/awslabs/mcp) | 9,794 | **Amazon Web Services (AWS)** — the official `awslabs` org; a one-file UTF-8 fix merged 2026-10-05T22:49:06Z by maintainer `markjschreiber` with two approvals |
-| [Cordis](https://github.com/cordiverse/cordis) | 9,257 | **cordiverse** org; its maintainer Shigma is now at **DeepSeek**, and Cordis is the kernel DeepSeek Harness vendors as `@deepseek-ai/cordis` |
-| [BrowserSkill](https://github.com/Tencent/BrowserSkill) | 9,202 | **腾讯 Tencent** — the official `Tencent` org; merged 2026-10-06T13:45:15Z by collaborator `iuyo5678` with eight checks green |
-| [dsh-web](https://github.com/zhu1090093659/dsh-web) | 9,009 | zhu1090093659 — individual maintainer |
-| [jc](https://github.com/kellyjonbrazil/jc) | 8,694 | kellyjonbrazil (Kelly Brazil) — individual maintainer; a Windows platform-name fix merged 2026-10-17T21:51:22Z and started counting when `master` caught up on 2026-10-18T20:39:02Z |
-| [dsh-market](https://github.com/dsh-market/dsh-market) | 7,395 | `dsh-market` org — the community plugin market behind dshmarket.com, not a DeepSeek repo |
-| [models.dev](https://github.com/anomalyco/models.dev) | 7,302 | `anomalyco` org — the model-catalogue site behind models.dev; merged 2026-10-10T23:11:09Z by `rekram1-node` |
-| [koishi](https://github.com/koishijs/koishi) | 6,259 | `koishijs` org — the cross-platform chatbot framework; merged 2026-10-08T12:13:06Z by its maintainer `shigma`, who found and fixed a regression in this account's own patch before merging it |
-| [ouroboros](https://github.com/Q00/ouroboros) | 6,247 | Q00 — individual maintainer (`@zep-us`) |
-| [teamai-cli](https://github.com/Tencent/teamai-cli) | 5,565 | **腾讯 Tencent** — the official `Tencent` org, opensource.tencent.com |
-| [go-sdk](https://github.com/modelcontextprotocol/go-sdk) | 5,247 | the `modelcontextprotocol` org's Go SDK for MCP |
-| [aibrix](https://github.com/vllm-project/aibrix) | 5,151 | **the vLLM project** — the official `vllm-project` org behind vLLM; two flaky-test fixes merged 2026-10-06T16:23:08Z and 2026-10-07T11:18:42Z, the second by `googs1025` and the second of the two flaky-test fixes this account has merged there |
-| [embedding-atlas](https://github.com/apple/embedding-atlas) | 4,988 | **Apple** — the official `apple` org (apple.github.io/embedding-atlas); a line-ending normalization fix in a release script merged 2026-10-06T16:30:51Z by `donghaoren` |
-| [docker-agent](https://github.com/docker/docker-agent) | 4,567 | **Docker, Inc.** — the official `docker` org; merged 2026-10-05 by maintainer `aheritier` |
-| [agent-client-protocol](https://github.com/agentclientprotocol/agent-client-protocol) | 4,465 | `agentclientprotocol` org — governed jointly by **Zed Industries** and **JetBrains** |
-| [DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) | 4,309 | `omdsh-dev` community org — the DeepSeek Harness sidebar plugin; added 2026-10-12, and `INSTRUMENTATION.md` records why it was previously carried as excluded |
-| [content](https://github.com/nuxt/content) | 3,672 | **Nuxt** — the official `nuxt` org. `generateItemSurround` dropped the previous item whenever `before` was larger than the item's index, instead of returning a shorter window; approved and merged 2026-10-19T12:27:29Z by `farnabaz` |
-| [evalscope](https://github.com/modelscope/evalscope) | 3,560 | `modelscope` org — the ModelScope model-hub project; a UTF-8 BOM dataset fix merged 2026-10-19T03:42:50Z by `Yunnglin` |
-| [deepseek-harness-desktop](https://github.com/dsh-tauri/deepseek-harness-desktop) | 3,292 | `dsh-tauri` community org — self-described non-official and non-commercial, not a DeepSeek repo |
-| [fastmcp](https://github.com/punkpeye/fastmcp) | 3,275 | punkpeye (Frank Fiegel) — individual maintainer at Glama; the TypeScript MCP framework |
-| [open5gs](https://github.com/open5gs/open5gs) | 2,779 | the `open5gs` open-source 5G core project — a community project rather than a company repo |
-| [claude-agent-acp](https://github.com/agentclientprotocol/claude-agent-acp) | 2,661 | `agentclientprotocol` org — the same jointly-governed org as the row above, a separate repository |
-| [NeMo-Agent-Toolkit](https://github.com/NVIDIA/NeMo-Agent-Toolkit) | 2,660 | **NVIDIA** — the official `NVIDIA` org; three review rounds with maintainer `willkill07` on making `remove_r1_think_tags` actually remove think blocks, merged 2026-10-08T00:10:02Z by NVIDIA's `rapids-bot` after he issued `/merge` |
+| [deer-flow](https://github.com/bytedance/deer-flow) | 84,442 | **字节跳动 ByteDance** — the official `bytedance` org (deerflow.tech); a one-line portability fix in a blocking-IO test merged 2026-10-07T10:22:16Z by `WillemJiang`, and now the largest row in this table |
+| [ruflo](https://github.com/ruvnet/ruflo) | 79,411 | ruvnet (rUv / Reuven Cohen) — individual maintainer; a 75k★ agent harness on a personal account, not a company repo, and the largest row here that is not owned by a company |
+| [reactive-resume](https://github.com/reactive-resume/reactive-resume) | 44,887 | `reactive-resume` org — independent open-source project (rxresu.me) |
+| [black](https://github.com/psf/black) | 42,048 | **Python Software Foundation** — the official `psf` org; `_write_to_stdout()` translated `\n` itself, so the trailing-newline fixup appended a second one, and CRLF input without a trailing newline could come out as `\r\r\n`; it now appends a bare `\n` and lets the writer translate it, merged 2026-10-20T23:06:23Z by `cobaltt7` |
+| [zoxide](https://github.com/ajeetdsouza/zoxide) | 40,298 | ajeetdsouza (Ajeet D'Souza) — individual maintainer; a bare `z` under `_ZO_ECHO=1` called `Set-Location` without `-Passthru`, so the `$dir` assignment was `$null` and strict mode threw `PropertyNotFoundException`; the no-path branch now passes `-Passthru`, merged 2026-10-22T23:55:13Z by `ajeetdsouza`, who dropped the regression test from the branch before merging |
+| [fiber](https://github.com/gofiber/fiber) | 40,231 | **the gofiber project** — the official `gofiber` org (gofiber.io), the Express-inspired Go web framework; an optional-path-parameter matching fix merged 2026-10-19T08:56:41Z by `ReneWerner87` |
+| [laya](https://github.com/NandhaKishorM/laya) | 34,352 | NandhaKishorM — individual maintainer; the repo was created 2026-09-18 |
+| [cli](https://github.com/urfave/cli) | 24,306 | the `urfave` org — community-maintained Go CLI framework; `HandleExitCoder` recognised an `ExitCoder` only through a bare type assertion, so an exit error wrapped with `fmt.Errorf("%w")` printed nothing and fell back to exit code 1; `Juneezee` rebased it onto a `main` that now requires Go 1.26 before merging on 2026-10-21T15:40:14Z |
+| [learn-harness-engineering](https://github.com/walkinglabs/learn-harness-engineering) | 21,639 | `walkinglabs` community org — the harness-engineering tutorial site |
+| [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) | 20,845 | `awesome-dsh-plugin` org — community catalog, no company behind it |
+| [MMKV](https://github.com/Tencent/MMKV) | 18,769 | **Tencent** — the official `Tencent` org; the mobile key-value storage framework developed by WeChat. A Win32 creation-flag fix merged 2026-10-19T10:35:44Z into `dev` by `lingol` — into `dev`, not the default branch `master`, which is why this row carries a merge and no credit |
+| [SkillOpt](https://github.com/microsoft/SkillOpt) | 18,692 | **Microsoft** — the official `microsoft` org; a UTF-8 state-file fix merged 2026-10-18T17:02:48Z |
+| [ioredis](https://github.com/redis/ioredis) | 15,347 | **Redis** — the official `redis` org; the Node.js Redis client, where an auto-pipelining fix merged 2026-10-19T08:09:05Z by `PavelPashov` |
+| [FlashMLA](https://github.com/deepseek-ai/FlashMLA) | 13,194 | **DeepSeek** — the official `deepseek-ai` org |
+| [txtai](https://github.com/neuml/txtai) | 13,036 | **NeuML** — an independent open-source project (neuml.github.io/txtai), not a company repo; merged 2026-10-11T21:21:02Z by its maintainer `davidmezzetti`, on the third attempt and after he had asked repeatedly, over three pull requests, for the change to be cut down, which it was |
+| [mcp](https://github.com/awslabs/mcp) | 9,835 | **Amazon Web Services (AWS)** — the official `awslabs` org; a one-file UTF-8 fix merged 2026-10-05T22:49:06Z by maintainer `markjschreiber` with two approvals |
+| [BrowserSkill](https://github.com/Tencent/BrowserSkill) | 9,608 | **腾讯 Tencent** — the official `Tencent` org; merged 2026-10-06T13:45:15Z by collaborator `iuyo5678` with eight checks green |
+| [dsh-web](https://github.com/zhu1090093659/dsh-web) | 9,560 | zhu1090093659 — individual maintainer |
+| [Cordis](https://github.com/cordiverse/cordis) | 9,404 | **cordiverse** org; its maintainer Shigma is now at **DeepSeek**, and Cordis is the kernel DeepSeek Harness vendors as `@deepseek-ai/cordis` |
+| [dsh-market](https://github.com/dsh-market/dsh-market) | 9,026 | `dsh-market` org — the community plugin market behind dshmarket.com, not a DeepSeek repo |
+| [jc](https://github.com/kellyjonbrazil/jc) | 8,695 | kellyjonbrazil (Kelly Brazil) — individual maintainer; a Windows platform-name fix merged 2026-10-17T21:51:22Z and started counting when `master` caught up on 2026-10-18T20:39:02Z |
+| [models.dev](https://github.com/anomalyco/models.dev) | 7,395 | `anomalyco` org — the model-catalogue site behind models.dev; merged 2026-10-10T23:11:09Z by `rekram1-node` |
+| [kraken](https://github.com/uber/kraken) | 6,773 | **Uber** — the official `uber` org; the cache file reader opened to duplicate a committed upload to a replica was never closed, leaking one file descriptor per replica for every uploaded blob; both replication paths now register it with the server's closer set, merged 2026-10-22T09:31:25Z by `gkeesh7` |
+| [koishi](https://github.com/koishijs/koishi) | 6,287 | `koishijs` org — the cross-platform chatbot framework; merged 2026-10-08T12:13:06Z by its maintainer `shigma`, who found and fixed a regression in this account's own patch before merging it |
+| [ouroboros](https://github.com/Q00/ouroboros) | 6,277 | Q00 — individual maintainer (`@zep-us`) |
+| [client_golang](https://github.com/prometheus/client_golang) | 6,043 | **Prometheus** — the official `prometheus` org (CNCF project); `checkMetricConsistency` compared each label name with the previous one before the pairs were sorted, so non-adjacent duplicates passed and a scrape of the registry was dropped as a whole; the sort now runs before the duplicate loop, merged 2026-10-23T07:22:07Z by `bwplotka` |
+| [teamai-cli](https://github.com/Tencent/teamai-cli) | 5,665 | **腾讯 Tencent** — the official `Tencent` org, opensource.tencent.com |
+| [go-sdk](https://github.com/modelcontextprotocol/go-sdk) | 5,275 | the `modelcontextprotocol` org's Go SDK for MCP |
+| [aibrix](https://github.com/vllm-project/aibrix) | 5,162 | **the vLLM project** — the official `vllm-project` org behind vLLM; two flaky-test fixes merged 2026-10-06T16:23:08Z and 2026-10-07T11:18:42Z, the second by `googs1025` and the second of the two flaky-test fixes this account has merged there |
+| [embedding-atlas](https://github.com/apple/embedding-atlas) | 4,998 | **Apple** — the official `apple` org (apple.github.io/embedding-atlas); a line-ending normalization fix in a release script merged 2026-10-06T16:30:51Z by `donghaoren` |
+| [docker-agent](https://github.com/docker/docker-agent) | 4,610 | **Docker, Inc.** — the official `docker` org; merged 2026-10-05 by maintainer `aheritier` |
+| [DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) | 4,571 | `omdsh-dev` community org — the DeepSeek Harness sidebar plugin; added 2026-10-12, and `INSTRUMENTATION.md` records why it was previously carried as excluded |
+| [agent-client-protocol](https://github.com/agentclientprotocol/agent-client-protocol) | 4,516 | `agentclientprotocol` org — governed jointly by **Zed Industries** and **JetBrains** |
+| [content](https://github.com/nuxt/content) | 3,674 | **Nuxt** — the official `nuxt` org. `generateItemSurround` dropped the previous item whenever `before` was larger than the item's index, instead of returning a shorter window; approved and merged 2026-10-19T12:27:29Z by `farnabaz` |
+| [evalscope](https://github.com/modelscope/evalscope) | 3,592 | `modelscope` org — the ModelScope model-hub project; a UTF-8 BOM dataset fix merged 2026-10-19T03:42:50Z by `Yunnglin` |
+| [deepseek-harness-desktop](https://github.com/dsh-tauri/deepseek-harness-desktop) | 3,288 | `dsh-tauri` community org — self-described non-official and non-commercial, not a DeepSeek repo |
+| [fastmcp](https://github.com/punkpeye/fastmcp) | 3,277 | punkpeye (Frank Fiegel) — individual maintainer at Glama; the TypeScript MCP framework |
+| [minio-go](https://github.com/minio/minio-go) | 3,010 | **MinIO** — the official `minio` org; `RemoveObjects` reported a single error for a whole batch, hiding which object had failed; it now reports one result per failed object, merged 2026-10-19T15:01:25Z by `klauspost` |
+| [open5gs](https://github.com/open5gs/open5gs) | 2,791 | the `open5gs` open-source 5G core project — a community project rather than a company repo |
+| [claude-agent-acp](https://github.com/agentclientprotocol/claude-agent-acp) | 2,692 | `agentclientprotocol` org — the same jointly-governed org as the row above, a separate repository |
+| [NeMo-Agent-Toolkit](https://github.com/NVIDIA/NeMo-Agent-Toolkit) | 2,676 | **NVIDIA** — the official `NVIDIA` org; three review rounds with maintainer `willkill07` on making `remove_r1_think_tags` actually remove think blocks, merged 2026-10-08T00:10:02Z by NVIDIA's `rapids-bot` after he issued `/merge` |
 
 <details>
 <summary><b>Eight more repositories between 1,000★ and 2,500★ — one line each</b></summary>
 
 | Repository | ★ | 项目归属方 |
 |---|---|---|
-| [awesome-jev](https://github.com/yibie/awesome-jev) | 2,413 | yibie — individual maintainer, community catalog for Jev; the row the 09-25 round both printed and denied, kept now on the commit the history probe finds |
+| [awesome-jev](https://github.com/yibie/awesome-jev) | 2,470 | yibie — individual maintainer, community catalog for Jev; the row the 09-25 round both printed and denied, kept now on the commit the history probe finds |
+| [Agents-Anywhere](https://github.com/anywhere-labs/Agents-Anywhere) | 2,246 | `anywhere-labs` community org — 3 public repos, created 2026-05, dshdesktop.cn; not a company |
 | [deep-research-web-ui](https://github.com/AnotiaWang/deep-research-web-ui) | 2,223 | AnotiaWang — individual maintainer; a docs fix to the Helodata image name merged 2026-10-26T09:22:58Z |
-| [Agents-Anywhere](https://github.com/anywhere-labs/Agents-Anywhere) | 1,863 | `anywhere-labs` community org — 3 public repos, created 2026-05, dshdesktop.cn; not a company |
 | [nginx-upsync-module](https://github.com/weibocom/nginx-upsync-module) | 1,844 | weibocom — the Weibo open-source org; an out-of-bounds write fix merged 2026-10-19T06:04:29Z, re-tested by the maintainer with a plain and an ASan build |
-| [mcp-remote](https://github.com/punkpeye/mcp-remote) | 1,635 | punkpeye (Frank Fiegel) — individual maintainer at Glama, the same account as `fastmcp` above; a Windows-portability fix to the repository's own test harness merged 2026-10-17T21:06:55Z |
-| [dsh-plugin-radar](https://github.com/AdamPlatin123/dsh-plugin-radar) | 1,479 | AdamPlatin123 — individual maintainer, catalog is a generated artifact |
-| [awesome-deepseek-harness](https://github.com/0xsline/awesome-deepseek-harness) | 1,218 | 0xsline — individual maintainer, community catalog |
-| [awesome-agent-apis](https://github.com/Anil-matcha/awesome-agent-apis) | 1,056 | Anil Chandra Naidu Matcha — individual maintainer, community catalog |
+| [mcp-remote](https://github.com/punkpeye/mcp-remote) | 1,652 | punkpeye (Frank Fiegel) — individual maintainer at Glama, the same account as `fastmcp` above; a Windows-portability fix to the repository's own test harness merged 2026-10-17T21:06:55Z |
+| [dsh-plugin-radar](https://github.com/AdamPlatin123/dsh-plugin-radar) | 1,485 | AdamPlatin123 — individual maintainer, catalog is a generated artifact |
+| [awesome-deepseek-harness](https://github.com/0xsline/awesome-deepseek-harness) | 1,258 | 0xsline — individual maintainer, community catalog |
+| [awesome-agent-apis](https://github.com/Anil-matcha/awesome-agent-apis) | 1,063 | Anil Chandra Naidu Matcha — individual maintainer, community catalog |
 
 </details>
 
@@ -83,7 +90,7 @@ than letting the account name imply a company.
 <summary><b>The rest of the contributor set, and how the 442 total is derived</b></summary>
 
 **The rest of the contributor set** is the long tail below the 1,000★ line:
-**42 further repositories**, DSH plugin directories, small upstream projects and community catalogs
+**43 further repositories**, DSH plugin directories, small upstream projects and community catalogs
 ([dsh-handbook](https://github.com/Electricitysheep/dsh-handbook),
 [imsai-sh's list](https://github.com/imsai-sh/awesome-deepseek-harness-plugins), which alone took 44
 merges, [the Jev gallery](https://github.com/OmniJev/awesome-jev-gallery) and
@@ -236,44 +243,41 @@ fourteen of them code fixes, and the fifteenth a catalog addition.
 
 ## 📦 The family — the full roster
 
-The rest of the family and the five support repos are one line each below. The roster's source of truth
-is **[dsh-kit](https://github.com/PerryLink/dsh-kit)** — its `plugins.txt` and a parity script hold the
-family to that file; the machine-readable catalogue is
+The rest of the family and the support repositories are one line each below. The install list is
+**[dsh-kit](https://github.com/PerryLink/dsh-kit)** — its `plugins.txt` and a parity script hold the
+published specs — and the machine-readable catalogue is
 **[dsh-catalog](https://github.com/PerryLink/dsh-catalog)**, which is also the DSH Desktop Market source;
 and each plugin's own README carries the detail this page only summarises.
 
 <details>
-<summary><b>The full family — 99 plugins in the roster, 91 of them actively maintained, plus 7 support repos, one line each</b></summary>
+<summary><b>The full family — 108 repositories in the roster, 100 of them actively maintained, plus the support repositories, one line each</b></summary>
 
-*Counting note: **91** is the actively maintained set, and it is the figure this page's heading and badge
-use. It is derived one repository at a time: **99** repositories declare `dsh.bundle.patch` (re-derived
-2026-10-19 by reading each repo's own `package.json` at its default branch), of which **3 are 🚫 retired**
-and **5 are 🧊 frozen**, leaving **91 actively maintained**. Measured against the 103 PerryLink-owned
-repositories this page names: **97 declare the contract and 6 do not** —
-[dsh-catalog](https://github.com/PerryLink/dsh-catalog), [dsh-kit](https://github.com/PerryLink/dsh-kit) and
-[dsh-plugin-certification](https://github.com/PerryLink/dsh-plugin-certification) (the certification registry, whose
-MCP server publishes from [dsh-cert-mcp](https://github.com/PerryLink/dsh-cert-mcp) instead), plus
-[jevcore](https://github.com/PerryLink/jevcore) (no `dsh.bundle`; only its `jevcore-dsh` workspace member is a plugin)
-and [laya-mcp](https://github.com/PerryLink/laya-mcp) (an MCP sidecar, not a plugin), and
-[dsh-attention-index](https://github.com/PerryLink/dsh-attention-index) (a data index, no `dsh.bundle.patch`). The third-party
-[pan17/dsh-wechat](https://github.com/pan17/dsh-wechat) carries a plugin row but is not one of them: 103 + 1 = the 104
-repos this page names. A naive scan of the account finds two more than the 99 — the retired
-[dsh-plugin-upgrade](https://github.com/PerryLink/dsh-plugin-upgrade) corridor legs `dsh-plugin-upgrade-015` (**not**
-archived) and `dsh-plugin-upgrade-016` (archived), both still carrying the manifest and neither an active plugin:
-99 + 2 = the **101** such a scan returns. The ten tables below list **95 rows**: 93 of the 99 repositories in that roster,
-plus `jevcore` (which declares no `dsh.bundle`) and the third-party `dsh-wechat` — the six left out
-(`dsh-plugin-kit`, `dsh-cert-mcp`, `dsh-plugin-doctor`, `dsh-checkers`, `dsh-community-bench`) are the
-toolchain and other-product-line repositories named in the support list above, and `dsh-phone-inbox` joined the roster
-after these tables were last re-cut. Retired and frozen rows keep their place with
-their status rather than being deleted, which is why the roster figure is larger than the active one. The same **99** entries
-and the same three states are recorded once, in
-[dsh-plugin-kit/data/repos.json](https://github.com/PerryLink/dsh-plugin-kit/blob/main/data/repos.json), which
-the portal renders and the certification registry counts.*
+*Counting note: **100** is the actively maintained set, and it is the figure this page's heading and badge
+use. It is derived one repository at a time: **110** repositories declare `dsh.bundle.patch` (re-derived
+2026-10-26 by reading each repo's own `package.json` at its default branch); removing the two retired
+corridor legs leaves **108** in the roster, of which **3 are 🚫 retired** and **5 are 🧊 frozen**, leaving
+**100 actively maintained**. The account owns **175** non-fork repositories; **121** carry a `package.json`
+and **110** of those declare the contract. The ten categories below list **105 rows**: 103 of the 108 roster
+repositories, plus `jevcore` (which declares no `dsh.bundle`) and the third-party `dsh-wechat`. The five
+roster repositories left out — `dsh-plugin-kit`, `dsh-cert-mcp`, `dsh-plugin-doctor`, `dsh-checkers` and
+`dsh-community-bench` — are the support and tooling repositories named above. Retired and frozen rows keep
+their place with their status rather than being deleted, which is why the roster figure is larger than the
+active one. The portal's
+[dsh-plugin-kit/data/repos.json](https://github.com/PerryLink/dsh-plugin-kit/blob/main/data/repos.json)
+still records the 2026-10-19 cut of 99 with the same three states; the nine 2026-10-23 tools are not in it
+yet.*
 
 **The 2026-10-08 addition.** 53 compliance checkers joined the roster that day — they declare
-`dsh.bundle.patch` like every other entry, so by the rule above they count. They are the `### ✅ Compliance checkers` table at the end of the folded family below, and they keep
+`dsh.bundle.patch` like every other entry, so by the rule above they count. They are the `### ✅ Compliance checkers & tools` tables at the end of the folded family below, and they keep
 their own memory file and maintenance rules in a separate workspace. Every figure in this note was raised by exactly 53 except the
 non-plugin total, which is measured rather than derived.
+
+**The 2026-10-23 addition.** Nine more compliance tools were published — six checker packages
+(`dsh-bid-health-check`, `dsh-canteen-retention-check`, `dsh-construction-doc-check`, `dsh-invoice-ledger`,
+`dsh-payroll-audit`, `dsh-safety-ledger-check`) and three document tools (`dsh-excel-reconcile`,
+`dsh-table-ingest`, `dsh-tender-requirements`). They are roster entries under the same rule, but they are not
+part of the 53-checker suite and are listed in the toolchain table below. The roster moved 99 → 108 and the
+active count 91 → 100; the 53-checker suite itself is unchanged.
 
 ### 🔒 Security (4)
 
@@ -358,10 +362,11 @@ holds **110 npm names** — more names than the family has repositories, because
 and a provider package, and because the 53 compliance checkers and the two `Phocinae` packages publish under names
 of their own (measured 2026-10-14).
 
-### 📱 Messaging & bridges (3)
+### 📱 Messaging & bridges (4)
 
 | Plugin | One-liner | Status | npm |
 |---|---|---|---|
+| [dsh-phone-inbox](https://github.com/PerryLink/dsh-phone-inbox) | Inbound phone (WeChat bridge) attachment inbox: list what this conversation actually received and adopt one into the workspace on demand | | [npm](https://www.npmjs.com/package/dsh-phone-inbox) |
 | [dsh-wechat](https://github.com/pan17/dsh-wechat) | WeChat ↔ DSH bridge (Tencent iLink bot): text/image/file/voice, approvals in chat — developed with [pan17](https://github.com/pan17/dsh-wechat), who now hosts the repo and publishes the npm package | 🧊 FROZEN — `@xmanrui/dsh-im` | [npm](https://www.npmjs.com/package/dsh-wechat) |
 | [dsh-ticktick](https://github.com/PerryLink/dsh-ticktick) | TickTick/Dida365 task bridge: session-header panel + 11 tools | | [npm](https://www.npmjs.com/package/@perrylink/dsh-ticktick) |
 | [dsh-reach](https://github.com/PerryLink/dsh-reach) | Multi-channel approval/question bridge: WeChat/Telegram/Feishu, session console | 🧊 FROZEN — `@xmanrui/dsh-im` | [npm](https://www.npmjs.com/package/dsh-reach) |
@@ -376,9 +381,10 @@ of their own (measured 2026-10-14).
 | [dsh-research-report](https://github.com/PerryLink/dsh-research-report) | Verifiable research-report engine | | [npm](https://www.npmjs.com/package/dsh-research-report) |
 
 
-### ✅ Compliance checkers (53)
+### ✅ Compliance checkers & tools (62)
 
-Fifty-three checkers published 2026-10-08, all Apache-2.0, all carrying SLSA provenance on npm.
+Fifty-three checkers published 2026-10-08, all Apache-2.0, all carrying SLSA provenance on npm; nine further
+compliance tools followed on 2026-10-23 (the toolchain table at the end of this section).
 Each reads one register, ledger or record set against a **versioned rule pack** and returns the differences
 for a human to review — none of them pronounces on compliance, liability or clinical correctness. A
 per-repo `check:citations` gate holds each quotation to its own `rules/evidence/` record, and the rule
@@ -489,6 +495,24 @@ clause — the per-domain counts are on the [checker index](https://perrylink.gi
 | [dsh-soe-decision-check](https://github.com/PerryLink/dsh-soe-decision-check) | State-owned-enterprise collective-decision records against the "three majors, one large" procedure | | [npm](https://www.npmjs.com/package/dsh-soe-decision-check) |
 | [dsh-sop-sync-check](https://github.com/PerryLink/dsh-sop-sync-check) | Standard operating procedures checked against the versions and cross-references they claim | | [npm](https://www.npmjs.com/package/dsh-sop-sync-check) |
 
+#### 🧰 Compliance toolchain (9)
+
+Nine further compliance tools published 2026-10-23, outside the 53-checker suite: six checkers and three
+document tools. They declare `dsh.bundle.patch` and count in the roster; they are listed here rather than in
+the ten checker domains because their packs are not part of the suite manifest.
+
+| Plugin | One-liner | Status | npm |
+|---|---|---|---|
+| [dsh-bid-health-check](https://github.com/PerryLink/dsh-bid-health-check) | Locate, requirement by requirement, where a bid appears to answer a tender pack, and where it does not | | [npm](https://www.npmjs.com/package/dsh-bid-health-check) |
+| [dsh-canteen-retention-check](https://github.com/PerryLink/dsh-canteen-retention-check) | Canteen food-retention ledger: the four required elements, the 125 g minimum, the 48-hour window and leftover placeholders | | [npm](https://www.npmjs.com/package/dsh-canteen-retention-check) |
+| [dsh-construction-doc-check](https://github.com/PerryLink/dsh-construction-doc-check) | Project document archive: missing required document types, stale revisions and empty files, read from names rather than contents | | [npm](https://www.npmjs.com/package/dsh-construction-doc-check) |
+| [dsh-excel-reconcile](https://github.com/PerryLink/dsh-excel-reconcile) | Join two spreadsheets on a declared key and compare declared fields within declared tolerances | | [npm](https://www.npmjs.com/package/dsh-excel-reconcile) |
+| [dsh-invoice-ledger](https://github.com/PerryLink/dsh-invoice-ledger) | Invoice ledger: duplicates keyed on code + number, arithmetic, payer mismatch, date anomalies and placeholders | | [npm](https://www.npmjs.com/package/dsh-invoice-ledger) |
+| [dsh-payroll-audit](https://github.com/PerryLink/dsh-payroll-audit) | Payroll against published social-insurance, housing-fund and individual-income-tax parameters, with four-valued outcomes | | [npm](https://www.npmjs.com/package/dsh-payroll-audit) |
+| [dsh-safety-ledger-check](https://github.com/PerryLink/dsh-safety-ledger-check) | Site safety-qualification ledger: training hours, the four record elements and certificate validity | | [npm](https://www.npmjs.com/package/dsh-safety-ledger-check) |
+| [dsh-table-ingest](https://github.com/PerryLink/dsh-table-ingest) | Convert .docx/.xlsx/.xlsm/.csv/.tsv tables into the table JSON the rule checkers consume | | [npm](https://www.npmjs.com/package/dsh-table-ingest) |
+| [dsh-tender-requirements](https://github.com/PerryLink/dsh-tender-requirements) | Extract deadlines, deposit, validity, ceiling, bid composition and copy counts from a tender document | | [npm](https://www.npmjs.com/package/dsh-tender-requirements) |
+
 </details>
 
 ## 🪦 Retired & frozen — the full tables
@@ -514,11 +538,11 @@ catalogs and needs no retirement.
 
 ### Frozen — no new features, only real breakages fixed
 
-Frozen because **better-adopted alternatives now exist** for that capability. Five of the six carry a
-`## Maintenance status: 🧊 FROZEN` section in their own README with the measured comparison —
-[dsh-wechat](https://github.com/pan17/dsh-wechat) is the exception, because it is `pan17`'s repository rather than
-this account's, so the banner cannot be added there and the row is frozen here instead. Weekly npm downloads,
-measured 2026-10-05:
+Frozen because **better-adopted alternatives now exist** for that capability. Four of the five own frozen
+plugins carry a `## Maintenance status: 🧊 FROZEN` section in their own README with the measured comparison —
+[dsh-claude-move](https://github.com/PerryLink/dsh-claude-move) is the exception among the owned ones, and
+[dsh-wechat](https://github.com/pan17/dsh-wechat) is `pan17`'s repository rather than this account's, so the
+banner cannot be added there and the row is frozen here instead. Weekly npm downloads, measured 2026-10-05:
 
 | Plugin | this repo | better-adopted alternative |
 |---|---|---|
@@ -536,20 +560,20 @@ plugin is weaker.
 
 ## 🌍 Where the plugins live — the figures, with their caveats
 
-- **GitHub** (this profile), **[Gitee](https://gitee.com/perrylink)** and **npm** — source, CI and releases here; 99
-family repos mirrored to Gitee by a daily job (default branch + all tags), plus this profile repo; the `perrylink`
-account holds **107 npm names and 1,601 versions**, every one of them with a non-deprecated `latest`; **75** carry a
-SLSA provenance attestation on that version and **95** on at least one (the twelve with none anywhere are
-`@perrylink/dsh-checkers`, `@perrylink/dsh-checkers-suite`, `@phocinae/js`, `dsh-batch-triage`,
-`dsh-context-verdict`, `dsh-laya`, `dsh-phocinae`, `dsh-preclaim`, `jevcore-cli`, `jevcore-dsh`, `jevcore-mcp`
-and `laya-mcp` — measured 2026-10-19 from each name's own packument; the names come from registry search,
-which now enumerates all 107, and the count was cross-checked against the 111 `package.json` files in the
+- **GitHub** (this profile), **[Gitee](https://gitee.com/perrylink)** and **npm** — source, CI and releases here; 101
+repositories are mirrored to Gitee by a daily job (default branch + all tags; the mirror list does not yet
+include the nine 2026-10-23 tools), plus this profile repo; the `perrylink`
+account holds **117 npm names and 1,665 versions**, every one of them with a non-deprecated `latest`; **96** carry a
+SLSA provenance attestation on that version and **105** on at least one (the twelve with none anywhere are
+`@perrylink/dsh-checkers`, `@perrylink/dsh-checkers-suite`, `@phocinae/js`, `dsh-context-verdict`,
+`dsh-customs-mcp`, `dsh-laya`, `dsh-phocinae`, `dsh-preclaim`, `jevcore-cli`, `jevcore-dsh`, `jevcore-mcp`
+and `laya-mcp` — measured 2026-10-26 from each name's own packument; the names come from registry search,
+which now enumerates all 117, and the count was cross-checked against the 121 `package.json` files in the
 repositories themselves)
-- **npm downloads** — **228,164 over the trailing 30 days** (npm window 2026-09-19..2026-10-18, summed per name over the 107
+- **npm downloads** — **232,500 over the trailing 30 days** (npm window 2026-09-26..2026-10-25, summed per name over the 117
 names from the downloads point endpoint.
-- **dshfind** — indexes **106** of the family's repositories (counted from its own sitemap shards: 106
-  `…/plugins/PerryLink/<repo>` URLs, each published in four locales) and puts a download badge on **9** of
-  them. Read one badge per repository from
+- **dshfind** — lists **35** of the family's repositories in its sitemap (35 `…/plugins/PerryLink/<repo>` paths,
+  each published in four locales) and puts a download badge on **9** of them. Read one badge per repository from
   `https://dshfind.com/api/badge/PerryLink/<repo>?metric=downloads` — the same `<img>` every plugin page
   embeds — and the nine tiers are:
 
@@ -561,20 +585,20 @@ names from the downloads point endpoint.
   | dsh-industry-research | 5k+ |
   | dsh-research-report | 5k+ |
   | dsh-mcp-panel | 2k+ |
+  | jevcore | 2k+ |
   | dsh-claude-move | 1k+ |
-  | jevcore | 1k+ |
   | dsh-plugin-guide | 500+ |
 
-  The floors add to **44,500**, and every badge is a rounded tier rather than a count, so that is a floor
-  and not a total. The other 97 repositories have no download figure at all — their badge falls back to
-  ★ — which is why the aggregate is stated over 9 and not over 106.
+  The floors add to **45,500**, and every badge is a rounded tier rather than a count, so that is a floor
+  and not a total. The other 26 repositories have no download figure at all — their badge falls back to
+  ★ — which is why the aggregate is stated over 9 and not over 35.
 - **DSH Desktop Market** — add the catalog source
 `https://cdn.jsdelivr.net/gh/PerryLink/dsh-catalog@main/deploy/artifacts/v1/plugins.json` under Market → Sources
-to browse the family in-app (99 packages, catalogue generated 2026-10-18; the `catalog-source.json` manifest in
+to browse the family in-app (109 packages, catalogue generated 2026-10-26; the `catalog-source.json` manifest in
 the same directory is a template whose `endpoint` is still the `replace-with-deploy-origin.invalid`
 placeholder, and the `perrylink-dsh-catalog.perrylink.workers.dev` address before it answered `HTTP 000` on
-networks that interfere with `*.workers.dev`); **MCP Registry** — three servers, all published from their release workflows over GitHub OIDC: `dsh-cert-mcp`,
-`jevcore-mcp` and `laya-mcp`
+networks that interfere with `*.workers.dev`); **MCP Registry** — four servers, all published from their release workflows over GitHub OIDC: `dsh-cert-mcp`,
+`dsh-customs-mcp`, `jevcore-mcp` and `laya-mcp`
 - **GitHub Actions** — [dsh-github](https://github.com/PerryLink/dsh-github) and
 [dsh-test-drive](https://github.com/PerryLink/dsh-test-drive) also ship composite actions, so they install as `uses:
 PerryLink/dsh-test-drive@vX`
