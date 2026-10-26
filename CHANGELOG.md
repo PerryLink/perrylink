@@ -14,6 +14,20 @@ and `dsh-laya` were introduced by name.
 
 ---
 
+## 2026-10-26 (second round)
+
+- **One merge landed nine minutes after the morning derivation.** [`nuxt/content#3894`](https://github.com/nuxt/content/pull/3894)
+  merged at 2026-10-26T12:44:39Z by `farnabaz`: the `ORDER BY` validator accepted only `[a-zA-Z_]+` while
+  the `SELECT`/`WHERE` checks accepted digits, so `queryCollection(...).order('publishedAt2', 'DESC')`
+  failed on the server path while the client WASM path worked; the column pattern is now `\w*` after the
+  first character, with the escaping and injection controls unchanged. The repository was already credited,
+  so the merged counts move without a new repository.
+- **Counters.** The external set is now **441 merges across 92 repositories** (was 440 / 92), **408
+  credited in 90** (was 407 / 90), the same **33 uncredited in 2** — `SihanTeng`'s list at 32 and
+  `Tencent/MMKV` at 1 — and **162 open across 124** (was 163 / 125). Re-derived 2026-10-26T12:48:13Z.
+- **The named table stays at 41 rows, the 1,000–2,500★ table at eight rows.** `nuxt/content` was already
+  in the named table; no star row was re-read this round.
+
 ## 2026-10-26
 
 - **Four merges landed after the 10-25 derivation.** [`urfave/cli#2503`](https://github.com/urfave/cli/pull/2503)
