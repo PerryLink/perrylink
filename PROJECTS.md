@@ -64,11 +64,12 @@ than letting the account name imply a company.
 | [NeMo-Agent-Toolkit](https://github.com/NVIDIA/NeMo-Agent-Toolkit) | 2,660 | **NVIDIA** — the official `NVIDIA` org; three review rounds with maintainer `willkill07` on making `remove_r1_think_tags` actually remove think blocks, merged 2026-10-08T00:10:02Z by NVIDIA's `rapids-bot` after he issued `/merge` |
 
 <details>
-<summary><b>Seven more repositories between 1,000★ and 2,500★ — one line each</b></summary>
+<summary><b>Eight more repositories between 1,000★ and 2,500★ — one line each</b></summary>
 
 | Repository | ★ | 项目归属方 |
 |---|---|---|
 | [awesome-jev](https://github.com/yibie/awesome-jev) | 2,413 | yibie — individual maintainer, community catalog for Jev; the row the 09-25 round both printed and denied, kept now on the commit the history probe finds |
+| [deep-research-web-ui](https://github.com/AnotiaWang/deep-research-web-ui) | 2,223 | AnotiaWang — individual maintainer; a docs fix to the Helodata image name merged 2026-10-26T09:22:58Z |
 | [Agents-Anywhere](https://github.com/anywhere-labs/Agents-Anywhere) | 1,863 | `anywhere-labs` community org — 3 public repos, created 2026-05, dshdesktop.cn; not a company |
 | [nginx-upsync-module](https://github.com/weibocom/nginx-upsync-module) | 1,844 | weibocom — the Weibo open-source org; an out-of-bounds write fix merged 2026-10-19T06:04:29Z, re-tested by the maintainer with a plain and an ASan build |
 | [mcp-remote](https://github.com/punkpeye/mcp-remote) | 1,635 | punkpeye (Frank Fiegel) — individual maintainer at Glama, the same account as `fastmcp` above; a Windows-portability fix to the repository's own test harness merged 2026-10-17T21:06:55Z |
@@ -79,7 +80,7 @@ than letting the account name imply a company.
 </details>
 
 <details>
-<summary><b>The rest of the contributor set, and how the 436 total is derived</b></summary>
+<summary><b>The rest of the contributor set, and how the 440 total is derived</b></summary>
 
 **The rest of the contributor set** is the long tail below the 1,000★ line:
 **42 further repositories**, DSH plugin directories, small upstream projects and community catalogs
@@ -89,10 +90,10 @@ merges, [the Jev gallery](https://github.com/OmniJev/awesome-jev-gallery) and
 [the free5GC IKE daemon](https://github.com/free5gc/ike) and
 [inference-gateway](https://github.com/inference-gateway/inference-gateway), among them) — most are
 catalogs that ingest the family and carry no company owner, so they are named here only in aggregate.
-**89 external repositories carry at least one merged pull request of ours and a commit
-attributed to this account on their default branch; 403 merges were counted inside those 89 —
-re-derived 2026-10-25T15:34:11Z from this account's own merged pull requests and confirmed repository by
-repository with the `defaultBranchRef.target.history(author:{id})` probe, so 403 is exact rather than a
+**90 external repositories carry at least one merged pull request of ours and a commit
+attributed to this account on their default branch; 407 merges were counted inside those 90 —
+re-derived 2026-10-26T12:35:07Z from this account's own merged pull requests and confirmed repository by
+repository with the `defaultBranchRef.target.history(author:{id})` probe, so 407 is exact rather than a
 floor over a probed subset. Two repositories carry merges of ours and still earn no credit, and both are named for that reason:
 [SihanTeng's list](https://github.com/SihanTeng/awesome-deepseek-harness-plugins), which took **32** and
 credits no commit to this account at all — the case the rule at the top of this section was written
@@ -101,8 +102,8 @@ into the default branch `master`, so no commit of this account sits where the pr
 [phocinae-server](https://github.com/Phocinae/phocinae-server) and
 [deepseek-desktop](https://github.com/zcx960/deepseek-desktop), each hold a commit of this account and no
 merged pull request at all, so neither carries a merge and they are named only for that reason.
-**403 + 33 = the 436 merged pull requests** this account has outside `PerryLink/*`, concentrated in
-**91 repositories**; a further **168 are open across 130 repositories** as of 2026-10-25T15:34:11Z and are
+**407 + 33 = the 440 merged pull requests** this account has outside `PerryLink/*`, concentrated in
+**92 repositories**; a further **163 are open across 125 repositories** as of 2026-10-26T12:35:07Z and are
 deliberately not counted here.
 
 </details>

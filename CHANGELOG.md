@@ -14,6 +14,33 @@ and `dsh-laya` were introduced by name.
 
 ---
 
+## 2026-10-26
+
+- **Four merges landed after the 10-25 derivation.** [`urfave/cli#2503`](https://github.com/urfave/cli/pull/2503)
+  merged at 2026-10-25T16:51:54Z by `Juneezee`: `extFlag.IsSet` was a stub that always returned false, so
+  `Command.IsSet`, `NumFlags` and the flag-name listings ignored flags parsed through `AllowExtFlags`;
+  the branch tracked the set state and, while reviewing, `Juneezee` also fixed the related gaps — undo only
+  what the previous run set, don't let a Go flag hide a same-named flag, don't panic on a Go flag without
+  `Get`, and record flags set directly on `flag.CommandLine`.
+  [`NVIDIA/NeMo-Agent-Toolkit#2452`](https://github.com/NVIDIA/NeMo-Agent-Toolkit/pull/2452) merged at
+  2026-10-25T17:45:52Z by `rapids-bot` after `willkill07` issued `/merge`: `--config_file` was applied
+  before the saved channel settings, so the saved values won; the override now wins and is revalidated in
+  memory, as the review asked, instead of being written back to `config.json`.
+  [`AnotiaWang/deep-research-web-ui#105`](https://github.com/AnotiaWang/deep-research-web-ui/pull/105)
+  merged at 2026-10-26T09:22:58Z by `AnotiaWang`: both READMEs told users to pull
+  `anotia/deep-research-web-ui:latest`, but the publish workflow builds `deep-research-web`; the image
+  name in the Helodata example now matches.
+  [`agentclientprotocol/claude-agent-acp#1373`](https://github.com/agentclientprotocol/claude-agent-acp/pull/1373)
+  merged at 2026-10-26T10:25:48Z by `benbrandt`: the acp-v2 teardown's `rm` raced with Windows file
+  handles and failed the suite after the assertions had passed; it now passes `maxRetries: 10`.
+- **Counters.** The external set is now **440 merges across 92 repositories** (was 436 / 91), **407
+  credited in 90** (was 403 / 89), the same **33 uncredited in 2** — `SihanTeng`'s list at 32 and
+  `Tencent/MMKV` at 1 — and **163 open across 125** (was 168 / 130). Re-derived 2026-10-26T12:35:07Z.
+  `deep-research-web-ui` is the new credited repository: its #105 commit is authored by this account, and
+  at **2,223★** it joins the 1,000–2,500★ table, which moves from seven rows to eight.
+- **The named table stays at 41 rows.** Nothing crosses the 2,500★ line this round; the star column was
+  last re-read on 2026-10-23, except the new 2,223★ row.
+
 ## 2026-10-25
 
 - **Six merges landed after the 10-24 derivation.** [`psf/black#5609`](https://github.com/psf/black/pull/5609)
