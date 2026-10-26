@@ -14,6 +14,23 @@ and `dsh-laya` were introduced by name.
 
 ---
 
+## 2026-10-26 (third round)
+
+- **One merge landed about eighty minutes after the second round.** [`redis/ioredis#2248`](https://github.com/redis/ioredis/pull/2248)
+  merged at 2026-10-26T14:07:06Z by `PavelPashov`: `sendCommand` recorded the selected database with
+  `command.name === "select"`, but command names keep the casing the caller used (`call("SELECT", 2)`),
+  so any spelling other than lowercase never updated `condition.select` — the reconnect handshake then
+  restored the stale database and later commands ran against the wrong keyspace, silently. The check now
+  lowercases the name, matching the client's other case-insensitive command-name comparisons; the
+  squashed merge commit is authored by this account, so the merge is credited. `PavelPashov` replaced the
+  branch's mock-server test with a shorter one against a live connection that asserts `CLIENT INFO`
+  reports `db=2`.
+- **Counters.** The external set is now **442 merges across 92 repositories** (was 441 / 92), **409
+  credited in 90** (was 408 / 90), the same **33 uncredited in 2** — `SihanTeng`'s list at 32 and
+  `Tencent/MMKV` at 1 — and **160 open across 123** (was 162 / 124). Re-derived 2026-10-26T14:09:41Z.
+- **The named table stays at 41 rows, the 1,000–2,500★ table at eight rows.** `ioredis` was already in
+  the named table; no star row was re-read this round.
+
 ## 2026-10-26 (second round)
 
 - **One merge landed nine minutes after the morning derivation.** [`nuxt/content#3894`](https://github.com/nuxt/content/pull/3894)
