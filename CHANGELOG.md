@@ -14,6 +14,22 @@ and `dsh-laya` were introduced by name.
 
 ---
 
+## 2026-10-27
+
+- **Nineteen merges landed overnight; two are code fixes, the rest are catalog entries.** [`neuml/txtai#1400`](https://github.com/neuml/txtai/pull/1400)
+  merged at 2026-10-26T16:19:05Z by `davidmezzetti`: a URL with no filename made `os.path.basename()` return
+  empty, so the destination resolved to the output directory and the write failed; the filename now falls
+  back to `download`. [`punkpeye/fastmcp#463`](https://github.com/punkpeye/fastmcp/pull/463) merged at
+  2026-10-27T04:47:03Z by `punkpeye`: an OpenAPI `$ref` pointing *into* a component
+  (`#/components/schemas/Pet/properties/name`) was read as a definition named `Pet/properties/name`, so
+  nothing was attached and the tool could never be called; the first pointer segment is the definition.
+  The other seventeen are catalog additions — four in `awesome-dsh-plugin` (three plugins each) and
+  thirteen in `imsai-sh/awesome-deepseek-harness-plugins` (one plugin each).
+- **Counters.** The external set is now **461 merges across 92 repositories** (was 442 / 92), **428
+  credited in 90** (was 409 / 90), the same **33 uncredited in 2** — `SihanTeng`'s list at 32 and
+  `Tencent/MMKV` at 1 — and **164 open across 125** (was 160 / 123). Re-derived 2026-10-27T05:03:54Z.
+- **The named table stays at 41 rows, the 1,000–2,500★ table at eight rows.** No star row was re-read this round.
+
 ## 2026-10-26 (fourth round) — full re-measure
 
 - **A full re-measure, not another counter refresh.** The 14:09:41Z third round added
@@ -48,22 +64,6 @@ and `dsh-laya` were introduced by name.
 - **Gitee.** The workflow's list carries 101 repositories, not 99.
 
 ---
-
-## 2026-10-27
-
-- **Nineteen merges landed overnight; two are code fixes, the rest are catalog entries.** [`neuml/txtai#1400`](https://github.com/neuml/txtai/pull/1400)
-  merged at 2026-10-26T16:19:05Z by `davidmezzetti`: a URL with no filename made `os.path.basename()` return
-  empty, so the destination resolved to the output directory and the write failed; the filename now falls
-  back to `download`. [`punkpeye/fastmcp#463`](https://github.com/punkpeye/fastmcp/pull/463) merged at
-  2026-10-27T04:47:03Z by `punkpeye`: an OpenAPI `$ref` pointing *into* a component
-  (`#/components/schemas/Pet/properties/name`) was read as a definition named `Pet/properties/name`, so
-  nothing was attached and the tool could never be called; the first pointer segment is the definition.
-  The other seventeen are catalog additions — four in `awesome-dsh-plugin` (three plugins each) and
-  thirteen in `imsai-sh/awesome-deepseek-harness-plugins` (one plugin each).
-- **Counters.** The external set is now **461 merges across 92 repositories** (was 442 / 92), **428
-  credited in 90** (was 409 / 90), the same **33 uncredited in 2** — `SihanTeng`'s list at 32 and
-  `Tencent/MMKV` at 1 — and **164 open across 125** (was 160 / 123). Re-derived 2026-10-27T05:03:54Z.
-- **The named table stays at 41 rows, the 1,000–2,500★ table at eight rows.** No star row was re-read this round.
 
 ## 2026-10-26 (third round)
 
