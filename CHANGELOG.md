@@ -14,6 +14,20 @@ and `dsh-laya` were introduced by name.
 
 ---
 
+## 2026-10-27 (second round)
+
+- **Two long-running reviews closed.** [`modelscope/evalscope#1937`](https://github.com/modelscope/evalscope/pull/1937)
+  merged at 2026-10-27T06:55:45Z by `Yunnglin`: a local model that emits tool calls inside its text
+  should surface them as `tool_calls` with `finish_reason = 'tool_calls'`; the change reads them out of
+  the text and the review's generate-level tests cover it. [`pydantic/pydantic-extra-types#462`](https://github.com/pydantic/pydantic-extra-types/pull/462)
+  merged at 2026-10-27T10:07:25Z by `yezz123`: a coordinate with an out-of-range Decimal component was
+  accepted and serialized; the bounds are checked before the value is built, and the invalid input now
+  raises. Both squashed merge commits are authored by this account, so both are credited.
+- **Counters.** The external set is now **463 merges across 92 repositories** (was 461 / 92), **430
+  credited in 90** (was 428 / 90), the same **33 uncredited in 2** — `SihanTeng`'s list at 32 and
+  `Tencent/MMKV` at 1 — and **162 open across 123** (was 164 / 125). Re-derived 2026-10-27T11:49:22Z.
+- **Named table stays at 41 rows; no star row was re-read this round.**
+
 ## 2026-10-27
 
 - **Nineteen merges landed overnight; two are code fixes, the rest are catalog entries.** [`neuml/txtai#1400`](https://github.com/neuml/txtai/pull/1400)
