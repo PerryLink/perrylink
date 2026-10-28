@@ -14,6 +14,28 @@ and `dsh-laya` were introduced by name.
 
 ---
 
+## 2026-10-28 (second round)
+
+- **No new merges since 2026-10-28T04:38:27Z.** The 473 total, the 440 + 33 split and the 91 credited
+  repositories are unchanged; 169 proposals are open across 120 repositories as of 2026-10-28T15:37:09Z.
+- **Six new upstream proposals, each reproduced locally before it was sent.** `kriszyp/msgpackr#225`:
+  an `AggregateError` round-trip lost its message and errors — the encoder now carries `errors` and the
+  decoder rebuilds `AggregateError(errors, message, { cause })`, while a three-entry payload still decodes;
+  `#226`: `-0` was packed as the positive fixint 0, so the sign was lost — it is written as float64 now.
+  `pydantic/genai-prices#899`: LiteLLM's `fireworks_ai/` prefix never resolved to the Fireworks provider;
+  a `provider_match` for `fireworks` fixes it, with the Python, Go, Rust and JS package data regenerated.
+  `kellyjonbrazil/jc#860`: `w -h` output has neither the uptime line nor the column header, so one session
+  raised `IndexError` and several parsed as `[]`; the header is optional now, with a headerless fixture.
+  `ZSeven-W/openpencil#264`: the documented installer asked `/releases/latest`, which is a 404 while every
+  published tag is a pre-release; it now falls back to the newest pre-release with a note.
+  `docker/docker-agent#4754`: with `code_mode_tools: true`, `transfer_task` was wrapped into the JavaScript
+  toolset where it could not be called, so delegation failed; runtime-handled tools stay direct now.
+- **In-flight work advanced.** `redis/go-redis#4168` merged `master` after the maintainer asked for the
+  conflicts to be resolved, and its CI is green; `ZSeven-W/openpencil#261` was rebased so the diff is one
+  file (+109/−7) instead of 2,055 files.
+- **The star table was re-measured on 2026-10-28** — all 49 rows in `README.md` and `PROJECTS.md` carry the
+  current counts.
+
 ## 2026-10-28
 
 - **Four `laya` pull requests merged within one second.** [`NandhaKishorM/laya#1397`](https://github.com/NandhaKishorM/laya/pull/1397)

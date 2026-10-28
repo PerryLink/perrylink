@@ -76,56 +76,69 @@ dsh plugin --profile web add dsh-community-bench
 ## 🔧 Upstream & community contributions
 
 *Every repository below is external to `PerryLink/*`, every row is merged work, and open proposals are
-deliberately not listed. ★ re-measured 2026-10-26 for every row; the third column names the party that
+deliberately not listed — as of 2026-10-28T15:37:09Z, 169 are open across 120 repositories. ★ re-measured
+2026-10-28 for every row; the third column names the party that
 owns the project, because the account name alone does not say whether that is a company, a standards body
 or one person. Every external repository above 2,500★ that carries merged work is listed.*
 
 | Repository | ★ | 项目归属方 |
 |---|---|---|
-| [deer-flow](https://github.com/bytedance/deer-flow) | 84,442 | **ByteDance** — the official `bytedance` org |
-| [ruflo](https://github.com/ruvnet/ruflo) | 79,411 | ruvnet (rUv / Reuven Cohen) — individual maintainer |
-| [reactive-resume](https://github.com/reactive-resume/reactive-resume) | 44,887 | `reactive-resume` org — independent open-source project (rxresu.me) |
-| [black](https://github.com/psf/black) | 42,048 | **Python Software Foundation** — the official `psf` org; the Black formatter |
-| [zoxide](https://github.com/ajeetdsouza/zoxide) | 40,298 | ajeetdsouza (Ajeet D'Souza) — individual maintainer; the smarter `cd` command |
-| [fiber](https://github.com/gofiber/fiber) | 40,231 | **the gofiber project** — the official `gofiber` org (gofiber.io), the Express-inspired Go web framework |
-| [laya](https://github.com/NandhaKishorM/laya) | 34,352 | NandhaKishorM — individual maintainer |
+| [deer-flow](https://github.com/bytedance/deer-flow) | 84,566 | **ByteDance** — the official `bytedance` org |
+| [ruflo](https://github.com/ruvnet/ruflo) | 79,904 | ruvnet (rUv / Reuven Cohen) — individual maintainer |
+| [reactive-resume](https://github.com/reactive-resume/reactive-resume) | 44,993 | `reactive-resume` org — independent open-source project (rxresu.me) |
+| [black](https://github.com/psf/black) | 42,076 | **Python Software Foundation** — the official `psf` org; the Black formatter |
+| [zoxide](https://github.com/ajeetdsouza/zoxide) | 40,342 | ajeetdsouza (Ajeet D'Souza) — individual maintainer; the smarter `cd` command |
+| [fiber](https://github.com/gofiber/fiber) | 40,233 | **the gofiber project** — the official `gofiber` org (gofiber.io), the Express-inspired Go web framework |
+| [laya](https://github.com/NandhaKishorM/laya) | 34,531 | NandhaKishorM — individual maintainer |
 | [cli](https://github.com/urfave/cli) | 24,306 | the `urfave` org — community-maintained Go CLI framework |
-| [learn-harness-engineering](https://github.com/walkinglabs/learn-harness-engineering) | 21,639 | `walkinglabs` community org — the harness-engineering tutorial site |
-| [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) | 20,845 | `awesome-dsh-plugin` org — community catalog, no company behind it |
+| [learn-harness-engineering](https://github.com/walkinglabs/learn-harness-engineering) | 21,989 | `walkinglabs` community org — the harness-engineering tutorial site |
+| [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) | 21,303 | `awesome-dsh-plugin` org — community catalog, no company behind it |
 | [MMKV](https://github.com/Tencent/MMKV) | 18,769 | **Tencent** — the official `Tencent` org; the key-value store behind WeChat |
-| [SkillOpt](https://github.com/microsoft/SkillOpt) | 18,692 | **Microsoft** — the official `microsoft` org |
-| [ioredis](https://github.com/redis/ioredis) | 15,347 | **Redis** — the official `redis` org; the Node.js Redis client |
-| [FlashMLA](https://github.com/deepseek-ai/FlashMLA) | 13,194 | **DeepSeek** — the official `deepseek-ai` org |
-| [txtai](https://github.com/neuml/txtai) | 13,036 | **NeuML** — the `txtai` project of NeuML, an independent open-source project |
-| [mcp](https://github.com/awslabs/mcp) | 9,835 | **Amazon Web Services (AWS)** — the official `awslabs` org |
-| [BrowserSkill](https://github.com/Tencent/BrowserSkill) | 9,608 | **Tencent** — the official `Tencent` org |
-| [dsh-web](https://github.com/zhu1090093659/dsh-web) | 9,560 | zhu1090093659 — individual maintainer |
-| [Cordis](https://github.com/cordiverse/cordis) | 9,404 | **cordiverse** org — the kernel DeepSeek Harness vendors as `@deepseek-ai/cordis` |
-| [dsh-market](https://github.com/dsh-market/dsh-market) | 9,026 | `dsh-market` org — the community plugin market behind dshmarket.com |
-| [jc](https://github.com/kellyjonbrazil/jc) | 8,695 | kellyjonbrazil (Kelly Brazil) — individual maintainer |
-| [models.dev](https://github.com/anomalyco/models.dev) | 7,395 | `anomalyco` org — the model-catalogue site behind models.dev |
-| [kraken](https://github.com/uber/kraken) | 6,773 | **Uber** — the official `uber` org; the Kraken P2P Docker registry |
-| [koishi](https://github.com/koishijs/koishi) | 6,287 | `koishijs` org — the cross-platform chatbot framework |
-| [ouroboros](https://github.com/Q00/ouroboros) | 6,277 | Q00 (`@zep-us`) — individual maintainer |
-| [client_golang](https://github.com/prometheus/client_golang) | 6,043 | **Prometheus** — the official `prometheus` org (CNCF project); the Go instrumentation client |
-| [teamai-cli](https://github.com/Tencent/teamai-cli) | 5,665 | **Tencent** — the official `Tencent` org |
-| [go-sdk](https://github.com/modelcontextprotocol/go-sdk) | 5,275 | the `modelcontextprotocol` org — the Go SDK for MCP |
-| [aibrix](https://github.com/vllm-project/aibrix) | 5,162 | **the vLLM project** — the official `vllm-project` org |
-| [embedding-atlas](https://github.com/apple/embedding-atlas) | 4,998 | **Apple** — the official `apple` org |
-| [docker-agent](https://github.com/docker/docker-agent) | 4,610 | **Docker, Inc.** — the official `docker` org |
-| [DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) | 4,571 | `omdsh-dev` community org — the DeepSeek Harness sidebar plugin |
-| [agent-client-protocol](https://github.com/agentclientprotocol/agent-client-protocol) | 4,516 | `agentclientprotocol` org — governed jointly by **Zed Industries** and **JetBrains** |
-| [content](https://github.com/nuxt/content) | 3,674 | **Nuxt** — the official `nuxt` org |
-| [evalscope](https://github.com/modelscope/evalscope) | 3,592 | `modelscope` org — the ModelScope model-hub project |
-| [deepseek-harness-desktop](https://github.com/dsh-tauri/deepseek-harness-desktop) | 3,288 | `dsh-tauri` community org — self-described non-official and non-commercial |
-| [fastmcp](https://github.com/punkpeye/fastmcp) | 3,277 | punkpeye (Frank Fiegel) — individual maintainer at Glama |
+| [SkillOpt](https://github.com/microsoft/SkillOpt) | 18,737 | **Microsoft** — the official `microsoft` org |
+| [ioredis](https://github.com/redis/ioredis) | 15,348 | **Redis** — the official `redis` org; the Node.js Redis client |
+| [FlashMLA](https://github.com/deepseek-ai/FlashMLA) | 13,215 | **DeepSeek** — the official `deepseek-ai` org |
+| [txtai](https://github.com/neuml/txtai) | 13,043 | **NeuML** — the `txtai` project of NeuML, an independent open-source project |
+| [mcp](https://github.com/awslabs/mcp) | 9,842 | **Amazon Web Services (AWS)** — the official `awslabs` org |
+| [BrowserSkill](https://github.com/Tencent/BrowserSkill) | 9,726 | **Tencent** — the official `Tencent` org |
+| [dsh-web](https://github.com/zhu1090093659/dsh-web) | 9,722 | zhu1090093659 — individual maintainer |
+| [Cordis](https://github.com/cordiverse/cordis) | 9,452 | **cordiverse** org — the kernel DeepSeek Harness vendors as `@deepseek-ai/cordis` |
+| [dsh-market](https://github.com/dsh-market/dsh-market) | 9,509 | `dsh-market` org — the community plugin market behind dshmarket.com |
+| [jc](https://github.com/kellyjonbrazil/jc) | 8,698 | kellyjonbrazil (Kelly Brazil) — individual maintainer |
+| [models.dev](https://github.com/anomalyco/models.dev) | 7,429 | `anomalyco` org — the model-catalogue site behind models.dev |
+| [kraken](https://github.com/uber/kraken) | 6,775 | **Uber** — the official `uber` org; the Kraken P2P Docker registry |
+| [koishi](https://github.com/koishijs/koishi) | 6,301 | `koishijs` org — the cross-platform chatbot framework |
+| [ouroboros](https://github.com/Q00/ouroboros) | 6,287 | Q00 (`@zep-us`) — individual maintainer |
+| [client_golang](https://github.com/prometheus/client_golang) | 6,042 | **Prometheus** — the official `prometheus` org (CNCF project); the Go instrumentation client |
+| [teamai-cli](https://github.com/Tencent/teamai-cli) | 5,692 | **Tencent** — the official `Tencent` org |
+| [go-sdk](https://github.com/modelcontextprotocol/go-sdk) | 5,286 | the `modelcontextprotocol` org — the Go SDK for MCP |
+| [aibrix](https://github.com/vllm-project/aibrix) | 5,164 | **the vLLM project** — the official `vllm-project` org |
+| [embedding-atlas](https://github.com/apple/embedding-atlas) | 5,000 | **Apple** — the official `apple` org |
+| [docker-agent](https://github.com/docker/docker-agent) | 4,616 | **Docker, Inc.** — the official `docker` org |
+| [DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) | 4,689 | `omdsh-dev` community org — the DeepSeek Harness sidebar plugin |
+| [agent-client-protocol](https://github.com/agentclientprotocol/agent-client-protocol) | 4,528 | `agentclientprotocol` org — governed jointly by **Zed Industries** and **JetBrains** |
+| [content](https://github.com/nuxt/content) | 3,675 | **Nuxt** — the official `nuxt` org |
+| [evalscope](https://github.com/modelscope/evalscope) | 3,606 | `modelscope` org — the ModelScope model-hub project |
+| [deepseek-harness-desktop](https://github.com/dsh-tauri/deepseek-harness-desktop) | 3,339 | `dsh-tauri` community org — self-described non-official and non-commercial |
+| [fastmcp](https://github.com/punkpeye/fastmcp) | 3,278 | punkpeye (Frank Fiegel) — individual maintainer at Glama |
 | [minio-go](https://github.com/minio/minio-go) | 3,010 | **MinIO** — the official `minio` org; the Go client for MinIO and S3-compatible storage |
-| [open5gs](https://github.com/open5gs/open5gs) | 2,791 | the `open5gs` 5G core project — community, no company owner |
-| [claude-agent-acp](https://github.com/agentclientprotocol/claude-agent-acp) | 2,692 | `agentclientprotocol` org — governed by Zed and JetBrains |
-| [NeMo-Agent-Toolkit](https://github.com/NVIDIA/NeMo-Agent-Toolkit) | 2,676 | **NVIDIA** — the official `NVIDIA` org |
+| [open5gs](https://github.com/open5gs/open5gs) | 2,792 | the `open5gs` 5G core project — community, no company owner |
+| [claude-agent-acp](https://github.com/agentclientprotocol/claude-agent-acp) | 2,702 | `agentclientprotocol` org — governed by Zed and JetBrains |
+| [NeMo-Agent-Toolkit](https://github.com/NVIDIA/NeMo-Agent-Toolkit) | 2,684 | **NVIDIA** — the official `NVIDIA` org |
 
 <details>
-<summary><b>Twenty-one of them, briefly — what was broken and who merged it</b></summary>
+<summary><b>Twenty-three of them, briefly — what was broken and who merged it</b></summary>
+
+- **laya** — four pull requests merged within one second on 2026-10-28: a `--questions` path that cannot be
+  read is a usage error naming the file ([#1397](https://github.com/NandhaKishorM/laya/pull/1397)), the
+  readers open as `utf-8-sig` so a Windows-editor BOM is a signature rather than data
+  ([#1398](https://github.com/NandhaKishorM/laya/pull/1398)), `assert_regression` names the delta it failed
+  on for an incomparable coverage definition and a NaN tolerance
+  ([#1400](https://github.com/NandhaKishorM/laya/pull/1400)), and `evaluate()` refuses a batch reply with
+  fewer results than rows instead of silently under-scoring the report
+  ([#1401](https://github.com/NandhaKishorM/laya/pull/1401)). Merged by `NandhaKishorM`.
+- **cordis** — an async-generator effect abandoned on an epoch change never ran its `finally`; the effect is
+  closed with `iter.return()` now, so a reload no longer leaks that cleanup. Merged by `shigma`
+  ([#268](https://github.com/cordiverse/cordis/pull/268)).
 
 - **deer-flow** — a portability fix in a blocking-IO test, merged by `WillemJiang`; the largest row in the
   table.
