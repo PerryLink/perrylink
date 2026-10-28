@@ -87,7 +87,7 @@ than letting the account name imply a company.
 </details>
 
 <details>
-<summary><b>The rest of the contributor set, and how the 463 total is derived</b></summary>
+<summary><b>The rest of the contributor set, and how the 473 total is derived</b></summary>
 
 **The rest of the contributor set** is the long tail below the 1,000★ line:
 **43 further repositories**, DSH plugin directories, small upstream projects and community catalogs
@@ -97,10 +97,10 @@ merges, [the Jev gallery](https://github.com/OmniJev/awesome-jev-gallery) and
 [the free5GC IKE daemon](https://github.com/free5gc/ike) and
 [inference-gateway](https://github.com/inference-gateway/inference-gateway), among them) — most are
 catalogs that ingest the family and carry no company owner, so they are named here only in aggregate.
-**90 external repositories carry at least one merged pull request of ours and a commit
-attributed to this account on their default branch; 430 merges were counted inside those 90 —
+**91 external repositories carry at least one merged pull request of ours and a commit
+attributed to this account on their default branch; 440 merges were counted inside those 91 —
 re-derived 2026-10-27T11:49:22Z from this account's own merged pull requests and confirmed repository by
-repository with the `defaultBranchRef.target.history(author:{id})` probe, so 430 is exact rather than a
+repository with the `defaultBranchRef.target.history(author:{id})` probe, so 440 is exact rather than a
 floor over a probed subset. Two repositories carry merges of ours and still earn no credit, and both are named for that reason:
 [SihanTeng's list](https://github.com/SihanTeng/awesome-deepseek-harness-plugins), which took **32** and
 credits no commit to this account at all — the case the rule at the top of this section was written
@@ -109,8 +109,8 @@ into the default branch `master`, so no commit of this account sits where the pr
 [phocinae-server](https://github.com/Phocinae/phocinae-server) and
 [deepseek-desktop](https://github.com/zcx960/deepseek-desktop), each hold a commit of this account and no
 merged pull request at all, so neither carries a merge and they are named only for that reason.
-**430 + 33 = the 463 merged pull requests** this account has outside `PerryLink/*`, concentrated in
-**92 repositories**; a further **162 are open across 123 repositories** as of 2026-10-27T11:49:22Z and are
+**440 + 33 = the 473 merged pull requests** this account has outside `PerryLink/*`, concentrated in
+**93 repositories**; a further **163 are open across 120 repositories** as of 2026-10-28T04:50:49Z and are
 deliberately not counted here.
 
 </details>

@@ -14,6 +14,38 @@ and `dsh-laya` were introduced by name.
 
 ---
 
+## 2026-10-28
+
+- **Four `laya` pull requests merged within one second.** [`NandhaKishorM/laya#1397`](https://github.com/NandhaKishorM/laya/pull/1397)
+  merged at 2026-10-28T04:38:27Z: a `--questions` path that cannot be read is a usage error naming the
+  file, not a "could not run Laya" download diagnosis. [`#1398`](https://github.com/NandhaKishorM/laya/pull/1398):
+  the `--questions`, `--batch` and evidence readers open as `utf-8-sig`, so a Windows-editor BOM is a
+  signature rather than data — a valid questions file was refused as "not valid JSON", and a batch BOM
+  became the first request's first character. [`#1400`](https://github.com/NandhaKishorM/laya/pull/1400):
+  `assert_regression` names the delta it failed on for an incomparable coverage definition and a NaN
+  tolerance, where it used to print `evaluation regressed: {}`. [`#1401`](https://github.com/NandhaKishorM/laya/pull/1401):
+  `evaluate()` refuses a batch reply with fewer results than rows instead of silently under-scoring the
+  report. Each carries a focused test.
+- **`cordiverse/cordis#268`** merged at 2026-10-27T18:34:21Z by `shigma`: an async-generator effect
+  abandoned on an epoch change never ran its `finally`; the effect is closed with `iter.return()` now.
+- **`uber/kraken#730`** merged at 2026-10-27T14:43:00Z by `thijmv`: a successful piece read is recorded
+  when the reader closes. `gkeesh7` asked for the two tests to be table-driven, and they are one table now.
+- **`helm/chart-releaser-action#241`** merged at 2026-10-27T13:44:01Z by `cpanato` — a new credited
+  repository: chart discovery no longer drops paths that are not ASCII.
+- **`neuml/txtai#1472`** merged at 2026-10-27T14:30:40Z by `davidmezzetti`: `SQL.issql()` accepts a valid
+  statement with extra whitespace around tokens or after the semicolon.
+- **Two catalog batches landed in `walkinglabs`' list** — `#131` at 15:35:16Z and `#132` at
+  2026-10-28T01:31:36Z: six data/session/bench plugins and six compliance/document tools.
+- **One pull request was closed, not merged.** [`redis/ioredis#2254`](https://github.com/redis/ioredis/pull/2254)
+  (a SELECT inside a discarded MULTI kept the client's db state) was closed by the maintainer: the
+  contributing guide asks for an issue and an agreed approach first, and the review found the patch also
+  stopped tracking a successful SELECT inside `pipeline().multi()` and left the transaction flag set
+  after `DISCARD`. Both points are recorded; a real workload hitting it would start with an issue.
+- **Counters.** The external set is now **473 merges across 93 repositories** (was 463 / 92), **440
+  credited in 91** (was 430 / 90), the same **33 uncredited in 2** — `SihanTeng`'s list at 32 and
+  `Tencent/MMKV` at 1 — and **163 open across 120** (was 162 / 123). Re-derived 2026-10-28T04:50:49Z.
+- **Named table stays at 41 rows; no star row was re-read this round.**
+
 ## 2026-10-27 (second round)
 
 - **Two long-running reviews closed.** [`modelscope/evalscope#1937`](https://github.com/modelscope/evalscope/pull/1937)
