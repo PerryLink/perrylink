@@ -171,7 +171,7 @@ measurement).
 
 | Row | px | Badges |
 |---|---|---|
-| 1 — reach and counters | 686 | stars (90), followers (112), repos (72), upstream merges 473 (138), credited repos 91 (112), plugins 100 (80), checkers 53 (82) |
+| 1 — reach and counters | 686 | stars (90), followers (112), repos (72), upstream merges 474 (138), credited repos 92 (112), plugins 100 (80), checkers 53 (82) |
 | 2 — npm and stack | 728 | npm 117 names (123), npm downloads 30d 232.5k (170), npm provenance 105/117 (160), license (120), node (155) |
 | 3 — quality and registry | 668 | dsh host corridor (146), OpenSSF Scorecard (136), Glama (110), certified (132), MCP Registry 4 servers (144) |
 | 4 — index, mirror, feeds | 787 | plugin index 123 pages (144), Gitee (101), dshfind 45.5k+ across 9 (256), Desktop Market source (172), Zenodo DOI (~114) |
@@ -239,8 +239,8 @@ is merely "balanced" is not enough: balance is exactly what produced the 836px r
 
 | Badge | Value | Mirrors |
 |---|---|---|
-| upstream merges | 473 | "Upstream" and `PROJECTS.md` |
-| credited repos | 91 | "Upstream" and `PROJECTS.md` |
+| upstream merges | 474 | "Upstream" and `PROJECTS.md` |
+| credited repos | 92 | "Upstream" and `PROJECTS.md` |
 | plugins | 100 | the intro sentence |
 | checkers | 53 | the 53-checker suite (the nine 2026-10-23 tools are not counted here) |
 | npm names | 117 | "Where the plugins live" |

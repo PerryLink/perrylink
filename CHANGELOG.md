@@ -14,6 +14,17 @@ and `dsh-laya` were introduced by name.
 
 ---
 
+## 2026-10-29
+
+- **`ZSeven-W/openpencil#264` merged at 2026-10-29T02:46:01Z by `Kayshen-X`** — the documented
+  `install-op.sh` command asked `/releases/latest`, which is a 404 while every published tag is a
+  pre-release; it now falls back to the newest pre-release with a note, so the default install works
+  before the first stable release. The star table was last re-measured 2026-10-28.
+- **474 total: 441 + 33**, across **94 repositories**, **92** of them credited. The previous prose
+  said 91 credited of 93 — the re-derivation counts one more repository, which the page's own
+  49 + 43 credited rows already listed. **168** proposals are open across **120** repositories as of
+  2026-10-29T10:06:23Z.
+
 ## 2026-10-28 (second round)
 
 - **No new merges since 2026-10-28T04:38:27Z.** The 473 total, the 440 + 33 split and the 91 credited
