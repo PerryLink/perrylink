@@ -24,9 +24,11 @@ and `dsh-laya` were introduced by name.
   [`docker/docker-agent#4754`](https://github.com/docker/docker-agent/pull/4754) and
   [`#4744`](https://github.com/docker/docker-agent/pull/4744) were approved and queue-merged by
   `aheritier` at 22:45:14Z and 22:46:11Z.
-- **478 total: 445 + 33**, across **94 repositories**, **92** of them credited. **163** proposals are
-  open across **121** repositories as of 2026-10-30T04:25:00Z. The two repositories that carry merges
-  without credit are unchanged (`SihanTeng` 32, `Tencent/MMKV` 1).
+- **478 total: 444 + 34**, across **94 repositories**, **91** of them credited, re-derived with
+  `00-live/_profile-derive.mjs` at 2026-10-30T04:45:00Z. **163** proposals are open across **121**
+  repositories. `Anil-matcha/open-genjutsu` lost the commit this account had on `main` (the branch now
+  holds only the initial commit, although #63 was merged on 2026-09-22), so it joins `SihanTeng` (32) and
+  `Tencent/MMKV` (1) on the uncredited side: **34**.
 
 ---
 

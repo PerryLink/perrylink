@@ -97,19 +97,19 @@ merges, [the Jev gallery](https://github.com/OmniJev/awesome-jev-gallery) and
 [the free5GC IKE daemon](https://github.com/free5gc/ike) and
 [inference-gateway](https://github.com/inference-gateway/inference-gateway), among them) — most are
 catalogs that ingest the family and carry no company owner, so they are named here only in aggregate.
-**92 external repositories carry at least one merged pull request of ours and a commit
-attributed to this account on their default branch; 445 merges were counted inside those 92 —
-re-derived 2026-10-27T11:49:22Z from this account's own merged pull requests and confirmed repository by
-repository with the `defaultBranchRef.target.history(author:{id})` probe, so 445 is exact rather than a
-floor over a probed subset. Two repositories carry merges of ours and still earn no credit, and both are named for that reason:
+**91 external repositories carry at least one merged pull request of ours and a commit
+attributed to this account on their default branch; 444 merges were counted inside those 91 —
+re-derived 2026-10-30T04:45:00Z from this account's own merged pull requests and confirmed repository by
+repository with the `defaultBranchRef.target.history(author:{id})` probe, so 444 is exact rather than a
+floor over a probed subset. Three repositories carry merges of ours and still earn no credit, and all are named for that reason:
 [SihanTeng's list](https://github.com/SihanTeng/awesome-deepseek-harness-plugins), which took **32** and
 credits no commit to this account at all — the case the rule at the top of this section was written
 about — and [Tencent/MMKV](https://github.com/Tencent/MMKV), which took **1**, merged into `dev` rather than
-into the default branch `master`, so no commit of this account sits where the probe looks. Two further repositories,
+into the default branch `master`, so no commit of this account sits where the probe looks; and [open-genjutsu](https://github.com/Anil-matcha/open-genjutsu), which took **1** in #63 but whose `main` now holds only the initial commit, so nothing of this account survives there. Two further repositories,
 [phocinae-server](https://github.com/Phocinae/phocinae-server) and
 [deepseek-desktop](https://github.com/zcx960/deepseek-desktop), each hold a commit of this account and no
 merged pull request at all, so neither carries a merge and they are named only for that reason.
-**445 + 33 = the 478 merged pull requests** this account has outside `PerryLink/*`, concentrated in
+**444 + 34 = the 478 merged pull requests** this account has outside `PerryLink/*`, concentrated in
 **94 repositories**; a further **163 are open across 121 repositories** as of 2026-10-30T04:25:00Z and are
 deliberately not counted here.
 
