@@ -14,6 +14,18 @@ and `dsh-laya` were introduced by name.
 
 ---
 
+## 2026-10-30 (third round)
+
+- **Two first-time repositories were credited.** [`langgenius/dify#44333`](https://github.com/langgenius/dify/pull/44333)
+  (reject 4xx/5xx responses in `download_with_size_limit` instead of returning the error page)
+  was merged by `Stream29` at 17:55:46Z, and
+  [`prometheus/client_python#1231`](https://github.com/prometheus/client_python/pull/1231)
+  (bind `max_fds` before using it in the process collector) by `csmarchbanks` at 18:39:55Z.
+  Both merge commits carry this account as their author.
+- **482 total: 448 + 34**, across **96 repositories**, **93** of them credited, re-derived with
+  `00-live/_profile-derive.mjs` at 2026-10-30T22:40:00Z. **163** proposals are open across **123**
+  repositories as of 2026-10-30T22:50:00Z.
+
 ## 2026-10-30 (second round)
 
 - **Two `cordis` fixes merged by `shigma`.** [`cordiverse/cordis#277`](https://github.com/cordiverse/cordis/pull/277)
