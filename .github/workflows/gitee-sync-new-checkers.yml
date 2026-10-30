@@ -51,7 +51,8 @@ jobs:
           for name in "${repos[@]}"; do
             remote="git@gitee.com:perrylink/$name.git"
             rm -rf "/tmp/$name"
-            if ! git ls-remote "$remote" HEAD >/dev/null 2>&1; then
+            # An existing but empty mirror has no HEAD yet; that is not a missing repo.
+            if ! git ls-remote "$remote" >/dev/null 2>&1; then
               echo "SKIP-MISSING-MIRROR $name"
               fails=$((fails + 1))
               continue
