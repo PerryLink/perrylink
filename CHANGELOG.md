@@ -14,6 +14,19 @@ and `dsh-laya` were introduced by name.
 
 ---
 
+## 2026-10-30 (second round)
+
+- **Two `cordis` fixes merged by `shigma`.** [`cordiverse/cordis#277`](https://github.com/cordiverse/cordis/pull/277)
+  (`perf(core): notify only the services a fiber provides`) landed at 06:02:00Z and
+  [`#267`](https://github.com/cordiverse/cordis/pull/267) (`fix(loader): treat an empty string as an isolate label`)
+  at 07:35:26Z. Both merge commits carry this account as their author, so both count.
+- **480 total: 446 + 34**, across **94 repositories**, **91** of them credited, re-derived with
+  `00-live/_profile-derive.mjs` at 2026-10-30T16:12:57Z. **163** proposals are open across **123**
+  repositories: the two merges removed two, and `psf/black#5641` plus the human-filed `pandas#71776`
+  added two. `cordis` was already credited, so the repository count stays at 91.
+
+---
+
 ## 2026-10-30
 
 - **Four merges landed overnight, all in repositories that already carried a credited commit.**
