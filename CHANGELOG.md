@@ -14,6 +14,22 @@ and `dsh-laya` were introduced by name.
 
 ---
 
+## 2026-10-30
+
+- **Four merges landed overnight, all in repositories that already carried a credited commit.**
+  [`psf/black#5639`](https://github.com/psf/black/pull/5639) (the B045 loop-variable lint, merged by
+  `cobaltt7` after the changelog entry was dropped) and
+  [`psf/black#5638`](https://github.com/psf/black/pull/5638) (optional parens for a commented
+  assignment RHS) landed at 2026-10-29T21:44:42Z and 2026-10-29T21:52:45Z;
+  [`docker/docker-agent#4754`](https://github.com/docker/docker-agent/pull/4754) and
+  [`#4744`](https://github.com/docker/docker-agent/pull/4744) were approved and queue-merged by
+  `aheritier` at 22:45:14Z and 22:46:11Z.
+- **478 total: 445 + 33**, across **94 repositories**, **92** of them credited. **163** proposals are
+  open across **121** repositories as of 2026-10-30T04:25:00Z. The two repositories that carry merges
+  without credit are unchanged (`SihanTeng` 32, `Tencent/MMKV` 1).
+
+---
+
 ## 2026-10-29
 
 - **`ZSeven-W/openpencil#264` merged at 2026-10-29T02:46:01Z by `Kayshen-X`** — the documented
