@@ -46,7 +46,7 @@ compliance tools. Every plugin has one page at
 with no JavaScript rendering them, so a reader who arrives from a search result sees the text rather than
 a loading state.
 
-**中文读者 · 只想核对一份材料？** [按「手上是什么材料」选一个核查器（62 个，全中文）→](https://perrylink.github.io/zh/checkers/choose/)
+**中文读者 · 只想核对一份材料？** [按「手上是什么材料」选一个核查器（53 个，全中文）→](https://perrylink.github.io/zh/checkers/choose/)
 
 ## ▶ Start here
 
