@@ -9,10 +9,10 @@
 <a href="https://github.com/PerryLink?tab=repositories"><img alt="GitHub stars" src="https://img.shields.io/github/stars/PerryLink?label=stars&affiliations=OWNER&color=24292f"></a>
 <a href="https://github.com/PerryLink?tab=followers"><img alt="GitHub followers" src="https://img.shields.io/github/followers/PerryLink?label=followers&color=24292f"></a>
 <a href="https://github.com/PerryLink?tab=repositories"><img alt="GitHub repos" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FPerryLink&query=%24.public_repos&label=repos&color=24292f"></a>
-<a href="https://github.com/PerryLink/perrylink/blob/main/PROJECTS.md"><img alt="merged upstream" src="https://img.shields.io/badge/upstream%20merges-478-6e7781"></a>
+<a href="https://github.com/PerryLink/perrylink/blob/main/PROJECTS.md"><img alt="merged upstream" src="https://img.shields.io/badge/upstream%20merges-480-6e7781"></a>
 <a href="https://github.com/PerryLink/perrylink/blob/main/PROJECTS.md"><img alt="repositories where a merge is credited" src="https://img.shields.io/badge/credited%20repos-91-6e7781"></a>
 <a href="https://github.com/PerryLink/dsh-kit"><img alt="actively maintained plugins" src="https://img.shields.io/badge/plugins-100-6e7781"></a>
-<a href="https://github.com/PerryLink/perrylink/blob/main/PROJECTS.md"><img alt="compliance checkers and tools" src="https://img.shields.io/badge/checkers-62-6e7781"></a>
+<a href="https://github.com/PerryLink/perrylink/blob/main/PROJECTS.md"><img alt="compliance checkers" src="https://img.shields.io/badge/checkers-53-6e7781"></a>
 <br>
 <a href="https://www.npmjs.com/search?q=perrylink"><img alt="npm names" src="https://img.shields.io/badge/npm-117%20names-cb3837?logo=npm"></a>
 <img alt="npm downloads 30d" src="https://img.shields.io/badge/npm%20downloads%2030d-232.5k-6e7781">
@@ -37,7 +37,7 @@ I fix other people's projects, and I maintain a plugin family for
 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness). Independent open-source developer in
 Beijing — not affiliated with DeepSeek, and not a DeepSeek employee.
 
-**Upstream** — 478 merged pull requests in 94 repositories that are not mine, from AWS, Apple, Docker,
+**Upstream** — 480 merged pull requests in 94 repositories that are not mine, from AWS, Apple, Docker,
 Microsoft, NVIDIA, Prometheus, Redis, Tencent and the vLLM project down to one-person projects. **The
 family** — 100 actively maintained Apache-2.0 plugins: security, workflows, research,
 messaging bridges, developer experience, and since 2026-10-08 a 53-checker compliance suite plus nine newer
@@ -45,8 +45,6 @@ compliance tools. Every plugin has one page at
 **[perrylink.github.io](https://perrylink.github.io/)** — 123 pages, complete in the served HTML
 with no JavaScript rendering them, so a reader who arrives from a search result sees the text rather than
 a loading state.
-
-**中文读者 · 只想核对一份材料？** [按「手上是什么材料」选一个核查器（53 个，全中文）→](https://perrylink.github.io/zh/checkers/choose/)
 
 ## ▶ Start here
 
@@ -189,7 +187,7 @@ or one person. Every external repository above 2,500★ that carries merged work
 </details>
 
 Eight more repositories between 1,000★ and 2,500★, the long tail below that, the per-merge record behind
-the 478, the `laya` ledger and the `deepseek-ai` picture are all in **[PROJECTS.md](PROJECTS.md)**.
+the 480, the `laya` ledger and the `deepseek-ai` picture are all in **[PROJECTS.md](PROJECTS.md)**.
 
 ## 📦 The rest of the family
 
