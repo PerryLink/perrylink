@@ -1,0 +1,77 @@
+name: gitee-sync-new-checkers
+
+# Temporary supplement to gitee-sync.yml.
+#
+# The nine compliance repositories added on 2026-10-24 are not yet in the
+# hand-maintained `repos=(...)` list in gitee-sync.yml, so the daily job skips
+# them. Their Gitee mirrors were created on 2026-10-30; this workflow keeps
+# those nine in sync until they are folded into the main list.
+#
+# Gitee is a read-only mirror: GitHub is the source of truth, and the push is
+# guarded with --force-with-lease so a diverged mirror fails loudly instead of
+# being overwritten silently.
+
+on:
+  schedule:
+    - cron: '45 0 * * *' # daily 08:45 UTC+8, after gitee-sync.yml
+  workflow_dispatch: {}
+
+permissions: {}
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Configure SSH for Gitee
+        env:
+          GITEE_SSH_KEY: ${{ secrets.GITEE_SSH_KEY }}
+        run: |
+          set -euo pipefail
+          mkdir -p ~/.ssh
+          printf '%s\n' "$GITEE_SSH_KEY" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan gitee.com >> ~/.ssh/known_hosts
+
+      - name: Mirror the nine checkers added 2026-10-24
+        shell: bash
+        run: |
+          set -euo pipefail
+          repos=(
+            dsh-bid-health-check
+            dsh-canteen-retention-check
+            dsh-construction-doc-check
+            dsh-excel-reconcile
+            dsh-invoice-ledger
+            dsh-payroll-audit
+            dsh-safety-ledger-check
+            dsh-table-ingest
+            dsh-tender-requirements
+          )
+          fails=0
+          for name in "${repos[@]}"; do
+            remote="git@gitee.com:perrylink/$name.git"
+            rm -rf "/tmp/$name"
+            if ! git ls-remote "$remote" HEAD >/dev/null 2>&1; then
+              echo "SKIP-MISSING-MIRROR $name"
+              fails=$((fails + 1))
+              continue
+            fi
+            if ! git clone --quiet "https://github.com/PerryLink/$name.git" "/tmp/$name"; then
+              echo "FAIL clone $name"
+              fails=$((fails + 1))
+              continue
+            fi
+            b="$(git -C "/tmp/$name" rev-parse --abbrev-ref HEAD)"
+            tip="$(git ls-remote "$remote" "refs/heads/$b" | awk '{print $1}')"
+            if [ -z "$tip" ]; then
+              git -C "/tmp/$name" push "$remote" "HEAD:refs/heads/$b" --tags
+            else
+              git -C "/tmp/$name" push --force-with-lease="refs/heads/$b:$tip" "$remote" "HEAD:refs/heads/$b" \
+                && git -C "/tmp/$name" push "$remote" --tags --force
+            fi
+            echo "OK $name"
+          done
+          if [ "$fails" -ne 0 ]; then
+            echo "mirror failures: $fails"
+            exit 1
+          fi
