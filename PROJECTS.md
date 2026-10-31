@@ -89,7 +89,7 @@ than letting the account name imply a company.
 </details>
 
 <details>
-<summary><b>The rest of the contributor set, and how the 487 total is derived</b></summary>
+<summary><b>The rest of the contributor set, and how the 488 total is derived</b></summary>
 
 **The rest of the contributor set** is the long tail below the 1,000★ line:
 **43 further repositories**, DSH plugin directories, small upstream projects and community catalogs
@@ -100,7 +100,7 @@ merges, [the Jev gallery](https://github.com/OmniJev/awesome-jev-gallery) and
 [inference-gateway](https://github.com/inference-gateway/inference-gateway), among them) — most are
 catalogs that ingest the family and carry no company owner, so they are named here only in aggregate.
 **93 external repositories carry at least one merged pull request of ours and a commit
-attributed to this account on their default branch; 453 merges were counted inside those 93 —
+attributed to this account on their default branch; 454 merges were counted inside those 93 —
 re-derived 2026-10-31T03:58:00Z from this account's own merged pull requests and confirmed repository by
 repository with the `defaultBranchRef.target.history(author:{id})` probe, so 453 is exact rather than a
 floor over a probed subset. Three repositories carry merges of ours and still earn no credit, and all are named for that reason:
@@ -111,8 +111,8 @@ into the default branch `master`, so no commit of this account sits where the pr
 [phocinae-server](https://github.com/Phocinae/phocinae-server) and
 [deepseek-desktop](https://github.com/zcx960/deepseek-desktop), each hold a commit of this account and no
 merged pull request at all, so neither carries a merge and they are named only for that reason.
-**453 + 34 = the 487 merged pull requests** this account has outside `PerryLink/*`, concentrated in
-**96 repositories**; a further **158 are open across 122 repositories** as of 2026-10-31T04:00:00Z and are
+**454 + 34 = the 488 merged pull requests** this account has outside `PerryLink/*`, concentrated in
+**96 repositories**; a further **159 are open across 123 repositories** as of 2026-10-31T06:10:00Z and are
 deliberately not counted here.
 
 </details>
