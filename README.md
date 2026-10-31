@@ -207,7 +207,7 @@ session pinning) and [dsh-team-rooms](https://github.com/PerryLink/dsh-team-room
 **Frozen — the ecosystem converged on a more widely adopted implementation.** Five plugins — `dsh-budget`,
 `dsh-draw`, `dsh-claude-move`, `dsh-reach` and `dsh-defend` — plus the third-party `dsh-wechat` row stopped
 feature work because a more widely adopted implementation is the mainstream choice for that capability.
-This is a measured adoption call, not a quality verdict: each repo's own README records the comparison.
+This is a measured adoption call, not a quality verdict; the repos that carry a maintenance-status section record the comparison.
 
 Either way, the operational meaning is the same: compatibility updates stop, existing installs keep
 working, and no second implementation is maintained.
