@@ -12,6 +12,7 @@
 <a href="https://github.com/PerryLink/perrylink"><img alt="repositories where a merge is credited" src="https://img.shields.io/badge/credited%20repos-94-6e7781"></a>
 <a href="https://github.com/PerryLink/dsh-kit"><img alt="actively maintained plugins" src="https://img.shields.io/badge/plugins-115-6e7781"></a>
 <a href="https://github.com/PerryLink/perrylink"><img alt="compliance checkers" src="https://img.shields.io/badge/checkers-62-6e7781"></a>
+<a href="https://perrylink.github.io/dsh-plugins/"><img alt="domain alpha packages" src="https://img.shields.io/badge/domain%20alpha-15%20packages%20%2B%202%20suites-0b5fff"></a>
 <br>
 <a href="https://www.npmjs.com/search?q=perrylink"><img alt="npm names" src="https://img.shields.io/badge/npm-132%20names-cb3837?logo=npm"></a>
 <img alt="npm downloads 30d" src="https://img.shields.io/badge/npm%20downloads%2030d-273.6k-6e7781">
@@ -64,6 +65,23 @@ behaviour.
 | [dsh-permission-rules](https://github.com/PerryLink/dsh-permission-rules) | Claude Code-style declarative allow/deny/ask rules plus a process-level network policy (136★) | `dsh plugin --profile web add dsh-permission-rules` |
 | [dsh-mcp-panel](https://github.com/PerryLink/dsh-mcp-panel) | MCP management console: `/mcp` + Settings tab + trial calls (91★) | `dsh plugin --profile web add dsh-mcp-panel` |
 | [dsh-phocinae](https://github.com/PerryLink/dsh-phocinae) | Local, non-generative verdicts for the approval chain: a small typed decision model behind `phocinae_ask` / `phocinae_gate`, with fail-closed escalation for everything it does not answer (1★) | `dsh plugin --profile web add dsh-phocinae` |
+
+## 🧩 Domain plugins — 15 packages + 2 suites (alpha)
+
+A separate, deliberately narrow wave: **15 bare-name DSH tools** for finance ops, legal ops, ESG/quality, trade/logistics, documents/models and verify utilities, plus **two one-command suites**. All are **public/synthetic, alpha, not counted, not GA**; no customer data and no customer-accuracy claim.
+
+| Family | Packages | Suite |
+|---|---|---|
+| Finance ops | [dsh-einvoice](https://github.com/PerryLink/dsh-einvoice) · [dsh-bankrec](https://github.com/PerryLink/dsh-bankrec) · [dsh-ap-three-way](https://github.com/PerryLink/dsh-ap-three-way) · [dsh-travel-recon](https://github.com/PerryLink/dsh-travel-recon) | [dsh-finops-suite](https://github.com/PerryLink/dsh-finops-suite) |
+| Legal ops | [dsh-legal-intake](https://github.com/PerryLink/dsh-legal-intake) · [dsh-legal-clause](https://github.com/PerryLink/dsh-legal-clause) | [dsh-contract-suite](https://github.com/PerryLink/dsh-contract-suite) |
+| ESG / quality | [dsh-ghg](https://github.com/PerryLink/dsh-ghg) · [dsh-qms-capa](https://github.com/PerryLink/dsh-qms-capa) | — |
+| Trade / logistics | [dsh-hs-candidate](https://github.com/PerryLink/dsh-hs-candidate) · [dsh-freight-audit](https://github.com/PerryLink/dsh-freight-audit) | — |
+| Documents / models | [dsh-docx-redline](https://github.com/PerryLink/dsh-docx-redline) · [dsh-ifc-qto](https://github.com/PerryLink/dsh-ifc-qto) | — |
+| Verify | [dsh-policy-ledger](https://github.com/PerryLink/dsh-policy-ledger) · [dsh-pim-lint](https://github.com/PerryLink/dsh-pim-lint) · [dsh-eval-pack](https://github.com/PerryLink/dsh-eval-pack) | — |
+
+The eval tool is **`dsh-eval-pack`**: the bare `dsh-eval-harness` name is owned by another publisher, so the project was renamed rather than falling back to a scope. The old scoped packages are deprecated redirects.
+
+[Index and docs](https://perrylink.github.io/dsh-plugins/) · [GitHub aggregate](https://github.com/PerryLink/dsh-plugins) · [Gitee](https://gitee.com/perrylink/dsh-plugins) · [GitCode](https://gitcode.com/PerryLink/dsh-plugins) · [Scenario article: invoice → bank → three-way → travel](https://perrylink.github.io/dsh-plugins/articles/finops-suite.html)
 
 ## 🦭 Phocinae — my typed-decision model lab
 
@@ -241,7 +259,8 @@ working, and no second implementation is maintained.
 独立开源开发者，在北京，与 DeepSeek 无隶属关系。三条线：**给别人的项目修 bug**（AWS、Apple、Docker、
 Microsoft、NVIDIA、Redis、Tencent、vLLM，也包括一个人的小项目）；**给 DeepSeek Harness 维护一套
 Apache-2.0 插件生态** —— 安全、工作流、研究、消息桥接、开发者体验，加上合规核查与 2026-10-31 的一批
-公开 S1 工具（各自 README 标了 not GA）；以及 **[Phocinae](https://github.com/Phocinae)**，我自己的本地
+公开 S1 工具（各自 README 标了 not GA），以及 2 个裸名 suite
+（`dsh-finops-suite` / `dsh-contract-suite`）；以及 **[Phocinae](https://github.com/Phocinae)**，我自己的本地
 typed-decision 模型与工具 org。
 
 插件目录在 **[perrylink.github.io](https://perrylink.github.io/)**，正文直接写在 HTML 里，不靠 JavaScript
