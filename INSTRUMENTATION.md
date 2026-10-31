@@ -193,7 +193,7 @@ measurement).
 | 1 — reach and counters | 678 | stars (82), followers (112), repos (72), upstream merges 494 (138), credited repos 95 (112), plugins 107 (80), checkers 62 (82) |
 | 2 — npm and stack | 728 | npm 132 names (123), npm downloads 30d 273.6k (170), npm provenance 105/132 (160), license (120), node (155) |
 | 3 — quality and registry | 668 | dsh host corridor (146), OpenSSF Scorecard (136), Glama (110), certified (132), MCP Registry 4 servers (144) |
-| 4 — index, mirror, feeds | 787 | plugin index 114 pages (144), Gitee (101), dshfind 45.5k+ across 9 (256), Desktop Market source (172), Zenodo DOI (~114) |
+| 4 — index, mirror, feeds | 787 | plugin index 114 pages (144), Gitee (108), dshfind 45.5k+ across 9 (256), Desktop Market source (172), Zenodo DOI (~114) |
 
 The hand-written badges on that date — `upstream merges`, `credited repos`, `plugins`, `checkers`, `npm
 names`, `npm downloads 30d`, `npm provenance`, `MCP Registry`, `plugin index`, `dshfind downloads`,

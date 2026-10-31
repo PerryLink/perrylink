@@ -51,6 +51,9 @@ older rounds are historical and no longer resolve.
   `dsh-kit/plugins.txt`, `dsh-plugin-kit/data/repos.json` and `dsh-catalog/data/packages.json` carry the
   new statuses. No new official-absorption RETIRE.
 - `@perrylink/dsh-checkers-suite` was npm-deprecated in favor of `@perrylink/dsh-checkers`.
+- **Gitee mirrors grew from 101 to 108.** The seven missing mirrors were created and populated with full
+  history and tags; `dsh-memento`'s stray `main` tag was removed and its default branch force-aligned to the
+  GitHub tip; the catalog's deploy artifact was synced.
 
 ## 2026-10-31 (sixth round)
 

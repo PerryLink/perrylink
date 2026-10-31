@@ -247,8 +247,8 @@ working, and no second implementation is maintained.
 ## 🌍 Where the plugins live
 
 - **GitHub** (this profile), **[Gitee](https://gitee.com/perrylink)** and **npm** — source, CI and releases
-  here; 101 repositories are mirrored to Gitee by a daily job (default branch and all tags; the mirror list
-  does not yet include the nine 2026-10-23 tools or the fifteen 2026-10-31 demos). The `perrylink` npm
+  here; 108 repositories are mirrored to Gitee by a daily job (default branch and all tags; the list now
+  includes the seven new 2026-10-31 mirrors, though not every demo is mirrored yet). The `perrylink` npm
   account holds **132 names and 1,808 versions**; **105** of them carry a SLSA provenance attestation on at
   least one version, **98** on the current `latest`.
 - **npm downloads** — **273,579 over the trailing 30 days** (window 2026-10-01..10-30).
