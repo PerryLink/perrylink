@@ -17,6 +17,18 @@ older rounds are historical and no longer resolve.
 
 ---
 
+## 2026-11-01 (eighth round)
+
+- **`danmolitor/forme#218` merged by `danmolitor`** at 2026-10-31T15:56:57Z, after the rebase onto the
+  post-batch `main`. The transform wrap now writes the `+origin` shift first and the `-origin` shift last,
+  so `rotate()`/`scale()` pivot about the element's `transform-origin` instead of the page corner.
+  `commits?author=PerryLink` on `main` returns **five** commits, one for each of `#216/#217/#218/#219/#220`.
+- **495 total: 461 + 34**, across **98 repositories**, **95** of them credited, re-derived at
+  2026-10-31T16:20:00Z. **157** proposals are open across **125** repositories as of 2026-11-01T00:20:00Z.
+- `pandatix/go-abnf#276` was fixed upstream in `#277` and shipped in **v0.5.5**; `prometheus/common` still
+  pinned v0.5.3, so [#1029](https://github.com/prometheus/common/pull/1029) bumps it (the 4 KiB label
+  benchmark drops from 16.9 s to 71.6 ms).
+
 ## 2026-10-31 (seventh round)
 
 - **`danmolitor/forme` batch merged by `danmolitor`** at 15:21:40Z through his own
