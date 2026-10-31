@@ -12,7 +12,28 @@ Rounds before 2026-09-25 (09-24, 09-23, 09-22, 09-21, 09-20) were rotated out be
 existed and are recoverable from the repository's git history; the 09-21 round was where `laya-mcp`
 and `dsh-laya` were introduced by name.
 
+**2026-10-31: `PROJECTS.md` was removed.** The profile is a single README; links to `PROJECTS.md` in
+older rounds are historical and no longer resolve.
+
 ---
+
+## 2026-10-31 (sixth round)
+
+- **The profile is now one file.** `PROJECTS.md` was removed on the user's instruction after its useful
+  star rows moved into the README. Every README link that pointed at it — the four badges, the family note,
+  the checker row, the retired section, the Chinese block and the footer — now points at the README itself
+  or at the checker index. `INSTRUMENTATION.md` records the one-file rule.
+- **Upstream is split at 10,000★.** Sixteen repositories above 10,000★ stay in the direct table; the
+  thirty-seven between 1,000★ and 10,000★ move into one `<details>` fold; the 44 below 1,000★ are mentioned
+  only in aggregate. The 23-case "what was broken and who merged it" fold is gone.
+- **The dsh-score section above Upstream is gone.** `dsh-score` remains one row in the family map; it no
+  longer has a separate promotion block.
+- **Phocinae is named as the account's own org.** The Phocinae section now links the org and lists the
+  model, server, guard, MCP server, CLI/JS and the org's own DSH plugins. The DSH family counts stay
+  `PerryLink/*`-scoped: no Phocinae repo is in the 125/123/115, and the 490 contains no PR to Phocinae.
+- **No figures moved in this round.** 490 merged / 97 repositories / 94 credited (456) / 34 uncredited /
+  158 open across 122; 125 declare / 123 roster / 115 active / 120 category rows; npm 132 names, 1,808
+  versions, 273,579 downloads; Market 109 packages, 2026-10-29T08:36:50Z; sitemap 114 pages.
 
 ## 2026-10-31 (fifth round)
 

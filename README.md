@@ -1,22 +1,21 @@
 # Hi, I'm PerryLink 👋
 
 <!-- Editing note: every figure on this page is measured and dated, and each one has exactly one
-     authoritative site. Read INSTRUMENTATION.md before changing a number. The long form of this page
-     -- the merge-by-merge upstream record, the 120-row plugin roster, the retired/frozen tables and the
-     npm figures with their caveats -- is PROJECTS.md; rounds go to CHANGELOG.md. -->
+     authoritative site. Read INSTRUMENTATION.md before changing a number. This page is self-contained
+     since 2026-10-31; rounds go to CHANGELOG.md. -->
 
 <p align="center">
 <a href="https://github.com/PerryLink?tab=repositories"><img alt="GitHub stars" src="https://img.shields.io/github/stars/PerryLink?label=stars&affiliations=OWNER&color=24292f"></a>
 <a href="https://github.com/PerryLink?tab=followers"><img alt="GitHub followers" src="https://img.shields.io/github/followers/PerryLink?label=followers&color=24292f"></a>
 <a href="https://github.com/PerryLink?tab=repositories"><img alt="GitHub repos" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FPerryLink&query=%24.public_repos&label=repos&color=24292f"></a>
-<a href="https://github.com/PerryLink/perrylink/blob/main/PROJECTS.md"><img alt="merged upstream" src="https://img.shields.io/badge/upstream%20merges-490-6e7781"></a>
-<a href="https://github.com/PerryLink/perrylink/blob/main/PROJECTS.md"><img alt="repositories where a merge is credited" src="https://img.shields.io/badge/credited%20repos-94-6e7781"></a>
+<a href="https://github.com/PerryLink/perrylink"><img alt="merged upstream" src="https://img.shields.io/badge/upstream%20merges-490-6e7781"></a>
+<a href="https://github.com/PerryLink/perrylink"><img alt="repositories where a merge is credited" src="https://img.shields.io/badge/credited%20repos-94-6e7781"></a>
 <a href="https://github.com/PerryLink/dsh-kit"><img alt="actively maintained plugins" src="https://img.shields.io/badge/plugins-115-6e7781"></a>
-<a href="https://github.com/PerryLink/perrylink/blob/main/PROJECTS.md"><img alt="compliance checkers" src="https://img.shields.io/badge/checkers-62-6e7781"></a>
+<a href="https://github.com/PerryLink/perrylink"><img alt="compliance checkers" src="https://img.shields.io/badge/checkers-62-6e7781"></a>
 <br>
 <a href="https://www.npmjs.com/search?q=perrylink"><img alt="npm names" src="https://img.shields.io/badge/npm-132%20names-cb3837?logo=npm"></a>
 <img alt="npm downloads 30d" src="https://img.shields.io/badge/npm%20downloads%2030d-273.6k-6e7781">
-<a href="https://github.com/PerryLink/perrylink/blob/main/PROJECTS.md"><img alt="npm provenance" src="https://img.shields.io/badge/npm%20provenance-105%2F132-6e7781"></a>
+<a href="https://github.com/PerryLink/perrylink"><img alt="npm provenance" src="https://img.shields.io/badge/npm%20provenance-105%2F132-6e7781"></a>
 <a href="https://github.com/PerryLink/dsh-auto-review/blob/main/LICENSE"><img alt="license" src="https://img.shields.io/badge/license-Apache--2.0-blue"></a>
 <a href="https://github.com/PerryLink/dsh-mcp-panel/blob/main/package.json"><img alt="node" src="https://img.shields.io/badge/node-%5E22.19%20%7C%7C%20%3E%3D24-339933?logo=node.js"></a>
 <br>
@@ -33,8 +32,9 @@
 <a href="https://doi.org/10.5281/zenodo.22901853"><img alt="Zenodo DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.22901853.svg"></a>
 </p>
 
-I fix other people's projects, and I maintain a plugin family for
-[DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness). Independent open-source developer in
+I fix other people's projects, I maintain a plugin family for
+[DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness), and I run
+[Phocinae](https://github.com/Phocinae), my typed-decision model lab. Independent open-source developer in
 Beijing — not affiliated with DeepSeek, and not a DeepSeek employee.
 
 **Upstream** — 490 merged pull requests in 97 repositories that are not mine, from AWS, Apple, Docker,
@@ -61,28 +61,41 @@ than a loading state.
 | [dsh-mcp-panel](https://github.com/PerryLink/dsh-mcp-panel) | MCP management console: `/mcp` + Settings tab + trial calls (91★) | `dsh plugin --profile web add dsh-mcp-panel` |
 | [dsh-phocinae](https://github.com/PerryLink/dsh-phocinae) | Local, non-generative verdicts for the approval chain: a small typed decision model behind `phocinae_ask` / `phocinae_gate`, with fail-closed escalation for everything it does not answer (1★) | `dsh plugin --profile web add dsh-phocinae` |
 
-## 🦭 Phocinae — a 144.3M typed decision model
+## 🦭 Phocinae — my typed-decision model lab
 
-Separate from the harness: I train small language models. **[Phocinae-Largha-150M-v1](https://github.com/Phocinae/Phocinae-Largha-150M-v1)** (Apache-2.0) is a typed decision model — no text generation; one forward pass returns a verdict per question with calibrated confidence. GPU **21.0 ms** (RTX 5090) p50 per decision, CPU-only **1.64 s per case**; English typed-decisions **0.906** (400 cases / 2,000 decisions, re-measured 2026-10-09), Chinese (machine-translated eval set) 0.848. With a τ=0.6 escalate gate, **55.0%** of agent decisions stay local (79.6% at τ=0.5) and kept-subset accuracy moves 0.906 → **0.9936** (+0.0876) — the gate makes the system better, not just cheaper. Weights on [Hugging Face](https://huggingface.co/Phocinae/Phocinae-Largha-150M-v1) and [ModelScope](https://modelscope.cn/models/PerryLink/Phocinae-Largha-150M-v1); server `pip install phocinae-server`, DSH bundle [`dsh-phocinae`](https://github.com/PerryLink/dsh-phocinae) (`npm i dsh-phocinae`). Reproduction ships with the repo: seeds, row-set hashes, environment and eval scripts.
+[Phocinae](https://github.com/Phocinae) is my own org for local typed-decision models and tools — a separate
+line from the DSH plugin family. Its flagship, **[Phocinae-Largha-150M-v1](https://github.com/Phocinae/Phocinae-Largha-150M-v1)**
+(Apache-2.0, 433★), is a 144.3M bilingual typed decision model — no text generation; one forward pass returns
+a verdict per question with calibrated confidence. GPU **21.0 ms** (RTX 5090) p50 per decision, CPU-only
+**1.64 s per case**; English typed-decisions **0.906** (400 cases / 2,000 decisions, re-measured 2026-10-09),
+Chinese (machine-translated eval set) 0.848. With a τ=0.6 escalate gate, **55.0%** of agent decisions stay
+local (79.6% at τ=0.5) and kept-subset accuracy moves 0.906 → **0.9936** (+0.0876) — the gate makes the
+system better, not just cheaper.
 
-## 🧭 dsh-score — public evidence for good plugins
+| Phocinae project | What it gives you |
+|---|---|
+| [Phocinae-Largha-150M-v1](https://github.com/Phocinae/Phocinae-Largha-150M-v1) | 144.3M bilingual typed-decision model (433★); weights on Hugging Face and ModelScope |
+| [phocinae-server](https://github.com/Phocinae/phocinae-server) | Local inference server, TypeSafe `/v1/systemone`-compatible API |
+| [phocinae-guard](https://github.com/Phocinae/phocinae-guard) | Fail-closed command approval gate for Claude Code, Cline, Codex, Crush and DSH hooks |
+| [phocinae-mcp](https://github.com/Phocinae/phocinae-mcp) | MCP server exposing `gate` / `classify` / `route` / `score` |
+| [phocinae-cli](https://github.com/Phocinae/phocinae-cli) · [phocinae-js](https://github.com/Phocinae/phocinae-js) | CLI and zero-runtime TypeScript client |
+| [dsh-phocinae](https://github.com/Phocinae/dsh-phocinae) and the org's DSH line | `phocinae_ask` / `phocinae_gate`, plus `dsh-batch-triage`, `dsh-context-verdict` and `dsh-evidence` — the org's own plugins, outside the `PerryLink/*` roster |
 
-The family publishes **public evidence and scores** instead of another star ranking:
-
-- **[dsh-score](https://github.com/PerryLink/dsh-attention-index)** — per-surface evidence registry, badges, bench runner and contribution receipts. Live: <https://perrylink.github.io/dsh-attention-index/>. Prior-only rows are **E0 / unrated**; paired `with` / `without` bench results are the only path to a quality slot. Repo rename to `dsh-score-index` pending.
-- **[dsh-community-bench](https://github.com/PerryLink/dsh-community-bench)** — the in-app consumer: **Settings → Plugins → Community Bench**. It reads the public registry; it does **not** compute a local score.
-
-```sh
-dsh plugin --profile web add dsh-community-bench
-```
+The org profile is the full map: **[github.com/Phocinae](https://github.com/Phocinae)**. The model card is
+on [Hugging Face](https://huggingface.co/Phocinae/Phocinae-Largha-150M-v1) and
+[ModelScope](https://modelscope.cn/models/PerryLink/Phocinae-Largha-150M-v1); the server is
+`pip install phocinae-server`. Reproduction ships with the model repo: seeds, row-set hashes, environment and
+eval scripts.
 
 ## 🔧 Upstream & community contributions
 
 *Every repository below is external to `PerryLink/*`, every row is merged work, and open proposals are
 deliberately not listed — as of 2026-10-31T13:45:00Z, 158 are open across 122 repositories. ★ re-measured
-2026-10-31 for every row; the third column names the party that
-owns the project, because the account name alone does not say whether that is a company, a standards body
-or one person. Every external repository above 2,500★ that carries merged work is listed.*
+2026-10-31 for every row; the third column names the party that owns the project, because the account name
+alone does not say whether that is a company, a standards body or one person. Every external repository
+above 1,000★ that carries merged work is listed: sixteen above 10,000★ in the table, thirty-seven between
+1,000★ and 10,000★ in the fold below, and another forty-four below 1,000★ counted in the 490 but not
+listed individually.*
 
 | Repository | ★ | 项目归属方 |
 |---|---|---|
@@ -102,6 +115,12 @@ or one person. Every external repository above 2,500★ that carries merged work
 | [ioredis](https://github.com/redis/ioredis) | 15,351 | **Redis** — the official `redis` org; the Node.js Redis client |
 | [FlashMLA](https://github.com/deepseek-ai/FlashMLA) | 13,225 | **DeepSeek** — the official `deepseek-ai` org |
 | [txtai](https://github.com/neuml/txtai) | 13,053 | **NeuML** — the `txtai` project of NeuML, an independent open-source project |
+
+<details>
+<summary><b>Thirty-seven more between 1,000★ and 10,000★ — one line each</b></summary>
+
+| Repository | ★ | 项目归属方 |
+|---|---|---|
 | [dsh-market](https://github.com/dsh-market/dsh-market) | 9,947 | `dsh-market` org — the community plugin market behind dshmarket.com |
 | [dsh-web](https://github.com/zhu1090093659/dsh-web) | 9,880 | zhu1090093659 — individual maintainer |
 | [mcp](https://github.com/awslabs/mcp) | 9,854 | **Amazon Web Services (AWS)** — the official `awslabs` org |
@@ -132,69 +151,18 @@ or one person. Every external repository above 2,500★ that carries merged work
 | [NeMo-Agent-Toolkit](https://github.com/NVIDIA/NeMo-Agent-Toolkit) | 2,688 | **NVIDIA** — the official `NVIDIA` org |
 | [Agents-Anywhere](https://github.com/anywhere-labs/Agents-Anywhere) | 2,556 | `anywhere-labs` community org — 3 public repos, created 2026-05; not a company |
 | [awesome-jev](https://github.com/yibie/awesome-jev) | 2,515 | yibie — individual maintainer; community catalog for Jev |
-<details>
-<summary><b>Twenty-three of them, briefly — what was broken and who merged it</b></summary>
-
-- **laya** — four pull requests merged within one second on 2026-10-28: a `--questions` path that cannot be
-  read is a usage error naming the file ([#1397](https://github.com/NandhaKishorM/laya/pull/1397)), the
-  readers open as `utf-8-sig` so a Windows-editor BOM is a signature rather than data
-  ([#1398](https://github.com/NandhaKishorM/laya/pull/1398)), `assert_regression` names the delta it failed
-  on for an incomparable coverage definition and a NaN tolerance
-  ([#1400](https://github.com/NandhaKishorM/laya/pull/1400)), and `evaluate()` refuses a batch reply with
-  fewer results than rows instead of silently under-scoring the report
-  ([#1401](https://github.com/NandhaKishorM/laya/pull/1401)). Merged by `NandhaKishorM`.
-- **cordis** — an async-generator effect abandoned on an epoch change never ran its `finally`; the effect is
-  closed with `iter.return()` now, so a reload no longer leaks that cleanup. Merged by `shigma`
-  ([#268](https://github.com/cordiverse/cordis/pull/268)).
-
-- **deer-flow** — a portability fix in a blocking-IO test, merged by `WillemJiang`; the largest row in the
-  table.
-- **zoxide** — a bare `z` under `_ZO_ECHO=1` called `Set-Location` without `-Passthru`, so the `$dir`
-  assignment was `$null` and strict mode threw `PropertyNotFoundException`; the no-path branch now passes
-  `-Passthru`. Merged by `ajeetdsouza`, who dropped the regression test from the branch before merging.
-- **prometheus/client_golang** — `checkMetricConsistency` compared each label name with the previous one
-  before the pairs were sorted, so non-adjacent duplicates passed and a scrape of the registry was dropped
-  as a whole; the sort now runs before the duplicate loop, with an adjacent control and a non-adjacent
-  regression test. Merged by `bwplotka`.
-- **fiber** — an optional path parameter swallowed the `/` after it, so `/api/:day-:month?-:year?` matched
-  one segment too many; merged by `ReneWerner87`.
-- **black** — `_write_to_stdout()` already translates `\n` into the platform newline, so the
-  trailing-newline fixup appended a second one: CRLF input without a trailing newline could come out as
-  `\r\r\n`. It now appends a bare `\n` and lets the writer translate it; merged by `cobaltt7`.
-- **urfave/cli** — `HandleExitCoder` recognised an `ExitCoder` only through a bare type assertion, so an
-  exit error wrapped with `fmt.Errorf("%w")` printed nothing and fell back to exit code 1. The
-  `MultiError` ordering is unchanged; `Juneezee` rebased it onto a `main` that now requires Go 1.26,
-  squashed the two golden-regenerating commits, and switched the last lookup to `errors.AsType` before
-  merging.
-- **kraken** — the cache file reader opened to duplicate a committed upload to a replica was never closed,
-  leaking one file descriptor per replica for every uploaded blob; both replication paths now register it
-  with the server's closer set. Merged by `gkeesh7` after `sambhav-jain-16` asked for the two cases to be
-  one table.
-- **ioredis** — an auto-pipelining fix, merged by `PavelPashov`.
-- **nuxt/content** — `generateItemSurround` dropped the previous item whenever `before` was larger than the
-  item's index, instead of returning a shorter window; approved and merged by `farnabaz` minutes apart.
-- **MMKV** — the Win32 flag mapper put the *creation disposition* into `dwDesiredAccess`, so restoring over
-  an existing mapped file failed; it now goes to `dwCreationDisposition`, with a test that does the restore.
-  Merged into `dev` by `lingol`, so no commit of this account sits on `master`.
-- **txtai** — cut down over three pull requests after the maintainer asked three times; merged by
-  `davidmezzetti`.
-- **AWS `awslabs/mcp`** — a one-file UTF-8 fix, merged by `markjschreiber` with two approvals.
-- **Tencent BrowserSkill** — merged by `iuyo5678` with eight checks green.
-- **Apple embedding-atlas** — line-ending normalization in a release script, merged by `donghaoren`.
-- **vLLM aibrix** — two flaky-test fixes.
-- **Microsoft SkillOpt** — a UTF-8 state-file fix.
-- **koishi** — the maintainer found and fixed a regression in this account's own patch before merging it.
-- **NVIDIA NeMo-Agent-Toolkit** — three review rounds to make `remove_r1_think_tags` actually remove think
-  blocks; merged by NVIDIA's `rapids-bot`.
-- **jc** — a Windows platform-name fix; it started counting when `master` caught up the next day.
-- **modelscope evalscope** — a UTF-8 BOM dataset fix, merged by `Yunnglin`.
-- **MinIO `minio-go`** — `RemoveObjects` reported a single error for a whole batch, hiding which object had
-  failed; it now reports one result per failed object, merged by `klauspost`.
+| [deep-research-web-ui](https://github.com/AnotiaWang/deep-research-web-ui) | 2,224 | AnotiaWang — individual maintainer |
+| [nginx-upsync-module](https://github.com/weibocom/nginx-upsync-module) | 1,844 | weibocom — the Weibo open-source org |
+| [mcp-remote](https://github.com/punkpeye/mcp-remote) | 1,659 | punkpeye (Frank Fiegel) — individual maintainer at Glama |
+| [dsh-plugin-radar](https://github.com/AdamPlatin123/dsh-plugin-radar) | 1,488 | AdamPlatin123 — individual maintainer, catalog is a generated artifact |
+| [awesome-deepseek-harness](https://github.com/0xsline/awesome-deepseek-harness) | 1,286 | 0xsline — individual maintainer, community catalog |
+| [dsh-vision-router](https://github.com/ysr666/dsh-vision-router) | 1,202 | ysr666 — individual maintainer |
+| [awesome-agent-apis](https://github.com/Anil-matcha/awesome-agent-apis) | 1,065 | Anil Chandra Naidu Matcha — individual maintainer, community catalog |
 
 </details>
 
-Seven more repositories between 1,000★ and 2,500★, the long tail below that, the per-merge record behind
-the 490, the `laya` ledger and the `deepseek-ai` picture are all in **[PROJECTS.md](PROJECTS.md)**.
+Another **44 external repositories below 1,000★** carry merged work and are counted in the 490; they are
+not listed individually.
 
 ## 📦 The rest of the family
 
@@ -206,8 +174,8 @@ not-GA scope and requires Node ≥24.9 <25, while the mainline keeps `^22.19 || 
 **[dsh-kit](https://github.com/PerryLink/dsh-kit)**, which still records the 2026-10-19 cut; the roster figure
 here is measured from each repository's own `package.json` and includes nine tools published 2026-10-23 and
 the fifteen 2026-10-31 demos that the list has not picked up yet. The machine-readable catalogue is
-**[dsh-catalog](https://github.com/PerryLink/dsh-catalog)**, which is also the DSH Desktop Market source. One
-line per plugin, with its status and npm name, is in **[PROJECTS.md](PROJECTS.md)** — 120 rows in eleven tables.
+**[dsh-catalog](https://github.com/PerryLink/dsh-catalog)**, which is also the DSH Desktop Market source.
+The eleven categories below are the map; each plugin's own README carries the one-line detail.
 
 | | # | Some of what is in it |
 |---|---|---|
@@ -220,7 +188,7 @@ line per plugin, with its status and npm name, is in **[PROJECTS.md](PROJECTS.md
 | 🛠️ Developer experience | 6 | [dsh-mcp-panel](https://github.com/PerryLink/dsh-mcp-panel) · [dsh-plugin-guide](https://github.com/PerryLink/dsh-plugin-guide) · [jevcore](https://github.com/PerryLink/jevcore) |
 | 📱 Messaging & bridges | 4 | [dsh-phone-inbox](https://github.com/PerryLink/dsh-phone-inbox) · [dsh-ticktick](https://github.com/PerryLink/dsh-ticktick) · [dsh-reach](https://github.com/PerryLink/dsh-reach) · [dsh-wechat](https://github.com/pan17/dsh-wechat) |
 | 🔬 Research | 4 | [dsh-research-report](https://github.com/PerryLink/dsh-research-report) · [dsh-industry-research](https://github.com/PerryLink/dsh-industry-research) · [dsh-fund-research](https://github.com/PerryLink/dsh-fund-research) |
-| ✅ Compliance checkers & tools | 62 | A register or record set read against a versioned rule pack, ten domains from tendering to litigation, plus nine newer tools — the list is in [PROJECTS.md](PROJECTS.md) |
+| ✅ Compliance checkers & tools | 62 | A register or record set read against a versioned rule pack, ten domains from tendering to litigation, plus nine newer tools — the list is at the [checker index](https://perrylink.github.io/zh/checkers/) |
 | 🏢 Finance, legal & operations | 15 | [dsh-bankrec](https://github.com/PerryLink/dsh-bankrec) · [dsh-einvoice](https://github.com/PerryLink/dsh-einvoice) · [dsh-legal-intake](https://github.com/PerryLink/dsh-legal-intake) — public/synthetic S1 demos published 2026-10-31, not GA |
 
 ## 🪦 Retired & frozen (2026-10-05)
@@ -234,9 +202,7 @@ froze five of its own plugins because **a better-adopted alternative now exists*
 the same reason.
 
 Retired does not mean broken: compatibility updates stop, existing installs keep working, and the
-capability is either official now or served better elsewhere. The per-plugin measurements — this
-repository's weekly downloads against the alternative's, and what each row was retired in favour of — are
-in **[PROJECTS.md](PROJECTS.md)**, under "Retired & frozen — the full tables".
+capability is either official now or served better elsewhere.
 
 ## 🌍 Where the plugins live
 
@@ -270,21 +236,18 @@ Apache-2.0 插件生态** —— 安全、工作流、研究、消息桥接、�
 
 每个插件都有一页静态介绍：**[perrylink.github.io](https://perrylink.github.io/)**，正文直接写在 HTML
 里，不靠 JavaScript 渲染。也向上游 [Cordis](https://github.com/cordiverse/cordis)（DeepSeek Harness 所基于的
-插件内核框架）与 [deepseek-ai](https://github.com/deepseek-ai) 提交修复，逐条清单在 PROJECTS.md。
+插件内核框架）与 [deepseek-ai](https://github.com/deepseek-ai) 提交修复。
 
 还有一条在别处：一个根本起不来的进程现在能起来了。[claude-agent-acp #1146](https://github.com/agentclientprotocol/claude-agent-acp/pull/1146)
 让 `src/index.ts` 里那处没有保护的顶层 await 不再因一次瞬时错误就中断模块求值、在发出任何一条 ACP 消息
 之前退出。
 
-数字只在上面的英文部分维护一份，逐条清单、名册与退役表在 [PROJECTS.md](PROJECTS.md)；这里不重复，
-以免两处走样。
+数字只在上面的英文部分维护一份；这里不重复，以免两处走样。
 
 </details>
 
 ---
 
-*Measured, not remembered.* The full inventory — the merge-by-merge upstream record, the 120-row plugin
-roster, the retired and frozen tables, and the npm and registry figures with their caveats — is in
-**[PROJECTS.md](PROJECTS.md)**. How every figure is measured is in
+*Measured, not remembered.* How every figure is measured is in
 [INSTRUMENTATION.md](https://github.com/PerryLink/perrylink/blob/main/INSTRUMENTATION.md), and what each
 round corrected is in [CHANGELOG.md](https://github.com/PerryLink/perrylink/blob/main/CHANGELOG.md).

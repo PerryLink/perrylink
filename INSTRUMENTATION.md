@@ -26,18 +26,19 @@ absent. The two sanctioned exceptions are marked.
 | **npm downloads badge** *(exception)* | README badge row | same |
 | npm names / versions / non-deprecated latest | README § Where the plugins live | monthly |
 | npm provenance — **state the metric**: **98** names carry SLSA provenance on their non-deprecated `latest`; **105** carry it on at least one version; the twenty-seven with none anywhere are named in the page (measured 2026-10-31, over the 132 names registry search now enumerates) | README § Where the plugins live | monthly |
-| dshfind aggregate tier — **how to read it**: dshfind publishes a badge per plugin at `/api/badge/<owner>/<repo>?metric=downloads` (the `<img>` every plugin page embeds). Nine of the family's repositories answer with a download tier, 26 fall back to ★. The 35 indexed repositories are counted from its sitemap shards (`/sitemap/plugins-N.xml`), not from the search page, which is client-side | README § Where the plugins live; the nine tiers in `PROJECTS.md` | when dshfind re-renders |
+| dshfind aggregate tier — **how to read it**: dshfind publishes a badge per plugin at `/api/badge/<owner>/<repo>?metric=downloads` (the `<img>` every plugin page embeds). Nine of the family's repositories answer with a download tier, 26 fall back to ★. The 35 indexed repositories are counted from its sitemap shards (`/sitemap/plugins-N.xml`), not from the search page, which is client-side | README § Where the plugins live (tier counts) | when dshfind re-renders |
 | dsh host corridor / node engine / license | README badge row (each links to the file it is read from) | when the declared range or the engines change |
-| external contributor repos / merges / above-1,000★ | README § Upstream, the "rest of the contributor set" paragraph | on re-derivation |
-| The named star table — **46 rows above 2,500★**, and the seven between 1,000★ and 2,500★ that live in `PROJECTS.md` | README § Upstream (the table itself) | on re-derivation |
-| The long form — upstream narrative, the 120-row roster, the retired/frozen tables, the npm caveats | [`PROJECTS.md`](PROJECTS.md), which the front page links | when the front page is split further |
-| laya merged / opened / open / closed | README § Upstream, the laya paragraph | on re-derivation |
-| `deepseek-ai` totals | README § Upstream, the "Official harness repo" paragraph | on re-derivation |
-| The 1,000★ threshold and the attribution rule | README § Upstream, the lead paragraph | rule change only |
+| external contributor repos / merges / above-1,000★ | README § Upstream (the aggregate line and the two tables) | on re-derivation |
+| The named star table — **16 rows above 10,000★** in the direct table, **37 between 1,000★ and 10,000★** in the fold | README § Upstream | on re-derivation |
+| Long-form file | **none** — `PROJECTS.md` was removed on 2026-10-31; `README.md` is the only page | — |
+| laya merged / opened / open / closed | not on the profile page; the 52/56/0/4 figures live in `CHANGELOG.md` | on re-derivation |
+| `deepseek-ai` totals | not on the profile page; the 22/1/13 figures live in `CHANGELOG.md` | on re-derivation |
+| The 10,000★ direct / 1,000★ fold threshold and the attribution rule | README § Upstream, the lead paragraph | rule change only |
 | Round narratives | [`CHANGELOG.md`](CHANGELOG.md) | every round |
 | rule-pack size and rules with no verbatim clause text | [`catalog.json`](https://perrylink.github.io/catalog.json), rendered per domain at [the checker index](https://perrylink.github.io/zh/checkers/) | when a rule pack is rebuilt |
 | the DSH Desktop Market catalog source URL | [`dsh-catalog`](https://github.com/PerryLink/dsh-catalog) `deploy/artifacts/v1/plugins.json` | when the catalogue is regenerated |
 | Phocinae figures (21.0 ms (RTX 5090) / 1.64 s / 0.906 / 0.848 / flip150 0.0200 · flip400 0.0217 / ECE 0.2519 / τ=0.6 → 45.0% escalate, −55.0% LLM calls, kept-subset 0.9936) | README § Phocinae | a Phocinae release re-benchmarks |
+| Phocinae org / project map | README § Phocinae; the org profile at [github.com/Phocinae](https://github.com/Phocinae) is the long map | when the org changes |
 
 **Never** restate an authoritative figure in the intro, in a round, or in the Chinese block. The
 Chinese block is a mirror of the story, not a second home for numbers — if it needs a figure, it
@@ -108,7 +109,7 @@ Measured one repo at a time from each repo's own `package.json` at its default b
 | **115** | actively maintained — the roster minus 3 🚫 retired and 5 🧊 frozen. **This is the number the heading and the badge carry.** |
 | **123** | the roster: canonical plugins that declare `dsh.bundle.patch`, excluding the 2 retired corridor legs. `dsh-plugin-kit/data/repos.json` still records the previous **99** cut (2026-10-19); `dsh-kit/plugins.txt` lists 96 published specs (the 99 minus the 3 retired) and does not yet carry the nine 2026-10-23 tools or the fifteen 2026-10-31 demos |
 | **125** | a naive scan of the account — 123 canonical **+ 2 retired corridor legs** (`dsh-plugin-upgrade-015`, not archived; `dsh-plugin-upgrade-016`, archived; both still carrying the manifest) |
-| **120** | rows in the eleven categories: 118 of the 123 roster + 2 rows that are not roster plugins (`jevcore`, which declares no `dsh.bundle`, and the third-party `pan17/dsh-wechat`). Five support/tooling roster entries are left out: `dsh-plugin-kit`, `dsh-cert-mcp`, `dsh-plugin-doctor`, `dsh-checkers`, `dsh-community-bench` |
+| **120** | underlying roster rows across the eleven categories: 118 of the 123 roster + 2 rows that are not roster plugins (`jevcore`, which declares no `dsh.bundle`, and the third-party `pan17/dsh-wechat`). The README renders only the eleven category counts, not the 120 rows. Five support/tooling roster entries are left out: `dsh-plugin-kit`, `dsh-cert-mcp`, `dsh-plugin-doctor`, `dsh-checkers`, `dsh-community-bench` |
 | **190** | non-fork repositories this account owns in total; **136** carry a `package.json` and **125** of those declare `dsh.bundle.patch`, so 65 are outside the contract |
 | **136** | `package.json` files at the default branch — the cross-check for the npm-name set, not a page figure |
 
@@ -148,11 +149,16 @@ the nine are a separate toolchain table. These figures supersede every earlier l
 `dsh-freight-audit`, `dsh-ghg`, `dsh-hs-candidate`, `dsh-ifc-qto`, `dsh-legal-clause`, `dsh-legal-intake`,
 `dsh-pim-lint`, `dsh-policy-ledger`, `dsh-qms-capa`, `dsh-travel-recon`) declare `dsh.bundle.patch` and are
 published with a non-deprecated latest. The naive scan moves 110 → 125, the roster 108 → 123 and the actively
-maintained set 100 → 115; the tables gain fifteen rows, 105 → 120, in a new eleventh category. The account now
+maintained set 100 → 115; the underlying roster gains fifteen rows, 105 → 120, in a new eleventh category
+(the page now renders only the eleven category counts). The account now
 owns 190 non-fork repositories, 136 of which carry a `package.json`, and 125 of those declare the contract.
 The fifteen are public/synthetic, partial and not GA in their own READMEs; they count under the mechanical
 membership rule and the page says so, and they are not part of the 53-checker suite. These figures supersede
 every earlier line in this section.
+
+`Phocinae/*` is the account's other org. Its repos and DSH plugins are **not** counted in the
+125/123/115: they are a separate line, mentioned in README § Phocinae. The 490 contains no PR to a
+`Phocinae/*` repository (re-checked 2026-10-31), so no external-contribution figure moves.
 
 They are a second workspace on disk (`D:\Projects\dsh-plugins`, disjoint from `D:\Projects\dsh\plugins`)
 and carry their own memory file; their maintenance rules, version policy and citation-gate discipline
@@ -251,8 +257,8 @@ is merely "balanced" is not enough: balance is exactly what produced the 836px r
 
 | Badge | Value | Mirrors |
 |---|---|---|
-| upstream merges | 490 | "Upstream" and `PROJECTS.md` |
-| credited repos | 94 | "Upstream" and `PROJECTS.md` |
+| upstream merges | 490 | "Upstream" |
+| credited repos | 94 | "Upstream" |
 | plugins | 115 | the intro sentence |
 | checkers | 62 | the 53-checker suite plus the nine 2026-10-23 tools (the fifteen 2026-10-31 demos are not counted here) |
 | npm names | 132 | "Where the plugins live" |
@@ -264,7 +270,7 @@ is merely "balanced" is not enough: balance is exactly what produced the 836px r
 | dsh host corridor | ≥0.1.2-rc.1 <0.3.0 | the union of the six `engines.dsh` clauses in any plugin's `package.json` |
 | node | ≥22.19 | the mainline `engines.node` (`^22.19.0 \|\| >=24.0.0`, 110 of 125); the fifteen 2026-10-31 demos declare `>=24.9.0 <25`, and the family note says so |
 | license | Apache-2.0 | the `LICENSE` file |
-| dshfind aggregate | 45,500+ over the 9 repositories that carry a badge, of 35 listed | "Where the plugins live"; per-plugin tiers listed in `PROJECTS.md` |
+| dshfind aggregate | 45,500+ over the 9 repositories that carry a badge, of 35 listed | "Where the plugins live"; tier counts stated there |
 
 Live badges (stars, followers, repos, OpenSSF Scorecard, Glama, certified, Zenodo DOI) need no
 maintenance; the counters, aggregates and third-party listing badges above are hand-written.
