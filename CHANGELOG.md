@@ -41,9 +41,9 @@ older rounds are historical and no longer resolve.
   absorption; the five frozen ones plus `dsh-wechat` as ecosystem convergence on a more widely adopted
   implementation. Frozen is no longer phrased as "someone else is better", and no frozen plugin is
   described as officially absorbed.
-- **The same reframing is in the frozen repos' own READMEs.** `dsh-budget`, `dsh-draw`, `dsh-reach` and
-  `dsh-defend` carry it in all five languages; `dsh-claude-move` has no frozen section, and
-  `dsh-team-rooms` is archived, so its copy could not be updated in place.
+- **The same reframing is in the plugin repos' own READMEs.** `dsh-budget`, `dsh-draw`, `dsh-reach`,
+  `dsh-defend` and the retired `dsh-team-rooms` carry it; `dsh-claude-move` has no frozen section.
+  `dsh-team-rooms` was updated through its archive → unarchive → push → re-archive cycle.
 - **No figures moved in this round.** 490 merged / 97 repositories / 94 credited (456) / 34 uncredited /
   158 open across 122; 125 declare / 123 roster / 115 active / 120 category rows; npm 132 names, 1,808
   versions, 273,579 downloads; Market 109 packages, 2026-10-29T08:36:50Z; sitemap 114 pages.
