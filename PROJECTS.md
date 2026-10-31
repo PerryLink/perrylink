@@ -18,8 +18,8 @@ proposals are deliberately not listed. The third column names the project's owne
 does not say whether that is a company, a standards body or one person.*
 
 **★ 1,000+ — named individually, as the rule requires, each carrying the party that owns the project.**
-Fifty-one external repositories above a thousand stars carry merged work — forty-five above 2,500★ in the
-table below and six between 1,000★ and 2,500★ in the folded table after it. Every ★ was re-measured
+Fifty-two external repositories above a thousand stars carry merged work — forty-five above 2,500★ in the
+table below and seven between 1,000★ and 2,500★ in the folded table after it. Every ★ was re-measured
 2026-10-31. Some rows belong to a company or a well-known project organization — Amazon Web Services, Apple,
 ByteDance, Docker, Microsoft, NVIDIA, Redis, Tencent, DeepSeek, ModelScope, the vLLM project, the `gofiber`
 project, cordiverse, koishijs, NeuML's `txtai`, and the ACP project that Zed and JetBrains jointly govern —
@@ -32,7 +32,7 @@ than letting the account name imply a company.
 | [deer-flow](https://github.com/bytedance/deer-flow) | 84,743 | **字节跳动 ByteDance** — the official `bytedance` org (deerflow.tech); a one-line portability fix in a blocking-IO test merged 2026-10-07T10:22:16Z by `WillemJiang`, and now the largest row in this table |
 | [ruflo](https://github.com/ruvnet/ruflo) | 80,322 | ruvnet (rUv / Reuven Cohen) — individual maintainer; a 75k★ agent harness on a personal account, not a company repo, and the largest row here that is not owned by a company |
 | [reactive-resume](https://github.com/reactive-resume/reactive-resume) | 45,110 | `reactive-resume` org — independent open-source project (rxresu.me) |
-| [black](https://github.com/psf/black) | 42,083 | **Python Software Foundation** — the official `psf` org; `_write_to_stdout()` translated `\n` itself, so the trailing-newline fixup appended a second one, and CRLF input without a trailing newline could come out as `\r\r\n`; it now appends a bare `\n` and lets the writer translate it, merged 2026-10-20T23:06:23Z by `cobaltt7` |
+| [black](https://github.com/psf/black) | 42,083 | **Python Software Foundation** — the official `psf` org; `_write_to_stdout()` translated `\n` itself, so the trailing-newline fixup appended a second one, and CRLF input without a trailing newline could come out as `\r\r\n`; it now appends a bare `\n` and lets the writer translate it, merged 2026-10-20T23:06:23Z by `cobaltt7`; and an unreadable cache file is now treated as a miss instead of disabling the cache, merged 2026-10-30T22:58:18Z |
 | [zoxide](https://github.com/ajeetdsouza/zoxide) | 40,375 | ajeetdsouza (Ajeet D'Souza) — individual maintainer; a bare `z` under `_ZO_ECHO=1` called `Set-Location` without `-Passthru`, so the `$dir` assignment was `$null` and strict mode threw `PropertyNotFoundException`; the no-path branch now passes `-Passthru`, merged 2026-10-22T23:55:13Z by `ajeetdsouza`, who dropped the regression test from the branch before merging |
 | [fiber](https://github.com/gofiber/fiber) | 40,235 | **the gofiber project** — the official `gofiber` org (gofiber.io), the Express-inspired Go web framework; an optional-path-parameter matching fix merged 2026-10-19T08:56:41Z by `ReneWerner87` |
 | [laya](https://github.com/NandhaKishorM/laya) | 34,717 | NandhaKishorM — individual maintainer; the repo was created 2026-09-18 |
@@ -75,7 +75,7 @@ than letting the account name imply a company.
 | [awesome-jev](https://github.com/yibie/awesome-jev) | 2,513 | yibie — individual maintainer, community catalog for Jev; the row the 09-25 round both printed and denied, kept now on the commit the history probe finds |
 
 <details>
-<summary><b>Six more repositories between 1,000★ and 2,500★ — one line each</b></summary>
+<summary><b>Seven more repositories between 1,000★ and 2,500★ — one line each</b></summary>
 
 | Repository | ★ | 项目归属方 |
 |---|---|---|
@@ -85,6 +85,7 @@ than letting the account name imply a company.
 | [dsh-plugin-radar](https://github.com/AdamPlatin123/dsh-plugin-radar) | 1,488 | AdamPlatin123 — individual maintainer, catalog is a generated artifact |
 | [awesome-deepseek-harness](https://github.com/0xsline/awesome-deepseek-harness) | 1,286 | 0xsline — individual maintainer, community catalog |
 | [awesome-agent-apis](https://github.com/Anil-matcha/awesome-agent-apis) | 1,065 | Anil Chandra Naidu Matcha — individual maintainer, community catalog |
+| [dsh-vision-router](https://github.com/ysr666/dsh-vision-router) | 1,202 | ysr666 — individual maintainer; a source build failed when the Host's zod (4.4.3) and the plugin's zod (4.6.x) were nominally incompatible at the `DomainSpec` boundary, so the one-file type erasure landed 2026-10-31T10:15:05Z |
 
 </details>
 
@@ -92,17 +93,17 @@ than letting the account name imply a company.
 <summary><b>The rest of the contributor set, and how the 490 total is derived</b></summary>
 
 **The rest of the contributor set** is the long tail below the 1,000★ line:
-**43 further repositories**, DSH plugin directories, small upstream projects and community catalogs
+**45 further repositories**, DSH plugin directories, small upstream projects and community catalogs
 ([dsh-handbook](https://github.com/Electricitysheep/dsh-handbook),
 [imsai-sh's list](https://github.com/imsai-sh/awesome-deepseek-harness-plugins), which alone took 44
 merges, [the Jev gallery](https://github.com/OmniJev/awesome-jev-gallery) and
 [the free5GC IKE daemon](https://github.com/free5gc/ike) and
 [inference-gateway](https://github.com/inference-gateway/inference-gateway), among them) — most are
 catalogs that ingest the family and carry no company owner, so they are named here only in aggregate.
-**93 external repositories carry at least one merged pull request of ours and a commit
+**94 external repositories carry at least one merged pull request of ours and a commit
 attributed to this account on their default branch; 456 merges were counted inside those 94 —
 re-derived 2026-10-31T03:58:00Z from this account's own merged pull requests and confirmed repository by
-repository with the `defaultBranchRef.target.history(author:{id})` probe, so 453 is exact rather than a
+repository with the `defaultBranchRef.target.history(author:{id})` probe, so 456 is exact rather than a
 floor over a probed subset. Three repositories carry merges of ours and still earn no credit, and all are named for that reason:
 [SihanTeng's list](https://github.com/SihanTeng/awesome-deepseek-harness-plugins), which took **32** and
 credits no commit to this account at all — the case the rule at the top of this section was written
@@ -122,18 +123,19 @@ the pull request this account closed after upstream fixed the same thing are rec
 [`CHANGELOG.md`](CHANGELOG.md); this page carries the current figures and none of that history.
 
 <details>
-<summary><b>laya — 47 merged pull requests, second of 146 merged-PR authors</b></summary>
+<summary><b>laya — 52 merged pull requests, second of 146 merged-PR authors</b></summary>
 
-**laya** — [NandhaKishorM/laya](https://github.com/NandhaKishorM/laya) — **47 merged pull requests of
-the 51 this account has opened there** (re-measured 2026-10-14 over all 964 pull requests the repository
-has ever had) and **second of 146 merged-PR authors**, behind `aashish254` (240) and ahead of `keemsisi`
+**laya** — [NandhaKishorM/laya](https://github.com/NandhaKishorM/laya) — **52 merged pull requests of
+the 56 this account has opened there** (count re-measured 2026-10-31; the 964-PR ranking sample below is from
+2026-10-14, over all 964 pull requests the repository has ever had) and **second of 146 merged-PR authors**, behind `aashish254` (240) and ahead of `keemsisi`
 (44) and `Bruce-Yii` (40); the maintainer NandhaKishorM holds one merged PR of his own because he
 commits to `main` directly rather than through pull requests, and none of the three leaders is a
-collaborator. As of 2026-10-14 it reads **0 open and 4 closed unmerged**; 45 of the 47 merged inside a
+collaborator. As of 2026-10-31 it reads **0 open and 4 closed unmerged**; 45 of the 52 merged inside a
 nine-day run (2026-09-21 → 2026-09-29), and the maintainer merges in batches — fifteen of them share two
-timestamps, seven at `19:29:05` on 09-27 and eight at `17:40:36` on 09-29, and the two since are
-[#924](https://github.com/NandhaKishorM/laya/pull/924) on 2026-10-04 and
-[#1179](https://github.com/NandhaKishorM/laya/pull/1179) on 2026-10-14. The complete list is one
+timestamps, seven at `19:29:05` on 09-27 and eight at `17:40:36` on 09-29, and seven since, including
+[#924](https://github.com/NandhaKishorM/laya/pull/924) on 2026-10-04,
+[#1179](https://github.com/NandhaKishorM/laya/pull/1179) on 2026-10-14 and
+[#1423](https://github.com/NandhaKishorM/laya/pull/1423) on 2026-10-31. The complete list is one
 query away:
 
 [`laya` pull requests by this account](https://github.com/NandhaKishorM/laya/pulls?q=is%3Apr+author%3APerryLink)
