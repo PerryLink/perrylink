@@ -31,6 +31,10 @@ older rounds are historical and no longer resolve.
 - **Phocinae is named as the account's own org.** The Phocinae section now links the org and lists the
   model, server, guard, MCP server, CLI/JS and the org's own DSH plugins. The DSH family counts stay
   `PerryLink/*`-scoped: no Phocinae repo is in the 125/123/115, and the 490 contains no PR to Phocinae.
+- **Cordis is now a first-class intro line.** The intro names `cordiverse/cordis`, the plugin kernel DSH
+  vendors as `@deepseek-ai/cordis`, and its nine merged pull requests; the Chinese block now mirrors the
+  three-line intro (upstream / DSH family / Phocinae), drops the false "every plugin has a page" claim,
+  and names Cordis.
 - **No figures moved in this round.** 490 merged / 97 repositories / 94 credited (456) / 34 uncredited /
   158 open across 122; 125 declare / 123 roster / 115 active / 120 category rows; npm 132 names, 1,808
   versions, 273,579 downloads; Market 109 packages, 2026-10-29T08:36:50Z; sitemap 114 pages.
