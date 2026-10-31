@@ -112,7 +112,7 @@ into the default branch `master`, so no commit of this account sits where the pr
 [deepseek-desktop](https://github.com/zcx960/deepseek-desktop), each hold a commit of this account and no
 merged pull request at all, so neither carries a merge and they are named only for that reason.
 **456 + 34 = the 490 merged pull requests** this account has outside `PerryLink/*`, concentrated in
-**96 repositories**; a further **157 are open across 122 repositories** as of 2026-10-31T11:20:00Z and are
+**96 repositories**; a further **155 are open across 122 repositories** as of 2026-10-31T12:40:00Z and are
 deliberately not counted here.
 
 </details>
