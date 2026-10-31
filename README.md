@@ -69,7 +69,7 @@ behaviour.
 
 ## 🧩 Domain plugins — 15 packages + 2 suites (alpha)
 
-A separate, deliberately narrow wave: **15 bare-name DSH tools** for finance ops, legal ops, ESG/quality, trade/logistics, documents/models and verify utilities, plus **two one-command suites**. All are **public/synthetic, alpha, not counted, not GA**; no customer data and no customer-accuracy claim. Each repository now carries five READMEs (en/zh/es/pt/hi), a local `docs/assets/<name>-flow.svg`, and both suites carry a real install GIF.
+A separate, deliberately narrow wave: **15 bare-name DSH tools** for finance ops, legal ops, ESG/quality, trade/logistics, documents/models and verify utilities, plus **two one-command suites**. All are **public/synthetic, alpha, not counted, not GA**; no customer data and no customer-accuracy claim. Each repository now carries five READMEs (en/zh/es/pt/hi), a local `docs/assets/<name>-flow.svg`, and both suites carry a real install GIF. They are cross-linked with the checker family and the mainline `dsh-kit` roster, and all 17 are Apache-2.0.
 
 | Family | Packages | Suite |
 |---|---|---|
