@@ -10,7 +10,7 @@
 <a href="https://github.com/PerryLink?tab=repositories"><img alt="GitHub repos" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FPerryLink&query=%24.public_repos&label=repos&color=24292f"></a>
 <a href="https://github.com/PerryLink/perrylink"><img alt="merged upstream" src="https://img.shields.io/badge/upstream%20merges-494-6e7781"></a>
 <a href="https://github.com/PerryLink/perrylink"><img alt="repositories where a merge is credited" src="https://img.shields.io/badge/credited%20repos-94-6e7781"></a>
-<a href="https://github.com/PerryLink/dsh-kit"><img alt="actively maintained plugins" src="https://img.shields.io/badge/plugins-115-6e7781"></a>
+<a href="https://github.com/PerryLink/dsh-kit"><img alt="actively maintained plugins" src="https://img.shields.io/badge/plugins-107-6e7781"></a>
 <a href="https://github.com/PerryLink/perrylink"><img alt="compliance checkers" src="https://img.shields.io/badge/checkers-62-6e7781"></a>
 <a href="https://perrylink.github.io/dsh-plugins/"><img alt="domain alpha packages" src="https://img.shields.io/badge/domain%20alpha-15%20packages%20%2B%202%20suites-0b5fff"></a>
 <br>
@@ -40,10 +40,11 @@ Beijing — not affiliated with DeepSeek, and not a DeepSeek employee.
 
 **Upstream** — 494 merged pull requests in 98 repositories that are not mine, from AWS, Apple, Docker,
 Microsoft, NVIDIA, Prometheus, Redis, Tencent and the vLLM project down to one-person projects. **The
-family** — 115 actively maintained Apache-2.0 plugins: security, workflows, research,
+family** — 107 actively maintained Apache-2.0 plugins: security, workflows, research,
 messaging bridges, developer experience, since 2026-10-08 a 53-checker compliance suite plus nine newer
-compliance tools, and since 2026-10-31 fifteen public/synthetic S1 business tools whose own READMEs mark
-them not GA. The public catalogue is
+compliance tools, and since 2026-10-31 fifteen public/synthetic S1 business tools: six feed the
+finance/contract suites, seven are frozen, one stays active as an install companion, and one is archived
+in favor of `dsh-eval-pack`; their own READMEs mark them not GA. The public catalogue is
 **[perrylink.github.io](https://perrylink.github.io/)** — 114 pages in its sitemap, complete in the served
 HTML with no JavaScript rendering them, so a reader who arrives from a search result sees the text rather
 than a loading state.
@@ -188,14 +189,18 @@ not listed individually.
 
 ## 📦 The rest of the family
 
-**The roster holds 123 repositories — 125 declare the `dsh.bundle.patch` contract, minus the two retired
-corridor legs — and 115 are actively maintained** (3 retired, 5 frozen), plus the support repositories —
+**The roster holds 125 repositories — 127 declare the `dsh.bundle.patch` contract, minus the two retired
+corridor legs — and 107 are actively maintained** (3 retired, 15 frozen), plus the support repositories —
 `dsh-kit`, `dsh-catalog`, the certification registry and the CI checker — and one third-party plugin carried
-as a row. Fifteen of the 115 are public/synthetic S1 demos published 2026-10-31; each README states its own
-not-GA scope and requires Node ≥24.9 <25, while the mainline keeps `^22.19 || >=24`. The install list is `plugins.txt` in
-**[dsh-kit](https://github.com/PerryLink/dsh-kit)**, which still records the 2026-10-19 cut; the roster figure
-here is measured from each repository's own `package.json` and includes nine tools published 2026-10-23 and
-the fifteen 2026-10-31 demos that the list has not picked up yet. The machine-readable catalogue is
+as a row. The 15 frozen are the original five plus the 2026-10-31 batch: `dsh-autotier`, `dsh-cert-mcp`,
+`dsh-community-bench`, and seven S1 demos (`dsh-docx-redline`, `dsh-freight-audit`, `dsh-ghg`,
+`dsh-hs-candidate`, `dsh-ifc-qto`, `dsh-pim-lint`, `dsh-qms-capa`). Fifteen S1 demos were published
+2026-10-31: six feed `dsh-finops-suite` / `dsh-contract-suite` and stay active, seven are frozen,
+`dsh-policy-ledger` stays active as an install companion, and `dsh-eval-harness` is archived in favor of
+`dsh-eval-pack`. The roster figure here is measured from each repository's own `package.json` and includes
+the three 2026-10-31 bundle repos (`dsh-eval-pack`, `dsh-finops-suite`, `dsh-contract-suite`). The install
+list is `plugins.txt` in **[dsh-kit](https://github.com/PerryLink/dsh-kit)**, which records the 2026-10-19 cut
+plus the 2026-10-31 freeze batch. The machine-readable catalogue is
 **[dsh-catalog](https://github.com/PerryLink/dsh-catalog)**, which is also the DSH Desktop Market source.
 The eleven categories below are the map; each plugin's own README carries the one-line detail.
 
@@ -205,27 +210,36 @@ The eleven categories below are the map; each plugin's own README carries the on
 | 🔁 Workflows | 8 | [dsh-checkpoint-rewind](https://github.com/PerryLink/dsh-checkpoint-rewind) · [dsh-github](https://github.com/PerryLink/dsh-github) · [dsh-test-drive](https://github.com/PerryLink/dsh-test-drive) |
 | ✨ Experience & UX | 4 | [dsh-memento](https://github.com/PerryLink/dsh-memento) · [dsh-composer-history](https://github.com/PerryLink/dsh-composer-history) · [dsh-output-styles](https://github.com/PerryLink/dsh-output-styles) |
 | 🧪 Evaluation | 3 | [dsh-doublecheck](https://github.com/PerryLink/dsh-doublecheck) · [dsh-score](https://github.com/PerryLink/dsh-attention-index) · [dsh-auto-review](https://github.com/PerryLink/dsh-auto-review) |
-| 📊 Observability & cost | 5 | [dsh-observe](https://github.com/PerryLink/dsh-observe) · [dsh-autotier](https://github.com/PerryLink/dsh-autotier) · [dsh-fast](https://github.com/PerryLink/dsh-fast) · [dsh-phocinae](https://github.com/PerryLink/dsh-phocinae) |
+| 📊 Observability & cost | 5 | [dsh-observe](https://github.com/PerryLink/dsh-observe) · [dsh-autotier](https://github.com/PerryLink/dsh-autotier) 🧊 · [dsh-fast](https://github.com/PerryLink/dsh-fast) · [dsh-phocinae](https://github.com/PerryLink/dsh-phocinae) |
 | 🎨 Content & knowledge | 5 | [dsh-talk](https://github.com/PerryLink/dsh-talk) · [dsh-translate](https://github.com/PerryLink/dsh-translate) · [dsh-library](https://github.com/PerryLink/dsh-library) |
 | 🛠️ Developer experience | 6 | [dsh-mcp-panel](https://github.com/PerryLink/dsh-mcp-panel) · [dsh-plugin-guide](https://github.com/PerryLink/dsh-plugin-guide) · [jevcore](https://github.com/PerryLink/jevcore) |
 | 📱 Messaging & bridges | 4 | [dsh-phone-inbox](https://github.com/PerryLink/dsh-phone-inbox) · [dsh-ticktick](https://github.com/PerryLink/dsh-ticktick) · [dsh-reach](https://github.com/PerryLink/dsh-reach) · [dsh-wechat](https://github.com/pan17/dsh-wechat) |
 | 🔬 Research | 4 | [dsh-research-report](https://github.com/PerryLink/dsh-research-report) · [dsh-industry-research](https://github.com/PerryLink/dsh-industry-research) · [dsh-fund-research](https://github.com/PerryLink/dsh-fund-research) |
 | ✅ Compliance checkers & tools | 62 | A register or record set read against a versioned rule pack, ten domains from tendering to litigation, plus nine newer tools — the list is at the [checker index](https://perrylink.github.io/zh/checkers/) |
-| 🏢 Finance, legal & operations | 15 | [dsh-bankrec](https://github.com/PerryLink/dsh-bankrec) · [dsh-einvoice](https://github.com/PerryLink/dsh-einvoice) · [dsh-legal-intake](https://github.com/PerryLink/dsh-legal-intake) — public/synthetic S1 demos published 2026-10-31, not GA |
+| 🏢 Finance, legal & operations | 15 | [dsh-bankrec](https://github.com/PerryLink/dsh-bankrec) · [dsh-einvoice](https://github.com/PerryLink/dsh-einvoice) · [dsh-legal-intake](https://github.com/PerryLink/dsh-legal-intake) — public/synthetic S1 demos published 2026-10-31, not GA; six feed the finance/contract suites, seven are frozen |
 
-## 🪦 Retired & frozen (2026-10-05)
+## 🪦 Retired & frozen (2026-10-05; batch 2026-10-31)
 
 Two different decisions, both about not maintaining a duplicate.
 
 **Retired — the official harness absorbed the capability.** Three plugins stopped because the harness now
 ships the same capability natively — [dsh-background-agents](https://github.com/PerryLink/dsh-background-agents)
 (native continuable subagents), [dsh-session-pin](https://github.com/PerryLink/dsh-session-pin) (built-in
-session pinning) and [dsh-team-rooms](https://github.com/PerryLink/dsh-team-rooms) (Agent Teams).
+session pinning) and [dsh-team-rooms](https://github.com/PerryLink/dsh-team-rooms) (Agent Teams, experimental/opt-in).
 
 **Frozen — the ecosystem converged on a more widely adopted implementation.** Five plugins — `dsh-budget`,
 `dsh-draw`, `dsh-claude-move`, `dsh-reach` and `dsh-defend` — plus the third-party `dsh-wechat` row stopped
 feature work because a more widely adopted implementation is the mainstream choice for that capability.
 This is a measured adoption call, not a quality verdict; the repos that carry a maintenance-status section record the comparison.
+
+**2026-10-31 freeze batch.** Ten more plugins stopped feature work: `dsh-autotier`, `dsh-cert-mcp`,
+`dsh-community-bench`, and seven S1 demos (`dsh-docx-redline`, `dsh-freight-audit`, `dsh-ghg`,
+`dsh-hs-candidate`, `dsh-ifc-qto`, `dsh-pim-lint`, `dsh-qms-capa`). Their repos carry
+`## Maintenance status: 🧊 FROZEN`; packages stay installable. Six S1 demos remain active as
+`dsh-finops-suite` / `dsh-contract-suite` components, `dsh-policy-ledger` stays active as an install
+companion, and `dsh-eval-harness` was archived in favor of `dsh-eval-pack` (repo-only; the old scoped npm
+name is deprecated). `dsh-memento`, `dsh-plugin-upgrade`, `dsh-checkers`, `dsh-skill-pack-security`,
+`dsh-phone-inbox`, `dsh-score` and the Phocinae line were re-scoped, not frozen.
 
 Either way, the operational meaning is the same: compatibility updates stop, existing installs keep
 working, and no second implementation is maintained.
@@ -245,7 +259,7 @@ working, and no second implementation is maintained.
   `https://cdn.jsdelivr.net/gh/PerryLink/dsh-catalog@main/deploy/artifacts/v1/plugins.json` under
   Market → Sources to browse the family in-app (109 packages, catalogue generated 2026-10-29).
 - **MCP Registry** — four servers, all published from their release workflows over GitHub OIDC:
-  `dsh-cert-mcp`, `dsh-customs-mcp`, `jevcore-mcp` and `laya-mcp`.
+  `dsh-cert-mcp` (🧊 frozen, reference only), `dsh-customs-mcp`, `jevcore-mcp` and `laya-mcp`.
 - **GitHub Actions** — [dsh-github](https://github.com/PerryLink/dsh-github) and
   [dsh-test-drive](https://github.com/PerryLink/dsh-test-drive) also ship composite actions, so they
   install as `uses: PerryLink/dsh-test-drive@vX`.
@@ -259,7 +273,7 @@ working, and no second implementation is maintained.
 独立开源开发者，在北京，与 DeepSeek 无隶属关系。三条线：**给别人的项目修 bug**（AWS、Apple、Docker、
 Microsoft、NVIDIA、Redis、Tencent、vLLM，也包括一个人的小项目）；**给 DeepSeek Harness 维护一套
 Apache-2.0 插件生态** —— 安全、工作流、研究、消息桥接、开发者体验，加上合规核查与 2026-10-31 的一批
-公开 S1 工具（各自 README 标了 not GA），以及 2 个裸名 suite
+公开 S1 工具（其中六个并入 finance/contract suite，七个已冻结；各自 README 标了 not GA），以及 2 个裸名 suite
 （`dsh-finops-suite` / `dsh-contract-suite`）；以及 **[Phocinae](https://github.com/Phocinae)**，我自己的本地
 typed-decision 模型与工具 org。
 

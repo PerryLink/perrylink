@@ -18,8 +18,8 @@ absent. The two sanctioned exceptions are marked.
 
 | Figure | Authoritative site | Update trigger |
 |---|---|---|
-| 115 actively maintained / 123 in the roster / 190 non-fork owned / 136 with a `package.json` | README § intro sentence for 115; README § family note for 123 | a repo joins, leaves, freezes or retires |
-| **plugins badge** *(exception: badge row is the live copy)* | README badge row — carries the actively maintained count, 115 | same |
+| 107 actively maintained / 125 in the roster / 190 non-fork owned / 136 with a `package.json` | README § intro sentence for 107; README § family note for 125 | a repo joins, leaves, freezes or retires |
+| **plugins badge** *(exception: badge row is the live copy)* | README badge row — carries the actively maintained count, 107 | same |
 | Family roster (which plugins exist, and each one's status) | [`dsh-kit/plugins.txt`](https://github.com/PerryLink/dsh-kit) — the install roster, with `scripts/check-parity.mjs` deriving every count and failing on a retired package or a lost status cell | any release |
 | Per-repo maintenance status (`active` / `frozen` / `retired`) | [`dsh-plugin-kit/data/repos.json`](https://github.com/PerryLink/dsh-plugin-kit/blob/main/data/repos.json) — the machine-readable roster the portal renders and the certification registry counts | when a repo freezes or retires |
 | npm 30-day downloads | README § Where the plugins live | monthly |
@@ -97,21 +97,22 @@ paragraph. Keep both sentences.
 
 ---
 
-## 3. The 115 / 123 / 125 / 120 / 190 / 136 counting note
+## 3. The 107 / 125 / 127 / 120 / 190 / 136 counting note
 
 The page's most attackable number, so the note in the README's family section is the defence. **The
-heading and the badge carry the actively maintained count (115). The roster figure (123) is stated once,
-inside that note** — the intro sentence is the authoritative prose site for 115, not for 123.
+heading and the badge carry the actively maintained count (107). The roster figure (125) is stated once,
+inside that note** — the intro sentence is the authoritative prose site for 107, not for 125.
 
-Measured one repo at a time from each repo's own `package.json` at its default branch (re-derived 2026-10-31):
+Measured one repo at a time from each repo's own `package.json` at its default branch (re-derived 2026-10-31,
+after the freeze batch):
 
 | Count | Meaning |
 |---|---|
-| **115** | actively maintained — the roster minus 3 🚫 retired and 5 🧊 frozen. **This is the number the heading and the badge carry.** |
-| **123** | the roster: canonical plugins that declare `dsh.bundle.patch`, excluding the 2 retired corridor legs. `dsh-plugin-kit/data/repos.json` still records the previous **99** cut (2026-10-19); `dsh-kit/plugins.txt` lists 96 published specs (the 99 minus the 3 retired) and does not yet carry the nine 2026-10-23 tools or the fifteen 2026-10-31 demos |
-| **125** | a naive scan of the account — 123 canonical **+ 2 retired corridor legs** (`dsh-plugin-upgrade-015`, not archived; `dsh-plugin-upgrade-016`, archived; both still carrying the manifest) |
-| **120** | underlying roster rows across the eleven categories: 118 of the 123 roster + 2 rows that are not roster plugins (`jevcore`, which declares no `dsh.bundle`, and the third-party `pan17/dsh-wechat`). The README renders only the eleven category counts, not the 120 rows. Five support/tooling roster entries are left out: `dsh-plugin-kit`, `dsh-cert-mcp`, `dsh-plugin-doctor`, `dsh-checkers`, `dsh-community-bench` |
-| **190** | non-fork repositories this account owns in total; **136** carry a `package.json` and **125** of those declare `dsh.bundle.patch`, so 65 are outside the contract |
+| **107** | actively maintained — the roster minus 3 🚫 retired and 15 🧊 frozen. **This is the number the heading and the badge carry.** |
+| **125** | the roster: canonical plugins that declare `dsh.bundle.patch`, excluding the 2 retired corridor legs. It includes the three 2026-10-31 bundle repos (`dsh-eval-pack`, `dsh-finops-suite`, `dsh-contract-suite`); `dsh-eval-harness` is archived and replaced by `dsh-eval-pack`. `dsh-plugin-kit/data/repos.json` still records the previous **99** cut (2026-10-19); `dsh-kit/plugins.txt` lists 96 published specs and the 2026-10-31 freeze batch as comments |
+| **127** | a naive scan of the account — 125 canonical **+ 2 retired corridor legs** (`dsh-plugin-upgrade-015`, not archived; `dsh-plugin-upgrade-016`, archived; both still carrying the manifest) |
+| **120** | underlying roster rows across the eleven categories: 118 of the 125 roster + 2 rows that are not roster plugins (`jevcore`, which declares no `dsh.bundle`, and the third-party `pan17/dsh-wechat`). The README renders only the eleven category counts, not the 120 rows. Five support/tooling roster entries are left out: `dsh-plugin-kit`, `dsh-cert-mcp`, `dsh-plugin-doctor`, `dsh-checkers`, `dsh-community-bench` |
+| **190** | non-fork repositories this account owns in total; **136** carry a `package.json` and **127** of those declare `dsh.bundle.patch`, so 63 are outside the contract |
 | **136** | `package.json` files at the default branch — the cross-check for the npm-name set, not a page figure |
 
 **2026-10-08: the roster grew by 53.** A set of 53 compliance checkers was published that day
@@ -158,7 +159,7 @@ membership rule and the page says so, and they are not part of the 53-checker su
 every earlier line in this section.
 
 `Phocinae/*` is the account's other org. Its repos and DSH plugins are **not** counted in the
-125/123/115: they are a separate line, mentioned in README § Phocinae. The 494 contains no PR to a
+127/125/107: they are a separate line, mentioned in README § Phocinae. The 494 contains no PR to a
 `Phocinae/*` repository (re-checked 2026-10-31), so no external-contribution figure moves.
 
 They are a second workspace on disk (`D:\Projects\dsh-plugins`, disjoint from `D:\Projects\dsh\plugins`)
@@ -189,7 +190,7 @@ measurement).
 
 | Row | px | Badges |
 |---|---|---|
-| 1 — reach and counters | 678 | stars (82), followers (112), repos (72), upstream merges 494 (138), credited repos 95 (112), plugins 115 (80), checkers 62 (82) |
+| 1 — reach and counters | 678 | stars (82), followers (112), repos (72), upstream merges 494 (138), credited repos 95 (112), plugins 107 (80), checkers 62 (82) |
 | 2 — npm and stack | 728 | npm 132 names (123), npm downloads 30d 273.6k (170), npm provenance 105/132 (160), license (120), node (155) |
 | 3 — quality and registry | 668 | dsh host corridor (146), OpenSSF Scorecard (136), Glama (110), certified (132), MCP Registry 4 servers (144) |
 | 4 — index, mirror, feeds | 787 | plugin index 114 pages (144), Gitee (101), dshfind 45.5k+ across 9 (256), Desktop Market source (172), Zenodo DOI (~114) |
@@ -260,7 +261,7 @@ is merely "balanced" is not enough: balance is exactly what produced the 836px r
 |---|---|---|
 | upstream merges | 494 | "Upstream" |
 | credited repos | 94 | "Upstream" |
-| plugins | 115 | the intro sentence |
+| plugins | 107 | the intro sentence |
 | checkers | 62 | the 53-checker suite plus the nine 2026-10-23 tools (the fifteen 2026-10-31 demos are not counted here) |
 | npm names | 132 | "Where the plugins live" |
 | npm downloads 30d | 273.6k | "Where the plugins live" (273,579) |

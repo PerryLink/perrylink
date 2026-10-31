@@ -34,6 +34,24 @@ older rounds are historical and no longer resolve.
 - The below-1,000★ tail grows from 44 to **45** repositories; the 1,000★+ tables are unchanged (sixteen
   above 10,000★, thirty-seven between 1,000★ and 10,000★).
 
+## 2026-10-31 (eighth round — freeze batch)
+
+- **Ten plugins frozen after the batch-1/batch-2 re-verification.** `dsh-autotier`, `dsh-cert-mcp`,
+  `dsh-community-bench`, and seven S1 demos (`dsh-docx-redline`, `dsh-freight-audit`, `dsh-ghg`,
+  `dsh-hs-candidate`, `dsh-ifc-qto`, `dsh-pim-lint`, `dsh-qms-capa`) now carry
+  `## Maintenance status: 🧊 FROZEN`; packages stay installable. The six S1 suite components stay active.
+- **`dsh-eval-harness` archived; `dsh-eval-pack` is canonical.** The GitHub repo was archived (repo-only);
+  the old scoped npm name stays deprecated. The bare `dsh-eval-harness` npm name belongs to another publisher.
+- **Re-scoped, not frozen:** `dsh-policy-ledger` (install-only companion, not a `dsh-plugin-doctor` duplicate),
+  `dsh-memento` (active since 2026-10-12; stale FROZEN description removed; honest see-also),
+  `dsh-plugin-upgrade` (no 0.2.x corridor), `dsh-checkers` (current package name; `-suite` alias deprecated),
+  `dsh-skill-pack-security` (provider install line), `dsh-phone-inbox` (provider support), `dsh-score` (hold),
+  and the Phocinae line (research, not PerryLink family).
+- **Counts:** 127 declare `dsh.bundle.patch`, 125 in the roster, **107 active**, **15 frozen**, 3 retired.
+  `dsh-kit/plugins.txt`, `dsh-plugin-kit/data/repos.json` and `dsh-catalog/data/packages.json` carry the
+  new statuses. No new official-absorption RETIRE.
+- `@perrylink/dsh-checkers-suite` was npm-deprecated in favor of `@perrylink/dsh-checkers`.
+
 ## 2026-10-31 (sixth round)
 
 - **The profile is now one file.** `PROJECTS.md` was removed on the user's instruction after its useful
