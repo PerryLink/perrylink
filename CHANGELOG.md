@@ -17,6 +17,23 @@ older rounds are historical and no longer resolve.
 
 ---
 
+## 2026-10-31 (seventh round)
+
+- **`danmolitor/forme` batch merged by `danmolitor`** at 15:21:40Z through his own
+  [#221](https://github.com/danmolitor/forme/pull/221) integration PR — a merge commit, as he asked, so
+  each contributor's commits are included unchanged. Five contributor PRs went in; four are ours:
+  [#216](https://github.com/danmolitor/forme/pull/216) hypher `alloc`, [#217](https://github.com/danmolitor/forme/pull/217)
+  ellipsized text measured as one line, [#219](https://github.com/danmolitor/forme/pull/219) border radius
+  with a zero top-left corner and [#220](https://github.com/danmolitor/forme/pull/220) shared image XObjects.
+  `commits?author=PerryLink` on `main` returns four commits, so forme is the **95th credited repository**.
+  [#218](https://github.com/danmolitor/forme/pull/218) (transform pivot) is rebased onto the new main and
+  remains open for its checks.
+- **494 total: 460 + 34**, across **98 repositories**, **95** of them credited, re-derived at
+  2026-10-31T15:25:00Z; **156** proposals are open across **124** repositories as of
+  2026-10-31T15:35:00Z.
+- The below-1,000★ tail grows from 44 to **45** repositories; the 1,000★+ tables are unchanged (sixteen
+  above 10,000★, thirty-seven between 1,000★ and 10,000★).
+
 ## 2026-10-31 (sixth round)
 
 - **The profile is now one file.** `PROJECTS.md` was removed on the user's instruction after its useful
