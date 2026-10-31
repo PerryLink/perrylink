@@ -14,6 +14,18 @@ and `dsh-laya` were introduced by name.
 
 ---
 
+## 2026-10-31 (third round)
+
+- **`valkey-io/valkey-go#214` merged by `rueian`** at 07:14:53Z — `MIGRATE` and `CLIENT PAUSE`
+  timeouts were sent in seconds while the server reads milliseconds; both now convert at the
+  boundary. The second merged change in that repository.
+- **`ysr666/dsh-vision-router#772` merged by `ysr666`** at 10:15:05Z — the workspace pinned zod
+  3 and 4 side by side, so `DomainSpec` had two incompatible types; the fix keeps one copy
+  assignable across both.
+- **490 total: 456 + 34**, across **97 repositories**, **94** of them credited, re-derived with
+  `00-live/_profile-derive.mjs` at 2026-10-31T11:16:00Z. **157** proposals are open across **122**
+  repositories as of 2026-10-31T11:20:00Z.
+
 ## 2026-10-31 (second round)
 
 - **`NandhaKishorM/laya#1423` merged by `NandhaKishorM`** at 05:04:02Z — the `typescript-sdk` job in
