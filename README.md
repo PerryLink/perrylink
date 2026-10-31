@@ -69,16 +69,16 @@ behaviour.
 
 ## 🧩 Domain plugins — 15 packages + 2 suites (alpha)
 
-A separate, deliberately narrow wave: **15 bare-name DSH tools** for finance ops, legal ops, ESG/quality, trade/logistics, documents/models and verify utilities, plus **two one-command suites**. All are **public/synthetic, alpha, not counted, not GA**; no customer data and no customer-accuracy claim.
+A separate, deliberately narrow wave: **15 bare-name DSH tools** for finance ops, legal ops, ESG/quality, trade/logistics, documents/models and verify utilities, plus **two one-command suites**. All are **public/synthetic, alpha, not counted, not GA**; no customer data and no customer-accuracy claim. Each repository now carries five READMEs (en/zh/es/pt/hi), a local `docs/assets/<name>-flow.svg`, and both suites carry a real install GIF.
 
 | Family | Packages | Suite |
 |---|---|---|
 | Finance ops | [dsh-einvoice](https://github.com/PerryLink/dsh-einvoice) · [dsh-bankrec](https://github.com/PerryLink/dsh-bankrec) · [dsh-ap-three-way](https://github.com/PerryLink/dsh-ap-three-way) · [dsh-travel-recon](https://github.com/PerryLink/dsh-travel-recon) | [dsh-finops-suite](https://github.com/PerryLink/dsh-finops-suite) |
 | Legal ops | [dsh-legal-intake](https://github.com/PerryLink/dsh-legal-intake) · [dsh-legal-clause](https://github.com/PerryLink/dsh-legal-clause) | [dsh-contract-suite](https://github.com/PerryLink/dsh-contract-suite) |
-| ESG / quality | [dsh-ghg](https://github.com/PerryLink/dsh-ghg) · [dsh-qms-capa](https://github.com/PerryLink/dsh-qms-capa) | — |
-| Trade / logistics | [dsh-hs-candidate](https://github.com/PerryLink/dsh-hs-candidate) · [dsh-freight-audit](https://github.com/PerryLink/dsh-freight-audit) | — |
-| Documents / models | [dsh-docx-redline](https://github.com/PerryLink/dsh-docx-redline) · [dsh-ifc-qto](https://github.com/PerryLink/dsh-ifc-qto) | — |
-| Verify | [dsh-policy-ledger](https://github.com/PerryLink/dsh-policy-ledger) · [dsh-pim-lint](https://github.com/PerryLink/dsh-pim-lint) · [dsh-eval-pack](https://github.com/PerryLink/dsh-eval-pack) | — |
+| ESG / quality | [dsh-ghg](https://github.com/PerryLink/dsh-ghg) 🧊 · [dsh-qms-capa](https://github.com/PerryLink/dsh-qms-capa) 🧊 | — |
+| Trade / logistics | [dsh-hs-candidate](https://github.com/PerryLink/dsh-hs-candidate) 🧊 · [dsh-freight-audit](https://github.com/PerryLink/dsh-freight-audit) 🧊 | — |
+| Documents / models | [dsh-docx-redline](https://github.com/PerryLink/dsh-docx-redline) 🧊 · [dsh-ifc-qto](https://github.com/PerryLink/dsh-ifc-qto) 🧊 | — |
+| Verify | [dsh-policy-ledger](https://github.com/PerryLink/dsh-policy-ledger) · [dsh-pim-lint](https://github.com/PerryLink/dsh-pim-lint) 🧊 · [dsh-eval-pack](https://github.com/PerryLink/dsh-eval-pack) | — |
 
 The eval tool is **`dsh-eval-pack`**: the bare `dsh-eval-harness` name is owned by another publisher, so the project was renamed rather than falling back to a scope. The old scoped packages are deprecated redirects.
 
