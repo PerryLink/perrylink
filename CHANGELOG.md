@@ -14,6 +14,20 @@ and `dsh-laya` were introduced by name.
 
 ---
 
+## 2026-10-31 (fourth round)
+
+- **`laya`** — the subtable now reads **52 merged of the 56 opened** there, 0 open and 4 closed
+  unmerged, with `#1423` (the `typescript-sdk` timeout) added to the post-09-29 list; 45 of the 52
+  still merged inside the 2026-09-21 → 09-29 run.
+- **`black`** — the row also records `#5641`: an unreadable cache file is now a miss instead of
+  disabling the cache, merged 2026-10-30T22:58:18Z by `cobaltt7`.
+- **`dsh-vision-router`** joins the folded 1,000–2,500★ table (1,202★) with the one-file `DomainSpec`
+  type erasure merged 2026-10-31T10:15:05Z; the folded table is now seven rows and the 1,000★+ set
+  fifty-two repositories.
+- **Corrections to the long-form counts**: 94 credited repositories (not 93), 456 credited merges
+  (not 453), and 45 further repositories below the 1,000★ line (not 43). The total is unchanged at
+  **490 = 456 + 34**.
+
 ## 2026-10-31 (third round)
 
 - **`valkey-io/valkey-go#214` merged by `rueian`** at 07:14:53Z — `MIGRATE` and `CLIENT PAUSE`
