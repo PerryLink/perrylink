@@ -49,8 +49,7 @@ than a loading state.
 
 I also contribute to **[Cordis](https://github.com/cordiverse/cordis)**, the plugin kernel DeepSeek Harness
 vendors as `@deepseek-ai/cordis` — nine merged pull requests there, from async-generator cleanup to reload
-behaviour. One more, elsewhere: [claude-agent-acp #1146](https://github.com/agentclientprotocol/claude-agent-acp/pull/1146)
-— a process that could not start now can.
+behaviour.
 
 **中文读者 · 只想核对一份材料？** [按「手上是什么材料」选一个核查器（53 个，全中文）→](https://perrylink.github.io/zh/checkers/choose/)
 
@@ -245,10 +244,6 @@ typed-decision 模型与工具 org。
 渲染。也向上游 [Cordis](https://github.com/cordiverse/cordis)（DeepSeek Harness 以 `@deepseek-ai/cordis`
 引入的插件内核）与 [deepseek-ai](https://github.com/deepseek-ai) 提交修复；Cordis 是我持续提交修复的
 上游之一。
-
-还有一条在别处：一个根本起不来的进程现在能起来了。[claude-agent-acp #1146](https://github.com/agentclientprotocol/claude-agent-acp/pull/1146)
-让 `src/index.ts` 里那处没有保护的顶层 await 不再因一次瞬时错误就中断模块求值、在发出任何一条 ACP 消息
-之前退出。
 
 数字只在上面的英文部分维护一份；这里不重复，以免两处走样。
 
