@@ -18,9 +18,9 @@ proposals are deliberately not listed. The third column names the project's owne
 does not say whether that is a company, a standards body or one person.*
 
 **★ 1,000+ — named individually, as the rule requires, each carrying the party that owns the project.**
-Forty-nine external repositories above a thousand stars carry merged work — forty-one above 2,500★ in the
-table below and eight between 1,000★ and 2,500★ in the folded table after it. Every ★ was re-measured
-2026-10-28. Some rows belong to a company or a well-known project organization — Amazon Web Services, Apple,
+Fifty-one external repositories above a thousand stars carry merged work — forty-five above 2,500★ in the
+table below and six between 1,000★ and 2,500★ in the folded table after it. Every ★ was re-measured
+2026-10-31. Some rows belong to a company or a well-known project organization — Amazon Web Services, Apple,
 ByteDance, Docker, Microsoft, NVIDIA, Redis, Tencent, DeepSeek, ModelScope, the vLLM project, the `gofiber`
 project, cordiverse, koishijs, NeuML's `txtai`, and the ACP project that Zed and JetBrains jointly govern —
 while the rest are catalog repos, small community orgs and one-person projects, and the column says so rather
@@ -28,61 +28,63 @@ than letting the account name imply a company.
 
 | Repository | ★ | 项目归属方 |
 |---|---|---|
-| [deer-flow](https://github.com/bytedance/deer-flow) | 84,566 | **字节跳动 ByteDance** — the official `bytedance` org (deerflow.tech); a one-line portability fix in a blocking-IO test merged 2026-10-07T10:22:16Z by `WillemJiang`, and now the largest row in this table |
-| [ruflo](https://github.com/ruvnet/ruflo) | 79,904 | ruvnet (rUv / Reuven Cohen) — individual maintainer; a 75k★ agent harness on a personal account, not a company repo, and the largest row here that is not owned by a company |
-| [reactive-resume](https://github.com/reactive-resume/reactive-resume) | 44,993 | `reactive-resume` org — independent open-source project (rxresu.me) |
-| [black](https://github.com/psf/black) | 42,076 | **Python Software Foundation** — the official `psf` org; `_write_to_stdout()` translated `\n` itself, so the trailing-newline fixup appended a second one, and CRLF input without a trailing newline could come out as `\r\r\n`; it now appends a bare `\n` and lets the writer translate it, merged 2026-10-20T23:06:23Z by `cobaltt7` |
-| [zoxide](https://github.com/ajeetdsouza/zoxide) | 40,342 | ajeetdsouza (Ajeet D'Souza) — individual maintainer; a bare `z` under `_ZO_ECHO=1` called `Set-Location` without `-Passthru`, so the `$dir` assignment was `$null` and strict mode threw `PropertyNotFoundException`; the no-path branch now passes `-Passthru`, merged 2026-10-22T23:55:13Z by `ajeetdsouza`, who dropped the regression test from the branch before merging |
-| [fiber](https://github.com/gofiber/fiber) | 40,233 | **the gofiber project** — the official `gofiber` org (gofiber.io), the Express-inspired Go web framework; an optional-path-parameter matching fix merged 2026-10-19T08:56:41Z by `ReneWerner87` |
-| [laya](https://github.com/NandhaKishorM/laya) | 34,531 | NandhaKishorM — individual maintainer; the repo was created 2026-09-18 |
+| [dify](https://github.com/langgenius/dify) | 160,042 | **LangGenius** — the official `langgenius` org; the open-source LLM application platform (dify.ai); `download_with_size_limit` returned the 4xx/5xx error page as the downloaded plugin, so an installation reported an invalid package — it now rejects non-2xx responses, merged 2026-10-30T17:55:46Z by `Stream29` |
+| [deer-flow](https://github.com/bytedance/deer-flow) | 84,743 | **字节跳动 ByteDance** — the official `bytedance` org (deerflow.tech); a one-line portability fix in a blocking-IO test merged 2026-10-07T10:22:16Z by `WillemJiang`, and now the largest row in this table |
+| [ruflo](https://github.com/ruvnet/ruflo) | 80,322 | ruvnet (rUv / Reuven Cohen) — individual maintainer; a 75k★ agent harness on a personal account, not a company repo, and the largest row here that is not owned by a company |
+| [reactive-resume](https://github.com/reactive-resume/reactive-resume) | 45,110 | `reactive-resume` org — independent open-source project (rxresu.me) |
+| [black](https://github.com/psf/black) | 42,083 | **Python Software Foundation** — the official `psf` org; `_write_to_stdout()` translated `\n` itself, so the trailing-newline fixup appended a second one, and CRLF input without a trailing newline could come out as `\r\r\n`; it now appends a bare `\n` and lets the writer translate it, merged 2026-10-20T23:06:23Z by `cobaltt7` |
+| [zoxide](https://github.com/ajeetdsouza/zoxide) | 40,375 | ajeetdsouza (Ajeet D'Souza) — individual maintainer; a bare `z` under `_ZO_ECHO=1` called `Set-Location` without `-Passthru`, so the `$dir` assignment was `$null` and strict mode threw `PropertyNotFoundException`; the no-path branch now passes `-Passthru`, merged 2026-10-22T23:55:13Z by `ajeetdsouza`, who dropped the regression test from the branch before merging |
+| [fiber](https://github.com/gofiber/fiber) | 40,235 | **the gofiber project** — the official `gofiber` org (gofiber.io), the Express-inspired Go web framework; an optional-path-parameter matching fix merged 2026-10-19T08:56:41Z by `ReneWerner87` |
+| [laya](https://github.com/NandhaKishorM/laya) | 34,717 | NandhaKishorM — individual maintainer; the repo was created 2026-09-18 |
 | [cli](https://github.com/urfave/cli) | 24,306 | the `urfave` org — community-maintained Go CLI framework; `HandleExitCoder` recognised an `ExitCoder` only through a bare type assertion, so an exit error wrapped with `fmt.Errorf("%w")` printed nothing and fell back to exit code 1; `Juneezee` rebased it onto a `main` that now requires Go 1.26 before merging on 2026-10-21T15:40:14Z |
-| [learn-harness-engineering](https://github.com/walkinglabs/learn-harness-engineering) | 21,989 | `walkinglabs` community org — the harness-engineering tutorial site |
-| [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) | 21,303 | `awesome-dsh-plugin` org — community catalog, no company behind it |
-| [MMKV](https://github.com/Tencent/MMKV) | 18,769 | **Tencent** — the official `Tencent` org; the mobile key-value storage framework developed by WeChat. A Win32 creation-flag fix merged 2026-10-19T10:35:44Z into `dev` by `lingol` — into `dev`, not the default branch `master`, which is why this row carries a merge and no credit |
-| [SkillOpt](https://github.com/microsoft/SkillOpt) | 18,737 | **Microsoft** — the official `microsoft` org; a UTF-8 state-file fix merged 2026-10-18T17:02:48Z |
-| [ioredis](https://github.com/redis/ioredis) | 15,348 | **Redis** — the official `redis` org; the Node.js Redis client, where an auto-pipelining fix merged 2026-10-19T08:09:05Z by `PavelPashov` |
-| [FlashMLA](https://github.com/deepseek-ai/FlashMLA) | 13,215 | **DeepSeek** — the official `deepseek-ai` org |
-| [txtai](https://github.com/neuml/txtai) | 13,043 | **NeuML** — an independent open-source project (neuml.github.io/txtai), not a company repo; merged 2026-10-11T21:21:02Z by its maintainer `davidmezzetti`, on the third attempt and after he had asked repeatedly, over three pull requests, for the change to be cut down, which it was |
-| [mcp](https://github.com/awslabs/mcp) | 9,842 | **Amazon Web Services (AWS)** — the official `awslabs` org; a one-file UTF-8 fix merged 2026-10-05T22:49:06Z by maintainer `markjschreiber` with two approvals |
-| [BrowserSkill](https://github.com/Tencent/BrowserSkill) | 9,726 | **腾讯 Tencent** — the official `Tencent` org; merged 2026-10-06T13:45:15Z by collaborator `iuyo5678` with eight checks green |
-| [dsh-web](https://github.com/zhu1090093659/dsh-web) | 9,722 | zhu1090093659 — individual maintainer |
-| [Cordis](https://github.com/cordiverse/cordis) | 9,452 | **cordiverse** org; its maintainer Shigma is now at **DeepSeek**, and Cordis is the kernel DeepSeek Harness vendors as `@deepseek-ai/cordis` |
-| [dsh-market](https://github.com/dsh-market/dsh-market) | 9,509 | `dsh-market` org — the community plugin market behind dshmarket.com, not a DeepSeek repo |
-| [jc](https://github.com/kellyjonbrazil/jc) | 8,698 | kellyjonbrazil (Kelly Brazil) — individual maintainer; a Windows platform-name fix merged 2026-10-17T21:51:22Z and started counting when `master` caught up on 2026-10-18T20:39:02Z |
-| [models.dev](https://github.com/anomalyco/models.dev) | 7,429 | `anomalyco` org — the model-catalogue site behind models.dev; merged 2026-10-10T23:11:09Z by `rekram1-node` |
-| [kraken](https://github.com/uber/kraken) | 6,775 | **Uber** — the official `uber` org; the cache file reader opened to duplicate a committed upload to a replica was never closed, leaking one file descriptor per replica for every uploaded blob; both replication paths now register it with the server's closer set, merged 2026-10-22T09:31:25Z by `gkeesh7` |
-| [koishi](https://github.com/koishijs/koishi) | 6,301 | `koishijs` org — the cross-platform chatbot framework; merged 2026-10-08T12:13:06Z by its maintainer `shigma`, who found and fixed a regression in this account's own patch before merging it |
-| [ouroboros](https://github.com/Q00/ouroboros) | 6,287 | Q00 — individual maintainer (`@zep-us`) |
-| [client_golang](https://github.com/prometheus/client_golang) | 6,042 | **Prometheus** — the official `prometheus` org (CNCF project); `checkMetricConsistency` compared each label name with the previous one before the pairs were sorted, so non-adjacent duplicates passed and a scrape of the registry was dropped as a whole; the sort now runs before the duplicate loop, merged 2026-10-23T07:22:07Z by `bwplotka` |
-| [teamai-cli](https://github.com/Tencent/teamai-cli) | 5,692 | **腾讯 Tencent** — the official `Tencent` org, opensource.tencent.com |
-| [go-sdk](https://github.com/modelcontextprotocol/go-sdk) | 5,286 | the `modelcontextprotocol` org's Go SDK for MCP |
-| [aibrix](https://github.com/vllm-project/aibrix) | 5,164 | **the vLLM project** — the official `vllm-project` org behind vLLM; two flaky-test fixes merged 2026-10-06T16:23:08Z and 2026-10-07T11:18:42Z, the second by `googs1025` and the second of the two flaky-test fixes this account has merged there |
-| [embedding-atlas](https://github.com/apple/embedding-atlas) | 5,000 | **Apple** — the official `apple` org (apple.github.io/embedding-atlas); a line-ending normalization fix in a release script merged 2026-10-06T16:30:51Z by `donghaoren` |
-| [docker-agent](https://github.com/docker/docker-agent) | 4,616 | **Docker, Inc.** — the official `docker` org; merged 2026-10-05 by maintainer `aheritier` |
-| [DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) | 4,689 | `omdsh-dev` community org — the DeepSeek Harness sidebar plugin; added 2026-10-12, and `INSTRUMENTATION.md` records why it was previously carried as excluded |
-| [agent-client-protocol](https://github.com/agentclientprotocol/agent-client-protocol) | 4,528 | `agentclientprotocol` org — governed jointly by **Zed Industries** and **JetBrains** |
-| [content](https://github.com/nuxt/content) | 3,675 | **Nuxt** — the official `nuxt` org. `generateItemSurround` dropped the previous item whenever `before` was larger than the item's index, instead of returning a shorter window; approved and merged 2026-10-19T12:27:29Z by `farnabaz` |
-| [evalscope](https://github.com/modelscope/evalscope) | 3,606 | `modelscope` org — the ModelScope model-hub project; a UTF-8 BOM dataset fix merged 2026-10-19T03:42:50Z by `Yunnglin` |
-| [deepseek-harness-desktop](https://github.com/dsh-tauri/deepseek-harness-desktop) | 3,339 | `dsh-tauri` community org — self-described non-official and non-commercial, not a DeepSeek repo |
-| [fastmcp](https://github.com/punkpeye/fastmcp) | 3,278 | punkpeye (Frank Fiegel) — individual maintainer at Glama; the TypeScript MCP framework |
+| [learn-harness-engineering](https://github.com/walkinglabs/learn-harness-engineering) | 22,603 | `walkinglabs` community org — the harness-engineering tutorial site |
+| [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) | 21,660 | `awesome-dsh-plugin` org — community catalog, no company behind it |
+| [SkillOpt](https://github.com/microsoft/SkillOpt) | 18,785 | **Microsoft** — the official `microsoft` org; a UTF-8 state-file fix merged 2026-10-18T17:02:48Z |
+| [MMKV](https://github.com/Tencent/MMKV) | 18,768 | **Tencent** — the official `Tencent` org; the mobile key-value storage framework developed by WeChat. A Win32 creation-flag fix merged 2026-10-19T10:35:44Z into `dev` by `lingol` — into `dev`, not the default branch `master`, which is why this row carries a merge and no credit |
+| [ioredis](https://github.com/redis/ioredis) | 15,351 | **Redis** — the official `redis` org; the Node.js Redis client, where an auto-pipelining fix merged 2026-10-19T08:09:05Z by `PavelPashov` |
+| [FlashMLA](https://github.com/deepseek-ai/FlashMLA) | 13,224 | **DeepSeek** — the official `deepseek-ai` org |
+| [txtai](https://github.com/neuml/txtai) | 13,049 | **NeuML** — an independent open-source project (neuml.github.io/txtai), not a company repo; merged 2026-10-11T21:21:02Z by its maintainer `davidmezzetti`, on the third attempt and after he had asked repeatedly, over three pull requests, for the change to be cut down, which it was |
+| [dsh-market](https://github.com/dsh-market/dsh-market) | 9,869 | `dsh-market` org — the community plugin market behind dshmarket.com, not a DeepSeek repo |
+| [mcp](https://github.com/awslabs/mcp) | 9,853 | **Amazon Web Services (AWS)** — the official `awslabs` org; a one-file UTF-8 fix merged 2026-10-05T22:49:06Z by maintainer `markjschreiber` with two approvals |
+| [dsh-web](https://github.com/zhu1090093659/dsh-web) | 9,852 | zhu1090093659 — individual maintainer |
+| [BrowserSkill](https://github.com/Tencent/BrowserSkill) | 9,830 | **腾讯 Tencent** — the official `Tencent` org; merged 2026-10-06T13:45:15Z by collaborator `iuyo5678` with eight checks green |
+| [Cordis](https://github.com/cordiverse/cordis) | 9,492 | **cordiverse** org; its maintainer Shigma is now at **DeepSeek**, and Cordis is the kernel DeepSeek Harness vendors as `@deepseek-ai/cordis` |
+| [jc](https://github.com/kellyjonbrazil/jc) | 8,697 | kellyjonbrazil (Kelly Brazil) — individual maintainer; a Windows platform-name fix merged 2026-10-17T21:51:22Z and started counting when `master` caught up on 2026-10-18T20:39:02Z |
+| [models.dev](https://github.com/anomalyco/models.dev) | 7,457 | `anomalyco` org — the model-catalogue site behind models.dev; merged 2026-10-10T23:11:09Z by `rekram1-node` |
+| [kraken](https://github.com/uber/kraken) | 6,774 | **Uber** — the official `uber` org; the cache file reader opened to duplicate a committed upload to a replica was never closed, leaking one file descriptor per replica for every uploaded blob; both replication paths now register it with the server's closer set, merged 2026-10-22T09:31:25Z by `gkeesh7` |
+| [koishi](https://github.com/koishijs/koishi) | 6,305 | `koishijs` org — the cross-platform chatbot framework; merged 2026-10-08T12:13:06Z by its maintainer `shigma`, who found and fixed a regression in this account's own patch before merging it |
+| [ouroboros](https://github.com/Q00/ouroboros) | 6,291 | Q00 — individual maintainer (`@zep-us`) |
+| [client_golang](https://github.com/prometheus/client_golang) | 6,043 | **Prometheus** — the official `prometheus` org (CNCF project); `checkMetricConsistency` compared each label name with the previous one before the pairs were sorted, so non-adjacent duplicates passed and a scrape of the registry was dropped as a whole; the sort now runs before the duplicate loop, merged 2026-10-23T07:22:07Z by `bwplotka` |
+| [teamai-cli](https://github.com/Tencent/teamai-cli) | 5,718 | **腾讯 Tencent** — the official `Tencent` org, opensource.tencent.com |
+| [go-sdk](https://github.com/modelcontextprotocol/go-sdk) | 5,290 | the `modelcontextprotocol` org's Go SDK for MCP |
+| [aibrix](https://github.com/vllm-project/aibrix) | 5,169 | **the vLLM project** — the official `vllm-project` org behind vLLM; two flaky-test fixes merged 2026-10-06T16:23:08Z and 2026-10-07T11:18:42Z, the second by `googs1025` and the second of the two flaky-test fixes this account has merged there |
+| [embedding-atlas](https://github.com/apple/embedding-atlas) | 5,005 | **Apple** — the official `apple` org (apple.github.io/embedding-atlas); a line-ending normalization fix in a release script merged 2026-10-06T16:30:51Z by `donghaoren` |
+| [DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) | 4,762 | `omdsh-dev` community org — the DeepSeek Harness sidebar plugin; added 2026-10-12, and `INSTRUMENTATION.md` records why it was previously carried as excluded |
+| [docker-agent](https://github.com/docker/docker-agent) | 4,623 | **Docker, Inc.** — the official `docker` org; merged 2026-10-05 by maintainer `aheritier` |
+| [agent-client-protocol](https://github.com/agentclientprotocol/agent-client-protocol) | 4,549 | `agentclientprotocol` org — governed jointly by **Zed Industries** and **JetBrains** |
+| [client_python](https://github.com/prometheus/client_python) | 4,385 | **Prometheus** — the official `prometheus` org (CNCF project); the Python instrumentation client; the process collector failed the whole collection when `/proc/<pid>/limits` had no `Max open files` line — it now bounds-checks that line, merged 2026-10-30T18:39:55Z by `csmarchbanks` |
+| [content](https://github.com/nuxt/content) | 3,676 | **Nuxt** — the official `nuxt` org. `generateItemSurround` dropped the previous item whenever `before` was larger than the item's index, instead of returning a shorter window; approved and merged 2026-10-19T12:27:29Z by `farnabaz` |
+| [evalscope](https://github.com/modelscope/evalscope) | 3,618 | `modelscope` org — the ModelScope model-hub project; a UTF-8 BOM dataset fix merged 2026-10-19T03:42:50Z by `Yunnglin` |
+| [deepseek-harness-desktop](https://github.com/dsh-tauri/deepseek-harness-desktop) | 3,379 | `dsh-tauri` community org — self-described non-official and non-commercial, not a DeepSeek repo |
+| [fastmcp](https://github.com/punkpeye/fastmcp) | 3,284 | punkpeye (Frank Fiegel) — individual maintainer at Glama; the TypeScript MCP framework |
 | [minio-go](https://github.com/minio/minio-go) | 3,010 | **MinIO** — the official `minio` org; `RemoveObjects` reported a single error for a whole batch, hiding which object had failed; it now reports one result per failed object, merged 2026-10-19T15:01:25Z by `klauspost` |
-| [open5gs](https://github.com/open5gs/open5gs) | 2,792 | the `open5gs` open-source 5G core project — a community project rather than a company repo |
-| [claude-agent-acp](https://github.com/agentclientprotocol/claude-agent-acp) | 2,702 | `agentclientprotocol` org — the same jointly-governed org as the row above, a separate repository |
-| [NeMo-Agent-Toolkit](https://github.com/NVIDIA/NeMo-Agent-Toolkit) | 2,684 | **NVIDIA** — the official `NVIDIA` org; three review rounds with maintainer `willkill07` on making `remove_r1_think_tags` actually remove think blocks, merged 2026-10-08T00:10:02Z by NVIDIA's `rapids-bot` after he issued `/merge` |
+| [open5gs](https://github.com/open5gs/open5gs) | 2,799 | the `open5gs` open-source 5G core project — a community project rather than a company repo |
+| [claude-agent-acp](https://github.com/agentclientprotocol/claude-agent-acp) | 2,710 | `agentclientprotocol` org — the same jointly-governed org as the row above, a separate repository |
+| [NeMo-Agent-Toolkit](https://github.com/NVIDIA/NeMo-Agent-Toolkit) | 2,688 | **NVIDIA** — the official `NVIDIA` org; three review rounds with maintainer `willkill07` on making `remove_r1_think_tags` actually remove think blocks, merged 2026-10-08T00:10:02Z by NVIDIA's `rapids-bot` after he issued `/merge` |
+| [Agents-Anywhere](https://github.com/anywhere-labs/Agents-Anywhere) | 2,531 | `anywhere-labs` community org — 3 public repos, created 2026-05, dshdesktop.cn; not a company |
+| [awesome-jev](https://github.com/yibie/awesome-jev) | 2,513 | yibie — individual maintainer, community catalog for Jev; the row the 09-25 round both printed and denied, kept now on the commit the history probe finds |
 
 <details>
-<summary><b>Eight more repositories between 1,000★ and 2,500★ — one line each</b></summary>
+<summary><b>Six more repositories between 1,000★ and 2,500★ — one line each</b></summary>
 
 | Repository | ★ | 项目归属方 |
 |---|---|---|
-| [awesome-jev](https://github.com/yibie/awesome-jev) | 2,494 | yibie — individual maintainer, community catalog for Jev; the row the 09-25 round both printed and denied, kept now on the commit the history probe finds |
-| [Agents-Anywhere](https://github.com/anywhere-labs/Agents-Anywhere) | 2,398 | `anywhere-labs` community org — 3 public repos, created 2026-05, dshdesktop.cn; not a company |
-| [deep-research-web-ui](https://github.com/AnotiaWang/deep-research-web-ui) | 2,222 | AnotiaWang — individual maintainer; a docs fix to the Helodata image name merged 2026-10-26T09:22:58Z |
+| [deep-research-web-ui](https://github.com/AnotiaWang/deep-research-web-ui) | 2,224 | AnotiaWang — individual maintainer; a docs fix to the Helodata image name merged 2026-10-26T09:22:58Z |
 | [nginx-upsync-module](https://github.com/weibocom/nginx-upsync-module) | 1,844 | weibocom — the Weibo open-source org; an out-of-bounds write fix merged 2026-10-19T06:04:29Z, re-tested by the maintainer with a plain and an ASan build |
-| [mcp-remote](https://github.com/punkpeye/mcp-remote) | 1,652 | punkpeye (Frank Fiegel) — individual maintainer at Glama, the same account as `fastmcp` above; a Windows-portability fix to the repository's own test harness merged 2026-10-17T21:06:55Z |
-| [dsh-plugin-radar](https://github.com/AdamPlatin123/dsh-plugin-radar) | 1,487 | AdamPlatin123 — individual maintainer, catalog is a generated artifact |
-| [awesome-deepseek-harness](https://github.com/0xsline/awesome-deepseek-harness) | 1,274 | 0xsline — individual maintainer, community catalog |
-| [awesome-agent-apis](https://github.com/Anil-matcha/awesome-agent-apis) | 1,063 | Anil Chandra Naidu Matcha — individual maintainer, community catalog |
+| [mcp-remote](https://github.com/punkpeye/mcp-remote) | 1,659 | punkpeye (Frank Fiegel) — individual maintainer at Glama, the same account as `fastmcp` above; a Windows-portability fix to the repository's own test harness merged 2026-10-17T21:06:55Z |
+| [dsh-plugin-radar](https://github.com/AdamPlatin123/dsh-plugin-radar) | 1,488 | AdamPlatin123 — individual maintainer, catalog is a generated artifact |
+| [awesome-deepseek-harness](https://github.com/0xsline/awesome-deepseek-harness) | 1,286 | 0xsline — individual maintainer, community catalog |
+| [awesome-agent-apis](https://github.com/Anil-matcha/awesome-agent-apis) | 1,065 | Anil Chandra Naidu Matcha — individual maintainer, community catalog |
 
 </details>
 
@@ -99,8 +101,8 @@ merges, [the Jev gallery](https://github.com/OmniJev/awesome-jev-gallery) and
 catalogs that ingest the family and carry no company owner, so they are named here only in aggregate.
 **93 external repositories carry at least one merged pull request of ours and a commit
 attributed to this account on their default branch; 453 merges were counted inside those 93 —
-re-derived 2026-10-30T04:45:00Z from this account's own merged pull requests and confirmed repository by
-repository with the `defaultBranchRef.target.history(author:{id})` probe, so 444 is exact rather than a
+re-derived 2026-10-31T03:58:00Z from this account's own merged pull requests and confirmed repository by
+repository with the `defaultBranchRef.target.history(author:{id})` probe, so 453 is exact rather than a
 floor over a probed subset. Three repositories carry merges of ours and still earn no credit, and all are named for that reason:
 [SihanTeng's list](https://github.com/SihanTeng/awesome-deepseek-harness-plugins), which took **32** and
 credits no commit to this account at all — the case the rule at the top of this section was written
