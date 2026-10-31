@@ -197,16 +197,20 @@ The eleven categories below are the map; each plugin's own README carries the on
 
 ## 🪦 Retired & frozen (2026-10-05)
 
-A maintainer review against the official harness and the wider ecosystem retired three plugins because
-the **harness now implements the capability natively** — [dsh-background-agents](https://github.com/PerryLink/dsh-background-agents)
-(native continuable subagents), [dsh-session-pin](https://github.com/PerryLink/dsh-session-pin) (built-in
-session pinning) and [dsh-team-rooms](https://github.com/PerryLink/dsh-team-rooms) (Agent Teams) — and
-froze five of its own plugins because **a better-adopted alternative now exists** — `dsh-budget`, `dsh-draw`,
-`dsh-claude-move`, `dsh-reach` and `dsh-defend` — and carries the third-party `dsh-wechat` row as frozen for
-the same reason.
+Two different decisions, both about not maintaining a duplicate.
 
-Retired does not mean broken: compatibility updates stop, existing installs keep working, and the
-capability is either official now or served better elsewhere.
+**Retired — the official harness absorbed the capability.** Three plugins stopped because the harness now
+ships the same capability natively — [dsh-background-agents](https://github.com/PerryLink/dsh-background-agents)
+(native continuable subagents), [dsh-session-pin](https://github.com/PerryLink/dsh-session-pin) (built-in
+session pinning) and [dsh-team-rooms](https://github.com/PerryLink/dsh-team-rooms) (Agent Teams).
+
+**Frozen — the ecosystem converged on a more widely adopted implementation.** Five plugins — `dsh-budget`,
+`dsh-draw`, `dsh-claude-move`, `dsh-reach` and `dsh-defend` — plus the third-party `dsh-wechat` row stopped
+feature work because a more widely adopted implementation is the mainstream choice for that capability.
+This is a measured adoption call, not a quality verdict: each repo's own README records the comparison.
+
+Either way, the operational meaning is the same: compatibility updates stop, existing installs keep
+working, and no second implementation is maintained.
 
 ## 🌍 Where the plugins live
 
