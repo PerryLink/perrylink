@@ -158,7 +158,7 @@ membership rule and the page says so, and they are not part of the 53-checker su
 every earlier line in this section.
 
 `Phocinae/*` is the account's other org. Its repos and DSH plugins are **not** counted in the
-125/123/115: they are a separate line, mentioned in README § Phocinae. The 490 contains no PR to a
+125/123/115: they are a separate line, mentioned in README § Phocinae. The 494 contains no PR to a
 `Phocinae/*` repository (re-checked 2026-10-31), so no external-contribution figure moves.
 
 They are a second workspace on disk (`D:\Projects\dsh-plugins`, disjoint from `D:\Projects\dsh\plugins`)
@@ -189,7 +189,7 @@ measurement).
 
 | Row | px | Badges |
 |---|---|---|
-| 1 — reach and counters | 678 | stars (82), followers (112), repos (72), upstream merges 490 (138), credited repos 94 (112), plugins 115 (80), checkers 62 (82) |
+| 1 — reach and counters | 678 | stars (82), followers (112), repos (72), upstream merges 494 (138), credited repos 95 (112), plugins 115 (80), checkers 62 (82) |
 | 2 — npm and stack | 728 | npm 132 names (123), npm downloads 30d 273.6k (170), npm provenance 105/132 (160), license (120), node (155) |
 | 3 — quality and registry | 668 | dsh host corridor (146), OpenSSF Scorecard (136), Glama (110), certified (132), MCP Registry 4 servers (144) |
 | 4 — index, mirror, feeds | 787 | plugin index 114 pages (144), Gitee (101), dshfind 45.5k+ across 9 (256), Desktop Market source (172), Zenodo DOI (~114) |
@@ -258,7 +258,7 @@ is merely "balanced" is not enough: balance is exactly what produced the 836px r
 
 | Badge | Value | Mirrors |
 |---|---|---|
-| upstream merges | 490 | "Upstream" |
+| upstream merges | 494 | "Upstream" |
 | credited repos | 94 | "Upstream" |
 | plugins | 115 | the intro sentence |
 | checkers | 62 | the 53-checker suite plus the nine 2026-10-23 tools (the fifteen 2026-10-31 demos are not counted here) |
