@@ -14,6 +14,34 @@ and `dsh-laya` were introduced by name.
 
 ---
 
+## 2026-10-31 (fifth round)
+
+- **A full re-measure at 13:10–13:45Z, not a delta.** Every star, the npm registry, the catalogue, the
+  contributor sets and the badge widths were read again; the figures below are that pass.
+- **The star table is now 46 rows.** [ZSeven-W/openpencil](https://github.com/ZSeven-W/openpencil) joins at
+  6,991★ with its installer fix ([#264](https://github.com/ZSeven-W/openpencil/pull/264), merged
+  2026-10-29T02:46:01Z). Forty-six external repositories are above 2,500★ with merged work; fifty-three are
+  above 1,000★ and the tail below that is forty-four, out of 97 repositories carrying merges.
+- **Credited / uncredited re-derived**: 94 credited repositories with 456 merges, and three uncredited with
+  34 — `SihanTeng` 32, `Tencent/MMKV` 1, `Anil-matcha/open-genjutsu` 1 — so 490 = 456 + 34 across 97
+  repositories. **158 open proposals across 122**, up from 157/122 at 11:20Z.
+- **The family grew by fifteen.** Fifteen public/synthetic S1 demo tools were published on 2026-10-31; all
+  declare `dsh.bundle.patch` and have a non-deprecated npm latest. The naive scan is 125, the roster 123,
+  the actively maintained set 115 (3 retired, 5 frozen), and the category tables 120 rows in eleven
+  categories. The demos are marked not-GA in their own READMEs and the page says so.
+- **npm**: 132 names, 1,808 versions, 105 with provenance on at least one version, 98 on `latest`, 0
+  deprecated `latest`; 273,579 downloads over 2026-10-01..10-30.
+- **Catalogue and index**: the Market artifact is 109 packages generated 2026-10-29T08:36:50Z; the site
+  sitemap serves 114 pages. The built tree actually carries 127 HTML pages — ten tool pages (nine from
+  2026-10-23 plus `dsh-checkers`) and three Chinese articles are not in the sitemap (114 + 13) — so the
+  page states the sitemap figure and the gap is recorded here rather than silently counted.
+- **Corrections**: the `PROJECTS` total said 96 repositories (97), the credited-repos badge said 93 (94),
+  the npm-names sentence in `PROJECTS` still said 110 (132), the `BrowserSkill` and `dsh-market` rows
+  differed between the two files, the "eight more" sentence described a seven-row table, and `laya` was
+  called second of 146 when the 1,102-PR sample puts it third of 158 (`aashish254` 306, `keemsisi` 62,
+  `PerryLink` 52, `thread3d` 43, `Bruce-Yii` 40). The open count was re-probed at 13:45Z and reads
+  158/122; the 155 in this account's earlier pass was a 13:20Z reading, not a different definition.
+
 ## 2026-10-31 (fourth round)
 
 - **`laya`** — the subtable now reads **52 merged of the 56 opened** there, 0 open and 4 closed

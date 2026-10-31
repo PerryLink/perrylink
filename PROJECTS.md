@@ -3,7 +3,7 @@
 > This is the long form of [the profile README](README.md). The profile carries the front page: who I
 > am, the flagship plugins, every external repository above 2,500★, and a short note on what is retired
 > and frozen. Everything that used to sit there in full lives here — the merge-by-merge upstream
-> record, the whole 105-row plugin roster, the retired and frozen tables, and the npm/Gitee/Market
+> record, the whole 120-row plugin roster, the retired and frozen tables, and the npm/Gitee/Market
 > figures with their caveats.
 >
 > Moved out of the profile on 2026-10-19; every figure keeps the date it was measured. How each one is
@@ -18,7 +18,7 @@ proposals are deliberately not listed. The third column names the project's owne
 does not say whether that is a company, a standards body or one person.*
 
 **★ 1,000+ — named individually, as the rule requires, each carrying the party that owns the project.**
-Fifty-two external repositories above a thousand stars carry merged work — forty-five above 2,500★ in the
+Fifty-three external repositories above a thousand stars carry merged work — forty-six above 2,500★ in the
 table below and seven between 1,000★ and 2,500★ in the folded table after it. Every ★ was re-measured
 2026-10-31. Some rows belong to a company or a well-known project organization — Amazon Web Services, Apple,
 ByteDance, Docker, Microsoft, NVIDIA, Redis, Tencent, DeepSeek, ModelScope, the vLLM project, the `gofiber`
@@ -28,51 +28,52 @@ than letting the account name imply a company.
 
 | Repository | ★ | 项目归属方 |
 |---|---|---|
-| [dify](https://github.com/langgenius/dify) | 160,042 | **LangGenius** — the official `langgenius` org; the open-source LLM application platform (dify.ai); `download_with_size_limit` returned the 4xx/5xx error page as the downloaded plugin, so an installation reported an invalid package — it now rejects non-2xx responses, merged 2026-10-30T17:55:46Z by `Stream29` |
-| [deer-flow](https://github.com/bytedance/deer-flow) | 84,743 | **字节跳动 ByteDance** — the official `bytedance` org (deerflow.tech); a one-line portability fix in a blocking-IO test merged 2026-10-07T10:22:16Z by `WillemJiang`, and now the largest row in this table |
-| [ruflo](https://github.com/ruvnet/ruflo) | 80,322 | ruvnet (rUv / Reuven Cohen) — individual maintainer; a 75k★ agent harness on a personal account, not a company repo, and the largest row here that is not owned by a company |
-| [reactive-resume](https://github.com/reactive-resume/reactive-resume) | 45,110 | `reactive-resume` org — independent open-source project (rxresu.me) |
-| [black](https://github.com/psf/black) | 42,083 | **Python Software Foundation** — the official `psf` org; `_write_to_stdout()` translated `\n` itself, so the trailing-newline fixup appended a second one, and CRLF input without a trailing newline could come out as `\r\r\n`; it now appends a bare `\n` and lets the writer translate it, merged 2026-10-20T23:06:23Z by `cobaltt7`; and an unreadable cache file is now treated as a miss instead of disabling the cache, merged 2026-10-30T22:58:18Z |
-| [zoxide](https://github.com/ajeetdsouza/zoxide) | 40,375 | ajeetdsouza (Ajeet D'Souza) — individual maintainer; a bare `z` under `_ZO_ECHO=1` called `Set-Location` without `-Passthru`, so the `$dir` assignment was `$null` and strict mode threw `PropertyNotFoundException`; the no-path branch now passes `-Passthru`, merged 2026-10-22T23:55:13Z by `ajeetdsouza`, who dropped the regression test from the branch before merging |
-| [fiber](https://github.com/gofiber/fiber) | 40,235 | **the gofiber project** — the official `gofiber` org (gofiber.io), the Express-inspired Go web framework; an optional-path-parameter matching fix merged 2026-10-19T08:56:41Z by `ReneWerner87` |
-| [laya](https://github.com/NandhaKishorM/laya) | 34,717 | NandhaKishorM — individual maintainer; the repo was created 2026-09-18 |
+| [dify](https://github.com/langgenius/dify) | 160,079 | **LangGenius** — the official `langgenius` org; the open-source LLM application platform (dify.ai); `download_with_size_limit` returned the 4xx/5xx error page as the downloaded plugin, so an installation reported an invalid package — it now rejects non-2xx responses, merged 2026-10-30T17:55:46Z by `Stream29` |
+| [deer-flow](https://github.com/bytedance/deer-flow) | 84,759 | **字节跳动 ByteDance** — the official `bytedance` org (deerflow.tech); a one-line portability fix in a blocking-IO test merged 2026-10-07T10:22:16Z by `WillemJiang`, and now the largest row in this table |
+| [ruflo](https://github.com/ruvnet/ruflo) | 80,367 | ruvnet (rUv / Reuven Cohen) — individual maintainer; a 75k★ agent harness on a personal account, not a company repo, and the largest row here that is not owned by a company |
+| [reactive-resume](https://github.com/reactive-resume/reactive-resume) | 45,118 | `reactive-resume` org — independent open-source project (rxresu.me) |
+| [black](https://github.com/psf/black) | 42,085 | **Python Software Foundation** — the official `psf` org; `_write_to_stdout()` translated `\n` itself, so the trailing-newline fixup appended a second one, and CRLF input without a trailing newline could come out as `\r\r\n`; it now appends a bare `\n` and lets the writer translate it, merged 2026-10-20T23:06:23Z by `cobaltt7`; and an unreadable cache file is now treated as a miss instead of disabling the cache, merged 2026-10-30T22:58:18Z |
+| [zoxide](https://github.com/ajeetdsouza/zoxide) | 40,381 | ajeetdsouza (Ajeet D'Souza) — individual maintainer; a bare `z` under `_ZO_ECHO=1` called `Set-Location` without `-Passthru`, so the `$dir` assignment was `$null` and strict mode threw `PropertyNotFoundException`; the no-path branch now passes `-Passthru`, merged 2026-10-22T23:55:13Z by `ajeetdsouza`, who dropped the regression test from the branch before merging |
+| [fiber](https://github.com/gofiber/fiber) | 40,237 | **the gofiber project** — the official `gofiber` org (gofiber.io), the Express-inspired Go web framework; an optional-path-parameter matching fix merged 2026-10-19T08:56:41Z by `ReneWerner87` |
+| [laya](https://github.com/NandhaKishorM/laya) | 34,735 | NandhaKishorM — individual maintainer; the repo was created 2026-09-18 |
 | [cli](https://github.com/urfave/cli) | 24,306 | the `urfave` org — community-maintained Go CLI framework; `HandleExitCoder` recognised an `ExitCoder` only through a bare type assertion, so an exit error wrapped with `fmt.Errorf("%w")` printed nothing and fell back to exit code 1; `Juneezee` rebased it onto a `main` that now requires Go 1.26 before merging on 2026-10-21T15:40:14Z |
-| [learn-harness-engineering](https://github.com/walkinglabs/learn-harness-engineering) | 22,603 | `walkinglabs` community org — the harness-engineering tutorial site |
-| [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) | 21,660 | `awesome-dsh-plugin` org — community catalog, no company behind it |
+| [learn-harness-engineering](https://github.com/walkinglabs/learn-harness-engineering) | 22,634 | `walkinglabs` community org — the harness-engineering tutorial site |
+| [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) | 21,732 | `awesome-dsh-plugin` org — community catalog, no company behind it |
 | [SkillOpt](https://github.com/microsoft/SkillOpt) | 18,785 | **Microsoft** — the official `microsoft` org; a UTF-8 state-file fix merged 2026-10-18T17:02:48Z |
-| [MMKV](https://github.com/Tencent/MMKV) | 18,768 | **Tencent** — the official `Tencent` org; the mobile key-value storage framework developed by WeChat. A Win32 creation-flag fix merged 2026-10-19T10:35:44Z into `dev` by `lingol` — into `dev`, not the default branch `master`, which is why this row carries a merge and no credit |
+| [MMKV](https://github.com/Tencent/MMKV) | 18,767 | **Tencent** — the official `Tencent` org; the mobile key-value storage framework developed by WeChat. A Win32 creation-flag fix merged 2026-10-19T10:35:44Z into `dev` by `lingol` — into `dev`, not the default branch `master`, which is why this row carries a merge and no credit |
 | [ioredis](https://github.com/redis/ioredis) | 15,351 | **Redis** — the official `redis` org; the Node.js Redis client, where an auto-pipelining fix merged 2026-10-19T08:09:05Z by `PavelPashov` |
-| [FlashMLA](https://github.com/deepseek-ai/FlashMLA) | 13,224 | **DeepSeek** — the official `deepseek-ai` org |
-| [txtai](https://github.com/neuml/txtai) | 13,049 | **NeuML** — an independent open-source project (neuml.github.io/txtai), not a company repo; merged 2026-10-11T21:21:02Z by its maintainer `davidmezzetti`, on the third attempt and after he had asked repeatedly, over three pull requests, for the change to be cut down, which it was |
-| [dsh-market](https://github.com/dsh-market/dsh-market) | 9,869 | `dsh-market` org — the community plugin market behind dshmarket.com, not a DeepSeek repo |
-| [mcp](https://github.com/awslabs/mcp) | 9,853 | **Amazon Web Services (AWS)** — the official `awslabs` org; a one-file UTF-8 fix merged 2026-10-05T22:49:06Z by maintainer `markjschreiber` with two approvals |
-| [dsh-web](https://github.com/zhu1090093659/dsh-web) | 9,852 | zhu1090093659 — individual maintainer |
-| [BrowserSkill](https://github.com/Tencent/BrowserSkill) | 9,830 | **腾讯 Tencent** — the official `Tencent` org; merged 2026-10-06T13:45:15Z by collaborator `iuyo5678` with eight checks green |
-| [Cordis](https://github.com/cordiverse/cordis) | 9,492 | **cordiverse** org; its maintainer Shigma is now at **DeepSeek**, and Cordis is the kernel DeepSeek Harness vendors as `@deepseek-ai/cordis` |
+| [FlashMLA](https://github.com/deepseek-ai/FlashMLA) | 13,225 | **DeepSeek** — the official `deepseek-ai` org |
+| [txtai](https://github.com/neuml/txtai) | 13,053 | **NeuML** — an independent open-source project (neuml.github.io/txtai), not a company repo; merged 2026-10-11T21:21:02Z by its maintainer `davidmezzetti`, on the third attempt and after he had asked repeatedly, over three pull requests, for the change to be cut down, which it was |
+| [dsh-market](https://github.com/dsh-market/dsh-market) | 9,947 | `dsh-market` org — the community plugin market behind dshmarket.com, not a DeepSeek repo |
+| [dsh-web](https://github.com/zhu1090093659/dsh-web) | 9,880 | zhu1090093659 — individual maintainer |
+| [mcp](https://github.com/awslabs/mcp) | 9,854 | **Amazon Web Services (AWS)** — the official `awslabs` org; a one-file UTF-8 fix merged 2026-10-05T22:49:06Z by maintainer `markjschreiber` with two approvals |
+| [BrowserSkill](https://github.com/Tencent/BrowserSkill) | 9,841 | **腾讯 Tencent** — the official `Tencent` org; merged 2026-10-06T13:45:15Z by collaborator `iuyo5678` with eight checks green |
+| [Cordis](https://github.com/cordiverse/cordis) | 9,495 | **cordiverse** org; its maintainer Shigma is now at **DeepSeek**, and Cordis is the kernel DeepSeek Harness vendors as `@deepseek-ai/cordis` |
 | [jc](https://github.com/kellyjonbrazil/jc) | 8,697 | kellyjonbrazil (Kelly Brazil) — individual maintainer; a Windows platform-name fix merged 2026-10-17T21:51:22Z and started counting when `master` caught up on 2026-10-18T20:39:02Z |
-| [models.dev](https://github.com/anomalyco/models.dev) | 7,457 | `anomalyco` org — the model-catalogue site behind models.dev; merged 2026-10-10T23:11:09Z by `rekram1-node` |
+| [models.dev](https://github.com/anomalyco/models.dev) | 7,460 | `anomalyco` org — the model-catalogue site behind models.dev; merged 2026-10-10T23:11:09Z by `rekram1-node` |
+| [openpencil](https://github.com/ZSeven-W/openpencil) | 6,991 | `ZSeven-W` org — an independent open-source vector-design project; the installer fell back to the newest release when no stable release existed (#264), merged 2026-10-29T02:46:01Z |
 | [kraken](https://github.com/uber/kraken) | 6,774 | **Uber** — the official `uber` org; the cache file reader opened to duplicate a committed upload to a replica was never closed, leaking one file descriptor per replica for every uploaded blob; both replication paths now register it with the server's closer set, merged 2026-10-22T09:31:25Z by `gkeesh7` |
-| [koishi](https://github.com/koishijs/koishi) | 6,305 | `koishijs` org — the cross-platform chatbot framework; merged 2026-10-08T12:13:06Z by its maintainer `shigma`, who found and fixed a regression in this account's own patch before merging it |
-| [ouroboros](https://github.com/Q00/ouroboros) | 6,291 | Q00 — individual maintainer (`@zep-us`) |
+| [koishi](https://github.com/koishijs/koishi) | 6,307 | `koishijs` org — the cross-platform chatbot framework; merged 2026-10-08T12:13:06Z by its maintainer `shigma`, who found and fixed a regression in this account's own patch before merging it |
+| [ouroboros](https://github.com/Q00/ouroboros) | 6,292 | Q00 — individual maintainer (`@zep-us`) |
 | [client_golang](https://github.com/prometheus/client_golang) | 6,043 | **Prometheus** — the official `prometheus` org (CNCF project); `checkMetricConsistency` compared each label name with the previous one before the pairs were sorted, so non-adjacent duplicates passed and a scrape of the registry was dropped as a whole; the sort now runs before the duplicate loop, merged 2026-10-23T07:22:07Z by `bwplotka` |
-| [teamai-cli](https://github.com/Tencent/teamai-cli) | 5,718 | **腾讯 Tencent** — the official `Tencent` org, opensource.tencent.com |
-| [go-sdk](https://github.com/modelcontextprotocol/go-sdk) | 5,290 | the `modelcontextprotocol` org's Go SDK for MCP |
-| [aibrix](https://github.com/vllm-project/aibrix) | 5,169 | **the vLLM project** — the official `vllm-project` org behind vLLM; two flaky-test fixes merged 2026-10-06T16:23:08Z and 2026-10-07T11:18:42Z, the second by `googs1025` and the second of the two flaky-test fixes this account has merged there |
-| [embedding-atlas](https://github.com/apple/embedding-atlas) | 5,005 | **Apple** — the official `apple` org (apple.github.io/embedding-atlas); a line-ending normalization fix in a release script merged 2026-10-06T16:30:51Z by `donghaoren` |
-| [DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) | 4,762 | `omdsh-dev` community org — the DeepSeek Harness sidebar plugin; added 2026-10-12, and `INSTRUMENTATION.md` records why it was previously carried as excluded |
-| [docker-agent](https://github.com/docker/docker-agent) | 4,623 | **Docker, Inc.** — the official `docker` org; merged 2026-10-05 by maintainer `aheritier` |
-| [agent-client-protocol](https://github.com/agentclientprotocol/agent-client-protocol) | 4,549 | `agentclientprotocol` org — governed jointly by **Zed Industries** and **JetBrains** |
+| [teamai-cli](https://github.com/Tencent/teamai-cli) | 5,721 | **腾讯 Tencent** — the official `Tencent` org, opensource.tencent.com |
+| [go-sdk](https://github.com/modelcontextprotocol/go-sdk) | 5,291 | the `modelcontextprotocol` org's Go SDK for MCP |
+| [aibrix](https://github.com/vllm-project/aibrix) | 5,171 | **the vLLM project** — the official `vllm-project` org behind vLLM; two flaky-test fixes merged 2026-10-06T16:23:08Z and 2026-10-07T11:18:42Z, the second by `googs1025` and the second of the two flaky-test fixes this account has merged there |
+| [embedding-atlas](https://github.com/apple/embedding-atlas) | 5,007 | **Apple** — the official `apple` org (apple.github.io/embedding-atlas); a line-ending normalization fix in a release script merged 2026-10-06T16:30:51Z by `donghaoren` |
+| [DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) | 4,771 | `omdsh-dev` community org — the DeepSeek Harness sidebar plugin; added 2026-10-12, and `INSTRUMENTATION.md` records why it was previously carried as excluded |
+| [docker-agent](https://github.com/docker/docker-agent) | 4,625 | **Docker, Inc.** — the official `docker` org; merged 2026-10-05 by maintainer `aheritier` |
+| [agent-client-protocol](https://github.com/agentclientprotocol/agent-client-protocol) | 4,553 | `agentclientprotocol` org — governed jointly by **Zed Industries** and **JetBrains** |
 | [client_python](https://github.com/prometheus/client_python) | 4,385 | **Prometheus** — the official `prometheus` org (CNCF project); the Python instrumentation client; the process collector failed the whole collection when `/proc/<pid>/limits` had no `Max open files` line — it now bounds-checks that line, merged 2026-10-30T18:39:55Z by `csmarchbanks` |
 | [content](https://github.com/nuxt/content) | 3,676 | **Nuxt** — the official `nuxt` org. `generateItemSurround` dropped the previous item whenever `before` was larger than the item's index, instead of returning a shorter window; approved and merged 2026-10-19T12:27:29Z by `farnabaz` |
-| [evalscope](https://github.com/modelscope/evalscope) | 3,618 | `modelscope` org — the ModelScope model-hub project; a UTF-8 BOM dataset fix merged 2026-10-19T03:42:50Z by `Yunnglin` |
-| [deepseek-harness-desktop](https://github.com/dsh-tauri/deepseek-harness-desktop) | 3,379 | `dsh-tauri` community org — self-described non-official and non-commercial, not a DeepSeek repo |
+| [evalscope](https://github.com/modelscope/evalscope) | 3,622 | `modelscope` org — the ModelScope model-hub project; a UTF-8 BOM dataset fix merged 2026-10-19T03:42:50Z by `Yunnglin` |
+| [deepseek-harness-desktop](https://github.com/dsh-tauri/deepseek-harness-desktop) | 3,386 | `dsh-tauri` community org — self-described non-official and non-commercial, not a DeepSeek repo |
 | [fastmcp](https://github.com/punkpeye/fastmcp) | 3,284 | punkpeye (Frank Fiegel) — individual maintainer at Glama; the TypeScript MCP framework |
 | [minio-go](https://github.com/minio/minio-go) | 3,010 | **MinIO** — the official `minio` org; `RemoveObjects` reported a single error for a whole batch, hiding which object had failed; it now reports one result per failed object, merged 2026-10-19T15:01:25Z by `klauspost` |
 | [open5gs](https://github.com/open5gs/open5gs) | 2,799 | the `open5gs` open-source 5G core project — a community project rather than a company repo |
-| [claude-agent-acp](https://github.com/agentclientprotocol/claude-agent-acp) | 2,710 | `agentclientprotocol` org — the same jointly-governed org as the row above, a separate repository |
+| [claude-agent-acp](https://github.com/agentclientprotocol/claude-agent-acp) | 2,712 | `agentclientprotocol` org — the same jointly-governed org as the row above, a separate repository |
 | [NeMo-Agent-Toolkit](https://github.com/NVIDIA/NeMo-Agent-Toolkit) | 2,688 | **NVIDIA** — the official `NVIDIA` org; three review rounds with maintainer `willkill07` on making `remove_r1_think_tags` actually remove think blocks, merged 2026-10-08T00:10:02Z by NVIDIA's `rapids-bot` after he issued `/merge` |
-| [Agents-Anywhere](https://github.com/anywhere-labs/Agents-Anywhere) | 2,531 | `anywhere-labs` community org — 3 public repos, created 2026-05, dshdesktop.cn; not a company |
-| [awesome-jev](https://github.com/yibie/awesome-jev) | 2,513 | yibie — individual maintainer, community catalog for Jev; the row the 09-25 round both printed and denied, kept now on the commit the history probe finds |
+| [Agents-Anywhere](https://github.com/anywhere-labs/Agents-Anywhere) | 2,556 | `anywhere-labs` community org — 3 public repos, created 2026-05, dshdesktop.cn; not a company |
+| [awesome-jev](https://github.com/yibie/awesome-jev) | 2,515 | yibie — individual maintainer, community catalog for Jev; the row the 09-25 round both printed and denied, kept now on the commit the history probe finds |
 
 <details>
 <summary><b>Seven more repositories between 1,000★ and 2,500★ — one line each</b></summary>
@@ -84,8 +85,8 @@ than letting the account name imply a company.
 | [mcp-remote](https://github.com/punkpeye/mcp-remote) | 1,659 | punkpeye (Frank Fiegel) — individual maintainer at Glama, the same account as `fastmcp` above; a Windows-portability fix to the repository's own test harness merged 2026-10-17T21:06:55Z |
 | [dsh-plugin-radar](https://github.com/AdamPlatin123/dsh-plugin-radar) | 1,488 | AdamPlatin123 — individual maintainer, catalog is a generated artifact |
 | [awesome-deepseek-harness](https://github.com/0xsline/awesome-deepseek-harness) | 1,286 | 0xsline — individual maintainer, community catalog |
-| [awesome-agent-apis](https://github.com/Anil-matcha/awesome-agent-apis) | 1,065 | Anil Chandra Naidu Matcha — individual maintainer, community catalog |
 | [dsh-vision-router](https://github.com/ysr666/dsh-vision-router) | 1,202 | ysr666 — individual maintainer; a source build failed when the Host's zod (4.4.3) and the plugin's zod (4.6.x) were nominally incompatible at the `DomainSpec` boundary, so the one-file type erasure landed 2026-10-31T10:15:05Z |
+| [awesome-agent-apis](https://github.com/Anil-matcha/awesome-agent-apis) | 1,065 | Anil Chandra Naidu Matcha — individual maintainer, community catalog |
 
 </details>
 
@@ -93,7 +94,7 @@ than letting the account name imply a company.
 <summary><b>The rest of the contributor set, and how the 490 total is derived</b></summary>
 
 **The rest of the contributor set** is the long tail below the 1,000★ line:
-**45 further repositories**, DSH plugin directories, small upstream projects and community catalogs
+**44 further repositories**, DSH plugin directories, small upstream projects and community catalogs
 ([dsh-handbook](https://github.com/Electricitysheep/dsh-handbook),
 [imsai-sh's list](https://github.com/imsai-sh/awesome-deepseek-harness-plugins), which alone took 44
 merges, [the Jev gallery](https://github.com/OmniJev/awesome-jev-gallery) and
@@ -102,7 +103,7 @@ merges, [the Jev gallery](https://github.com/OmniJev/awesome-jev-gallery) and
 catalogs that ingest the family and carry no company owner, so they are named here only in aggregate.
 **94 external repositories carry at least one merged pull request of ours and a commit
 attributed to this account on their default branch; 456 merges were counted inside those 94 —
-re-derived 2026-10-31T03:58:00Z from this account's own merged pull requests and confirmed repository by
+re-derived 2026-10-31T13:20:00Z from this account's own merged pull requests and confirmed repository by
 repository with the `defaultBranchRef.target.history(author:{id})` probe, so 456 is exact rather than a
 floor over a probed subset. Three repositories carry merges of ours and still earn no credit, and all are named for that reason:
 [SihanTeng's list](https://github.com/SihanTeng/awesome-deepseek-harness-plugins), which took **32** and
@@ -113,7 +114,7 @@ into the default branch `master`, so no commit of this account sits where the pr
 [deepseek-desktop](https://github.com/zcx960/deepseek-desktop), each hold a commit of this account and no
 merged pull request at all, so neither carries a merge and they are named only for that reason.
 **456 + 34 = the 490 merged pull requests** this account has outside `PerryLink/*`, concentrated in
-**96 repositories**; a further **158 are open across 122 repositories** as of 2026-10-31T13:31:00Z and are
+**97 repositories**; a further **158 are open across 122 repositories** as of 2026-10-31T13:45:00Z and are
 deliberately not counted here.
 
 </details>
@@ -123,14 +124,15 @@ the pull request this account closed after upstream fixed the same thing are rec
 [`CHANGELOG.md`](CHANGELOG.md); this page carries the current figures and none of that history.
 
 <details>
-<summary><b>laya — 52 merged pull requests, second of 146 merged-PR authors</b></summary>
+<summary><b>laya — 52 merged pull requests, third of 158 merged-PR authors</b></summary>
 
 **laya** — [NandhaKishorM/laya](https://github.com/NandhaKishorM/laya) — **52 merged pull requests of
-the 56 this account has opened there** (count re-measured 2026-10-31; the 964-PR ranking sample below is from
-2026-10-14, over all 964 pull requests the repository has ever had) and **second of 146 merged-PR authors**, behind `aashish254` (240) and ahead of `keemsisi`
-(44) and `Bruce-Yii` (40); the maintainer NandhaKishorM holds one merged PR of his own because he
-commits to `main` directly rather than through pull requests, and none of the three leaders is a
-collaborator. As of 2026-10-31 it reads **0 open and 4 closed unmerged**; 45 of the 52 merged inside a
+the 56 this account has opened there** (count re-measured 2026-10-31; the ranking sample below is from the
+same date, over all 1,102 closed pull requests the repository has ever had) and **third of 158 merged-PR
+authors**, behind `aashish254` (306) and `keemsisi` (62), and ahead of `thread3d` (43) and `Bruce-Yii` (40);
+the maintainer NandhaKishorM holds one merged PR of his own because he
+commits to `main` directly rather than through pull requests. As of 2026-10-31 it reads **0 open and
+4 closed unmerged**; 45 of the 52 merged inside a
 nine-day run (2026-09-21 → 2026-09-29), and the maintainer merges in batches — fifteen of them share two
 timestamps, seven at `19:29:05` on 09-27 and eight at `17:40:36` on 09-29, and seven since, including
 [#924](https://github.com/NandhaKishorM/laya/pull/924) on 2026-10-04,
@@ -139,12 +141,12 @@ timestamps, seven at `19:29:05` on 09-27 and eight at `17:40:36` on 09-29, and s
 query away:
 
 [`laya` pull requests by this account](https://github.com/NandhaKishorM/laya/pulls?q=is%3Apr+author%3APerryLink)
-— the same 51, always current, in any language.
+— the same 52, always current, in any language.
 
 </details>
 
 <details>
-<summary><b>The 47 merged pull requests, by area</b></summary>
+<summary><b>The 45 nine-day merges, by area</b></summary>
 
 - **Multilingual routing and evaluation** — a caller-supplied language hint
 ([#211](https://github.com/NandhaKishorM/laya/pull/211)), a reproducible per-language harness
@@ -226,22 +228,23 @@ predict lifecycle — the maintainer's note says explicitly that it was not clos
 **Security** — published advisory [GHSA-j922-p6h6-p255](https://github.com/PerryLink/dsh-permission-rules/security/advisories/GHSA-j922-p6h6-p255) for dsh-permission-rules (medium, patched in 0.6.16).
 
 <details>
-<summary><b><code>deepseek-ai</code> — 22 pull requests opened across the org, 1 merged, 15 open</b></summary>
+<summary><b><code>deepseek-ai</code> — 22 pull requests opened across the org, 1 merged, 13 open</b></summary>
 
 **Official harness repo** — it does not accept external pull requests, so that line runs through issues, Discussions
 (the Show Your Plugins! post [#6104](https://github.com/deepseek-ai/deepseek-harness/discussions/6104)) and the plugin
 ecosystem instead — while the wider `deepseek-ai` org is open to fixes, and the account now proposes them at the
 systems layer rather than only in its catalogs: of the **22 pull requests it has opened across that org, FlashMLA
-[#224](https://github.com/deepseek-ai/FlashMLA/pull/224) remains the only one merged**, and **15 are open**
-across eleven repositories — [TileKernels](https://github.com/deepseek-ai/TileKernels) three,
-[DeepEP](https://github.com/deepseek-ai/DeepEP) and
-[deepseek-recipe](https://github.com/deepseek-ai/deepseek-recipe) two each, and one apiece in
+[#224](https://github.com/deepseek-ai/FlashMLA/pull/224) remains the only one merged**, and **13 are open**
+across eleven repositories — [TileKernels](https://github.com/deepseek-ai/TileKernels) two,
+[DeepEP](https://github.com/deepseek-ai/DeepEP) two, and one apiece in
+[awesome-deepseek-agent](https://github.com/deepseek-ai/awesome-deepseek-agent),
+[deepseek-recipe](https://github.com/deepseek-ai/deepseek-recipe),
 [FlashMLA](https://github.com/deepseek-ai/FlashMLA),
 [DeepGEMM](https://github.com/deepseek-ai/DeepGEMM), [3FS](https://github.com/deepseek-ai/3FS),
 [DeepSeek-MoE](https://github.com/deepseek-ai/DeepSeek-MoE),
 [DeepSeek-Prover-V1.5](https://github.com/deepseek-ai/DeepSeek-Prover-V1.5),
 [DeepJIT](https://github.com/deepseek-ai/DeepJIT) and [DeepSelect](https://github.com/deepseek-ai/DeepSelect) —
-fourteen of them code fixes, and the fifteenth a catalog addition.
+eleven of them code fixes and two documentation.
 
 </details>
 
@@ -254,22 +257,22 @@ published specs — and the machine-readable catalogue is
 and each plugin's own README carries the detail this page only summarises.
 
 <details>
-<summary><b>The full family — 108 repositories in the roster, 100 of them actively maintained, plus the support repositories, one line each</b></summary>
+<summary><b>The full family — 123 repositories in the roster, 115 of them actively maintained, plus the support repositories, one line each</b></summary>
 
-*Counting note: **100** is the actively maintained set, and it is the figure this page's heading and badge
-use. It is derived one repository at a time: **110** repositories declare `dsh.bundle.patch` (re-derived
-2026-10-26 by reading each repo's own `package.json` at its default branch); removing the two retired
-corridor legs leaves **108** in the roster, of which **3 are 🚫 retired** and **5 are 🧊 frozen**, leaving
-**100 actively maintained**. The account owns **175** non-fork repositories; **121** carry a `package.json`
-and **110** of those declare the contract. The ten categories below list **105 rows**: 103 of the 108 roster
+*Counting note: **115** is the actively maintained set, and it is the figure this page's heading and badge
+use. It is derived one repository at a time: **125** repositories declare `dsh.bundle.patch` (re-derived
+2026-10-31 by reading each repo's own `package.json` at its default branch); removing the two retired
+corridor legs leaves **123** in the roster, of which **3 are 🚫 retired** and **5 are 🧊 frozen**, leaving
+**115 actively maintained**. The account owns **190** non-fork repositories; **136** carry a `package.json`
+and **125** of those declare the contract. The eleven categories below list **120 rows**: 118 of the 123 roster
 repositories, plus `jevcore` (which declares no `dsh.bundle`) and the third-party `dsh-wechat`. The five
 roster repositories left out — `dsh-plugin-kit`, `dsh-cert-mcp`, `dsh-plugin-doctor`, `dsh-checkers` and
 `dsh-community-bench` — are the support and tooling repositories named above. Retired and frozen rows keep
 their place with their status rather than being deleted, which is why the roster figure is larger than the
 active one. The portal's
 [dsh-plugin-kit/data/repos.json](https://github.com/PerryLink/dsh-plugin-kit/blob/main/data/repos.json)
-still records the 2026-10-19 cut of 99 with the same three states; the nine 2026-10-23 tools are not in it
-yet.*
+still records the 2026-10-19 cut of 99 with the same three states; the nine 2026-10-23 tools and the fifteen
+2026-10-31 demos are not in it yet.*
 
 **The 2026-10-08 addition.** 53 compliance checkers joined the roster that day — they declare
 `dsh.bundle.patch` like every other entry, so by the rule above they count. They are the `### ✅ Compliance checkers & tools` tables at the end of the folded family below, and they keep
@@ -282,6 +285,15 @@ non-plugin total, which is measured rather than derived.
 `dsh-table-ingest`, `dsh-tender-requirements`). They are roster entries under the same rule, but they are not
 part of the 53-checker suite and are listed in the toolchain table below. The roster moved 99 → 108 and the
 active count 91 → 100; the 53-checker suite itself is unchanged.
+
+**The 2026-10-31 addition.** Fifteen public/synthetic S1 business tools were published —
+`dsh-ap-three-way`, `dsh-bankrec`, `dsh-docx-redline`, `dsh-einvoice`, `dsh-eval-harness`,
+`dsh-freight-audit`, `dsh-ghg`, `dsh-hs-candidate`, `dsh-ifc-qto`, `dsh-legal-clause`, `dsh-legal-intake`,
+`dsh-pim-lint`, `dsh-policy-ledger`, `dsh-qms-capa` and `dsh-travel-recon`. They declare
+`dsh.bundle.patch` and are published to npm with a non-deprecated latest, so under the same rule they count:
+the roster moved 108 → 123, the active count 100 → 115, and the tables gain 15 rows (105 → 120). Their own
+READMEs mark them partial and not GA; none claims customer evidence, and they are not part of the
+53-checker suite.
 
 ### 🔒 Security (4)
 
@@ -362,9 +374,9 @@ plugins publish under a `@perrylink/` npm name rather than their repo name — t
 `@perrylink/dsh-plugin-kit` and `@perrylink/dsh-plugin-doctor`, and the plugins `@perrylink/dsh-github`,
 `@perrylink/dsh-ticktick` and `@perrylink/dsh-skill-pack-security-provider` — and a sixth name,
 `@perrylink/dsh-cert-mcp`, is the deprecated scoped predecessor of `dsh-cert-mcp`; the `perrylink` account therefore
-holds **110 npm names** — more names than the family has repositories, because several repos publish both a plugin
+holds **132 npm names** — more names than the family has repositories, because several repos publish both a plugin
 and a provider package, and because the 53 compliance checkers and the two `Phocinae` packages publish under names
-of their own (measured 2026-10-14).
+of their own (measured 2026-10-31).
 
 ### 📱 Messaging & bridges (4)
 
@@ -517,6 +529,30 @@ the ten checker domains because their packs are not part of the suite manifest.
 | [dsh-table-ingest](https://github.com/PerryLink/dsh-table-ingest) | Convert .docx/.xlsx/.xlsm/.csv/.tsv tables into the table JSON the rule checkers consume | | [npm](https://www.npmjs.com/package/dsh-table-ingest) |
 | [dsh-tender-requirements](https://github.com/PerryLink/dsh-tender-requirements) | Extract deadlines, deposit, validity, ceiling, bid composition and copy counts from a tender document | | [npm](https://www.npmjs.com/package/dsh-tender-requirements) |
 
+### 🏢 Finance, legal & operations (15)
+
+Fifteen public/synthetic S1 demos published 2026-10-31, outside the 53-checker suite: invoice and
+reconciliation tools, legal intake, trade and sustainability records, and three small document, eval and PIM utilities.
+They declare `dsh.bundle.patch` and count in the roster; each README states its own partial, not-GA scope.
+
+| Plugin | One-liner | Status | npm |
+|---|---|---|---|
+| [dsh-ap-three-way](https://github.com/PerryLink/dsh-ap-three-way) | AP invoice/PO/GRN three-way match with a 1% price tolerance and an exceptions xlsx | | [npm](https://www.npmjs.com/package/@perrylink/dsh-ap-three-way) |
+| [dsh-bankrec](https://github.com/PerryLink/dsh-bankrec) | Bank CSV/GL ingest, 1:1 matching and a three-sheet reconciliation workpaper | | [npm](https://www.npmjs.com/package/@perrylink/dsh-bankrec) |
+| [dsh-docx-redline](https://github.com/PerryLink/dsh-docx-redline) | DOCX structure inspection and a no-change roundtrip; no redline engine yet | | [npm](https://www.npmjs.com/package/@perrylink/dsh-docx-redline) |
+| [dsh-einvoice](https://github.com/PerryLink/dsh-einvoice) | E-invoice review queue and receipt recording, local-only | | [npm](https://www.npmjs.com/package/@perrylink/dsh-einvoice) |
+| [dsh-eval-harness](https://github.com/PerryLink/dsh-eval-harness) | Eval-pack lint and deterministic JSON grading | | [npm](https://www.npmjs.com/package/@perrylink/dsh-eval-harness) |
+| [dsh-freight-audit](https://github.com/PerryLink/dsh-freight-audit) | Freight ratecard versioning, carrier-bill audit and a variance xlsx | | [npm](https://www.npmjs.com/package/@perrylink/dsh-freight-audit) |
+| [dsh-ghg](https://github.com/PerryLink/dsh-ghg) | Electricity activity ingest, location-based GHG calculation and a workpaper | | [npm](https://www.npmjs.com/package/@perrylink/dsh-ghg) |
+| [dsh-hs-candidate](https://github.com/PerryLink/dsh-hs-candidate) | HS Top-3 candidate, 12-element completeness and a tariff-version gate | | [npm](https://www.npmjs.com/package/@perrylink/dsh-hs-candidate) |
+| [dsh-ifc-qto](https://github.com/PerryLink/dsh-ifc-qto) | IFC element/quantity inventory and CSV export | | [npm](https://www.npmjs.com/package/@perrylink/dsh-ifc-qto) |
+| [dsh-legal-clause](https://github.com/PerryLink/dsh-legal-clause) | Legal clause tree, 12-key playbook mapping and an unresolved report | | [npm](https://www.npmjs.com/package/@perrylink/dsh-legal-clause) |
+| [dsh-legal-intake](https://github.com/PerryLink/dsh-legal-intake) | Legal request intake: EML parse, thread dedupe and a ledger xlsx | | [npm](https://www.npmjs.com/package/@perrylink/dsh-legal-intake) |
+| [dsh-pim-lint](https://github.com/PerryLink/dsh-pim-lint) | PIM catalog lint: SKU/title/GTIN/price, duplicate SKU and GTIN check digit | | [npm](https://www.npmjs.com/package/@perrylink/dsh-pim-lint) |
+| [dsh-policy-ledger](https://github.com/PerryLink/dsh-policy-ledger) | Read-only install doctor: capability snapshot, tarball assert and diagnosis | | [npm](https://www.npmjs.com/package/@perrylink/dsh-policy-ledger) |
+| [dsh-qms-capa](https://github.com/PerryLink/dsh-qms-capa) | QMS NCR ingest/dedupe, batch-alias resolution and 8D/CAPA state | | [npm](https://www.npmjs.com/package/@perrylink/dsh-qms-capa) |
+| [dsh-travel-recon](https://github.com/PerryLink/dsh-travel-recon) | Travel order/invoice/card three-way match, duplicate check and a ledger xlsx | | [npm](https://www.npmjs.com/package/@perrylink/dsh-travel-recon) |
+
 </details>
 
 ## 🪦 Retired & frozen — the full tables
@@ -566,16 +602,17 @@ plugin is weaker.
 
 - **GitHub** (this profile), **[Gitee](https://gitee.com/perrylink)** and **npm** — source, CI and releases here; 101
 repositories are mirrored to Gitee by a daily job (default branch + all tags; the mirror list does not yet
-include the nine 2026-10-23 tools), plus this profile repo; the `perrylink`
-account holds **117 npm names and 1,665 versions**, every one of them with a non-deprecated `latest`; **96** carry a
-SLSA provenance attestation on that version and **105** on at least one (the twelve with none anywhere are
-`@perrylink/dsh-checkers`, `@perrylink/dsh-checkers-suite`, `@phocinae/js`, `dsh-context-verdict`,
+include the nine 2026-10-23 tools or the fifteen 2026-10-31 demos), plus this profile repo; the `perrylink`
+account holds **132 npm names and 1,808 versions**, every one of them with a non-deprecated `latest`; **98** carry a
+SLSA provenance attestation on that version and **105** on at least one (the twenty-seven with none anywhere are
+the fifteen 2026-10-31 demos above plus the twelve named last round — `@perrylink/dsh-checkers`,
+`@perrylink/dsh-checkers-suite`, `@phocinae/js`, `dsh-context-verdict`,
 `dsh-customs-mcp`, `dsh-laya`, `dsh-phocinae`, `dsh-preclaim`, `jevcore-cli`, `jevcore-dsh`, `jevcore-mcp`
-and `laya-mcp` — measured 2026-10-26 from each name's own packument; the names come from registry search,
-which now enumerates all 117, and the count was cross-checked against the 121 `package.json` files in the
+and `laya-mcp` — measured 2026-10-31 from each name's own packument; the names come from registry search,
+which now enumerates all 132, and the count was cross-checked against the 136 `package.json` files in the
 repositories themselves)
-- **npm downloads** — **232,500 over the trailing 30 days** (npm window 2026-09-26..2026-10-25, summed per name over the 117
-names from the downloads point endpoint.
+- **npm downloads** — **273,579 over the trailing 30 days** (npm window 2026-10-01..2026-10-30, summed per name over the 132
+names from the downloads point endpoint).
 - **dshfind** — lists **35** of the family's repositories in its sitemap (35 `…/plugins/PerryLink/<repo>` paths,
   each published in four locales) and puts a download badge on **9** of them. Read one badge per repository from
   `https://dshfind.com/api/badge/PerryLink/<repo>?metric=downloads` — the same `<img>` every plugin page
@@ -598,7 +635,7 @@ names from the downloads point endpoint.
   ★ — which is why the aggregate is stated over 9 and not over 35.
 - **DSH Desktop Market** — add the catalog source
 `https://cdn.jsdelivr.net/gh/PerryLink/dsh-catalog@main/deploy/artifacts/v1/plugins.json` under Market → Sources
-to browse the family in-app (109 packages, catalogue generated 2026-10-26; the `catalog-source.json` manifest in
+to browse the family in-app (109 packages, catalogue generated 2026-10-29T08:36:50Z; the `catalog-source.json` manifest in
 the same directory is a template whose `endpoint` is still the `replace-with-deploy-origin.invalid`
 placeholder, and the `perrylink-dsh-catalog.perrylink.workers.dev` address before it answered `HTTP 000` on
 networks that interfere with `*.workers.dev`); **MCP Registry** — four servers, all published from their release workflows over GitHub OIDC: `dsh-cert-mcp`,

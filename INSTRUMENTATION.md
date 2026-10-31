@@ -18,19 +18,19 @@ absent. The two sanctioned exceptions are marked.
 
 | Figure | Authoritative site | Update trigger |
 |---|---|---|
-| 100 actively maintained / 108 in the roster / 175 non-fork owned / 121 with a `package.json` | README § intro sentence for 100; README § family note for 108 | a repo joins, leaves, freezes or retires |
-| **plugins badge** *(exception: badge row is the live copy)* | README badge row — carries the actively maintained count, 100 | same |
+| 115 actively maintained / 123 in the roster / 190 non-fork owned / 136 with a `package.json` | README § intro sentence for 115; README § family note for 123 | a repo joins, leaves, freezes or retires |
+| **plugins badge** *(exception: badge row is the live copy)* | README badge row — carries the actively maintained count, 115 | same |
 | Family roster (which plugins exist, and each one's status) | [`dsh-kit/plugins.txt`](https://github.com/PerryLink/dsh-kit) — the install roster, with `scripts/check-parity.mjs` deriving every count and failing on a retired package or a lost status cell | any release |
 | Per-repo maintenance status (`active` / `frozen` / `retired`) | [`dsh-plugin-kit/data/repos.json`](https://github.com/PerryLink/dsh-plugin-kit/blob/main/data/repos.json) — the machine-readable roster the portal renders and the certification registry counts | when a repo freezes or retires |
 | npm 30-day downloads | README § Where the plugins live | monthly |
 | **npm downloads badge** *(exception)* | README badge row | same |
 | npm names / versions / non-deprecated latest | README § Where the plugins live | monthly |
-| npm provenance — **state the metric**: **96** names carry SLSA provenance on their non-deprecated `latest`; **105** carry it on at least one version; the twelve with none anywhere are named in the page (measured 2026-10-26, over the 117 names registry search now enumerates) | README § Where the plugins live | monthly |
+| npm provenance — **state the metric**: **98** names carry SLSA provenance on their non-deprecated `latest`; **105** carry it on at least one version; the twenty-seven with none anywhere are named in the page (measured 2026-10-31, over the 132 names registry search now enumerates) | README § Where the plugins live | monthly |
 | dshfind aggregate tier — **how to read it**: dshfind publishes a badge per plugin at `/api/badge/<owner>/<repo>?metric=downloads` (the `<img>` every plugin page embeds). Nine of the family's repositories answer with a download tier, 26 fall back to ★. The 35 indexed repositories are counted from its sitemap shards (`/sitemap/plugins-N.xml`), not from the search page, which is client-side | README § Where the plugins live; the nine tiers in `PROJECTS.md` | when dshfind re-renders |
 | dsh host corridor / node engine / license | README badge row (each links to the file it is read from) | when the declared range or the engines change |
 | external contributor repos / merges / above-1,000★ | README § Upstream, the "rest of the contributor set" paragraph | on re-derivation |
-| The named star table — **41 rows above 2,500★**, and the eight between 1,000★ and 2,500★ that live in `PROJECTS.md` | README § Upstream (the table itself) | on re-derivation |
-| The long form — upstream narrative, the 105-row roster, the retired/frozen tables, the npm caveats | [`PROJECTS.md`](PROJECTS.md), which the front page links | when the front page is split further |
+| The named star table — **46 rows above 2,500★**, and the seven between 1,000★ and 2,500★ that live in `PROJECTS.md` | README § Upstream (the table itself) | on re-derivation |
+| The long form — upstream narrative, the 120-row roster, the retired/frozen tables, the npm caveats | [`PROJECTS.md`](PROJECTS.md), which the front page links | when the front page is split further |
 | laya merged / opened / open / closed | README § Upstream, the laya paragraph | on re-derivation |
 | `deepseek-ai` totals | README § Upstream, the "Official harness repo" paragraph | on re-derivation |
 | The 1,000★ threshold and the attribution rule | README § Upstream, the lead paragraph | rule change only |
@@ -95,22 +95,22 @@ paragraph. Keep both sentences.
 
 ---
 
-## 3. The 100 / 108 / 110 / 105 / 175 / 121 counting note
+## 3. The 115 / 123 / 125 / 120 / 190 / 136 counting note
 
 The page's most attackable number, so the note in the README's family section is the defence. **The
-heading and the badge carry the actively maintained count (100). The roster figure (108) is stated once,
-inside that note** — the intro sentence is the authoritative prose site for 100, not for 108.
+heading and the badge carry the actively maintained count (115). The roster figure (123) is stated once,
+inside that note** — the intro sentence is the authoritative prose site for 115, not for 123.
 
-Measured one repo at a time from each repo's own `package.json` at its default branch (re-derived 2026-10-26):
+Measured one repo at a time from each repo's own `package.json` at its default branch (re-derived 2026-10-31):
 
 | Count | Meaning |
 |---|---|
-| **100** | actively maintained — the roster minus 3 🚫 retired and 5 🧊 frozen. **This is the number the heading and the badge carry.** |
-| **108** | the roster: canonical plugins that declare `dsh.bundle.patch`, excluding the 2 retired corridor legs. `dsh-plugin-kit/data/repos.json` still records the previous **99** cut (2026-10-19); `dsh-kit/plugins.txt` lists 96 published specs (the 99 minus the 3 retired) and does not yet carry the nine 2026-10-23 tools |
-| **110** | a naive scan of the account — 108 canonical **+ 2 retired corridor legs** (`dsh-plugin-upgrade-015`, not archived; `dsh-plugin-upgrade-016`, archived; both still carrying the manifest) |
-| **105** | rows in the ten categories: 103 of the 108 roster + 2 rows that are not roster plugins (`jevcore`, which declares no `dsh.bundle`, and the third-party `pan17/dsh-wechat`). Five support/tooling roster entries are left out: `dsh-plugin-kit`, `dsh-cert-mcp`, `dsh-plugin-doctor`, `dsh-checkers`, `dsh-community-bench` |
-| **175** | non-fork repositories this account owns in total; **121** carry a `package.json` and **110** of those declare `dsh.bundle.patch`, so 65 are outside the contract |
-| **121** | `package.json` files at the default branch — the cross-check for the npm-name set, not a page figure |
+| **115** | actively maintained — the roster minus 3 🚫 retired and 5 🧊 frozen. **This is the number the heading and the badge carry.** |
+| **123** | the roster: canonical plugins that declare `dsh.bundle.patch`, excluding the 2 retired corridor legs. `dsh-plugin-kit/data/repos.json` still records the previous **99** cut (2026-10-19); `dsh-kit/plugins.txt` lists 96 published specs (the 99 minus the 3 retired) and does not yet carry the nine 2026-10-23 tools or the fifteen 2026-10-31 demos |
+| **125** | a naive scan of the account — 123 canonical **+ 2 retired corridor legs** (`dsh-plugin-upgrade-015`, not archived; `dsh-plugin-upgrade-016`, archived; both still carrying the manifest) |
+| **120** | rows in the eleven categories: 118 of the 123 roster + 2 rows that are not roster plugins (`jevcore`, which declares no `dsh.bundle`, and the third-party `pan17/dsh-wechat`). Five support/tooling roster entries are left out: `dsh-plugin-kit`, `dsh-cert-mcp`, `dsh-plugin-doctor`, `dsh-checkers`, `dsh-community-bench` |
+| **190** | non-fork repositories this account owns in total; **136** carry a `package.json` and **125** of those declare `dsh.bundle.patch`, so 65 are outside the contract |
+| **136** | `package.json` files at the default branch — the cross-check for the npm-name set, not a page figure |
 
 **2026-10-08: the roster grew by 53.** A set of 53 compliance checkers was published that day
 (`dsh-hazchem-check`, `dsh-tender-matrix`, `dsh-icd-rule-check` and so on — the full list is the
@@ -143,6 +143,17 @@ ten rows (nine tools plus `dsh-phone-inbox`), 95 → 105. The account now owns 1
 of which carry a `package.json`, and 110 of those declare the contract. The 53-checker suite is unchanged —
 the nine are a separate toolchain table. These figures supersede every earlier line in this section.
 
+**2026-10-31: fifteen public/synthetic demos and a full re-derivation.** Fifteen S1 demo tools published
+2026-10-31 (`dsh-ap-three-way`, `dsh-bankrec`, `dsh-docx-redline`, `dsh-einvoice`, `dsh-eval-harness`,
+`dsh-freight-audit`, `dsh-ghg`, `dsh-hs-candidate`, `dsh-ifc-qto`, `dsh-legal-clause`, `dsh-legal-intake`,
+`dsh-pim-lint`, `dsh-policy-ledger`, `dsh-qms-capa`, `dsh-travel-recon`) declare `dsh.bundle.patch` and are
+published with a non-deprecated latest. The naive scan moves 110 → 125, the roster 108 → 123 and the actively
+maintained set 100 → 115; the tables gain fifteen rows, 105 → 120, in a new eleventh category. The account now
+owns 190 non-fork repositories, 136 of which carry a `package.json`, and 125 of those declare the contract.
+The fifteen are public/synthetic, partial and not GA in their own READMEs; they count under the mechanical
+membership rule and the page says so, and they are not part of the 53-checker suite. These figures supersede
+every earlier line in this section.
+
 They are a second workspace on disk (`D:\Projects\dsh-plugins`, disjoint from `D:\Projects\dsh\plugins`)
 and carry their own memory file; their maintenance rules, version policy and citation-gate discipline
 are recorded there rather than here.
@@ -164,22 +175,23 @@ annotation from GitHub's rendering.
 family it maintains, never one repository.** Measured from each badge's own SVG `width`/`height` at
 the 20px render height, then partitioned into balanced rows under the cap below.
 
-**Current, re-solved 2026-10-26 for 22 badges in four rows** — every width read from the badge's own
+**Current, re-solved 2026-10-31 for 22 badges in four rows** — every width read from the badge's own
 SVG on that date. Twenty-one answered; the Zenodo DOI badge is unreachable from this network (it has
 rendered on the page since 2026-10-05 and its width below is the published badge width, not a
 measurement).
 
 | Row | px | Badges |
 |---|---|---|
-| 1 — reach and counters | 686 | stars (90), followers (112), repos (72), upstream merges 490 (138), credited repos 91 (112), plugins 100 (80), checkers 53 (82) |
-| 2 — npm and stack | 728 | npm 117 names (123), npm downloads 30d 232.5k (170), npm provenance 105/117 (160), license (120), node (155) |
+| 1 — reach and counters | 678 | stars (82), followers (112), repos (72), upstream merges 490 (138), credited repos 94 (112), plugins 115 (80), checkers 62 (82) |
+| 2 — npm and stack | 728 | npm 132 names (123), npm downloads 30d 273.6k (170), npm provenance 105/132 (160), license (120), node (155) |
 | 3 — quality and registry | 668 | dsh host corridor (146), OpenSSF Scorecard (136), Glama (110), certified (132), MCP Registry 4 servers (144) |
-| 4 — index, mirror, feeds | 787 | plugin index 123 pages (144), Gitee (101), dshfind 45.5k+ across 9 (256), Desktop Market source (172), Zenodo DOI (~114) |
+| 4 — index, mirror, feeds | 787 | plugin index 114 pages (144), Gitee (101), dshfind 45.5k+ across 9 (256), Desktop Market source (172), Zenodo DOI (~114) |
 
-Four hand-written badges joined on that date — `upstream merges`, `credited repos`, `checkers` and
-`npm provenance` — because the account-level facts the page argues from had no badge of their own,
-while three of the row-2/3 badges describe a single repository. The scope rule above still applies to
-`OpenSSF Scorecard` and `certified` only as far as their `alt` text says which repository they name.
+The hand-written badges on that date — `upstream merges`, `credited repos`, `plugins`, `checkers`, `npm
+names`, `npm downloads 30d`, `npm provenance`, `MCP Registry`, `plugin index`, `dshfind downloads`,
+`Gitee`, `license`, `node` and `dsh host corridor` — each mirror a README site and must move with it; the
+rest self-update. The scope rule above still applies to `OpenSSF Scorecard` and `certified` only as far
+as their `alt` text says which repository they name.
 
 Re-solved 2026-10-08 for **21 badges in four rows** (historical). Every width below was re-measured from
 each badge's own SVG at the 20px render height:
@@ -240,17 +252,17 @@ is merely "balanced" is not enough: balance is exactly what produced the 836px r
 | Badge | Value | Mirrors |
 |---|---|---|
 | upstream merges | 490 | "Upstream" and `PROJECTS.md` |
-| credited repos | 93 | "Upstream" and `PROJECTS.md` |
-| plugins | 100 | the intro sentence |
-| checkers | 53 | the 53-checker suite (the nine 2026-10-23 tools are not counted here) |
-| npm names | 117 | "Where the plugins live" |
-| npm downloads 30d | 232.5k | "Where the plugins live" (232,500) |
-| npm provenance | 105/117 | "Where the plugins live" |
+| credited repos | 94 | "Upstream" and `PROJECTS.md` |
+| plugins | 115 | the intro sentence |
+| checkers | 62 | the 53-checker suite plus the nine 2026-10-23 tools (the fifteen 2026-10-31 demos are not counted here) |
+| npm names | 132 | "Where the plugins live" |
+| npm downloads 30d | 273.6k | "Where the plugins live" (273,579) |
+| npm provenance | 105/132 | "Where the plugins live" |
 | MCP Registry | 4 servers | "Where the plugins live" |
 | DSH Desktop Market source | (no number) | the catalog URL — reached over jsDelivr, see the reachability note in §4 |
 | Gitee mirror | (no number) | the mirror claim |
 | dsh host corridor | ≥0.1.2-rc.1 <0.3.0 | the union of the six `engines.dsh` clauses in any plugin's `package.json` |
-| node | ≥22.19 | the same file's `engines.node` (`^22.19.0 \|\| >=24.0.0`) |
+| node | ≥22.19 | the mainline `engines.node` (`^22.19.0 \|\| >=24.0.0`, 110 of 125); the fifteen 2026-10-31 demos declare `>=24.9.0 <25`, and the family note says so |
 | license | Apache-2.0 | the `LICENSE` file |
 | dshfind aggregate | 45,500+ over the 9 repositories that carry a badge, of 35 listed | "Where the plugins live"; per-plugin tiers listed in `PROJECTS.md` |
 

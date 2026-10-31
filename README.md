@@ -2,7 +2,7 @@
 
 <!-- Editing note: every figure on this page is measured and dated, and each one has exactly one
      authoritative site. Read INSTRUMENTATION.md before changing a number. The long form of this page
-     -- the merge-by-merge upstream record, the 105-row plugin roster, the retired/frozen tables and the
+     -- the merge-by-merge upstream record, the 120-row plugin roster, the retired/frozen tables and the
      npm figures with their caveats -- is PROJECTS.md; rounds go to CHANGELOG.md. -->
 
 <p align="center">
@@ -10,13 +10,13 @@
 <a href="https://github.com/PerryLink?tab=followers"><img alt="GitHub followers" src="https://img.shields.io/github/followers/PerryLink?label=followers&color=24292f"></a>
 <a href="https://github.com/PerryLink?tab=repositories"><img alt="GitHub repos" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FPerryLink&query=%24.public_repos&label=repos&color=24292f"></a>
 <a href="https://github.com/PerryLink/perrylink/blob/main/PROJECTS.md"><img alt="merged upstream" src="https://img.shields.io/badge/upstream%20merges-490-6e7781"></a>
-<a href="https://github.com/PerryLink/perrylink/blob/main/PROJECTS.md"><img alt="repositories where a merge is credited" src="https://img.shields.io/badge/credited%20repos-93-6e7781"></a>
-<a href="https://github.com/PerryLink/dsh-kit"><img alt="actively maintained plugins" src="https://img.shields.io/badge/plugins-100-6e7781"></a>
+<a href="https://github.com/PerryLink/perrylink/blob/main/PROJECTS.md"><img alt="repositories where a merge is credited" src="https://img.shields.io/badge/credited%20repos-94-6e7781"></a>
+<a href="https://github.com/PerryLink/dsh-kit"><img alt="actively maintained plugins" src="https://img.shields.io/badge/plugins-115-6e7781"></a>
 <a href="https://github.com/PerryLink/perrylink/blob/main/PROJECTS.md"><img alt="compliance checkers" src="https://img.shields.io/badge/checkers-62-6e7781"></a>
 <br>
-<a href="https://www.npmjs.com/search?q=perrylink"><img alt="npm names" src="https://img.shields.io/badge/npm-117%20names-cb3837?logo=npm"></a>
-<img alt="npm downloads 30d" src="https://img.shields.io/badge/npm%20downloads%2030d-232.5k-6e7781">
-<a href="https://github.com/PerryLink/perrylink/blob/main/PROJECTS.md"><img alt="npm provenance" src="https://img.shields.io/badge/npm%20provenance-105%2F117-6e7781"></a>
+<a href="https://www.npmjs.com/search?q=perrylink"><img alt="npm names" src="https://img.shields.io/badge/npm-132%20names-cb3837?logo=npm"></a>
+<img alt="npm downloads 30d" src="https://img.shields.io/badge/npm%20downloads%2030d-273.6k-6e7781">
+<a href="https://github.com/PerryLink/perrylink/blob/main/PROJECTS.md"><img alt="npm provenance" src="https://img.shields.io/badge/npm%20provenance-105%2F132-6e7781"></a>
 <a href="https://github.com/PerryLink/dsh-auto-review/blob/main/LICENSE"><img alt="license" src="https://img.shields.io/badge/license-Apache--2.0-blue"></a>
 <a href="https://github.com/PerryLink/dsh-mcp-panel/blob/main/package.json"><img alt="node" src="https://img.shields.io/badge/node-%5E22.19%20%7C%7C%20%3E%3D24-339933?logo=node.js"></a>
 <br>
@@ -26,7 +26,7 @@
 <a href="https://github.com/PerryLink/dsh-plugin-certification"><img alt="certified (flagship dsh-auto-review)" src="https://raw.githubusercontent.com/PerryLink/dsh-plugin-certification/main/badges/PerryLink__dsh-auto-review.svg"></a>
 <a href="https://registry.modelcontextprotocol.io/v0/servers?search=perrylink"><img alt="MCP Registry" src="https://img.shields.io/badge/MCP%20Registry-4%20servers-6f42c1"></a>
 <br>
-<a href="https://perrylink.github.io/"><img alt="plugin index" src="https://img.shields.io/badge/plugin%20index-123%20pages-0b5fff"></a>
+<a href="https://perrylink.github.io/"><img alt="plugin index" src="https://img.shields.io/badge/plugin%20index-114%20pages-0b5fff"></a>
 <a href="https://gitee.com/perrylink"><img alt="Gitee mirror" src="https://img.shields.io/badge/Gitee-mirror-c71d23?logo=gitee"></a>
 <a href="https://dshfind.com/plugins?q=PerryLink"><img alt="dshfind downloads across the family" src="https://img.shields.io/badge/dshfind%20downloads-45.5k%2B%20across%209%20plugins-6e7781"></a>
 <a href="https://cdn.jsdelivr.net/gh/PerryLink/dsh-catalog@main/deploy/catalog-source.json"><img alt="DSH Desktop Market source" src="https://img.shields.io/badge/DSH%20Desktop%20Market-source-0969da"></a>
@@ -39,12 +39,13 @@ Beijing — not affiliated with DeepSeek, and not a DeepSeek employee.
 
 **Upstream** — 490 merged pull requests in 97 repositories that are not mine, from AWS, Apple, Docker,
 Microsoft, NVIDIA, Prometheus, Redis, Tencent and the vLLM project down to one-person projects. **The
-family** — 100 actively maintained Apache-2.0 plugins: security, workflows, research,
-messaging bridges, developer experience, and since 2026-10-08 a 53-checker compliance suite plus nine newer
-compliance tools. Every plugin has one page at
-**[perrylink.github.io](https://perrylink.github.io/)** — 123 pages, complete in the served HTML
-with no JavaScript rendering them, so a reader who arrives from a search result sees the text rather than
-a loading state.
+family** — 115 actively maintained Apache-2.0 plugins: security, workflows, research,
+messaging bridges, developer experience, since 2026-10-08 a 53-checker compliance suite plus nine newer
+compliance tools, and since 2026-10-31 fifteen public/synthetic S1 business tools whose own READMEs mark
+them not GA. The public catalogue is
+**[perrylink.github.io](https://perrylink.github.io/)** — 114 pages in its sitemap, complete in the served
+HTML with no JavaScript rendering them, so a reader who arrives from a search result sees the text rather
+than a loading state.
 
 **中文读者 · 只想核对一份材料？** [按「手上是什么材料」选一个核查器（53 个，全中文）→](https://perrylink.github.io/zh/checkers/choose/)
 
@@ -52,11 +53,11 @@ a loading state.
 
 | Plugin | What it gives you | Install |
 |---|---|---|
-| [dsh-auto-review](https://github.com/PerryLink/dsh-auto-review) | Second-model auto-review on the approval chain, fail-closed by default (240★) | `dsh plugin --profile web add dsh-auto-review` |
+| [dsh-auto-review](https://github.com/PerryLink/dsh-auto-review) | Second-model auto-review on the approval chain, fail-closed by default (245★) | `dsh plugin --profile web add dsh-auto-review` |
 | [dsh-research-report](https://github.com/PerryLink/dsh-research-report) | Verifiable research reports: content-addressed evidence ledger, manifest seal hash, byte-level citation checks, drift detection, disproof ledger (213★) | `dsh plugin --profile web add dsh-research-report` |
-| [dsh-industry-research](https://github.com/PerryLink/dsh-industry-research) | Industry/company research: chain-map SVG with bottleneck detection, timeline, company cards, adversarial review (214★) | `dsh plugin --profile web add dsh-industry-research` |
-| [dsh-memento](https://github.com/PerryLink/dsh-memento) | Approval-gated cross-session memory (`ctx.memory` + SQLite) (142★) | `dsh plugin --profile web add dsh-memento` |
-| [dsh-permission-rules](https://github.com/PerryLink/dsh-permission-rules) | Claude Code-style declarative allow/deny/ask rules plus a process-level network policy (135★) | `dsh plugin --profile web add dsh-permission-rules` |
+| [dsh-industry-research](https://github.com/PerryLink/dsh-industry-research) | Industry/company research: chain-map SVG with bottleneck detection, timeline, company cards, adversarial review (215★) | `dsh plugin --profile web add dsh-industry-research` |
+| [dsh-memento](https://github.com/PerryLink/dsh-memento) | Approval-gated cross-session memory (`ctx.memory` + SQLite) (143★) | `dsh plugin --profile web add dsh-memento` |
+| [dsh-permission-rules](https://github.com/PerryLink/dsh-permission-rules) | Claude Code-style declarative allow/deny/ask rules plus a process-level network policy (136★) | `dsh plugin --profile web add dsh-permission-rules` |
 | [dsh-mcp-panel](https://github.com/PerryLink/dsh-mcp-panel) | MCP management console: `/mcp` + Settings tab + trial calls (91★) | `dsh plugin --profile web add dsh-mcp-panel` |
 | [dsh-phocinae](https://github.com/PerryLink/dsh-phocinae) | Local, non-generative verdicts for the approval chain: a small typed decision model behind `phocinae_ask` / `phocinae_gate`, with fail-closed escalation for everything it does not answer (1★) | `dsh plugin --profile web add dsh-phocinae` |
 
@@ -78,58 +79,59 @@ dsh plugin --profile web add dsh-community-bench
 ## 🔧 Upstream & community contributions
 
 *Every repository below is external to `PerryLink/*`, every row is merged work, and open proposals are
-deliberately not listed — as of 2026-10-31T04:00:00Z, 158 are open across 122 repositories. ★ re-measured
+deliberately not listed — as of 2026-10-31T13:45:00Z, 158 are open across 122 repositories. ★ re-measured
 2026-10-31 for every row; the third column names the party that
 owns the project, because the account name alone does not say whether that is a company, a standards body
 or one person. Every external repository above 2,500★ that carries merged work is listed.*
 
 | Repository | ★ | 项目归属方 |
 |---|---|---|
-| [dify](https://github.com/langgenius/dify) | 160,042 | **LangGenius** — the official `langgenius` org; the open-source LLM application platform (dify.ai) |
-| [deer-flow](https://github.com/bytedance/deer-flow) | 84,743 | **ByteDance** — the official `bytedance` org |
-| [ruflo](https://github.com/ruvnet/ruflo) | 80,322 | ruvnet (rUv / Reuven Cohen) — individual maintainer |
-| [reactive-resume](https://github.com/reactive-resume/reactive-resume) | 45,110 | `reactive-resume` org — independent open-source project (rxresu.me) |
-| [black](https://github.com/psf/black) | 42,083 | **Python Software Foundation** — the official `psf` org; the Black formatter |
-| [zoxide](https://github.com/ajeetdsouza/zoxide) | 40,375 | ajeetdsouza (Ajeet D'Souza) — individual maintainer; the smarter `cd` command |
-| [fiber](https://github.com/gofiber/fiber) | 40,235 | **the gofiber project** — the official `gofiber` org (gofiber.io), the Express-inspired Go web framework |
-| [laya](https://github.com/NandhaKishorM/laya) | 34,717 | NandhaKishorM — individual maintainer |
+| [dify](https://github.com/langgenius/dify) | 160,079 | **LangGenius** — the official `langgenius` org; the open-source LLM application platform (dify.ai) |
+| [deer-flow](https://github.com/bytedance/deer-flow) | 84,759 | **ByteDance** — the official `bytedance` org |
+| [ruflo](https://github.com/ruvnet/ruflo) | 80,367 | ruvnet (rUv / Reuven Cohen) — individual maintainer |
+| [reactive-resume](https://github.com/reactive-resume/reactive-resume) | 45,118 | `reactive-resume` org — independent open-source project (rxresu.me) |
+| [black](https://github.com/psf/black) | 42,085 | **Python Software Foundation** — the official `psf` org; the Black formatter |
+| [zoxide](https://github.com/ajeetdsouza/zoxide) | 40,381 | ajeetdsouza (Ajeet D'Souza) — individual maintainer; the smarter `cd` command |
+| [fiber](https://github.com/gofiber/fiber) | 40,237 | **the gofiber project** — the official `gofiber` org (gofiber.io), the Express-inspired Go web framework |
+| [laya](https://github.com/NandhaKishorM/laya) | 34,735 | NandhaKishorM — individual maintainer |
 | [cli](https://github.com/urfave/cli) | 24,306 | the `urfave` org — community-maintained Go CLI framework |
-| [learn-harness-engineering](https://github.com/walkinglabs/learn-harness-engineering) | 22,603 | `walkinglabs` community org — the harness-engineering tutorial site |
-| [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) | 21,660 | `awesome-dsh-plugin` org — community catalog, no company behind it |
+| [learn-harness-engineering](https://github.com/walkinglabs/learn-harness-engineering) | 22,634 | `walkinglabs` community org — the harness-engineering tutorial site |
+| [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) | 21,732 | `awesome-dsh-plugin` org — community catalog, no company behind it |
 | [SkillOpt](https://github.com/microsoft/SkillOpt) | 18,785 | **Microsoft** — the official `microsoft` org |
-| [MMKV](https://github.com/Tencent/MMKV) | 18,768 | **Tencent** — the official `Tencent` org; the key-value store behind WeChat |
+| [MMKV](https://github.com/Tencent/MMKV) | 18,767 | **Tencent** — the official `Tencent` org; the key-value store behind WeChat |
 | [ioredis](https://github.com/redis/ioredis) | 15,351 | **Redis** — the official `redis` org; the Node.js Redis client |
-| [FlashMLA](https://github.com/deepseek-ai/FlashMLA) | 13,224 | **DeepSeek** — the official `deepseek-ai` org |
-| [txtai](https://github.com/neuml/txtai) | 13,049 | **NeuML** — the `txtai` project of NeuML, an independent open-source project |
-| [dsh-market](https://github.com/dsh-market/dsh-market) | 9,868 | `dsh-market` org — the community plugin market behind dshmarket.com |
-| [mcp](https://github.com/awslabs/mcp) | 9,853 | **Amazon Web Services (AWS)** — the official `awslabs` org |
-| [dsh-web](https://github.com/zhu1090093659/dsh-web) | 9,852 | zhu1090093659 — individual maintainer |
-| [BrowserSkill](https://github.com/Tencent/BrowserSkill) | 9,829 | **Tencent** — the official `Tencent` org |
-| [Cordis](https://github.com/cordiverse/cordis) | 9,492 | **cordiverse** org — the kernel DeepSeek Harness vendors as `@deepseek-ai/cordis` |
+| [FlashMLA](https://github.com/deepseek-ai/FlashMLA) | 13,225 | **DeepSeek** — the official `deepseek-ai` org |
+| [txtai](https://github.com/neuml/txtai) | 13,053 | **NeuML** — the `txtai` project of NeuML, an independent open-source project |
+| [dsh-market](https://github.com/dsh-market/dsh-market) | 9,947 | `dsh-market` org — the community plugin market behind dshmarket.com |
+| [dsh-web](https://github.com/zhu1090093659/dsh-web) | 9,880 | zhu1090093659 — individual maintainer |
+| [mcp](https://github.com/awslabs/mcp) | 9,854 | **Amazon Web Services (AWS)** — the official `awslabs` org |
+| [BrowserSkill](https://github.com/Tencent/BrowserSkill) | 9,841 | **Tencent** — the official `Tencent` org |
+| [Cordis](https://github.com/cordiverse/cordis) | 9,495 | **cordiverse** org — the kernel DeepSeek Harness vendors as `@deepseek-ai/cordis` |
 | [jc](https://github.com/kellyjonbrazil/jc) | 8,697 | kellyjonbrazil (Kelly Brazil) — individual maintainer |
-| [models.dev](https://github.com/anomalyco/models.dev) | 7,457 | `anomalyco` org — the model-catalogue site behind models.dev |
+| [models.dev](https://github.com/anomalyco/models.dev) | 7,460 | `anomalyco` org — the model-catalogue site behind models.dev |
+| [openpencil](https://github.com/ZSeven-W/openpencil) | 6,991 | `ZSeven-W` org — an independent open-source vector-design tool |
 | [kraken](https://github.com/uber/kraken) | 6,774 | **Uber** — the official `uber` org; the Kraken P2P Docker registry |
-| [koishi](https://github.com/koishijs/koishi) | 6,305 | `koishijs` org — the cross-platform chatbot framework |
-| [ouroboros](https://github.com/Q00/ouroboros) | 6,291 | Q00 (`@zep-us`) — individual maintainer |
+| [koishi](https://github.com/koishijs/koishi) | 6,307 | `koishijs` org — the cross-platform chatbot framework |
+| [ouroboros](https://github.com/Q00/ouroboros) | 6,292 | Q00 (`@zep-us`) — individual maintainer |
 | [client_golang](https://github.com/prometheus/client_golang) | 6,043 | **Prometheus** — the official `prometheus` org (CNCF project); the Go instrumentation client |
-| [teamai-cli](https://github.com/Tencent/teamai-cli) | 5,718 | **Tencent** — the official `Tencent` org |
-| [go-sdk](https://github.com/modelcontextprotocol/go-sdk) | 5,290 | the `modelcontextprotocol` org — the Go SDK for MCP |
-| [aibrix](https://github.com/vllm-project/aibrix) | 5,169 | **the vLLM project** — the official `vllm-project` org |
-| [embedding-atlas](https://github.com/apple/embedding-atlas) | 5,005 | **Apple** — the official `apple` org |
-| [DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) | 4,762 | `omdsh-dev` community org — the DeepSeek Harness sidebar plugin |
-| [docker-agent](https://github.com/docker/docker-agent) | 4,623 | **Docker, Inc.** — the official `docker` org |
-| [agent-client-protocol](https://github.com/agentclientprotocol/agent-client-protocol) | 4,549 | `agentclientprotocol` org — governed jointly by **Zed Industries** and **JetBrains** |
+| [teamai-cli](https://github.com/Tencent/teamai-cli) | 5,721 | **Tencent** — the official `Tencent` org |
+| [go-sdk](https://github.com/modelcontextprotocol/go-sdk) | 5,291 | the `modelcontextprotocol` org — the Go SDK for MCP |
+| [aibrix](https://github.com/vllm-project/aibrix) | 5,171 | **the vLLM project** — the official `vllm-project` org |
+| [embedding-atlas](https://github.com/apple/embedding-atlas) | 5,007 | **Apple** — the official `apple` org |
+| [DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) | 4,771 | `omdsh-dev` community org — the DeepSeek Harness sidebar plugin |
+| [docker-agent](https://github.com/docker/docker-agent) | 4,625 | **Docker, Inc.** — the official `docker` org |
+| [agent-client-protocol](https://github.com/agentclientprotocol/agent-client-protocol) | 4,553 | `agentclientprotocol` org — governed jointly by **Zed Industries** and **JetBrains** |
 | [client_python](https://github.com/prometheus/client_python) | 4,385 | **Prometheus** — the official `prometheus` org (CNCF project); the Python instrumentation client |
 | [content](https://github.com/nuxt/content) | 3,676 | **Nuxt** — the official `nuxt` org |
-| [evalscope](https://github.com/modelscope/evalscope) | 3,618 | `modelscope` org — the ModelScope model-hub project |
-| [deepseek-harness-desktop](https://github.com/dsh-tauri/deepseek-harness-desktop) | 3,379 | `dsh-tauri` community org — self-described non-official and non-commercial |
+| [evalscope](https://github.com/modelscope/evalscope) | 3,622 | `modelscope` org — the ModelScope model-hub project |
+| [deepseek-harness-desktop](https://github.com/dsh-tauri/deepseek-harness-desktop) | 3,386 | `dsh-tauri` community org — self-described non-official and non-commercial |
 | [fastmcp](https://github.com/punkpeye/fastmcp) | 3,284 | punkpeye (Frank Fiegel) — individual maintainer at Glama |
 | [minio-go](https://github.com/minio/minio-go) | 3,010 | **MinIO** — the official `minio` org; the Go client for MinIO and S3-compatible storage |
 | [open5gs](https://github.com/open5gs/open5gs) | 2,799 | the `open5gs` 5G core project — community, no company owner |
-| [claude-agent-acp](https://github.com/agentclientprotocol/claude-agent-acp) | 2,710 | `agentclientprotocol` org — governed by Zed and JetBrains |
+| [claude-agent-acp](https://github.com/agentclientprotocol/claude-agent-acp) | 2,712 | `agentclientprotocol` org — governed by Zed and JetBrains |
 | [NeMo-Agent-Toolkit](https://github.com/NVIDIA/NeMo-Agent-Toolkit) | 2,688 | **NVIDIA** — the official `NVIDIA` org |
-| [Agents-Anywhere](https://github.com/anywhere-labs/Agents-Anywhere) | 2,531 | `anywhere-labs` community org — 3 public repos, created 2026-05; not a company |
-| [awesome-jev](https://github.com/yibie/awesome-jev) | 2,513 | yibie — individual maintainer; community catalog for Jev |
+| [Agents-Anywhere](https://github.com/anywhere-labs/Agents-Anywhere) | 2,556 | `anywhere-labs` community org — 3 public repos, created 2026-05; not a company |
+| [awesome-jev](https://github.com/yibie/awesome-jev) | 2,515 | yibie — individual maintainer; community catalog for Jev |
 <details>
 <summary><b>Twenty-three of them, briefly — what was broken and who merged it</b></summary>
 
@@ -191,20 +193,21 @@ or one person. Every external repository above 2,500★ that carries merged work
 
 </details>
 
-Eight more repositories between 1,000★ and 2,500★, the long tail below that, the per-merge record behind
+Seven more repositories between 1,000★ and 2,500★, the long tail below that, the per-merge record behind
 the 490, the `laya` ledger and the `deepseek-ai` picture are all in **[PROJECTS.md](PROJECTS.md)**.
 
 ## 📦 The rest of the family
 
-**The roster holds 108 repositories — 110 declare the `dsh.bundle.patch` contract, minus the two retired
-corridor legs — and 100 are actively maintained** (3 retired, 5 frozen), plus the support repositories —
+**The roster holds 123 repositories — 125 declare the `dsh.bundle.patch` contract, minus the two retired
+corridor legs — and 115 are actively maintained** (3 retired, 5 frozen), plus the support repositories —
 `dsh-kit`, `dsh-catalog`, the certification registry and the CI checker — and one third-party plugin carried
-as a row. The install list is `plugins.txt` in
+as a row. Fifteen of the 115 are public/synthetic S1 demos published 2026-10-31; each README states its own
+not-GA scope and requires Node ≥24.9 <25, while the mainline keeps `^22.19 || >=24`. The install list is `plugins.txt` in
 **[dsh-kit](https://github.com/PerryLink/dsh-kit)**, which still records the 2026-10-19 cut; the roster figure
-here is measured from each repository's own `package.json` and includes nine tools published 2026-10-23 that
-the list has not picked up yet. The machine-readable catalogue is
+here is measured from each repository's own `package.json` and includes nine tools published 2026-10-23 and
+the fifteen 2026-10-31 demos that the list has not picked up yet. The machine-readable catalogue is
 **[dsh-catalog](https://github.com/PerryLink/dsh-catalog)**, which is also the DSH Desktop Market source. One
-line per plugin, with its status and npm name, is in **[PROJECTS.md](PROJECTS.md)** — 105 rows in ten tables.
+line per plugin, with its status and npm name, is in **[PROJECTS.md](PROJECTS.md)** — 120 rows in eleven tables.
 
 | | # | Some of what is in it |
 |---|---|---|
@@ -218,6 +221,7 @@ line per plugin, with its status and npm name, is in **[PROJECTS.md](PROJECTS.md
 | 📱 Messaging & bridges | 4 | [dsh-phone-inbox](https://github.com/PerryLink/dsh-phone-inbox) · [dsh-ticktick](https://github.com/PerryLink/dsh-ticktick) · [dsh-reach](https://github.com/PerryLink/dsh-reach) · [dsh-wechat](https://github.com/pan17/dsh-wechat) |
 | 🔬 Research | 4 | [dsh-research-report](https://github.com/PerryLink/dsh-research-report) · [dsh-industry-research](https://github.com/PerryLink/dsh-industry-research) · [dsh-fund-research](https://github.com/PerryLink/dsh-fund-research) |
 | ✅ Compliance checkers & tools | 62 | A register or record set read against a versioned rule pack, ten domains from tendering to litigation, plus nine newer tools — the list is in [PROJECTS.md](PROJECTS.md) |
+| 🏢 Finance, legal & operations | 15 | [dsh-bankrec](https://github.com/PerryLink/dsh-bankrec) · [dsh-einvoice](https://github.com/PerryLink/dsh-einvoice) · [dsh-legal-intake](https://github.com/PerryLink/dsh-legal-intake) — public/synthetic S1 demos published 2026-10-31, not GA |
 
 ## 🪦 Retired & frozen (2026-10-05)
 
@@ -238,16 +242,16 @@ in **[PROJECTS.md](PROJECTS.md)**, under "Retired & frozen — the full tables".
 
 - **GitHub** (this profile), **[Gitee](https://gitee.com/perrylink)** and **npm** — source, CI and releases
   here; 101 repositories are mirrored to Gitee by a daily job (default branch and all tags; the mirror list
-  does not yet include the nine 2026-10-23 tools). The `perrylink` npm
-  account holds **117 names and 1,665 versions**; **105** of them carry a SLSA provenance attestation on at
-  least one version, **96** on the current `latest`.
-- **npm downloads** — **232,500 over the trailing 30 days** (window 2026-09-26..10-25).
+  does not yet include the nine 2026-10-23 tools or the fifteen 2026-10-31 demos). The `perrylink` npm
+  account holds **132 names and 1,808 versions**; **105** of them carry a SLSA provenance attestation on at
+  least one version, **98** on the current `latest`.
+- **npm downloads** — **273,579 over the trailing 30 days** (window 2026-10-01..10-30).
   [dshfind](https://dshfind.com/plugins?q=PerryLink) lists **35** of the family's repositories in its sitemap
   and publishes a download badge for **9** of them — three at 10k+, two at 5k+, two at 2k+, one at 1k+ and one
   at 500+ — which add to **45,500+**. The badges are rounded tiers, so that is a floor and not a total.
 - **DSH Desktop Market** — add
   `https://cdn.jsdelivr.net/gh/PerryLink/dsh-catalog@main/deploy/artifacts/v1/plugins.json` under
-  Market → Sources to browse the family in-app (109 packages, catalogue generated 2026-10-26).
+  Market → Sources to browse the family in-app (109 packages, catalogue generated 2026-10-29).
 - **MCP Registry** — four servers, all published from their release workflows over GitHub OIDC:
   `dsh-cert-mcp`, `dsh-customs-mcp`, `jevcore-mcp` and `laya-mcp`.
 - **GitHub Actions** — [dsh-github](https://github.com/PerryLink/dsh-github) and
@@ -279,7 +283,7 @@ Apache-2.0 插件生态** —— 安全、工作流、研究、消息桥接、�
 
 ---
 
-*Measured, not remembered.* The full inventory — the merge-by-merge upstream record, the 105-row plugin
+*Measured, not remembered.* The full inventory — the merge-by-merge upstream record, the 120-row plugin
 roster, the retired and frozen tables, and the npm and registry figures with their caveats — is in
 **[PROJECTS.md](PROJECTS.md)**. How every figure is measured is in
 [INSTRUMENTATION.md](https://github.com/PerryLink/perrylink/blob/main/INSTRUMENTATION.md), and what each
