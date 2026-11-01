@@ -10,7 +10,7 @@
 <a href="https://github.com/PerryLink?tab=repositories"><img alt="GitHub repos" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FPerryLink&query=%24.public_repos&label=repos&color=24292f"></a>
 <a href="https://github.com/PerryLink/perrylink"><img alt="merged upstream" src="https://img.shields.io/badge/upstream%20merges-497-6e7781"></a>
 <a href="https://github.com/PerryLink/perrylink"><img alt="repositories where a merge is credited" src="https://img.shields.io/badge/credited%20repos-94-6e7781"></a>
-<a href="https://github.com/PerryLink/dsh-kit"><img alt="actively maintained plugins" src="https://img.shields.io/badge/plugins-107-6e7781"></a>
+<a href="https://github.com/PerryLink/dsh-kit"><img alt="actively maintained plugins" src="https://img.shields.io/badge/plugins-114-6e7781"></a>
 <a href="https://github.com/PerryLink/perrylink"><img alt="compliance tools" src="https://img.shields.io/badge/compliance--62-6e7781"></a>
 <a href="https://perrylink.github.io/dsh-plugins/"><img alt="domain alpha packages" src="https://img.shields.io/badge/domain%20alpha-15%20packages%20%2B%202%20suites-0b5fff"></a>
 <br>
@@ -40,11 +40,11 @@ Beijing — not affiliated with DeepSeek, and not a DeepSeek employee.
 
 **Upstream** — 497 merged pull requests in 98 repositories that are not mine, from AWS, Apple, Docker,
 Microsoft, NVIDIA, Prometheus, Redis, Tencent and the vLLM project down to one-person projects. **The
-family** — 107 actively maintained Apache-2.0 plugins: security, workflows, research,
+family** — 114 actively maintained Apache-2.0 plugins: security, workflows, research,
 messaging bridges, developer experience, since 2026-10-08 a 53-checker compliance suite plus nine newer
-compliance tools, and since 2026-10-31 fifteen public/synthetic S1 business tools: six feed the
-finance/contract suites and stay active, seven are frozen, one stays active as an install companion, and
-one is an active eval utility; the old `dsh-eval-harness` is archived in favor of `dsh-eval-pack`. Their
+compliance tools, and since 2026-10-31 fifteen public/synthetic S1 business tools: all fifteen are active: six feed the
+finance/contract suites, seven are specialist tools, one is an install companion, and
+one is an eval utility; the old `dsh-eval-harness` is archived in favor of `dsh-eval-pack`. Their
 own READMEs mark them not GA. The public catalogue is
 **[perrylink.github.io](https://perrylink.github.io/)** — 114 pages in its sitemap, complete in the served
 HTML with no JavaScript rendering them, so a reader who arrives from a search result sees the text rather
@@ -218,14 +218,13 @@ not listed individually.
 ## 📦 The rest of the family
 
 **The roster holds 125 repositories — 127 declare the `dsh.bundle.patch` contract, minus the two retired
-corridor legs — and 107 are actively maintained** (3 retired, 15 frozen), plus the support repositories —
+corridor legs — and 114 are actively maintained** (3 retired, 8 frozen), plus the support repositories —
 `dsh-kit`, `dsh-catalog`, the certification registry and the CI checker — and one third-party plugin carried
-as a row. The 15 frozen are the original five plus the 2026-10-31 batch: `dsh-autotier`, `dsh-cert-mcp`,
-`dsh-community-bench`, and seven S1 demos (`dsh-docx-redline`, `dsh-freight-audit`, `dsh-ghg`,
-`dsh-hs-candidate`, `dsh-ifc-qto`, `dsh-pim-lint`, `dsh-qms-capa`). Fifteen S1 demos were published
-2026-10-31: six feed `dsh-finops-suite` / `dsh-contract-suite` and stay active, seven are frozen,
-`dsh-policy-ledger` stays active as an install companion, and `dsh-eval-pack` stays active as an eval
-utility; the old `dsh-eval-harness` is archived in favor of it. The roster figure here is measured from each repository's own `package.json` and includes
+as a row. The 8 frozen are the original five plus `dsh-autotier`, `dsh-cert-mcp` and `dsh-community-bench`.
+Fifteen S1 demos were published 2026-10-31 and are all active as of 2026-11-01: six feed
+`dsh-finops-suite` / `dsh-contract-suite`, seven are specialist tools (`dsh-docx-redline`,
+`dsh-freight-audit`, `dsh-ghg`, `dsh-hs-candidate`, `dsh-ifc-qto`, `dsh-pim-lint`, `dsh-qms-capa`),
+`dsh-policy-ledger` is an install companion, and `dsh-eval-pack` is an eval utility; the old `dsh-eval-harness` is archived in favor of it. The roster figure here is measured from each repository's own `package.json` and includes
 the three 2026-10-31 bundle repos (`dsh-eval-pack`, `dsh-finops-suite`, `dsh-contract-suite`). The install
 list is `plugins.txt` in **[dsh-kit](https://github.com/PerryLink/dsh-kit)**, which is the **96-spec mainline installer** (43 default + 53 opt-in checkers), not the whole 125-row family; the exact scope table is [ROSTER.md](https://github.com/PerryLink/dsh-plugins/blob/main/ROSTER.md). The machine-readable catalogue is
 **[dsh-catalog](https://github.com/PerryLink/dsh-catalog)**, which is also the DSH Desktop Market source.
@@ -243,7 +242,7 @@ The eleven story buckets below are a narrative index, **not the marketplace filt
 | 📱 Messaging & bridges | 4 | [dsh-phone-inbox](https://github.com/PerryLink/dsh-phone-inbox) · [dsh-ticktick](https://github.com/PerryLink/dsh-ticktick) · [dsh-reach](https://github.com/PerryLink/dsh-reach) · [dsh-wechat](https://github.com/pan17/dsh-wechat) |
 | 🔬 Research | 4 | [dsh-research-report](https://github.com/PerryLink/dsh-research-report) · [dsh-industry-research](https://github.com/PerryLink/dsh-industry-research) · [dsh-fund-research](https://github.com/PerryLink/dsh-fund-research) |
 | ✅ Compliance & verification | 59 + 3 | 59 checker-first (53 core + 6 newer checker/audit) plus 3 workbench tools (`excel-reconcile`, `table-ingest`, `tender-requirements`); the list is at the [checker index](https://perrylink.github.io/zh/checkers/) |
-| 🏢 Business operations | 15 | 8 active (6 suite members + `dsh-policy-ledger` + `dsh-eval-pack`) and 7 frozen; subdomains finance, legal, ESG, quality, trade, logistics, documents/BIM. [dsh-bankrec](https://github.com/PerryLink/dsh-bankrec) · [dsh-einvoice](https://github.com/PerryLink/dsh-einvoice) · [dsh-legal-intake](https://github.com/PerryLink/dsh-legal-intake) — public/synthetic S1 demos, not GA |
+| 🏢 Business operations | 15 | 15 active (6 suite members, 7 specialist tools, `dsh-policy-ledger` as install companion, `dsh-eval-pack` as eval utility); subdomains finance, legal, ESG, quality, trade, logistics, documents/BIM. [dsh-bankrec](https://github.com/PerryLink/dsh-bankrec) · [dsh-einvoice](https://github.com/PerryLink/dsh-einvoice) · [dsh-legal-intake](https://github.com/PerryLink/dsh-legal-intake) — public/synthetic S1 demos, not GA |
 
 ## 🪦 Retired & frozen (2026-10-05; batch 2026-10-31)
 
