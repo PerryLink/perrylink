@@ -17,6 +17,21 @@ older rounds are historical and no longer resolve.
 
 ---
 
+## 2026-11-01 (ninth round)
+
+- **`docker/docker-agent#4712` merged by `aheritier`** at 2026-10-31T20:24:46Z through the merge queue.
+  The MCP toolset env preflight now expands `${env.X}`, `${X}` and `$X` the same way the runtime does,
+  with regression coverage; Copilot approved and the required CI passed.
+- **496 total: 462 + 34**, across **98 repositories**, **95** of them credited, re-derived at
+  2026-10-31T04:17:54Z. **158** proposals are open across **124** repositories as of
+  2026-11-01T12:20:00Z.
+- **Two forme PRs are blocked by a stale docs gallery on main**, not by their own code: after
+  `#218`'s transform-order merge, `HTML Input Path` reports 30 stale artifacts until
+  `node scripts/docs-templates.mjs` is rerun on main. `#222` (translucent colours) and `#223`
+  (out-of-order objects) are otherwise green (`cargo test -p forme-pdf` 246 + 430).
+- **terraform `#39479` and `#39480`** each carry a `.changes/v1.18` entry now; both wait for
+  maintainer workflow approval.
+
 ## 2026-11-01 (eighth round)
 
 - **`danmolitor/forme#218` merged by `danmolitor`** at 2026-10-31T15:56:57Z, after the rebase onto the
