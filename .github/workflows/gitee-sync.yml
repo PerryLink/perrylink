@@ -96,7 +96,7 @@ jobs:
               return 1
             fi
             local b tip
-            b="$(git -C "/tmp/$name" rev-parse --abbrev-ref HEAD)"
+            b="$(git -C "/tmp/$name" branch --show-current)"
             tip="$(git ls-remote "$remote" "refs/heads/$b" | awk '{print $1}')"
             if [ -z "$tip" ]; then
               # Mirror branch does not exist yet: plain push seeds it.

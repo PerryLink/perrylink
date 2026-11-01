@@ -110,7 +110,7 @@ jobs:
             fi
 
             local b tip live ahead behind
-            b="$("${G[@]}" -C "$work" rev-parse --abbrev-ref HEAD)"
+            b="$("${G[@]}" -C "$work" branch --show-current)"
             live="$("${G[@]}" -C "$work" rev-parse "refs/remotes/origin/$b")"
 
             # Read the mirror tip from the live remote every run so the lease is
