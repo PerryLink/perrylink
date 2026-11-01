@@ -21,6 +21,18 @@ section or a badge of their own.
 
 ---
 
+## 2026-11-01 (eleventh round)
+
+- **No merge landed in this round.** Three proposals were opened or refreshed
+  (`docker/docker-agent#4784`, `huggingface/tau#734` re-based onto current `main`, `Q00/ouroboros#2813`)
+  and one was closed because upstream had already implemented it (`colyseus/schema#239`). None is a
+  merge, so the totals do not move.
+- **497 total: 463 + 34**, across **98 repositories**, **95** credited, re-derived at
+  2026-11-01T12:40:00Z. **162** proposals are open across **127** repositories as of the same time.
+- **Corrections in this round**: the `credited repos` badge and the matching INSTRUMENTATION row said
+  **94**. Both now say **95**, which is what `00-live/_profile-derive.mjs` reports — forme's five merges
+  made it the 95th credited repository on 2026-10-31, and the badge was not moved with the tenth round.
+
 ## 2026-11-01 (tenth round)
 
 - `imsai-sh/awesome-deepseek-harness-plugins#781` ("Add dsh-ghg to the catalog") was merged at
