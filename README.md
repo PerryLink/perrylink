@@ -12,7 +12,6 @@
 <a href="https://github.com/PerryLink/perrylink"><img alt="repositories where a merge is credited" src="https://img.shields.io/badge/credited%20repos-94-6e7781"></a>
 <a href="https://github.com/PerryLink/dsh-kit"><img alt="actively maintained plugins" src="https://img.shields.io/badge/plugins-114-6e7781"></a>
 <a href="https://github.com/PerryLink/perrylink"><img alt="compliance tools" src="https://img.shields.io/badge/compliance--62-6e7781"></a>
-<a href="https://perrylink.github.io/dsh-plugins/"><img alt="domain alpha packages" src="https://img.shields.io/badge/domain%20alpha-15%20packages%20%2B%202%20suites-0b5fff"></a>
 <br>
 <a href="https://www.npmjs.com/search?q=perrylink"><img alt="npm names" src="https://img.shields.io/badge/npm-136%20names-cb3837?logo=npm"></a>
 <img alt="npm downloads 30d" src="https://img.shields.io/badge/npm%20downloads%2030d-273.6k-6e7781">
@@ -67,50 +66,6 @@ behaviour.
 | [dsh-permission-rules](https://github.com/PerryLink/dsh-permission-rules) | Claude Code-style declarative allow/deny/ask rules plus a process-level network policy (136★) | `dsh plugin --profile web add dsh-permission-rules` |
 | [dsh-mcp-panel](https://github.com/PerryLink/dsh-mcp-panel) | MCP management console: `/mcp` + Settings tab + trial calls (91★) | `dsh plugin --profile web add dsh-mcp-panel` |
 | [dsh-phocinae](https://github.com/PerryLink/dsh-phocinae) | Local, non-generative verdicts for the approval chain: a small typed decision model behind `phocinae_ask` / `phocinae_gate`, with fail-closed escalation for everything it does not answer (1★) | `dsh plugin --profile web add dsh-phocinae` |
-
-## 🧩 Domain plugins — 15 packages + 2 suites (alpha)
-
-A separate, deliberately narrow wave: **15 bare-name DSH tools** for finance ops, legal ops, ESG/quality, trade/logistics, documents/models and verify utilities, plus **two one-command suites**. All are **public/synthetic, alpha, not counted, not GA**; no customer data and no customer-accuracy claim. All 17 are **Apache-2.0**, carry five READMEs (en/zh/es/pt/hi), a local workflow SVG, fixture/acceptance-backed examples, four install channels, and the standard `SECURITY` / `PRIVACY` / `CODE_OF_CONDUCT` / `CONTRIBUTING` / `CHANGELOG` / `icon.svg` files.
-
-Both suites carry a real install GIF. Every package is cross-linked with its siblings, the checker family and the mainline `dsh-kit` roster.
-
-**Taxonomy:** [four-axis model](https://github.com/PerryLink/dsh-plugins/blob/main/TAXONOMY.md) · [125-row view](https://perrylink.github.io/dsh-plugins/taxonomy.html) · [roster scopes](https://github.com/PerryLink/dsh-plugins/blob/main/ROSTER.md) · [analysis](https://github.com/PerryLink/dsh-plugins/blob/main/docs/analysis/DSH-PLUGIN-PORTFOLIO-ANALYSIS-2026-11-01.md).
-
-| Family | Packages | Suite |
-|---|---|---|
-| Finance ops | [dsh-einvoice](https://github.com/PerryLink/dsh-einvoice) · [dsh-bankrec](https://github.com/PerryLink/dsh-bankrec) · [dsh-ap-three-way](https://github.com/PerryLink/dsh-ap-three-way) · [dsh-travel-recon](https://github.com/PerryLink/dsh-travel-recon) | [dsh-finops-suite](https://github.com/PerryLink/dsh-finops-suite) |
-| Legal ops | [dsh-legal-intake](https://github.com/PerryLink/dsh-legal-intake) · [dsh-legal-clause](https://github.com/PerryLink/dsh-legal-clause) | [dsh-contract-suite](https://github.com/PerryLink/dsh-contract-suite) |
-| ESG / quality | [dsh-ghg](https://github.com/PerryLink/dsh-ghg) 🧊 · [dsh-qms-capa](https://github.com/PerryLink/dsh-qms-capa) 🧊 | — |
-| Trade / logistics | [dsh-hs-candidate](https://github.com/PerryLink/dsh-hs-candidate) 🧊 · [dsh-freight-audit](https://github.com/PerryLink/dsh-freight-audit) 🧊 | — |
-| Documents / models | [dsh-docx-redline](https://github.com/PerryLink/dsh-docx-redline) 🧊 · [dsh-ifc-qto](https://github.com/PerryLink/dsh-ifc-qto) 🧊 | — |
-| Verify | [dsh-policy-ledger](https://github.com/PerryLink/dsh-policy-ledger) · [dsh-pim-lint](https://github.com/PerryLink/dsh-pim-lint) 🧊 · [dsh-eval-pack](https://github.com/PerryLink/dsh-eval-pack) | — |
-
-<details>
-<summary><b>Latest domain releases — 2026-11-01</b></summary>
-
-| Family | Current versions |
-|---|---|
-| Finance ops | `dsh-einvoice 0.2.0-alpha.7` · `dsh-bankrec 0.1.0-alpha.10` · `dsh-ap-three-way 0.1.0-alpha.7` · `dsh-travel-recon 0.1.0-alpha.9` · `dsh-finops-suite 0.1.0-alpha.6` |
-| Legal ops | `dsh-legal-intake 0.1.0-alpha.6` · `dsh-legal-clause 0.1.0-alpha.8` · `dsh-contract-suite 0.1.0-alpha.5` |
-| ESG / quality | `dsh-ghg 0.1.0-alpha.12` · `dsh-qms-capa 0.1.0-alpha.8` |
-| Trade / logistics | `dsh-hs-candidate 0.1.0-alpha.8` · `dsh-freight-audit 0.1.0-alpha.9` |
-| Documents / models | `dsh-docx-redline 0.1.0-alpha.9` · `dsh-ifc-qto 0.1.0-alpha.9` |
-| Verify | `dsh-policy-ledger 0.2.0-alpha.9` · `dsh-pim-lint 0.1.0-alpha.7` · `dsh-eval-pack 0.1.0-alpha.7` |
-
-17/17 published with npm provenance; 17/17 install smoke passed on the published versions. See the [domain index](https://perrylink.github.io/dsh-plugins/) for per-package pages and the [article](https://perrylink.github.io/dsh-plugins/articles/finops-suite.html) for the finance chain.
-
-</details>
-
-The eval tool is **`dsh-eval-pack`**: the bare `dsh-eval-harness` name is owned by another publisher, so the project was renamed rather than falling back to a scope. The old scoped packages are deprecated redirects.
-
-```sh
-dsh plugin --profile <profile> add dsh-finops-suite
-dsh plugin --profile <profile> add dsh-contract-suite
-```
-
-Suite mirrors: [Gitee finops](https://gitee.com/perrylink/dsh-finops-suite) · [Gitee contract](https://gitee.com/perrylink/dsh-contract-suite) · [GitCode finops](https://gitcode.com/PerryLink/dsh-finops-suite) · [GitCode contract](https://gitcode.com/PerryLink/dsh-contract-suite).
-
-[Index and docs](https://perrylink.github.io/dsh-plugins/) · [GitHub aggregate](https://github.com/PerryLink/dsh-plugins) · [Gitee](https://gitee.com/perrylink/dsh-plugins) · [GitCode](https://gitcode.com/PerryLink/dsh-plugins) · [Scenario article: invoice → bank → three-way → travel](https://perrylink.github.io/dsh-plugins/articles/finops-suite.html)
 
 ## 🦭 Phocinae — my typed-decision model lab
 

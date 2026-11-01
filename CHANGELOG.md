@@ -15,6 +15,10 @@ and `dsh-laya` were introduced by name.
 **2026-10-31: `PROJECTS.md` was removed.** The profile is a single README; links to `PROJECTS.md` in
 older rounds are historical and no longer resolve.
 
+**2026-11-01: the domain-plugins section and its header badge were removed.** The fifteen S1 tools and
+both suites are still in the roster table under 🏢 Business operations; the page no longer gives them a
+section or a badge of their own.
+
 ---
 
 ## 2026-11-01 (tenth round)
