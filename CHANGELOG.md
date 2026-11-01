@@ -17,6 +17,15 @@ older rounds are historical and no longer resolve.
 
 ---
 
+## 2026-11-01 (tenth round)
+
+- `imsai-sh/awesome-deepseek-harness-plugins#781` ("Add dsh-ghg to the catalog") was merged at
+  09:06:58Z. The catalog's default branch stores no PerryLink-authored commit, so the merge counts in
+  the total but not among the **95 credited repositories**.
+- **497 total: 463 + 34**, across **98 repositories**, **95** credited, re-derived at
+  2026-11-01T09:16:29Z. **161** proposals are open across **126** repositories as of
+  2026-11-01T17:15:00Z.
+
 ## 2026-11-01 (ninth round)
 
 - **`docker/docker-agent#4712` merged by `aheritier`** at 2026-10-31T20:24:46Z through the merge queue.
