@@ -74,7 +74,7 @@ A separate, deliberately narrow wave: **15 bare-name DSH tools** for finance ops
 
 Both suites carry a real install GIF. Every package is cross-linked with its siblings, the checker family and the mainline `dsh-kit` roster.
 
-**Taxonomy:** [four-axis model](https://github.com/PerryLink/dsh-plugins/blob/main/TAXONOMY.md) · [126-package filter view](https://perrylink.github.io/dsh-plugins/taxonomy.html) · [analysis](https://github.com/PerryLink/dsh-plugins/blob/main/docs/analysis/DSH-PLUGIN-PORTFOLIO-ANALYSIS-2026-11-01.md).
+**Taxonomy:** [four-axis model](https://github.com/PerryLink/dsh-plugins/blob/main/TAXONOMY.md) · [125-row family taxonomy](https://perrylink.github.io/dsh-plugins/taxonomy.html) · [analysis](https://github.com/PerryLink/dsh-plugins/blob/main/docs/analysis/DSH-PLUGIN-PORTFOLIO-ANALYSIS-2026-11-01.md).
 
 | Family | Packages | Suite |
 |---|---|---|
