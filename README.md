@@ -227,7 +227,7 @@ as a row. The 15 frozen are the original five plus the 2026-10-31 batch: `dsh-au
 `dsh-policy-ledger` stays active as an install companion, and `dsh-eval-pack` stays active as an eval
 utility; the old `dsh-eval-harness` is archived in favor of it. The roster figure here is measured from each repository's own `package.json` and includes
 the three 2026-10-31 bundle repos (`dsh-eval-pack`, `dsh-finops-suite`, `dsh-contract-suite`). The install
-list is `plugins.txt` in **[dsh-kit](https://github.com/PerryLink/dsh-kit)**, which is the **92-spec mainline installer** (39 default + 53 opt-in checkers), not the whole 125-row family; the exact scope table is [ROSTER.md](https://github.com/PerryLink/dsh-plugins/blob/main/ROSTER.md). The machine-readable catalogue is
+list is `plugins.txt` in **[dsh-kit](https://github.com/PerryLink/dsh-kit)**, which is the **96-spec mainline installer** (43 default + 53 opt-in checkers), not the whole 125-row family; the exact scope table is [ROSTER.md](https://github.com/PerryLink/dsh-plugins/blob/main/ROSTER.md). The machine-readable catalogue is
 **[dsh-catalog](https://github.com/PerryLink/dsh-catalog)**, which is also the DSH Desktop Market source.
 The eleven story buckets below are a narrative index, **not the marketplace filter**. The market filter is the four-axis taxonomy (12 categories + archetype + domain): [TAXONOMY.md](https://github.com/PerryLink/dsh-plugins/blob/main/TAXONOMY.md) · [125-row view](https://perrylink.github.io/dsh-plugins/taxonomy.html) · [roster scopes](https://github.com/PerryLink/dsh-plugins/blob/main/ROSTER.md). Each plugin's own README carries the one-line detail.
 
