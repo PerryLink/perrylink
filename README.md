@@ -8,7 +8,7 @@
 <a href="https://github.com/PerryLink?tab=repositories"><img alt="GitHub stars" src="https://img.shields.io/github/stars/PerryLink?label=stars&affiliations=OWNER&color=24292f"></a>
 <a href="https://github.com/PerryLink?tab=followers"><img alt="GitHub followers" src="https://img.shields.io/github/followers/PerryLink?label=followers&color=24292f"></a>
 <a href="https://github.com/PerryLink?tab=repositories"><img alt="GitHub repos" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FPerryLink&query=%24.public_repos&label=repos&color=24292f"></a>
-<a href="https://github.com/PerryLink/perrylink"><img alt="merged upstream" src="https://img.shields.io/badge/upstream%20merges-495-6e7781"></a>
+<a href="https://github.com/PerryLink/perrylink"><img alt="merged upstream" src="https://img.shields.io/badge/upstream%20merges-496-6e7781"></a>
 <a href="https://github.com/PerryLink/perrylink"><img alt="repositories where a merge is credited" src="https://img.shields.io/badge/credited%20repos-94-6e7781"></a>
 <a href="https://github.com/PerryLink/dsh-kit"><img alt="actively maintained plugins" src="https://img.shields.io/badge/plugins-107-6e7781"></a>
 <a href="https://github.com/PerryLink/perrylink"><img alt="compliance checkers" src="https://img.shields.io/badge/checkers-62-6e7781"></a>
@@ -38,7 +38,7 @@ I fix other people's projects, I maintain a plugin family for
 [Phocinae](https://github.com/Phocinae), my typed-decision model lab. Independent open-source developer in
 Beijing — not affiliated with DeepSeek, and not a DeepSeek employee.
 
-**Upstream** — 495 merged pull requests in 98 repositories that are not mine, from AWS, Apple, Docker,
+**Upstream** — 496 merged pull requests in 98 repositories that are not mine, from AWS, Apple, Docker,
 Microsoft, NVIDIA, Prometheus, Redis, Tencent and the vLLM project down to one-person projects. **The
 family** — 107 actively maintained Apache-2.0 plugins: security, workflows, research,
 messaging bridges, developer experience, since 2026-10-08 a 53-checker compliance suite plus nine newer
@@ -113,11 +113,11 @@ eval scripts.
 ## 🔧 Upstream & community contributions
 
 *Every repository below is external to `PerryLink/*`, every row is merged work, and open proposals are
-deliberately not listed — as of 2026-11-01T00:20:00Z, 157 are open across 125 repositories. ★ re-measured
+deliberately not listed — as of 2026-11-01T12:20:00Z, 158 are open across 124 repositories. ★ re-measured
 2026-10-31 for every row; the third column names the party that owns the project, because the account name
 alone does not say whether that is a company, a standards body or one person. Every external repository
 above 1,000★ that carries merged work is listed: sixteen above 10,000★ in the table, thirty-seven between
-1,000★ and 10,000★ in the fold below, and another forty-five below 1,000★ counted in the 495 but not
+1,000★ and 10,000★ in the fold below, and another forty-five below 1,000★ counted in the 496 but not
 listed individually.*
 
 | Repository | ★ | 项目归属方 |
@@ -184,7 +184,7 @@ listed individually.*
 
 </details>
 
-Another **45 external repositories below 1,000★** carry merged work and are counted in the 495; they are
+Another **45 external repositories below 1,000★** carry merged work and are counted in the 496; they are
 not listed individually.
 
 ## 📦 The rest of the family
