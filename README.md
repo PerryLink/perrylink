@@ -74,7 +74,7 @@ A separate, deliberately narrow wave: **15 bare-name DSH tools** for finance ops
 
 Both suites carry a real install GIF. Every package is cross-linked with its siblings, the checker family and the mainline `dsh-kit` roster.
 
-**Taxonomy:** [four-axis model](https://github.com/PerryLink/dsh-plugins/blob/main/TAXONOMY.md) · [roster scopes](https://github.com/PerryLink/dsh-plugins/blob/main/ROSTER.md) · [analysis](https://github.com/PerryLink/dsh-plugins/blob/main/docs/analysis/DSH-PLUGIN-PORTFOLIO-ANALYSIS-2026-11-01.md).
+**Taxonomy:** [four-axis model](https://github.com/PerryLink/dsh-plugins/blob/main/TAXONOMY.md) · [125-row view](https://perrylink.github.io/dsh-plugins/taxonomy.html) · [roster scopes](https://github.com/PerryLink/dsh-plugins/blob/main/ROSTER.md) · [analysis](https://github.com/PerryLink/dsh-plugins/blob/main/docs/analysis/DSH-PLUGIN-PORTFOLIO-ANALYSIS-2026-11-01.md).
 
 | Family | Packages | Suite |
 |---|---|---|
@@ -229,7 +229,7 @@ utility; the old `dsh-eval-harness` is archived in favor of it. The roster figur
 the three 2026-10-31 bundle repos (`dsh-eval-pack`, `dsh-finops-suite`, `dsh-contract-suite`). The install
 list is `plugins.txt` in **[dsh-kit](https://github.com/PerryLink/dsh-kit)**, which is the **92-spec mainline installer** (39 default + 53 opt-in checkers), not the whole 125-row family; the exact scope table is [ROSTER.md](https://github.com/PerryLink/dsh-plugins/blob/main/ROSTER.md). The machine-readable catalogue is
 **[dsh-catalog](https://github.com/PerryLink/dsh-catalog)**, which is also the DSH Desktop Market source.
-The eleven story buckets below are a narrative index, **not the marketplace filter**. The market filter is the four-axis taxonomy (12 categories + archetype + domain): [TAXONOMY.md](https://github.com/PerryLink/dsh-plugins/blob/main/TAXONOMY.md) · [roster scopes](https://github.com/PerryLink/dsh-plugins/blob/main/ROSTER.md). Each plugin's own README carries the one-line detail.
+The eleven story buckets below are a narrative index, **not the marketplace filter**. The market filter is the four-axis taxonomy (12 categories + archetype + domain): [TAXONOMY.md](https://github.com/PerryLink/dsh-plugins/blob/main/TAXONOMY.md) · [125-row view](https://perrylink.github.io/dsh-plugins/taxonomy.html) · [roster scopes](https://github.com/PerryLink/dsh-plugins/blob/main/ROSTER.md). Each plugin's own README carries the one-line detail.
 
 | | # | Some of what is in it |
 |---|---|---|
