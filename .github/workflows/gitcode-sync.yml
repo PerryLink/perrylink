@@ -159,8 +159,20 @@ jobs:
             fi
 
             # Refresh tags (a release may have moved a tag). Safe under fast-forward.
-            "${G[@]}" -C "$work" push --tags --force "$MIRROR/$r.git" 2>&1 | mask || {
-              echo "FAIL push tags $r"; fails=$((fails + 1)); return 1; }
+            # GitCode rejects a tag named like an existing branch ("The name of the
+            # new tag cannot be the same as that of an existing branch") and the
+            # pre-receive hook drops every other tag in that push with it, so a tag
+            # colliding with the branch is skipped instead of failing the repo.
+            local -a tagrefs=()
+            local t
+            while IFS= read -r t; do
+              [ "$t" = "$b" ] && { echo "SKIP tag $r:$t (same name as the branch)"; continue; }
+              tagrefs+=("refs/tags/$t:refs/tags/$t")
+            done < <("${G[@]}" -C "$work" tag -l)
+            if [ "${#tagrefs[@]}" -gt 0 ]; then
+              "${G[@]}" -C "$work" push --force "$MIRROR/$r.git" "${tagrefs[@]}" 2>&1 | mask || {
+                echo "FAIL push tags $r"; fails=$((fails + 1)); return 1; }
+            fi
 
             rm -rf "$work" "$errlog"
             synced=$((synced + 1))
