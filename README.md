@@ -230,7 +230,7 @@ the three 2026-10-31 bundle repos (`dsh-eval-pack`, `dsh-finops-suite`, `dsh-con
 list is `plugins.txt` in **[dsh-kit](https://github.com/PerryLink/dsh-kit)**, which records the 2026-10-19 cut
 plus the 2026-10-31 freeze batch. The machine-readable catalogue is
 **[dsh-catalog](https://github.com/PerryLink/dsh-catalog)**, which is also the DSH Desktop Market source.
-The eleven categories below are the map; each plugin's own README carries the one-line detail.
+The eleven story buckets below are a narrative index, **not the marketplace filter**. The market filter is the four-axis taxonomy (12 categories + archetype + domain): [TAXONOMY.md](https://github.com/PerryLink/dsh-plugins/blob/main/TAXONOMY.md) · [125-row view](https://perrylink.github.io/dsh-plugins/taxonomy.html). Each plugin's own README carries the one-line detail.
 
 | | # | Some of what is in it |
 |---|---|---|
@@ -243,8 +243,8 @@ The eleven categories below are the map; each plugin's own README carries the on
 | 🛠️ Developer experience | 6 | [dsh-mcp-panel](https://github.com/PerryLink/dsh-mcp-panel) · [dsh-plugin-guide](https://github.com/PerryLink/dsh-plugin-guide) · [jevcore](https://github.com/PerryLink/jevcore) |
 | 📱 Messaging & bridges | 4 | [dsh-phone-inbox](https://github.com/PerryLink/dsh-phone-inbox) · [dsh-ticktick](https://github.com/PerryLink/dsh-ticktick) · [dsh-reach](https://github.com/PerryLink/dsh-reach) · [dsh-wechat](https://github.com/pan17/dsh-wechat) |
 | 🔬 Research | 4 | [dsh-research-report](https://github.com/PerryLink/dsh-research-report) · [dsh-industry-research](https://github.com/PerryLink/dsh-industry-research) · [dsh-fund-research](https://github.com/PerryLink/dsh-fund-research) |
-| ✅ Compliance checkers & tools | 62 | A register or record set read against a versioned rule pack, ten domains from tendering to litigation, plus nine newer tools — the list is at the [checker index](https://perrylink.github.io/zh/checkers/) |
-| 🏢 Finance, legal & operations | 15 | [dsh-bankrec](https://github.com/PerryLink/dsh-bankrec) · [dsh-einvoice](https://github.com/PerryLink/dsh-einvoice) · [dsh-legal-intake](https://github.com/PerryLink/dsh-legal-intake) — public/synthetic S1 demos published 2026-10-31, not GA; six feed the finance/contract suites, seven are frozen |
+| ✅ Compliance & verification | 59 + 3 | 59 checker-first (53 core + 6 newer checker/audit) plus 3 workbench tools (`excel-reconcile`, `table-ingest`, `tender-requirements`); the list is at the [checker index](https://perrylink.github.io/zh/checkers/) |
+| 🏢 Business operations | 15 | 8 active (6 suite members + `dsh-policy-ledger` + `dsh-eval-pack`) and 7 frozen; subdomains finance, legal, ESG, quality, trade, logistics, documents/BIM. [dsh-bankrec](https://github.com/PerryLink/dsh-bankrec) · [dsh-einvoice](https://github.com/PerryLink/dsh-einvoice) · [dsh-legal-intake](https://github.com/PerryLink/dsh-legal-intake) — public/synthetic S1 demos, not GA |
 
 ## 🪦 Retired & frozen (2026-10-05; batch 2026-10-31)
 
