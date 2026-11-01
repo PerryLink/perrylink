@@ -25,7 +25,7 @@ absent. The two sanctioned exceptions are marked.
 | npm 30-day downloads | README § Where the plugins live | monthly |
 | **npm downloads badge** *(exception)* | README badge row | same |
 | npm names / versions / non-deprecated latest | README § Where the plugins live | monthly |
-| npm provenance — **state the metric**: **98** names carry SLSA provenance on their non-deprecated `latest`; **105** carry it on at least one version; the twenty-seven with none anywhere are named in the page (measured 2026-10-31, over the 132 names registry search now enumerates) | README § Where the plugins live | monthly |
+| npm provenance — **state the metric**: **116** names carry SLSA provenance on their non-deprecated `latest`; **122** carry it on at least one version; the fourteen with none anywhere are named in the page (measured 2026-11-01, over the 136 names registry search now enumerates) | README § Where the plugins live | monthly |
 | dshfind aggregate tier — **how to read it**: dshfind publishes a badge per plugin at `/api/badge/<owner>/<repo>?metric=downloads` (the `<img>` every plugin page embeds). Nine of the family's repositories answer with a download tier, 26 fall back to ★. The 35 indexed repositories are counted from its sitemap shards (`/sitemap/plugins-N.xml`), not from the search page, which is client-side | README § Where the plugins live (tier counts) | when dshfind re-renders |
 | dsh host corridor / node engine / license | README badge row (each links to the file it is read from) | when the declared range or the engines change |
 | external contributor repos / merges / above-1,000★ | README § Upstream (the aggregate line and the two tables) | on re-derivation |
@@ -191,7 +191,7 @@ measurement).
 | Row | px | Badges |
 |---|---|---|
 | 1 — reach and counters | 678 | stars (82), followers (112), repos (72), upstream merges 496 (138), credited repos 95 (112), plugins 107 (80), checkers 62 (82) |
-| 2 — npm and stack | 728 | npm 132 names (123), npm downloads 30d 273.6k (170), npm provenance 105/132 (160), license (120), node (155) |
+| 2 — npm and stack | 728 | npm 136 names (123), npm downloads 30d 273.6k (170), npm provenance 122/136 (160), license (120), node (155) |
 | 3 — quality and registry | 668 | dsh host corridor (146), OpenSSF Scorecard (136), Glama (110), certified (132), MCP Registry 4 servers (144) |
 | 4 — index, mirror, feeds | 787 | plugin index 114 pages (144), Gitee (108), dshfind 45.5k+ across 9 (256), Desktop Market source (172), Zenodo DOI (~114) |
 
@@ -263,9 +263,9 @@ is merely "balanced" is not enough: balance is exactly what produced the 836px r
 | credited repos | 94 | "Upstream" |
 | plugins | 107 | the intro sentence |
 | checkers | 62 | the 53-checker suite plus the nine 2026-10-23 tools (the fifteen 2026-10-31 demos are not counted here) |
-| npm names | 132 | "Where the plugins live" |
+| npm names | 136 | "Where the plugins live" |
 | npm downloads 30d | 273.6k | "Where the plugins live" (273,579) |
-| npm provenance | 105/132 | "Where the plugins live" |
+| npm provenance | 122/136 | "Where the plugins live" |
 | MCP Registry | 4 servers | "Where the plugins live" |
 | DSH Desktop Market source | (no number) | the catalog URL — reached over jsDelivr, see the reachability note in §4 |
 | Gitee mirror | (no number) | the mirror claim |
