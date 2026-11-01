@@ -9,7 +9,7 @@
 <a href="https://github.com/PerryLink?tab=followers"><img alt="GitHub followers" src="https://img.shields.io/github/followers/PerryLink?label=followers&color=24292f"></a>
 <a href="https://github.com/PerryLink?tab=repositories"><img alt="GitHub repos" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FPerryLink&query=%24.public_repos&label=repos&color=24292f"></a>
 <a href="https://github.com/PerryLink/perrylink"><img alt="merged upstream" src="https://img.shields.io/badge/upstream%20merges-497-6e7781"></a>
-<a href="https://github.com/PerryLink/perrylink"><img alt="repositories where a merge is credited" src="https://img.shields.io/badge/credited%20repos-94-6e7781"></a>
+<a href="https://github.com/PerryLink/perrylink"><img alt="repositories where a merge is credited" src="https://img.shields.io/badge/credited%20repos-95-6e7781"></a>
 <a href="https://github.com/PerryLink/dsh-kit"><img alt="actively maintained plugins" src="https://img.shields.io/badge/plugins-114-6e7781"></a>
 <a href="https://github.com/PerryLink/perrylink"><img alt="compliance tools" src="https://img.shields.io/badge/compliance--62-6e7781"></a>
 <br>
@@ -96,7 +96,7 @@ eval scripts.
 ## 🔧 Upstream & community contributions
 
 *Every repository below is external to `PerryLink/*`, every row is merged work, and open proposals are
-deliberately not listed — as of 2026-11-01T17:15:00Z, 161 are open across 126 repositories. ★ re-measured
+deliberately not listed — as of 2026-11-01T12:40:00Z, 162 are open across 127 repositories. ★ re-measured
 2026-10-31 for every row; the third column names the party that owns the project, because the account name
 alone does not say whether that is a company, a standards body or one person. Every external repository
 above 1,000★ that carries merged work is listed: sixteen above 10,000★ in the table, thirty-seven between
