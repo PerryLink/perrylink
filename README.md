@@ -11,7 +11,7 @@
 <a href="https://github.com/PerryLink/perrylink"><img alt="merged upstream" src="https://img.shields.io/badge/upstream%20merges-496-6e7781"></a>
 <a href="https://github.com/PerryLink/perrylink"><img alt="repositories where a merge is credited" src="https://img.shields.io/badge/credited%20repos-94-6e7781"></a>
 <a href="https://github.com/PerryLink/dsh-kit"><img alt="actively maintained plugins" src="https://img.shields.io/badge/plugins-107-6e7781"></a>
-<a href="https://github.com/PerryLink/perrylink"><img alt="compliance checkers" src="https://img.shields.io/badge/checkers-62-6e7781"></a>
+<a href="https://github.com/PerryLink/perrylink"><img alt="compliance tools" src="https://img.shields.io/badge/compliance--62-6e7781"></a>
 <a href="https://perrylink.github.io/dsh-plugins/"><img alt="domain alpha packages" src="https://img.shields.io/badge/domain%20alpha-15%20packages%20%2B%202%20suites-0b5fff"></a>
 <br>
 <a href="https://www.npmjs.com/search?q=perrylink"><img alt="npm names" src="https://img.shields.io/badge/npm-136%20names-cb3837?logo=npm"></a>
@@ -43,8 +43,9 @@ Microsoft, NVIDIA, Prometheus, Redis, Tencent and the vLLM project down to one-p
 family** — 107 actively maintained Apache-2.0 plugins: security, workflows, research,
 messaging bridges, developer experience, since 2026-10-08 a 53-checker compliance suite plus nine newer
 compliance tools, and since 2026-10-31 fifteen public/synthetic S1 business tools: six feed the
-finance/contract suites, seven are frozen, one stays active as an install companion, and one is archived
-in favor of `dsh-eval-pack`; their own READMEs mark them not GA. The public catalogue is
+finance/contract suites and stay active, seven are frozen, one stays active as an install companion, and
+one is an active eval utility; the old `dsh-eval-harness` is archived in favor of `dsh-eval-pack`. Their
+own READMEs mark them not GA. The public catalogue is
 **[perrylink.github.io](https://perrylink.github.io/)** — 114 pages in its sitemap, complete in the served
 HTML with no JavaScript rendering them, so a reader who arrives from a search result sees the text rather
 than a loading state.
@@ -69,7 +70,11 @@ behaviour.
 
 ## 🧩 Domain plugins — 15 packages + 2 suites (alpha)
 
-A separate, deliberately narrow wave: **15 bare-name DSH tools** for finance ops, legal ops, ESG/quality, trade/logistics, documents/models and verify utilities, plus **two one-command suites**. All are **public/synthetic, alpha, not counted, not GA**; no customer data and no customer-accuracy claim. All 17 are **Apache-2.0**, carry five READMEs (en/zh/es/pt/hi), a local workflow SVG, fixture/acceptance-backed examples, four install channels, and the standard `SECURITY` / `PRIVACY` / `CODE_OF_CONDUCT` / `CONTRIBUTING` / `CHANGELOG` / `icon.svg` files. Both suites carry a real install GIF. Every package is cross-linked with its siblings, the checker family and the mainline `dsh-kit` roster.
+A separate, deliberately narrow wave: **15 bare-name DSH tools** for finance ops, legal ops, ESG/quality, trade/logistics, documents/models and verify utilities, plus **two one-command suites**. All are **public/synthetic, alpha, not counted, not GA**; no customer data and no customer-accuracy claim. All 17 are **Apache-2.0**, carry five READMEs (en/zh/es/pt/hi), a local workflow SVG, fixture/acceptance-backed examples, four install channels, and the standard `SECURITY` / `PRIVACY` / `CODE_OF_CONDUCT` / `CONTRIBUTING` / `CHANGELOG` / `icon.svg` files.
+
+Both suites carry a real install GIF. Every package is cross-linked with its siblings, the checker family and the mainline `dsh-kit` roster.
+
+**Taxonomy:** [four-axis model](https://github.com/PerryLink/dsh-plugins/blob/main/TAXONOMY.md) · [126-package filter view](https://perrylink.github.io/dsh-plugins/taxonomy.html) · [analysis](https://github.com/PerryLink/dsh-plugins/blob/main/docs/analysis/DSH-PLUGIN-PORTFOLIO-ANALYSIS-2026-11-01.md).
 
 | Family | Packages | Suite |
 |---|---|---|
@@ -85,12 +90,12 @@ A separate, deliberately narrow wave: **15 bare-name DSH tools** for finance ops
 
 | Family | Current versions |
 |---|---|
-| Finance ops | `dsh-einvoice 0.2.0-alpha.6` · `dsh-bankrec 0.1.0-alpha.9` · `dsh-ap-three-way 0.1.0-alpha.6` · `dsh-travel-recon 0.1.0-alpha.8` · `dsh-finops-suite 0.1.0-alpha.5` |
-| Legal ops | `dsh-legal-intake 0.1.0-alpha.5` · `dsh-legal-clause 0.1.0-alpha.7` · `dsh-contract-suite 0.1.0-alpha.4` |
-| ESG / quality | `dsh-ghg 0.1.0-alpha.11` · `dsh-qms-capa 0.1.0-alpha.7` |
-| Trade / logistics | `dsh-hs-candidate 0.1.0-alpha.7` · `dsh-freight-audit 0.1.0-alpha.8` |
-| Documents / models | `dsh-docx-redline 0.1.0-alpha.8` · `dsh-ifc-qto 0.1.0-alpha.8` |
-| Verify | `dsh-policy-ledger 0.2.0-alpha.8` · `dsh-pim-lint 0.1.0-alpha.6` · `dsh-eval-pack 0.1.0-alpha.6` |
+| Finance ops | `dsh-einvoice 0.2.0-alpha.7` · `dsh-bankrec 0.1.0-alpha.10` · `dsh-ap-three-way 0.1.0-alpha.7` · `dsh-travel-recon 0.1.0-alpha.9` · `dsh-finops-suite 0.1.0-alpha.6` |
+| Legal ops | `dsh-legal-intake 0.1.0-alpha.6` · `dsh-legal-clause 0.1.0-alpha.8` · `dsh-contract-suite 0.1.0-alpha.5` |
+| ESG / quality | `dsh-ghg 0.1.0-alpha.12` · `dsh-qms-capa 0.1.0-alpha.8` |
+| Trade / logistics | `dsh-hs-candidate 0.1.0-alpha.8` · `dsh-freight-audit 0.1.0-alpha.9` |
+| Documents / models | `dsh-docx-redline 0.1.0-alpha.9` · `dsh-ifc-qto 0.1.0-alpha.9` |
+| Verify | `dsh-policy-ledger 0.2.0-alpha.9` · `dsh-pim-lint 0.1.0-alpha.7` · `dsh-eval-pack 0.1.0-alpha.7` |
 
 17/17 published with npm provenance; 17/17 install smoke passed on the published versions. See the [domain index](https://perrylink.github.io/dsh-plugins/) for per-package pages and the [article](https://perrylink.github.io/dsh-plugins/articles/finops-suite.html) for the finance chain.
 
@@ -219,8 +224,8 @@ as a row. The 15 frozen are the original five plus the 2026-10-31 batch: `dsh-au
 `dsh-community-bench`, and seven S1 demos (`dsh-docx-redline`, `dsh-freight-audit`, `dsh-ghg`,
 `dsh-hs-candidate`, `dsh-ifc-qto`, `dsh-pim-lint`, `dsh-qms-capa`). Fifteen S1 demos were published
 2026-10-31: six feed `dsh-finops-suite` / `dsh-contract-suite` and stay active, seven are frozen,
-`dsh-policy-ledger` stays active as an install companion, and `dsh-eval-harness` is archived in favor of
-`dsh-eval-pack`. The roster figure here is measured from each repository's own `package.json` and includes
+`dsh-policy-ledger` stays active as an install companion, and `dsh-eval-pack` stays active as an eval
+utility; the old `dsh-eval-harness` is archived in favor of it. The roster figure here is measured from each repository's own `package.json` and includes
 the three 2026-10-31 bundle repos (`dsh-eval-pack`, `dsh-finops-suite`, `dsh-contract-suite`). The install
 list is `plugins.txt` in **[dsh-kit](https://github.com/PerryLink/dsh-kit)**, which records the 2026-10-19 cut
 plus the 2026-10-31 freeze batch. The machine-readable catalogue is
@@ -279,7 +284,7 @@ working, and no second implementation is maintained.
   at 500+ — which add to **45,500+**. The badges are rounded tiers, so that is a floor and not a total.
 - **DSH Desktop Market** — add
   `https://cdn.jsdelivr.net/gh/PerryLink/dsh-catalog@main/deploy/artifacts/v1/plugins.json` under
-  Market → Sources to browse the family in-app (109 packages, catalogue generated 2026-10-29).
+  Market → Sources to browse the family in-app (126 packages, catalogue generated 2026-11-01).
 - **MCP Registry** — four servers, all published from their release workflows over GitHub OIDC:
   `dsh-cert-mcp` (🧊 frozen, reference only), `dsh-customs-mcp`, `jevcore-mcp` and `laya-mcp`.
 - **GitHub Actions** — [dsh-github](https://github.com/PerryLink/dsh-github) and
