@@ -69,7 +69,7 @@ behaviour.
 
 ## 🧩 Domain plugins — 15 packages + 2 suites (alpha)
 
-A separate, deliberately narrow wave: **15 bare-name DSH tools** for finance ops, legal ops, ESG/quality, trade/logistics, documents/models and verify utilities, plus **two one-command suites**. All are **public/synthetic, alpha, not counted, not GA**; no customer data and no customer-accuracy claim. Each repository now carries five READMEs (en/zh/es/pt/hi), a local `docs/assets/<name>-flow.svg`, and both suites carry a real install GIF. They are cross-linked with the checker family and the mainline `dsh-kit` roster, and all 17 are Apache-2.0.
+A separate, deliberately narrow wave: **15 bare-name DSH tools** for finance ops, legal ops, ESG/quality, trade/logistics, documents/models and verify utilities, plus **two one-command suites**. All are **public/synthetic, alpha, not counted, not GA**; no customer data and no customer-accuracy claim. All 17 are **Apache-2.0**, carry five READMEs (en/zh/es/pt/hi), a local workflow SVG, fixture/acceptance-backed examples, four install channels, and the standard `SECURITY` / `PRIVACY` / `CODE_OF_CONDUCT` / `CONTRIBUTING` / `CHANGELOG` / `icon.svg` files. Both suites carry a real install GIF. Every package is cross-linked with its siblings, the checker family and the mainline `dsh-kit` roster.
 
 | Family | Packages | Suite |
 |---|---|---|
@@ -80,7 +80,30 @@ A separate, deliberately narrow wave: **15 bare-name DSH tools** for finance ops
 | Documents / models | [dsh-docx-redline](https://github.com/PerryLink/dsh-docx-redline) 🧊 · [dsh-ifc-qto](https://github.com/PerryLink/dsh-ifc-qto) 🧊 | — |
 | Verify | [dsh-policy-ledger](https://github.com/PerryLink/dsh-policy-ledger) · [dsh-pim-lint](https://github.com/PerryLink/dsh-pim-lint) 🧊 · [dsh-eval-pack](https://github.com/PerryLink/dsh-eval-pack) | — |
 
+<details>
+<summary><b>Latest domain releases — 2026-11-01</b></summary>
+
+| Family | Current versions |
+|---|---|
+| Finance ops | `dsh-einvoice 0.2.0-alpha.6` · `dsh-bankrec 0.1.0-alpha.9` · `dsh-ap-three-way 0.1.0-alpha.6` · `dsh-travel-recon 0.1.0-alpha.8` · `dsh-finops-suite 0.1.0-alpha.5` |
+| Legal ops | `dsh-legal-intake 0.1.0-alpha.5` · `dsh-legal-clause 0.1.0-alpha.7` · `dsh-contract-suite 0.1.0-alpha.4` |
+| ESG / quality | `dsh-ghg 0.1.0-alpha.11` · `dsh-qms-capa 0.1.0-alpha.7` |
+| Trade / logistics | `dsh-hs-candidate 0.1.0-alpha.7` · `dsh-freight-audit 0.1.0-alpha.8` |
+| Documents / models | `dsh-docx-redline 0.1.0-alpha.8` · `dsh-ifc-qto 0.1.0-alpha.8` |
+| Verify | `dsh-policy-ledger 0.2.0-alpha.8` · `dsh-pim-lint 0.1.0-alpha.6` · `dsh-eval-pack 0.1.0-alpha.6` |
+
+17/17 published with npm provenance; 17/17 install smoke passed on the published versions. See the [domain index](https://perrylink.github.io/dsh-plugins/) for per-package pages and the [article](https://perrylink.github.io/dsh-plugins/articles/finops-suite.html) for the finance chain.
+
+</details>
+
 The eval tool is **`dsh-eval-pack`**: the bare `dsh-eval-harness` name is owned by another publisher, so the project was renamed rather than falling back to a scope. The old scoped packages are deprecated redirects.
+
+```sh
+dsh plugin --profile <profile> add dsh-finops-suite
+dsh plugin --profile <profile> add dsh-contract-suite
+```
+
+Suite mirrors: [Gitee finops](https://gitee.com/perrylink/dsh-finops-suite) · [Gitee contract](https://gitee.com/perrylink/dsh-contract-suite) · [GitCode finops](https://gitcode.com/PerryLink/dsh-finops-suite) · [GitCode contract](https://gitcode.com/PerryLink/dsh-contract-suite).
 
 [Index and docs](https://perrylink.github.io/dsh-plugins/) · [GitHub aggregate](https://github.com/PerryLink/dsh-plugins) · [Gitee](https://gitee.com/perrylink/dsh-plugins) · [GitCode](https://gitcode.com/PerryLink/dsh-plugins) · [Scenario article: invoice → bank → three-way → travel](https://perrylink.github.io/dsh-plugins/articles/finops-suite.html)
 
@@ -247,8 +270,7 @@ working, and no second implementation is maintained.
 ## 🌍 Where the plugins live
 
 - **GitHub** (this profile), **[Gitee](https://gitee.com/perrylink)** and **npm** — source, CI and releases
-  here; 108 repositories are mirrored to Gitee by a daily job (default branch and all tags; the list now
-  includes the seven new 2026-10-31 mirrors, though not every demo is mirrored yet). The `perrylink` npm
+  here; the mainline Gitee mirror covers 108 repositories (default branch and all tags), while the domain set adds five flagships plus both suites on Gitee and three flagships plus both suites on GitCode, with latest release assets. The `perrylink` npm
   account holds **136 names and 1,833 versions**; **122** of them carry a SLSA provenance attestation on at
   least one version, **116** on the current `latest`.
 - **npm downloads** — **273,579 over the trailing 30 days** (window 2026-10-01..10-30).
