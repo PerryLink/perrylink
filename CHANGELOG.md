@@ -21,6 +21,18 @@ section or a badge of their own.
 
 ---
 
+## 2026-11-02 (twelfth round)
+
+- **Three merges landed overnight, two of them in repositories we had never landed a commit in.**
+  - `milvus-io/milvus#54934` (02:37:58Z) — the duplicate-PK limit test now accepts fewer than `limit` hits once
+    duplicates are deduplicated; `yanliang567` approved, the merge bot landed it. **New credited repository.**
+  - `iflytek/skillhub#1045` (03:24:47Z, `XiaoSeS`) — clips the last two suite version cells that still overflowed,
+    a follow-up to the maintainers' own `#1040`. **New credited repository.**
+  - `kriszyp/msgpackr#231` (02:29:57Z, `kriszyp`) — a lone surrogate now encodes as U+FFFD in short strings too.
+    `kriszyp` then ported the same fix to `cbor-x` himself (`#162`); that commit is his, not ours.
+- **500 total: 466 + 34**, across **100 repositories**, **97** credited, re-derived at 2026-11-02T04:25Z.
+  **161** proposals are open across **127** repositories as of 2026-11-02T04:30:00Z.
+
 ## 2026-11-01 (eleventh round)
 
 - **No merge landed in this round.** Three proposals were opened or refreshed
