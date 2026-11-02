@@ -21,6 +21,14 @@ section or a badge of their own.
 
 ---
 
+## 2026-11-02 (fourteenth round)
+
+- **`redis/go-redis#4168` merged** at 13:57:10Z by `ndyakov`: a disabled `DialTimeout` is no longer
+  turned into a deadline, after the diff was narrowed to the dial-timeout part of #4143.
+  **New credited repository** (22,284★).
+- **502 total: 468 + 34**, across **102 repositories**, **99** credited, re-derived at 2026-11-02T14:40Z.
+  **169** proposals are open across **126** repositories as of the same time.
+
 ## 2026-11-02 (thirteenth round)
 
 - **`webpack/webpack-bundle-analyzer#745` merged** at 11:32:54Z by `valscion`: module paths are split on both
