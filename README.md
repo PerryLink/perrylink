@@ -8,8 +8,8 @@
 <a href="https://github.com/PerryLink?tab=repositories"><img alt="GitHub stars" src="https://img.shields.io/github/stars/PerryLink?label=stars&affiliations=OWNER&color=24292f"></a>
 <a href="https://github.com/PerryLink?tab=followers"><img alt="GitHub followers" src="https://img.shields.io/github/followers/PerryLink?label=followers&color=24292f"></a>
 <a href="https://github.com/PerryLink?tab=repositories"><img alt="GitHub repos" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FPerryLink&query=%24.public_repos&label=repos&color=24292f"></a>
-<a href="https://github.com/PerryLink/perrylink"><img alt="merged upstream" src="https://img.shields.io/badge/upstream%20merges-501-6e7781"></a>
-<a href="https://github.com/PerryLink/perrylink"><img alt="repositories where a merge is credited" src="https://img.shields.io/badge/credited%20repos-98-6e7781"></a>
+<a href="https://github.com/PerryLink/perrylink"><img alt="merged upstream" src="https://img.shields.io/badge/upstream%20merges-502-6e7781"></a>
+<a href="https://github.com/PerryLink/perrylink"><img alt="repositories where a merge is credited" src="https://img.shields.io/badge/credited%20repos-99-6e7781"></a>
 <a href="https://github.com/PerryLink/dsh-kit"><img alt="actively maintained plugins" src="https://img.shields.io/badge/plugins-114-6e7781"></a>
 <a href="https://github.com/PerryLink/perrylink"><img alt="compliance tools" src="https://img.shields.io/badge/compliance--62-6e7781"></a>
 <br>
@@ -37,7 +37,7 @@ I fix other people's projects, I maintain a plugin family for
 [Phocinae](https://github.com/Phocinae), my typed-decision model lab. Independent open-source developer in
 Beijing — not affiliated with DeepSeek, and not a DeepSeek employee.
 
-**Upstream** — 501 merged pull requests in 101 repositories that are not mine, from AWS, Apple, Docker,
+**Upstream** — 502 merged pull requests in 102 repositories that are not mine, from AWS, Apple, Docker,
 Microsoft, NVIDIA, Prometheus, Redis, Tencent and the vLLM project down to one-person projects. **The
 family** — 114 actively maintained Apache-2.0 plugins: security, workflows, research,
 messaging bridges, developer experience, since 2026-10-08 a 53-checker compliance suite plus nine newer
@@ -96,11 +96,11 @@ eval scripts.
 ## 🔧 Upstream & community contributions
 
 *Every repository below is external to `PerryLink/*`, every row is merged work, and open proposals are
-deliberately not listed — as of 2026-11-02T11:55:00Z, 164 are open across 126 repositories. ★ re-measured
+deliberately not listed — as of 2026-11-02T14:40:00Z, 169 are open across 126 repositories. ★ re-measured
 2026-10-31 for every row; the third column names the party that owns the project, because the account name
 alone does not say whether that is a company, a standards body or one person. Every external repository
 above 1,000★ that carries merged work is listed: sixteen above 10,000★ in the table, thirty-seven between
-1,000★ and 10,000★ in the fold below, and another forty-five below 1,000★ counted in the 501 but not
+1,000★ and 10,000★ in the fold below, and another forty-five below 1,000★ counted in the 502 but not
 listed individually.*
 
 | Repository | ★ | 项目归属方 |
@@ -115,6 +115,7 @@ listed individually.*
 | [fiber](https://github.com/gofiber/fiber) | 40,237 | **the gofiber project** — the official `gofiber` org (gofiber.io), the Express-inspired Go web framework |
 | [laya](https://github.com/NandhaKishorM/laya) | 34,735 | NandhaKishorM — individual maintainer |
 | [cli](https://github.com/urfave/cli) | 24,306 | the `urfave` org — community-maintained Go CLI framework |
+| [go-redis](https://github.com/redis/go-redis) | 22,284 | **Redis** — the `redis` org; the Go client for Redis |
 | [learn-harness-engineering](https://github.com/walkinglabs/learn-harness-engineering) | 22,634 | `walkinglabs` community org — the harness-engineering tutorial site |
 | [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) | 21,732 | `awesome-dsh-plugin` org — community catalog, no company behind it |
 | [SkillOpt](https://github.com/microsoft/SkillOpt) | 18,785 | **Microsoft** — the official `microsoft` org |
@@ -170,7 +171,7 @@ listed individually.*
 
 </details>
 
-Another **45 external repositories below 1,000★** carry merged work and are counted in the 501; they are
+Another **45 external repositories below 1,000★** carry merged work and are counted in the 502; they are
 not listed individually.
 
 ## 📦 The rest of the family
