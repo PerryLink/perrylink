@@ -8,8 +8,8 @@
 <a href="https://github.com/PerryLink?tab=repositories"><img alt="GitHub stars" src="https://img.shields.io/github/stars/PerryLink?label=stars&affiliations=OWNER&color=24292f"></a>
 <a href="https://github.com/PerryLink?tab=followers"><img alt="GitHub followers" src="https://img.shields.io/github/followers/PerryLink?label=followers&color=24292f"></a>
 <a href="https://github.com/PerryLink?tab=repositories"><img alt="GitHub repos" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FPerryLink&query=%24.public_repos&label=repos&color=24292f"></a>
-<a href="https://github.com/PerryLink/perrylink"><img alt="merged upstream" src="https://img.shields.io/badge/upstream%20merges-497-6e7781"></a>
-<a href="https://github.com/PerryLink/perrylink"><img alt="repositories where a merge is credited" src="https://img.shields.io/badge/credited%20repos-95-6e7781"></a>
+<a href="https://github.com/PerryLink/perrylink"><img alt="merged upstream" src="https://img.shields.io/badge/upstream%20merges-500-6e7781"></a>
+<a href="https://github.com/PerryLink/perrylink"><img alt="repositories where a merge is credited" src="https://img.shields.io/badge/credited%20repos-97-6e7781"></a>
 <a href="https://github.com/PerryLink/dsh-kit"><img alt="actively maintained plugins" src="https://img.shields.io/badge/plugins-114-6e7781"></a>
 <a href="https://github.com/PerryLink/perrylink"><img alt="compliance tools" src="https://img.shields.io/badge/compliance--62-6e7781"></a>
 <br>
@@ -37,7 +37,7 @@ I fix other people's projects, I maintain a plugin family for
 [Phocinae](https://github.com/Phocinae), my typed-decision model lab. Independent open-source developer in
 Beijing — not affiliated with DeepSeek, and not a DeepSeek employee.
 
-**Upstream** — 497 merged pull requests in 98 repositories that are not mine, from AWS, Apple, Docker,
+**Upstream** — 500 merged pull requests in 100 repositories that are not mine, from AWS, Apple, Docker,
 Microsoft, NVIDIA, Prometheus, Redis, Tencent and the vLLM project down to one-person projects. **The
 family** — 114 actively maintained Apache-2.0 plugins: security, workflows, research,
 messaging bridges, developer experience, since 2026-10-08 a 53-checker compliance suite plus nine newer
@@ -96,11 +96,11 @@ eval scripts.
 ## 🔧 Upstream & community contributions
 
 *Every repository below is external to `PerryLink/*`, every row is merged work, and open proposals are
-deliberately not listed — as of 2026-11-01T12:40:00Z, 162 are open across 127 repositories. ★ re-measured
+deliberately not listed — as of 2026-11-02T04:30:00Z, 161 are open across 127 repositories. ★ re-measured
 2026-10-31 for every row; the third column names the party that owns the project, because the account name
 alone does not say whether that is a company, a standards body or one person. Every external repository
 above 1,000★ that carries merged work is listed: sixteen above 10,000★ in the table, thirty-seven between
-1,000★ and 10,000★ in the fold below, and another forty-five below 1,000★ counted in the 497 but not
+1,000★ and 10,000★ in the fold below, and another forty-five below 1,000★ counted in the 500 but not
 listed individually.*
 
 | Repository | ★ | 项目归属方 |
@@ -109,6 +109,7 @@ listed individually.*
 | [deer-flow](https://github.com/bytedance/deer-flow) | 84,759 | **ByteDance** — the official `bytedance` org |
 | [ruflo](https://github.com/ruvnet/ruflo) | 80,367 | ruvnet (rUv / Reuven Cohen) — individual maintainer |
 | [reactive-resume](https://github.com/reactive-resume/reactive-resume) | 45,118 | `reactive-resume` org — independent open-source project (rxresu.me) |
+| [milvus](https://github.com/milvus-io/milvus) | 46,555 | **LF AI & Data Foundation** — the `milvus-io` org; the vector database project donated by Zilliz |
 | [black](https://github.com/psf/black) | 42,085 | **Python Software Foundation** — the official `psf` org; the Black formatter |
 | [zoxide](https://github.com/ajeetdsouza/zoxide) | 40,381 | ajeetdsouza (Ajeet D'Souza) — individual maintainer; the smarter `cd` command |
 | [fiber](https://github.com/gofiber/fiber) | 40,237 | **the gofiber project** — the official `gofiber` org (gofiber.io), the Express-inspired Go web framework |
@@ -123,7 +124,7 @@ listed individually.*
 | [txtai](https://github.com/neuml/txtai) | 13,053 | **NeuML** — the `txtai` project of NeuML, an independent open-source project |
 
 <details>
-<summary><b>Thirty-seven more between 1,000★ and 10,000★ — one line each</b></summary>
+<summary><b>Thirty-eight more between 1,000★ and 10,000★ — one line each</b></summary>
 
 | Repository | ★ | 项目归属方 |
 |---|---|---|
@@ -141,6 +142,7 @@ listed individually.*
 | [client_golang](https://github.com/prometheus/client_golang) | 6,043 | **Prometheus** — the official `prometheus` org (CNCF project); the Go instrumentation client |
 | [teamai-cli](https://github.com/Tencent/teamai-cli) | 5,721 | **Tencent** — the official `Tencent` org |
 | [go-sdk](https://github.com/modelcontextprotocol/go-sdk) | 5,291 | the `modelcontextprotocol` org — the Go SDK for MCP |
+| [skillhub](https://github.com/iflytek/skillhub) | 5,353 | **iFLYTEK** — the official `iflytek` org; self-hosted registry for agent skills |
 | [aibrix](https://github.com/vllm-project/aibrix) | 5,171 | **the vLLM project** — the official `vllm-project` org |
 | [embedding-atlas](https://github.com/apple/embedding-atlas) | 5,007 | **Apple** — the official `apple` org |
 | [DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) | 4,771 | `omdsh-dev` community org — the DeepSeek Harness sidebar plugin |
@@ -167,7 +169,7 @@ listed individually.*
 
 </details>
 
-Another **45 external repositories below 1,000★** carry merged work and are counted in the 497; they are
+Another **45 external repositories below 1,000★** carry merged work and are counted in the 500; they are
 not listed individually.
 
 ## 📦 The rest of the family
