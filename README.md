@@ -67,6 +67,37 @@ behaviour.
 | [dsh-mcp-panel](https://github.com/PerryLink/dsh-mcp-panel) | MCP management console: `/mcp` + Settings tab + trial calls (91★) | `dsh plugin --profile web add dsh-mcp-panel` |
 | [dsh-phocinae](https://github.com/PerryLink/dsh-phocinae) | Local, non-generative verdicts for the approval chain: a small typed decision model behind `phocinae_ask` / `phocinae_gate`, with fail-closed escalation for everything it does not answer (1★) | `dsh plugin --profile web add dsh-phocinae` |
 
+## 🧰 DSH plugin developer tools (new, 2026-11-02)
+
+Four small CLIs for the plugin lifecycle — **not runtime plugins**, so they do not change the 114-plugin roster.
+They are independent, Apache-2.0, non-official, and they do not certify or rank anything.
+
+| Repo | What it gives you | npm |
+|---|---|---|
+| [dsh-plugin-start](https://github.com/PerryLink/dsh-plugin-start) | `dsh-start new` — a minimal, correct plugin skeleton | [![npm](https://img.shields.io/npm/v/dsh-plugin-start?label=start)](https://www.npmjs.com/package/dsh-plugin-start) |
+| [dsh-plugin-ready](https://github.com/PerryLink/dsh-plugin-ready) | `dsh-ready` — static ENTRY preflight; `--host` is a clinic X probe, not C3 | [![npm](https://img.shields.io/npm/v/dsh-plugin-ready?label=ready)](https://www.npmjs.com/package/dsh-plugin-ready) |
+| [dsh-plugin-tools](https://github.com/PerryLink/dsh-plugin-tools) | `dsh-tools list/doctor/install` — toolchain guidance, never auto-installs | [![npm](https://img.shields.io/npm/v/dsh-plugin-tools?label=tools)](https://www.npmjs.com/package/dsh-plugin-tools) |
+| [dsh-plugin-dev](https://github.com/PerryLink/dsh-plugin-dev) | `dsh-dev` — the front door: new / check / test / submit / upgrade | [![npm](https://img.shields.io/npm/v/dsh-plugin-dev?label=dev)](https://www.npmjs.com/package/dsh-plugin-dev) |
+
+```sh
+npm i -g dsh-plugin-dev
+dsh-dev new my-plugin
+cd my-plugin
+dsh-dev check .
+dsh-dev test .        # temp DSH_HOME: add → dump-config → remove
+dsh-dev submit .      # full vendored ENTRY checker; --host-version optional
+```
+
+`dsh-dev test` is FLOW J1 evidence, not C3. `dsh-dev submit` runs the full checker offline, or delegates to a
+`dsh-plugin-spec` checkout. C3 is FLOW-only; a static pass is not a host install, audit, or certification.
+
+- **Canonical standards:** [dsh-plugin-spec](https://github.com/PerryLink/dsh-plugin-spec)
+- **Old names:** [dsh-primer](https://github.com/PerryLink/dsh-primer) (was `dsh-plugin-guide`) and
+  [dsh-clinic](https://github.com/PerryLink/dsh-clinic) (was `dsh-plugin-doctor`); old repos and npm names remain
+  as pointer/deprecated pages.
+- **Mirrors:** [Gitee](https://gitee.com/perrylink) · [GitCode](https://gitcode.com/PerryLink)
+- **Archive/index:** [dsh-plugin-devtools](https://github.com/PerryLink/dsh-plugin-devtools)
+
 ## 🦭 Phocinae — my typed-decision model lab
 
 [Phocinae](https://github.com/Phocinae) is my own org for local typed-decision models and tools — a separate
@@ -197,7 +228,7 @@ The eleven story buckets below are a narrative index, **not the marketplace filt
 | 🧪 Evaluation | 3 | [dsh-doublecheck](https://github.com/PerryLink/dsh-doublecheck) · [dsh-score](https://github.com/PerryLink/dsh-attention-index) · [dsh-auto-review](https://github.com/PerryLink/dsh-auto-review) |
 | 📊 Observability & cost | 5 | [dsh-observe](https://github.com/PerryLink/dsh-observe) · [dsh-autotier](https://github.com/PerryLink/dsh-autotier) 🧊 · [dsh-fast](https://github.com/PerryLink/dsh-fast) · [dsh-phocinae](https://github.com/PerryLink/dsh-phocinae) |
 | 🎨 Content & knowledge | 5 | [dsh-talk](https://github.com/PerryLink/dsh-talk) · [dsh-translate](https://github.com/PerryLink/dsh-translate) · [dsh-library](https://github.com/PerryLink/dsh-library) |
-| 🛠️ Developer experience | 6 | [dsh-mcp-panel](https://github.com/PerryLink/dsh-mcp-panel) · [dsh-plugin-guide](https://github.com/PerryLink/dsh-plugin-guide) · [jevcore](https://github.com/PerryLink/jevcore) |
+| 🛠️ Developer experience | 6 | [dsh-mcp-panel](https://github.com/PerryLink/dsh-mcp-panel) · [dsh-primer](https://github.com/PerryLink/dsh-primer) · [jevcore](https://github.com/PerryLink/jevcore) |
 | 📱 Messaging & bridges | 4 | [dsh-phone-inbox](https://github.com/PerryLink/dsh-phone-inbox) · [dsh-ticktick](https://github.com/PerryLink/dsh-ticktick) · [dsh-reach](https://github.com/PerryLink/dsh-reach) · [dsh-wechat](https://github.com/pan17/dsh-wechat) |
 | 🔬 Research | 4 | [dsh-research-report](https://github.com/PerryLink/dsh-research-report) · [dsh-industry-research](https://github.com/PerryLink/dsh-industry-research) · [dsh-fund-research](https://github.com/PerryLink/dsh-fund-research) |
 | ✅ Compliance & verification | 59 + 3 | 59 checker-first (53 core + 6 newer checker/audit) plus 3 workbench tools (`excel-reconcile`, `table-ingest`, `tender-requirements`); the list is at the [checker index](https://perrylink.github.io/zh/checkers/) |
