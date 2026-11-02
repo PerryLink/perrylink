@@ -21,6 +21,13 @@ section or a badge of their own.
 
 ---
 
+## 2026-11-02 (thirteenth round)
+
+- **`webpack/webpack-bundle-analyzer#745` merged** at 11:32:54Z by `valscion`: module paths are split on both
+  separators, so a Windows bundle no longer reports one giant module. **New credited repository** (12,654★).
+- **501 total: 467 + 34**, across **101 repositories**, **98** credited, re-derived at 2026-11-02T11:55Z.
+  **164** proposals are open across **126** repositories as of the same time.
+
 ## 2026-11-02 (twelfth round)
 
 - **Three merges landed overnight, two of them in repositories we had never landed a commit in.**
