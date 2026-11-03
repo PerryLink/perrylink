@@ -90,11 +90,17 @@ dsh-dev submit .      # full vendored ENTRY checker; --host-version optional
 ```
 
 `dsh-dev test` is FLOW J1 evidence, not C3. `dsh-dev submit` runs the full checker offline, or delegates to a
-`dsh-plugin-spec` checkout. C3 is FLOW-only; a static pass is not a host install, audit, or certification.
+`dsh-standards` checkout. C3 is FLOW-only; a static pass is not a host install, audit, or certification.
 
-- **Canonical standards:** [dsh-plugin-spec](https://github.com/PerryLink/dsh-plugin-spec)
-- **Old names:** [dsh-primer](https://github.com/PerryLink/dsh-primer) (was `dsh-plugin-guide`) and
-  [dsh-clinic](https://github.com/PerryLink/dsh-clinic) (was `dsh-plugin-doctor`); old repos and npm names remain
+- **Standards, split 2026-11-03:** three packages, three jobs —
+  [dsh-plugin-guide](https://github.com/PerryLink/dsh-plugin-guide) explains the three layers (ENTRY, FLOW,
+  BOOST); [dsh-standards](https://github.com/PerryLink/dsh-standards) is the execution home and ships the
+  conformance checker as `dsh-standards` and `dsh-levels` on npm;
+  [dsh-plugin-spec](https://github.com/PerryLink/dsh-plugin-spec) holds the rule text and clause IDs. None is
+  official, and none certifies, scores or ranks a plugin.
+- **Old names:** [dsh-primer](https://github.com/PerryLink/dsh-primer) now carries the older `dsh-plugin-guide`
+  agent skill and CLI, which the guide layer no longer ships;
+  [dsh-clinic](https://github.com/PerryLink/dsh-clinic) was `dsh-plugin-doctor`; old repos and npm names remain
   as pointer/deprecated pages.
 - **Mirrors:** [Gitee](https://gitee.com/perrylink) · [GitCode](https://gitcode.com/PerryLink)
 - **Archive/index:** [dsh-plugin-devtools](https://github.com/PerryLink/dsh-plugin-devtools)
