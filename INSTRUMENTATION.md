@@ -18,7 +18,7 @@ absent. The two sanctioned exceptions are marked.
 
 | Figure | Authoritative site | Update trigger |
 |---|---|---|
-| 107 actively maintained / 125 in the roster / 190 non-fork owned / 136 with a `package.json` | README § intro sentence for 107; README § family note for 125 | a repo joins, leaves, freezes or retires |
+| 126 actively maintained / 137 in the roster / 190 non-fork owned / 148 with a `package.json` | README § intro sentence for 126; README § family note for 137 | a repo joins, leaves, freezes or retires |
 | **plugins badge** *(exception: badge row is the live copy)* | README badge row — carries the actively maintained count, 107 | same |
 | Family roster (which plugins exist, and each one's status) | [`dsh-kit/plugins.txt`](https://github.com/PerryLink/dsh-kit) — the install roster, with `scripts/check-parity.mjs` deriving every count and failing on a retired package or a lost status cell | any release |
 | Per-repo maintenance status (`active` / `frozen` / `retired`) | [`dsh-plugin-kit/data/repos.json`](https://github.com/PerryLink/dsh-plugin-kit/blob/main/data/repos.json) — the machine-readable roster the portal renders and the certification registry counts | when a repo freezes or retires |
@@ -108,8 +108,8 @@ after the freeze batch):
 
 | Count | Meaning |
 |---|---|
-| **107** | actively maintained — the roster minus 3 🚫 retired and 15 🧊 frozen. **This is the number the heading and the badge carry.** |
-| **125** | the roster: canonical plugins that declare `dsh.bundle.patch`, excluding the 2 retired corridor legs. It includes the three 2026-10-31 bundle repos (`dsh-eval-pack`, `dsh-finops-suite`, `dsh-contract-suite`); `dsh-eval-harness` is archived and replaced by `dsh-eval-pack`. `dsh-plugin-kit/data/repos.json` still records the previous **99** cut (2026-10-19); `dsh-kit/plugins.txt` lists 96 published specs and the 2026-10-31 freeze batch as comments |
+| **126** | actively maintained — the roster minus 3 🚫 retired and 8 🧊 frozen (the seven S1 demos were unfrozen on 2026-11-01). **This is the number the heading carries.** |
+| **137** | the roster: canonical plugins that declare `dsh.bundle.patch`, excluding the 2 retired corridor legs. Grew by 12 on 2026-11-02/03 (`dsh-provider-params`, `dsh-pdf-table`, `dsh-contract-renewal`, `dsh-rfq-compare`, `dsh-labor-contract`, `dsh-progress-payment`, `dsh-ar-aging`, `dsh-import-customs-check`, `dsh-ar-collection`, `dsh-settlement-docs`, `dsh-attendance-check`, `dsh-store-replenish`), all GA. It includes the three 2026-10-31 bundle repos (`dsh-eval-pack`, `dsh-finops-suite`, `dsh-contract-suite`); `dsh-eval-harness` is archived and replaced by `dsh-eval-pack`. `dsh-plugin-kit/data/repos.json` still records the previous **99** cut (2026-10-19); `dsh-kit/plugins.txt` lists 96 published specs and the 2026-10-31 freeze batch as comments |
 | **127** | a naive scan of the account — 125 canonical **+ 2 retired corridor legs** (`dsh-plugin-upgrade-015`, not archived; `dsh-plugin-upgrade-016`, archived; both still carrying the manifest) |
 | **120** | underlying roster rows across the eleven categories: 118 of the 125 roster + 2 rows that are not roster plugins (`jevcore`, which declares no `dsh.bundle`, and the third-party `pan17/dsh-wechat`). The README renders only the eleven category counts, not the 120 rows. Five support/tooling roster entries are left out: `dsh-plugin-kit`, `dsh-cert-mcp`, `dsh-plugin-doctor`, `dsh-checkers`, `dsh-community-bench` |
 | **190** | non-fork repositories this account owns in total; **136** carry a `package.json` and **127** of those declare `dsh.bundle.patch`, so 63 are outside the contract |
