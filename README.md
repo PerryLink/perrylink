@@ -39,12 +39,13 @@ Beijing — not affiliated with DeepSeek, and not a DeepSeek employee.
 
 **Upstream** — 506 merged pull requests in 102 repositories that are not mine, from AWS, Apple, Docker,
 Microsoft, NVIDIA, Prometheus, Redis, Tencent and the vLLM project down to one-person projects. **The
-family** — 114 actively maintained Apache-2.0 plugins: security, workflows, research,
+family** — 126 actively maintained Apache-2.0 plugins: security, workflows, research,
 messaging bridges, developer experience, since 2026-10-08 a 53-checker compliance suite plus nine newer
-compliance tools, and since 2026-10-31 fifteen public/synthetic S1 business tools: all fifteen are active: six feed the
-finance/contract suites, seven are specialist tools, one is an install companion, and
-one is an eval utility; the old `dsh-eval-harness` is archived in favor of `dsh-eval-pack`. Their
-own READMEs mark them not GA. The public catalogue is
+compliance tools, and 27 business tools that became a task-first plugin market on 2026-11-03: six feed the
+finance/contract suites, the rest are specialist tools (invoicing, banking, contracts, quality, customs,
+logistics, HR, retail, construction, PDF tables, model parameters), one is an install companion and one is an
+eval utility. **All 27 are non-alpha since 2026-11-03**, each with a runnable first run, and five scenario packs
+chain them end to end. The old `dsh-eval-harness` is archived in favor of `dsh-eval-pack`. The public catalogue is
 **[perrylink.github.io](https://perrylink.github.io/)** — 114 pages in its sitemap, complete in the served
 HTML with no JavaScript rendering them, so a reader who arrives from a search result sees the text rather
 than a loading state.
@@ -97,6 +98,25 @@ dsh-dev submit .      # full vendored ENTRY checker; --host-version optional
   as pointer/deprecated pages.
 - **Mirrors:** [Gitee](https://gitee.com/perrylink) · [GitCode](https://gitcode.com/PerryLink)
 - **Archive/index:** [dsh-plugin-devtools](https://github.com/PerryLink/dsh-plugin-devtools)
+
+## 🧩 Task-first plugin market (2026-11-03)
+
+The domain tools are no longer a list of package names. They are organised by **what you are trying to do**, with
+a first run that works before you read any source.
+
+| What | Where |
+|---|---|
+| Browse by task (Chinese UI, 11 task families) | [perrylink.github.io/dsh-plugins/market.html](https://perrylink.github.io/dsh-plugins/market.html) |
+| Machine-readable index (DSH market format 1, 134 entries, every one titled in Chinese) | [market/index.json](https://perrylink.github.io/dsh-plugins/market/index.json) |
+| Five end-to-end scenario packs | [finance](https://perrylink.github.io/dsh-plugins/packs/finance.html) · [contract](https://perrylink.github.io/dsh-plugins/packs/contract.html) · [procurement](https://perrylink.github.io/dsh-plugins/packs/procurement.html) · [HR](https://perrylink.github.io/dsh-plugins/packs/hr.html) · [construction](https://perrylink.github.io/dsh-plugins/packs/construction.html) |
+| The packaging standard every domain tool meets (sample in the tarball, one-line prompt, four-line permissions, human errors, real capture) | [PACKAGE-STANDARD.md](https://github.com/PerryLink/dsh-plugins/blob/main/docs/PACKAGE-STANDARD.md) |
+| GA checklist and the stability promise | [GA-READINESS.md](https://github.com/PerryLink/dsh-plugins/blob/main/docs/GA-READINESS.md) |
+| Experiments: retrieval hit rate (16/16) and first-run rehearsal (5/5) | [EXPERIMENT-F1-F2.md](https://github.com/PerryLink/dsh-plugins/blob/main/docs/EXPERIMENT-F1-F2.md) · [printable session sheet](https://perrylink.github.io/dsh-plugins/f2-session-sheet.html) |
+
+Every one of the 62 compliance checkers also ships a quickstart sample generated from its own fixtures, and the
+family is introduced upstream in the harness's
+[Show Your Plugins](https://github.com/deepseek-ai/deepseek-harness/discussions/11954) discussion, with the five
+host-side gaps filed as [a separate idea thread](https://github.com/deepseek-ai/deepseek-harness/discussions/11955).
 
 ## 🦭 Phocinae — my typed-decision model lab
 
@@ -207,8 +227,8 @@ not listed individually.
 
 ## 📦 The rest of the family
 
-**The roster holds 125 repositories — 127 declare the `dsh.bundle.patch` contract, minus the two retired
-corridor legs — and 114 are actively maintained** (3 retired, 8 frozen), plus the support repositories —
+**The roster holds 137 repositories — 139 declare the `dsh.bundle.patch` contract, minus the two retired
+corridor legs — and 126 are actively maintained** (3 retired, 8 frozen), plus the support repositories —
 `dsh-kit`, `dsh-catalog`, the certification registry and the CI checker — and one third-party plugin carried
 as a row. The 8 frozen are the original five plus `dsh-autotier`, `dsh-cert-mcp` and `dsh-community-bench`.
 Fifteen S1 demos were published 2026-10-31 and are all active as of 2026-11-01: six feed
@@ -232,7 +252,7 @@ The eleven story buckets below are a narrative index, **not the marketplace filt
 | 📱 Messaging & bridges | 4 | [dsh-phone-inbox](https://github.com/PerryLink/dsh-phone-inbox) · [dsh-ticktick](https://github.com/PerryLink/dsh-ticktick) · [dsh-reach](https://github.com/PerryLink/dsh-reach) · [dsh-wechat](https://github.com/pan17/dsh-wechat) |
 | 🔬 Research | 4 | [dsh-research-report](https://github.com/PerryLink/dsh-research-report) · [dsh-industry-research](https://github.com/PerryLink/dsh-industry-research) · [dsh-fund-research](https://github.com/PerryLink/dsh-fund-research) |
 | ✅ Compliance & verification | 59 + 3 | 59 checker-first (53 core + 6 newer checker/audit) plus 3 workbench tools (`excel-reconcile`, `table-ingest`, `tender-requirements`); the list is at the [checker index](https://perrylink.github.io/zh/checkers/) |
-| 🏢 Business operations | 15 | 15 active (6 suite members, 7 specialist tools, `dsh-policy-ledger` as install companion, `dsh-eval-pack` as eval utility); subdomains finance, legal, ESG, quality, trade, logistics, documents/BIM. [dsh-bankrec](https://github.com/PerryLink/dsh-bankrec) · [dsh-einvoice](https://github.com/PerryLink/dsh-einvoice) · [dsh-legal-intake](https://github.com/PerryLink/dsh-legal-intake) — public/synthetic S1 demos, not GA |
+| 🏢 Business operations | 27 | 27 active and **non-alpha since 2026-11-03** (6 suite members, 19 specialist tools, `dsh-policy-ledger` as install companion, `dsh-eval-pack` as eval utility); subdomains finance, legal, ESG, quality, trade, logistics, HR, retail, construction, documents/BIM, PDF tables, model parameters. [dsh-bankrec](https://github.com/PerryLink/dsh-bankrec) · [dsh-einvoice](https://github.com/PerryLink/dsh-einvoice) · [dsh-legal-intake](https://github.com/PerryLink/dsh-legal-intake) — public/synthetic S1 demos, not GA |
 
 ## 🪦 Retired & frozen (2026-10-05; batch 2026-10-31)
 
@@ -248,13 +268,11 @@ session pinning) and [dsh-team-rooms](https://github.com/PerryLink/dsh-team-room
 feature work because a more widely adopted implementation is the mainstream choice for that capability.
 This is a measured adoption call, not a quality verdict; the repos that carry a maintenance-status section record the comparison.
 
-**2026-10-31 freeze batch.** Ten more plugins stopped feature work: `dsh-autotier`, `dsh-cert-mcp`,
-`dsh-community-bench`, and seven S1 demos (`dsh-docx-redline`, `dsh-freight-audit`, `dsh-ghg`,
-`dsh-hs-candidate`, `dsh-ifc-qto`, `dsh-pim-lint`, `dsh-qms-capa`). Their repos carry
-`## Maintenance status: 🧊 FROZEN`; packages stay installable. Six S1 demos remain active as
-`dsh-finops-suite` / `dsh-contract-suite` components, `dsh-policy-ledger` stays active as an install
-companion, and `dsh-eval-harness` was archived in favor of `dsh-eval-pack` (repo-only; the old scoped npm
-name is deprecated). `dsh-memento`, `dsh-plugin-upgrade`, `dsh-checkers`, `dsh-skill-pack-security`,
+**2026-10-31 freeze batch, reversed 2026-11-01.** Ten plugins stopped feature work on 2026-10-31
+(`dsh-autotier`, `dsh-cert-mcp`, `dsh-community-bench` and seven S1 demos), and the seven S1 demos were
+**unfrozen on 2026-11-01** and have shipped continuously since — they are now part of the 27 non-alpha
+business tools. `dsh-autotier`, `dsh-cert-mcp` and `dsh-community-bench` remain frozen. No freeze label
+survives on any live surface, and `dsh-plugins` CI now fails if one reappears. `dsh-memento`, `dsh-plugin-upgrade`, `dsh-checkers`, `dsh-skill-pack-security`,
 `dsh-phone-inbox`, `dsh-score` and the Phocinae line were re-scoped, not frozen.
 
 Either way, the operational meaning is the same: compatibility updates stop, existing installs keep
