@@ -29,7 +29,6 @@
 <a href="https://gitee.com/perrylink"><img alt="Gitee mirror" src="https://img.shields.io/badge/Gitee-mirror-c71d23?logo=gitee"></a>
 <a href="https://dshfind.com/plugins?q=PerryLink"><img alt="dshfind downloads across the family" src="https://img.shields.io/badge/dshfind%20downloads-45.5k%2B%20across%209%20plugins-6e7781"></a>
 <a href="https://cdn.jsdelivr.net/gh/PerryLink/dsh-catalog@main/deploy/catalog-source.json"><img alt="DSH Desktop Market source" src="https://img.shields.io/badge/DSH%20Desktop%20Market-source-0969da"></a>
-<a href="https://doi.org/10.5281/zenodo.22901853"><img alt="Zenodo DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.22901853.svg"></a>
 </p>
 
 I fix other people's projects, I maintain a plugin family for
