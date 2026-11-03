@@ -21,6 +21,32 @@ section or a badge of their own.
 
 ---
 
+## 2026-11-03 (sixteenth round)
+
+**The plugin family became a task-first market, and every domain tool went GA.**
+
+- **27 of 27 domain tools are non-alpha.** The last 18 moved on 2026-11-03 (`dsh-legal-intake`,
+  `dsh-hs-candidate`, `dsh-ifc-qto`, `dsh-policy-ledger` 0.2.0, `dsh-pim-lint`, `dsh-eval-pack`,
+  `dsh-provider-params`, `dsh-pdf-table`, `dsh-contract-renewal`, `dsh-rfq-compare`, `dsh-labor-contract`,
+  `dsh-progress-payment`, `dsh-ar-aging`, `dsh-import-customs-check`, `dsh-ar-collection`,
+  `dsh-settlement-docs`, `dsh-attendance-check`, `dsh-store-replenish`), joining the nine released earlier.
+  Every one is `0.1.0`/`0.2.0`, carries a compatibility promise in its CHANGELOG, and its npm `latest`
+  matches the manifest (29/29 checked).
+- **A machine-readable market index in DSH's format 1**, 134 entries, every one titled in Chinese:
+  `perrylink.github.io/dsh-plugins/market/index.json`. A task-first browse page sits beside it.
+- **Five scenario packs** run end to end on synthetic data (finance, contract, procurement, HR,
+  construction), each with a real capture and a test comparing against a golden `flow.json`.
+- **All 62 compliance checkers now ship a quickstart sample** generated from their own fixtures, plus a
+  heading-level fix so the five-language README gate stays green.
+- **Two experiments, both scripted**: retrieval answers 16 of 16 everyday questions in the top three, and the
+  five role cards rehearse end to end (5/5) before any human is asked to try them.
+- **Two real bug fixes** in `dsh-invoice-ledger`: the profile tax id/name were not resolved (so the tool
+  reported the company's own tax id as foreign) and the seller side compared against the buyer's own name.
+- **Published upstream**: the family in the harness's Show Your Plugins discussion (#11954) and the five
+  host-side gaps in an Ideas thread (#11955).
+- Roster 125 → **137**, actively maintained 114 → **126**; frozen stays 8, retired stays 3. No freeze label
+  remains on any live surface.
+
 ## 2026-11-03 (fifteenth round)
 
 - **Four merges overnight.** The three split-out member plugins landed together at 17:19Z —
