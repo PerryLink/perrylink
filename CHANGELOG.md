@@ -21,6 +21,19 @@ section or a badge of their own.
 
 ---
 
+## 2026-11-03 (fifteenth round)
+
+- **Four merges overnight.** The three split-out member plugins landed together at 17:19Z —
+  `awesome-dsh-plugin#11288` (`dsh-einvoice`, `dsh-bankrec`), `#11289` (`dsh-ap-three-way`,
+  `dsh-travel-recon`) and `#11290` (`dsh-legal-intake`, `dsh-legal-clause`) — after the bundled
+  suites were rejected under the "list the plugins, not the bundle" rule.
+- `neuml/txtai#1493` merged at 21:10Z: a `datatype` setting for both zvec backends (dense
+  fp32/fp16/int8, sparse fp32/fp16), defaulting to fp32.
+- `neuml/txtai#1500` (the `reindex()` fix) was **closed as a duplicate**: `#1496` landed while it
+  was open and fixes the same thing in the same place; verified against `master` before closing.
+- **506 total: 472 + 34**, across **102 repositories**, **99** credited, re-derived at 2026-11-03T04:30Z.
+  **164** proposals are open across **125** repositories as of the same time.
+
 ## 2026-11-02 (fourteenth round)
 
 - **`redis/go-redis#4168` merged** at 13:57:10Z by `ndyakov`: a disabled `DialTimeout` is no longer
