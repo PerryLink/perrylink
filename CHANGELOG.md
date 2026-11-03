@@ -47,6 +47,16 @@ section or a badge of their own.
 - Roster 125 → **137**, actively maintained 114 → **126**; frozen stays 8, retired stays 3. No freeze label
   remains on any live surface.
 
+## 2026-11-03 (sixteenth round)
+
+- **`danmolitor/forme#222` and `#223` both merged** by the maintainer (05:04Z and 05:25Z). Both had been
+  red on the gallery check because our change touches `engine/src/pdf/*.rs`, which the docs gallery
+  hashes; the maintainer regenerated the manifest himself and merged rather than waiting on a toolchain
+  we do not have here. `#222` draws translucent background and border colours with alpha; `#223` finds
+  PDF object headers at numeric boundaries when merging.
+- **508 total: 474 + 34**, across **102 repositories**, **99** credited, re-derived at 2026-11-03T11:55Z.
+  **161** proposals are open across **123** repositories as of the same time.
+
 ## 2026-11-03 (fifteenth round)
 
 - **Four merges overnight.** The three split-out member plugins landed together at 17:19Z —
