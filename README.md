@@ -13,9 +13,9 @@
 <a href="https://github.com/PerryLink/dsh-kit"><img alt="actively maintained plugins" src="https://img.shields.io/badge/plugins-126-6e7781"></a>
 <a href="https://github.com/PerryLink/perrylink"><img alt="compliance tools" src="https://img.shields.io/badge/compliance--62-6e7781"></a>
 <br>
-<a href="https://www.npmjs.com/search?q=perrylink"><img alt="npm names" src="https://img.shields.io/badge/npm-136%20names-cb3837?logo=npm"></a>
+<a href="https://www.npmjs.com/search?q=perrylink"><img alt="npm names" src="https://img.shields.io/badge/npm-180%20names-cb3837?logo=npm"></a>
 <img alt="npm downloads 30d" src="https://img.shields.io/badge/npm%20downloads%2030d-273.6k-6e7781">
-<a href="https://github.com/PerryLink/perrylink"><img alt="npm provenance" src="https://img.shields.io/badge/npm%20provenance-122%2F136-6e7781"></a>
+<a href="https://github.com/PerryLink/perrylink"><img alt="npm provenance" src="https://img.shields.io/badge/npm%20provenance-156%2F180-6e7781"></a>
 <a href="https://github.com/PerryLink/dsh-auto-review/blob/main/LICENSE"><img alt="license" src="https://img.shields.io/badge/license-Apache--2.0-blue"></a>
 <a href="https://github.com/PerryLink/dsh-mcp-panel/blob/main/package.json"><img alt="node" src="https://img.shields.io/badge/node-%5E22.19%20%7C%7C%20%3E%3D24-339933?logo=node.js"></a>
 <br>
@@ -287,8 +287,8 @@ working, and no second implementation is maintained.
 
 - **GitHub** (this profile), **[Gitee](https://gitee.com/perrylink)** and **npm** — source, CI and releases
   here; the mainline Gitee mirror covers 108 repositories (default branch and all tags), while the domain set adds five flagships plus both suites on Gitee and three flagships plus both suites on GitCode, with latest release assets. The `perrylink` npm
-  account holds **136 names and 1,833 versions**; **122** of them carry a SLSA provenance attestation on at
-  least one version, **116** on the current `latest`.
+  account holds **180 names and 2,296 versions** (registry search, 2026-11-03); **156** of them carry a SLSA
+  provenance attestation on at least one version, **123** on the current `latest`.
 - **npm downloads** — **273,579 over the trailing 30 days** (window 2026-10-01..10-30).
   [dshfind](https://dshfind.com/plugins?q=PerryLink) lists **35** of the family's repositories in its sitemap
   and publishes a download badge for **9** of them — three at 10k+, two at 5k+, two at 2k+, one at 1k+ and one

@@ -21,6 +21,23 @@ section or a badge of their own.
 
 ---
 
+## 2026-11-03 (seventeenth round — npm re-derivation)
+
+**The npm surface had been understating itself, and the page now says what the registry says.**
+
+- The page read **136 names / 1,833 versions / 122 with provenance on at least one version / 116 on
+  `latest`**. Derived name by name from `registry.npmjs.org` — the search index for the name set, each
+  packument for its versions and `dist.attestations` — it reads **180 names / 2,296 versions / 156 / 123**,
+  with **24** carrying no attestation anywhere.
+- **Where the gap came from.** 25 of the 180 were created after 2026-11-01 (the domain-tool wave and the
+  unscoped renames); the other 155 already existed, so the previous count was short as well as stale.
+- **Four retired packages lost provenance on `latest`** in today's metadata-only republish
+  (`dsh-background-agents`, `dsh-session-pin`, `dsh-team-rooms`, `dsh-plugin-upgrade-015`); each still
+  carries an attestation on an earlier version. Restoring it needs a CI publish at a higher patch, not a
+  claim.
+- The npm-name and provenance badges moved with the prose, at the same character widths (`136` to `180`,
+  `122/136` to `156/180`).
+
 ## 2026-11-03 (sixteenth round)
 
 **The plugin family became a task-first market, and every domain tool went GA.**
