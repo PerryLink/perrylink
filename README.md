@@ -10,7 +10,7 @@
 <a href="https://github.com/PerryLink?tab=repositories"><img alt="GitHub repos" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FPerryLink&query=%24.public_repos&label=repos&color=24292f"></a>
 <a href="https://github.com/PerryLink/perrylink"><img alt="merged upstream" src="https://img.shields.io/badge/upstream%20merges-506-6e7781"></a>
 <a href="https://github.com/PerryLink/perrylink"><img alt="repositories where a merge is credited" src="https://img.shields.io/badge/credited%20repos-99-6e7781"></a>
-<a href="https://github.com/PerryLink/dsh-kit"><img alt="actively maintained plugins" src="https://img.shields.io/badge/plugins-114-6e7781"></a>
+<a href="https://github.com/PerryLink/dsh-kit"><img alt="actively maintained plugins" src="https://img.shields.io/badge/plugins-126-6e7781"></a>
 <a href="https://github.com/PerryLink/perrylink"><img alt="compliance tools" src="https://img.shields.io/badge/compliance--62-6e7781"></a>
 <br>
 <a href="https://www.npmjs.com/search?q=perrylink"><img alt="npm names" src="https://img.shields.io/badge/npm-136%20names-cb3837?logo=npm"></a>
@@ -25,7 +25,7 @@
 <a href="https://github.com/PerryLink/dsh-plugin-certification"><img alt="certified (flagship dsh-auto-review)" src="https://raw.githubusercontent.com/PerryLink/dsh-plugin-certification/main/badges/PerryLink__dsh-auto-review.svg"></a>
 <a href="https://registry.modelcontextprotocol.io/v0/servers?search=perrylink"><img alt="MCP Registry" src="https://img.shields.io/badge/MCP%20Registry-4%20servers-6f42c1"></a>
 <br>
-<a href="https://perrylink.github.io/"><img alt="plugin index" src="https://img.shields.io/badge/plugin%20index-114%20pages-0b5fff"></a>
+<a href="https://perrylink.github.io/"><img alt="plugin index" src="https://img.shields.io/badge/plugin%20index-185%20pages-0b5fff"></a>
 <a href="https://gitee.com/perrylink"><img alt="Gitee mirror" src="https://img.shields.io/badge/Gitee-mirror-c71d23?logo=gitee"></a>
 <a href="https://dshfind.com/plugins?q=PerryLink"><img alt="dshfind downloads across the family" src="https://img.shields.io/badge/dshfind%20downloads-45.5k%2B%20across%209%20plugins-6e7781"></a>
 <a href="https://cdn.jsdelivr.net/gh/PerryLink/dsh-catalog@main/deploy/catalog-source.json"><img alt="DSH Desktop Market source" src="https://img.shields.io/badge/DSH%20Desktop%20Market-source-0969da"></a>
@@ -46,7 +46,7 @@ finance/contract suites, the rest are specialist tools (invoicing, banking, cont
 logistics, HR, retail, construction, PDF tables, model parameters), one is an install companion and one is an
 eval utility. **All 27 are non-alpha since 2026-11-03**, each with a runnable first run, and five scenario packs
 chain them end to end. The old `dsh-eval-harness` is archived in favor of `dsh-eval-pack`. The public catalogue is
-**[perrylink.github.io](https://perrylink.github.io/)** — 114 pages in its sitemap, complete in the served
+**[perrylink.github.io](https://perrylink.github.io/)** — 185 pages under the plugin index (the checker tree keeps its own 114-entry sitemap), complete in the served
 HTML with no JavaScript rendering them, so a reader who arrives from a search result sees the text rather
 than a loading state.
 
@@ -70,7 +70,7 @@ behaviour.
 
 ## 🧰 DSH plugin developer tools (new, 2026-11-02)
 
-Four small CLIs for the plugin lifecycle — **not runtime plugins**, so they do not change the 114-plugin roster.
+Four small CLIs for the plugin lifecycle — **not runtime plugins**, so they do not change the 126-plugin roster.
 They are independent, Apache-2.0, non-official, and they do not certify or rank anything.
 
 | Repo | What it gives you | npm |
@@ -236,9 +236,9 @@ Fifteen S1 demos were published 2026-10-31 and are all active as of 2026-11-01: 
 `dsh-freight-audit`, `dsh-ghg`, `dsh-hs-candidate`, `dsh-ifc-qto`, `dsh-pim-lint`, `dsh-qms-capa`),
 `dsh-policy-ledger` is an install companion, and `dsh-eval-pack` is an eval utility; the old `dsh-eval-harness` is archived in favor of it. The roster figure here is measured from each repository's own `package.json` and includes
 the three 2026-10-31 bundle repos (`dsh-eval-pack`, `dsh-finops-suite`, `dsh-contract-suite`). The install
-list is `plugins.txt` in **[dsh-kit](https://github.com/PerryLink/dsh-kit)**, which is the **96-spec mainline installer** (43 default + 53 opt-in checkers), not the whole 125-row family; the exact scope table is [ROSTER.md](https://github.com/PerryLink/dsh-plugins/blob/main/ROSTER.md). The machine-readable catalogue is
+list is `plugins.txt` in **[dsh-kit](https://github.com/PerryLink/dsh-kit)**, which is the **96-spec mainline installer** (43 default + 53 opt-in checkers), not the whole 137-row family; the exact scope table is [ROSTER.md](https://github.com/PerryLink/dsh-plugins/blob/main/ROSTER.md). The machine-readable catalogue is
 **[dsh-catalog](https://github.com/PerryLink/dsh-catalog)**, which is also the DSH Desktop Market source.
-The eleven story buckets below are a narrative index, **not the marketplace filter**. The market filter is the four-axis taxonomy (12 categories + archetype + domain): [TAXONOMY.md](https://github.com/PerryLink/dsh-plugins/blob/main/TAXONOMY.md) · [125-row view](https://perrylink.github.io/dsh-plugins/taxonomy.html) · [roster scopes](https://github.com/PerryLink/dsh-plugins/blob/main/ROSTER.md). Each plugin's own README carries the one-line detail.
+The eleven story buckets below are a narrative index, **not the marketplace filter**. The market filter is the four-axis taxonomy (12 categories + archetype + domain): [TAXONOMY.md](https://github.com/PerryLink/dsh-plugins/blob/main/TAXONOMY.md) · [137-row view](https://perrylink.github.io/dsh-plugins/taxonomy.html) · [roster scopes](https://github.com/PerryLink/dsh-plugins/blob/main/ROSTER.md). Each plugin's own README carries the one-line detail.
 
 | | # | Some of what is in it |
 |---|---|---|
