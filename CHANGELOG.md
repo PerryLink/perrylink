@@ -21,6 +21,11 @@ section or a badge of their own.
 
 ---
 
+## 2026-11-04 (twentieth round — restore the original landing page)
+
+- Restore `README.md` to the pre-rewrite text: the original 4-row badge block, opening, Start here, Full family, Upstream table and Chinese block.
+- Do not keep the Selected plugins section; remove `UPSTREAM.md`. The nineteenth-round landing-page pass is reverted.
+
 ## 2026-11-04 (nineteenth round — landing-page pass)
 
 - Cut the README from 333 lines / 32.8 KB to 130 lines / 10.1 KB: merged the intro, developer tools, market, family and where sections into scannable blocks.
