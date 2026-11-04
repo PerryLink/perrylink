@@ -21,6 +21,14 @@ section or a badge of their own.
 
 ---
 
+## 2026-11-04 (twenty-fourth round — handbook stale-content pass)
+
+- **`Electricitysheep/dsh-handbook#72` merged** at 12:55Z: the handbook now flags the pages still written
+  for the 0.1 host and states what 0.2.2 actually requires, so a reader is not led by a stale paragraph.
+  Two files, +6/-6, one commit.
+- **509 total: 475 + 34**, across **102 repositories**, **99** credited, re-derived at 2026-11-04T15:12Z.
+  **175** proposals are open across **139** repositories as of the same time.
+
 ## 2026-11-04 (twenty-third round — trim roster and freeze history)
 
 - Chinese checker entry now says 53 core (all Chinese) plus 6 newer checkers and 3 workbench tools, linking to the 62-row compliance group; the choose page itself still covers the 53 core.
