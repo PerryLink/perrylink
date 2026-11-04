@@ -8,7 +8,7 @@
 The family has three layers: **standards and guides** (how to build), **developer toolchain** (how to
 ship), and **runtime/domain plugins** (what users install). Phocinae is a separate decision-model line.
 
-## ## 1. Three-level standards and checks
+## 1. Three-level standards and checks
 
 | Repo | What it is |
 |---|---|
@@ -20,14 +20,14 @@ ship), and **runtime/domain plugins** (what users install). Phocinae is a separa
 | [dsh-plugin-ready](https://github.com/PerryLink/dsh-plugin-ready) | Static ENTRY preflight (`dsh-ready`) |
 | [dsh-check-pack](https://github.com/PerryLink/dsh-check-pack) | One-command installer for the 53-checker compliance suite |
 
-## ## 2. Three-level guides
+## 2. Three-level guides
 
 | Repo | What it is |
 |---|---|
 | [dsh-plugin-guide](https://github.com/PerryLink/dsh-plugin-guide) | Three-layer guide: ENTRY checks, FLOW journeys, BOOST practices |
 | [dsh-primer](https://github.com/PerryLink/dsh-primer) | Practical primer + legacy build skill/CLI |
 
-## ## 3. Developer toolchain
+## 3. Developer toolchain
 
 | Repo | What it is |
 |---|---|
@@ -180,7 +180,7 @@ ship), and **runtime/domain plugins** (what users install). Phocinae is a separa
 | [dsh-attendance-check](https://github.com/PerryLink/dsh-attendance-check) | Attendance and overtime check | business-ops / hr |
 | [dsh-store-replenish](https://github.com/PerryLink/dsh-store-replenish) | Store replenishment | business-ops / retail |
 
-## ## 7. Phocinae (decision-model line)
+## 7. Phocinae (decision-model line)
 
 | Repo | What it is |
 |---|---|
@@ -197,7 +197,7 @@ ship), and **runtime/domain plugins** (what users install). Phocinae is a separa
 | [dsh-batch-triage](https://github.com/Phocinae/dsh-batch-triage) | Deterministic-first ticket triage |
 | [dsh-context-verdict](https://github.com/Phocinae/dsh-context-verdict) | Compaction-loss verdict |
 
-## ## 8. Catalogs and install surfaces
+## 8. Catalogs and install surfaces
 
 | Repo | What it is |
 |---|---|
