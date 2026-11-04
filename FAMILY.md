@@ -2,7 +2,7 @@
 
 > Generated 2026-11-04 from `dsh-plugins/family.json` (137 rows: 126 active / 8 frozen / 3 retired),
 > `dsh-kit` and the PerryLink/Phocinae repositories. **Coverage: all 149 active and 11 archived own DSH
-> repositories are linked below; `dsh-plugin-start` has no GitHub source (404) and is linked to npm.**
+> repositories are linked below.**
 > Groups overlap where a support repo is also a bundle; they are an index, not a partition.
 
 The family has three layers: **standards and guides** (how to build), **developer toolchain** (how to
@@ -33,7 +33,7 @@ ship), and **runtime/domain plugins** (what users install). Phocinae is a separa
 |---|---|
 | [dsh-plugin-dev](https://github.com/PerryLink/dsh-plugin-dev) | `dsh-dev` front door: new/check/test/submit/upgrade |
 | [dsh-plugin-devtools](https://github.com/PerryLink/dsh-plugin-devtools) | Umbrella for start/ready/tools/dev |
-| [dsh-plugin-start](https://www.npmjs.com/package/dsh-plugin-start) | `dsh-start new` minimal skeleton (npm; source repo retired) |
+| [dsh-plugin-start](https://github.com/PerryLink/dsh-plugin-start) | `dsh-start new` minimal skeleton |
 | [dsh-plugin-tools](https://github.com/PerryLink/dsh-plugin-tools) | `dsh-tools list/doctor/install` |
 | [dsh-scaffold](https://github.com/PerryLink/dsh-scaffold) | Shared scaffold and contracts for the family |
 | [dsh-codemod](https://github.com/PerryLink/dsh-codemod) | Version-corridor migration codemods |
@@ -246,6 +246,5 @@ ship), and **runtime/domain plugins** (what users install). Phocinae is a separa
 | [dsh-session-pin](https://github.com/PerryLink/dsh-session-pin) | harness ships session pinning |
 | [dsh-team-rooms](https://github.com/PerryLink/dsh-team-rooms) | harness ships Agent Teams |
 
-`dsh-plugin-start` has no GitHub source repository (404); its npm package is the only live artifact, linked in the toolchain table.
 
 Source of truth for the runtime/domain rows: [ROSTER.md](https://github.com/PerryLink/dsh-plugins/blob/main/ROSTER.md).
