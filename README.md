@@ -53,7 +53,7 @@ I also contribute to **[Cordis](https://github.com/cordiverse/cordis)**, the plu
 vendors as `@deepseek-ai/cordis` — nine merged pull requests there, from async-generator cleanup to reload
 behaviour.
 
-**中文读者 · 只想核对一份材料？** [按「手上是什么材料」选一个核查器（53 个，全中文）→](https://perrylink.github.io/zh/checkers/choose/)
+**中文读者 · 只想核对一份材料？** [按「手上是什么材料」选一个核查器（53 个核心，全中文）→](https://perrylink.github.io/zh/checkers/choose/) · 另有 6 个新增核查器与 3 个工作台工具，见 [合规组（62）](./FAMILY.md#5-compliance-checkers-62-active-rows)。
 
 ## ▶ Start here
 
@@ -166,22 +166,12 @@ repository is indexed in **[FAMILY.md](./FAMILY.md)**.
 Each row lists representative entry points, not the whole group; the `all N` link opens the full section
 in [FAMILY.md](./FAMILY.md).
 
-**The runtime/domain roster holds 137 rows (126 active, 8 frozen, 3 retired), plus one third-party
-plugin carried as a row; the standards, guides, toolchain, Phocinae and catalog groups sit outside that
-roster and are counted separately above.** The roster counts 139 declaring the `dsh.bundle.patch`
-contract, minus the two retired corridor legs; the support repositories —
-`dsh-kit`, `dsh-catalog`, the certification registry and the CI checker — are listed in the table above.
-The 8 frozen are the original five plus `dsh-autotier`, `dsh-cert-mcp` and `dsh-community-bench`.
-Fifteen S1 demos were published 2026-10-31 and are all active as of 2026-11-01: six feed
-`dsh-finops-suite` / `dsh-contract-suite`, seven are specialist tools (`dsh-docx-redline`,
-`dsh-freight-audit`, `dsh-ghg`, `dsh-hs-candidate`, `dsh-ifc-qto`, `dsh-pim-lint`, `dsh-qms-capa`),
-`dsh-policy-ledger` is an install companion, and `dsh-eval-pack` is an eval utility; the old `dsh-eval-harness` is archived in favor of it. The roster figure here is measured from each repository's own `package.json` and includes
-the three 2026-10-31 bundle repos (`dsh-eval-pack`, `dsh-finops-suite`, `dsh-contract-suite`). The install
-list is `plugins.txt` in **[dsh-kit](https://github.com/PerryLink/dsh-kit)**, which is the **96-spec mainline installer** (43 default + 53 opt-in checkers), not the whole 137-row family; the exact scope table is [ROSTER.md](https://github.com/PerryLink/dsh-plugins/blob/main/ROSTER.md). The machine-readable catalogue is
-**[dsh-catalog](https://github.com/PerryLink/dsh-catalog)**, which is also the DSH Desktop Market source.
-Per-repo detail is in **[FAMILY.md](./FAMILY.md)**; the marketplace filter is the four-axis taxonomy (12 categories + archetype + domain): [TAXONOMY.md](https://github.com/PerryLink/dsh-plugins/blob/main/TAXONOMY.md) · [137-row view](https://perrylink.github.io/dsh-plugins/taxonomy.html) · [roster scopes](https://github.com/PerryLink/dsh-plugins/blob/main/ROSTER.md). Each plugin's own README carries the one-line detail. The old eleven-bucket narrative table was removed on 2026-11-04 to avoid a second, stale classification.
+The runtime/domain roster is **137 rows: 126 active, 8 frozen, 3 retired**. `dsh-kit` installs the
+96-spec mainline (43 defaults + 53 opt-in checkers), not the whole family. Install scopes:
+[ROSTER.md](https://github.com/PerryLink/dsh-plugins/blob/main/ROSTER.md); machine catalogue:
+[dsh-catalog](https://github.com/PerryLink/dsh-catalog); per-repo detail: [FAMILY.md](./FAMILY.md).
 
-## 🪦 Retired & frozen (2026-10-05; batch 2026-10-31)
+## 🪦 Retired & frozen
 
 Two different decisions, both about not maintaining a duplicate.
 
@@ -194,13 +184,6 @@ session pinning) and [dsh-team-rooms](https://github.com/PerryLink/dsh-team-room
 `dsh-draw`, `dsh-claude-move`, `dsh-reach` and `dsh-defend` — plus the third-party `dsh-wechat` row stopped
 feature work because a more widely adopted implementation is the mainstream choice for that capability.
 This is a measured adoption call, not a quality verdict; the repos that carry a maintenance-status section record the comparison.
-
-**2026-10-31 freeze batch, reversed 2026-11-01.** Ten plugins stopped feature work on 2026-10-31
-(`dsh-autotier`, `dsh-cert-mcp`, `dsh-community-bench` and seven S1 demos), and the seven S1 demos were
-**unfrozen on 2026-11-01** and have shipped continuously since — they are now part of the 27 non-alpha
-business tools. `dsh-autotier`, `dsh-cert-mcp` and `dsh-community-bench` remain frozen. No freeze label
-survives on any live surface, and `dsh-plugins` CI now fails if one reappears. `dsh-memento`, `dsh-plugin-upgrade`, `dsh-checkers`, `dsh-skill-pack-security`,
-`dsh-phone-inbox`, `dsh-score` and the Phocinae line were re-scoped, not frozen.
 
 Either way, the operational meaning is the same: compatibility updates stop, existing installs keep
 working, and no second implementation is maintained.

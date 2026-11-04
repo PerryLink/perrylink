@@ -21,6 +21,12 @@ section or a badge of their own.
 
 ---
 
+## 2026-11-04 (twenty-third round — trim roster and freeze history)
+
+- Chinese checker entry now says 53 core (all Chinese) plus 6 newer checkers and 3 workbench tools, linking to the 62-row compliance group; the choose page itself still covers the 53 core.
+- Replace the long roster arithmetic paragraph with three facts: 137 rows, the 96-spec dsh-kit mainline, and pointers to ROSTER.md / dsh-catalog / FAMILY.md.
+- Remove the 2026-10-31 freeze-batch history paragraph and the date suffix from the Retired & frozen heading; FAMILY.md §9 keeps the full list.
+
 ## 2026-11-04 (twenty-second round — family entry points)
 
 - Expand the Full family table's Start here column from 1–2 links to 2–6 representative links per group, split over two lines with `<br>`.
