@@ -230,12 +230,28 @@ listed individually.*
 Another **45 external repositories below 1,000★** carry merged work and are counted in the 508; they are
 not listed individually.
 
-## 📦 The rest of the family
+## 📦 The full DSH plugin family
 
-**The roster holds 137 repositories — 139 declare the `dsh.bundle.patch` contract, minus the two retired
-corridor legs — and 126 are actively maintained** (3 retired, 8 frozen), plus the support repositories —
-`dsh-kit`, `dsh-catalog`, the certification registry and the CI checker — and one third-party plugin carried
-as a row. The 8 frozen are the original five plus `dsh-autotier`, `dsh-cert-mcp` and `dsh-community-bench`.
+The family is **three layers plus a separate decision-model line**, not a single install list. Every
+repository is indexed in **[FAMILY.md](./FAMILY.md)**.
+
+| Group | What it covers | Count | Start here |
+|---|---|---:|---|
+| 🧭 Three-level standards & checks | ENTRY/FLOW conformance, rule text, certification, clinic, score, static preflight, checker installer | 7 | [dsh-standards](https://github.com/PerryLink/dsh-standards) · [dsh-plugin-spec](https://github.com/PerryLink/dsh-plugin-spec) · [dsh-clinic](https://github.com/PerryLink/dsh-clinic) |
+| 📘 Three-level guides | ENTRY/FLOW/BOOST guide and the practical primer | 2 | [dsh-plugin-guide](https://github.com/PerryLink/dsh-plugin-guide) · [dsh-primer](https://github.com/PerryLink/dsh-primer) |
+| 🛠️ Developer toolchain | start / ready / tools / dev / scaffold / codemod / test-drive / migration | 8 | [dsh-plugin-dev](https://github.com/PerryLink/dsh-plugin-dev) · [dsh-scaffold](https://github.com/PerryLink/dsh-scaffold) |
+| 🧩 Runtime plugins | The 32 active mainline rows: security, workflow, UX, research, observability, messaging, developer experience | 32 | [family view](https://perrylink.github.io/dsh-plugins/taxonomy.html) |
+| ✅ Compliance checkers | The 53-checker suite plus the newer checker/audit tools | 62 | [checker index](https://perrylink.github.io/zh/checkers/) · [dsh-check-pack](https://github.com/PerryLink/dsh-check-pack) |
+| 🏢 Domain operations | Finance, legal, trade, HR, construction, ESG, quality, documents | 29 | [task-first market](https://perrylink.github.io/dsh-plugins/market.html) |
+| 🦭 Phocinae | Typed-decision model line: server, guard, MCP, CLI, rulepack, DSH verdict plugins | 12 | [Phocinae org](https://github.com/Phocinae) · [dsh-phocinae](https://github.com/PerryLink/dsh-phocinae) |
+| 📦 Catalogs & install | dsh-kit, catalog, portal, family site | 5 | [dsh-kit](https://github.com/PerryLink/dsh-kit) · [portal](https://github.com/PerryLink/dsh-plugin-portal) |
+
+**The runtime/domain roster holds 137 rows (126 active, 8 frozen, 3 retired), plus one third-party
+plugin carried as a row; the standards, guides, toolchain, Phocinae and catalog groups sit outside that
+roster and are counted separately above.** The roster counts 139 declaring the `dsh.bundle.patch`
+contract, minus the two retired corridor legs; the support repositories —
+`dsh-kit`, `dsh-catalog`, the certification registry and the CI checker — are listed in the table above.
+The 8 frozen are the original five plus `dsh-autotier`, `dsh-cert-mcp` and `dsh-community-bench`.
 Fifteen S1 demos were published 2026-10-31 and are all active as of 2026-11-01: six feed
 `dsh-finops-suite` / `dsh-contract-suite`, seven are specialist tools (`dsh-docx-redline`,
 `dsh-freight-audit`, `dsh-ghg`, `dsh-hs-candidate`, `dsh-ifc-qto`, `dsh-pim-lint`, `dsh-qms-capa`),
@@ -243,7 +259,7 @@ Fifteen S1 demos were published 2026-10-31 and are all active as of 2026-11-01: 
 the three 2026-10-31 bundle repos (`dsh-eval-pack`, `dsh-finops-suite`, `dsh-contract-suite`). The install
 list is `plugins.txt` in **[dsh-kit](https://github.com/PerryLink/dsh-kit)**, which is the **96-spec mainline installer** (43 default + 53 opt-in checkers), not the whole 137-row family; the exact scope table is [ROSTER.md](https://github.com/PerryLink/dsh-plugins/blob/main/ROSTER.md). The machine-readable catalogue is
 **[dsh-catalog](https://github.com/PerryLink/dsh-catalog)**, which is also the DSH Desktop Market source.
-The eleven story buckets below are a narrative index, **not the marketplace filter**. The market filter is the four-axis taxonomy (12 categories + archetype + domain): [TAXONOMY.md](https://github.com/PerryLink/dsh-plugins/blob/main/TAXONOMY.md) · [137-row view](https://perrylink.github.io/dsh-plugins/taxonomy.html) · [roster scopes](https://github.com/PerryLink/dsh-plugins/blob/main/ROSTER.md). Each plugin's own README carries the one-line detail.
+The eleven story buckets below are a narrative index, **not the marketplace filter**. The market filter is the four-axis taxonomy (12 categories + archetype + domain): [TAXONOMY.md](https://github.com/PerryLink/dsh-plugins/blob/main/TAXONOMY.md) · [137-row view](https://perrylink.github.io/dsh-plugins/taxonomy.html) · [roster scopes](https://github.com/PerryLink/dsh-plugins/blob/main/ROSTER.md). Each plugin's own README carries the one-line detail. The full group-by-group index is [FAMILY.md](./FAMILY.md).
 
 | | # | Some of what is in it |
 |---|---|---|

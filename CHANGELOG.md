@@ -21,6 +21,12 @@ section or a badge of their own.
 
 ---
 
+## 2026-11-04 (eighteenth round — full-family index)
+
+- Add `FAMILY.md`: every own DSH repository grouped into three-level standards/checks, three-level guides, developer toolchain, runtime plugins, compliance checkers, domain operations, Phocinae, catalogs, and retired/moved pointers.
+- Replace "the rest of the family" with an eight-group table; the runtime/domain roster stays 137 rows / 126 active, while standards, guides, toolchain, Phocinae and catalogs are counted separately.
+- Refresh the three-level docs to the 0.2.2-alpha.3 baseline (Node 24.9, engines.dsh precedence, ctx.menus, Typert create(), removed client-runtime).
+
 ## 2026-11-03 (seventeenth round — npm re-derivation)
 
 **The npm surface had been understating itself, and the page now says what the registry says.**
