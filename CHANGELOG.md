@@ -21,6 +21,12 @@ section or a badge of their own.
 
 ---
 
+## 2026-11-04 (twenty-first round — one entry point)
+
+- Replace the original seven-plugin Start here with a six-row entry table covering family, standards/guides, developer tools, task-first market, Phocinae and install.
+- Remove the standalone developer-tools, market and Phocinae sections; their links now live in Start here.
+- Rename "Upstream & community contributions" to "Upstream contributions"; the table is unchanged.
+
 ## 2026-11-04 (twentieth round — restore the original landing page)
 
 - Restore `README.md` to the pre-rewrite text: the original 4-row badge block, opening, Start here, Full family, Upstream table and Chinese block.

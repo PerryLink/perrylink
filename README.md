@@ -57,99 +57,16 @@ behaviour.
 
 ## ▶ Start here
 
-| Plugin | What it gives you | Install |
-|---|---|---|
-| [dsh-auto-review](https://github.com/PerryLink/dsh-auto-review) | Second-model auto-review on the approval chain, fail-closed by default (245★) | `dsh plugin --profile web add dsh-auto-review` |
-| [dsh-research-report](https://github.com/PerryLink/dsh-research-report) | Verifiable research reports: content-addressed evidence ledger, manifest seal hash, byte-level citation checks, drift detection, disproof ledger (213★) | `dsh plugin --profile web add dsh-research-report` |
-| [dsh-industry-research](https://github.com/PerryLink/dsh-industry-research) | Industry/company research: chain-map SVG with bottleneck detection, timeline, company cards, adversarial review (215★) | `dsh plugin --profile web add dsh-industry-research` |
-| [dsh-memento](https://github.com/PerryLink/dsh-memento) | Approval-gated cross-session memory (`ctx.memory` + SQLite) (143★) | `dsh plugin --profile web add dsh-memento` |
-| [dsh-permission-rules](https://github.com/PerryLink/dsh-permission-rules) | Claude Code-style declarative allow/deny/ask rules plus a process-level network policy (136★) | `dsh plugin --profile web add dsh-permission-rules` |
-| [dsh-mcp-panel](https://github.com/PerryLink/dsh-mcp-panel) | MCP management console: `/mcp` + Settings tab + trial calls (91★) | `dsh plugin --profile web add dsh-mcp-panel` |
-| [dsh-phocinae](https://github.com/PerryLink/dsh-phocinae) | Local, non-generative verdicts for the approval chain: a small typed decision model behind `phocinae_ask` / `phocinae_gate`, with fail-closed escalation for everything it does not answer (1★) | `dsh plugin --profile web add dsh-phocinae` |
-
-## 🧰 DSH plugin developer tools (new, 2026-11-02)
-
-Four small CLIs for the plugin lifecycle — **not runtime plugins**, so they do not change the 126-plugin roster.
-They are independent, Apache-2.0, non-official, and they do not certify or rank anything.
-
-| Repo | What it gives you | npm |
-|---|---|---|
-| [dsh-plugin-start](https://github.com/PerryLink/dsh-plugin-start) | `dsh-start new` — a minimal, correct plugin skeleton | [![npm](https://img.shields.io/npm/v/dsh-plugin-start?label=start)](https://www.npmjs.com/package/dsh-plugin-start) |
-| [dsh-plugin-ready](https://github.com/PerryLink/dsh-plugin-ready) | `dsh-ready` — static ENTRY preflight; `--host` is a clinic X probe, not C3 | [![npm](https://img.shields.io/npm/v/dsh-plugin-ready?label=ready)](https://www.npmjs.com/package/dsh-plugin-ready) |
-| [dsh-plugin-tools](https://github.com/PerryLink/dsh-plugin-tools) | `dsh-tools list/doctor/install` — toolchain guidance, never auto-installs | [![npm](https://img.shields.io/npm/v/dsh-plugin-tools?label=tools)](https://www.npmjs.com/package/dsh-plugin-tools) |
-| [dsh-plugin-dev](https://github.com/PerryLink/dsh-plugin-dev) | `dsh-dev` — the front door: new / check / test / submit / upgrade | [![npm](https://img.shields.io/npm/v/dsh-plugin-dev?label=dev)](https://www.npmjs.com/package/dsh-plugin-dev) |
-
-```sh
-npm i -g dsh-plugin-dev
-dsh-dev new my-plugin
-cd my-plugin
-dsh-dev check .
-dsh-dev test .        # temp DSH_HOME: add → dump-config → remove
-dsh-dev submit .      # full vendored ENTRY checker; --host-version optional
-```
-
-`dsh-dev test` is FLOW J1 evidence, not C3. `dsh-dev submit` runs the full checker offline, or delegates to a
-`dsh-standards` checkout. C3 is FLOW-only; a static pass is not a host install, audit, or certification.
-
-- **Standards, split 2026-11-03:** three packages, three jobs —
-  [dsh-plugin-guide](https://github.com/PerryLink/dsh-plugin-guide) explains the three layers (ENTRY, FLOW,
-  BOOST); [dsh-standards](https://github.com/PerryLink/dsh-standards) is the execution home and ships the
-  conformance checker as `dsh-standards` and `dsh-levels` on npm;
-  [dsh-plugin-spec](https://github.com/PerryLink/dsh-plugin-spec) holds the rule text and clause IDs. None is
-  official, and none certifies, scores or ranks a plugin.
-- **Old names:** [dsh-primer](https://github.com/PerryLink/dsh-primer) now carries the older `dsh-plugin-guide`
-  agent skill and CLI, which the guide layer no longer ships;
-  [dsh-clinic](https://github.com/PerryLink/dsh-clinic) was `dsh-plugin-doctor`; old repos and npm names remain
-  as pointer/deprecated pages.
-- **Mirrors:** [Gitee](https://gitee.com/perrylink) · [GitCode](https://gitcode.com/PerryLink)
-- **Archive/index:** [dsh-plugin-devtools](https://github.com/PerryLink/dsh-plugin-devtools)
-
-## 🧩 Task-first plugin market (2026-11-03)
-
-The domain tools are no longer a list of package names. They are organised by **what you are trying to do**, with
-a first run that works before you read any source.
-
 | What | Where |
 |---|---|
-| Browse by task (Chinese UI, 11 task families) | [perrylink.github.io/dsh-plugins/market.html](https://perrylink.github.io/dsh-plugins/market.html) |
-| Machine-readable index (DSH market format 1, 134 entries, every one titled in Chinese) | [market/index.json](https://perrylink.github.io/dsh-plugins/market/index.json) |
-| Five end-to-end scenario packs | [finance](https://perrylink.github.io/dsh-plugins/packs/finance.html) · [contract](https://perrylink.github.io/dsh-plugins/packs/contract.html) · [procurement](https://perrylink.github.io/dsh-plugins/packs/procurement.html) · [HR](https://perrylink.github.io/dsh-plugins/packs/hr.html) · [construction](https://perrylink.github.io/dsh-plugins/packs/construction.html) |
-| The packaging standard every domain tool meets (sample in the tarball, one-line prompt, four-line permissions, human errors, real capture) | [PACKAGE-STANDARD.md](https://github.com/PerryLink/dsh-plugins/blob/main/docs/PACKAGE-STANDARD.md) |
-| GA checklist and the stability promise | [GA-READINESS.md](https://github.com/PerryLink/dsh-plugins/blob/main/docs/GA-READINESS.md) |
-| Experiments: retrieval hit rate (16/16) and first-run rehearsal (5/5) | [EXPERIMENT-F1-F2.md](https://github.com/PerryLink/dsh-plugins/blob/main/docs/EXPERIMENT-F1-F2.md) · [printable session sheet](https://perrylink.github.io/dsh-plugins/f2-session-sheet.html) |
+| **Full family index** — 149 active + 11 archived own DSH repositories, 9 groups | [FAMILY.md](./FAMILY.md) · [site page](https://perrylink.github.io/dsh-plugins/family.html) |
+| **Standards & guides** — ENTRY/FLOW/BOOST, the checker, the rule text | [dsh-standards](https://github.com/PerryLink/dsh-standards) · [dsh-plugin-guide](https://github.com/PerryLink/dsh-plugin-guide) · [dsh-plugin-spec](https://github.com/PerryLink/dsh-plugin-spec) |
+| **Developer tools** — start / ready / tools / dev, one front door | [dsh-plugin-dev](https://github.com/PerryLink/dsh-plugin-dev) · [dsh-plugin-start](https://github.com/PerryLink/dsh-plugin-start) · [dsh-plugin-ready](https://github.com/PerryLink/dsh-plugin-ready) · [dsh-plugin-tools](https://github.com/PerryLink/dsh-plugin-tools) |
+| **Task-first market** — 11 task families, five scenario packs, two suites | [market](https://perrylink.github.io/dsh-plugins/market.html) · [market/index.json](https://perrylink.github.io/dsh-plugins/market/index.json) · [packs](https://perrylink.github.io/dsh-plugins/packs/finance.html) |
+| **Phocinae** — local typed decisions, no text generation | [Phocinae](https://github.com/Phocinae) · [dsh-phocinae](https://github.com/PerryLink/dsh-phocinae) |
+| **Install the mainline** — 43 defaults + 53 opt-in checkers | [dsh-kit](https://github.com/PerryLink/dsh-kit) |
 
-Every one of the 62 compliance checkers also ships a quickstart sample generated from its own fixtures, and the
-family is introduced upstream in the harness's
-[Show Your Plugins](https://github.com/deepseek-ai/deepseek-harness/discussions/11954) discussion, with the five
-host-side gaps filed as [a separate idea thread](https://github.com/deepseek-ai/deepseek-harness/discussions/11955).
-
-## 🦭 Phocinae — my typed-decision model lab
-
-[Phocinae](https://github.com/Phocinae) is my own org for local typed-decision models and tools — a separate
-line from the DSH plugin family. Its flagship, **[Phocinae-Largha-150M-v1](https://github.com/Phocinae/Phocinae-Largha-150M-v1)**
-(Apache-2.0, 433★), is a 144.3M bilingual typed decision model — no text generation; one forward pass returns
-a verdict per question with calibrated confidence. GPU **21.0 ms** (RTX 5090) p50 per decision, CPU-only
-**1.64 s per case**; English typed-decisions **0.906** (400 cases / 2,000 decisions, re-measured 2026-10-09),
-Chinese (machine-translated eval set) 0.848. With a τ=0.6 escalate gate, **55.0%** of agent decisions stay
-local (79.6% at τ=0.5) and kept-subset accuracy moves 0.906 → **0.9936** (+0.0876) — the gate makes the
-system better, not just cheaper.
-
-| Phocinae project | What it gives you |
-|---|---|
-| [Phocinae-Largha-150M-v1](https://github.com/Phocinae/Phocinae-Largha-150M-v1) | 144.3M bilingual typed-decision model (433★); weights on Hugging Face and ModelScope |
-| [phocinae-server](https://github.com/Phocinae/phocinae-server) | Local inference server, TypeSafe `/v1/systemone`-compatible API |
-| [phocinae-guard](https://github.com/Phocinae/phocinae-guard) | Fail-closed command approval gate for Claude Code, Cline, Codex, Crush and DSH hooks |
-| [phocinae-mcp](https://github.com/Phocinae/phocinae-mcp) | MCP server exposing `gate` / `classify` / `route` / `score` |
-| [phocinae-cli](https://github.com/Phocinae/phocinae-cli) · [phocinae-js](https://github.com/Phocinae/phocinae-js) | CLI and zero-runtime TypeScript client |
-| [dsh-phocinae](https://github.com/Phocinae/dsh-phocinae) and the org's DSH line | `phocinae_ask` / `phocinae_gate`, plus `dsh-batch-triage`, `dsh-context-verdict` and `dsh-evidence` — the org's own plugins, outside the `PerryLink/*` roster |
-
-The org profile is the full map: **[github.com/Phocinae](https://github.com/Phocinae)**. The model card is
-on [Hugging Face](https://huggingface.co/Phocinae/Phocinae-Largha-150M-v1) and
-[ModelScope](https://modelscope.cn/models/PerryLink/Phocinae-Largha-150M-v1); the server is
-`pip install phocinae-server`. Reproduction ships with the model repo: seeds, row-set hashes, environment and
-eval scripts.
-
-## 🔧 Upstream & community contributions
+## 🔧 Upstream contributions
 
 *Every repository below is external to `PerryLink/*`, every row is merged work, and open proposals are
 deliberately not listed — as of 2026-11-03T11:55:00Z, 161 are open across 123 repositories. ★ re-measured
