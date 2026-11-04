@@ -40,7 +40,7 @@ ship), and **runtime/domain plugins** (what users install). Phocinae is a separa
 | [dsh-test-drive](https://github.com/PerryLink/dsh-test-drive) | Isolated install-and-smoke test drives |
 | [dsh-claude-move](https://github.com/PerryLink/dsh-claude-move) | Four-source migration wizard (Claude Code/Codex/OpenCode/Hermes) |
 
-## 4. Runtime plugins (32 active mainline rows)
+## 4. Runtime plugins
 
 | Repo | What it is | Axis |
 |---|---|---|
@@ -79,7 +79,7 @@ ship), and **runtime/domain plugins** (what users install). Phocinae is a separa
 
 **Runtime extras outside `family.json`:** [dsh-phone-inbox](https://github.com/PerryLink/dsh-phone-inbox) (WeChat-bridge inbound attachments) and [dsh-laya](https://github.com/PerryLink/dsh-laya) (Laya decision engine; the canonical family row points at [laya-family/dsh-laya](https://github.com/laya-family/dsh-laya)).
 
-## 5. Compliance checkers (62 active rows)
+## 5. Compliance checkers
 
 | Repo | What it is | Axis |
 |---|---|---|
@@ -146,7 +146,7 @@ ship), and **runtime/domain plugins** (what users install). Phocinae is a separa
 | [dsh-table-ingest](https://github.com/PerryLink/dsh-table-ingest) | 表格数据提取 | data / data |
 | [dsh-tender-requirements](https://github.com/PerryLink/dsh-tender-requirements) | 招标文件要点提取 | business-ops / tender |
 
-## 6. Domain operations (29 active rows)
+## 6. Domain operations
 
 | Repo | What it is | Axis |
 |---|---|---|
@@ -180,7 +180,7 @@ ship), and **runtime/domain plugins** (what users install). Phocinae is a separa
 | [dsh-attendance-check](https://github.com/PerryLink/dsh-attendance-check) | Attendance and overtime check | business-ops / hr |
 | [dsh-store-replenish](https://github.com/PerryLink/dsh-store-replenish) | Store replenishment | business-ops / retail |
 
-## 7. Phocinae (decision-model line)
+## 7. Phocinae
 
 | Repo | What it is |
 |---|---|

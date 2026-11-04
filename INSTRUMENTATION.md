@@ -30,7 +30,7 @@ absent. The two sanctioned exceptions are marked.
 | dsh host corridor / node engine / license | README badge row (each links to the file it is read from) | when the declared range or the engines change |
 | external contributor repos / merges / above-1,000★ | README § Upstream (the aggregate line and the two tables) | on re-derivation |
 | Cordis contribution (9 merged PRs) | README intro, the Cordis sentence | on re-derivation |
-| The named star table — **16 rows above 10,000★** in the direct table, **37 between 1,000★ and 10,000★** in the fold | README § Upstream | on re-derivation |
+| The named star table — **19 rows above 10,000★** in the direct table, **38 between 1,000★ and 10,000★** in the fold | README § Upstream | on re-derivation |
 | Long-form file | **none** — `PROJECTS.md` was removed on 2026-10-31; `README.md` is the only page | — |
 | laya merged / opened / open / closed | not on the profile page; the 52/56/0/4 figures live in `CHANGELOG.md` | on re-derivation |
 | `deepseek-ai` totals | not on the profile page; the 22/1/13 figures live in `CHANGELOG.md` | on re-derivation |

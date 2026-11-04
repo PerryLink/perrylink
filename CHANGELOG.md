@@ -21,6 +21,12 @@ section or a badge of their own.
 
 ---
 
+## 2026-11-04 (twenty-fifth round — P0–P2 review fixes)
+
+- P0: 16/37 → 19/38 in README and INSTRUMENTATION; frozen list now names all 8 first-party rows and keeps `pan17/dsh-wechat` separate; the “certified” badge is labelled self-certified with a disclaimer; Desktop Market 126/2026-11-01 → 125/2026-11-03; `dsh-eval-harness` is “renamed”, not archived; downloads are labelled “the 30 days to 2026-10-30”.
+- P1: explain 509 = 475 + 34 across 102 repositories / 99 credited; soften “All 27 non-alpha” and fix the Chinese “七个已冻结”; clarify that only `dsh-phocinae` is in the roster; remove the unverified dshfind 35 count and fix the 114-URL sitemap sentence; one flagship carries OpenSSF Scorecard; both upstream tables sorted by stars and marked “not a ranking”.
+- P2: fix the compliance badge label; family table is now 3 columns; FAMILY anchors no longer embed counts (`#4-runtime-plugins`, `#5-compliance-checkers`, `#6-domain-operations`, `#7-phocinae`).
+
 ## 2026-11-04 (twenty-fourth round — handbook stale-content pass)
 
 - **`Electricitysheep/dsh-handbook#72` merged** at 12:55Z: the handbook now flags the pages still written
