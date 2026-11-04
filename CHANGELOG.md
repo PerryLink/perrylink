@@ -21,6 +21,14 @@ section or a badge of their own.
 
 ---
 
+## 2026-11-04 (nineteenth round — landing-page pass)
+
+- Cut the README from 333 lines / 32.8 KB to 130 lines / 10.1 KB: merged the intro, developer tools, market, family and where sections into scannable blocks.
+- Moved the 57-row upstream table to `UPSTREAM.md`; the README keeps the 508/99/161 summary and the Cordis note.
+- Reduced 20 badges to 10 and removed redundant/stale ones; refreshed selected-plugin stars (247/212/216/142/134/91/1).
+- Retired/frozen is now a two-line pointer to `FAMILY.md` §9 instead of a 24-line history.
+- The family table stays (137 rows / 126 active); the roster arithmetic moved to `FAMILY.md` and `ROSTER.md`.
+
 ## 2026-11-04 (eighteenth round — full-family index)
 
 - Add `FAMILY.md`: every own DSH repository grouped into three-level standards/checks, three-level guides, developer toolchain, runtime plugins, compliance checkers, domain operations, Phocinae, catalogs, and retired/moved pointers.
