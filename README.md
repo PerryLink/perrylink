@@ -144,7 +144,7 @@ listed individually.*
 
 </details>
 
-Another **45 external repositories below 1,000★** carry merged work and are counted in the 508; they are
+Another **45 external repositories below 1,000★** carry merged work and are counted in the 509; they are
 not listed individually.
 
 ## 📦 The full DSH plugin family
