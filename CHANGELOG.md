@@ -21,6 +21,12 @@ section or a badge of their own.
 
 ---
 
+## 2026-11-04 (twenty-second round — family entry points)
+
+- Expand the Full family table's Start here column from 1–2 links to 2–6 representative links per group, split over two lines with `<br>`.
+- Every row ends with an `all N` deep link into the matching FAMILY.md section; all 32 repo links were checked (0 broken).
+- Selection is function-first (checker / rule / doctor / certification), then role diversity and stars for runtime; domain and compliance entries are chosen by workflow role because their per-repo stars are near zero.
+
 ## 2026-11-04 (twenty-first round — one entry point)
 
 - Replace the original seven-plugin Start here with a six-row entry table covering family, standards/guides, developer tools, task-first market, Phocinae and install.
