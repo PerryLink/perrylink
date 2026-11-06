@@ -23,10 +23,11 @@ section or a badge of their own.
 
 ## 2026-11-06 (twenty-sixth round — upstream counters)
 
-- **514 total: 480 + 34**, across **102 repositories**, **99** credited, re-derived at 2026-11-06T04:30Z.
-  **184** proposals are open across **146** repositories as of the same time.
+- **515 total: 481 + 34**, across **102 repositories**, **99** credited, re-derived at 2026-11-06T04:47Z.
+  **188** proposals are open across **148** repositories as of the same time.
 - Merged since the 2026-11-04 round: `omdsh-dev/dsh-advisor#146`, `Tencent/teamai-cli#1742`,
-  `inference-gateway/inference-gateway#835`, `docker/docker-agent#4784`, `ruvnet/ruflo#4579`.
+  `inference-gateway/inference-gateway#835`, `docker/docker-agent#4784`, `ruvnet/ruflo#4579`,
+  `cobanov/teslamate-mcp#18`.
 - `zhu1090093659/dsh-web#2017` was fixed upstream by #2019 before a PR was sent; no open work remains there.
 
 ## 2026-11-04 (twenty-fifth round — P0–P2 review fixes)
