@@ -21,6 +21,14 @@ section or a badge of their own.
 
 ---
 
+## 2026-11-06 (twenty-sixth round — upstream counters)
+
+- **514 total: 480 + 34**, across **102 repositories**, **99** credited, re-derived at 2026-11-06T04:30Z.
+  **184** proposals are open across **146** repositories as of the same time.
+- Merged since the 2026-11-04 round: `omdsh-dev/dsh-advisor#146`, `Tencent/teamai-cli#1742`,
+  `inference-gateway/inference-gateway#835`, `docker/docker-agent#4784`, `ruvnet/ruflo#4579`.
+- `zhu1090093659/dsh-web#2017` was fixed upstream by #2019 before a PR was sent; no open work remains there.
+
 ## 2026-11-04 (twenty-fifth round — P0–P2 review fixes)
 
 - P0: 16/37 → 19/38 in README and INSTRUMENTATION; frozen list now names all 8 first-party rows and keeps `pan17/dsh-wechat` separate; the “certified” badge is labelled self-certified with a disclaimer; Desktop Market 126/2026-11-01 → 125/2026-11-03; `dsh-eval-harness` is “renamed”, not archived; downloads are labelled “the 30 days to 2026-10-30”.
