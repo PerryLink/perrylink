@@ -21,6 +21,16 @@ section or a badge of their own.
 
 ---
 
+## 2026-11-06 (twenty-seventh round — post-merge counters)
+
+- **523 total: 489 + 34**, across **104 repositories**, **101** credited, re-derived at 2026-11-06T12:49Z.
+  **179** proposals are open across **141** repositories as of the same time.
+- Merged since the previous round: `agentclientprotocol/agent-client-protocol#2762`, `#2763`,
+  `dsh-market/dsh-market#1120`, `webpack/webpack-bundle-analyzer#747`, `omdsh-dev/plugin-template#2`,
+  `0xsline/awesome-deepseek-harness#754`, `#755`, `0xsline/OpenChatCut#217`.
+- `pydantic/pydantic-settings#1084` was closed unmerged; the nested dict decode was fixed upstream by
+  #1109 and shipped in 2.16.2.
+
 ## 2026-11-06 (twenty-sixth round — upstream counters)
 
 - **515 total: 481 + 34**, across **102 repositories**, **99** credited, re-derived at 2026-11-06T04:47Z.
