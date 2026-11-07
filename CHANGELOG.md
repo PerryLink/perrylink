@@ -21,6 +21,14 @@ section or a badge of their own.
 
 ---
 
+## 2026-11-07 (twenty-eighth round — post-merge counters)
+
+- **532 total: 498 + 34**, across **105 repositories**, **102** credited, re-derived at 2026-11-07T04:28Z.
+  **178** proposals are open across **139** repositories as of the same time.
+- Merged since the previous round: `Tencent/teamai-cli#1765`, `punkpeye/mcp-remote#390`, `#391`, `#392`,
+  `punkpeye/fastmcp#502`, `#503`, `reactive-resume/reactive-resume#3960`,
+  `JularDepick/dsh-plugin-dev-agent-template#1`, `kellyjonbrazil/jc#892`.
+
 ## 2026-11-06 (twenty-seventh round — post-merge counters)
 
 - **523 total: 489 + 34**, across **104 repositories**, **101** credited, re-derived at 2026-11-06T12:49Z.
