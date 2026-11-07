@@ -21,6 +21,11 @@ section or a badge of their own.
 
 ---
 
+## 2026-11-07 (twenty-ninth round — open proposals)
+
+- **184** proposals are open across **142** repositories as of 2026-11-07T13:04Z. Merges unchanged:
+  **532 = 498 + 34** across **105 repositories**, **102** credited.
+
 ## 2026-11-07 (twenty-eighth round — post-merge counters)
 
 - **532 total: 498 + 34**, across **105 repositories**, **102** credited, re-derived at 2026-11-07T04:28Z.

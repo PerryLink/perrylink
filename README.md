@@ -74,7 +74,7 @@ behaviour.
 ## 🔧 Upstream contributions
 
 *Every repository below is external to `PerryLink/*`, every row is merged work, and open proposals are
-deliberately not listed — as of 2026-11-07T04:28:00Z, 178 are open across 139 repositories. ★ re-measured
+deliberately not listed — as of 2026-11-07T13:04:00Z, 184 are open across 142 repositories. ★ re-measured
 2026-10-31 for every row; the third column names the party that owns the project, because the account name
 alone does not say whether that is a company, a standards body or one person. Every external repository
 above 1,000★ that we found with merged work is listed (stars as of 2026-10-31; not a ranking): nineteen above
