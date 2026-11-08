@@ -21,6 +21,12 @@ section or a badge of their own.
 
 ---
 
+## 2026-11-08 (thirtieth round — follow-up batch)
+
+- **534 total: 500 + 34**, across **105 repositories**, **102** credited, re-derived at 2026-11-08T03:52Z.
+  **196** proposals are open across **149** repositories as of the same time.
+- Merged since the previous round: `omdsh-dev/DSH-better-sidebar#1149`, `#1152`.
+
 ## 2026-11-07 (twenty-ninth round — open proposals)
 
 - **184** proposals are open across **142** repositories as of 2026-11-07T13:04Z. Merges unchanged:
