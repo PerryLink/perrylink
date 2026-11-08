@@ -21,6 +21,20 @@ section or a badge of their own.
 
 ---
 
+## 2026-11-08 (thirty-first round — catalog and discovery)
+
+- Catalog: **145 packages** generated 2026-11-08 (was 125 on 2026-11-03), including the **19-package
+  research suite** published 2026-11-08. The strict 1.0.0 page is served as **100+45** cursor pages;
+  `/v1/search` and a stdio MCP server (`plugin_search` / `plugin_get`) expose the Chinese discovery index.
+  The research suite is catalog-only — it is not in the install roster.
+- npm, measured 2026-11-08 over the 178 names the `maintainer:perrylink` search enumerates: **2,211
+  versions**; provenance **137** on at least one version, **129** on the current `latest`, **41** none.
+  Downloads: **345,484** over 2026-10-09..2026-11-07 (21 newest names have no 30-day series yet).
+- Published: `dsh-clinic@0.8.2`, `dsh-codemod@3.0.3`; GitHub Releases added for both. These two local
+  publishes carry no SLSA attestation, which is why the provenance counts above are lower than the
+  2026-11-03 line (156/180) — the metric and name set are now stated together.
+- Profile README numbers updated for the above; `FAMILY.md` is being rewritten separately.
+
 ## 2026-11-08 (thirtieth round — follow-up batch)
 
 - **534 total: 500 + 34**, across **105 repositories**, **102** credited, re-derived at 2026-11-08T03:52Z.

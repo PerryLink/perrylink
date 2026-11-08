@@ -25,7 +25,7 @@ absent. The two sanctioned exceptions are marked.
 | npm 30-day downloads | README § Where the plugins live | monthly |
 | **npm downloads badge** *(exception)* | README badge row | same |
 | npm names / versions / non-deprecated latest | README § Where the plugins live | monthly |
-| npm provenance — **state the metric**: **123** names carry SLSA provenance on their non-deprecated `latest`; **156** carry it on at least one version; **24** carry it nowhere (measured 2026-11-03, over the 180 names registry search enumerates) | README § Where the plugins live | monthly |
+| npm provenance — **state the metric**: **129** names carry SLSA provenance on their non-deprecated `latest`; **137** carry it on at least one version; **41** carry it nowhere (measured 2026-11-08, over the 178 names registry search enumerates) | README § Where the plugins live | monthly |
 | dshfind aggregate tier — **how to read it**: dshfind publishes a badge per plugin at `/api/badge/<owner>/<repo>?metric=downloads` (the `<img>` every plugin page embeds). Nine of the family's repositories answer with a download tier, 26 fall back to ★. The 35 indexed repositories are counted from its sitemap shards (`/sitemap/plugins-N.xml`), not from the search page, which is client-side | README § Where the plugins live (tier counts) | when dshfind re-renders |
 | dsh host corridor / node engine / license | README badge row (each links to the file it is read from) | when the declared range or the engines change |
 | external contributor repos / merges / above-1,000★ | README § Upstream (the aggregate line and the two tables) | on re-derivation |
@@ -37,7 +37,7 @@ absent. The two sanctioned exceptions are marked.
 | The 10,000★ direct / 1,000★ fold threshold and the attribution rule | README § Upstream, the lead paragraph | rule change only |
 | Round narratives | [`CHANGELOG.md`](CHANGELOG.md) | every round |
 | rule-pack size and rules with no verbatim clause text | [`catalog.json`](https://perrylink.github.io/catalog.json), rendered per domain at [the checker index](https://perrylink.github.io/zh/checkers/) | when a rule pack is rebuilt |
-| the DSH Desktop Market catalog source URL | [`dsh-catalog`](https://github.com/PerryLink/dsh-catalog) `deploy/artifacts/v1/plugins.json` | when the catalogue is regenerated |
+| DSH Desktop Market catalog — **145 packages, generated 2026-11-08**; includes the 19-package research suite (catalog-only, not in the install roster) | README § Where the plugins live, DSH Desktop Market bullet | when the catalogue is regenerated |
 | Phocinae figures (21.0 ms (RTX 5090) / 1.64 s / 0.906 / 0.848 / flip150 0.0200 · flip400 0.0217 / ECE 0.2519 / τ=0.6 → 45.0% escalate, −55.0% LLM calls, kept-subset 0.9936) | README § Phocinae | a Phocinae release re-benchmarks |
 | Phocinae org / project map | README § Phocinae; the org profile at [github.com/Phocinae](https://github.com/Phocinae) is the long map | when the org changes |
 
@@ -261,11 +261,11 @@ is merely "balanced" is not enough: balance is exactly what produced the 836px r
 |---|---|---|
 | upstream merges | 534 | "Upstream" |
 | credited repos | 102 | "Upstream" |
-| plugins | 107 | the intro sentence |
+| plugins | 126 | the intro sentence |
 | checkers | 62 | the 53-checker suite plus the nine 2026-10-23 tools (the fifteen 2026-10-31 demos are not counted here) |
-| npm names | 180 | "Where the plugins live" |
-| npm downloads 30d | 273.6k | "Where the plugins live" (273,579) |
-| npm provenance | 156/180 | "Where the plugins live" |
+| npm names | 178 | "Where the plugins live" |
+| npm downloads 30d | 345.5k | "Where the plugins live" (345,484) |
+| npm provenance | 137/178 | "Where the plugins live" |
 | MCP Registry | 4 servers | "Where the plugins live" |
 | DSH Desktop Market source | (no number) | the catalog URL — reached over jsDelivr, see the reachability note in §4 |
 | Gitee mirror | (no number) | the mirror claim |

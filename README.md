@@ -13,9 +13,9 @@
 <a href="https://github.com/PerryLink/dsh-kit"><img alt="actively maintained plugins" src="https://img.shields.io/badge/plugins-126-6e7781"></a>
 <a href="https://github.com/PerryLink/perrylink"><img alt="compliance tools" src="https://img.shields.io/badge/compliance-62-6e7781"></a>
 <br>
-<a href="https://www.npmjs.com/search?q=perrylink"><img alt="npm names" src="https://img.shields.io/badge/npm-180%20names-cb3837?logo=npm"></a>
-<img alt="npm downloads 30d" src="https://img.shields.io/badge/npm%20downloads%2030d-273.6k-6e7781">
-<a href="https://github.com/PerryLink/perrylink"><img alt="npm provenance" src="https://img.shields.io/badge/npm%20provenance-156%2F180-6e7781"></a>
+<a href="https://www.npmjs.com/search?q=perrylink"><img alt="npm names" src="https://img.shields.io/badge/npm-178%20names-cb3837?logo=npm"></a>
+<img alt="npm downloads 30d" src="https://img.shields.io/badge/npm%20downloads%2030d-345.5k-6e7781">
+<a href="https://github.com/PerryLink/perrylink"><img alt="npm provenance" src="https://img.shields.io/badge/npm%20provenance-137%2F178-6e7781"></a>
 <a href="https://github.com/PerryLink/dsh-auto-review/blob/main/LICENSE"><img alt="license" src="https://img.shields.io/badge/license-Apache--2.0-blue"></a>
 <a href="https://github.com/PerryLink/dsh-mcp-panel/blob/main/package.json"><img alt="node" src="https://img.shields.io/badge/node-%5E22.19%20%7C%7C%20%3E%3D24-339933?logo=node.js"></a>
 <br>
@@ -28,7 +28,7 @@
 <a href="https://perrylink.github.io/"><img alt="plugin index" src="https://img.shields.io/badge/plugin%20index-185%20pages-0b5fff"></a>
 <a href="https://gitee.com/perrylink"><img alt="Gitee mirror" src="https://img.shields.io/badge/Gitee-mirror-c71d23?logo=gitee"></a>
 <a href="https://dshfind.com/plugins?q=PerryLink"><img alt="dshfind downloads across the family" src="https://img.shields.io/badge/dshfind%20downloads-45.5k%2B%20across%209%20plugins-6e7781"></a>
-<a href="https://cdn.jsdelivr.net/gh/PerryLink/dsh-catalog@main/deploy/catalog-source.json"><img alt="DSH Desktop Market source" src="https://img.shields.io/badge/DSH%20Desktop%20Market-source-0969da"></a>
+<a href="https://cdn.jsdelivr.net/gh/PerryLink/dsh-family-catalog@main/deploy/catalog-source.json"><img alt="DSH Desktop Market source" src="https://img.shields.io/badge/DSH%20Desktop%20Market-source-0969da"></a>
 </p>
 
 <sub>“Certified” is our own family attestation, not an independent audit or a DeepSeek endorsement.</sub>
@@ -197,15 +197,19 @@ This is a measured adoption call, not a quality verdict.
 
 - **GitHub** (this profile), **[Gitee](https://gitee.com/perrylink)** and **npm** — source, CI and releases
   here; the mainline Gitee mirror covers 108 repositories (default branch and all tags), while the domain set adds five flagships plus both suites on Gitee and three flagships plus both suites on GitCode, with latest release assets. The `perrylink` npm
-  account holds **180 names and 2,296 versions** (registry export, 2026-11-03; the `maintainer:perrylink` search indexes 156 of them); **156** of them carry a SLSA
-  provenance attestation on at least one version, **123** on the current `latest`.
-- **npm downloads** — **273,579 over the 30 days to 2026-10-30**.
+  account holds **178 names and 2,211 versions** (registry search `maintainer:perrylink`, 2026-11-08); **137** of them carry a SLSA
+  provenance attestation on at least one version, **129** on the current `latest`, and **41** carry none.
+- **npm downloads** — **345,484 over the 30 days to 2026-11-07** (21 newest names have no 30-day series yet, so this is a lower bound).
   [dshfind](https://dshfind.com/plugins?q=PerryLink) lists the family's repositories in its sitemap
   and publishes a download badge for **9** of them — three at 10k+, two at 5k+, two at 2k+, one at 1k+ and one
   at 500+ — which add to **45,500+**. The badges are rounded tiers, so that is a floor and not a total.
 - **DSH Desktop Market** — add
-  `https://cdn.jsdelivr.net/gh/PerryLink/dsh-catalog@main/deploy/artifacts/v1/plugins.json` under
-  Market → Sources to browse the family in-app (125 packages, catalogue generated 2026-11-03).
+  `https://cdn.jsdelivr.net/gh/PerryLink/dsh-family-catalog@main/deploy/artifacts/v1/plugins.json` under
+  Market → Sources to browse the family in-app (**145 packages, catalogue generated 2026-11-08**; the
+  strict 1.0.0 page is served as 100+45 cursor pages). The same build exposes
+  `https://perrylink-dsh-catalog.perrylink.workers.dev/v1/search?q=…` and a stdio MCP server
+  (`plugin_search` / `plugin_get`) over the Chinese discovery index. The catalogue includes a
+  **19-package research suite** published 2026-11-08 (catalog-only; it is not in the install roster).
 - **MCP Registry** — four servers, all published from their release workflows over GitHub OIDC:
   `dsh-cert-mcp` (🧊 frozen, reference only), `dsh-customs-mcp`, `jevcore-mcp` and `laya-mcp`.
 - **GitHub Actions** — [dsh-github](https://github.com/PerryLink/dsh-github) and
