@@ -23,10 +23,11 @@ section or a badge of their own.
 
 ## 2026-11-08 (thirty-first round — catalog and discovery)
 
-- Catalog: **145 packages** generated 2026-11-08 (was 125 on 2026-11-03), including the **19-package
+- Catalog: **146 packages** generated 2026-11-08 (was 125 on 2026-11-03), including the **19-package
   research suite** published 2026-11-08. The strict 1.0.0 page is served as **100+45** cursor pages;
   `/v1/search` and a stdio MCP server (`plugin_search` / `plugin_get`) expose the Chinese discovery index.
-  The research suite is catalog-only — it is not in the install roster.
+  The research suite is catalog-only — it is not in the install roster. The 146th row is
+  `dsh-param-repair`, and `dsh-translate` now carries the interface+tools categories.
 - npm, measured 2026-11-08 over the 178 names the `maintainer:perrylink` search enumerates: **2,211
   versions**; provenance **137** on at least one version, **129** on the current `latest`, **41** none.
   Downloads: **345,484** over 2026-10-09..2026-11-07 (21 newest names have no 30-day series yet).
