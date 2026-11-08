@@ -2,6 +2,8 @@
 
 > 2026-11-08 逐仓对照 README 重写描述；行数与状态沿用 2026-11-04 的 `dsh-plugins/family.json` 快照
 > （137 行：126 active / 8 frozen / 3 retired），其余行来自 `dsh-kit` 与 PerryLink/Phocinae 仓库。
+> **2026-11-08 改名：** `dsh-translate` 自 0.3.0 起是整页翻译插件；原「厂商参数映射 + 确定性 JSON 修复」改名
+> `dsh-param-repair`（1.0.1），`/translate` 命令、`fix_json` 工具与全部配置键不变。
 > 覆盖：169 个活跃 + 11 个归档的自有 DSH 仓库，全部在下方有链接（137 行安装名册 + 19 个 catalog-only 科研插件，见 §10）。
 > 分组按用途重叠——一个支持仓同时是 bundle 时会出现两次；这是索引，不是互斥分区。
 
@@ -87,7 +89,7 @@
 | [dsh-security-pack](https://github.com/PerryLink/dsh-security-pack) | 把八套安全审计方法论做成 SKILL.md 技能，附零依赖的 plugin_vet 装前扫描器查许可证、SBOM 与 commit 锁定；不取代人工审计 | security |
 | [dsh-dida](https://github.com/PerryLink/dsh-dida) | 把滴答清单的清单、任务与截止日期接到会话头部面板，另给 11 个 agent 工具；全部走官方滴答 MCP 端点，令牌每次请求重读 | integrations |
 
-**`family.json` 之外的运行时条目：** [dsh-phone-inbox](https://github.com/PerryLink/dsh-phone-inbox)（微信桥接入站附件）、[dsh-laya](https://github.com/PerryLink/dsh-laya)（Laya 决策引擎；family 行指向 [laya-family/dsh-laya](https://github.com/laya-family/dsh-laya)）与 [dsh-translate](https://github.com/PerryLink/dsh-translate)（0.3.0 起的整页翻译；`family.json` 尚未收录）。
+**`family.json` 之外的运行时条目：** [dsh-phone-inbox](https://github.com/PerryLink/dsh-phone-inbox)（微信桥接入站附件）、[dsh-laya](https://github.com/PerryLink/dsh-laya)（Laya 决策引擎；family 行指向 [laya-family/dsh-laya](https://github.com/laya-family/dsh-laya)）与 [dsh-translate](https://github.com/PerryLink/dsh-translate)（0.3.2 起的整页翻译，catalog-only；与 §10 科研套件同类，不计入 137 行）。
 
 ## 5. Compliance checkers
 

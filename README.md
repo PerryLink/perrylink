@@ -47,7 +47,10 @@ messaging bridges, developer experience, since 2026-10-08 a 53-checker complianc
 compliance tools, and 27 business tools that became a task-first plugin market on 2026-11-03: six feed the
 finance/contract suites, the rest are specialist tools (invoicing, banking, contracts, quality, customs,
 logistics, HR, retail, construction, PDF tables, model parameters), one is an install companion and one is an
-eval utility. **The 27 domain tools are at 0.1–0.2 with no alpha tag**; most are explicitly marked not-GA in their
+eval utility. **The translation name was split on 2026-11-08:** `dsh-param-repair` (1.0.1) is the vendor-parameter
+mapping + deterministic JSON repair plugin formerly called `dsh-translate`, and `dsh-translate` (0.3.2) is now a
+full-page translator that runs on the session's own model route and keeps code, paths, commands and product
+names verbatim. **The 27 domain tools are at 0.1–0.2 with no alpha tag**; most are explicitly marked not-GA in their
 READMEs, and each first run we exercised is captured in a pack, with five scenario packs chaining them end
 to end. The old `dsh-eval-harness` was renamed to `dsh-eval-pack`. The public catalogue is
 **[perrylink.github.io](https://perrylink.github.io/)** — 185 pages under the plugin index (the site sitemap lists 114 URLs besides the root), complete in the served
@@ -164,6 +167,7 @@ repository is indexed in **[FAMILY.md](./FAMILY.md)**.
 | 📘 Guides — ENTRY/FLOW/BOOST guide and the practical primer | 2 | [guide](https://github.com/PerryLink/dsh-plugin-guide) · [primer](https://github.com/PerryLink/dsh-primer) |
 | 🛠️ Developer toolchain — start / ready / tools / dev / scaffold / codemod / test-drive | 8 | [dev](https://github.com/PerryLink/dsh-plugin-dev) · [start](https://github.com/PerryLink/dsh-plugin-start) · [scaffold](https://github.com/PerryLink/dsh-scaffold)<br>[codemod](https://github.com/PerryLink/dsh-codemod) · [test-drive](https://github.com/PerryLink/dsh-test-drive) · [all 8](./FAMILY.md#3-developer-toolchain) |
 | 🧩 Runtime plugins — security, workflow, UX, research, observability, messaging, developer experience | 32 | [auto-review](https://github.com/PerryLink/dsh-auto-review) · [industry-research](https://github.com/PerryLink/dsh-industry-research) · [research-report](https://github.com/PerryLink/dsh-research-report)<br>[memento](https://github.com/PerryLink/dsh-memento) · [permission-rules](https://github.com/PerryLink/dsh-permission-rules) · [all 32](./FAMILY.md#4-runtime-plugins) |
+| **Translation** — full-page UI translation on your own model route; the old parameter/JSON-repair plugin is now `dsh-param-repair` | [dsh-translate](https://github.com/PerryLink/dsh-translate) · [dsh-param-repair](https://github.com/PerryLink/dsh-param-repair) · [FAMILY §4](./FAMILY.md#4-runtime-plugins) |
 | ✅ Compliance checkers — 53-checker suite plus newer checker/audit tools | 62 | [check-pack](https://github.com/PerryLink/dsh-check-pack) · [contract-stance](https://github.com/PerryLink/dsh-contract-stance) · [invoice-ledger](https://github.com/PerryLink/dsh-invoice-ledger)<br>[excel-reconcile](https://github.com/PerryLink/dsh-excel-reconcile) · [checker index](https://perrylink.github.io/zh/checkers/) · [all 62](./FAMILY.md#5-compliance-checkers) |
 | 🏢 Domain operations — finance, legal, trade, HR, construction, ESG, quality, documents | 29 | [finops-suite](https://github.com/PerryLink/dsh-finops-suite) · [contract-suite](https://github.com/PerryLink/dsh-contract-suite) · [einvoice](https://github.com/PerryLink/dsh-einvoice)<br>[legal-intake](https://github.com/PerryLink/dsh-legal-intake) · [market](https://perrylink.github.io/dsh-plugins/market.html) · [all 29](./FAMILY.md#6-domain-operations) |
 | 🦭 Phocinae — typed decisions: server, guard, MCP, CLI, rulepack, DSH plugins | 12 | [org](https://github.com/Phocinae) · [dsh-phocinae](https://github.com/PerryLink/dsh-phocinae) · [evidence](https://github.com/Phocinae/dsh-evidence)<br>[batch-triage](https://github.com/Phocinae/dsh-batch-triage) · [context-verdict](https://github.com/Phocinae/dsh-context-verdict) · [all 12](./FAMILY.md#7-phocinae) |
@@ -176,7 +180,7 @@ repositories are a separate org line outside those counts.
 The runtime/domain roster is **137 rows: 126 active, 8 frozen, 3 retired**. `dsh-kit` installs the
 96-spec mainline (43 defaults + 53 opt-in checkers), not the whole family. Install scopes:
 [ROSTER.md](https://github.com/PerryLink/dsh-plugins/blob/main/ROSTER.md); machine catalogue:
-[dsh-catalog](https://github.com/PerryLink/dsh-catalog); per-repo detail: [FAMILY.md](./FAMILY.md).
+[dsh-catalog](https://github.com/PerryLink/dsh-catalog); per-repo detail: [FAMILY.md](./FAMILY.md). The new `dsh-translate` translator and the 19-package research suite are catalog-only and outside those 137 rows.
 
 ## 🪦 Retired & frozen
 
@@ -209,7 +213,8 @@ This is a measured adoption call, not a quality verdict.
   strict 1.0.0 page is served as 100+45 cursor pages). The same build exposes
   `https://perrylink-dsh-catalog.perrylink.workers.dev/v1/search?q=…` and a stdio MCP server
   (`plugin_search` / `plugin_get`) over the Chinese discovery index. The catalogue includes a
-  **19-package research suite** published 2026-11-08 (catalog-only; it is not in the install roster).
+  **19-package research suite** published 2026-11-08 (catalog-only; it is not in the install roster), and the repurposed
+  `dsh-translate` full-page translator (0.3.2).
 - **MCP Registry** — four servers, all published from their release workflows over GitHub OIDC:
   `dsh-cert-mcp` (🧊 frozen, reference only), `dsh-customs-mcp`, `jevcore-mcp` and `laya-mcp`.
 - **GitHub Actions** — [dsh-github](https://github.com/PerryLink/dsh-github) and
