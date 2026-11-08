@@ -220,7 +220,7 @@ Phocinae（斑海豹）是独立的一条决策线：百 M 级非生成式模型
 | 仓库 | 它做什么 · 关键差异 |
 |---|---|
 | [dsh-kit](https://github.com/PerryLink/dsh-kit) | 一条命令装好仍在维护的家族插件，冻结件保持可装；同时是主线名册，装哪些、什么状态以仓里的清单一处为准 |
-| [dsh-catalog](https://github.com/PerryLink/dsh-catalog) | DSH Desktop Market 的标准目录源：从 npm registry 生成两个 JSON 清单并按 v1 契约校验；与 dsh-family-catalog 同版 |
+| [dsh-catalog](https://github.com/PerryLink/dsh-catalog) | 旧入口：GitHub 现在 301 重定向到 dsh-family-catalog（同一仓、同一份产物），仅保留旧链接可达 |
 | [dsh-family-catalog](https://github.com/PerryLink/dsh-family-catalog) | DSH Desktop Market 的标准目录源：从 npm registry 生成目录清单并逐条按公开 v1 契约校验，每条带中英名称与中文摘要 |
 | [dsh-plugin-portal](https://github.com/PerryLink/dsh-plugin-portal) | 把插件清单渲染成一页分组卡片，显示仓库名、一句话简介、星数与徽章；零依赖静态页、无构建步骤，数据取自 repos.json |
 | [dsh-plugins](https://github.com/PerryLink/dsh-plugins) | 家族站点的内容源：域插件分类（TAXONOMY.md）、市场清单（market/）与名册（ROSTER.md）都在这里；只收公开或合成样例 |
