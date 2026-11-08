@@ -64,7 +64,7 @@ behaviour.
 
 | What | Where |
 |---|---|
-| **Full family index** — 149 active + 11 archived own DSH repositories, 9 groups | [FAMILY.md](./FAMILY.md) · [site page](https://perrylink.github.io/dsh-plugins/family.html) |
+| **Full family index** — 150 active + 11 archived own DSH repositories, 9 groups | [FAMILY.md](./FAMILY.md) · [site page](https://perrylink.github.io/dsh-plugins/family.html) |
 | **Standards & guides** — ENTRY/FLOW/BOOST, the checker, the rule text | [dsh-standards](https://github.com/PerryLink/dsh-standards) · [dsh-plugin-guide](https://github.com/PerryLink/dsh-plugin-guide) · [dsh-plugin-spec](https://github.com/PerryLink/dsh-plugin-spec) |
 | **Developer tools** — start / ready / tools / dev, one front door | [dsh-plugin-dev](https://github.com/PerryLink/dsh-plugin-dev) · [dsh-plugin-start](https://github.com/PerryLink/dsh-plugin-start) · [dsh-plugin-ready](https://github.com/PerryLink/dsh-plugin-ready) · [dsh-plugin-tools](https://github.com/PerryLink/dsh-plugin-tools) |
 | **Task-first market** — 11 task families, five scenario packs, two suites | [market](https://perrylink.github.io/dsh-plugins/market.html) · [market/index.json](https://perrylink.github.io/dsh-plugins/market/index.json) · [packs](https://perrylink.github.io/dsh-plugins/packs/finance.html) |
