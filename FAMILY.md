@@ -2,7 +2,7 @@
 
 > 2026-11-08 逐仓对照 README 重写描述；行数与状态沿用 2026-11-04 的 `dsh-plugins/family.json` 快照
 > （137 行：126 active / 8 frozen / 3 retired），其余行来自 `dsh-kit` 与 PerryLink/Phocinae 仓库。
-> 覆盖：150 个活跃 + 11 个归档的自有 DSH 仓库，全部在下方有链接。
+> 覆盖：169 个活跃 + 11 个归档的自有 DSH 仓库，全部在下方有链接（137 行安装名册 + 19 个 catalog-only 科研插件，见 §10）。
 > 分组按用途重叠——一个支持仓同时是 bundle 时会出现两次；这是索引，不是互斥分区。
 
 家族分三层：**规范与指南**（怎么建）、**开发者工具链**（怎么发）、**运行时/领域插件**（用户装什么）；Phocinae 是独立的决策模型线。
@@ -265,5 +265,32 @@ Phocinae（斑海豹）是独立的一条决策线：百 M 级非生成式模型
 | [dsh-background-agents](https://github.com/PerryLink/dsh-background-agents) | harness 已原生支持可续子代理 |
 | [dsh-session-pin](https://github.com/PerryLink/dsh-session-pin) | harness 已原生支持会话置顶 |
 | [dsh-team-rooms](https://github.com/PerryLink/dsh-team-rooms) | harness 已原生支持 Agent Teams |
+
+
+## 10. Research suite (catalog-only, 19)
+
+> 2026-11-08 发布的科研插件套件：已进 DSH Desktop Market catalog 与 `data/discovery.json`，但**未进** `dsh-kit/plugins.txt` 安装名册。它们不计入上文的 137 行；npm 名为 `@perrylink/dsh-claim-check` / `@perrylink/dsh-research-core` 的两个包使用 scope，其余为同名。
+
+| 仓库 | 它做什么 · 关键差异 |
+|---|---|
+| [dsh-cite-verify](https://github.com/PerryLink/dsh-cite-verify) | 核验一条引用确实存在——并核验它的元数据是否正确。DOI / PMID / arXiv / BibTeX → 数据源自己的回答、逐字段核对、内容寻址的快照与 REP 证据记录。 |
+| [dsh-claim-check](https://github.com/PerryLink/dsh-claim-check) | 来源原文是否真的支持这条断言？逐字节、确定性、可复算：逐字片段、数字、带标签的数值、否定与限定。转述按 insufficient 处理，绝不报“支持”。 |
+| [dsh-dataset-card](https://github.com/PerryLink/dsh-dataset-card) | 发布数据集时附上一份 Datasheet——并在发布前搞清楚个人数据在哪里。对 CSV/TSV/JSON/JSONL 做画像，按列名与脱敏值模式标记疑似 PII，拒绝把原始行存为证据。 |
+| [dsh-doc-anchor](https://github.com/PerryLink/dsh-doc-anchor) | 把 PDF / HTML / LaTeX / Markdown 文档变成可定位的证据。它不做阅读器、渲染或翻译——只提供坐标、不可变快照，以及一份任何人都能复核的证据记录。 |
+| [dsh-dmp](https://github.com/PerryLink/dsh-dmp) | 一份说得清数据放在哪里、谁能动、资助结束后如何处置的数据管理计划。十节脚手架，每节带提示语；检查个人数据与开放共享、最短保存期、备份、仓库/许可证/DOI。 |
+| [dsh-image-integrity](https://github.com/PerryLink/dsh-image-integrity) | 这张子图是不是被复用了——原地重复，还是从另一张图镜像粘贴过来？零依赖 PNG 解码、带 NCC 确认的均值阈值块指纹、重复/镜像区域报告与 SARIF。 |
+| [dsh-irb](https://github.com/PerryLink/dsh-irb) | 赶在伦理委员会之前把申请材料准备好——并知道哪些核心陈述还缺着。18 项关键词清单、建议性风险等级与对应保障措施，可导出 Markdown + SARIF。 |
+| [dsh-lit-watch](https://github.com/PerryLink/dsh-lit-watch) | 这次检索相比上次新增了什么——而且只报新增。保存带时间窗口的 Crossref 检索；用已见 DOI 库保证重复运行只返回真正新增的条目。 |
+| [dsh-grant-cn](https://github.com/PerryLink/dsh-grant-cn) | 投稿/申报前：本子的检查清单是否齐、预算算术是否对、材料包是否真的打包了？面向中文基金申请书的 19 项结构/属性/声明检查、预算算术与材料包扫描。 |
+| [dsh-manuscript-check](https://github.com/PerryLink/dsh-manuscript-check) | 投稿前：稿件是否完整、指南要求报告的内容是否都报告了、投稿包是否真的打齐了？关键词检查清单 + CONSORT/STROBE/PRISMA 起步条目覆盖 + 投稿目录扫描。 |
+| [dsh-notebook-capture](https://github.com/PerryLink/dsh-notebook-capture) | 能在你机器上跑通的 notebook，还不等于可复现。不执行、只读取 .ipynb：内核、执行顺序、import、运行时安装、随机种子、绝对路径、输出状态与哈希。 |
+| [dsh-meta-analysis](https://github.com/PerryLink/dsh-meta-analysis) | 把效应量合并起来——每一步算术都能逐行核对。效应量换算、固定效应与 DerSimonian–Laird 随机效应合并、Q / I² / τ²、森林图数据与轻量 Egger 检验。 |
+| [dsh-response-letter](https://github.com/PerryLink/dsh-response-letter) | 每一条审稿意见都有回复——而且可以按编号核实。解析审稿意见（Reviewer/Referee/审稿人 标题行），检查回复信的缺失、过短、多余、重复，并导出覆盖表。 |
+| [dsh-retraction-watch](https://github.com/PerryLink/dsh-retraction-watch) | 你引用的论文，后来有没有被撤稿或更正？Crossref 工作记录 + 已实测的 filter=updates:<doi> 查询、逐 DOI 状态、追加式时间线与 REP 证据。 |
+| [dsh-repro-audit](https://github.com/PerryLink/dsh-repro-audit) | 别人能复现这项分析吗——以及从你记录至今，有没有东西发生漂移？有界只读扫描记录 commit、lockfile、环境、数据哈希、图表、seed 与运行命令。 |
+| [dsh-source-cnki](https://github.com/PerryLink/dsh-source-cnki) | 中文文献记录：导入你自己的导出文件，按 GB/T 7714 引用，检查元数据——全程不抓取 CNKI。读取 RIS/EndNote 风格或带标签的文本导出，分配稳定记录 id。 |
+| [dsh-sr-ledger](https://github.com/PerryLink/dsh-sr-ledger) | 经得起复核的系统综述账本：只追加、双人筛选、PRISMA 2020、审计可验。记录方案、每条筛选决策、冲突裁决与 RoB/GRADE 评估，再推导 PRISMA 流程。 |
+| [dsh-statcheck](https://github.com/PerryLink/dsh-statcheck) | 重算稿件报告的统计数据——并把对不上的那些标出来。这是算术，不是指控：每条 finding 都给出报告的统计量、它实际蕴含的 p 值，以及精确字符位置。 |
+| [dsh-research-core](https://github.com/PerryLink/dsh-research-core) | REP v1——DSH 科研插件家族的共享证据协议。一套协议、一个存储、一个校验器：每个科研插件说同一种证据语言，任何人 30 秒内可复算它声称的结论。 |
 
 运行时/领域行的权威来源：[ROSTER.md](https://github.com/PerryLink/dsh-plugins/blob/main/ROSTER.md)。
