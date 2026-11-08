@@ -2,7 +2,7 @@
 
 > 2026-11-08 逐仓对照 README 重写描述；行数与状态沿用 2026-11-04 的 `dsh-plugins/family.json` 快照
 > （137 行：126 active / 8 frozen / 3 retired），其余行来自 `dsh-kit` 与 PerryLink/Phocinae 仓库。
-> 覆盖：149 个活跃 + 11 个归档的自有 DSH 仓库，全部在下方有链接。
+> 覆盖：150 个活跃 + 11 个归档的自有 DSH 仓库，全部在下方有链接。
 > 分组按用途重叠——一个支持仓同时是 bundle 时会出现两次；这是索引，不是互斥分区。
 
 家族分三层：**规范与指南**（怎么建）、**开发者工具链**（怎么发）、**运行时/领域插件**（用户装什么）；Phocinae 是独立的决策模型线。
@@ -71,6 +71,7 @@
 | [dsh-memento](https://github.com/PerryLink/dsh-memento) | 用本地 SQLite 提供有界、分层、带审批门且可审计的跨会话记忆，写满返回结构化错误；每条写路径都经服务内部审批，被拒的写也落审计行 | workflow |
 | [dsh-observe](https://github.com/PerryLink/dsh-observe) | 把 turn、step、工具调用与生成导出成 OTLP 与 Langfuse 观测，按 provider/model 汇总 token 与美元成本；正文脱敏后入队，默认关闭 | observability |
 | [dsh-output-styles](https://github.com/PerryLink/dsh-output-styles) | 用 /style 命令在运行时切换模型输出风格并按会话持久保存，内置 concise 等六种风格；只作用于主会话，子代理保留各自提示 | interface |
+| [dsh-param-repair](https://github.com/PerryLink/dsh-param-repair) | 把 11 家厂商的请求参数互相映射，并把坏掉的 JSON 工具输出按固定策略修到能过 schema 校验；不联网、不编造值，修复过程不调用模型 | developer-tools |
 | [dsh-permission-rules](https://github.com/PerryLink/dsh-permission-rules) | 在每次工具调用前用纯 YAML 规则表裁决 allow、deny、ask，命中和透传都写入会话日志；未命中严格交给下游，缺审批者时失败关闭 | security |
 | [dsh-primer](https://github.com/PerryLink/dsh-primer) | DSH 插件开发知识库：官方文档副本、版本矩阵、Cordis 入门与 20+ 踩坑，注册成按需加载的 agent 技能；另带 new/check/verify CLI | developer-tools |
 | [dsh-codemod](https://github.com/PerryLink/dsh-codemod) | 读取目标仓库声明的 dsh 版本区间，套用对应走廊里有证据的迁移规则做只读扫描；不写被扫仓库、不联网、不起子进程 | workflow |
@@ -79,14 +80,14 @@
 | [dsh-session-sync](https://github.com/PerryLink/dsh-session-sync) | 为会话存储建立专用 git 镜像，在多设备间同步会话；冲突时 append-only 三分支合并保留两边，绝不强推、reset 或删 fork 文件 | workflow |
 | [dsh-talk](https://github.com/PerryLink/dsh-talk) | 按下麦克风说话，把回复朗读出来，说话即打断；语音事件只在宿主能承载时写入会话日志，审批播报不阻塞 | content |
 | [dsh-test-drive](https://github.com/PerryLink/dsh-test-drive) | 在一次性 profile 中安装插件、跑 headless 冒烟与可选能力断言，产出结构化矩阵后再卸载清理；隔离根只落在系统临时目录，绝不碰真实 ~/.dsh | workflow |
-| [dsh-translate](https://github.com/PerryLink/dsh-translate) | 把同一请求的参数翻译成各家厂商所需形式，并对坏 JSON 做有界确定性修复；修不好就原样保留，修复过程不调用模型 | content |
+| [dsh-translate](https://github.com/PerryLink/dsh-translate) | 遍历当前页面可见文字，用你当前会话的模型路由整页翻译，代码、路径、命令与专名先遮成占位符再还原；只改显示层，不写会话日志 | interface |
 | [dsh-github-bot](https://github.com/PerryLink/dsh-github-bot) | 把 PR、审查、issue 与 CI 接进会话，让 agent 在审批后创建、审查、合并与检索 GitHub；写操作只走官方审批接缝，token 从不落日志 | workflow |
 | [dsh-clinic](https://github.com/PerryLink/dsh-clinic) | 一次运行对插件做四层检测：包结构静态检查、cordis 契约扫描、动态沙箱冒烟与集合站清单校验；零依赖，只用 Node 自带能力 | developer-tools |
 | [dsh-scaffold](https://github.com/PerryLink/dsh-scaffold) | 把 20+ 插件重复手写的 Provider seam、审批门与 sanitize/pricing/judge 抽成共享 TypeScript 包；零运行时依赖 | developer-tools |
 | [dsh-security-pack](https://github.com/PerryLink/dsh-security-pack) | 把八套安全审计方法论做成 SKILL.md 技能，附零依赖的 plugin_vet 装前扫描器查许可证、SBOM 与 commit 锁定；不取代人工审计 | security |
 | [dsh-dida](https://github.com/PerryLink/dsh-dida) | 把滴答清单的清单、任务与截止日期接到会话头部面板，另给 11 个 agent 工具；全部走官方滴答 MCP 端点，令牌每次请求重读 | integrations |
 
-**`family.json` 之外的运行时条目：** [dsh-phone-inbox](https://github.com/PerryLink/dsh-phone-inbox)（微信桥接入站附件）与 [dsh-laya](https://github.com/PerryLink/dsh-laya)（Laya 决策引擎；family 行指向 [laya-family/dsh-laya](https://github.com/laya-family/dsh-laya)）。
+**`family.json` 之外的运行时条目：** [dsh-phone-inbox](https://github.com/PerryLink/dsh-phone-inbox)（微信桥接入站附件）、[dsh-laya](https://github.com/PerryLink/dsh-laya)（Laya 决策引擎；family 行指向 [laya-family/dsh-laya](https://github.com/laya-family/dsh-laya)）与 [dsh-translate](https://github.com/PerryLink/dsh-translate)（0.3.0 起的整页翻译；`family.json` 尚未收录）。
 
 ## 5. Compliance checkers
 
