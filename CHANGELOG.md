@@ -83,6 +83,12 @@ section or a badge of their own.
   2026-11-03 line (156/180) — the metric and name set are now stated together.
 - Profile README numbers updated for the above; `FAMILY.md` is being rewritten separately.
 
+## 2026-11-09 (thirty-second round — follow-up PRs)
+
+- **554 total: 520 + 34**, across **105 repositories**, **102** credited, re-derived at 2026-11-09T13:30Z.
+  **197** proposals are open across **149** repositories as of the same time.
+- Merged since the previous round: `losebird/dsh-plugin-market#81`.
+
 ## 2026-11-09 (thirty-first round — merge batch)
 
 - **553 total: 519 + 34**, across **105 repositories**, **102** credited, re-derived at 2026-11-09T04:10Z.
