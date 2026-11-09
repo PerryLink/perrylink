@@ -63,6 +63,15 @@ section or a badge of their own.
   2026-11-03 line (156/180) — the metric and name set are now stated together.
 - Profile README numbers updated for the above; `FAMILY.md` is being rewritten separately.
 
+## 2026-11-09 (thirty-first round — merge batch)
+
+- **553 total: 519 + 34**, across **105 repositories**, **102** credited, re-derived at 2026-11-09T04:10Z.
+  **193** proposals are open across **148** repositories as of the same time.
+- Merged since the previous round: `awesome-dsh-plugin/awesome-dsh-plugin#13249`–`#13261`
+  (13 catalog entries), `ysr666/dsh-vision-router#810`, `webpack/webpack-bundle-analyzer#750`,
+  `Tencent/teamai-cli#1784`, `agentclientprotocol/claude-agent-acp#1543`,
+  `NandhaKishorM/laya#1487`, `Tencent/BrowserSkill#637`.
+
 ## 2026-11-08 (thirtieth round — follow-up batch)
 
 - **534 total: 500 + 34**, across **105 repositories**, **102** credited, re-derived at 2026-11-08T03:52Z.
