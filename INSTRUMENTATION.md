@@ -283,7 +283,7 @@ is merely "balanced" is not enough: balance is exactly what produced the 836px r
 | npm provenance | 137/178 | "Where the plugins live" |
 | MCP Registry | 4 servers | "Where the plugins live" |
 | DSH Desktop Market source | (no number) | the catalog URL — reached over jsDelivr, see the reachability note in §4 |
-| Gitee mirror | (no number) | the mirror claim |
+| Gitee / GitCode mirror | (no number) | the mirror claim (a count would drift with every new repo) |
 | dsh host corridor | ≥0.1.2-rc.1 <0.3.0 | the union of the six `engines.dsh` clauses in any plugin's `package.json` |
 | node | ≥22.19 | the mainline `engines.node` (`^22.19.0 \|\| >=24.0.0`, 110 of 125); the fifteen 2026-10-31 demos declare `>=24.9.0 <25`, and the family note says so |
 | license | Apache-2.0 | the `LICENSE` file |

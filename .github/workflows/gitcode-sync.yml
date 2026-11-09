@@ -186,71 +186,71 @@ jobs:
           }
 
           # ---- mirror manifest ----------------------------------------------
-          # All 200 PerryLink-owned repos as of 2026-10-07, so a newly created
+          # All PerryLink-owned repos (list refreshed 2026-11-09), so a newly created
           # repo is picked up without editing this file; a repo absent from
           # GitCode is skipped by the guard above. dsh-wechat stays in the list
           # (it is simply not on GitCode yet); .github is skipped by name.
           #
-          # chunk 1/5  (40 repos)
+          # chunk 1/6  (31 repos)
           repos=(
             3FS agent-browser agent-client-protocol Agents-Anywhere aibrix AI-Carbon-Footprint-Calculator
             AI-Generated-Image-EXIF-Detector API-Data-Leak-Scanner awesome-deepseek-agent
-            awesome-deepseek-harness-2 awesome-deepseek-harness-awe awesome-deepseek-harness-libukai
+              awesome-deepseek-harness-libukai
             awesome-deepseek-harness-plugins awesome-deepseek-harness-plugins-sihanteng
-            awesome-deepseek-harness-plugins-zhiyuanfan awesome-deepseek-integration awesome-dsh-plugin-1
-            awesome-dsh-plugin-2 awesome-dsh-plugin-alexyanggg awesome-dsh-plugins-1
-            awesome-dsh-plugins-2026 awesome-dsh-plugins-kejixiaoliang awesome-mcp-servers
-            awesome-omni-dsh-plugins awesome-vibecoded-saas-fork Bias-Radar boilerplate BrowserSkill chat
+            awesome-deepseek-harness-plugins-zhiyuanfan  awesome-dsh-plugin-1
+             awesome-dsh-plugin-alexyanggg 
+             awesome-dsh-plugins-kejixiaoliang awesome-mcp-servers
+            awesome-omni-dsh-plugins  Bias-Radar  BrowserSkill chat
             checkpoint-engine China-Geo-Compliance Citation-Validator-Lite codex-security
-            Context-Relevance-Scorer Contract-Entity-Extractor cordis daggerverse Data-Export-Approver
+            Context-Relevance-Scorer Contract-Entity-Extractor cordis  Data-Export-Approver
             DeepEP DeepGEMM
           )
           sync_chunk
 
-          # chunk 2/5  (40 repos)
+          # chunk 2/6  (39 repos)
           repos=(
-            DeepJIT deepsec deepseek-harness deepseek-harness-desktop DeepSeek-MoE DeepSeek-Prover-V1.5
+            DeepJIT deepsec  deepseek-harness-desktop DeepSeek-MoE DeepSeek-Prover-V1.5
             DeepSeek-Reasonix deepseek-recipe DeepSelect deer-flow docs dsh-auto-review dsh-autotier
             dsh-attention-index dsh-background-agents DSH-better-sidebar dsh-browser dsh-budget dsh-catalog dsh-cert-mcp dsh-community-bench
             dsh-checkpoint-rewind dsh-claude-move dsh-click dsh-composer-completion dsh-composer-history
-            dsh-data-quality dsh-deep-whale dsh-defend dsh-desktop dsh-doublecheck dsh-draw dsh-fast
+            dsh-data-quality  dsh-defend  dsh-doublecheck dsh-draw dsh-fast
             dsh-fund-research dsh-github dsh-industry-research dsh-kit dsh-laya dsh-library dsh-local-ai
             dsh-lsp-actions dsh-mask
           )
           sync_chunk
 
-          # chunk 3/5  (40 repos)
+          # chunk 3/6  (38 repos)
           repos=(
             dsh-mcp-panel dsh-memento dsh-observe dsh-output-styles dsh-permission-rules
-            dsh-personal-directive dsh-plugin-certification dsh-plugin-collection dsh-plugin-doctor
+            dsh-personal-directive dsh-plugin-certification  dsh-plugin-doctor
             dsh-plugin-guide dsh-plugin-kit dsh-plugin-portal dsh-plugin-upgrade dsh-plugin-upgrade-015
-            dsh-plugin-upgrade-016 dsh-pub dsh-reach dsh-research-report dsh-score dsh-session-pin
+            dsh-plugin-upgrade-016  dsh-reach dsh-research-report dsh-score dsh-session-pin
             dsh-session-sync dsh-skill-pack-security dsh-talk dsh-team-rooms dsh-test-drive dsh-ticktick
             dsh-translate dshw dsh-web dsh-wechat element embedding-atlas EverOS fastmcp Few-Shot-Selector
             FlashMLA goraven go-sdk GPL-Radar GPT-Rosetta-Stone
           )
           sync_chunk
 
-          # chunk 4/5  (40 repos)
+          # chunk 4/6  (37 repos)
           repos=(
-            honcho http huggingface.js Jailbreak-Detector jevcore JSON-Schema-Enforcer-Proxy kkbot koishi
+             http huggingface.js Jailbreak-Detector jevcore JSON-Schema-Enforcer-Proxy kkbot koishi
             koishi-plugin-adapter-onebot kyzhxl-dsh-plugin-registry laya layacore layacore-install
             layacore-mcp laya-mcp laya-mcp-npm LLM-Cost-Estimator-CN LLM-detective llm-jev-laya-bench
             LLM-Stress-Test-CLI lm-evaluation-harness loop-aider loop-antigravity loop-claudecode loop-codex
             loop-copilot loop-cursor loop-deepseek loop-everything Loop-Fuse loop-hermes loop-ollama
-            loop-openclaw loop-opencode loop-superpowers losebird-dsh-plugin-market Lost-in-Middle-Tester
-            mcp mcp-atlassian memmy-agent
+            loop-openclaw loop-opencode loop-superpowers  Lost-in-Middle-Tester
+            mcp mcp-atlassian 
           )
           sync_chunk
 
-          # chunk 5/6  (40 repos)
+          # chunk 5/6  (38 repos)
           repos=(
             Mode-Latency-Benchmark NeMo-Agent-Toolkit Oh-My-DSH open-code-review openpencil ouroboros
             papermachine perrylink Pii-Stripper-Middleware Prompt-Attack-Dataset Prompt-Injection-Payloads
             Prompt-Regression-Diff Prompt-Token-Optimizer python-sdk RAG-Chunk-Visualizer RAG-Purge-Verify
-            RAG-Reference-Checker Retrieval-Diversity-Check ruflo satori schemastery
+            RAG-Reference-Checker Retrieval-Diversity-Check ruflo satori 
             Secret-Key-Leaker-Detect Sensitive-Word-Filter-CN Sino-Scrub SkillOpt slime Sus-PY
-            system-one-adapter-python tau Text-Humanizer TileKernels Toxicity-Score-CLI transformers-patch
+             tau Text-Humanizer TileKernels Toxicity-Score-CLI transformers-patch
             truss txtai vscode-dsh-sidebar vscode-ui-skill webui zeropoint-awesome-dsh-plugins .github
           )
           sync_chunk

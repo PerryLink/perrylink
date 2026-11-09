@@ -27,6 +27,7 @@
 <br>
 <a href="https://perrylink.github.io/"><img alt="plugin index" src="https://img.shields.io/badge/plugin%20index-185%20pages-0b5fff"></a>
 <a href="https://gitee.com/perrylink"><img alt="Gitee mirror" src="https://img.shields.io/badge/Gitee-mirror-c71d23?logo=gitee"></a>
+<a href="https://gitcode.com/PerryLink"><img alt="GitCode mirror" src="https://img.shields.io/badge/GitCode-mirror-2f6f4f"></a>
 <a href="https://dshfind.com/plugins?q=PerryLink"><img alt="dshfind downloads across the family" src="https://img.shields.io/badge/dshfind%20downloads-45.5k%2B%20across%209%20plugins-6e7781"></a>
 <a href="https://cdn.jsdelivr.net/gh/PerryLink/dsh-family-catalog@main/deploy/catalog-source.json"><img alt="DSH Desktop Market source" src="https://img.shields.io/badge/DSH%20Desktop%20Market-source-0969da"></a>
 <a href="https://github.com/PerryLink/perrylink/blob/main/FAMILY.md#10-research-suite-catalog-only-19"><img alt="research suite" src="https://img.shields.io/badge/research%20suite-19-6f42c1"></a>
@@ -204,8 +205,9 @@ This is a measured adoption call, not a quality verdict.
 
 ## 🌍 Where the plugins live
 
-- **GitHub** (this profile), **[Gitee](https://gitee.com/perrylink)** and **npm** — source, CI and releases
-  here; the mainline Gitee mirror covers 108 repositories (default branch and all tags), while the domain set adds five flagships plus both suites on Gitee and three flagships plus both suites on GitCode, with latest release assets. The `perrylink` npm
+- **GitHub** (this profile), **[Gitee](https://gitee.com/perrylink)**, **[GitCode](https://gitcode.com/PerryLink)** and **npm** — source, CI and releases
+  live here; both mirrors now carry every active family repository (default branch and tags), so a reader in
+  mainland China can browse or clone without a proxy. The `perrylink` npm
   account holds **178 names and 2,211 versions** (registry search `maintainer:perrylink`, 2026-11-08); **137** of them carry a SLSA
   provenance attestation on at least one version, **129** on the current `latest`, and **41** carry none.
 - **npm downloads** — **345,484 over the 30 days to 2026-11-07** (21 newest names have no 30-day series yet, so this is a lower bound).
