@@ -4,7 +4,7 @@
 > （137 行：126 active / 8 frozen / 3 retired），其余行来自 `dsh-kit` 与 PerryLink/Phocinae 仓库。
 > **2026-11-08 改名：** `dsh-translate` 自 0.3.0 起是整页翻译插件；原「厂商参数映射 + 确定性 JSON 修复」改名
 > `dsh-param-repair`（1.0.1），`/translate` 命令、`fix_json` 工具与全部配置键不变。
-> 覆盖：170 个活跃 + 11 个归档的自有 DSH 仓库，全部在下方有链接（137 行安装名册 + 19 个 catalog-only 科研 npm 仓库，见 §10；另有 1 个科研数据仓 dsh-research-bench、catalog-only 的整页翻译插件，以及 roster 之外的 dsh-sherlock）。
+> 覆盖：169 个活跃 + 11 个归档的自有 DSH 仓库，全部在下方有链接（137 行安装名册 + 19 个 catalog-only 科研插件，见 §10；另有 catalog-only 的整页翻译插件）。
 > 分组按用途重叠——一个支持仓同时是 bundle 时会出现两次；这是索引，不是互斥分区。
 
 家族分三层：**规范与指南**（怎么建）、**开发者工具链**（怎么发）、**运行时/领域插件**（用户装什么）；Phocinae 是独立的决策模型线。
@@ -89,7 +89,9 @@
 | [dsh-security-pack](https://github.com/PerryLink/dsh-security-pack) | 把八套安全审计方法论做成 SKILL.md 技能，附零依赖的 plugin_vet 装前扫描器查许可证、SBOM 与 commit 锁定；不取代人工审计 | security |
 | [dsh-dida](https://github.com/PerryLink/dsh-dida) | 把滴答清单的清单、任务与截止日期接到会话头部面板，另给 11 个 agent 工具；全部走官方滴答 MCP 端点，令牌每次请求重读 | integrations |
 
-**`family.json` 之外的运行时条目：** [dsh-phone-inbox](https://github.com/PerryLink/dsh-phone-inbox)（微信桥接入站附件）、[dsh-laya](https://github.com/PerryLink/dsh-laya)（Laya 决策引擎；family 行指向 [laya-family/dsh-laya](https://github.com/laya-family/dsh-laya)）与 [dsh-translate](https://github.com/PerryLink/dsh-translate)（0.3.2 起的整页翻译，catalog-only；与 §10 科研套件同类，不计入 137 行）。另有 [dsh-sherlock](https://github.com/PerryLink/dsh-sherlock)（基于固定 Sherlock 清单检查公开用户名；六态结果、随机负样本、默认 core 41、all 单次最多 120；不在 137 行内）。
+**`family.json` 之外的运行时条目：** [dsh-phone-inbox](https://github.com/PerryLink/dsh-phone-inbox)（微信桥接入站附件）、[dsh-laya](https://github.com/PerryLink/dsh-laya)（Laya 决策引擎；family 行指向 [laya-family/dsh-laya](https://github.com/laya-family/dsh-laya)）与 [dsh-translate](https://github.com/PerryLink/dsh-translate)（0.3.2 起的整页翻译，catalog-only；与 §10 科研套件同类，不计入 137 行）。
+
+**时序证据工作台（catalog-only，不计入 137 行）：** [dsh-sherlock](https://github.com/PerryLink/dsh-sherlock) —— 把公开来源整理成可复核的本地时序案卷：五轴时间（event/publication/first-seen/observed/modified）、TEG、T-S-C-E、日期冲突、缺口与覆盖、watch/diff/verify/review、查询台账和自包含 HTML 报告；可选用 DSH 搜索、RSS、GDELT 与 Wayback CDX，但**不建站、不查人、不裁决真假**。0.5.0（2026-11-09）把来源适配器、50 URL 采集、脱敏 profile、跨案卷索引和 53 项测试收进同一包；旧的 `sherlock_check` / `sherlock_sites` 仅作为 legacy 兼容保留。
 
 ## 5. Compliance checkers
 
@@ -273,8 +275,6 @@ Phocinae（斑海豹）是独立的一条决策线：百 M 级非生成式模型
 
 > 2026-11-08 发布的科研插件套件：已进 DSH Desktop Market catalog 与 `data/discovery.json`，但**未进** `dsh-kit/plugins.txt` 安装名册。它们不计入上文的 137 行；npm 名为 `@perrylink/dsh-claim-check` / `@perrylink/dsh-research-core` 的两个包使用 scope，其余为同名。
 
-标题的 19 是 npm 包数（18 个插件 + `dsh-research-core`）；加上数据仓 `dsh-research-bench` 共 20 个仓库，bench 不是第 20 个 npm 包。
-
 | 仓库 | 它做什么 · 关键差异 |
 |---|---|
 | [dsh-cite-verify](https://github.com/PerryLink/dsh-cite-verify) | 核验一条引用确实存在——并核验它的元数据是否正确。DOI / PMID / arXiv / BibTeX → 数据源自己的回答、逐字段核对、内容寻址的快照与 REP 证据记录。 |
@@ -296,8 +296,5 @@ Phocinae（斑海豹）是独立的一条决策线：百 M 级非生成式模型
 | [dsh-sr-ledger](https://github.com/PerryLink/dsh-sr-ledger) | 经得起复核的系统综述账本：只追加、双人筛选、PRISMA 2020、审计可验。记录方案、每条筛选决策、冲突裁决与 RoB/GRADE 评估，再推导 PRISMA 流程。 |
 | [dsh-statcheck](https://github.com/PerryLink/dsh-statcheck) | 重算稿件报告的统计数据——并把对不上的那些标出来。这是算术，不是指控：每条 finding 都给出报告的统计量、它实际蕴含的 p 值，以及精确字符位置。 |
 | [dsh-research-core](https://github.com/PerryLink/dsh-research-core) | REP v1——DSH 科研插件家族的共享证据协议。一套协议、一个存储、一个校验器：每个科研插件说同一种证据语言，任何人 30 秒内可复算它声称的结论。 |
-| [dsh-research-bench](https://github.com/PerryLink/dsh-research-bench) | 科研套件的冻结合成基准数据仓（不是 npm 包，`private: true`）：citations / stats / claims（含 held-out）/ images / meta / manuscripts / repro 七套，共八个数据集；每个适配器打印混淆矩阵，插件 README 只能引用这里产出的数字。 |
-
-**Benchmark 摘要（2026-11-08，合成数据，非盲测）**：claims-heldout 48/50（0.96；同作者时间留出，两处失败是故意保留的）；images 100 对，manipulated P/R/F1 1.00、FPR 0.00（16×16 网格对齐、无压缩/缩放/旋转）；repro level 10/10、gap P/R 1.00、drift 3/3（git 是硬前置，Windows 未实测）；meta 20 组 / 153 行，Q 最大误差 8.527e-14；manuscripts 条目准确率 .9571；citations、stats 与 claims 基线 P/R 1.00。完整数字与限制以 `dsh-research-bench/data/*/SUMMARY.json` 和各插件 README 为准。
 
 运行时/领域行的权威来源：[ROSTER.md](https://github.com/PerryLink/dsh-plugins/blob/main/ROSTER.md)。
