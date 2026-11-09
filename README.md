@@ -29,6 +29,7 @@
 <a href="https://gitee.com/perrylink"><img alt="Gitee mirror" src="https://img.shields.io/badge/Gitee-mirror-c71d23?logo=gitee"></a>
 <a href="https://dshfind.com/plugins?q=PerryLink"><img alt="dshfind downloads across the family" src="https://img.shields.io/badge/dshfind%20downloads-45.5k%2B%20across%209%20plugins-6e7781"></a>
 <a href="https://cdn.jsdelivr.net/gh/PerryLink/dsh-family-catalog@main/deploy/catalog-source.json"><img alt="DSH Desktop Market source" src="https://img.shields.io/badge/DSH%20Desktop%20Market-source-0969da"></a>
+<a href="https://github.com/PerryLink/perrylink/blob/main/FAMILY.md#10-research-suite-catalog-only-19"><img alt="research suite" src="https://img.shields.io/badge/research%20suite-19-6f42c1"></a>
 </p>
 
 <sub>“Certified” is our own family attestation, not an independent audit or a DeepSeek endorsement.</sub>
@@ -61,13 +62,16 @@ I also contribute to **[Cordis](https://github.com/cordiverse/cordis)**, the plu
 vendors as `@deepseek-ai/cordis` — nine merged pull requests there, from async-generator cleanup to reload
 behaviour.
 
+**Research suite** — 18 Apache-2.0 verification plugins plus a shared REP core and a separate benchmark data repository: citation existence and metadata, byte-level claim support, statistics, retraction and correction watch, reproducibility, systematic-review ledgers, manuscript/grant/IRB/DMP checks, image reuse, meta-analysis and response letters. It is 19 npm packages (two scoped: `@perrylink/dsh-research-core` and `@perrylink/dsh-claim-check`) and **catalog-only** — not in the `dsh-kit` install roster. Seven frozen synthetic benchmark suites (eight datasets, because claims has a baseline and a held-out set) live in [`dsh-research-bench`](https://github.com/PerryLink/dsh-research-bench); headline results include claims-heldout **48/50 (0.96)** on a same-author temporal split, image-manipulation precision/recall/F1 **1.00** on 100 synthetic pairs, and reproducibility level **10/10**. Every number carries its dataset version and stated limits; see [FAMILY §10](./FAMILY.md#10-research-suite-catalog-only-19).
+
 **中文读者 · 只想核对一份材料？** [按「手上是什么材料」选一个核查器（53 个核心，全中文）→](https://perrylink.github.io/zh/checkers/choose/) · 另有 6 个新增核查器与 3 个工作台工具，见 [合规组（62）](./FAMILY.md#5-compliance-checkers)。
 
 ## ▶ Start here
 
 | What | Where |
 |---|---|
-| **Full family index** — 169 active + 11 archived own DSH repositories, 10 groups | [FAMILY.md](./FAMILY.md) · [site page](https://perrylink.github.io/dsh-plugins/family.html) |
+| **Full family index** — 170 active + 11 archived own DSH repositories, 10 groups | [FAMILY.md](./FAMILY.md) · [site page](https://perrylink.github.io/dsh-plugins/family.html) |
+| **Research suite** — 18 verification plugins + REP core + 7 benchmark suites | [FAMILY §10](./FAMILY.md#10-research-suite-catalog-only-19) · [bench](https://github.com/PerryLink/dsh-research-bench) |
 | **Standards & guides** — ENTRY/FLOW/BOOST, the checker, the rule text | [dsh-standards](https://github.com/PerryLink/dsh-standards) · [dsh-plugin-guide](https://github.com/PerryLink/dsh-plugin-guide) · [dsh-plugin-spec](https://github.com/PerryLink/dsh-plugin-spec) |
 | **Developer tools** — start / ready / tools / dev, one front door | [dsh-plugin-dev](https://github.com/PerryLink/dsh-plugin-dev) · [dsh-plugin-start](https://github.com/PerryLink/dsh-plugin-start) · [dsh-plugin-ready](https://github.com/PerryLink/dsh-plugin-ready) · [dsh-plugin-tools](https://github.com/PerryLink/dsh-plugin-tools) |
 | **Task-first market** — 11 task families, five scenario packs, two suites | [market](https://perrylink.github.io/dsh-plugins/market.html) · [market/index.json](https://perrylink.github.io/dsh-plugins/market/index.json) · [packs](https://perrylink.github.io/dsh-plugins/packs/finance.html) |
@@ -167,7 +171,8 @@ repository is indexed in **[FAMILY.md](./FAMILY.md)**.
 | 📘 Guides — ENTRY/FLOW/BOOST guide and the practical primer | 2 | [guide](https://github.com/PerryLink/dsh-plugin-guide) · [primer](https://github.com/PerryLink/dsh-primer) |
 | 🛠️ Developer toolchain — start / ready / tools / dev / scaffold / codemod / test-drive | 8 | [dev](https://github.com/PerryLink/dsh-plugin-dev) · [start](https://github.com/PerryLink/dsh-plugin-start) · [scaffold](https://github.com/PerryLink/dsh-scaffold)<br>[codemod](https://github.com/PerryLink/dsh-codemod) · [test-drive](https://github.com/PerryLink/dsh-test-drive) · [all 8](./FAMILY.md#3-developer-toolchain) |
 | 🧩 Runtime plugins — security, workflow, UX, research, observability, messaging, developer experience | 32 | [auto-review](https://github.com/PerryLink/dsh-auto-review) · [industry-research](https://github.com/PerryLink/dsh-industry-research) · [research-report](https://github.com/PerryLink/dsh-research-report)<br>[memento](https://github.com/PerryLink/dsh-memento) · [permission-rules](https://github.com/PerryLink/dsh-permission-rules) · [all 32](./FAMILY.md#4-runtime-plugins) |
-| **Translation** — full-page UI translation on your own model route; the old parameter/JSON-repair plugin is now `dsh-param-repair` | [dsh-translate](https://github.com/PerryLink/dsh-translate) · [dsh-param-repair](https://github.com/PerryLink/dsh-param-repair) · [FAMILY §4](./FAMILY.md#4-runtime-plugins) |
+| **Translation** — full-page UI translation on your own model route; the old parameter/JSON-repair plugin is now `dsh-param-repair` | — | [dsh-translate](https://github.com/PerryLink/dsh-translate) · [dsh-param-repair](https://github.com/PerryLink/dsh-param-repair) · [FAMILY §4](./FAMILY.md#4-runtime-plugins) |
+| 🔬 **Research suite** — citations, claims, statistics, images, meta-analysis, manuscripts, reproducibility, ethics (catalog-only) | 19 | [FAMILY §10](./FAMILY.md#10-research-suite-catalog-only-19) · [bench](https://github.com/PerryLink/dsh-research-bench) |
 | ✅ Compliance checkers — 53-checker suite plus newer checker/audit tools | 62 | [check-pack](https://github.com/PerryLink/dsh-check-pack) · [contract-stance](https://github.com/PerryLink/dsh-contract-stance) · [invoice-ledger](https://github.com/PerryLink/dsh-invoice-ledger)<br>[excel-reconcile](https://github.com/PerryLink/dsh-excel-reconcile) · [checker index](https://perrylink.github.io/zh/checkers/) · [all 62](./FAMILY.md#5-compliance-checkers) |
 | 🏢 Domain operations — finance, legal, trade, HR, construction, ESG, quality, documents | 29 | [finops-suite](https://github.com/PerryLink/dsh-finops-suite) · [contract-suite](https://github.com/PerryLink/dsh-contract-suite) · [einvoice](https://github.com/PerryLink/dsh-einvoice)<br>[legal-intake](https://github.com/PerryLink/dsh-legal-intake) · [market](https://perrylink.github.io/dsh-plugins/market.html) · [all 29](./FAMILY.md#6-domain-operations) |
 | 🦭 Phocinae — typed decisions: server, guard, MCP, CLI, rulepack, DSH plugins | 12 | [org](https://github.com/Phocinae) · [dsh-phocinae](https://github.com/PerryLink/dsh-phocinae) · [evidence](https://github.com/Phocinae/dsh-evidence)<br>[batch-triage](https://github.com/Phocinae/dsh-batch-triage) · [context-verdict](https://github.com/Phocinae/dsh-context-verdict) · [all 12](./FAMILY.md#7-phocinae) |
@@ -180,7 +185,7 @@ repositories are a separate org line outside those counts.
 The runtime/domain roster is **137 rows: 126 active, 8 frozen, 3 retired**. `dsh-kit` installs the
 96-spec mainline (43 defaults + 53 opt-in checkers), not the whole family. Install scopes:
 [ROSTER.md](https://github.com/PerryLink/dsh-plugins/blob/main/ROSTER.md); machine catalogue:
-[dsh-catalog](https://github.com/PerryLink/dsh-catalog); per-repo detail: [FAMILY.md](./FAMILY.md). The new `dsh-translate` translator and the 19-package research suite are catalog-only and outside those 137 rows.
+[dsh-catalog](https://github.com/PerryLink/dsh-catalog); per-repo detail: [FAMILY.md](./FAMILY.md). The new `dsh-translate` translator and the 19-package research suite are catalog-only and outside those 137 rows. The new `dsh-sherlock` runtime plugin is also outside the 137-row roster; it is listed in FAMILY §4 and is not counted here.
 
 ## 🪦 Retired & frozen
 
@@ -210,7 +215,7 @@ This is a measured adoption call, not a quality verdict.
 - **DSH Desktop Market** — add
   `https://cdn.jsdelivr.net/gh/PerryLink/dsh-family-catalog@main/deploy/artifacts/v1/plugins.json` under
   Market → Sources to browse the family in-app (**146 packages, catalogue generated 2026-11-08**; the
-  strict 1.0.0 page is served as 100+45 cursor pages). The same build exposes
+  strict 1.0.0 page is served as 100+46 cursor pages). The same build exposes
   `https://perrylink-dsh-catalog.perrylink.workers.dev/v1/search?q=…` and a stdio MCP server
   (`plugin_search` / `plugin_get`) over the Chinese discovery index. The catalogue includes a
   **19-package research suite** published 2026-11-08 (catalog-only; it is not in the install roster), and the repurposed

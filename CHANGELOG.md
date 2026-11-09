@@ -21,6 +21,33 @@ section or a badge of their own.
 
 ---
 
+## 2026-11-09 (thirty-third round — dsh-sherlock outside the roster)
+
+- `dsh-sherlock`: pinned Sherlock manifest, 417 valid sites, six-state result, random
+  negative-sample check on `claimed`, two tools (`sherlock_check` / `sherlock_sites`) plus
+  an optional `sherlock-osint` skill; default `core` 41, `all` capped at 120, NSFW off by
+  default.
+- Listed as an **outside-roster runtime entry** in FAMILY §4 — not in `family.json`,
+  `ROSTER.md` or `dsh-kit`; **126 / 137 / 32 stay unchanged**. Coverage 169 → 170 active
+  + 11 archived.
+- npm latest 0.1.1; 0.1.2 staged at the time of this round (not claimed as published).
+  dshbase already lists 0.1.1.
+
+## 2026-11-08 (thirty-second round — research suite on the homepage)
+
+- Research suite surfacing: 18 Apache-2.0 verification plugins + `@perrylink/dsh-research-core`
+  = 19 npm packages (two scoped), catalog-only and outside the 137-row install roster;
+  `dsh-research-bench` is a separate data repository (`private: true`, no npm package),
+  making 20 repositories.
+- Seven frozen synthetic benchmark suites / eight datasets; 588 tests across the 19 packages;
+  20/20 CI green. Headline numbers with their limits: claims-heldout 48/50 (0.96, same-author
+  temporal split), image manipulation P/R/F1 1.00 on 100 synthetic pairs, reproducibility
+  level 10/10.
+- Profile README/FAMILY/INSTRUMENTATION/ROSTER updated; catalog stays 146. No npm release in
+  this round.
+- Provenance: the 19 research packages were published with a local token and carry no SLSA
+  attestation.
+
 ## 2026-11-08 (thirty-first round — catalog and discovery)
 
 - Catalog: **146 packages** generated 2026-11-08 (was 125 on 2026-11-03), including the **19-package

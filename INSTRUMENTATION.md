@@ -18,8 +18,8 @@ absent. The two sanctioned exceptions are marked.
 
 | Figure | Authoritative site | Update trigger |
 |---|---|---|
-| 126 actively maintained / 137 in the roster / 190 non-fork owned / 148 with a `package.json` | README § intro sentence for 126; README § family note for 137 | a repo joins, leaves, freezes or retires |
-| **plugins badge** *(exception: badge row is the live copy)* | README badge row — carries the actively maintained count, 107 | same |
+| 126 actively maintained / 137 in the roster | README § intro sentence for 126; README § family note for 137 | a repo joins, leaves, freezes or retires |
+| **plugins badge** *(exception: badge row is the live copy)* | README badge row — carries the actively maintained count, 126 | same |
 | Family roster (which plugins exist, and each one's status) | [`dsh-kit/plugins.txt`](https://github.com/PerryLink/dsh-kit) — the install roster, with `scripts/check-parity.mjs` deriving every count and failing on a retired package or a lost status cell | any release |
 | Per-repo maintenance status (`active` / `frozen` / `retired`) | [`dsh-plugin-kit/data/repos.json`](https://github.com/PerryLink/dsh-plugin-kit/blob/main/data/repos.json) — the machine-readable roster the portal renders and the certification registry counts | when a repo freezes or retires |
 | npm 30-day downloads | README § Where the plugins live | monthly |
@@ -38,8 +38,16 @@ absent. The two sanctioned exceptions are marked.
 | Round narratives | [`CHANGELOG.md`](CHANGELOG.md) | every round |
 | rule-pack size and rules with no verbatim clause text | [`catalog.json`](https://perrylink.github.io/catalog.json), rendered per domain at [the checker index](https://perrylink.github.io/zh/checkers/) | when a rule pack is rebuilt |
 | DSH Desktop Market catalog — **146 packages, generated 2026-11-08**; includes the 19-package research suite (catalog-only, not in the install roster) | README § Where the plugins live, DSH Desktop Market bullet | when the catalogue is regenerated |
+| Research suite — 18 plugins + 1 REP core + 1 benchmark data repository; 19 npm packages (2 scoped), catalog-only | FAMILY §10 and its benchmark paragraph; `dsh-research-bench/data/*/SUMMARY.json`; each plugin README | a research package or benchmark changes |
+| Family coverage — 170 active + 11 archived own DSH repositories (2026-11-09; 169 before dsh-sherlock) | FAMILY.md header coverage line and its linked repository list; README § Start here repeats the headline | a repository joins, leaves, freezes or is archived |
 | Phocinae figures (21.0 ms (RTX 5090) / 1.64 s / 0.906 / 0.848 / flip150 0.0200 · flip400 0.0217 / ECE 0.2519 / τ=0.6 → 45.0% escalate, −55.0% LLM calls, kept-subset 0.9936) | README § Phocinae | a Phocinae release re-benchmarks |
 | Phocinae org / project map | README § Phocinae; the org profile at [github.com/Phocinae](https://github.com/Phocinae) is the long map | when the org changes |
+
+The 126 is the active install-roster count. It does not include the 19 catalog-only research
+packages, the catalog-only `dsh-translate`, or the outside-roster `dsh-sherlock`; the 137-row
+roster is a different figure. Family coverage (170) counts the own DSH repositories indexed in
+FAMILY, including the 19 research npm repositories but not the `dsh-research-bench` data
+repository.
 
 **Never** restate an authoritative figure in the intro, in a round, or in the Chinese block. The
 Chinese block is a mirror of the story, not a second home for numbers — if it needs a figure, it
@@ -97,11 +105,13 @@ paragraph. Keep both sentences.
 
 ---
 
-## 3. The 107 / 125 / 127 / 120 / 190 / 136 counting note
+## 3. The 126 / 137 roster counting note
 
 The page's most attackable number, so the note in the README's family section is the defence. **The
-heading and the badge carry the actively maintained count (107). The roster figure (125) is stated once,
-inside that note** — the intro sentence is the authoritative prose site for 107, not for 125.
+heading and the badge carry the actively maintained count (126). The roster figure (137) is stated once,
+inside that note** — the intro sentence is the authoritative prose site for 126, not for 137. The
+107 / 125 / 127 / 120 / 190 / 136 figures below are the 2026-10-31 derivation and are kept as history;
+where they differ, the current 126 / 137 pair wins.
 
 Measured one repo at a time from each repo's own `package.json` at its default branch (re-derived 2026-10-31,
 after the freeze batch):
@@ -158,8 +168,13 @@ The fifteen are public/synthetic, partial and not GA in their own READMEs; they 
 membership rule and the page says so, and they are not part of the 53-checker suite. These figures supersede
 every earlier line in this section.
 
+**2026-11-08 / 11-09: roster 137 / 126 and outside-roster entries.** The 12 GA tools added on
+2026-11-02/03 move the roster to **137** and the active set to **126**; the 19 research npm
+packages, the catalog-only `dsh-translate`, and the outside-roster `dsh-sherlock` are outside
+that roster and are covered by the family-coverage figure (**170**) rather than by 126 / 137.
+
 `Phocinae/*` is the account's other org. Its repos and DSH plugins are **not** counted in the
-127/125/107: they are a separate line, mentioned in README § Phocinae. The 497 contains no PR to a
+126 / 137 roster: they are a separate line, mentioned in README § Phocinae. The 497 contains no PR to a
 `Phocinae/*` repository (re-checked 2026-10-31), so no external-contribution figure moves.
 
 They are a second workspace on disk (`D:\Projects\dsh-plugins`, disjoint from `D:\Projects\dsh\plugins`)
