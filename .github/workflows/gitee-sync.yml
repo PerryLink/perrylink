@@ -53,30 +53,46 @@ jobs:
           # another account; the Gitee mirror is always named after the repo.
           # The upgrade corridor is merged into dsh-plugin-upgrade: its retired
           # legs (-015, -rc1, -016) are deliberately not synced any more.
-          repos=(dsh-auto-review dsh-background-agents dsh-budget dsh-checkpoint-rewind \
-            dsh-claude-move dsh-click dsh-composer-history dsh-data-quality dsh-defend \
-            dsh-doublecheck dsh-draw dsh-fast dsh-fund-research dsh-github \
-            dsh-industry-research dsh-library dsh-local-ai dsh-lsp-actions dsh-mask \
-            dsh-mcp-panel dsh-memento dsh-observe dsh-output-styles dsh-permission-rules \
-            dsh-personal-directive dsh-plugin-guide dsh-plugin-kit dsh-research-report \
-            dsh-score dsh-session-pin dsh-session-sync dsh-skill-pack-security dsh-talk \
-            dsh-test-drive dsh-translate dsh-reach dsh-attention-index dsh-catalog dsh-cert-mcp dsh-community-bench dsh-ticktick \
-            dsh-autotier dsh-plugin-doctor dsh-kit \
-            dsh-plugin-upgrade dsh-team-rooms jevcore pan17/dsh-wechat \
-            dsh-aqua-input-check dsh-archive-check dsh-bid-ca-precheck dsh-bid-qual-check \
-            dsh-contract-stance dsh-customs-doc-check dsh-demurrage-ledger dsh-drill-script-check \
-            dsh-eia-guide-check dsh-emergency-plan dsh-essay-rubric-check dsh-evidence-check \
-            dsh-export-ctl-check dsh-fmea-table-check dsh-forecast-penalty dsh-gongwen-flow-check \
-            dsh-gongwen-word-check dsh-guard-plan-qc dsh-hazchem-check dsh-hazplan-check \
-            dsh-hidden-risk-map dsh-hs-classify dsh-icd-rule-check dsh-lawcite-adapter \
-            dsh-lc-doc-check dsh-learning-gap-check dsh-medrec-qc dsh-nsfc-form-check \
-            dsh-nurse-record-check dsh-origin-rvc-check dsh-ota-review-check dsh-paper-doc-adapter \
-            dsh-permit-report-check dsh-pipeline-check dsh-pleading-draft dsh-policy-brief-draft \
-            dsh-power-loss-split dsh-power-ticket-check dsh-ppap-check dsh-protest-deadline \
-            dsh-railway-window dsh-repair-order-qc dsh-review-reply-check dsh-rulefile-check \
-            dsh-safety-brief-check dsh-site-log-check dsh-soe-decision-check dsh-soilwater-check \
-            dsh-sop-sync-check dsh-spc-gbt-adapter dsh-tender-extract dsh-tender-matrix \
-            dsh-warranty-calc dsh-docx-redline dsh-freight-audit dsh-pim-lint dsh-qms-capa dsh-policy-ledger dsh-checkers dsh-phone-inbox)
+          repos=(
+            dsh-ap-three-way dsh-aqua-input-check dsh-ar-aging dsh-ar-collection dsh-archive-check \
+            dsh-attendance-check dsh-attention-index dsh-auto-review dsh-autotier dsh-bankrec \
+            dsh-bid-ca-precheck dsh-bid-health-check dsh-bid-qual-check dsh-budget \
+            dsh-canteen-retention-check dsh-cert-mcp dsh-certification dsh-check-action \
+            dsh-check-pack dsh-checkpoint-rewind dsh-cite-verify dsh-claim-check dsh-claude-move \
+            dsh-click dsh-clinic dsh-codemod dsh-community-bench dsh-composer-history \
+            dsh-construction-doc-check dsh-contract-renewal dsh-contract-stance dsh-contract-suite \
+            dsh-customs-doc-check dsh-customs-mcp dsh-data-quality dsh-dataset-card dsh-defend \
+            dsh-demurrage-ledger dsh-dida dsh-dmp dsh-doc-anchor dsh-docx-redline dsh-doublecheck \
+            dsh-draw dsh-drill-script-check dsh-eia-guide-check dsh-einvoice dsh-emergency-plan \
+            dsh-essay-rubric-check dsh-eval-pack dsh-evidence-check dsh-excel-reconcile \
+            dsh-export-ctl-check dsh-family-catalog dsh-fast dsh-finops-suite dsh-fmea-table-check \
+            dsh-forecast-penalty dsh-freight-audit dsh-fund-research dsh-ghg dsh-github-bot \
+            dsh-gongwen-flow-check dsh-gongwen-word-check dsh-grant-cn dsh-guard-plan-qc \
+            dsh-hazchem-check dsh-hazplan-check dsh-hidden-risk-map dsh-hs-candidate dsh-hs-classify \
+            dsh-icd-rule-check dsh-ifc-qto dsh-image-integrity dsh-import-customs-check \
+            dsh-industry-research dsh-invoice-ledger dsh-irb dsh-kit dsh-labor-contract \
+            dsh-lawcite-adapter dsh-laya dsh-lc-doc-check dsh-learning-gap-check dsh-legal-clause \
+            dsh-legal-intake dsh-library dsh-lit-watch dsh-local-ai dsh-lsp-actions \
+            dsh-manuscript-check dsh-mask dsh-mcp-panel dsh-medrec-qc dsh-memento dsh-meta-analysis \
+            dsh-notebook-capture dsh-nsfc-form-check dsh-nurse-record-check dsh-observe \
+            dsh-origin-rvc-check dsh-ota-review-check dsh-output-styles dsh-paper-doc-adapter \
+            dsh-param-repair dsh-payroll-audit dsh-pdf-table dsh-permission-rules \
+            dsh-permit-report-check dsh-phocinae dsh-phone-inbox dsh-pim-lint dsh-pipeline-check \
+            dsh-pleading-draft dsh-plugin-dev dsh-plugin-devtools dsh-plugin-guide dsh-plugin-portal \
+            dsh-plugin-ready dsh-plugin-spec dsh-plugin-start dsh-plugin-tools dsh-plugins \
+            dsh-policy-brief-draft dsh-policy-ledger dsh-power-loss-split dsh-power-ticket-check \
+            dsh-ppap-check dsh-primer dsh-progress-payment dsh-protest-deadline dsh-provider-params \
+            dsh-qms-capa dsh-railway-window dsh-reach dsh-repair-order-qc dsh-repro-audit \
+            dsh-research-bench dsh-research-core dsh-research-report dsh-response-letter \
+            dsh-retraction-watch dsh-review-reply-check dsh-rfq-compare dsh-rulefile-check \
+            dsh-safety-brief-check dsh-safety-ledger-check dsh-scaffold dsh-score dsh-security-pack \
+            dsh-session-sync dsh-settlement-docs dsh-sherlock dsh-site-log-check \
+            dsh-soe-decision-check dsh-soilwater-check dsh-sop-sync-check dsh-source-cnki \
+            dsh-spc-gbt-adapter dsh-sr-ledger dsh-standards dsh-statcheck dsh-store-replenish \
+            dsh-table-ingest dsh-talk dsh-tender-extract dsh-tender-matrix dsh-tender-requirements \
+            dsh-test-drive dsh-translate dsh-travel-recon dsh-warranty-calc \
+            pan17/dsh-wechat jevcore
+          )
           sync_repo() {
             local entry="$1"
             local name="${entry##*/}"

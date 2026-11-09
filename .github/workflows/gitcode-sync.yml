@@ -243,7 +243,7 @@ jobs:
           )
           sync_chunk
 
-          # chunk 5/5  (40 repos)  (last chunk; .github is last on purpose)
+          # chunk 5/6  (40 repos)
           repos=(
             Mode-Latency-Benchmark NeMo-Agent-Toolkit Oh-My-DSH open-code-review openpencil ouroboros
             papermachine perrylink Pii-Stripper-Middleware Prompt-Attack-Dataset Prompt-Injection-Payloads
@@ -252,6 +252,42 @@ jobs:
             Secret-Key-Leaker-Detect Sensitive-Word-Filter-CN Sino-Scrub SkillOpt slime Sus-PY
             system-one-adapter-python tau Text-Humanizer TileKernels Toxicity-Score-CLI transformers-patch
             truss txtai vscode-dsh-sidebar vscode-ui-skill webui zeropoint-awesome-dsh-plugins .github
+          )
+          sync_chunk
+
+          # chunk 6/6  (135 repos; added by the 2026-11-09 backfill)
+          repos=(
+            dsh-ap-three-way dsh-aqua-input-check dsh-ar-aging dsh-ar-collection dsh-archive-check \
+            dsh-attendance-check dsh-bankrec dsh-bid-ca-precheck dsh-bid-health-check \
+            dsh-bid-qual-check dsh-canteen-retention-check dsh-certification dsh-check-action \
+            dsh-check-pack dsh-cite-verify dsh-claim-check dsh-clinic dsh-codemod \
+            dsh-construction-doc-check dsh-contract-renewal dsh-contract-stance dsh-contract-suite \
+            dsh-customs-doc-check dsh-customs-mcp dsh-dataset-card dsh-demurrage-ledger dsh-dida \
+            dsh-dmp dsh-doc-anchor dsh-docx-redline dsh-drill-script-check dsh-eia-guide-check \
+            dsh-einvoice dsh-emergency-plan dsh-essay-rubric-check dsh-eval-pack dsh-evidence-check \
+            dsh-excel-reconcile dsh-export-ctl-check dsh-family-catalog dsh-finops-suite \
+            dsh-fmea-table-check dsh-forecast-penalty dsh-freight-audit dsh-ghg dsh-github-bot \
+            dsh-gongwen-flow-check dsh-gongwen-word-check dsh-grant-cn dsh-guard-plan-qc \
+            dsh-hazchem-check dsh-hazplan-check dsh-hidden-risk-map dsh-hs-candidate dsh-hs-classify \
+            dsh-icd-rule-check dsh-ifc-qto dsh-image-integrity dsh-import-customs-check \
+            dsh-invoice-ledger dsh-irb dsh-labor-contract dsh-lawcite-adapter dsh-lc-doc-check \
+            dsh-learning-gap-check dsh-legal-clause dsh-legal-intake dsh-lit-watch \
+            dsh-manuscript-check dsh-medrec-qc dsh-meta-analysis dsh-notebook-capture \
+            dsh-nsfc-form-check dsh-nurse-record-check dsh-origin-rvc-check dsh-ota-review-check \
+            dsh-paper-doc-adapter dsh-param-repair dsh-payroll-audit dsh-pdf-table \
+            dsh-permit-report-check dsh-phocinae dsh-phone-inbox dsh-pim-lint dsh-pipeline-check \
+            dsh-pleading-draft dsh-plugin-dev dsh-plugin-devtools dsh-plugin-ready dsh-plugin-spec \
+            dsh-plugin-start dsh-plugin-tools dsh-plugins dsh-policy-brief-draft dsh-policy-ledger \
+            dsh-power-loss-split dsh-power-ticket-check dsh-ppap-check dsh-primer \
+            dsh-progress-payment dsh-protest-deadline dsh-provider-params dsh-qms-capa \
+            dsh-railway-window dsh-repair-order-qc dsh-repro-audit dsh-research-bench \
+            dsh-research-core dsh-response-letter dsh-retraction-watch dsh-review-reply-check \
+            dsh-rfq-compare dsh-rulefile-check dsh-safety-brief-check dsh-safety-ledger-check \
+            dsh-scaffold dsh-security-pack dsh-settlement-docs dsh-sherlock dsh-site-log-check \
+            dsh-soe-decision-check dsh-soilwater-check dsh-sop-sync-check dsh-source-cnki \
+            dsh-spc-gbt-adapter dsh-sr-ledger dsh-standards dsh-statcheck dsh-store-replenish \
+            dsh-table-ingest dsh-tender-extract dsh-tender-matrix dsh-tender-requirements \
+            dsh-travel-recon dsh-warranty-calc
           )
           sync_chunk
 
