@@ -33,6 +33,12 @@ section or a badge of their own.
 - `gitee-sync-new-checkers.yml` is retired: its nine temporary entries are now in the main
   `gitee-sync.yml` list.
 
+## 2026-11-09 (thirty-fourth round — two merges)
+
+- **556 total: 522 + 34**, across **106 repositories**, **103** credited, re-derived at 2026-11-09T14:55Z.
+  **207** proposals are open across **153** repositories as of the same time.
+- Merged since the previous round: `cobanov/teslamate-mcp#19`, `losebird/dsh-plugin-market#81`.
+
 ## 2026-11-09 (thirty-second round — temporal evidence)
 
 - Added **dsh-sherlock 0.5.0** as a catalog-only temporal evidence workbench, outside the 137-row install

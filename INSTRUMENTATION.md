@@ -274,8 +274,8 @@ is merely "balanced" is not enough: balance is exactly what produced the 836px r
 
 | Badge | Value | Mirrors |
 |---|---|---|
-| upstream merges | 554 | "Upstream" |
-| credited repos | 102 | "Upstream" |
+| upstream merges | 556 | "Upstream" |
+| credited repos | 103 | "Upstream" |
 | plugins | 126 | the intro sentence |
 | checkers | 62 | the 53-checker suite plus the nine 2026-10-23 tools (the fifteen 2026-10-31 demos are not counted here) |
 | npm names | 178 | "Where the plugins live" |
