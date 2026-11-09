@@ -21,6 +21,16 @@ section or a badge of their own.
 
 ---
 
+## 2026-11-09 (thirty-fourth round — catalog 147)
+
+- Catalog: `dsh-sherlock` added as the 147th package (npm 0.1.4 with SLSA provenance),
+  with snapshot, discovery, facets, icon and search index rebuilt; the strict 1.0.0 page
+  is now **100+47** cursor pages.
+- Discovery: the 85 catalog-derived manifests were reviewed, their limitations normalized,
+  and the pending-review flag cleared (**147/147 reviewed**).
+- Benchmark unchanged: 58-query top3 **58/58**; held-out top3 **19/20**.
+- Profile README/INSTRUMENTATION updated; catalog README/search-api updated.
+
 ## 2026-11-09 (thirty-third round — dsh-sherlock outside the roster)
 
 - `dsh-sherlock`: pinned Sherlock manifest, 417 valid sites, six-state result, random

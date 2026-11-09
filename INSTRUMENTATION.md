@@ -37,7 +37,7 @@ absent. The two sanctioned exceptions are marked.
 | The 10,000★ direct / 1,000★ fold threshold and the attribution rule | README § Upstream, the lead paragraph | rule change only |
 | Round narratives | [`CHANGELOG.md`](CHANGELOG.md) | every round |
 | rule-pack size and rules with no verbatim clause text | [`catalog.json`](https://perrylink.github.io/catalog.json), rendered per domain at [the checker index](https://perrylink.github.io/zh/checkers/) | when a rule pack is rebuilt |
-| DSH Desktop Market catalog — **146 packages, generated 2026-11-08**; includes the 19-package research suite (catalog-only, not in the install roster) | README § Where the plugins live, DSH Desktop Market bullet | when the catalogue is regenerated |
+| DSH Desktop Market catalog — **147 packages, generated 2026-11-09**; includes the 19-package research suite and `dsh-sherlock` (catalog-only / outside the install roster) | README § Where the plugins live, DSH Desktop Market bullet | when the catalogue is regenerated |
 | Research suite — 18 plugins + 1 REP core + 1 benchmark data repository; 19 npm packages (2 scoped), catalog-only | FAMILY §10 and its benchmark paragraph; `dsh-research-bench/data/*/SUMMARY.json`; each plugin README | a research package or benchmark changes |
 | Family coverage — 170 active + 11 archived own DSH repositories (2026-11-09; 169 before dsh-sherlock) | FAMILY.md header coverage line and its linked repository list; README § Start here repeats the headline | a repository joins, leaves, freezes or is archived |
 | Phocinae figures (21.0 ms (RTX 5090) / 1.64 s / 0.906 / 0.848 / flip150 0.0200 · flip400 0.0217 / ECE 0.2519 / τ=0.6 → 45.0% escalate, −55.0% LLM calls, kept-subset 0.9936) | README § Phocinae | a Phocinae release re-benchmarks |

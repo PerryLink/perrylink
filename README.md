@@ -214,8 +214,8 @@ This is a measured adoption call, not a quality verdict.
   at 500+ — which add to **45,500+**. The badges are rounded tiers, so that is a floor and not a total.
 - **DSH Desktop Market** — add
   `https://cdn.jsdelivr.net/gh/PerryLink/dsh-family-catalog@main/deploy/artifacts/v1/plugins.json` under
-  Market → Sources to browse the family in-app (**146 packages, catalogue generated 2026-11-08**; the
-  strict 1.0.0 page is served as 100+46 cursor pages). The same build exposes
+  Market → Sources to browse the family in-app (**147 packages, catalogue generated 2026-11-09**; the
+  strict 1.0.0 page is served as 100+47 cursor pages). The same build exposes
   `https://perrylink-dsh-catalog.perrylink.workers.dev/v1/search?q=…` and a stdio MCP server
   (`plugin_search` / `plugin_get`) over the Chinese discovery index. The catalogue includes a
   **19-package research suite** published 2026-11-08 (catalog-only; it is not in the install roster), and the repurposed
