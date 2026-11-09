@@ -21,6 +21,18 @@ section or a badge of their own.
 
 ---
 
+## 2026-11-09 (thirty-third round — every active repo mirrored)
+
+- **Gitee and GitCode now carry every active family repository** (default branch and tags), not just
+  the mainline plus a few flagships. After the backfill: 45 new Gitee mirrors, 115 new GitCode
+  mirrors, and 23 older Gitee mirrors that the create API had silently made private are public again.
+- The badge row gains a **GitCode mirror** badge; the "where the plugins live" paragraph drops the old
+  "108 repositories / five flagships" split, which had drifted.
+- `gitcode-sync.yml`: 19 third-party entries whose GitHub repositories are gone (404) are removed, so
+  the nightly run can finish green; the family list is unchanged.
+- `gitee-sync-new-checkers.yml` is retired: its nine temporary entries are now in the main
+  `gitee-sync.yml` list.
+
 ## 2026-11-09 (thirty-second round — temporal evidence)
 
 - Added **dsh-sherlock 0.5.0** as a catalog-only temporal evidence workbench, outside the 137-row install
