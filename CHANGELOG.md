@@ -21,6 +21,14 @@ section or a badge of their own.
 
 ---
 
+## 2026-11-10 (thirty-sixth round — two new credited repos)
+
+- **570 total: 536 + 34**, across **108 repositories**, **105** credited, re-derived at 2026-11-10T14:08Z.
+  **206** proposals are open across **154** repositories as of the same time.
+- Merged since the previous round: `axios/axios#11436`, `prometheus/common#1029`, plus two other merges
+  from the parallel automation.
+- Closed as fixed: `prometheus/common#1028`.
+
 ## 2026-11-10 (thirty-fifth round — merge batch)
 
 - **566 total: 532 + 34**, across **106 repositories**, **103** credited, re-derived at 2026-11-10T04:25Z.
