@@ -21,6 +21,13 @@ section or a badge of their own.
 
 ---
 
+## 2026-11-10 (thirty-fifth round — merge batch)
+
+- **566 total: 532 + 34**, across **106 repositories**, **103** credited, re-derived at 2026-11-10T04:25Z.
+  **198** proposals are open across **152** repositories as of the same time.
+- Merged since the previous round: `kellyjonbrazil/jc#900`, `ruvnet/ruflo#4877`, `ruvnet/ruflo#4859`,
+  plus seven other merges from the parallel automation.
+
 ## 2026-11-09 (thirty-third round — every active repo mirrored)
 
 - **Gitee and GitCode now carry every active family repository** (default branch and tags), not just
