@@ -21,6 +21,13 @@ section or a badge of their own.
 
 ---
 
+## 2026-11-10 (thirty-seventh round — merge batch)
+
+- **577 total: 543 + 34**, across **108 repositories**, **105** credited, re-derived at 2026-11-10T14:43Z.
+  **201** proposals are open across **154** repositories as of the same time.
+- Merged since the previous round: `hikariming/dsh-ee#21`, `#22`, `#26`, `#27`, `#28`, `#29` and `#30`,
+  all merged 14:20Z–14:25Z by the parallel automation.
+
 ## 2026-11-10 (thirty-sixth round — two new credited repos)
 
 - **570 total: 536 + 34**, across **108 repositories**, **105** credited, re-derived at 2026-11-10T14:08Z.
