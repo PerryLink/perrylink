@@ -4,7 +4,7 @@
 > （137 行：126 active / 8 frozen / 3 retired），其余行来自 `dsh-kit` 与 PerryLink/Phocinae 仓库。
 > **2026-11-08 改名：** `dsh-translate` 自 0.3.0 起是整页翻译插件；原「厂商参数映射 + 确定性 JSON 修复」改名
 > `dsh-param-repair`（1.0.1），`/translate` 命令、`fix_json` 工具与全部配置键不变。
-> 覆盖：169 个活跃 + 11 个归档的自有 DSH 仓库，全部在下方有链接（137 行安装名册 + 19 个 catalog-only 科研插件，见 §10；另有 catalog-only 的整页翻译插件）。
+> 覆盖：175 个活跃 + 11 个归档的自有 DSH 仓库，全部在下方有链接（137 行安装名册 + 24 个 catalog-only 科研插件，见 §10；另有 catalog-only 的整页翻译插件）。
 > 分组按用途重叠——一个支持仓同时是 bundle 时会出现两次；这是索引，不是互斥分区。
 
 家族分三层：**规范与指南**（怎么建）、**开发者工具链**（怎么发）、**运行时/领域插件**（用户装什么）；Phocinae 是独立的决策模型线。
@@ -271,9 +271,9 @@ Phocinae（斑海豹）是独立的一条决策线：百 M 级非生成式模型
 | [dsh-team-rooms](https://github.com/PerryLink/dsh-team-rooms) | harness 已原生支持 Agent Teams |
 
 
-## 10. Research suite (catalog-only, 19)
+## 10. Research suite (catalog-only, 24)
 
-> 2026-11-08 发布的科研插件套件：已进 DSH Desktop Market catalog 与 `data/discovery.json`，但**未进** `dsh-kit/plugins.txt` 安装名册。它们不计入上文的 137 行；npm 名为 `@perrylink/dsh-claim-check` / `@perrylink/dsh-research-core` 的两个包使用 scope，其余为同名。
+> 2026-11-08 发布的科研插件套件，2026-11-10 新增五个包（文献收割、Zotero 桥、REP MCP 服务、科研 SOP 技能、科研套件）：已进 DSH Desktop Market catalog 与 `data/discovery.json`，但**未进** `dsh-kit/plugins.txt` 安装名册。它们不计入上文的 137 行；npm 名为 `@perrylink/dsh-claim-check` / `@perrylink/dsh-research-core` / `@perrylink/dsh-research-suite` 的三个包使用 scope，其余为同名。
 
 | 仓库 | 它做什么 · 关键差异 |
 |---|---|
@@ -296,5 +296,10 @@ Phocinae（斑海豹）是独立的一条决策线：百 M 级非生成式模型
 | [dsh-sr-ledger](https://github.com/PerryLink/dsh-sr-ledger) | 经得起复核的系统综述账本：只追加、双人筛选、PRISMA 2020、审计可验。记录方案、每条筛选决策、冲突裁决与 RoB/GRADE 评估，再推导 PRISMA 流程。 |
 | [dsh-statcheck](https://github.com/PerryLink/dsh-statcheck) | 重算稿件报告的统计数据——并把对不上的那些标出来。这是算术，不是指控：每条 finding 都给出报告的统计量、它实际蕴含的 p 值，以及精确字符位置。 |
 | [dsh-research-core](https://github.com/PerryLink/dsh-research-core) | REP v1——DSH 科研插件家族的共享证据协议。一套协议、一个存储、一个校验器：每个科研插件说同一种证据语言，任何人 30 秒内可复算它声称的结论。 |
+| [dsh-lit-harvest](https://github.com/PerryLink/dsh-lit-harvest) | 多源文献收割：OpenAlex / Crossref / arXiv / Europe PMC 一次检索，Unpaywall 解析开放获取，报告充分性缺口并把运行写成 REP 证据记录。 |
+| [dsh-zotero-bridge](https://github.com/PerryLink/dsh-zotero-bridge) | 只读 Zotero 桥：通过 Local API 或 sqlite 库副本检索条目，转成 REP 记录；从不写 Zotero。 |
+| [dsh-rep-mcp](https://github.com/PerryLink/dsh-rep-mcp) | REP v1 记录的 stdio MCP 服务：校验封印、检查断言、列出封印报告；只读、无网络、不依赖 DSH 运行时。 |
+| [dsh-research-skills](https://github.com/PerryLink/dsh-research-skills) | 七个科研 SOP 技能（文献综述、引文审计、断言/证据审计、投稿前检查、审稿回复、可复现性审计、数据管理计划），每个都以记录或明确结论收尾。 |
+| [@perrylink/dsh-research-suite](https://github.com/PerryLink/dsh-research-suite) | 一条命令装齐 12 个科研插件，并挂载只读的 `research_doctor`：检查 REP 根目录、已挂载服务、日志与最新封印记录。 |
 
 运行时/领域行的权威来源：[ROSTER.md](https://github.com/PerryLink/dsh-plugins/blob/main/ROSTER.md)。

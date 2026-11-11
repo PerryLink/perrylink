@@ -70,7 +70,7 @@ behaviour.
 
 | What | Where |
 |---|---|
-| **Full family index** — 169 active + 11 archived own DSH repositories, 10 groups | [FAMILY.md](./FAMILY.md) · [site page](https://perrylink.github.io/dsh-plugins/family.html) |
+| **Full family index** — 175 active + 11 archived own DSH repositories, 10 groups | [FAMILY.md](./FAMILY.md) · [site page](https://perrylink.github.io/dsh-plugins/family.html) |
 | **Temporal evidence** — public sources, five clocks, TEG, conflicts, reviewable local reports | [dsh-sherlock](https://github.com/PerryLink/dsh-sherlock) · [0.5.0 release](https://github.com/PerryLink/dsh-sherlock/releases/tag/v0.5.0) · [time model](https://github.com/PerryLink/dsh-sherlock/blob/main/docs/TIME-EVIDENCE-MODEL.md) |
 | **Standards & guides** — ENTRY/FLOW/BOOST, the checker, the rule text | [dsh-standards](https://github.com/PerryLink/dsh-standards) · [dsh-plugin-guide](https://github.com/PerryLink/dsh-plugin-guide) · [dsh-plugin-spec](https://github.com/PerryLink/dsh-plugin-spec) |
 | **Developer tools** — start / ready / tools / dev, one front door | [dsh-plugin-dev](https://github.com/PerryLink/dsh-plugin-dev) · [dsh-plugin-start](https://github.com/PerryLink/dsh-plugin-start) · [dsh-plugin-ready](https://github.com/PerryLink/dsh-plugin-ready) · [dsh-plugin-tools](https://github.com/PerryLink/dsh-plugin-tools) |
@@ -185,7 +185,7 @@ repositories are a separate org line outside those counts.
 The runtime/domain roster is **137 rows: 126 active, 8 frozen, 3 retired**. `dsh-kit` installs the
 96-spec mainline (43 defaults + 53 opt-in checkers), not the whole family. Install scopes:
 [ROSTER.md](https://github.com/PerryLink/dsh-plugins/blob/main/ROSTER.md); machine catalogue:
-[dsh-catalog](https://github.com/PerryLink/dsh-catalog); per-repo detail: [FAMILY.md](./FAMILY.md). The new `dsh-translate` translator, the 19-package research suite, and `dsh-sherlock` are catalog-only and outside those 137 rows.
+[dsh-catalog](https://github.com/PerryLink/dsh-catalog); per-repo detail: [FAMILY.md](./FAMILY.md). The new `dsh-translate` translator, the 24-package research suite (five packages added 2026-11-10), and `dsh-sherlock` are catalog-only and outside those 137 rows.
 
 ## 🪦 Retired & frozen
 
@@ -219,7 +219,7 @@ This is a measured adoption call, not a quality verdict.
   strict 1.0.0 page is served as 100+45 cursor pages). The same build exposes
   `https://perrylink-dsh-catalog.perrylink.workers.dev/v1/search?q=…` and a stdio MCP server
   (`plugin_search` / `plugin_get`) over the Chinese discovery index. The catalogue includes a
-  **19-package research suite** published 2026-11-08 (catalog-only; it is not in the install roster), and the repurposed
+  **24-package research suite** published 2026-11-08, five packages added 2026-11-10 (catalog-only; it is not in the install roster), and the repurposed
   `dsh-translate` full-page translator (0.3.2).
 - **MCP Registry** — four servers, all published from their release workflows over GitHub OIDC:
   `dsh-cert-mcp` (🧊 frozen, reference only), `dsh-customs-mcp`, `jevcore-mcp` and `laya-mcp`.

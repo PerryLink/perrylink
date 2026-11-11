@@ -37,16 +37,16 @@ absent. The two sanctioned exceptions are marked.
 | The 10,000★ direct / 1,000★ fold threshold and the attribution rule | README § Upstream, the lead paragraph | rule change only |
 | Round narratives | [`CHANGELOG.md`](CHANGELOG.md) | every round |
 | rule-pack size and rules with no verbatim clause text | [`catalog.json`](https://perrylink.github.io/catalog.json), rendered per domain at [the checker index](https://perrylink.github.io/zh/checkers/) | when a rule pack is rebuilt |
-| DSH Desktop Market catalog — **147 packages, generated 2026-11-09**; includes the 19-package research suite and `dsh-sherlock` (catalog-only / outside the install roster) | README § Where the plugins live, DSH Desktop Market bullet | when the catalogue is regenerated |
-| Research suite — 18 plugins + 1 REP core + 1 benchmark data repository; 19 npm packages (2 scoped), catalog-only | FAMILY §10 and its benchmark paragraph; `dsh-research-bench/data/*/SUMMARY.json`; each plugin README | a research package or benchmark changes |
-| Family coverage — 170 active + 11 archived own DSH repositories (2026-11-09; 169 before dsh-sherlock) | FAMILY.md header coverage line and its linked repository list; README § Start here repeats the headline | a repository joins, leaves, freezes or is archived |
+| DSH Desktop Market catalog — **152 packages, generated 2026-11-11**; includes the 24-package research suite and `dsh-sherlock` (catalog-only / outside the install roster) | README § Where the plugins live, DSH Desktop Market bullet | when the catalogue is regenerated |
+| Research suite — 23 plugins + 1 REP core + 1 benchmark data repository; 24 npm packages (3 scoped), catalog-only | FAMILY §10 and its benchmark paragraph; `dsh-research-bench/data/*/SUMMARY.json`; each plugin README | a research package or benchmark changes |
+| Family coverage — 175 active + 11 archived own DSH repositories (2026-11-11; 170 before the five research repositories) | FAMILY.md header coverage line and its linked repository list; README § Start here repeats the headline | a repository joins, leaves, freezes or is archived |
 | Phocinae figures (21.0 ms (RTX 5090) / 1.64 s / 0.906 / 0.848 / flip150 0.0200 · flip400 0.0217 / ECE 0.2519 / τ=0.6 → 45.0% escalate, −55.0% LLM calls, kept-subset 0.9936) | README § Phocinae | a Phocinae release re-benchmarks |
 | Phocinae org / project map | README § Phocinae; the org profile at [github.com/Phocinae](https://github.com/Phocinae) is the long map | when the org changes |
 
-The 126 is the active install-roster count. It does not include the 19 catalog-only research
+The 126 is the active install-roster count. It does not include the 24 catalog-only research
 packages, the catalog-only `dsh-translate`, or the outside-roster `dsh-sherlock`; the 137-row
-roster is a different figure. Family coverage (170) counts the own DSH repositories indexed in
-FAMILY, including the 19 research npm repositories but not the `dsh-research-bench` data
+roster is a different figure. Family coverage (175) counts the own DSH repositories indexed in
+FAMILY, including the 24 research npm repositories but not the `dsh-research-bench` data
 repository.
 
 **Never** restate an authoritative figure in the intro, in a round, or in the Chinese block. The
@@ -169,9 +169,10 @@ membership rule and the page says so, and they are not part of the 53-checker su
 every earlier line in this section.
 
 **2026-11-08 / 11-09: roster 137 / 126 and outside-roster entries.** The 12 GA tools added on
-2026-11-02/03 move the roster to **137** and the active set to **126**; the 19 research npm
-packages, the catalog-only `dsh-translate`, and the outside-roster `dsh-sherlock` are outside
-that roster and are covered by the family-coverage figure (**170**) rather than by 126 / 137.
+2026-11-02/03 move the roster to **137** and the active set to **126**; the 24 research npm
+packages (five added 2026-11-10), the catalog-only `dsh-translate`, and the outside-roster
+`dsh-sherlock` are outside that roster and are covered by the family-coverage figure (**175**)
+rather than by 126 / 137.
 
 `Phocinae/*` is the account's other org. Its repos and DSH plugins are **not** counted in the
 126 / 137 roster: they are a separate line, mentioned in README § Phocinae. The 497 contains no PR to a
