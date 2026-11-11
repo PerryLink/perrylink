@@ -8,7 +8,7 @@
 <a href="https://github.com/PerryLink?tab=repositories"><img alt="GitHub stars" src="https://img.shields.io/github/stars/PerryLink?label=stars&affiliations=OWNER&color=24292f"></a>
 <a href="https://github.com/PerryLink?tab=followers"><img alt="GitHub followers" src="https://img.shields.io/github/followers/PerryLink?label=followers&color=24292f"></a>
 <a href="https://github.com/PerryLink?tab=repositories"><img alt="GitHub repos" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FPerryLink&query=%24.public_repos&label=repos&color=24292f"></a>
-<a href="https://github.com/PerryLink/perrylink"><img alt="merged upstream" src="https://img.shields.io/badge/upstream%20merges-586-6e7781"></a>
+<a href="https://github.com/PerryLink/perrylink"><img alt="merged upstream" src="https://img.shields.io/badge/upstream%20merges-595-6e7781"></a>
 <a href="https://github.com/PerryLink/perrylink"><img alt="repositories where a merge is credited" src="https://img.shields.io/badge/credited%20repos-106-6e7781"></a>
 <a href="https://github.com/PerryLink/dsh-kit"><img alt="actively maintained plugins" src="https://img.shields.io/badge/plugins-126-6e7781"></a>
 <a href="https://github.com/PerryLink/perrylink"><img alt="compliance tools" src="https://img.shields.io/badge/compliance-62-6e7781"></a>
@@ -39,9 +39,9 @@ I fix other people's projects, I maintain a plugin family for
 [Phocinae](https://github.com/Phocinae), my typed-decision model lab. Independent open-source developer in
 Beijing — not affiliated with DeepSeek, and not a DeepSeek employee.
 
-**Upstream** — 586 merged pull requests in 109 repositories that are not mine, from AWS, Apple, Docker,
+**Upstream** — 595 merged pull requests in 109 repositories that are not mine, from AWS, Apple, Docker,
 Microsoft, NVIDIA, Prometheus, Redis, Tencent and the vLLM project down to one-person projects. Of the
-586, **552 left a commit on the default branch in 106 credited repositories; 34 merges in 3 repositories
+595, **561 left a commit on the default branch in 106 credited repositories; 34 merges in 3 repositories
 credit no commit, giving 109 repositories in total**. **The
 family** — 126 actively maintained Apache-2.0 plugins: security, workflows, research,
 messaging bridges, developer experience, since 2026-10-08 a 53-checker compliance suite plus nine newer
@@ -81,16 +81,17 @@ behaviour.
 ## 🔧 Upstream contributions
 
 *Every repository below is external to `PerryLink/*`, every row is merged work, and open proposals are
-deliberately not listed — as of 2026-11-11T04:13:11Z, 199 are open across 152 repositories. ★ re-measured
+deliberately not listed — as of 2026-11-11T11:35:41Z, 200 are open across 152 repositories. ★ re-measured
 2026-10-31 for every row (2026-11-11 for rows added since); the third column names the party that owns the
 project, because the account name alone does not say whether that is a company, a standards body or one
 person. Every external repository above 1,000★ that we found with merged work is listed (stars as of
-2026-10-31; not a ranking): twenty above 10,000★ in the table, thirty-eight between 1,000★ and 10,000★ in the
-fold below, and another forty-five below 1,000★ counted in the 586 but not listed individually.*
+2026-10-31; not a ranking): twenty-one above 10,000★ in the table, forty between 1,000★ and 10,000★ in the
+fold below, and another forty-eight below 1,000★ counted in the 595 but not listed individually.*
 
 | Repository | ★ | 项目归属方 |
 |---|---|---|
 | [dify](https://github.com/langgenius/dify) | 160,079 | **LangGenius** — the official `langgenius` org; the open-source LLM application platform (dify.ai) |
+| [axios](https://github.com/axios/axios) | 109,345 | **Axios** — the `axios` org; the promise-based HTTP client for the browser and Node.js |
 | [deer-flow](https://github.com/bytedance/deer-flow) | 84,759 | **ByteDance** — the official `bytedance` org |
 | [ruflo](https://github.com/ruvnet/ruflo) | 80,367 | ruvnet (rUv / Reuven Cohen) — individual maintainer |
 | [caddy](https://github.com/caddyserver/caddy) | 78,953 | the `caddyserver` org — independent open-source web server (caddyserver.com) |
@@ -112,7 +113,7 @@ fold below, and another forty-five below 1,000★ counted in the 586 but not lis
 | [webpack-bundle-analyzer](https://github.com/webpack/webpack-bundle-analyzer) | 12,654 | the `webpack` org — the bundle analysis plugin and CLI |
 
 <details>
-<summary><b>Thirty-eight more between 1,000★ and 10,000★ — one line each</b></summary>
+<summary><b>Forty more between 1,000★ and 10,000★ — one line each</b></summary>
 
 | Repository | ★ | 项目归属方 |
 |---|---|---|
@@ -141,6 +142,7 @@ fold below, and another forty-five below 1,000★ counted in the 586 but not lis
 | [evalscope](https://github.com/modelscope/evalscope) | 3,622 | `modelscope` org — the ModelScope model-hub project |
 | [deepseek-harness-desktop](https://github.com/dsh-tauri/deepseek-harness-desktop) | 3,386 | `dsh-tauri` community org — self-described non-official and non-commercial |
 | [fastmcp](https://github.com/punkpeye/fastmcp) | 3,284 | punkpeye (Frank Fiegel) — individual maintainer at Glama |
+| [OpenChatCut](https://github.com/0xsline/OpenChatCut) | 3,056 | 0xsline — individual maintainer; a local-first conversational AI video editor |
 | [minio-go](https://github.com/minio/minio-go) | 3,010 | **MinIO** — the official `minio` org; the Go client for MinIO and S3-compatible storage |
 | [open5gs](https://github.com/open5gs/open5gs) | 2,799 | the `open5gs` 5G core project — community, no company owner |
 | [claude-agent-acp](https://github.com/agentclientprotocol/claude-agent-acp) | 2,712 | `agentclientprotocol` org — governed by Zed and JetBrains |
@@ -154,10 +156,11 @@ fold below, and another forty-five below 1,000★ counted in the 586 but not lis
 | [awesome-deepseek-harness](https://github.com/0xsline/awesome-deepseek-harness) | 1,286 | 0xsline — individual maintainer, community catalog |
 | [dsh-vision-router](https://github.com/ysr666/dsh-vision-router) | 1,202 | ysr666 — individual maintainer |
 | [awesome-agent-apis](https://github.com/Anil-matcha/awesome-agent-apis) | 1,065 | Anil Chandra Naidu Matcha — individual maintainer, community catalog |
+| [open-genjutsu](https://github.com/Anil-matcha/open-genjutsu) | 1,026 | Anil Chandra Naidu Matcha — individual maintainer; local-first AI video recasting |
 
 </details>
 
-Another **45 external repositories below 1,000★** carry merged work and are counted in the 586; they are
+Another **48 external repositories below 1,000★** carry merged work and are counted in the 595; they are
 not listed individually.
 
 ## 📦 The full DSH plugin family

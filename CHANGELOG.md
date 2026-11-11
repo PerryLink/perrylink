@@ -21,6 +21,17 @@ section or a badge of their own.
 
 ---
 
+## 2026-11-11 (thirty-ninth round — merge batch, and the roster catches up)
+
+- **595 total: 561 + 34**, across **109 repositories**, **106** credited, re-derived at 2026-11-11T11:35Z.
+  **200** proposals are open across **152** repositories as of the same time.
+- Merged since the previous round: eight `hikariming/dsh-ee` pull requests (#50–#57) and
+  `awesome-dsh-plugin/awesome-dsh-plugin#14183`, all from the parallel automation.
+- Three repositories carried merged work and more than 1,000 stars but had no row yet: `axios/axios`
+  (109,345★), `0xsline/OpenChatCut` (3,056★) and `Anil-matcha/open-genjutsu` (1,026★).
+  `prometheus/common` was expected to need a row as well, but it is 297★ and stays in the below-1,000★
+  group. The buckets are now 21 / 40 / 48.
+
 ## 2026-11-11 (thirty-eighth round — caddy, and four merges that landed overnight)
 
 - **586 total: 552 + 34**, across **109 repositories**, **106** credited, re-derived at 2026-11-11T04:13Z.
