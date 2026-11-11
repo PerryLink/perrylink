@@ -21,6 +21,14 @@ section or a badge of their own.
 
 ---
 
+## 2026-11-11 (thirty-eighth round — caddy, and four merges that landed overnight)
+
+- **586 total: 552 + 34**, across **109 repositories**, **106** credited, re-derived at 2026-11-11T04:13Z.
+  **199** proposals are open across **152** repositories as of the same time.
+- Merged since the previous round: `caddyserver/caddy#8398` (a new credited repository), `ruvnet/ruflo#4942`
+  (shipped with `@claude-flow/memory` 3.3.1, published by the maintainer), `punkpeye/fastmcp#517` (released in
+  4.26.0), `anywhere-labs/Agents-Anywhere#573`, plus five merges from the parallel automation.
+
 ## 2026-11-10 (thirty-seventh round — merge batch)
 
 - **577 total: 543 + 34**, across **108 repositories**, **105** credited, re-derived at 2026-11-10T14:43Z.
