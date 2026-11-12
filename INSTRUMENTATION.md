@@ -86,8 +86,8 @@ produced the values in this file; rerun them before changing a figure.
 - **dshfind / MCP** — dshfind's `plugins-*.xml` shards list 35 `PerryLink` repositories; 9 badge
   endpoints return a download tier totaling 45,500+; the MCP registry returns 16 version entries
   covering 4 distinct server names.
-- **GitHub profile field** — `/user` on 2026-11-12 still read `534 merged PRs` and `170 DSH repos`;
-  the corrected text (624 / 175) is pending because `PATCH /user` is an external write.
+- **GitHub profile field** — `/user` on 2026-11-12 now reads `175 DSH repos` and `624 merged PRs`
+  (156-character bio); the PATCH was verified with a fresh `/user` read after the page commit.
 
 ---
 

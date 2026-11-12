@@ -39,6 +39,8 @@ section or a badge of their own.
   MMKV 1, open-genjutsu 1); re-solved the 22-badge layout to 706 / 738 / 668 / 771px and aligned the
   node badge with the linked manifest (`^22.19 || >=24.9`).
 - The Chinese block no longer restates the 53/62 counts; the authoritative English sites carry them.
+- Profile bio patched to **624 merged PRs · 175 DSH repos** (156 characters); a fresh `/user` read
+  matched the new text.
 
 ## 2026-11-12 (fortieth round — merge batch, and pgx joins the roster)
 
