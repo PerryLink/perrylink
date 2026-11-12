@@ -21,6 +21,25 @@ section or a badge of their own.
 
 ---
 
+## 2026-11-12 (forty-first round — full re-measure and source reconciliation)
+
+- Re-measured every volatile figure at 2026-11-12T05:07Z (upstream) and 05:12Z (npm); no new merges
+  since the fortieth round: **624 total: 590 + 34**, across **110 repositories**, **107** credited,
+  **206** proposals open across **153** repositories.
+- Star table re-read for all 110 external repositories: **25** above 10,000★, **37** between 1,000★ and
+  10,000★, **48** below. `dsh-market` (12,063★), `dsh-web` (10,358★) and `Tencent/BrowserSkill`
+  (10,331★) moved into the direct table; every row now carries the 2026-11-12 value.
+- npm: **190 names / 2,422 versions**; provenance is **140** any-version, **69** latest, **50** none.
+  The latest-version count fell from 129 because 71 names now have a latest version with no attestation
+  while an earlier version has one. Downloads: **382,430** over 2026-10-13..2026-11-11 (3 names have no
+  series).
+- DSH Desktop Market source: **152 packages, generated 2026-11-11**. `dsh-param-repair` is 1.0.2 and
+  `dsh-translate` 0.3.5.
+- Corrected the credited badge (106 → 107); named all three uncredited repositories (SihanTeng 32,
+  MMKV 1, open-genjutsu 1); re-solved the 22-badge layout to 706 / 738 / 668 / 771px and aligned the
+  node badge with the linked manifest (`^22.19 || >=24.9`).
+- The Chinese block no longer restates the 53/62 counts; the authoritative English sites carry them.
+
 ## 2026-11-12 (fortieth round — merge batch, and pgx joins the roster)
 
 - **624 total: 590 + 34**, across **110 repositories**, **107** credited, re-derived at 2026-11-12T04:46Z.

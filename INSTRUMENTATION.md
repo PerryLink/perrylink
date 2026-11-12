@@ -25,12 +25,12 @@ absent. The two sanctioned exceptions are marked.
 | npm 30-day downloads | README § Where the plugins live | monthly |
 | **npm downloads badge** *(exception)* | README badge row | same |
 | npm names / versions / non-deprecated latest | README § Where the plugins live | monthly |
-| npm provenance — **state the metric**: **129** names carry SLSA provenance on their non-deprecated `latest`; **137** carry it on at least one version; **41** carry it nowhere (measured 2026-11-08, over the 178 names registry search enumerates) | README § Where the plugins live | monthly |
+| npm provenance — **state the metric**: **140** names carry SLSA provenance on at least one version; **69** carry it on the current `latest`; **50** carry it nowhere (measured 2026-11-12, over the 190 names registry search enumerates) | README § Where the plugins live | monthly |
 | dshfind aggregate tier — **how to read it**: dshfind publishes a badge per plugin at `/api/badge/<owner>/<repo>?metric=downloads` (the `<img>` every plugin page embeds). Nine of the family's repositories answer with a download tier, 26 fall back to ★. The 35 indexed repositories are counted from its sitemap shards (`/sitemap/plugins-N.xml`), not from the search page, which is client-side | README § Where the plugins live (tier counts) | when dshfind re-renders |
 | dsh host corridor / node engine / license | README badge row (each links to the file it is read from) | when the declared range or the engines change |
 | external contributor repos / merges / above-1,000★ | README § Upstream (the aggregate line and the two tables) | on re-derivation |
 | Cordis contribution (9 merged PRs) | README intro, the Cordis sentence | on re-derivation |
-| The named star table — **19 rows above 10,000★** in the direct table, **38 between 1,000★ and 10,000★** in the fold | README § Upstream | on re-derivation |
+| The named star table — **25 rows above 10,000★** in the direct table, **37 between 1,000★ and 10,000★** in the fold | README § Upstream | on re-derivation |
 | Long-form file | **none** — `PROJECTS.md` was removed on 2026-10-31; `README.md` is the only page | — |
 | laya merged / opened / open / closed | not on the profile page; the 52/56/0/4 figures live in `CHANGELOG.md` | on re-derivation |
 | `deepseek-ai` totals | not on the profile page; the 22/1/13 figures live in `CHANGELOG.md` | on re-derivation |
@@ -40,8 +40,8 @@ absent. The two sanctioned exceptions are marked.
 | DSH Desktop Market catalog — **152 packages, generated 2026-11-11**; includes the 24-package research suite and `dsh-sherlock` (catalog-only / outside the install roster) | README § Where the plugins live, DSH Desktop Market bullet | when the catalogue is regenerated |
 | Research suite — 23 plugins + 1 REP core + 1 benchmark data repository; 24 npm packages (3 scoped), catalog-only | FAMILY §10 and its benchmark paragraph; `dsh-research-bench/data/*/SUMMARY.json`; each plugin README | a research package or benchmark changes |
 | Family coverage — 175 active + 11 archived own DSH repositories (2026-11-11; 170 before the five research repositories) | FAMILY.md header coverage line and its linked repository list; README § Start here repeats the headline | a repository joins, leaves, freezes or is archived |
-| Phocinae figures (21.0 ms (RTX 5090) / 1.64 s / 0.906 / 0.848 / flip150 0.0200 · flip400 0.0217 / ECE 0.2519 / τ=0.6 → 45.0% escalate, −55.0% LLM calls, kept-subset 0.9936) | README § Phocinae | a Phocinae release re-benchmarks |
-| Phocinae org / project map | README § Phocinae; the org profile at [github.com/Phocinae](https://github.com/Phocinae) is the long map | when the org changes |
+| Phocinae benchmark figures | **not on the profile page**; they live in the Phocinae repositories and their READMEs | a Phocinae release re-benchmarks |
+| Phocinae org / project map | README § Start here and the family table; the org profile at [github.com/Phocinae](https://github.com/Phocinae) is the long map | when the org changes |
 
 The 126 is the active install-roster count. It does not include the 24 catalog-only research
 packages, the catalog-only `dsh-translate`, or the outside-roster `dsh-sherlock`; the 137-row
@@ -52,6 +52,42 @@ repository.
 **Never** restate an authoritative figure in the intro, in a round, or in the Chinese block. The
 Chinese block is a mirror of the story, not a second home for numbers — if it needs a figure, it
 links to the English site.
+
+### Re-measurement log — 2026-11-12
+
+Every volatile figure on the page was re-derived on this date. The commands below are the ones that
+produced the values in this file; rerun them before changing a figure.
+
+- **Upstream / stars** — GraphQL `search(query:"is:pr is:merged author:PerryLink", type:ISSUE)` paginated
+  to exhaustion, filtered to owners outside `PerryLink`, `Phocinae`, `dsh-standards` and
+  `dsh-plugin-guide`; each surviving repository probed with
+  `defaultBranchRef.target.history(author:{id:"U_kgDODz0m7A"}, first:1){totalCount}`; stars read from
+  `stargazerCount` in the same pass. Cutoff **2026-11-12T05:07:51Z**: 624 merges / 110 repositories,
+  590 / 107 credited, 34 / 3 uncredited, 206 open PRs / 153 repositories.
+- **npm** — `GET https://registry.npmjs.org/-/v1/search?text=maintainer:perrylink&size=250` returned
+  `total=190`, `objects.length=190`; every packument re-read and every `maintainers` entry checked for
+  `perrylink`; versions summed from `versions`; provenance from `versions[*].dist.attestations`; downloads
+  from `https://api.npmjs.org/downloads/point/2026-10-13:2026-11-11/<name>` per name. Cutoff
+  **2026-11-12T05:12:54Z**: 190 names / 2,422 versions / 140 any / 69 latest / 50 none; 382,430 downloads
+  over 30 complete days, with 3 names (all created 2026-11-11) not yet in the downloads series.
+- **Catalogue** — `https://cdn.jsdelivr.net/gh/PerryLink/dsh-family-catalog@main/deploy/artifacts/v1/plugins.json`
+  returned `items.length=152`, `generatedAt=2026-11-11T04:09:27.768Z`.
+- **Site pages** — `https://perrylink.github.io/sitemap.xml` has 115 `<loc>` entries including the root
+  (114 besides it). The `dsh-plugins` default-branch tree has 186 `docs/**/*.html` files; excluding the
+  root `docs/index.html` gives the 185-page index figure.
+- **Family** — `dsh-plugins/family.json` counts `{total:137, active:126, frozen:8, retired:3}`;
+  `dsh-kit/plugins.txt` has 96 uncommented specs (43 default + 53 `opt-in`); `FAMILY.md` sections 1–8
+  carry 158 rows, of which 32 are runtime plugins excluding the separately-listed `dsh-translate`, and
+  §10 carries 24 research packages. The 175 / 11 coverage pair is the `FAMILY.md` header (updated
+  2026-11-11); a link audit resolves 198 of 199 unique `PerryLink` / `Phocinae` repository links (the old
+  `dsh-catalog` name redirects to `dsh-family-catalog`), with 11 archived and 11 in the Phocinae org.
+- **Badges** — each badge's own SVG `width` at the 20px render height; the four rows total 706 / 738 /
+  668 / 771px (see §4).
+- **dshfind / MCP** — dshfind's `plugins-*.xml` shards list 35 `PerryLink` repositories; 9 badge
+  endpoints return a download tier totaling 45,500+; the MCP registry returns 16 version entries
+  covering 4 distinct server names.
+- **GitHub profile field** — `/user` on 2026-11-12 still read `534 merged PRs` and `170 DSH repos`;
+  the corrected text (624 / 175) is pending because `PATCH /user` is an external write.
 
 ---
 
@@ -73,6 +109,11 @@ The node id for this account is `U_kgDODz0m7A` (GraphQL `user.id`, read 2026-10-
 
 - **`SihanTeng/awesome-deepseek-harness-plugins`** took **32** of this account's merged pull
   requests and credits **no** commit on its default branch.
+
+**2026-11-12 — the uncredited set is three, and all three are named on the page.** Besides
+`SihanTeng/awesome-deepseek-harness-plugins` (32 merges), the other two are `Tencent/MMKV` (1 merge,
+default branch `master`, 0 attributed commits) and `Anil-matcha/open-genjutsu` (1 merge, `main`, 0
+attributed commits). The README's aggregate sentence names all three; do not reduce it to a count.
 
 That one exists to answer "your 56 is padded". Removing it turns a rule into a sales pitch.
 
@@ -199,23 +240,21 @@ annotation from GitHub's rendering.
 family it maintains, never one repository.** Measured from each badge's own SVG `width`/`height` at
 the 20px render height, then partitioned into balanced rows under the cap below.
 
-**Current, re-solved 2026-10-31 for 22 badges in four rows** — every width read from the badge's own
-SVG on that date. Twenty-one answered; the Zenodo DOI badge is unreachable from this network (it has
-rendered on the page since 2026-10-05 and its width below is the published badge width, not a
-measurement).
+**Current, re-solved 2026-11-12 for 22 badges in four rows** — every width read from the badge's own
+SVG on that date. All 22 answered; the Zenodo DOI badge is no longer on the page.
 
 | Row | px | Badges |
 |---|---|---|
-| 1 — reach and counters | 678 | stars (82), followers (112), repos (72), upstream merges 497 (138), credited repos 95 (112), plugins 107 (80), checkers 62 (82) |
-| 2 — npm and stack | 728 | npm 180 names (123), npm downloads 30d 273.6k (170), npm provenance 156/180 (160), license (120), node (155) |
+| 1 — reach and counters | 706 | stars (90), followers (112), repos (72), upstream merges 624 (138), credited repos 107 (120), plugins 126 (80), compliance 62 (94) |
+| 2 — npm and stack | 738 | npm 190 names (123), npm downloads 30d 382.4k (170), npm provenance 140/190 (160), license (120), node (165) |
 | 3 — quality and registry | 668 | dsh host corridor (146), OpenSSF Scorecard (136), Glama (110), certified (132), MCP Registry 4 servers (144) |
-| 4 — index, mirror, feeds | 787 | plugin index 114 pages (144), Gitee (108), dshfind 45.5k+ across 9 (256), Desktop Market source (172), Zenodo DOI (~114) |
+| 4 — index, mirror, feeds | 771 | plugin index 185 pages (144), Gitee (101), GitCode (98), dshfind 45.5k+ across 9 (256), Desktop Market source (172) |
 
-The hand-written badges on that date — `upstream merges`, `credited repos`, `plugins`, `checkers`, `npm
+The hand-written badges on that date — `upstream merges`, `credited repos`, `plugins`, `compliance`, `npm
 names`, `npm downloads 30d`, `npm provenance`, `MCP Registry`, `plugin index`, `dshfind downloads`,
-`Gitee`, `license`, `node` and `dsh host corridor` — each mirror a README site and must move with it; the
-rest self-update. The scope rule above still applies to `OpenSSF Scorecard` and `certified` only as far
-as their `alt` text says which repository they name.
+`Gitee` / `GitCode`, `license`, `node` and `dsh host corridor` — each mirror a README site and must move
+with it; the rest self-update. The scope rule above still applies to `OpenSSF Scorecard` and `certified`
+only as far as their `alt` text says which repository they name.
 
 Re-solved 2026-10-08 for **21 badges in four rows** (historical). Every width below was re-measured from
 each badge's own SVG at the 20px render height:
@@ -278,19 +317,20 @@ is merely "balanced" is not enough: balance is exactly what produced the 836px r
 | upstream merges | 624 | "Upstream" |
 | credited repos | 107 | "Upstream" |
 | plugins | 126 | the intro sentence |
-| checkers | 62 | the 53-checker suite plus the nine 2026-10-23 tools (the fifteen 2026-10-31 demos are not counted here) |
-| npm names | 178 | "Where the plugins live" |
-| npm downloads 30d | 345.5k | "Where the plugins live" (345,484) |
-| npm provenance | 137/178 | "Where the plugins live" |
+| compliance | 62 | the 53-checker suite plus the nine 2026-10-23 tools (the fifteen 2026-10-31 demos are not counted here) |
+| npm names | 190 | "Where the plugins live" |
+| npm downloads 30d | 382.4k | "Where the plugins live" (382,430 over 2026-10-13..2026-11-11; 3 names have no series) |
+| npm provenance | 140/190 | "Where the plugins live" (140 any / 69 latest / 50 none) |
 | MCP Registry | 4 servers | "Where the plugins live" |
+| plugin index | 185 pages | "Where the plugins live" (186 `docs/**/*.html` in `dsh-plugins` minus the root `docs/index.html`; sitemap 114 besides root) |
 | DSH Desktop Market source | (no number) | the catalog URL — reached over jsDelivr, see the reachability note in §4 |
 | Gitee / GitCode mirror | (no number) | the mirror claim (a count would drift with every new repo) |
-| dsh host corridor | ≥0.1.2-rc.1 <0.3.0 | the union of the six `engines.dsh` clauses in any plugin's `package.json` |
-| node | ≥22.19 | the mainline `engines.node` (`^22.19.0 \|\| >=24.0.0`, 110 of 125); the fifteen 2026-10-31 demos declare `>=24.9.0 <25`, and the family note says so |
+| dsh host corridor | ≥0.1.2-rc.1 <0.3.0 | the union of the seven `engines.dsh` clauses in `dsh-mcp-panel/package.json` (read 2026-11-12) |
+| node | ^22.19 \|\| >=24.9 | the linked `dsh-mcp-panel` manifest's `engines.node` (`^22.19.0 \|\| >=24.9.0`, read 2026-11-12) |
 | license | Apache-2.0 | the `LICENSE` file |
 | dshfind aggregate | 45,500+ over the 9 repositories that carry a badge, of 35 listed | "Where the plugins live"; tier counts stated there |
 
-Live badges (stars, followers, repos, OpenSSF Scorecard, Glama, certified, Zenodo DOI) need no
+Live badges (stars, followers, repos, OpenSSF Scorecard, Glama, certified) need no
 maintenance; the counters, aggregates and third-party listing badges above are hand-written.
 
 Three candidates were probed and **not** included, with reasons: a GitHub Sponsors badge
@@ -313,7 +353,7 @@ Rules that still hold:
   to the line box lands differently on each surface. `align="top"` measured 1px on the profile
   against 4px in the file view and was left off. **Re-measure both surfaces before touching this.**
 - The counts, aggregates and third-party listing badges above have no live source and must be updated by
-  hand; the star/follower/repo/OpenSSF/Glama/certified/Zenodo badges update themselves.
+  hand; the star/follower/repo/OpenSSF/Glama/certified badges update themselves.
 
 ### Reachability, measured 2026-10-08
 
