@@ -21,6 +21,14 @@ section or a badge of their own.
 
 ---
 
+## 2026-11-12 (fortieth round — merge batch, and pgx joins the roster)
+
+- **624 total: 590 + 34**, across **110 repositories**, **107** credited, re-derived at 2026-11-12T04:46Z.
+  **206** proposals are open across **153** repositories as of the same time.
+- Merged since the previous round: `kellyjonbrazil/jc#903` (into `dev`), `jackc/pgx#2714` (a new credited
+  repository), `omdsh-dev/dsh-genui#430`, plus 26 merges from the parallel automation, mostly `hikariming/dsh-ee`.
+- `jackc/pgx` joins the >10,000★ table at 14,409★; the buckets are now 22 / 40 / 48.
+
 ## 2026-11-11 (thirty-ninth round — merge batch, and the roster catches up)
 
 - **595 total: 561 + 34**, across **109 repositories**, **106** credited, re-derived at 2026-11-11T11:35Z.
