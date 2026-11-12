@@ -21,6 +21,15 @@ section or a badge of their own.
 
 ---
 
+## 2026-11-12 (forty-second round — mcp-atlassian joins the roster)
+
+- **634 total: 600 + 34**, across **111 repositories**, **108** credited, re-derived at 2026-11-12T13:15Z.
+  **205** proposals are open across **151** repositories as of the same time.
+- Merged since the previous round: `Q00/ouroboros#2918`, `Q00/ouroboros#2919`, `sooperset/mcp-atlassian#1835`
+  (a new credited repository), plus seven merges from the parallel automation.
+- `sooperset/mcp-atlassian` (6,114★) joins the 1,000–10,000★ fold, which now holds **38** rows, with 25 above
+  10,000★ and 48 below.
+
 ## 2026-11-12 (forty-first round — full re-measure and source reconciliation)
 
 - Re-measured every volatile figure at 2026-11-12T05:07Z (upstream) and 05:12Z (npm); no new merges

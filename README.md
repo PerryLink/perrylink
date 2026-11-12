@@ -8,7 +8,7 @@
 <a href="https://github.com/PerryLink?tab=repositories"><img alt="GitHub stars" src="https://img.shields.io/github/stars/PerryLink?label=stars&affiliations=OWNER&color=24292f"></a>
 <a href="https://github.com/PerryLink?tab=followers"><img alt="GitHub followers" src="https://img.shields.io/github/followers/PerryLink?label=followers&color=24292f"></a>
 <a href="https://github.com/PerryLink?tab=repositories"><img alt="GitHub repos" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FPerryLink&query=%24.public_repos&label=repos&color=24292f"></a>
-<a href="https://github.com/PerryLink/perrylink"><img alt="merged upstream" src="https://img.shields.io/badge/upstream%20merges-624-6e7781"></a>
+<a href="https://github.com/PerryLink/perrylink"><img alt="merged upstream" src="https://img.shields.io/badge/upstream%20merges-634-6e7781"></a>
 <a href="https://github.com/PerryLink/perrylink"><img alt="repositories where a merge is credited" src="https://img.shields.io/badge/credited%20repos-107-6e7781"></a>
 <a href="https://github.com/PerryLink/dsh-kit"><img alt="actively maintained plugins" src="https://img.shields.io/badge/plugins-126-6e7781"></a>
 <a href="https://github.com/PerryLink/perrylink"><img alt="compliance tools" src="https://img.shields.io/badge/compliance-62-6e7781"></a>
@@ -39,10 +39,10 @@ I fix other people's projects, I maintain a plugin family for
 [Phocinae](https://github.com/Phocinae), my typed-decision model lab. Independent open-source developer in
 Beijing — not affiliated with DeepSeek, and not a DeepSeek employee.
 
-**Upstream** — 624 merged pull requests in 110 repositories that are not mine, from AWS, Apple, Docker,
+**Upstream** — 634 merged pull requests in 111 repositories that are not mine, from AWS, Apple, Docker,
 Microsoft, NVIDIA, Prometheus, Redis, Tencent and the vLLM project down to one-person projects. Of the
-624, **590 left a commit on the default branch in 107 credited repositories; 34 merges in 3 repositories
-credit no commit**, giving 110 repositories in total. Those three are
+634, **600 left a commit on the default branch in 108 credited repositories; 34 merges in 3 repositories
+credit no commit**, giving 111 repositories in total. Those three are
 `SihanTeng/awesome-deepseek-harness-plugins` (32 merges), `Tencent/MMKV` (1) and
 `Anil-matcha/open-genjutsu` (1). **The family** — 126 actively maintained Apache-2.0 plugins: security, workflows, research,
 messaging bridges, developer experience, since 2026-10-08 a 53-checker compliance suite plus nine newer
@@ -82,12 +82,12 @@ behaviour.
 ## 🔧 Upstream contributions
 
 *Every repository below is external to `PerryLink/*`, every row is merged work, and open proposals are
-deliberately not listed — as of 2026-11-12T05:07:51Z, 206 are open across 153 repositories. ★ measured
+deliberately not listed — as of 2026-11-12T13:15:44Z, 205 are open across 151 repositories. ★ measured
 2026-11-12 for every row; the third column names the party that owns the
 project, because the account name alone does not say whether that is a company, a standards body or one
 person. Every external repository above 1,000★ that we found with merged work is listed (stars as of
-2026-11-12; not a ranking): twenty-five above 10,000★ in the table, thirty-seven between 1,000★ and 10,000★ in the
-fold below, and another forty-eight below 1,000★ counted in the 624 but not listed individually.*
+2026-11-12; not a ranking): twenty-five above 10,000★ in the table, thirty-eight between 1,000★ and 10,000★ in the
+fold below, and another forty-eight below 1,000★ counted in the 634 but not listed individually.*
 
 | Repository | ★ | 项目归属方 |
 |---|---|---|
@@ -118,7 +118,7 @@ fold below, and another forty-eight below 1,000★ counted in the 624 but not li
 | [BrowserSkill](https://github.com/Tencent/BrowserSkill) | 10,331 | **Tencent** — the official `Tencent` org |
 
 <details>
-<summary><b>Thirty-seven more between 1,000★ and 10,000★ — one line each</b></summary>
+<summary><b>Thirty-eight more between 1,000★ and 10,000★ — one line each</b></summary>
 
 | Repository | ★ | 项目归属方 |
 |---|---|---|
@@ -130,6 +130,7 @@ fold below, and another forty-eight below 1,000★ counted in the 624 but not li
 | [kraken](https://github.com/uber/kraken) | 6,776 | **Uber** — the official `uber` org; the Kraken P2P Docker registry |
 | [ouroboros](https://github.com/Q00/ouroboros) | 6,352 | Q00 (`@zep-us`) — individual maintainer |
 | [koishi](https://github.com/koishijs/koishi) | 6,326 | `koishijs` org — the cross-platform chatbot framework |
+| [mcp-atlassian](https://github.com/sooperset/mcp-atlassian) | 6,114 | sooperset — individual maintainer; an MCP server for Jira and Confluence |
 | [client_golang](https://github.com/prometheus/client_golang) | 6,049 | **Prometheus** — the official `prometheus` org (CNCF project); the Go instrumentation client |
 | [teamai-cli](https://github.com/Tencent/teamai-cli) | 5,828 | **Tencent** — the official `Tencent` org |
 | [skillhub](https://github.com/iflytek/skillhub) | 5,402 | **iFLYTEK** — the official `iflytek` org; self-hosted registry for agent skills |
@@ -162,7 +163,7 @@ fold below, and another forty-eight below 1,000★ counted in the 624 but not li
 
 </details>
 
-Another **48 external repositories below 1,000★** carry merged work and are counted in the 624; they are
+Another **48 external repositories below 1,000★** carry merged work and are counted in the 634; they are
 not listed individually.
 
 ## 📦 The full DSH plugin family
