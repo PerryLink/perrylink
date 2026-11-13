@@ -21,6 +21,14 @@ section or a badge of their own.
 
 ---
 
+## 2026-11-13 (forty-third round — merge batch)
+
+- **671 total: 637 + 34**, across **111 repositories**, **108** credited, re-derived at 2026-11-13T16:37Z.
+  **206** proposals are open across **151** repositories as of the same time.
+- Merged since the previous round: 37 merges, all from the parallel automation and concentrated in
+  `hikariming/dsh-ee`; no repository was added or lost, so the roster tables are unchanged.
+- The buckets stay 25 / 38 / 48.
+
 ## 2026-11-12 (forty-second round — mcp-atlassian joins the roster)
 
 - **634 total: 600 + 34**, across **111 repositories**, **108** credited, re-derived at 2026-11-12T13:15Z.

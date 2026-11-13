@@ -245,7 +245,7 @@ SVG on that date. All 22 answered; the Zenodo DOI badge is no longer on the page
 
 | Row | px | Badges |
 |---|---|---|
-| 1 — reach and counters | 706 | stars (90), followers (112), repos (72), upstream merges 634 (138), credited repos 108 (120), plugins 126 (80), compliance 62 (94) |
+| 1 — reach and counters | 706 | stars (90), followers (112), repos (72), upstream merges 671 (138), credited repos 108 (120), plugins 126 (80), compliance 62 (94) |
 | 2 — npm and stack | 738 | npm 190 names (123), npm downloads 30d 382.4k (170), npm provenance 140/190 (160), license (120), node (165) |
 | 3 — quality and registry | 668 | dsh host corridor (146), OpenSSF Scorecard (136), Glama (110), certified (132), MCP Registry 4 servers (144) |
 | 4 — index, mirror, feeds | 771 | plugin index 185 pages (144), Gitee (101), GitCode (98), dshfind 45.5k+ across 9 (256), Desktop Market source (172) |
@@ -314,7 +314,7 @@ is merely "balanced" is not enough: balance is exactly what produced the 836px r
 
 | Badge | Value | Mirrors |
 |---|---|---|
-| upstream merges | 634 | "Upstream" |
+| upstream merges | 671 | "Upstream" |
 | credited repos | 108 | "Upstream" |
 | plugins | 126 | the intro sentence |
 | compliance | 62 | the 53-checker suite plus the nine 2026-10-23 tools (the fifteen 2026-10-31 demos are not counted here) |
