@@ -21,6 +21,15 @@ section or a badge of their own.
 
 ---
 
+## 2026-11-14 (forty-fourth round — merge batch)
+
+- **683 total: 649 + 34**, across **111 repositories**, **108** credited, re-derived at 2026-11-14T04:51Z.
+  **214** proposals are open across **154** repositories as of the same time.
+- Merged since the previous round: 12 merges, all in `hikariming/dsh-ee`; no repository was added or
+  lost, so the roster tables are unchanged.
+- The buckets stay 25 / 38 / 48. The `credited repos` badge had read 107 while the text said 108 since
+  the forty-second round; it now mirrors the text.
+
 ## 2026-11-13 (forty-third round — merge batch)
 
 - **671 total: 637 + 34**, across **111 repositories**, **108** credited, re-derived at 2026-11-13T16:37Z.

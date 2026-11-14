@@ -8,8 +8,8 @@
 <a href="https://github.com/PerryLink?tab=repositories"><img alt="GitHub stars" src="https://img.shields.io/github/stars/PerryLink?label=stars&affiliations=OWNER&color=24292f"></a>
 <a href="https://github.com/PerryLink?tab=followers"><img alt="GitHub followers" src="https://img.shields.io/github/followers/PerryLink?label=followers&color=24292f"></a>
 <a href="https://github.com/PerryLink?tab=repositories"><img alt="GitHub repos" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FPerryLink&query=%24.public_repos&label=repos&color=24292f"></a>
-<a href="https://github.com/PerryLink/perrylink"><img alt="merged upstream" src="https://img.shields.io/badge/upstream%20merges-671-6e7781"></a>
-<a href="https://github.com/PerryLink/perrylink"><img alt="repositories where a merge is credited" src="https://img.shields.io/badge/credited%20repos-107-6e7781"></a>
+<a href="https://github.com/PerryLink/perrylink"><img alt="merged upstream" src="https://img.shields.io/badge/upstream%20merges-683-6e7781"></a>
+<a href="https://github.com/PerryLink/perrylink"><img alt="repositories where a merge is credited" src="https://img.shields.io/badge/credited%20repos-108-6e7781"></a>
 <a href="https://github.com/PerryLink/dsh-kit"><img alt="actively maintained plugins" src="https://img.shields.io/badge/plugins-126-6e7781"></a>
 <a href="https://github.com/PerryLink/perrylink"><img alt="compliance tools" src="https://img.shields.io/badge/compliance-62-6e7781"></a>
 <br>
@@ -39,9 +39,9 @@ I fix other people's projects, I maintain a plugin family for
 [Phocinae](https://github.com/Phocinae), my typed-decision model lab. Independent open-source developer in
 Beijing — not affiliated with DeepSeek, and not a DeepSeek employee.
 
-**Upstream** — 671 merged pull requests in 111 repositories that are not mine, from AWS, Apple, Docker,
+**Upstream** — 683 merged pull requests in 111 repositories that are not mine, from AWS, Apple, Docker,
 Microsoft, NVIDIA, Prometheus, Redis, Tencent and the vLLM project down to one-person projects. Of the
-671, **637 left a commit on the default branch in 108 credited repositories; 34 merges in 3 repositories
+683, **649 left a commit on the default branch in 108 credited repositories; 34 merges in 3 repositories
 credit no commit**, giving 111 repositories in total. Those three are
 `SihanTeng/awesome-deepseek-harness-plugins` (32 merges), `Tencent/MMKV` (1) and
 `Anil-matcha/open-genjutsu` (1). **The family** — 126 actively maintained Apache-2.0 plugins: security, workflows, research,
@@ -82,12 +82,12 @@ behaviour.
 ## 🔧 Upstream contributions
 
 *Every repository below is external to `PerryLink/*`, every row is merged work, and open proposals are
-deliberately not listed — as of 2026-11-13T16:37:01Z, 206 are open across 151 repositories. ★ measured
+deliberately not listed — as of 2026-11-14T04:51:36Z, 214 are open across 154 repositories. ★ measured
 2026-11-12 for every row; the third column names the party that owns the
 project, because the account name alone does not say whether that is a company, a standards body or one
 person. Every external repository above 1,000★ that we found with merged work is listed (stars as of
 2026-11-12; not a ranking): twenty-five above 10,000★ in the table, thirty-eight between 1,000★ and 10,000★ in the
-fold below, and another forty-eight below 1,000★ counted in the 671 but not listed individually.*
+fold below, and another forty-eight below 1,000★ counted in the 683 but not listed individually.*
 
 | Repository | ★ | 项目归属方 |
 |---|---|---|
@@ -163,7 +163,7 @@ fold below, and another forty-eight below 1,000★ counted in the 671 but not li
 
 </details>
 
-Another **48 external repositories below 1,000★** carry merged work and are counted in the 671; they are
+Another **48 external repositories below 1,000★** carry merged work and are counted in the 683; they are
 not listed individually.
 
 ## 📦 The full DSH plugin family
