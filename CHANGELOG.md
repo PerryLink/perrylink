@@ -21,6 +21,14 @@ section or a badge of their own.
 
 ---
 
+## 2026-11-14 (forty-fifth round — merge batch)
+
+- **684 total: 650 + 34**, across **111 repositories**, **108** credited, re-derived at 2026-11-14T08:31Z.
+  **220** proposals are open across **153** repositories as of the same time.
+- Merged since the previous round: `cobanov/teslamate-mcp#20` (an incomplete tire check is reported as
+  unknown); no repository was added or lost, so the roster tables are unchanged.
+- The buckets stay 25 / 38 / 48.
+
 ## 2026-11-14 (forty-fourth round — merge batch)
 
 - **683 total: 649 + 34**, across **111 repositories**, **108** credited, re-derived at 2026-11-14T04:51Z.
