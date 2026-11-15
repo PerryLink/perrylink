@@ -21,6 +21,16 @@ section or a badge of their own.
 
 ---
 
+## 2026-11-15 (forty-sixth round — merge batch)
+
+- **730 total: 696 + 34**, across **111 repositories**, **108** credited, re-derived at 2026-11-15T10:10Z.
+  **204** proposals are open across **151** repositories as of the same time.
+- Merged since the previous round: 46 merges — `NandhaKishorM/laya#1498`,
+  `anomalyco/models.dev#13597`, `redis/go-redis#4307`, `omdsh-dev/dsh-genui#429`, `#431`,
+  `cordiverse/cordis#332`, and 40 from the parallel automation in `hikariming/dsh-ee`; no
+  repository was added or lost, so the roster tables are unchanged.
+- The buckets stay 25 / 38 / 48.
+
 ## 2026-11-14 (forty-fifth round — merge batch)
 
 - **684 total: 650 + 34**, across **111 repositories**, **108** credited, re-derived at 2026-11-14T08:31Z.
