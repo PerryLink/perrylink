@@ -21,6 +21,15 @@ section or a badge of their own.
 
 ---
 
+## 2026-11-16 (forty-eighth round — merge batch)
+
+- **733 total: 699 + 34**, across **111 repositories**, **108** credited, re-derived at 2026-11-16T12:51Z.
+  **229** proposals are open across **150** repositories as of the same time.
+- Merged since the previous round: `webpack/webpack-bundle-analyzer#754` (a stats entry without an
+  `info` object no longer breaks asset parsing) and `uber/kraken#737` (retry backoffs are reset where
+  they are built); no repository was added or lost, so the roster tables are unchanged.
+- The buckets stay 25 / 38 / 48.
+
 ## 2026-11-16 (forty-seventh round — merge batch)
 
 - **731 total: 697 + 34**, across **111 repositories**, **108** credited, re-derived at 2026-11-16T05:27Z.
