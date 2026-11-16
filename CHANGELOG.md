@@ -21,6 +21,14 @@ section or a badge of their own.
 
 ---
 
+## 2026-11-16 (forty-seventh round — merge batch)
+
+- **731 total: 697 + 34**, across **111 repositories**, **108** credited, re-derived at 2026-11-16T05:27Z.
+  **232** proposals are open across **152** repositories as of the same time.
+- Merged since the previous round: `cordiverse/cordis#224` (the timer keeps the trailing handle when the
+  callback re-enters); no repository was added or lost, so the roster tables are unchanged.
+- The buckets stay 25 / 38 / 48.
+
 ## 2026-11-15 (forty-sixth round — merge batch)
 
 - **730 total: 696 + 34**, across **111 repositories**, **108** credited, re-derived at 2026-11-15T10:10Z.
