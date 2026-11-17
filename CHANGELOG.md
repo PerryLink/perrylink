@@ -21,6 +21,15 @@ section or a badge of their own.
 
 ---
 
+## 2026-11-17 (forty-ninth round — merge batch)
+
+- **759 total: 725 + 34**, across **112 repositories**, **109** credited, re-derived at 2026-11-17T12:07Z.
+  **206** proposals are open across **152** repositories as of the same time.
+- Merged since the previous round: 26 merges — `microsoft/SkillOpt#414` (a missing learned-block END marker
+  no longer truncates the document), `punkpeye/awesome-mcp-servers#13535` (a **new credited repository**,
+  97,797★, which joins the >10,000★ table), and 24 from the parallel automation in `hikariming/dsh-ee`.
+- The buckets are now **26 / 38 / 48**.
+
 ## 2026-11-16 (forty-eighth round — merge batch)
 
 - **733 total: 699 + 34**, across **111 repositories**, **108** credited, re-derived at 2026-11-16T12:51Z.

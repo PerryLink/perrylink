@@ -8,8 +8,8 @@
 <a href="https://github.com/PerryLink?tab=repositories"><img alt="GitHub stars" src="https://img.shields.io/github/stars/PerryLink?label=stars&affiliations=OWNER&color=24292f"></a>
 <a href="https://github.com/PerryLink?tab=followers"><img alt="GitHub followers" src="https://img.shields.io/github/followers/PerryLink?label=followers&color=24292f"></a>
 <a href="https://github.com/PerryLink?tab=repositories"><img alt="GitHub repos" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FPerryLink&query=%24.public_repos&label=repos&color=24292f"></a>
-<a href="https://github.com/PerryLink/perrylink"><img alt="merged upstream" src="https://img.shields.io/badge/upstream%20merges-733-6e7781"></a>
-<a href="https://github.com/PerryLink/perrylink"><img alt="repositories where a merge is credited" src="https://img.shields.io/badge/credited%20repos-108-6e7781"></a>
+<a href="https://github.com/PerryLink/perrylink"><img alt="merged upstream" src="https://img.shields.io/badge/upstream%20merges-759-6e7781"></a>
+<a href="https://github.com/PerryLink/perrylink"><img alt="repositories where a merge is credited" src="https://img.shields.io/badge/credited%20repos-109-6e7781"></a>
 <a href="https://github.com/PerryLink/dsh-kit"><img alt="actively maintained plugins" src="https://img.shields.io/badge/plugins-126-6e7781"></a>
 <a href="https://github.com/PerryLink/perrylink"><img alt="compliance tools" src="https://img.shields.io/badge/compliance-62-6e7781"></a>
 <br>
@@ -39,10 +39,10 @@ I fix other people's projects, I maintain a plugin family for
 [Phocinae](https://github.com/Phocinae), my typed-decision model lab. Independent open-source developer in
 Beijing — not affiliated with DeepSeek, and not a DeepSeek employee.
 
-**Upstream** — 733 merged pull requests in 111 repositories that are not mine, from AWS, Apple, Docker,
+**Upstream** — 759 merged pull requests in 112 repositories that are not mine, from AWS, Apple, Docker,
 Microsoft, NVIDIA, Prometheus, Redis, Tencent and the vLLM project down to one-person projects. Of the
-733, **699 left a commit on the default branch in 108 credited repositories; 34 merges in 3 repositories
-credit no commit**, giving 111 repositories in total. Those three are
+759, **725 left a commit on the default branch in 109 credited repositories; 34 merges in 3 repositories
+credit no commit**, giving 112 repositories in total. Those three are
 `SihanTeng/awesome-deepseek-harness-plugins` (32 merges), `Tencent/MMKV` (1) and
 `Anil-matcha/open-genjutsu` (1). **The family** — 126 actively maintained Apache-2.0 plugins: security, workflows, research,
 messaging bridges, developer experience, since 2026-10-08 a 53-checker compliance suite plus nine newer
@@ -82,17 +82,18 @@ behaviour.
 ## 🔧 Upstream contributions
 
 *Every repository below is external to `PerryLink/*`, every row is merged work, and open proposals are
-deliberately not listed — as of 2026-11-16T12:51:01Z, 229 are open across 150 repositories. ★ measured
+deliberately not listed — as of 2026-11-17T12:07:11Z, 206 are open across 152 repositories. ★ measured
 2026-11-12 for every row; the third column names the party that owns the
 project, because the account name alone does not say whether that is a company, a standards body or one
 person. Every external repository above 1,000★ that we found with merged work is listed (stars as of
-2026-11-12; not a ranking): twenty-five above 10,000★ in the table, thirty-eight between 1,000★ and 10,000★ in the
-fold below, and another forty-eight below 1,000★ counted in the 733 but not listed individually.*
+2026-11-12; not a ranking): twenty-six above 10,000★ in the table, thirty-eight between 1,000★ and 10,000★ in the
+fold below, and another forty-eight below 1,000★ counted in the 759 but not listed individually.*
 
 | Repository | ★ | 项目归属方 |
 |---|---|---|
 | [dify](https://github.com/langgenius/dify) | 161,002 | **LangGenius** — the official `langgenius` org; the open-source LLM application platform (dify.ai) |
 | [axios](https://github.com/axios/axios) | 109,394 | **Axios** — the `axios` org; the promise-based HTTP client for the browser and Node.js |
+| [awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) | 97,797 | Punkpeye (Frank Fiegel) — individual maintainer; a community collection of MCP servers |
 | [deer-flow](https://github.com/bytedance/deer-flow) | 85,260 | **ByteDance** — the official `bytedance` org |
 | [ruflo](https://github.com/ruvnet/ruflo) | 81,515 | ruvnet (rUv / Reuven Cohen) — individual maintainer |
 | [caddy](https://github.com/caddyserver/caddy) | 78,997 | the `caddyserver` org — independent open-source web server (caddyserver.com) |
@@ -163,7 +164,7 @@ fold below, and another forty-eight below 1,000★ counted in the 733 but not li
 
 </details>
 
-Another **48 external repositories below 1,000★** carry merged work and are counted in the 733; they are
+Another **48 external repositories below 1,000★** carry merged work and are counted in the 759; they are
 not listed individually.
 
 ## 📦 The full DSH plugin family
