@@ -21,6 +21,15 @@ section or a badge of their own.
 
 ---
 
+## 2026-11-18 (fiftieth round — merge batch)
+
+- **764 total: 730 + 34**, across **112 repositories**, **109** credited, re-derived at 2026-11-18T04:53Z.
+  **205** proposals are open across **149** repositories as of the same time.
+- Merged since the previous round: 5 merges — `redis/go-redis#4306` (a cached read timeout is dropped only when a read
+  returned bytes with it), `danmolitor/forme#249` (a Page's style stays in the template), and 3 from the parallel
+  automation in `hikariming/dsh-ee`.
+- The buckets stay **26 / 38 / 48**; no repository joined or left.
+
 ## 2026-11-17 (forty-ninth round — merge batch)
 
 - **759 total: 725 + 34**, across **112 repositories**, **109** credited, re-derived at 2026-11-17T12:07Z.
