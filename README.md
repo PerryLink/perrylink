@@ -2,7 +2,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/assets/perrylink-hero-en-dark.webp">
-  <img src="docs/assets/perrylink-hero-en-light.webp" width="100%" alt="PerryLink: 783 merged pull requests across 113 external repositories, 110 of them carrying an authored commit; 126 active Apache-2.0 plugins for DeepSeek Harness on a 137-row roster; 190 npm names and 382,430 downloads in 30 days — one figure, one authoritative site">
+  <img src="docs/assets/perrylink-hero-en-light.webp" width="100%" alt="PerryLink: 784 merged pull requests across 113 external repositories, 110 of them carrying an authored commit; 126 active Apache-2.0 plugins for DeepSeek Harness on a 137-row roster; 190 npm names and 382,430 downloads in 30 days — one figure, one authoritative site">
 </picture>
 
 # Hi, I'm PerryLink 👋
@@ -26,7 +26,7 @@
 <a href="https://github.com/PerryLink?tab=repositories"><img alt="GitHub stars" src="https://img.shields.io/github/stars/PerryLink?label=stars&affiliations=OWNER&color=24292f"></a>
 <a href="https://github.com/PerryLink?tab=followers"><img alt="GitHub followers" src="https://img.shields.io/github/followers/PerryLink?label=followers&color=24292f"></a>
 <a href="https://github.com/PerryLink?tab=repositories"><img alt="GitHub repos" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FPerryLink&query=%24.public_repos&label=repos&color=24292f"></a>
-<a href="https://github.com/PerryLink/perrylink"><img alt="merged upstream" src="https://img.shields.io/badge/upstream%20merges-783-6e7781"></a>
+<a href="https://github.com/PerryLink/perrylink"><img alt="merged upstream" src="https://img.shields.io/badge/upstream%20merges-784-6e7781"></a>
 <a href="https://github.com/PerryLink/perrylink"><img alt="repositories where a merge is credited" src="https://img.shields.io/badge/credited%20repos-110-6e7781"></a>
 <a href="https://github.com/PerryLink/dsh-kit"><img alt="actively maintained plugins" src="https://img.shields.io/badge/plugins-126-6e7781"></a>
 <a href="https://github.com/PerryLink/perrylink"><img alt="compliance tools" src="https://img.shields.io/badge/compliance-62-6e7781"></a>
@@ -57,9 +57,9 @@ I fix other people's projects, I maintain a plugin family for
 [Phocinae](https://github.com/Phocinae), my typed-decision model lab. Independent open-source developer in
 Beijing — not affiliated with DeepSeek, and not a DeepSeek employee.
 
-**Upstream** — 783 merged pull requests in 113 repositories that are not mine, from AWS, Apple, Docker,
+**Upstream** — 784 merged pull requests in 113 repositories that are not mine, from AWS, Apple, Docker,
 Microsoft, NVIDIA, Prometheus, Redis, Tencent and the vLLM project down to one-person projects. Of the
-783, **749 left a commit on the default branch in 110 credited repositories; 34 merges in 3 repositories
+784, **750 left a commit on the default branch in 110 credited repositories; 34 merges in 3 repositories
 credit no commit**, giving 113 repositories in total. Those three are
 `SihanTeng/awesome-deepseek-harness-plugins` (32 merges), `Tencent/MMKV` (1) and
 `Anil-matcha/open-genjutsu` (1). **The family** — 126 actively maintained Apache-2.0 plugins: security, workflows, research,
@@ -87,7 +87,7 @@ behaviour.
 
 ## ▶ Start here
 
-![perrylink profile: a replay of the committed measurement log — 783 merged pull requests across 113 external repositories with 110 credited, a 126-plugin family on a 137-row roster, 190 npm names with 140 carrying provenance, and 382,430 downloads in 30 days](docs/assets/perrylink-demo.gif)
+![perrylink profile: a replay of the committed measurement log — 784 merged pull requests across 113 external repositories with 110 credited, a 126-plugin family on a 137-row roster, 190 npm names with 140 carrying provenance, and 382,430 downloads in 30 days](docs/assets/perrylink-demo.gif)
 
 *Animated: this repository is documentation only, so there is nothing to execute — the replay shows the figures committed in `README.md` (refreshed 2026-11-21) and `INSTRUMENTATION.md` §1 (re-measured 2026-11-12), the two files that own them. Every line is a committed value, not a re-render of this page.*
 
@@ -105,7 +105,7 @@ behaviour.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/assets/perrylink-flow-v5-dark.svg">
-  <img src="docs/assets/perrylink-flow-v5-light.svg" width="100%" alt="PerryLink contribution structure: an external repository's issue or failing test is reproduced, the smallest fix is verified locally from red to green, and a merged pull request leaves an authored commit on the default branch — 783 merges across 113 repositories, 110 credited by a commit, 34 merges in 3 repositories credited to none">
+  <img src="docs/assets/perrylink-flow-v5-light.svg" width="100%" alt="PerryLink contribution structure: an external repository's issue or failing test is reproduced, the smallest fix is verified locally from red to green, and a merged pull request leaves an authored commit on the default branch — 784 merges across 113 repositories, 110 credited by a commit, 34 merges in 3 repositories credited to none">
 </picture>
 
 *Structure: reproduce → verify → land. A merge counts only when the default branch carries a commit authored by this account; the family side is a 126-plugin roster where every figure has exactly one site. The token labels inside the diagram are the real figures, so the same picture serves all five languages.*
@@ -113,12 +113,12 @@ behaviour.
 ## 🔧 Upstream contributions
 
 *Every repository below is external to `PerryLink/*`, every row is merged work, and open proposals are
-deliberately not listed — as of 2026-11-21T03:44:30.009Z, 212 are open across 148 repositories. ★ measured
+deliberately not listed — as of 2026-11-21T10:23:35.708Z, 212 are open across 147 repositories. ★ measured
 2026-11-12 for every row; the third column names the party that owns the
 project, because the account name alone does not say whether that is a company, a standards body or one
 person. Every external repository above 1,000★ that we found with merged work is listed (stars as of
 2026-11-12; not a ranking): twenty-six above 10,000★ in the table, thirty-eight between 1,000★ and 10,000★ in the
-fold below, and another forty-nine below 1,000★ counted in the 783 but not listed individually.*
+fold below, and another forty-nine below 1,000★ counted in the 784 but not listed individually.*
 
 | Repository | ★ | 项目归属方 |
 |---|---|---|
@@ -195,7 +195,7 @@ fold below, and another forty-nine below 1,000★ counted in the 783 but not lis
 
 </details>
 
-Another **49 external repositories below 1,000★** carry merged work and are counted in the 783; they are
+Another **49 external repositories below 1,000★** carry merged work and are counted in the 784; they are
 not listed individually.
 
 ## 📦 The full DSH plugin family

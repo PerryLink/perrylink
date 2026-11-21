@@ -21,6 +21,14 @@ section or a badge of their own.
 
 ---
 
+## 2026-11-21 (fifty-second round — merge batch)
+
+- **784 total: 750 + 34**, across **113 repositories**, **110** credited, re-derived at 2026-11-21T10:23Z.
+  **212** proposals are open across **147** repositories as of the same time.
+- Merged since the previous round: 1 merge — `Tencent/teamai-cli#1917` (a runtime-sandbox cancellation-cleanup test stays
+  deterministic on a loaded runner).
+- The buckets stay **26 / 38 / 49**; no repository joined or left.
+
 ## 2026-11-21 (fifty-first round — merge batch)
 
 - **783 total: 749 + 34**, across **113 repositories**, **110** credited, re-derived at 2026-11-21T03:44Z.
