@@ -21,6 +21,18 @@ section or a badge of their own.
 
 ---
 
+## 2026-11-21 (fifty-first round — merge batch)
+
+- **783 total: 749 + 34**, across **113 repositories**, **110** credited, re-derived at 2026-11-21T03:44Z.
+  **212** proposals are open across **148** repositories as of the same time.
+- Merged since the previous round: 19 merges — `uber/kraken#759` (a build-index manifest download that fails
+  with a network error is retried), `hikariming/dshfind#76` (a **new credited repository**, 405★, which joins
+  the <1,000★ fold), 12 from the parallel automation in `hikariming/dsh-ee`, 4 in `cordiverse/cordis` (an HMR
+  watch follows a symlink's real path, an empty process variable overrides the files, a static directory
+  redirect happens before extension probing, and a malformed percent-encoded path is answered with 400), and
+  1 in `awesome-dsh-plugin/awesome-dsh-plugin` (a Famling plugin entry).
+- The buckets are now **26 / 38 / 49**; `hikariming/dshfind` joined below 1,000★.
+
 ## 2026-11-18 (fiftieth round — merge batch)
 
 - **764 total: 730 + 34**, across **112 repositories**, **109** credited, re-derived at 2026-11-18T04:53Z.
