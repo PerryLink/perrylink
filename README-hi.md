@@ -1,10 +1,5 @@
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/perrylink-hero-en-dark.webp">
-  <img src="docs/assets/perrylink-hero-en-light.webp" width="100%" alt="PerryLink प्रोफ़ाइल: 113 बाहरी रिपॉज़िटरी में 784 मर्ज किए गए pull requests, जिनमें से 110 में अपना commit है; DeepSeek Harness के लिए 126 सक्रिय Apache-2.0 प्लगइन, 137-पंक्ति की सूची में; npm पर 190 नाम और 30 दिनों में 382,430 डाउनलोड — एक आँकड़ा, एक आधिकारिक स्रोत">
-</picture>
-
 # नमस्ते, मैं PerryLink हूँ 👋
 
 **बीजिंग में स्वतंत्र ओपन-सोर्स डेवलपर।**
@@ -16,7 +11,6 @@
 </div>
 
 ---
-
 
 <!-- Editing note: every figure on this page is measured and dated, and each one has exactly one
      authoritative site. Read INSTRUMENTATION.md before changing a number. This page is self-contained
@@ -62,8 +56,6 @@
 
 ## ▶ यहाँ से शुरू करें
 
-![perrylink प्रोफ़ाइल: पहले से कमिट मापन-लॉग की प्रतिकृति — 113 बाहरी रिपॉज़िटरी में 784 मर्ज किए गए pull requests जिनमें 110 श्रेय-प्राप्त, 137-पंक्ति की सूची में 126-प्लगइन परिवार, 190 npm नाम जिनमें 140 provenance के साथ, और 30 दिनों में 382,430 डाउनलोड](docs/assets/perrylink-demo.gif)
-
 *एनिमेशन: यह रिपॉज़िटरी केवल दस्तावेज़ है, इसलिए यहाँ चलाने को कुछ नहीं — प्रतिकृति उन आँकड़ों को दिखाती है जो `README.md` (2026-11-21 को रीफ़्रेश) और `INSTRUMENTATION.md` §1 (2026-11-12 को फिर से मापा) में कमिट हैं, यानी वही दो फ़ाइलें जो उनकी मालिक हैं। हर पंक्ति एक कमिट किया हुआ मान है, इस पेज का दोबारा रेंडर नहीं।*
 
 | क्या | कहाँ |
@@ -75,11 +67,6 @@
 | **Task-first market** — 11 task families, five scenario packs, two suites | [market](https://perrylink.github.io/dsh-plugins/market.html) · [market/index.json](https://perrylink.github.io/dsh-plugins/market/index.json) · [packs](https://perrylink.github.io/dsh-plugins/packs/finance.html) |
 | **Phocinae** — local typed decisions, no text generation | [Phocinae](https://github.com/Phocinae) · [dsh-phocinae](https://github.com/PerryLink/dsh-phocinae) |
 | **Install the mainline** — 43 defaults + 53 opt-in checkers | [dsh-kit](https://github.com/PerryLink/dsh-kit) · [plugins.txt](https://github.com/PerryLink/dsh-kit/blob/main/plugins.txt) |
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/perrylink-flow-v5-dark.svg">
-  <img src="docs/assets/perrylink-flow-v5-light.svg" width="100%" alt="PerryLink योगदान संरचना: किसी बाहरी रिपॉज़िटरी की issue या विफल टेस्ट पहले दोहराया जाता है, सबसे छोटा फ़िक्स स्थानीय रूप से लाल से हरे तक सत्यापित होता है, और मर्ज किया गया pull request डिफ़ॉल्ट ब्रांच पर अपना commit छोड़ता है — 113 रिपॉज़िटरी में 784 मर्जें, 110 में commit का श्रेय, 3 रिपॉज़िटरी की 34 मर्जें बिना श्रेय">
-</picture>
 
 *संरचना: दोहराओ → सत्यापित करो → लैंड करो। मर्ज तभी गिना जाता है जब डिफ़ॉल्ट ब्रांच पर इस खाते के नाम का commit हो; परिवार की ओर 126-प्लगइन सूची है जहाँ हर आँकड़े का ठीक एक स्रोत है। आरेख के अंदर के लेबल असली आँकड़े हैं, इसलिए वही चित्र पाँचों भाषाओं के लिए काम करता है।*
 

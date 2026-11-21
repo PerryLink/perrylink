@@ -1,10 +1,5 @@
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/perrylink-hero-zh-dark.webp">
-  <img src="docs/assets/perrylink-hero-zh-light.webp" width="100%" alt="PerryLink 主页配图：外部仓库 784 个已合并 PR、其中 110 个仓库留下本人 commit；126 个在维护的 Apache-2.0 DSH 插件、137 行花名册；190 个 npm 包名与 30 天 382,430 次下载 —— 一个数字一个出处">
-</picture>
-
 # 你好，我是 PerryLink 👋
 
 **独立开源开发者，在北京。**
@@ -16,7 +11,6 @@
 </div>
 
 ---
-
 
 <!-- Editing note: every figure on this page is measured and dated, and each one has exactly one
      authoritative site. Read INSTRUMENTATION.md before changing a number. This page is self-contained
@@ -62,8 +56,6 @@
 
 ## ▶ 从这里开始
 
-![perrylink 主页：已提交的测量日志回放 —— 113 个外部仓库里 784 个已合并 PR、其中 110 个记了 commit；126 个在维护插件、137 行花名册；190 个 npm 包名、140 个带来源证明；30 天 382,430 次下载](docs/assets/perrylink-demo.gif)
-
 *动图：本仓只有文档、没有可执行代码，因此回放的是已经提交在 `README.md`（2026-11-21 刷新）与 `INSTRUMENTATION.md` §1（2026-11-12 重测）里的数字 —— 这两个文件才是它们的出处。每一行都是已提交的值，不是本页的重新渲染。*
 
 | 内容 | 位置 |
@@ -75,13 +67,6 @@
 | **Task-first market** — 11 task families, five scenario packs, two suites | [market](https://perrylink.github.io/dsh-plugins/market.html) · [market/index.json](https://perrylink.github.io/dsh-plugins/market/index.json) · [packs](https://perrylink.github.io/dsh-plugins/packs/finance.html) |
 | **Phocinae** — local typed decisions, no text generation | [Phocinae](https://github.com/Phocinae) · [dsh-phocinae](https://github.com/PerryLink/dsh-phocinae) |
 | **Install the mainline** — 43 defaults + 53 opt-in checkers | [dsh-kit](https://github.com/PerryLink/dsh-kit) · [plugins.txt](https://github.com/PerryLink/dsh-kit/blob/main/plugins.txt) |
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/perrylink-flow-v5-dark.svg">
-  <img src="docs/assets/perrylink-flow-v5-light.svg" width="100%" alt="PerryLink 贡献结构图：先复现外部仓库的 issue 或失败测试，再把最小修复在本机从红跑到绿，合并后的 PR 在默认分支上留下本人署名的 commit —— 113 个外部仓库里 784 个已合并 PR，110 个仓库记了 commit，3 个仓库共 34 个 PR 没有记">
-</picture>
-
-*结构：复现 → 验证 → 落地。只有默认分支上留下本人 commit 的合并才算数；插件生态一侧是 126 个在维护插件的花名册，每个数字只有一个出处。图内标的是真实数字，五语共用同一张结构图。*
 
 ## 🔧 上游贡献
 

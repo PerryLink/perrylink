@@ -1,10 +1,5 @@
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/perrylink-hero-en-dark.webp">
-  <img src="docs/assets/perrylink-hero-en-light.webp" width="100%" alt="Perfil do PerryLink: 784 pull requests mesclados em 113 repositórios externos, 110 deles com um commit próprio; 126 plugins Apache-2.0 ativos para o DeepSeek Harness em uma lista de 137 linhas; 190 nomes no npm e 382.430 downloads em 30 dias — um número, um site autoritativo">
-</picture>
-
 # Olá, sou o PerryLink 👋
 
 **Desenvolvedor open source independente em Pequim.**
@@ -16,7 +11,6 @@
 </div>
 
 ---
-
 
 <!-- Editing note: every figure on this page is measured and dated, and each one has exactly one
      authoritative site. Read INSTRUMENTATION.md before changing a number. This page is self-contained
@@ -62,8 +56,6 @@ Também contribuo com o **[Cordis](https://github.com/cordiverse/cordis)**, o ke
 
 ## ▶ Comece aqui
 
-![Perfil do perrylink: uma repetição do registro de medições já comprometido — 784 pull requests mesclados em 113 repositórios externos com 110 creditados, uma família de 126 plugins numa lista de 137 linhas, 190 nomes npm com 140 com provenance e 382.430 downloads em 30 dias](docs/assets/perrylink-demo.gif)
-
 *Animação: este repositório é só documentação, então não há nada para executar — a repetição mostra os números comprometidos em `README.md` (atualizado em 2026-11-21) e `INSTRUMENTATION.md` §1 (medido de novo em 2026-11-12), os dois arquivos que são donos deles. Cada linha é um valor comprometido, não uma re-renderização desta página.*
 
 | O que | Onde |
@@ -75,11 +67,6 @@ Também contribuo com o **[Cordis](https://github.com/cordiverse/cordis)**, o ke
 | **Task-first market** — 11 task families, five scenario packs, two suites | [market](https://perrylink.github.io/dsh-plugins/market.html) · [market/index.json](https://perrylink.github.io/dsh-plugins/market/index.json) · [packs](https://perrylink.github.io/dsh-plugins/packs/finance.html) |
 | **Phocinae** — local typed decisions, no text generation | [Phocinae](https://github.com/Phocinae) · [dsh-phocinae](https://github.com/PerryLink/dsh-phocinae) |
 | **Install the mainline** — 43 defaults + 53 opt-in checkers | [dsh-kit](https://github.com/PerryLink/dsh-kit) · [plugins.txt](https://github.com/PerryLink/dsh-kit/blob/main/plugins.txt) |
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/perrylink-flow-v5-dark.svg">
-  <img src="docs/assets/perrylink-flow-v5-light.svg" width="100%" alt="Estrutura de contribuição do PerryLink: a issue ou teste que falha de um repositório externo é reproduzida, a correção mínima é verificada localmente de vermelho para verde, e um pull request mesclado deixa um commit próprio no branch padrão — 784 merges em 113 repositórios, 110 creditados por um commit, 34 merges em 3 repositórios sem crédito">
-</picture>
 
 *Estrutura: reproduzir → verificar → aterrissar. Um merge só conta quando o branch padrão carrega um commit de autoria desta conta; o lado da família é uma lista de 126 plugins onde cada número tem exatamente um site. Os rótulos dentro do diagrama são os números reais, então a mesma imagem serve aos cinco idiomas.*
 

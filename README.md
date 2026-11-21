@@ -1,10 +1,5 @@
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/perrylink-hero-en-dark.webp">
-  <img src="docs/assets/perrylink-hero-en-light.webp" width="100%" alt="PerryLink: 784 merged pull requests across 113 external repositories, 110 of them carrying an authored commit; 126 active Apache-2.0 plugins for DeepSeek Harness on a 137-row roster; 190 npm names and 382,430 downloads in 30 days — one figure, one authoritative site">
-</picture>
-
 # Hi, I'm PerryLink 👋
 
 **Independent open-source developer in Beijing.**
@@ -16,7 +11,6 @@
 </div>
 
 ---
-
 
 <!-- Editing note: every figure on this page is measured and dated, and each one has exactly one
      authoritative site. Read INSTRUMENTATION.md before changing a number. This page is self-contained
@@ -87,10 +81,7 @@ behaviour.
 
 ## ▶ Start here
 
-![perrylink profile: a replay of the committed measurement log — 784 merged pull requests across 113 external repositories with 110 credited, a 126-plugin family on a 137-row roster, 190 npm names with 140 carrying provenance, and 382,430 downloads in 30 days](docs/assets/perrylink-demo.gif)
-
 *Animated: this repository is documentation only, so there is nothing to execute — the replay shows the figures committed in `README.md` (refreshed 2026-11-21) and `INSTRUMENTATION.md` §1 (re-measured 2026-11-12), the two files that own them. Every line is a committed value, not a re-render of this page.*
-
 
 | What | Where |
 |---|---|
@@ -101,14 +92,6 @@ behaviour.
 | **Task-first market** — 11 task families, five scenario packs, two suites | [market](https://perrylink.github.io/dsh-plugins/market.html) · [market/index.json](https://perrylink.github.io/dsh-plugins/market/index.json) · [packs](https://perrylink.github.io/dsh-plugins/packs/finance.html) |
 | **Phocinae** — local typed decisions, no text generation | [Phocinae](https://github.com/Phocinae) · [dsh-phocinae](https://github.com/PerryLink/dsh-phocinae) |
 | **Install the mainline** — 43 defaults + 53 opt-in checkers | [dsh-kit](https://github.com/PerryLink/dsh-kit) · [plugins.txt](https://github.com/PerryLink/dsh-kit/blob/main/plugins.txt) |
-
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/perrylink-flow-v5-dark.svg">
-  <img src="docs/assets/perrylink-flow-v5-light.svg" width="100%" alt="PerryLink contribution structure: an external repository's issue or failing test is reproduced, the smallest fix is verified locally from red to green, and a merged pull request leaves an authored commit on the default branch — 784 merges across 113 repositories, 110 credited by a commit, 34 merges in 3 repositories credited to none">
-</picture>
-
-*Structure: reproduce → verify → land. A merge counts only when the default branch carries a commit authored by this account; the family side is a 126-plugin roster where every figure has exactly one site. The token labels inside the diagram are the real figures, so the same picture serves all five languages.*
 
 ## 🔧 Upstream contributions
 
