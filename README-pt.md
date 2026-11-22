@@ -72,7 +72,7 @@ Também contribuo com o **[Cordis](https://github.com/cordiverse/cordis)**, o ke
 
 ## 🔧 Contribuições upstream
 
-*Cada repositório abaixo é externo a `PerryLink/*`, cada linha é trabalho mesclado e propostas abertas não são listadas de propósito — em 2026-11-22T09:12:30.848Z há 217 abertas em 148 repositórios. As ★ foram medidas em 2026-11-12 para cada linha; a terceira coluna nomeia a parte dona do projeto, porque o nome da conta sozinho não diz se é uma empresa, um órgão de padrões ou uma pessoa. Todo repositório externo acima de 1.000★ que encontramos com trabalho mesclado está listado (★ em 2026-11-12; não é um ranking): vinte e seis acima de 10.000★ na tabela, trinta e oito entre 1.000★ e 10.000★ no recolhido abaixo, e outros quarenta e nove abaixo de 1.000★ contados nos 785 mas não listados individualmente.*
+*Cada repositório abaixo é externo a `PerryLink/*`, cada linha é trabalho mesclado e propostas abertas não são listadas de propósito — em 2026-11-22T13:53:04.373Z há 220 abertas em 147 repositórios. As ★ foram medidas em 2026-11-12 para cada linha; a terceira coluna nomeia a parte dona do projeto, porque o nome da conta sozinho não diz se é uma empresa, um órgão de padrões ou uma pessoa. Todo repositório externo acima de 1.000★ que encontramos com trabalho mesclado está listado (★ em 2026-11-12; não é um ranking): vinte e seis acima de 10.000★ na tabela, trinta e oito entre 1.000★ e 10.000★ no recolhido abaixo, e outros quarenta e nove abaixo de 1.000★ contados nos 785 mas não listados individualmente.*
 
 | Repositório | ★ | Titular do projeto |
 |---|---|---|
