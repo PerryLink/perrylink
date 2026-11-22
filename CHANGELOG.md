@@ -21,6 +21,14 @@ section or a badge of their own.
 
 ---
 
+## 2026-11-22 (fifty-third round — merge batch)
+
+- **785 total: 751 + 34**, across **113 repositories**, **110** credited, re-derived at 2026-11-22T09:12Z.
+  **217** proposals are open across **148** repositories as of the same time.
+- Merged since the previous round: 1 merge — `valkey-io/valkey-go#230` (the README no longer documents a
+  Google Cloud Memorystore caching note that the client no longer has).
+- The buckets stay **26 / 38 / 49**; no repository joined or left.
+
 ## 2026-11-21 (fifty-second round — merge batch)
 
 - **784 total: 750 + 34**, across **113 repositories**, **110** credited, re-derived at 2026-11-21T10:23Z.
