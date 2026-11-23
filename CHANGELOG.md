@@ -21,6 +21,15 @@ section or a badge of their own.
 
 ---
 
+## 2026-11-23 (fifty-fourth round — merge batch)
+
+- **970 total: 936 + 34**, across **113 repositories**, **110** credited, re-derived at 2026-11-23T11:58Z.
+  **369** proposals are open across **151** repositories as of the same time.
+- Merged since the previous round: 185 merges — mostly the parallel DSH-ecosystem automation
+  (`awesome-dsh-plugin` batches, `cordiverse/cordis#363` bracketing an IPv6 host in the public URL,
+  `Dominic789654/awesome-deepseek-harness`); no non-DSH external merges in this window.
+- The buckets stay **26 / 38 / 49**; no repository joined or left.
+
 ## 2026-11-22 (fifty-third round — merge batch)
 
 - **785 total: 751 + 34**, across **113 repositories**, **110** credited, re-derived at 2026-11-22T09:12Z.
