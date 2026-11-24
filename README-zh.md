@@ -20,7 +20,7 @@
 <a href="https://github.com/PerryLink?tab=repositories"><img alt="GitHub stars" src="https://img.shields.io/github/stars/PerryLink?label=stars&affiliations=OWNER&color=24292f"></a>
 <a href="https://github.com/PerryLink?tab=followers"><img alt="GitHub followers" src="https://img.shields.io/github/followers/PerryLink?label=followers&color=24292f"></a>
 <a href="https://github.com/PerryLink?tab=repositories"><img alt="GitHub repos" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FPerryLink&query=%24.public_repos&label=repos&color=24292f"></a>
-<a href="https://github.com/PerryLink/perrylink"><img alt="merged upstream" src="https://img.shields.io/badge/upstream%20merges-970-6e7781"></a>
+<a href="https://github.com/PerryLink/perrylink"><img alt="merged upstream" src="https://img.shields.io/badge/upstream%20merges-978-6e7781"></a>
 <a href="https://github.com/PerryLink/perrylink"><img alt="repositories where a merge is credited" src="https://img.shields.io/badge/credited%20repos-110-6e7781"></a>
 <a href="https://github.com/PerryLink/dsh-kit"><img alt="actively maintained plugins" src="https://img.shields.io/badge/plugins-126-6e7781"></a>
 <a href="https://github.com/PerryLink/perrylink"><img alt="compliance tools" src="https://img.shields.io/badge/compliance-62-6e7781"></a>
@@ -48,7 +48,7 @@
 
 我给别人的项目修 bug、为 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) 维护一套插件生态，并运营 [Phocinae](https://github.com/Phocinae) —— 我自己的 typed-decision 模型实验室。我是北京独立开源开发者，与 DeepSeek 没有隶属关系，也不是 DeepSeek 员工。
 
-**上游** —— 970 个已合并 PR，分布在 113 个不属于我的仓库里，从 AWS、Apple、Docker、Microsoft、NVIDIA、Prometheus、Redis、Tencent 与 vLLM 项目，到一个人的小项目都有。970 个之中，**936 个在 110 个仓库的默认分支上留下了 commit；另有 3 个仓库共 34 个合并没有留下 commit**，合计 113 个仓库。那三个是 `SihanTeng/awesome-deepseek-harness-plugins`（32 个合并）、`Tencent/MMKV`（1）与 `Anil-matcha/open-genjutsu`（1）。**插件生态** —— 126 个在维护的 Apache-2.0 插件：安全、工作流、研究、消息桥接、开发者体验；2026-10-08 起加上 53 项核查器合规套件与九个更新的合规工具；27 个业务工具于 2026-11-03 组成 task-first 插件市场：其中六个并入 finance/contract suite，其余是专业工具（发票、银行、合同、质量、报关、物流、HR、零售、建筑、PDF 表格、模型参数），一个是安装伴侣、一个是评测工具。**翻译相关命名于 2026-11-08 拆分：** `dsh-param-repair`（1.0.2）是原先叫 `dsh-translate` 的供应商参数映射 + 确定性 JSON 修复插件，而 `dsh-translate`（0.3.5）现在是全页翻译器，跑会话自己的模型路由，代码、路径、命令与产品名原样保留。**时间证据（2026-11-09）：** `dsh-sherlock` 0.5.0 是 catalog-only 的本地工作台，处理公开来源时间线与日期冲突 —— 五个时钟、TEG、T-S-C-E、查询账本、diff/verify/review，以及一份自包含 HTML 报告；它不建站、不找人、也不给真/假结论。**27 个领域工具都在 0.1–0.2、没有 alpha 标记**；多数 README 明确标注 not-GA，我们跑过的每个首次运行都收进一个 pack，五个场景 pack 把它们首尾串起来。旧的 `dsh-eval-harness` 已改名为 `dsh-eval-pack`。公开目录是 **[perrylink.github.io](https://perrylink.github.io/)** —— 插件索引下 185 个页面（站点 sitemap 除根之外列出 114 个 URL），全部直接写在服务端 HTML 里、不靠 JavaScript 渲染，因此从搜索结果点进来的读者看到的是正文，而不是加载中状态。
+**上游** —— 978 个已合并 PR，分布在 114 个不属于我的仓库里，从 AWS、Apple、Docker、Microsoft、NVIDIA、Prometheus、Redis、Tencent 与 vLLM 项目，到一个人的小项目都有。978 个之中，**944 个在 111 个仓库的默认分支上留下了 commit；另有 3 个仓库共 34 个合并没有留下 commit**，合计 114 个仓库。那三个是 `SihanTeng/awesome-deepseek-harness-plugins`（32 个合并）、`Tencent/MMKV`（1）与 `Anil-matcha/open-genjutsu`（1）。**插件生态** —— 126 个在维护的 Apache-2.0 插件：安全、工作流、研究、消息桥接、开发者体验；2026-10-08 起加上 53 项核查器合规套件与九个更新的合规工具；27 个业务工具于 2026-11-03 组成 task-first 插件市场：其中六个并入 finance/contract suite，其余是专业工具（发票、银行、合同、质量、报关、物流、HR、零售、建筑、PDF 表格、模型参数），一个是安装伴侣、一个是评测工具。**翻译相关命名于 2026-11-08 拆分：** `dsh-param-repair`（1.0.2）是原先叫 `dsh-translate` 的供应商参数映射 + 确定性 JSON 修复插件，而 `dsh-translate`（0.3.5）现在是全页翻译器，跑会话自己的模型路由，代码、路径、命令与产品名原样保留。**时间证据（2026-11-09）：** `dsh-sherlock` 0.5.0 是 catalog-only 的本地工作台，处理公开来源时间线与日期冲突 —— 五个时钟、TEG、T-S-C-E、查询账本、diff/verify/review，以及一份自包含 HTML 报告；它不建站、不找人、也不给真/假结论。**27 个领域工具都在 0.1–0.2、没有 alpha 标记**；多数 README 明确标注 not-GA，我们跑过的每个首次运行都收进一个 pack，五个场景 pack 把它们首尾串起来。旧的 `dsh-eval-harness` 已改名为 `dsh-eval-pack`。公开目录是 **[perrylink.github.io](https://perrylink.github.io/)** —— 插件索引下 185 个页面（站点 sitemap 除根之外列出 114 个 URL），全部直接写在服务端 HTML 里、不靠 JavaScript 渲染，因此从搜索结果点进来的读者看到的是正文，而不是加载中状态。
 
 我也向上游 **[Cordis](https://github.com/cordiverse/cordis)** 提交 —— 那是 DeepSeek Harness 以 `@deepseek-ai/cordis` 引入的插件内核 —— 那里有九个已合并 PR，从 async-generator 清理到 reload 行为。
 
@@ -70,7 +70,7 @@
 
 ## 🔧 上游贡献
 
-*下表每个仓库都是 `PerryLink/*` 之外的仓库，每一行都是已合并的工作，未合并的提案故意不列 —— 截至 2026-11-23T11:58:24.366Z，151 个仓库里有 369 个还在开着。★ 全部按 2026-11-12 实测；第三列写的是项目归属方，因为只看账号名无法判断它是一家公司、一个标准组织，还是一个人。我们查到的、有已合并工作且超过 1,000★ 的外部仓库全部列出（★ 为 2026-11-12 数据；不是排名）：表内二十六个在 10,000★ 以上，下方折叠里三十八个在 1,000★–10,000★ 之间，另有四十九个不到 1,000★ 的仓库计入 970 但未逐条列出。*
+*下表每个仓库都是 `PerryLink/*` 之外的仓库，每一行都是已合并的工作，未合并的提案故意不列 —— 截至 2026-11-24T05:37:07.168Z，151 个仓库里有 237 个还在开着。★ 全部按 2026-11-12 实测；第三列写的是项目归属方，因为只看账号名无法判断它是一家公司、一个标准组织，还是一个人。我们查到的、有已合并工作且超过 1,000★ 的外部仓库全部列出（★ 为 2026-11-12 数据；不是排名）：表内二十六个在 10,000★ 以上，下方折叠里三十九个在 1,000★–10,000★ 之间，另有四十八个不到 1,000★ 的仓库计入 978 但未逐条列出。*
 
 | 仓库 | ★ | 项目归属方 |
 |---|---|---|
@@ -98,11 +98,11 @@
 | [FlashMLA](https://github.com/deepseek-ai/FlashMLA) | 13,261 | **DeepSeek** — the official `deepseek-ai` org |
 | [webpack-bundle-analyzer](https://github.com/webpack/webpack-bundle-analyzer) | 12,654 | the `webpack` org — the bundle analysis plugin and CLI |
 | [dsh-market](https://github.com/dsh-market/dsh-market) | 12,063 | `dsh-market` org — the community plugin market behind dshmarket.com |
-| [dsh-web](https://github.com/zhu1090093659/dsh-web) | 10,358 | zhu1090093659 — individual maintainer |
+| [dsh-web](https://github.com/zhu1090094459/dsh-web) | 10,358 | zhu1090094459 — individual maintainer |
 | [BrowserSkill](https://github.com/Tencent/BrowserSkill) | 10,331 | **Tencent** — the official `Tencent` org |
 
 <details>
-<summary><b>另外三十八个在 1,000★–10,000★ 之间 —— 每条一行</b></summary>
+<summary><b>另外三十九个在 1,000★–10,000★ 之间 —— 每条一行</b></summary>
 
 | 仓库 | ★ | 项目归属方 |
 |---|---|---|
@@ -147,7 +147,7 @@
 
 </details>
 
-另有 **49 个不到 1,000★ 的外部仓库**带着已合并工作、计入 970，未逐条列出。
+另有 **49 个不到 1,000★ 的外部仓库**带着已合并工作、计入 978，未逐条列出。
 
 ## 📦 完整的 DSH 插件生态
 

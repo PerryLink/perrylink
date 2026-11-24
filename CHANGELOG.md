@@ -21,6 +21,15 @@ section or a badge of their own.
 
 ---
 
+## 2026-11-24 (fifty-fifth round — merge batch)
+
+- **978 total: 944 + 34**, across **114 repositories**, **111** credited, re-derived at 2026-11-24T05:37Z.
+  **237** proposals are open across **151** repositories as of the same time.
+- Merged since the previous round: 8 merges — `intel/neural-compressor#2655` (a **new credited repository**,
+  2,734★, which joins the 1,000★–10,000★ fold), `evaleval/every_eval_ever#322` and `#321`, and 5 from the
+  parallel automation in `hikariming/dsh-ee`.
+- The buckets are now **26 / 39 / 48**; `intel/neural-compressor` joined below 10,000★.
+
 ## 2026-11-23 (fifty-fourth round — merge batch)
 
 - **970 total: 936 + 34**, across **113 repositories**, **110** credited, re-derived at 2026-11-23T11:58Z.
