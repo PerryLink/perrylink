@@ -21,6 +21,17 @@ section or a badge of their own.
 
 ---
 
+## 2026-11-25 (fifty-seventh round — merge batch + contribution batch)
+
+- **995 total: 961 + 34**, across **115 repositories**, **112** credited, re-derived at 2026-11-25T11:15Z.
+  **244** proposals are open across **153** repositories as of the same time (the batch below opened 11 new PRs).
+- Merged since the previous round: `hikariming/dsh-ee#338` and `#242` (parallel automation).
+- Batch activity: 11 new PRs opened across 10 repositories — `sooperset/mcp-atlassian#1914`, `free5gc/nas#64`,
+  `modelcontextprotocol/go-sdk#1546` (auto-closed by the repo's linked-issue policy), `redis/go-redis#4426`,
+  `punkpeye/awesome-mcp-servers#20694/#20695/#20696`, `iflytek/skillhub#1141`, `Tencent/BrowserSkill#829`,
+  `etcd-io/etcd#22951`, `valkey-io/valkey-go#234` and `open5gs/open5gs#5116`; plus PR refreshes in
+  `kellyjonbrazil/jc#890`, `vercel-labs/deepsec#215`, `iflytek/skillhub#1121` and `pydantic/genai-prices#962/#966`.
+
 ## 2026-11-25 (fifty-sixth round — merge batch)
 
 - **993 total: 959 + 34**, across **115 repositories**, **112** credited, re-derived at 2026-11-25T10:09Z.
