@@ -21,6 +21,18 @@ section or a badge of their own.
 
 ---
 
+## 2026-11-25 (fifty-sixth round — merge batch)
+
+- **993 total: 959 + 34**, across **115 repositories**, **112** credited, re-derived at 2026-11-25T10:09Z.
+  **222** proposals are open across **149** repositories as of the same time.
+- Merged since the previous round: 15 merges, 14 of them from the parallel automation in
+  `hikariming/dsh-ee` (6) and `ccch1mneyyy/dsh-go-market` (8), plus `bruc3van/awesome-dsh-plugin-pro#178`.
+  `ccch1mneyyy/dsh-go-market` is a **new credited repository** (150★, below the 1,000★ fold).
+- The buckets are now **26 / 39 / 49**.
+- Not counted as a PR merge: `ValveSoftware/GameNetworkingSockets#446` was applied by the maintainer
+  directly to `master` as commit `7011c3a4` (authored by PerryLink) after review; the PR itself is
+  closed, not merged. It is recorded here rather than in the merged-PR count.
+
 ## 2026-11-24 (fifty-fifth round — merge batch)
 
 - **978 total: 944 + 34**, across **114 repositories**, **111** credited, re-derived at 2026-11-24T05:37Z.

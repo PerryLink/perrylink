@@ -20,7 +20,7 @@
 <a href="https://github.com/PerryLink?tab=repositories"><img alt="GitHub stars" src="https://img.shields.io/github/stars/PerryLink?label=stars&affiliations=OWNER&color=24292f"></a>
 <a href="https://github.com/PerryLink?tab=followers"><img alt="GitHub followers" src="https://img.shields.io/github/followers/PerryLink?label=followers&color=24292f"></a>
 <a href="https://github.com/PerryLink?tab=repositories"><img alt="GitHub repos" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FPerryLink&query=%24.public_repos&label=repos&color=24292f"></a>
-<a href="https://github.com/PerryLink/perrylink"><img alt="merged upstream" src="https://img.shields.io/badge/upstream%20merges-978-6e7781"></a>
+<a href="https://github.com/PerryLink/perrylink"><img alt="merged upstream" src="https://img.shields.io/badge/upstream%20merges-993-6e7781"></a>
 <a href="https://github.com/PerryLink/perrylink"><img alt="repositories where a merge is credited" src="https://img.shields.io/badge/credited%20repos-110-6e7781"></a>
 <a href="https://github.com/PerryLink/dsh-kit"><img alt="actively maintained plugins" src="https://img.shields.io/badge/plugins-126-6e7781"></a>
 <a href="https://github.com/PerryLink/perrylink"><img alt="compliance tools" src="https://img.shields.io/badge/compliance-62-6e7781"></a>
@@ -51,10 +51,10 @@ I fix other people's projects, I maintain a plugin family for
 [Phocinae](https://github.com/Phocinae), my typed-decision model lab. Independent open-source developer in
 Beijing — not affiliated with DeepSeek, and not a DeepSeek employee.
 
-**Upstream** — 978 merged pull requests in 114 repositories that are not mine, from AWS, Apple, Docker,
+**Upstream** — 993 merged pull requests in 115 repositories that are not mine, from AWS, Apple, Docker,
 Microsoft, NVIDIA, Prometheus, Redis, Tencent and the vLLM project down to one-person projects. Of the
-978, **944 left a commit on the default branch in 111 credited repositories; 34 merges in 3 repositories
-credit no commit**, giving 114 repositories in total. Those three are
+993, **959 left a commit on the default branch in 112 credited repositories; 34 merges in 3 repositories
+credit no commit**, giving 115 repositories in total. Those three are
 `SihanTeng/awesome-deepseek-harness-plugins` (32 merges), `Tencent/MMKV` (1) and
 `Anil-matcha/open-genjutsu` (1). **The family** — 126 actively maintained Apache-2.0 plugins: security, workflows, research,
 messaging bridges, developer experience, since 2026-10-08 a 53-checker compliance suite plus nine newer
@@ -96,12 +96,12 @@ behaviour.
 ## 🔧 Upstream contributions
 
 *Every repository below is external to `PerryLink/*`, every row is merged work, and open proposals are
-deliberately not listed — as of 2026-11-24T05:37:07.168Z, 237 are open across 151 repositories. ★ measured
+deliberately not listed — as of 2026-11-25T10:09:33.180Z, 222 are open across 149 repositories. ★ measured
 2026-11-12 for every row; the third column names the party that owns the
 project, because the account name alone does not say whether that is a company, a standards body or one
 person. Every external repository above 1,000★ that we found with merged work is listed (stars as of
 2026-11-12; not a ranking): twenty-six above 10,000★ in the table, thirty-nine between 1,000★ and 10,000★ in the
-fold below, and another forty-eight below 1,000★ counted in the 978 but not listed individually.*
+fold below, and another forty-nine below 1,000★ counted in the 993 but not listed individually.*
 
 | Repository | ★ | 项目归属方 |
 |---|---|---|
@@ -129,7 +129,7 @@ fold below, and another forty-eight below 1,000★ counted in the 978 but not li
 | [FlashMLA](https://github.com/deepseek-ai/FlashMLA) | 13,261 | **DeepSeek** — the official `deepseek-ai` org |
 | [webpack-bundle-analyzer](https://github.com/webpack/webpack-bundle-analyzer) | 12,654 | the `webpack` org — the bundle analysis plugin and CLI |
 | [dsh-market](https://github.com/dsh-market/dsh-market) | 12,063 | `dsh-market` org — the community plugin market behind dshmarket.com |
-| [dsh-web](https://github.com/zhu1090094459/dsh-web) | 10,358 | zhu1090094459 — individual maintainer |
+| [dsh-web](https://github.com/zhu1090095959/dsh-web) | 10,358 | zhu1090095959 — individual maintainer |
 | [BrowserSkill](https://github.com/Tencent/BrowserSkill) | 10,331 | **Tencent** — the official `Tencent` org |
 
 <details>
@@ -178,7 +178,7 @@ fold below, and another forty-eight below 1,000★ counted in the 978 but not li
 
 </details>
 
-Another **48 external repositories below 1,000★** carry merged work and are counted in the 978; they are
+Another **49 external repositories below 1,000★** carry merged work and are counted in the 993; they are
 not listed individually.
 
 ## 📦 The full DSH plugin family
