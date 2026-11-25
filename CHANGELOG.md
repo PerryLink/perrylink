@@ -21,6 +21,13 @@ section or a badge of their own.
 
 ---
 
+## 2026-11-25 (fifty-eighth round — merge)
+
+- **996 total: 962 + 34**, across **116 repositories**, **113** credited, re-derived at 2026-11-25T12:19Z.
+  **243** proposals are open across **152** repositories as of the same time.
+- Merged since the previous round: `heroiclabs/nakama#2566` — a **new credited repository** (13,771★, which
+  joins the above-10,000★ table). The buckets are now **27 / 39 / 49**.
+
 ## 2026-11-25 (fifty-seventh round — merge batch + contribution batch)
 
 - **995 total: 961 + 34**, across **115 repositories**, **112** credited, re-derived at 2026-11-25T11:15Z.
