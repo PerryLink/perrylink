@@ -21,6 +21,15 @@ section or a badge of their own.
 
 ---
 
+## 2026-11-26 (fifty-ninth round — merge batch)
+
+- **1001 total: 967 + 34**, across **117 repositories**, **114** credited, re-derived at 2026-11-26T04:10Z.
+  **237** proposals are open across **149** repositories as of the same time.
+- Merged since the previous round: 5 — `open5gs/open5gs#5116`, `agentclientprotocol/claude-agent-acp#1639`,
+  `prometheus/client_golang#2192`, `cordiverse/cordis#365` and one from the parallel automation in
+  `zhu1090093659/dsh-community-plugins`. `prometheus/client_golang` is a **new credited repository**
+  (6,052★, joins the 1,000★–10,000★ fold); the buckets are now **27 / 40 / 49**.
+
 ## 2026-11-25 (fifty-eighth round — merge)
 
 - **996 total: 962 + 34**, across **116 repositories**, **113** credited, re-derived at 2026-11-25T12:19Z.

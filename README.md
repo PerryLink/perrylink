@@ -20,7 +20,7 @@
 <a href="https://github.com/PerryLink?tab=repositories"><img alt="GitHub stars" src="https://img.shields.io/github/stars/PerryLink?label=stars&affiliations=OWNER&color=24292f"></a>
 <a href="https://github.com/PerryLink?tab=followers"><img alt="GitHub followers" src="https://img.shields.io/github/followers/PerryLink?label=followers&color=24292f"></a>
 <a href="https://github.com/PerryLink?tab=repositories"><img alt="GitHub repos" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FPerryLink&query=%24.public_repos&label=repos&color=24292f"></a>
-<a href="https://github.com/PerryLink/perrylink"><img alt="merged upstream" src="https://img.shields.io/badge/upstream%20merges-996-6e7781"></a>
+<a href="https://github.com/PerryLink/perrylink"><img alt="merged upstream" src="https://img.shields.io/badge/upstream%20merges-1001-6e7781"></a>
 <a href="https://github.com/PerryLink/perrylink"><img alt="repositories where a merge is credited" src="https://img.shields.io/badge/credited%20repos-110-6e7781"></a>
 <a href="https://github.com/PerryLink/dsh-kit"><img alt="actively maintained plugins" src="https://img.shields.io/badge/plugins-126-6e7781"></a>
 <a href="https://github.com/PerryLink/perrylink"><img alt="compliance tools" src="https://img.shields.io/badge/compliance-62-6e7781"></a>
@@ -29,7 +29,7 @@
 <img alt="npm downloads 30d" src="https://img.shields.io/badge/npm%20downloads%2030d-382.4k-6e7781">
 <a href="https://github.com/PerryLink/perrylink"><img alt="npm provenance" src="https://img.shields.io/badge/npm%20provenance-140%2F190-6e7781"></a>
 <a href="https://github.com/PerryLink/dsh-auto-review/blob/main/LICENSE"><img alt="license" src="https://img.shields.io/badge/license-Apache--2.0-blue"></a>
-<a href="https://github.com/PerryLink/dsh-mcp-panel/blob/main/package.json"><img alt="node" src="https://img.shields.io/badge/node-%5E22.19%20%7C%7C%20%3E%3D24.9-339963?logo=node.js"></a>
+<a href="https://github.com/PerryLink/dsh-mcp-panel/blob/main/package.json"><img alt="node" src="https://img.shields.io/badge/node-%5E22.19%20%7C%7C%20%3E%3D24.9-3310013?logo=node.js"></a>
 <br>
 <a href="https://github.com/PerryLink/dsh-mcp-panel/blob/main/package.json"><img alt="dsh host corridor" src="https://img.shields.io/badge/dsh-%E2%89%A50.1.2--rc.1%20%3C0.3.0-4B32C3"></a>
 <a href="https://api.securityscorecards.dev/projects/github.com/PerryLink/dsh-auto-review"><img alt="OpenSSF Scorecard — dsh-auto-review" src="https://img.shields.io/ossf-scorecard/github.com/PerryLink/dsh-auto-review?label=openssf%20scorecard"></a>
@@ -51,10 +51,10 @@ I fix other people's projects, I maintain a plugin family for
 [Phocinae](https://github.com/Phocinae), my typed-decision model lab. Independent open-source developer in
 Beijing — not affiliated with DeepSeek, and not a DeepSeek employee.
 
-**Upstream** — 996 merged pull requests in 116 repositories that are not mine, from AWS, Apple, Docker,
+**Upstream** — 1001 merged pull requests in 117 repositories that are not mine, from AWS, Apple, Docker,
 Microsoft, NVIDIA, Prometheus, Redis, Tencent and the vLLM project down to one-person projects. Of the
-996, **962 left a commit on the default branch in 113 credited repositories; 34 merges in 3 repositories
-credit no commit**, giving 116 repositories in total. Those three are
+1001, **967 left a commit on the default branch in 114 credited repositories; 34 merges in 3 repositories
+credit no commit**, giving 117 repositories in total. Those three are
 `SihanTeng/awesome-deepseek-harness-plugins` (32 merges), `Tencent/MMKV` (1) and
 `Anil-matcha/open-genjutsu` (1). **The family** — 126 actively maintained Apache-2.0 plugins: security, workflows, research,
 messaging bridges, developer experience, since 2026-10-08 a 53-checker compliance suite plus nine newer
@@ -96,12 +96,12 @@ behaviour.
 ## 🔧 Upstream contributions
 
 *Every repository below is external to `PerryLink/*`, every row is merged work, and open proposals are
-deliberately not listed — as of 2026-11-25T12:19:19.780Z, 243 are open across 152 repositories. ★ measured
+deliberately not listed — as of 2026-11-26T04:10:42.431Z, 237 are open across 149 repositories. ★ measured
 2026-11-12 for every row; the third column names the party that owns the
 project, because the account name alone does not say whether that is a company, a standards body or one
 person. Every external repository above 1,000★ that we found with merged work is listed (stars as of
-2026-11-12; not a ranking): twenty-seven above 10,000★ in the table, thirty-nine between 1,000★ and 10,000★ in the
-fold below, and another forty-nine below 1,000★ counted in the 996 but not listed individually.*
+2026-11-12; not a ranking): twenty-seven above 10,000★ in the table, forty between 1,000★ and 10,000★ in the
+fold below, and another forty-nine below 1,000★ counted in the 1001 but not listed individually.*
 
 | Repository | ★ | 项目归属方 |
 |---|---|---|
@@ -129,11 +129,11 @@ fold below, and another forty-nine below 1,000★ counted in the 996 but not lis
 | [FlashMLA](https://github.com/deepseek-ai/FlashMLA) | 13,261 | **DeepSeek** — the official `deepseek-ai` org |
 | [webpack-bundle-analyzer](https://github.com/webpack/webpack-bundle-analyzer) | 12,654 | the `webpack` org — the bundle analysis plugin and CLI |
 | [dsh-market](https://github.com/dsh-market/dsh-market) | 12,063 | `dsh-market` org — the community plugin market behind dshmarket.com |
-| [dsh-web](https://github.com/zhu1090096259/dsh-web) | 10,358 | zhu1090096259 — individual maintainer |
+| [dsh-web](https://github.com/zhu1090096759/dsh-web) | 10,358 | zhu1090096759 — individual maintainer |
 | [BrowserSkill](https://github.com/Tencent/BrowserSkill) | 10,331 | **Tencent** — the official `Tencent` org |
 
 <details>
-<summary><b>Thirty-nine more between 1,000★ and 10,000★ — one line each</b></summary>
+<summary><b>Forty more between 1,000★ and 10,000★ — one line each</b></summary>
 
 | Repository | ★ | 项目归属方 |
 |---|---|---|
@@ -178,7 +178,7 @@ fold below, and another forty-nine below 1,000★ counted in the 996 but not lis
 
 </details>
 
-Another **49 external repositories below 1,000★** carry merged work and are counted in the 996; they are
+Another **49 external repositories below 1,000★** carry merged work and are counted in the 1001; they are
 not listed individually.
 
 ## 📦 The full DSH plugin family

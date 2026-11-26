@@ -20,7 +20,7 @@
 <a href="https://github.com/PerryLink?tab=repositories"><img alt="GitHub stars" src="https://img.shields.io/github/stars/PerryLink?label=stars&affiliations=OWNER&color=24292f"></a>
 <a href="https://github.com/PerryLink?tab=followers"><img alt="GitHub followers" src="https://img.shields.io/github/followers/PerryLink?label=followers&color=24292f"></a>
 <a href="https://github.com/PerryLink?tab=repositories"><img alt="GitHub repos" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FPerryLink&query=%24.public_repos&label=repos&color=24292f"></a>
-<a href="https://github.com/PerryLink/perrylink"><img alt="merged upstream" src="https://img.shields.io/badge/upstream%20merges-996-6e7781"></a>
+<a href="https://github.com/PerryLink/perrylink"><img alt="merged upstream" src="https://img.shields.io/badge/upstream%20merges-1001-6e7781"></a>
 <a href="https://github.com/PerryLink/perrylink"><img alt="repositories where a merge is credited" src="https://img.shields.io/badge/credited%20repos-110-6e7781"></a>
 <a href="https://github.com/PerryLink/dsh-kit"><img alt="actively maintained plugins" src="https://img.shields.io/badge/plugins-126-6e7781"></a>
 <a href="https://github.com/PerryLink/perrylink"><img alt="compliance tools" src="https://img.shields.io/badge/compliance-62-6e7781"></a>
@@ -29,7 +29,7 @@
 <img alt="npm downloads 30d" src="https://img.shields.io/badge/npm%20downloads%2030d-382.4k-6e7781">
 <a href="https://github.com/PerryLink/perrylink"><img alt="npm provenance" src="https://img.shields.io/badge/npm%20provenance-140%2F190-6e7781"></a>
 <a href="https://github.com/PerryLink/dsh-auto-review/blob/main/LICENSE"><img alt="license" src="https://img.shields.io/badge/license-Apache--2.0-blue"></a>
-<a href="https://github.com/PerryLink/dsh-mcp-panel/blob/main/package.json"><img alt="node" src="https://img.shields.io/badge/node-%5E22.19%20%7C%7C%20%3E%3D24.9-339963?logo=node.js"></a>
+<a href="https://github.com/PerryLink/dsh-mcp-panel/blob/main/package.json"><img alt="node" src="https://img.shields.io/badge/node-%5E22.19%20%7C%7C%20%3E%3D24.9-3310013?logo=node.js"></a>
 <br>
 <a href="https://github.com/PerryLink/dsh-mcp-panel/blob/main/package.json"><img alt="dsh host corridor" src="https://img.shields.io/badge/dsh-%E2%89%A50.1.2--rc.1%20%3C0.3.0-4B32C3"></a>
 <a href="https://api.securityscorecards.dev/projects/github.com/PerryLink/dsh-auto-review"><img alt="OpenSSF Scorecard — dsh-auto-review" src="https://img.shields.io/ossf-scorecard/github.com/PerryLink/dsh-auto-review?label=openssf%20scorecard"></a>
@@ -48,7 +48,7 @@
 
 Eu conserto os projetos das outras pessoas, mantenho uma família de plugins para o [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) e dirijo a [Phocinae](https://github.com/Phocinae), meu laboratório de modelos typed-decision. Desenvolvedor open source independente em Pequim — sem vínculo com o DeepSeek e não sou funcionário do DeepSeek.
 
-**Upstream** — 996 pull requests mesclados em 116 repositórios que não são meus, da AWS, Apple, Docker, Microsoft, NVIDIA, Prometheus, Redis, Tencent e do projeto vLLM até projetos de uma pessoa só. Dos 996, **962 deixaram um commit no branch padrão de 113 repositórios creditados; 34 merges em 3 repositórios não creditam commit**, o que dá 116 repositórios no total. Esses três são `SihanTeng/awesome-deepseek-harness-plugins` (32 merges), `Tencent/MMKV` (1) e `Anil-matcha/open-genjutsu` (1). **A família** — 126 plugins Apache-2.0 mantidos ativamente: segurança, fluxos de trabalho, pesquisa, pontes de mensageria e experiência de desenvolvimento; desde 2026-10-08 uma suíte de conformidade de 53 verificadores mais nove ferramentas de conformidade mais novas, e 27 ferramentas de negócio que viraram um mercado de plugins task-first em 2026-11-03: seis alimentam as suítes de finanças/contratos, o restante são ferramentas especializadas (faturamento, banco, contratos, qualidade, alfândega, logística, RH, varejo, construção, tabelas PDF, parâmetros de modelo), uma é companheira de instalação e uma é utilitário de avaliação. **O nome de tradução foi separado em 2026-11-08:** `dsh-param-repair` (1.0.2) é o plugin de mapeamento de parâmetros de fornecedor e reparo determinístico de JSON que antes se chamava `dsh-translate`, e `dsh-translate` (0.3.5) agora é um tradutor de página inteira que roda na rota de modelo da própria sessão e mantém código, caminhos, comandos e nomes de produto literalmente. **Evidência temporal (2026-11-09):** `dsh-sherlock` 0.5.0 é uma bancada local somente de catálogo para linhas do tempo de fontes públicas e conflitos de datas — cinco relógios, TEG, T-S-C-E, registro de consultas, diff/verify/review e um relatório HTML autocontido; não constrói site, não busca pessoas nem emite veredicto verdadeiro/falso. **As 27 ferramentas de domínio estão em 0.1–0.2 sem etiqueta alpha**; a maioria é marcada explicitamente como não-GA no README, cada primeira execução que testamos fica capturada em um pack, e cinco packs de cenário as encadeiam de ponta a ponta. O antigo `dsh-eval-harness` virou `dsh-eval-pack`. O catálogo público é **[perrylink.github.io](https://perrylink.github.io/)** — 185 páginas sob o índice de plugins (o sitemap do site lista 114 URLs além da raiz), completas no HTML servido e sem JavaScript renderizando, então quem chega de um resultado de busca vê o texto em vez de um estado de carregamento.
+**Upstream** — 1001 pull requests mesclados em 117 repositórios que não são meus, da AWS, Apple, Docker, Microsoft, NVIDIA, Prometheus, Redis, Tencent e do projeto vLLM até projetos de uma pessoa só. Dos 1001, **967 deixaram um commit no branch padrão de 114 repositórios creditados; 34 merges em 3 repositórios não creditam commit**, o que dá 117 repositórios no total. Esses três são `SihanTeng/awesome-deepseek-harness-plugins` (32 merges), `Tencent/MMKV` (1) e `Anil-matcha/open-genjutsu` (1). **A família** — 126 plugins Apache-2.0 mantidos ativamente: segurança, fluxos de trabalho, pesquisa, pontes de mensageria e experiência de desenvolvimento; desde 2026-10-08 uma suíte de conformidade de 53 verificadores mais nove ferramentas de conformidade mais novas, e 27 ferramentas de negócio que viraram um mercado de plugins task-first em 2026-11-03: seis alimentam as suítes de finanças/contratos, o restante são ferramentas especializadas (faturamento, banco, contratos, qualidade, alfândega, logística, RH, varejo, construção, tabelas PDF, parâmetros de modelo), uma é companheira de instalação e uma é utilitário de avaliação. **O nome de tradução foi separado em 2026-11-08:** `dsh-param-repair` (1.0.2) é o plugin de mapeamento de parâmetros de fornecedor e reparo determinístico de JSON que antes se chamava `dsh-translate`, e `dsh-translate` (0.3.5) agora é um tradutor de página inteira que roda na rota de modelo da própria sessão e mantém código, caminhos, comandos e nomes de produto literalmente. **Evidência temporal (2026-11-09):** `dsh-sherlock` 0.5.0 é uma bancada local somente de catálogo para linhas do tempo de fontes públicas e conflitos de datas — cinco relógios, TEG, T-S-C-E, registro de consultas, diff/verify/review e um relatório HTML autocontido; não constrói site, não busca pessoas nem emite veredicto verdadeiro/falso. **As 27 ferramentas de domínio estão em 0.1–0.2 sem etiqueta alpha**; a maioria é marcada explicitamente como não-GA no README, cada primeira execução que testamos fica capturada em um pack, e cinco packs de cenário as encadeiam de ponta a ponta. O antigo `dsh-eval-harness` virou `dsh-eval-pack`. O catálogo público é **[perrylink.github.io](https://perrylink.github.io/)** — 185 páginas sob o índice de plugins (o sitemap do site lista 114 URLs além da raiz), completas no HTML servido e sem JavaScript renderizando, então quem chega de um resultado de busca vê o texto em vez de um estado de carregamento.
 
 Também contribuo com o **[Cordis](https://github.com/cordiverse/cordis)**, o kernel de plugins que o DeepSeek Harness incorpora como `@deepseek-ai/cordis` — nove pull requests mesclados lá, de limpeza de async-generators ao comportamento de reload.
 
@@ -72,7 +72,7 @@ Também contribuo com o **[Cordis](https://github.com/cordiverse/cordis)**, o ke
 
 ## 🔧 Contribuições upstream
 
-*Cada repositório abaixo é externo a `PerryLink/*`, cada linha é trabalho mesclado e propostas abertas não são listadas de propósito — em 2026-11-25T12:19:19.780Z há 243 abertas em 152 repositórios. As ★ foram medidas em 2026-11-12 para cada linha; a terceira coluna nomeia a parte dona do projeto, porque o nome da conta sozinho não diz se é uma empresa, um órgão de padrões ou uma pessoa. Todo repositório externo acima de 1.000★ que encontramos com trabalho mesclado está listado (★ em 2026-11-12; não é um ranking): vinte e sete acima de 10.000★ na tabela, trinta e nove entre 1.000★ e 10.000★ no recolhido abaixo, e outros quarenta e nove abaixo de 1.000★ contados nos 996 mas não listados individualmente.*
+*Cada repositório abaixo é externo a `PerryLink/*`, cada linha é trabalho mesclado e propostas abertas não são listadas de propósito — em 2026-11-26T04:10:42.431Z há 237 abertas em 149 repositórios. As ★ foram medidas em 2026-11-12 para cada linha; a terceira coluna nomeia a parte dona do projeto, porque o nome da conta sozinho não diz se é uma empresa, um órgão de padrões ou uma pessoa. Todo repositório externo acima de 1.000★ que encontramos com trabalho mesclado está listado (★ em 2026-11-12; não é um ranking): vinte e sete acima de 10.000★ na tabela, quarenta entre 1.000★ e 10.000★ no recolhido abaixo, e outros quarenta e nove abaixo de 1.000★ contados nos 1001 mas não listados individualmente.*
 
 | Repositório | ★ | Titular do projeto |
 |---|---|---|
@@ -100,11 +100,11 @@ Também contribuo com o **[Cordis](https://github.com/cordiverse/cordis)**, o ke
 | [FlashMLA](https://github.com/deepseek-ai/FlashMLA) | 13,261 | **DeepSeek** — the official `deepseek-ai` org |
 | [webpack-bundle-analyzer](https://github.com/webpack/webpack-bundle-analyzer) | 12,654 | the `webpack` org — the bundle analysis plugin and CLI |
 | [dsh-market](https://github.com/dsh-market/dsh-market) | 12,063 | `dsh-market` org — the community plugin market behind dshmarket.com |
-| [dsh-web](https://github.com/zhu1090096259/dsh-web) | 10,358 | zhu1090096259 — individual maintainer |
+| [dsh-web](https://github.com/zhu1090096759/dsh-web) | 10,358 | zhu1090096759 — individual maintainer |
 | [BrowserSkill](https://github.com/Tencent/BrowserSkill) | 10,331 | **Tencent** — the official `Tencent` org |
 
 <details>
-<summary><b>Outros trinta e nove entre 1.000★ e 10.000★ — uma linha cada</b></summary>
+<summary><b>Outros quarenta entre 1.000★ e 10.000★ — uma linha cada</b></summary>
 
 | Repositório | ★ | Titular do projeto |
 |---|---|---|
@@ -149,7 +149,7 @@ Também contribuo com o **[Cordis](https://github.com/cordiverse/cordis)**, o ke
 
 </details>
 
-Outros **49 repositórios externos abaixo de 1.000★** carregam trabalho mesclado e são contados nos 996; não estão listados individualmente.
+Outros **49 repositórios externos abaixo de 1.000★** carregam trabalho mesclado e são contados nos 1001; não estão listados individualmente.
 
 ## 📦 A família completa de plugins DSH
 
