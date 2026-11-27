@@ -21,6 +21,13 @@ section or a badge of their own.
 
 ---
 
+## 2026-11-27 (sixtieth round — merge batch)
+
+- **1006 total: 972 + 34**, across **117 repositories**, **114** credited, re-derived at 2026-11-27T04:11Z.
+  **233** proposals are open across **149** repositories as of the same time.
+- Merged since the previous round: 5 — `docker/docker-agent#5018` (the test home/cache isolation work),
+  `punkpeye/mcp-remote#402` and `#399`, and 2 from the parallel automation in `awesome-dsh-plugin`.
+
 ## 2026-11-26 (fifty-ninth round — merge batch)
 
 - **1001 total: 967 + 34**, across **117 repositories**, **114** credited, re-derived at 2026-11-26T04:10Z.

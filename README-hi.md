@@ -20,7 +20,7 @@
 <a href="https://github.com/PerryLink?tab=repositories"><img alt="GitHub stars" src="https://img.shields.io/github/stars/PerryLink?label=stars&affiliations=OWNER&color=24292f"></a>
 <a href="https://github.com/PerryLink?tab=followers"><img alt="GitHub followers" src="https://img.shields.io/github/followers/PerryLink?label=followers&color=24292f"></a>
 <a href="https://github.com/PerryLink?tab=repositories"><img alt="GitHub repos" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FPerryLink&query=%24.public_repos&label=repos&color=24292f"></a>
-<a href="https://github.com/PerryLink/perrylink"><img alt="merged upstream" src="https://img.shields.io/badge/upstream%20merges-1001-6e7781"></a>
+<a href="https://github.com/PerryLink/perrylink"><img alt="merged upstream" src="https://img.shields.io/badge/upstream%20merges-1006-6e7781"></a>
 <a href="https://github.com/PerryLink/perrylink"><img alt="repositories where a merge is credited" src="https://img.shields.io/badge/credited%20repos-110-6e7781"></a>
 <a href="https://github.com/PerryLink/dsh-kit"><img alt="actively maintained plugins" src="https://img.shields.io/badge/plugins-126-6e7781"></a>
 <a href="https://github.com/PerryLink/perrylink"><img alt="compliance tools" src="https://img.shields.io/badge/compliance-62-6e7781"></a>
@@ -29,7 +29,7 @@
 <img alt="npm downloads 30d" src="https://img.shields.io/badge/npm%20downloads%2030d-382.4k-6e7781">
 <a href="https://github.com/PerryLink/perrylink"><img alt="npm provenance" src="https://img.shields.io/badge/npm%20provenance-140%2F190-6e7781"></a>
 <a href="https://github.com/PerryLink/dsh-auto-review/blob/main/LICENSE"><img alt="license" src="https://img.shields.io/badge/license-Apache--2.0-blue"></a>
-<a href="https://github.com/PerryLink/dsh-mcp-panel/blob/main/package.json"><img alt="node" src="https://img.shields.io/badge/node-%5E22.19%20%7C%7C%20%3E%3D24.9-3310013?logo=node.js"></a>
+<a href="https://github.com/PerryLink/dsh-mcp-panel/blob/main/package.json"><img alt="node" src="https://img.shields.io/badge/node-%5E22.19%20%7C%7C%20%3E%3D24.9-3310063?logo=node.js"></a>
 <br>
 <a href="https://github.com/PerryLink/dsh-mcp-panel/blob/main/package.json"><img alt="dsh host corridor" src="https://img.shields.io/badge/dsh-%E2%89%A50.1.2--rc.1%20%3C0.3.0-4B32C3"></a>
 <a href="https://api.securityscorecards.dev/projects/github.com/PerryLink/dsh-auto-review"><img alt="OpenSSF Scorecard — dsh-auto-review" src="https://img.shields.io/ossf-scorecard/github.com/PerryLink/dsh-auto-review?label=openssf%20scorecard"></a>
@@ -48,7 +48,7 @@
 
 मैं दूसरों के प्रोजेक्ट ठीक करता हूँ, [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) के लिए एक प्लगइन परिवार बनाए रखता हूँ, और [Phocinae](https://github.com/Phocinae) चलाता हूँ — अपनी typed-decision मॉडल प्रयोगशाला। बीजिंग में स्वतंत्र ओपन-सोर्स डेवलपर — DeepSeek से संबद्ध नहीं, और DeepSeek का कर्मचारी नहीं।
 
-**Upstream** — 1001 मर्ज किए गए pull requests, 117 ऐसी रिपॉज़िटरी में जो मेरी नहीं हैं, AWS, Apple, Docker, Microsoft, NVIDIA, Prometheus, Redis, Tencent और vLLM प्रोजेक्ट से लेकर एक-व्यक्ति के छोटे प्रोजेक्ट तक। इन 1001 में से **967 ने 114 श्रेय-प्राप्त रिपॉज़िटरी की डिफ़ॉल्ट ब्रांच पर commit छोड़ा; 3 रिपॉज़िटरी की 34 मर्जें कोई commit श्रेय नहीं देतीं**, कुल मिलाकर 115 रिपॉज़िटरी। वे तीन हैं `SihanTeng/awesome-deepseek-harness-plugins` (32 मर्जें), `Tencent/MMKV` (1) और `Anil-matcha/open-genjutsu` (1)। **परिवार** — 126 सक्रिय रूप से अनुरक्षित Apache-2.0 प्लगइन: सुरक्षा, वर्कफ़्लो, शोध, मैसेजिंग ब्रिज, डेवलपर अनुभव; 2026-10-08 से 53-जाँच वाली compliance सूट और नौ नए compliance टूल, और 27 बिज़नेस टूल जो 2026-11-03 को task-first प्लगइन मार्केट बने: इनमें से छह finance/contract सूट में जुड़ते हैं, बाक़ी विशेष टूल हैं (इनवॉइसिंग, बैंकिंग, अनुबंध, गुणवत्ता, सीमा शुल्क, लॉजिस्टिक्स, HR, रिटेल, निर्माण, PDF तालिकाएँ, मॉडल पैरामीटर), एक इंस्टॉल साथी है और एक eval यूटिलिटी। **अनुवाद से जुड़ा नाम 2026-11-08 को अलग हुआ:** `dsh-param-repair` (1.0.2) वह vendor-parameter मैपिंग + deterministic JSON रिपेयर प्लगइन है जो पहले `dsh-translate` कहलाता था, और `dsh-translate` (0.3.5) अब एक पूर्ण-पृष्ठ अनुवादक है जो सत्र के अपने मॉडल रूट पर चलता है और कोड, पाथ, कमांड व उत्पाद-नाम जस के तस रखता है। **समय-साक्ष्य (2026-11-09):** `dsh-sherlock` 0.5.0 एक catalog-only स्थानीय वर्कबेंच है सार्वजनिक-स्रोत टाइमलाइन और तारीख़-विरोधों के लिए — पाँच घड़ियाँ, TEG, T-S-C-E, query लेजर, diff/verify/review, और एक स्व-निहित HTML रिपोर्ट; यह साइट नहीं बनाता, लोगों को नहीं खोजता, और सही/ग़लत का फ़ैसला नहीं देता। **27 डोमेन टूल 0.1–0.2 पर हैं, बिना alpha टैग**; अधिकांश के README में स्पष्ट रूप से not-GA लिखा है, हमने जो भी पहला रन आज़माया वह एक pack में क़ैद है, और पाँच परिदृश्य-पैक उन्हें शुरू से आख़िर तक जोड़ते हैं। पुराना `dsh-eval-harness` अब `dsh-eval-pack` है। सार्वजनिक कैटलॉग **[perrylink.github.io](https://perrylink.github.io/)** है — प्लगइन इंडेक्स के अंतर्गत 185 पेज (साइट sitemap जड़ के अलावा 114 URL सूचीबद्ध करता है), पूरे served HTML में, बिना किसी JavaScript रेंडरिंग के, इसलिए खोज-परिणाम से आने वाला पाठक लोडिंग स्थिति की जगह सीधा पाठ देखता है।
+**Upstream** — 1006 मर्ज किए गए pull requests, 117 ऐसी रिपॉज़िटरी में जो मेरी नहीं हैं, AWS, Apple, Docker, Microsoft, NVIDIA, Prometheus, Redis, Tencent और vLLM प्रोजेक्ट से लेकर एक-व्यक्ति के छोटे प्रोजेक्ट तक। इन 1006 में से **972 ने 114 श्रेय-प्राप्त रिपॉज़िटरी की डिफ़ॉल्ट ब्रांच पर commit छोड़ा; 3 रिपॉज़िटरी की 34 मर्जें कोई commit श्रेय नहीं देतीं**, कुल मिलाकर 115 रिपॉज़िटरी। वे तीन हैं `SihanTeng/awesome-deepseek-harness-plugins` (32 मर्जें), `Tencent/MMKV` (1) और `Anil-matcha/open-genjutsu` (1)। **परिवार** — 126 सक्रिय रूप से अनुरक्षित Apache-2.0 प्लगइन: सुरक्षा, वर्कफ़्लो, शोध, मैसेजिंग ब्रिज, डेवलपर अनुभव; 2026-10-08 से 53-जाँच वाली compliance सूट और नौ नए compliance टूल, और 27 बिज़नेस टूल जो 2026-11-03 को task-first प्लगइन मार्केट बने: इनमें से छह finance/contract सूट में जुड़ते हैं, बाक़ी विशेष टूल हैं (इनवॉइसिंग, बैंकिंग, अनुबंध, गुणवत्ता, सीमा शुल्क, लॉजिस्टिक्स, HR, रिटेल, निर्माण, PDF तालिकाएँ, मॉडल पैरामीटर), एक इंस्टॉल साथी है और एक eval यूटिलिटी। **अनुवाद से जुड़ा नाम 2026-11-08 को अलग हुआ:** `dsh-param-repair` (1.0.2) वह vendor-parameter मैपिंग + deterministic JSON रिपेयर प्लगइन है जो पहले `dsh-translate` कहलाता था, और `dsh-translate` (0.3.5) अब एक पूर्ण-पृष्ठ अनुवादक है जो सत्र के अपने मॉडल रूट पर चलता है और कोड, पाथ, कमांड व उत्पाद-नाम जस के तस रखता है। **समय-साक्ष्य (2026-11-09):** `dsh-sherlock` 0.5.0 एक catalog-only स्थानीय वर्कबेंच है सार्वजनिक-स्रोत टाइमलाइन और तारीख़-विरोधों के लिए — पाँच घड़ियाँ, TEG, T-S-C-E, query लेजर, diff/verify/review, और एक स्व-निहित HTML रिपोर्ट; यह साइट नहीं बनाता, लोगों को नहीं खोजता, और सही/ग़लत का फ़ैसला नहीं देता। **27 डोमेन टूल 0.1–0.2 पर हैं, बिना alpha टैग**; अधिकांश के README में स्पष्ट रूप से not-GA लिखा है, हमने जो भी पहला रन आज़माया वह एक pack में क़ैद है, और पाँच परिदृश्य-पैक उन्हें शुरू से आख़िर तक जोड़ते हैं। पुराना `dsh-eval-harness` अब `dsh-eval-pack` है। सार्वजनिक कैटलॉग **[perrylink.github.io](https://perrylink.github.io/)** है — प्लगइन इंडेक्स के अंतर्गत 185 पेज (साइट sitemap जड़ के अलावा 114 URL सूचीबद्ध करता है), पूरे served HTML में, बिना किसी JavaScript रेंडरिंग के, इसलिए खोज-परिणाम से आने वाला पाठक लोडिंग स्थिति की जगह सीधा पाठ देखता है।
 
 मैं **[Cordis](https://github.com/cordiverse/cordis)** में भी योगदान देता हूँ — वह प्लगइन कर्नेल जिसे DeepSeek Harness `@deepseek-ai/cordis` के रूप में शामिल करता है — वहाँ नौ मर्ज किए गए pull requests, async-generator सफ़ाई से लेकर reload व्यवहार तक।
 
@@ -72,7 +72,7 @@
 
 ## 🔧 Upstream योगदान
 
-*नीचे की हर रिपॉज़िटरी `PerryLink/*` के बाहर है, हर पंक्ति मर्ज किया हुआ काम है, और खुली प्रस्ताव जान-बूझकर सूचीबद्ध नहीं हैं — 2026-11-26T04:10:42.431Z तक 149 रिपॉज़िटरी में 237 खुले हैं। ★ हर पंक्ति के लिए 2026-11-12 को मापे गए; तीसरा कॉलम परियोजना का मालिक नाम लेता है, क्योंकि अकेला खाता-नाम यह नहीं बताता कि वह कंपनी है, मानक निकाय है या एक व्यक्ति। 1,000★ से ऊपर का हर बाहरी रिपॉज़िटरी जिसे हमने मर्ज किए काम के साथ पाया, सूचीबद्ध है (★ 2026-11-12 के; यह रैंकिंग नहीं): तालिका में 10,000★ से ऊपर सत्ताईस, नीचे मोड़ में 1,000★–10,000★ के बीच चालीस, और 1,000★ से नीचे उनचास जो 1001 में गिने गए पर अलग-अलग सूचीबद्ध नहीं।*
+*नीचे की हर रिपॉज़िटरी `PerryLink/*` के बाहर है, हर पंक्ति मर्ज किया हुआ काम है, और खुली प्रस्ताव जान-बूझकर सूचीबद्ध नहीं हैं — 2026-11-27T04:11:40.409Z तक 149 रिपॉज़िटरी में 233 खुले हैं। ★ हर पंक्ति के लिए 2026-11-12 को मापे गए; तीसरा कॉलम परियोजना का मालिक नाम लेता है, क्योंकि अकेला खाता-नाम यह नहीं बताता कि वह कंपनी है, मानक निकाय है या एक व्यक्ति। 1,000★ से ऊपर का हर बाहरी रिपॉज़िटरी जिसे हमने मर्ज किए काम के साथ पाया, सूचीबद्ध है (★ 2026-11-12 के; यह रैंकिंग नहीं): तालिका में 10,000★ से ऊपर सत्ताईस, नीचे मोड़ में 1,000★–10,000★ के बीच चालीस, और 1,000★ से नीचे उनचास जो 1006 में गिने गए पर अलग-अलग सूचीबद्ध नहीं।*
 
 | रिपॉज़िटरी | ★ | परियोजना का स्वामी |
 |---|---|---|
@@ -100,7 +100,7 @@
 | [FlashMLA](https://github.com/deepseek-ai/FlashMLA) | 13,261 | **DeepSeek** — the official `deepseek-ai` org |
 | [webpack-bundle-analyzer](https://github.com/webpack/webpack-bundle-analyzer) | 12,654 | the `webpack` org — the bundle analysis plugin and CLI |
 | [dsh-market](https://github.com/dsh-market/dsh-market) | 12,063 | `dsh-market` org — the community plugin market behind dshmarket.com |
-| [dsh-web](https://github.com/zhu1090096759/dsh-web) | 10,358 | zhu1090096759 — individual maintainer |
+| [dsh-web](https://github.com/zhu1090097259/dsh-web) | 10,358 | zhu1090097259 — individual maintainer |
 | [BrowserSkill](https://github.com/Tencent/BrowserSkill) | 10,331 | **Tencent** — the official `Tencent` org |
 
 <details>
@@ -149,7 +149,7 @@
 
 </details>
 
-1,000★ से नीचे के **49 अन्य बाहरी रिपॉज़िटरी** में मर्ज किया काम है और वे 1001 में गिने जाते हैं; उन्हें अलग-अलग सूचीबद्ध नहीं किया गया।
+1,000★ से नीचे के **49 अन्य बाहरी रिपॉज़िटरी** में मर्ज किया काम है और वे 1006 में गिने जाते हैं; उन्हें अलग-अलग सूचीबद्ध नहीं किया गया।
 
 ## 📦 पूरा DSH प्लगइन परिवार
 
